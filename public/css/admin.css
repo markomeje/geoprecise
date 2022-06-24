@@ -1,0 +1,42 @@
+.kyber-project-input-field, 
+.kyber-service-input-field,
+.kyber-team-input-field{
+	display: flex;
+    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.kyber-project-input-field label, 
+.kyber-service-input-field label,
+.kyber-team-input-field label{
+	width: 36%;
+    font-size: 16px;
+    font-weight: 500;
+}
+.kyber-project-input-field .widefat, 
+.kyber-service-input-field .widefat,
+.kyber-team-input-field .widefat{
+	width: 70%;
+}
+
+.iconpicker .iconpicker-item{
+    line-height: 14px;
+}
+.kyber-team-repeater-field label {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.kyber-testimonial-input-field label{
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.kyber-testimonial-input-field label{
+    margin-top: 10px;
+    display: inline-block;
+}
+.testimonial-stars-rating .star{
+    padding: 0;
+}
+
