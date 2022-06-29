@@ -1,0 +1,82 @@
+/* Team Style 1 */
+.team-style-1 .kyber-teammember-image-container:after,
+.team-style-1 .kyber-teammember-image-container:before,
+.team-style-1 .kyber-teammember-content-cover:before,
+.team-style-1 .kyber-teammember-content-cover {
+    -webkit-transition: all 0.3s ease-out 0.3s;
+    -moz-transition: all 0.3s ease-out 0.3s;
+    -ms-transition: all 0.3s ease-out 0.3s;
+    -o-transition: all 0.3s ease-out 0.3s;
+    transition: all 0.3s ease-out 0.3s;
+}
+.team-style-1 .teammember-title {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 6px;
+    z-index: 9;
+    position: relative;
+    font-weight: 700;
+}
+.team-style-1 .kyber-teammember-wrapper:hover .teammember-title a {
+    color: #ffffff;
+}
+.team-style-1 .kyber-teammember-content-cover {
+    background: rgba(240, 240, 240, 1.0);
+    display: inline-block;
+    width: 100%;
+    border-bottom: 3px solid #fc952b;
+    position: relative;
+    padding: 20px 0;
+    text-align: center;
+}
+.team-style-1 .kyber-teammember-wrapper:hover .kyber-teammember-content-cover {
+    background: rgba(240, 240, 240, 0);
+}
+.team-style-1 .kyber-teammember-content-cover:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    width: 100%;
+    height: 0;
+    z-index: -1;
+}
+.team-style-1 .kyber-teammember-wrapper:hover .kyber-teammember-content-cover:before {
+    height: 100%;
+}
+.team-style-1 h5.kyber-teammember-designation {
+    margin-bottom: 0;
+    line-height: 24px;
+    font-family: Muli, Arial, Helvetica, sans-serif;
+}
+.team-style-1 .kyber-teammember-social-profiles {
+    position: absolute;
+    top: 0;
+    right: 0;
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+.team-style-1 .kyber-teammember-social-profiles li {
+    display: inline;
+}
+.team-style-1 .kyber-teammember-social-profiles li a {
+    background: #ffffff;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    position: relative;
+    top: -34px;
+    opacity: 0;
+}
+.team-style-1 .kyber-teammember-wrapper:hover .kyber-teammember-social-profiles li a {
+    top: -60px;
+    opacity: 1.0;
+    color: #fff;
+}
+.team-style-1.team-layout-grid .kyber-teammember-slide {
+    margin-bottom: 30px;
+}

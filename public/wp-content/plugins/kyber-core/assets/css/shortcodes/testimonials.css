@@ -1,0 +1,105 @@
+/* Testimonials Style 1 */
+.testimonials-style-1 .kyber-testimonial-image-container {
+    position: relative;
+    display: inline-block;
+}
+.testimonials-style-1 .kyber-testimonial-image-container:before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 18px;
+    content: "\f126";
+    font-family: Flaticon;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 100px;
+    color: #ffffff;
+    text-align: center;
+}
+.testimonials-style-1 .kyber-testimonial-image-container img {
+    width: 130px;
+    height: 130px;
+    border-radius: 100px;
+}
+.testimonials-style-1 .kyber-testimonial-content p {
+    font-size: 22px;
+    line-height: 32px;
+    font-family: Rajdhani;
+    margin-top: 40px;
+    max-width: 80%;
+    margin-left: 10%;
+}
+.testimonials-style-1 .testimonial-title {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 22px;
+    display: inline-block;
+    font-weight: 700;
+}
+.testimonials-style-1 .kyber-testimonial-rating {
+    margin-top: 15px;
+}
+.testimonials-style-1 .kyber-testimonial-wrapper{
+    text-align: center;
+}
+/* Testimonials Style 2 */
+.testimonials-style-2 .kyber-testimonial-image-container,
+.testimonials-style-2 .kyber-testimonial-image-container img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    margin-right: 30px;
+}
+.testimonials-style-2 .kyber-testimonial-image-container {
+    position: relative;
+}
+.testimonials-style-2 .kyber-testimonial-content p {
+    font-size: 24px;
+    line-height: 40px;
+    font-family: Rajdhani;
+    color: #09162a;
+}
+.testimonials-style-2 .kyber-testimonial-content {
+    border-bottom: 1px solid #f5f5f5;
+    margin-bottom: 35px;
+}
+.testimonials-style-2 .kyber-testimonial-rating {
+    margin-top: 7px;
+}
+.testimonials-style-2 .kyber-testimonial-image-container:before {
+    content: "\f126";
+    position: absolute;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    color: #fff;
+    font-family: Flaticon;
+    background: rgba(255, 255, 255, 0.8);
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-top: 10px;
+}
+.testimonials-style-2 .testimonial-title {
+    font-size: 22px;
+    line-height: 22px;
+    display: inline;
+}
+.testimonials-style-2 .owl-dots {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    left: inherit;
+}
+.testimonials-style-2 .owl-dots .owl-dot {
+    background: #f5f5f5;
+    width: 10px;
+    height: 10px;
+    outline: none;
+    display: inherit;
+    margin: 4px 0;
+}

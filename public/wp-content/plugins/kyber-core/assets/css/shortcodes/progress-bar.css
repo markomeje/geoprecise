@@ -1,0 +1,24 @@
+/*! Progress Bar */
+.kyber-progress-bar-wrapper {
+	margin-bottom: 25px;
+}
+.kyber_progress_bar_wrapper .kyber-progress-bar {
+	width: 100%;
+	background-color: #ddd;
+}
+.kyber_progress_bar_wrapper .kyber-progress-bar-inner {
+	width: 0%;
+	height: 5px;
+}
+.kyber-progress-bar-title {
+	font-size: 18px;
+	font-weight: 600;
+	font-family: Rajdhani;
+	margin-bottom: 5px;
+	display: inline-block;
+}
+.kyber-progress-bar-value {
+	float: right;
+	font-weight: 600;
+	font-family: Rajdhani;
+}

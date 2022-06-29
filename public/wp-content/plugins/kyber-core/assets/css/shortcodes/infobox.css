@@ -1,0 +1,206 @@
+/*! Infobox Style 1 */
+.infobox-style-1 {
+	text-align: center;
+	padding: 0 30px;
+	margin-bottom: 30px;
+}
+.infobox-style-1 .kyber-infobox-icon {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	line-height: 80px;
+	background: #000;
+	border-radius: 50%;
+	margin-bottom: 30px;
+	font-size: 30px;
+	color: #fff;
+}
+.infobox-style-1 .kyber-infobox-icon img{
+	width: 50px;
+}
+.infobox-style-1 .kyber-infobox-title {
+	font-size: 26px;
+	line-height: 26px;
+	margin-bottom: 10px;
+}
+
+
+/*! Infobox Style 2 */
+.infobox-style-2 {
+	position: relative;
+	z-index: 9;
+}
+.infobox-style-2 .icon-number[data-content]:before {
+	content: attr(data-content);
+	position: absolute;
+	font-size: 100px;
+	color: #f7f7f7;
+	line-height: 60px;
+	z-index: -1;
+	font-weight: bold;
+	font-family: Rajdhani;
+}
+.kyber-bg-color-tertiary .infobox-style-2 .icon-number[data-content]:before {
+	color: #fff;
+}
+.infobox-style-2 h3 {
+	font-size: 24px;
+	line-height: 35px;
+}
+.infobox-style-2 .icon-number {
+	color: #ffffff;
+	height: 24px;
+	width: 24px;
+	line-height: 24px;
+	font-size: 14px;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	top: 6px;
+}
+.infobox-style-2 .kyber-infobox-icon{
+	position: relative;
+	width: 40px;
+}
+.infobox-style-2 .kyber-infobox-icon:after {
+	position: absolute;
+	left: 34px;
+	top: 18px;
+	width: 40px;
+	height: 1px;
+	content: "";
+}
+.infobox-style-2 .kyber-infobox-icon img{
+	width: 30px;
+	margin-top: 8px;
+}
+.infobox-style-2 .kyber-infobox-icon i{
+	font-size: 28px;
+	width: 80px;
+	margin-top: 5px;
+}
+
+.infobox-style-2 .kyber-infobox-content {
+	margin-left: 60px;
+}
+.infobox-pad.infobox-style-2 {
+	margin-bottom: 130px;
+}
+
+/*! Infobox Style 3 */
+.infobox-style-3 .kyber-infobox-wrapper {
+	padding-top: 10px;
+	margin-right: 30px;
+	margin-top: 40px;
+}
+.infobox-style-3 i {
+	font-size: 60px;
+	line-height: 60px;
+}
+.infobox-style-3 .icon-number{
+	font-size: 40px;
+    line-height: 40px;
+    font-family: Rajdhani;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.infobox-style-3 .kyber-infobox-icon{
+	position: relative;
+	min-height: 60px;
+}
+.infobox-style-3 .kyber-infobox-icon:after {
+	position: absolute;
+	left: 0;
+	top: -10px;
+	width: 60px;
+	height: 60px;
+	content: "";
+	background: #ffffff;
+	border-radius: 100px;
+	z-index: -1;
+}
+.kyber-infobox-bg-gray .infobox-style-3 i:after {
+	background-color: #f5f5f5;
+}
+.kyber-infobox-bg-gray .infobox-style-3 .kyber-infobox-wrapper {
+	margin-right: 0px;
+}
+.infobox-style-3 i:before {
+	position: relative;
+	left: 25px;
+}
+.infobox-style-3 .kyber-infobox-title {
+	font-size: 26px;
+	line-height: 26px;
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+
+/*! Infobox Style 4 */
+.infobox-style-4 {
+	text-align: center;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	padding: 0 40px 20px 40px !important;
+	display: inline-block;
+}
+.infobox-style-4 .kyber-infobox-wrapper {
+	display: flex;
+	padding-left: 10px;
+	-webkit-box-align: center!important;
+	-ms-flex-align: center!important;
+	align-items: center!important;
+}
+.infobox-style-4 i {
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 30px;
+	display: inline-block;
+}
+.infobox-style-4 .kyber-infobox-title {
+	font-size: 32px;
+	line-height: 32px;
+	color: #ffffff;
+	margin-bottom: 0
+}
+.infobox-style-4 .kyber-infobox-text {
+	color: #ffffff;
+	font-family: Rajdhani;
+	text-align: left;
+}
+.infobox-style-4 .kyber-infobox-content {
+	margin-left: 15px;
+}
+.infobox-style-4.kyber-no-border {
+	border: none;
+	padding: 0 40px !important;
+}
+.infobox-area .infobox-style-4 .kyber-infobox-wrapper {
+	margin-left: 0;
+}
+.infobox-area .infobox-style-4 .kyber-infobox-icon {
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 100px;
+}
+.infobox-style-4 .kyber-infobox-icon {
+	border-radius: 100px;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 100px;
+}
+.infobox-style-4 .kyber-infobox-icon img{
+	width: 40px;
+}
+.infobox-style-4 .kyber-infobox-icon .icon-number{
+    font-size: 26px;
+	color: #ffffff;
+	font-family: Rajdhani;
+    font-weight: 700;
+}

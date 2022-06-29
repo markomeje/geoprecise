@@ -12,7 +12,7 @@
 								<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
 					<section id="nav_menu-1" class="widget widget_nav_menu"><h2 class="widget-title">Useful Links</h2>
 <div class="menu-footer-links-container"><ul id="menu-footer-links" class="menu">
-<li id="menu-item-2592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2592"><a href="././our-services/index.html">Our Services</a></li>
+<li id="menu-item-2592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2592"><a href="{{route('ourservices')}}">Our Services</a></li>
 <li id="menu-item-2591" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2591"><a href="{{route('ourprojects')}}">Our Projects</a></li>
 <li id="menu-item-2588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2588"><a href="{{route('aboutus')}}">About Us</a></li>
 <li id="menu-item-2593" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2593"><a href="{{route('ourteam')}}">Our Team</a></li>
