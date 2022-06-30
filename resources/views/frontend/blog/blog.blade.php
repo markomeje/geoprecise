@@ -31,6 +31,7 @@ img.emoji {
     )!important}.wp-block-button__link.has-black-background-color{border-color:var(--wp--preset--color--black,#000)}.wp-block-button__link.has-white-background-color{border-color:var(--wp--preset--color--white,#fff)}.has-ext-small-font-size{font-size:var(--wp--preset--font-size--ext-small)!important}.has-ext-medium-font-size{font-size:var(--wp--preset--font-size--ext-medium)!important}.has-ext-large-font-size{font-size:var(--wp--preset--font-size--ext-large)!important;line-height:1.2}.has-ext-x-large-font-size{font-size:var(--wp--preset--font-size--ext-x-large)!important;line-height:1}.has-ext-xx-large-font-size{font-size:var(--wp--preset--font-size--ext-xx-large)!important;line-height:1}.has-ext-x-large-font-size:not([style*=line-height]),.has-ext-xx-large-font-size:not([style*=line-height]){line-height:1.1}.ext .wp-block-group>*{margin-bottom:0;margin-top:0}.ext .wp-block-group>*+*{margin-bottom:0}.ext .wp-block-group>*+*,.ext h2{margin-top:var(--wp--style--block-gap,1.75rem)}.ext h2{margin-bottom:var(--wp--style--block-gap,1.75rem)}.has-ext-x-large-font-size+h3,.has-ext-x-large-font-size+p{margin-top:.5rem}.ext .wp-block-buttons>.wp-block-button.wp-block-button__width-25{min-width:12rem;width:calc(25% - var(--wp--style--block-gap, .5em)*.75)}.ext .ext-grid>[class*=_inner-container]{display:grid}.ext>[class*=_inner-container]>.ext-grid:not([class*=columns]),.ext>[class*=_inner-container]>.wp-block>.ext-grid:not([class*=columns]){display:initial!important}.ext .ext-grid-cols-1>[class*=_inner-container]{grid-template-columns:repeat(1,minmax(0,1fr))!important}.ext .ext-grid-cols-2>[class*=_inner-container]{grid-template-columns:repeat(2,minmax(0,1fr))!important}.ext .ext-grid-cols-3>[class*=_inner-container]{grid-template-columns:repeat(3,minmax(0,1fr))!important}.ext .ext-grid-cols-4>[class*=_inner-container]{grid-template-columns:repeat(4,minmax(0,1fr))!important}.ext .ext-grid-cols-5>[class*=_inner-container]{grid-template-columns:repeat(5,minmax(0,1fr))!important}.ext .ext-grid-cols-6>[class*=_inner-container]{grid-template-columns:repeat(6,minmax(0,1fr))!important}.ext .ext-grid-cols-7>[class*=_inner-container]{grid-template-columns:repeat(7,minmax(0,1fr))!important}.ext .ext-grid-cols-8>[class*=_inner-container]{grid-template-columns:repeat(8,minmax(0,1fr))!important}.ext .ext-grid-cols-9>[class*=_inner-container]{grid-template-columns:repeat(9,minmax(0,1fr))!important}.ext .ext-grid-cols-10>[class*=_inner-container]{grid-template-columns:repeat(10,minmax(0,1fr))!important}.ext .ext-grid-cols-11>[class*=_inner-container]{grid-template-columns:repeat(11,minmax(0,1fr))!important}.ext .ext-grid-cols-12>[class*=_inner-container]{grid-template-columns:repeat(12,minmax(0,1fr))!important}.ext .ext-grid-cols-13>[class*=_inner-container]{grid-template-columns:repeat(13,minmax(0,1fr))!important}.ext .ext-grid-cols-none>[class*=_inner-container]{grid-template-columns:none!important}.ext .ext-grid-rows-1>[class*=_inner-container]{grid-template-rows:repeat(1,minmax(0,1fr))!important}.ext .ext-grid-rows-2>[class*=_inner-container]{grid-template-rows:repeat(2,minmax(0,1fr))!important}.ext .ext-grid-rows-3>[class*=_inner-container]{grid-template-rows:repeat(3,minmax(0,1fr))!important}.ext .ext-grid-rows-4>[class*=_inner-container]{grid-template-rows:repeat(4,minmax(0,1fr))!important}.ext .ext-grid-rows-5>[class*=_inner-container]{grid-template-rows:repeat(5,minmax(0,1fr))!important}.ext .ext-grid-rows-6>[class*=_inner-container]{grid-template-rows:repeat(6,minmax(0,1fr))!important}.ext .ext-grid-rows-none>[class*=_inner-container]{grid-template-rows:none!important}.ext .ext-items-start>[class*=_inner-container]{align-items:flex-start!important}.ext .ext-items-end>[class*=_inner-container]{align-items:flex-end!important}.ext .ext-items-center>[class*=_inner-container]{align-items:center!important}.ext .ext-items-baseline>[class*=_inner-container]{align-items:baseline!important}.ext .ext-items-stretch>[class*=_inner-container]{align-items:stretch!important}.ext.wp-block-group>:last-child{margin-bottom:0}.ext .wp-block-group__inner-container{padding:0!important}.ext.has-background{padding-left:var(--wp--style--block-gap,1.75rem);padding-right:var(--wp--style--block-gap,1.75rem)}.ext [class*=inner-container]>.alignwide [class*=inner-container],.ext [class*=inner-container]>[data-align=wide] [class*=inner-container]{max-width:var(--responsive--alignwide-width,120rem)}.ext [class*=inner-container]>.alignwide [class*=inner-container]>*,.ext [class*=inner-container]>[data-align=wide] [class*=inner-container]>*{max-width:100%!important}.ext .wp-block-image{position:relative;text-align:center}.ext .wp-block-image img{display:inline-block;vertical-align:middle}body{--extendify--spacing--large:var(
         --wp--custom--spacing--large,clamp(2em,8vw,8em)
     );--wp--preset--font-size--ext-small:1rem;--wp--preset--font-size--ext-medium:1.125rem;--wp--preset--font-size--ext-large:clamp(1.65rem,3.5vw,2.15rem);--wp--preset--font-size--ext-x-large:clamp(3rem,6vw,4.75rem);--wp--preset--font-size--ext-xx-large:clamp(3.25rem,7.5vw,5.75rem);--wp--preset--color--black:#000;--wp--preset--color--white:#fff}.ext *{box-sizing:border-box}.block-editor-block-preview__content-iframe .ext [data-type="core/spacer"] .components-resizable-box__container{background:transparent!important}.block-editor-block-preview__content-iframe .ext [data-type="core/spacer"] .block-library-spacer__resize-container:before{display:none!important}.ext .wp-block-group__inner-container figure.wp-block-gallery.alignfull{margin-bottom:unset;margin-top:unset}.ext .alignwide{margin-left:auto!important;margin-right:auto!important}.is-root-container.block-editor-block-list__layout>[data-align=full]:not(:first-of-type)>.ext-my-0,.is-root-container.block-editor-block-list__layout>[data-align=wide]>.ext-my-0:not([style*=margin]){margin-top:calc(var(--wp--style--block-gap, 28px)*-1)!important}.block-editor-block-preview__content-iframe .preview\:min-h-50{min-height:50vw!important}.block-editor-block-preview__content-iframe .preview\:min-h-60{min-height:60vw!important}.block-editor-block-preview__content-iframe .preview\:min-h-70{min-height:70vw!important}.block-editor-block-preview__content-iframe .preview\:min-h-80{min-height:80vw!important}.block-editor-block-preview__content-iframe .preview\:min-h-100{min-height:100vw!important}.ext-mr-0.alignfull:not([style*=margin]):not([style*=margin]){margin-right:0!important}.ext-ml-0:not([style*=margin]):not([style*=margin]){margin-left:0!important}.is-root-container .wp-block[data-align=full]>.ext-mx-0:not([style*=margin]):not([style*=margin]){margin-left:calc(var(--wp--custom--spacing--outer, 0)*1)!important;margin-right:calc(var(--wp--custom--spacing--outer, 0)*1)!important;overflow:hidden;width:unset}@media (min-width:782px){.tablet\:ext-absolute{position:absolute!important}.tablet\:ext-relative{position:relative!important}.tablet\:ext-top-base{top:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-top-lg{top:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--top-base{top:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--top-lg{top:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-right-base{right:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-right-lg{right:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--right-base{right:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--right-lg{right:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-bottom-base{bottom:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-bottom-lg{bottom:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--bottom-base{bottom:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--bottom-lg{bottom:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-left-base{left:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-left-lg{left:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--left-base{left:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--left-lg{left:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-order-1{order:1!important}.tablet\:ext-order-2{order:2!important}.tablet\:ext-m-0:not([style*=margin]){margin:0!important}.tablet\:ext-m-auto:not([style*=margin]){margin:auto!important}.tablet\:ext-m-base:not([style*=margin]){margin:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-m-lg:not([style*=margin]){margin:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--m-base:not([style*=margin]){margin:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--m-lg:not([style*=margin]){margin:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-mx-0:not([style*=margin]){margin-left:0!important;margin-right:0!important}.tablet\:ext-mx-auto:not([style*=margin]){margin-left:auto!important;margin-right:auto!important}.tablet\:ext-mx-base:not([style*=margin]){margin-left:var(--wp--style--block-gap,1.75rem)!important;margin-right:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-mx-lg:not([style*=margin]){margin-left:var(--extendify--spacing--large,3rem)!important;margin-right:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--mx-base:not([style*=margin]){margin-left:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important;margin-right:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--mx-lg:not([style*=margin]){margin-left:calc(var(--extendify--spacing--large, 3rem)*-1)!important;margin-right:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-my-0:not([style*=margin]){margin-bottom:0!important;margin-top:0!important}.tablet\:ext-my-auto:not([style*=margin]){margin-bottom:auto!important;margin-top:auto!important}.tablet\:ext-my-base:not([style*=margin]){margin-bottom:var(--wp--style--block-gap,1.75rem)!important;margin-top:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-my-lg:not([style*=margin]){margin-bottom:var(--extendify--spacing--large,3rem)!important;margin-top:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--my-base:not([style*=margin]){margin-bottom:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important;margin-top:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--my-lg:not([style*=margin]){margin-bottom:calc(var(--extendify--spacing--large, 3rem)*-1)!important;margin-top:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-mt-0:not([style*=margin]){margin-top:0!important}.tablet\:ext-mt-auto:not([style*=margin]){margin-top:auto!important}.tablet\:ext-mt-base:not([style*=margin]){margin-top:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-mt-lg:not([style*=margin]){margin-top:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--mt-base:not([style*=margin]){margin-top:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--mt-lg:not([style*=margin]){margin-top:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-mr-0:not([style*=margin]){margin-right:0!important}.tablet\:ext-mr-auto:not([style*=margin]){margin-right:auto!important}.tablet\:ext-mr-base:not([style*=margin]){margin-right:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-mr-lg:not([style*=margin]){margin-right:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--mr-base:not([style*=margin]){margin-right:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--mr-lg:not([style*=margin]){margin-right:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-mb-0:not([style*=margin]){margin-bottom:0!important}.tablet\:ext-mb-auto:not([style*=margin]){margin-bottom:auto!important}.tablet\:ext-mb-base:not([style*=margin]){margin-bottom:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-mb-lg:not([style*=margin]){margin-bottom:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--mb-base:not([style*=margin]){margin-bottom:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--mb-lg:not([style*=margin]){margin-bottom:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-ml-0:not([style*=margin]){margin-left:0!important}.tablet\:ext-ml-auto:not([style*=margin]){margin-left:auto!important}.tablet\:ext-ml-base:not([style*=margin]){margin-left:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-ml-lg:not([style*=margin]){margin-left:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--ml-base:not([style*=margin]){margin-left:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--ml-lg:not([style*=margin]){margin-left:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-block{display:block!important}.tablet\:ext-inline-block{display:inline-block!important}.tablet\:ext-inline{display:inline!important}.tablet\:ext-flex{display:flex!important}.tablet\:ext-inline-flex{display:inline-flex!important}.tablet\:ext-grid{display:grid!important}.tablet\:ext-inline-grid{display:inline-grid!important}.tablet\:ext-hidden{display:none!important}.tablet\:ext-w-auto{width:auto!important}.tablet\:ext-w-full{width:100%!important}.tablet\:ext-max-w-full{max-width:100%!important}.tablet\:ext-flex-1{flex:1 1 0%!important}.tablet\:ext-flex-auto{flex:1 1 auto!important}.tablet\:ext-flex-initial{flex:0 1 auto!important}.tablet\:ext-flex-none{flex:none!important}.tablet\:ext-flex-shrink-0{flex-shrink:0!important}.tablet\:ext-flex-shrink{flex-shrink:1!important}.tablet\:ext-flex-grow-0{flex-grow:0!important}.tablet\:ext-flex-grow{flex-grow:1!important}.tablet\:ext-list-none{list-style-type:none!important}.tablet\:ext-grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))!important}.tablet\:ext-grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))!important}.tablet\:ext-grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))!important}.tablet\:ext-grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))!important}.tablet\:ext-grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))!important}.tablet\:ext-grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))!important}.tablet\:ext-grid-cols-7{grid-template-columns:repeat(7,minmax(0,1fr))!important}.tablet\:ext-grid-cols-8{grid-template-columns:repeat(8,minmax(0,1fr))!important}.tablet\:ext-grid-cols-9{grid-template-columns:repeat(9,minmax(0,1fr))!important}.tablet\:ext-grid-cols-10{grid-template-columns:repeat(10,minmax(0,1fr))!important}.tablet\:ext-grid-cols-11{grid-template-columns:repeat(11,minmax(0,1fr))!important}.tablet\:ext-grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))!important}.tablet\:ext-grid-cols-none{grid-template-columns:none!important}.tablet\:ext-flex-row{flex-direction:row!important}.tablet\:ext-flex-row-reverse{flex-direction:row-reverse!important}.tablet\:ext-flex-col{flex-direction:column!important}.tablet\:ext-flex-col-reverse{flex-direction:column-reverse!important}.tablet\:ext-flex-wrap{flex-wrap:wrap!important}.tablet\:ext-flex-wrap-reverse{flex-wrap:wrap-reverse!important}.tablet\:ext-flex-nowrap{flex-wrap:nowrap!important}.tablet\:ext-items-start{align-items:flex-start!important}.tablet\:ext-items-end{align-items:flex-end!important}.tablet\:ext-items-center{align-items:center!important}.tablet\:ext-items-baseline{align-items:baseline!important}.tablet\:ext-items-stretch{align-items:stretch!important}.tablet\:ext-justify-start{justify-content:flex-start!important}.tablet\:ext-justify-end{justify-content:flex-end!important}.tablet\:ext-justify-center{justify-content:center!important}.tablet\:ext-justify-between{justify-content:space-between!important}.tablet\:ext-justify-around{justify-content:space-around!important}.tablet\:ext-justify-evenly{justify-content:space-evenly!important}.tablet\:ext-justify-items-start{justify-items:start!important}.tablet\:ext-justify-items-end{justify-items:end!important}.tablet\:ext-justify-items-center{justify-items:center!important}.tablet\:ext-justify-items-stretch{justify-items:stretch!important}.tablet\:ext-justify-self-auto{justify-self:auto!important}.tablet\:ext-justify-self-start{justify-self:start!important}.tablet\:ext-justify-self-end{justify-self:end!important}.tablet\:ext-justify-self-center{justify-self:center!important}.tablet\:ext-justify-self-stretch{justify-self:stretch!important}.tablet\:ext-p-0:not([style*=padding]){padding:0!important}.tablet\:ext-p-base:not([style*=padding]){padding:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-p-lg:not([style*=padding]){padding:var(--extendify--spacing--large,3rem)!important}.tablet\:ext-px-0:not([style*=padding]){padding-left:0!important;padding-right:0!important}.tablet\:ext-px-base:not([style*=padding]){padding-left:var(--wp--style--block-gap,1.75rem)!important;padding-right:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-px-lg:not([style*=padding]){padding-left:var(--extendify--spacing--large,3rem)!important;padding-right:var(--extendify--spacing--large,3rem)!important}.tablet\:ext-py-0:not([style*=padding]){padding-bottom:0!important;padding-top:0!important}.tablet\:ext-py-base:not([style*=padding]){padding-bottom:var(--wp--style--block-gap,1.75rem)!important;padding-top:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-py-lg:not([style*=padding]){padding-bottom:var(--extendify--spacing--large,3rem)!important;padding-top:var(--extendify--spacing--large,3rem)!important}.tablet\:ext-pt-0:not([style*=padding]){padding-top:0!important}.tablet\:ext-pt-base:not([style*=padding]){padding-top:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-pt-lg:not([style*=padding]){padding-top:var(--extendify--spacing--large,3rem)!important}.tablet\:ext-pr-0:not([style*=padding]){padding-right:0!important}.tablet\:ext-pr-base:not([style*=padding]){padding-right:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-pr-lg:not([style*=padding]){padding-right:var(--extendify--spacing--large,3rem)!important}.tablet\:ext-pb-0:not([style*=padding]){padding-bottom:0!important}.tablet\:ext-pb-base:not([style*=padding]){padding-bottom:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-pb-lg:not([style*=padding]){padding-bottom:var(--extendify--spacing--large,3rem)!important}.tablet\:ext-pl-0:not([style*=padding]){padding-left:0!important}.tablet\:ext-pl-base:not([style*=padding]){padding-left:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-pl-lg:not([style*=padding]){padding-left:var(--extendify--spacing--large,3rem)!important}.tablet\:ext-text-left{text-align:left!important}.tablet\:ext-text-center{text-align:center!important}.tablet\:ext-text-right{text-align:right!important}}@media (min-width:1080px){.desktop\:ext-absolute{position:absolute!important}.desktop\:ext-relative{position:relative!important}.desktop\:ext-top-base{top:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-top-lg{top:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--top-base{top:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--top-lg{top:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-right-base{right:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-right-lg{right:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--right-base{right:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--right-lg{right:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-bottom-base{bottom:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-bottom-lg{bottom:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--bottom-base{bottom:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--bottom-lg{bottom:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-left-base{left:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-left-lg{left:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--left-base{left:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--left-lg{left:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-order-1{order:1!important}.desktop\:ext-order-2{order:2!important}.desktop\:ext-m-0:not([style*=margin]){margin:0!important}.desktop\:ext-m-auto:not([style*=margin]){margin:auto!important}.desktop\:ext-m-base:not([style*=margin]){margin:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-m-lg:not([style*=margin]){margin:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--m-base:not([style*=margin]){margin:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--m-lg:not([style*=margin]){margin:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-mx-0:not([style*=margin]){margin-left:0!important;margin-right:0!important}.desktop\:ext-mx-auto:not([style*=margin]){margin-left:auto!important;margin-right:auto!important}.desktop\:ext-mx-base:not([style*=margin]){margin-left:var(--wp--style--block-gap,1.75rem)!important;margin-right:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-mx-lg:not([style*=margin]){margin-left:var(--extendify--spacing--large,3rem)!important;margin-right:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--mx-base:not([style*=margin]){margin-left:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important;margin-right:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--mx-lg:not([style*=margin]){margin-left:calc(var(--extendify--spacing--large, 3rem)*-1)!important;margin-right:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-my-0:not([style*=margin]){margin-bottom:0!important;margin-top:0!important}.desktop\:ext-my-auto:not([style*=margin]){margin-bottom:auto!important;margin-top:auto!important}.desktop\:ext-my-base:not([style*=margin]){margin-bottom:var(--wp--style--block-gap,1.75rem)!important;margin-top:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-my-lg:not([style*=margin]){margin-bottom:var(--extendify--spacing--large,3rem)!important;margin-top:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--my-base:not([style*=margin]){margin-bottom:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important;margin-top:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--my-lg:not([style*=margin]){margin-bottom:calc(var(--extendify--spacing--large, 3rem)*-1)!important;margin-top:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-mt-0:not([style*=margin]){margin-top:0!important}.desktop\:ext-mt-auto:not([style*=margin]){margin-top:auto!important}.desktop\:ext-mt-base:not([style*=margin]){margin-top:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-mt-lg:not([style*=margin]){margin-top:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--mt-base:not([style*=margin]){margin-top:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--mt-lg:not([style*=margin]){margin-top:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-mr-0:not([style*=margin]){margin-right:0!important}.desktop\:ext-mr-auto:not([style*=margin]){margin-right:auto!important}.desktop\:ext-mr-base:not([style*=margin]){margin-right:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-mr-lg:not([style*=margin]){margin-right:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--mr-base:not([style*=margin]){margin-right:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--mr-lg:not([style*=margin]){margin-right:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-mb-0:not([style*=margin]){margin-bottom:0!important}.desktop\:ext-mb-auto:not([style*=margin]){margin-bottom:auto!important}.desktop\:ext-mb-base:not([style*=margin]){margin-bottom:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-mb-lg:not([style*=margin]){margin-bottom:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--mb-base:not([style*=margin]){margin-bottom:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--mb-lg:not([style*=margin]){margin-bottom:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-ml-0:not([style*=margin]){margin-left:0!important}.desktop\:ext-ml-auto:not([style*=margin]){margin-left:auto!important}.desktop\:ext-ml-base:not([style*=margin]){margin-left:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-ml-lg:not([style*=margin]){margin-left:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--ml-base:not([style*=margin]){margin-left:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--ml-lg:not([style*=margin]){margin-left:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-block{display:block!important}.desktop\:ext-inline-block{display:inline-block!important}.desktop\:ext-inline{display:inline!important}.desktop\:ext-flex{display:flex!important}.desktop\:ext-inline-flex{display:inline-flex!important}.desktop\:ext-grid{display:grid!important}.desktop\:ext-inline-grid{display:inline-grid!important}.desktop\:ext-hidden{display:none!important}.desktop\:ext-w-auto{width:auto!important}.desktop\:ext-w-full{width:100%!important}.desktop\:ext-max-w-full{max-width:100%!important}.desktop\:ext-flex-1{flex:1 1 0%!important}.desktop\:ext-flex-auto{flex:1 1 auto!important}.desktop\:ext-flex-initial{flex:0 1 auto!important}.desktop\:ext-flex-none{flex:none!important}.desktop\:ext-flex-shrink-0{flex-shrink:0!important}.desktop\:ext-flex-shrink{flex-shrink:1!important}.desktop\:ext-flex-grow-0{flex-grow:0!important}.desktop\:ext-flex-grow{flex-grow:1!important}.desktop\:ext-list-none{list-style-type:none!important}.desktop\:ext-grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))!important}.desktop\:ext-grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))!important}.desktop\:ext-grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))!important}.desktop\:ext-grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))!important}.desktop\:ext-grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))!important}.desktop\:ext-grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))!important}.desktop\:ext-grid-cols-7{grid-template-columns:repeat(7,minmax(0,1fr))!important}.desktop\:ext-grid-cols-8{grid-template-columns:repeat(8,minmax(0,1fr))!important}.desktop\:ext-grid-cols-9{grid-template-columns:repeat(9,minmax(0,1fr))!important}.desktop\:ext-grid-cols-10{grid-template-columns:repeat(10,minmax(0,1fr))!important}.desktop\:ext-grid-cols-11{grid-template-columns:repeat(11,minmax(0,1fr))!important}.desktop\:ext-grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))!important}.desktop\:ext-grid-cols-none{grid-template-columns:none!important}.desktop\:ext-flex-row{flex-direction:row!important}.desktop\:ext-flex-row-reverse{flex-direction:row-reverse!important}.desktop\:ext-flex-col{flex-direction:column!important}.desktop\:ext-flex-col-reverse{flex-direction:column-reverse!important}.desktop\:ext-flex-wrap{flex-wrap:wrap!important}.desktop\:ext-flex-wrap-reverse{flex-wrap:wrap-reverse!important}.desktop\:ext-flex-nowrap{flex-wrap:nowrap!important}.desktop\:ext-items-start{align-items:flex-start!important}.desktop\:ext-items-end{align-items:flex-end!important}.desktop\:ext-items-center{align-items:center!important}.desktop\:ext-items-baseline{align-items:baseline!important}.desktop\:ext-items-stretch{align-items:stretch!important}.desktop\:ext-justify-start{justify-content:flex-start!important}.desktop\:ext-justify-end{justify-content:flex-end!important}.desktop\:ext-justify-center{justify-content:center!important}.desktop\:ext-justify-between{justify-content:space-between!important}.desktop\:ext-justify-around{justify-content:space-around!important}.desktop\:ext-justify-evenly{justify-content:space-evenly!important}.desktop\:ext-justify-items-start{justify-items:start!important}.desktop\:ext-justify-items-end{justify-items:end!important}.desktop\:ext-justify-items-center{justify-items:center!important}.desktop\:ext-justify-items-stretch{justify-items:stretch!important}.desktop\:ext-justify-self-auto{justify-self:auto!important}.desktop\:ext-justify-self-start{justify-self:start!important}.desktop\:ext-justify-self-end{justify-self:end!important}.desktop\:ext-justify-self-center{justify-self:center!important}.desktop\:ext-justify-self-stretch{justify-self:stretch!important}.desktop\:ext-p-0:not([style*=padding]){padding:0!important}.desktop\:ext-p-base:not([style*=padding]){padding:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-p-lg:not([style*=padding]){padding:var(--extendify--spacing--large,3rem)!important}.desktop\:ext-px-0:not([style*=padding]){padding-left:0!important;padding-right:0!important}.desktop\:ext-px-base:not([style*=padding]){padding-left:var(--wp--style--block-gap,1.75rem)!important;padding-right:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-px-lg:not([style*=padding]){padding-left:var(--extendify--spacing--large,3rem)!important;padding-right:var(--extendify--spacing--large,3rem)!important}.desktop\:ext-py-0:not([style*=padding]){padding-bottom:0!important;padding-top:0!important}.desktop\:ext-py-base:not([style*=padding]){padding-bottom:var(--wp--style--block-gap,1.75rem)!important;padding-top:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-py-lg:not([style*=padding]){padding-bottom:var(--extendify--spacing--large,3rem)!important;padding-top:var(--extendify--spacing--large,3rem)!important}.desktop\:ext-pt-0:not([style*=padding]){padding-top:0!important}.desktop\:ext-pt-base:not([style*=padding]){padding-top:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-pt-lg:not([style*=padding]){padding-top:var(--extendify--spacing--large,3rem)!important}.desktop\:ext-pr-0:not([style*=padding]){padding-right:0!important}.desktop\:ext-pr-base:not([style*=padding]){padding-right:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-pr-lg:not([style*=padding]){padding-right:var(--extendify--spacing--large,3rem)!important}.desktop\:ext-pb-0:not([style*=padding]){padding-bottom:0!important}.desktop\:ext-pb-base:not([style*=padding]){padding-bottom:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-pb-lg:not([style*=padding]){padding-bottom:var(--extendify--spacing--large,3rem)!important}.desktop\:ext-pl-0:not([style*=padding]){padding-left:0!important}.desktop\:ext-pl-base:not([style*=padding]){padding-left:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-pl-lg:not([style*=padding]){padding-left:var(--extendify--spacing--large,3rem)!important}.desktop\:ext-text-left{text-align:left!important}.desktop\:ext-text-center{text-align:center!important}.desktop\:ext-text-right{text-align:right!important}}</style>
+
 <script>function setREVStartSize(e){
 			//window.requestAnimationFrame(function() {
 				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
@@ -115,6 +116,7 @@ h3 .kyber-infobox-title {
 <body class="blog hfeed wpb-js-composer js-comp-ver-6.8.0 vc_responsive">
 
 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>
+
 @include('layout.navbar')
 
 
@@ -128,7 +130,7 @@ h3 .kyber-infobox-title {
 					Blog Classic				</h1>
 									<div class="page-breadcrumbs">
 					<div class="breadcrumb">
-<a href="./../index.html">Home</a> > <span class="current">Blog Classic</span>
+<a href="{{route('home')}}">Home</a> > <span class="current">Blog Classic</span>
 </div>					</div>
 								</div>				
 		</div>
@@ -145,7 +147,7 @@ h3 .kyber-infobox-title {
 						
 <article id="post-741" class="post-741 post type-post status-publish format-standard has-post-thumbnail hentry category-buildings tag-design">
 	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="./../commercial-project-with-perfection-creative-design/index.html" aria-hidden="true" tabindex="-1">
+				<a class="post-thumbnail" href="{{route('commercial')}}" aria-hidden="true" tabindex="-1">
 				<img width="1200" height="1000" src="./../wp-content/uploads/2020/04/img-0cvf3-2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Commercial project With Perfection &#038; creative design" srcset="./../wp-content/uploads/2020/04/img-0cvf3-2.jpg 1200w, ./../wp-content/uploads/2020/04/img-0cvf3-2-300x250.jpg 300w, ./../wp-content/uploads/2020/04/img-0cvf3-2-1024x853.jpg 1024w, ./../wp-content/uploads/2020/04/img-0cvf3-2-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
 				
 	<div class="kyber-blog-classic-inner">
@@ -158,7 +160,7 @@ h3 .kyber-infobox-title {
 		</span>
 						</div>
 <!-- .entry-meta -->
-						<h2 class="entry-title"><a href="./../commercial-project-with-perfection-creative-design/index.html" rel="bookmark">Commercial project With Perfection &#038; creative design</a></h2>		</header><!-- .entry-header -->
+						<h2 class="entry-title"><a href="{{route('commercial')}}" rel="bookmark">Commercial project With Perfection &#038; creative design</a></h2>		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
@@ -169,20 +171,20 @@ h3 .kyber-infobox-title {
 			<div class="entry-meta-container">
 				<span class="author vcard">
 					<i class="fas fa-user"></i>
-					<a class="url fn n" href="./../author/geopadmin/index.html">
+					<a class="url fn n" href="{{route('geopadmin')}}">
 						geopadmin					</a>
 				</span>
 										<span class="categories-list">
 							<i class="far fa-folder-open"></i>
-							<a href="./../category/buildings/index.html" rel="category tag">Buildings</a>	
+							<a href="{{route('building')}}" rel="category tag">Buildings</a>	
 						</span>
 												<span class="tag-list">
 							<i class="fas fa-tags"></i>
-							<a href="./../tag/design/index.html" rel="tag">Design</a>	
+							<a href="{{route('design')}}" rel="tag">Design</a>	
 						</span>
 												<span class="meta-comment">
 							<i class="far fa-comment"></i>
-							<a href="./../commercial-project-with-perfection-creative-design/index.html#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
+							<a href="{{route('commercial')}}"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
 									</div>
 								<div class="social-icon-share">
 						<a href="javascript:void(0)" class="social-share-button">
@@ -219,7 +221,7 @@ h3 .kyber-infobox-title {
 
 <article id="post-739" class="post-739 post type-post status-publish format-standard has-post-thumbnail hentry category-construction tag-business">
 	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="./../we-are-best-construction-plan-business-solution/index.html" aria-hidden="true" tabindex="-1">
+				<a class="post-thumbnail" href="{{route('construction')}}" aria-hidden="true" tabindex="-1">
 				<img width="1200" height="1000" src="./../wp-content/uploads/2020/04/img-03-rt-tu1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="We are best Construction Plan business solution" loading="lazy" srcset="./../wp-content/uploads/2020/04/img-03-rt-tu1.jpg 1200w, ./../wp-content/uploads/2020/04/img-03-rt-tu1-300x250.jpg 300w, ./../wp-content/uploads/2020/04/img-03-rt-tu1-1024x853.jpg 1024w, ./../wp-content/uploads/2020/04/img-03-rt-tu1-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
 				
 	<div class="kyber-blog-classic-inner">
@@ -232,7 +234,7 @@ h3 .kyber-infobox-title {
 		</span>
 						</div>
 <!-- .entry-meta -->
-						<h2 class="entry-title"><a href="./../we-are-best-construction-plan-business-solution/index.html" rel="bookmark">We are best Construction Plan business solution</a></h2>		</header><!-- .entry-header -->
+						<h2 class="entry-title"><a href="{{route('construction')}}" rel="bookmark">We are best Construction Plan business solution</a></h2>		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
@@ -243,20 +245,20 @@ h3 .kyber-infobox-title {
 			<div class="entry-meta-container">
 				<span class="author vcard">
 					<i class="fas fa-user"></i>
-					<a class="url fn n" href="./../author/geopadmin/index.html">
+					<a class="url fn n" href="{{route('geopadmin')}}">
 						geopadmin					</a>
 				</span>
 										<span class="categories-list">
 							<i class="far fa-folder-open"></i>
-							<a href="./../category/construction/index.html" rel="category tag">Construction</a>	
+							<a href="{{route('categoryconstruction')}}" rel="category tag">Construction</a>	
 						</span>
 												<span class="tag-list">
 							<i class="fas fa-tags"></i>
-							<a href="./../tag/business/index.html" rel="tag">Business</a>	
+							<a href="{{route('business')}}" rel="tag">Business</a>	
 						</span>
 												<span class="meta-comment">
 							<i class="far fa-comment"></i>
-							<a href="./../we-are-best-construction-plan-business-solution/index.html#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
+							<a href="{{route('construction')}}"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
 									</div>
 								<div class="social-icon-share">
 						<a href="javascript:void(0)" class="social-share-button">
@@ -293,7 +295,7 @@ h3 .kyber-infobox-title {
 
 <article id="post-737" class="post-737 post type-post status-publish format-standard has-post-thumbnail hentry category-educational tag-department">
 	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="./../low-cost-interior-designing-project-planning/index.html" aria-hidden="true" tabindex="-1">
+				<a class="post-thumbnail" href="{{route('interior')}}" aria-hidden="true" tabindex="-1">
 				<img width="1200" height="1000" src="./../wp-content/uploads/2020/04/img-0ftyh3.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Low cost interior designing Project Planning" loading="lazy" srcset="./../wp-content/uploads/2020/04/img-0ftyh3.jpg 1200w, ./../wp-content/uploads/2020/04/img-0ftyh3-300x250.jpg 300w, ./../wp-content/uploads/2020/04/img-0ftyh3-1024x853.jpg 1024w, ./../wp-content/uploads/2020/04/img-0ftyh3-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
 				
 	<div class="kyber-blog-classic-inner">
@@ -306,7 +308,7 @@ h3 .kyber-infobox-title {
 		</span>
 						</div>
 <!-- .entry-meta -->
-						<h2 class="entry-title"><a href="./../low-cost-interior-designing-project-planning/index.html" rel="bookmark">Low cost interior designing Project Planning</a></h2>		</header><!-- .entry-header -->
+						<h2 class="entry-title"><a href="{{route('interior')}}" rel="bookmark">Low cost interior designing Project Planning</a></h2>		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
@@ -317,20 +319,20 @@ h3 .kyber-infobox-title {
 			<div class="entry-meta-container">
 				<span class="author vcard">
 					<i class="fas fa-user"></i>
-					<a class="url fn n" href="./../author/geopadmin/index.html">
+					<a class="url fn n" href="{{route('geopadmin')}}">
 						geopadmin					</a>
 				</span>
 										<span class="categories-list">
 							<i class="far fa-folder-open"></i>
-							<a href="./../category/educational/index.html" rel="category tag">Educational</a>	
+							<a href="{{route('education')}}" rel="category tag">Educational</a>	
 						</span>
 												<span class="tag-list">
 							<i class="fas fa-tags"></i>
-							<a href="./../tag/department/index.html" rel="tag">Department</a>	
+							<a href="{{route('department')}}" rel="tag">Department</a>	
 						</span>
 												<span class="meta-comment">
 							<i class="far fa-comment"></i>
-							<a href="./../low-cost-interior-designing-project-planning/index.html#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
+							<a href="{{route('interior')}}"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
 									</div>
 								<div class="social-icon-share">
 						<a href="javascript:void(0)" class="social-share-button">
@@ -367,7 +369,7 @@ h3 .kyber-infobox-title {
 
 <article id="post-735" class="post-735 post type-post status-publish format-standard has-post-thumbnail hentry category-innovations tag-marketing">
 	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="./../improve-workflow-with-design-construction/index.html" aria-hidden="true" tabindex="-1">
+				<a class="post-thumbnail" href="{{route('improve')}}" aria-hidden="true" tabindex="-1">
 				<img width="1200" height="1000" src="./../wp-content/uploads/2020/04/img-0cvf3.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Improve Workflow With Design Construction" loading="lazy" srcset="./../wp-content/uploads/2020/04/img-0cvf3.jpg 1200w, ./../wp-content/uploads/2020/04/img-0cvf3-300x250.jpg 300w, ./../wp-content/uploads/2020/04/img-0cvf3-1024x853.jpg 1024w, ./../wp-content/uploads/2020/04/img-0cvf3-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
 				
 	<div class="kyber-blog-classic-inner">
@@ -380,7 +382,7 @@ h3 .kyber-infobox-title {
 		</span>
 						</div>
 <!-- .entry-meta -->
-						<h2 class="entry-title"><a href="./../improve-workflow-with-design-construction/index.html" rel="bookmark">Improve Workflow With Design Construction</a></h2>		</header><!-- .entry-header -->
+						<h2 class="entry-title"><a href="{{route('improve')}}" rel="bookmark">Improve Workflow With Design Construction</a></h2>		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
@@ -391,20 +393,20 @@ h3 .kyber-infobox-title {
 			<div class="entry-meta-container">
 				<span class="author vcard">
 					<i class="fas fa-user"></i>
-					<a class="url fn n" href="./../author/geopadmin/index.html">
+					<a class="url fn n" href="{{route('geopadmin')}}">
 						geopadmin					</a>
 				</span>
 										<span class="categories-list">
 							<i class="far fa-folder-open"></i>
-							<a href="./../category/innovations/index.html" rel="category tag">Innovations</a>	
+							<a href="{{route('innovation')}}" rel="category tag">Innovations</a>	
 						</span>
 												<span class="tag-list">
 							<i class="fas fa-tags"></i>
-							<a href="./../tag/marketing/index.html" rel="tag">Marketing</a>	
+							<a href="{{route('marketing')}}" rel="tag">Marketing</a>	
 						</span>
 												<span class="meta-comment">
 							<i class="far fa-comment"></i>
-							<a href="./../improve-workflow-with-design-construction/index.html#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
+							<a href="{{route('improve')}}"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
 									</div>
 								<div class="social-icon-share">
 						<a href="javascript:void(0)" class="social-share-button">
@@ -441,7 +443,7 @@ h3 .kyber-infobox-title {
 
 <article id="post-733" class="post-733 post type-post status-publish format-standard has-post-thumbnail hentry category-standards tag-partner">
 	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="./../what-are-the-benefits-of-designer-certification/index.html" aria-hidden="true" tabindex="-1">
+				<a class="post-thumbnail" href="{{route('benefit')}}" aria-hidden="true" tabindex="-1">
 				<img width="1200" height="1000" src="./../wp-content/uploads/2020/04/img-der03.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="What Are The Benefits Of Designer Certification?" loading="lazy" srcset="./../wp-content/uploads/2020/04/img-der03.jpg 1200w, ./../wp-content/uploads/2020/04/img-der03-300x250.jpg 300w, ./../wp-content/uploads/2020/04/img-der03-1024x853.jpg 1024w, ./../wp-content/uploads/2020/04/img-der03-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
 				
 	<div class="kyber-blog-classic-inner">
@@ -454,7 +456,7 @@ h3 .kyber-infobox-title {
 		</span>
 						</div>
 <!-- .entry-meta -->
-						<h2 class="entry-title"><a href="./../what-are-the-benefits-of-designer-certification/index.html" rel="bookmark">What Are The Benefits Of Designer Certification?</a></h2>		</header><!-- .entry-header -->
+						<h2 class="entry-title"><a href="{{route('benefit')}}" rel="bookmark">What Are The Benefits Of Designer Certification?</a></h2>		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
@@ -465,20 +467,20 @@ h3 .kyber-infobox-title {
 			<div class="entry-meta-container">
 				<span class="author vcard">
 					<i class="fas fa-user"></i>
-					<a class="url fn n" href="./../author/geopadmin/index.html">
+					<a class="url fn n" href="{{route('geopadmin')}}">
 						geopadmin					</a>
 				</span>
 										<span class="categories-list">
 							<i class="far fa-folder-open"></i>
-							<a href="./../category/standards/index.html" rel="category tag">Standards</a>	
+							<a href="{{route('standard')}}" rel="category tag">Standards</a>	
 						</span>
 												<span class="tag-list">
 							<i class="fas fa-tags"></i>
-							<a href="./../tag/partner/index.html" rel="tag">Partner</a>	
+							<a href="{{route('partner')}}" rel="tag">Partner</a>	
 						</span>
 												<span class="meta-comment">
 							<i class="far fa-comment"></i>
-							<a href="./../what-are-the-benefits-of-designer-certification/index.html#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
+							<a href="{{route('benefit')}}"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
 									</div>
 								<div class="social-icon-share">
 						<a href="javascript:void(0)" class="social-share-button">
@@ -515,7 +517,7 @@ h3 .kyber-infobox-title {
 
 <article id="post-250" class="post-250 post type-post status-publish format-standard has-post-thumbnail hentry category-technology tag-resources">
 	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="./../construction-agreements-of-painting-perfection/index.html" aria-hidden="true" tabindex="-1">
+				<a class="post-thumbnail" href="{{route('agreement')}}" aria-hidden="true" tabindex="-1">
 				<img width="1200" height="1000" src="./../wp-content/uploads/2020/04/img-0cvf3-4.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Construction Agreements of Painting Perfection" loading="lazy" srcset="./../wp-content/uploads/2020/04/img-0cvf3-4.jpg 1200w, ./../wp-content/uploads/2020/04/img-0cvf3-4-300x250.jpg 300w, ./../wp-content/uploads/2020/04/img-0cvf3-4-1024x853.jpg 1024w, ./../wp-content/uploads/2020/04/img-0cvf3-4-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
 				
 	<div class="kyber-blog-classic-inner">
@@ -528,7 +530,7 @@ h3 .kyber-infobox-title {
 		</span>
 						</div>
 <!-- .entry-meta -->
-						<h2 class="entry-title"><a href="./../construction-agreements-of-painting-perfection/index.html" rel="bookmark">Construction Agreements of Painting Perfection</a></h2>		</header><!-- .entry-header -->
+						<h2 class="entry-title"><a href="{{route('agreement')}}" rel="bookmark">Construction Agreements of Painting Perfection</a></h2>		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
@@ -539,20 +541,20 @@ h3 .kyber-infobox-title {
 			<div class="entry-meta-container">
 				<span class="author vcard">
 					<i class="fas fa-user"></i>
-					<a class="url fn n" href="./../author/geopadmin/index.html">
+					<a class="url fn n" href="{{route('geopadmin')}}">
 						geopadmin					</a>
 				</span>
 										<span class="categories-list">
 							<i class="far fa-folder-open"></i>
-							<a href="./../category/technology/index.html" rel="category tag">Technology</a>	
+							<a href="{{route('technology')}}" rel="category tag">Technology</a>	
 						</span>
 												<span class="tag-list">
 							<i class="fas fa-tags"></i>
-							<a href="./../tag/resources/index.html" rel="tag">Resources</a>	
+							<a href="{{route('resource')}}" rel="tag">Resources</a>	
 						</span>
 												<span class="meta-comment">
 							<i class="far fa-comment"></i>
-							<a href="./../construction-agreements-of-painting-perfection/index.html#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
+							<a href="{{route('agreement')}}"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
 									</div>
 								<div class="social-icon-share">
 						<a href="javascript:void(0)" class="social-share-button">
@@ -589,7 +591,7 @@ h3 .kyber-infobox-title {
 
 <article id="post-245" class="post-245 post type-post status-publish format-standard has-post-thumbnail hentry category-buildings tag-design">
 	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="./../how-is-3d-print-affecting-the-construction/index.html" aria-hidden="true" tabindex="-1">
+				<a class="post-thumbnail" href="{{route('3dprint')}}" aria-hidden="true" tabindex="-1">
 				<img width="1200" height="1000" src="./../wp-content/uploads/2020/04/img-0cvf3-2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="How Is 3D Print Affecting The Construction?" loading="lazy" srcset="./../wp-content/uploads/2020/04/img-0cvf3-2.jpg 1200w, ./../wp-content/uploads/2020/04/img-0cvf3-2-300x250.jpg 300w, ./../wp-content/uploads/2020/04/img-0cvf3-2-1024x853.jpg 1024w, ./../wp-content/uploads/2020/04/img-0cvf3-2-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
 				
 	<div class="kyber-blog-classic-inner">
@@ -602,7 +604,7 @@ h3 .kyber-infobox-title {
 		</span>
 						</div>
 <!-- .entry-meta -->
-						<h2 class="entry-title"><a href="./../how-is-3d-print-affecting-the-construction/index.html" rel="bookmark">How Is 3D Print Affecting The Construction?</a></h2>		</header><!-- .entry-header -->
+						<h2 class="entry-title"><a href="{{route('3dprint')}}" rel="bookmark">How Is 3D Print Affecting The Construction?</a></h2>		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
@@ -613,20 +615,20 @@ h3 .kyber-infobox-title {
 			<div class="entry-meta-container">
 				<span class="author vcard">
 					<i class="fas fa-user"></i>
-					<a class="url fn n" href="./../author/geopadmin/index.html">
+					<a class="url fn n" href="{{route('geopadmin')}}">
 						geopadmin					</a>
 				</span>
 										<span class="categories-list">
 							<i class="far fa-folder-open"></i>
-							<a href="./../category/buildings/index.html" rel="category tag">Buildings</a>	
+							<a href="{{route('building')}}" rel="category tag">Buildings</a>	
 						</span>
 												<span class="tag-list">
 							<i class="fas fa-tags"></i>
-							<a href="./../tag/design/index.html" rel="tag">Design</a>	
+							<a href="{{route('design')}}" rel="tag">Design</a>	
 						</span>
 												<span class="meta-comment">
 							<i class="far fa-comment"></i>
-							<a href="./../how-is-3d-print-affecting-the-construction/index.html#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
+							<a href="{{route('3dprint')}}"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
 									</div>
 								<div class="social-icon-share">
 						<a href="javascript:void(0)" class="social-share-button">
@@ -663,7 +665,7 @@ h3 .kyber-infobox-title {
 
 <article id="post-240" class="post-240 post type-post status-publish format-standard has-post-thumbnail hentry category-technology tag-business">
 	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="./../most-successful-construction-industry-myths/index.html" aria-hidden="true" tabindex="-1">
+				<a class="post-thumbnail" href="{{route('industry')}}" aria-hidden="true" tabindex="-1">
 				<img width="1200" height="1000" src="./../wp-content/uploads/2020/04/img-0cvf3-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Most Successful Construction Industry Myths" loading="lazy" srcset="./../wp-content/uploads/2020/04/img-0cvf3-1.jpg 1200w, ./../wp-content/uploads/2020/04/img-0cvf3-1-300x250.jpg 300w, ./../wp-content/uploads/2020/04/img-0cvf3-1-1024x853.jpg 1024w, ./../wp-content/uploads/2020/04/img-0cvf3-1-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
 				
 	<div class="kyber-blog-classic-inner">
@@ -676,7 +678,7 @@ h3 .kyber-infobox-title {
 		</span>
 						</div>
 <!-- .entry-meta -->
-						<h2 class="entry-title"><a href="./../most-successful-construction-industry-myths/index.html" rel="bookmark">Most Successful Construction Industry Myths</a></h2>		</header><!-- .entry-header -->
+						<h2 class="entry-title"><a href="{{route('industry')}}" rel="bookmark">Most Successful Construction Industry Myths</a></h2>		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
@@ -687,20 +689,20 @@ h3 .kyber-infobox-title {
 			<div class="entry-meta-container">
 				<span class="author vcard">
 					<i class="fas fa-user"></i>
-					<a class="url fn n" href="./../author/geopadmin/index.html">
+					<a class="url fn n" href="{{route('geopadmin')}}">
 						geopadmin					</a>
 				</span>
 										<span class="categories-list">
 							<i class="far fa-folder-open"></i>
-							<a href="./../category/technology/index.html" rel="category tag">Technology</a>	
+							<a href="{{route('technology')}}" rel="category tag">Technology</a>	
 						</span>
 												<span class="tag-list">
 							<i class="fas fa-tags"></i>
-							<a href="./../tag/business/index.html" rel="tag">Business</a>	
+							<a href="{{route('business')}}" rel="tag">Business</a>	
 						</span>
 												<span class="meta-comment">
 							<i class="far fa-comment"></i>
-							<a href="./../most-successful-construction-industry-myths/index.html#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
+							<a href="{{route('industry')}}"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
 									</div>
 								<div class="social-icon-share">
 						<a href="javascript:void(0)" class="social-share-button">
@@ -737,7 +739,7 @@ h3 .kyber-infobox-title {
 
 <article id="post-2304" class="post-2304 post type-post status-publish format-standard has-post-thumbnail hentry category-innovations tag-marketing">
 	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="./../new-industrial-cleaning-method-panel-ruling/index.html" aria-hidden="true" tabindex="-1">
+				<a class="post-thumbnail" href="{{route('cleaning')}}" aria-hidden="true" tabindex="-1">
 				<img width="1200" height="1000" src="./../wp-content/uploads/2020/04/img-0cvf3-4.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="New Industrial Cleaning Method Panel Ruling" loading="lazy" srcset="./../wp-content/uploads/2020/04/img-0cvf3-4.jpg 1200w, ./../wp-content/uploads/2020/04/img-0cvf3-4-300x250.jpg 300w, ./../wp-content/uploads/2020/04/img-0cvf3-4-1024x853.jpg 1024w, ./../wp-content/uploads/2020/04/img-0cvf3-4-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
 				
 	<div class="kyber-blog-classic-inner">
@@ -750,7 +752,7 @@ h3 .kyber-infobox-title {
 		</span>
 						</div>
 <!-- .entry-meta -->
-						<h2 class="entry-title"><a href="./../new-industrial-cleaning-method-panel-ruling/index.html" rel="bookmark">New Industrial Cleaning Method Panel Ruling</a></h2>		</header><!-- .entry-header -->
+						<h2 class="entry-title"><a href="{{route('cleaning')}}" rel="bookmark">New Industrial Cleaning Method Panel Ruling</a></h2>		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
@@ -761,20 +763,20 @@ h3 .kyber-infobox-title {
 			<div class="entry-meta-container">
 				<span class="author vcard">
 					<i class="fas fa-user"></i>
-					<a class="url fn n" href="./../author/geopadmin/index.html">
+					<a class="url fn n" href="{{route('geopadmin')}}">
 						geopadmin					</a>
 				</span>
 										<span class="categories-list">
 							<i class="far fa-folder-open"></i>
-							<a href="./../category/innovations/index.html" rel="category tag">Innovations</a>	
+							<a href="{{route('innovation')}}" rel="category tag">Innovations</a>	
 						</span>
 												<span class="tag-list">
 							<i class="fas fa-tags"></i>
-							<a href="./../tag/marketing/index.html" rel="tag">Marketing</a>	
+							<a href="{{route('marketing')}}" rel="tag">Marketing</a>	
 						</span>
 												<span class="meta-comment">
 							<i class="far fa-comment"></i>
-							<a href="./../new-industrial-cleaning-method-panel-ruling/index.html#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
+							<a href="{{route('cleaning')}}"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
 									</div>
 								<div class="social-icon-share">
 						<a href="javascript:void(0)" class="social-share-button">
@@ -824,11 +826,11 @@ h3 .kyber-infobox-title {
 
 
 <ul class="wp-block-latest-posts__list wp-block-latest-posts">
-<li><a class="wp-block-latest-posts__post-title" href="./../commercial-project-with-perfection-creative-design/index.html">Commercial project With Perfection &#038; creative design</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="./../we-are-best-construction-plan-business-solution/index.html">We are best Construction Plan business solution</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="./../low-cost-interior-designing-project-planning/index.html">Low cost interior designing Project Planning</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="./../improve-workflow-with-design-construction/index.html">Improve Workflow With Design Construction</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="./../what-are-the-benefits-of-designer-certification/index.html">What Are The Benefits Of Designer Certification?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="{{route('commercial')}}">Commercial project With Perfection &#038; creative design</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="{{route('construction')}}">We are best Construction Plan business solution</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="{{route('interior')}}">Low cost interior designing Project Planning</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="{{route('improve')}}">Improve Workflow With Design Construction</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="{{route('benefit')}}">What Are The Benefits Of Designer Certification?</a></li>
 </ul>
 </div></div>
 </section><section id="block-4" class="widget widget_block">
@@ -837,11 +839,11 @@ h3 .kyber-infobox-title {
 
 
 <ol class="wp-block-latest-comments">
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../new-industrial-cleaning-method-panel-ruling/index.html#comment-29">New Industrial Cleaning Method Panel Ruling</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../most-successful-construction-industry-myths/index.html#comment-9">Most Successful Construction Industry Myths</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../how-is-3d-print-affecting-the-construction/index.html#comment-11">How Is 3D Print Affecting The Construction?</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../construction-agreements-of-painting-perfection/index.html#comment-13">Construction Agreements of Painting Perfection</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../what-are-the-benefits-of-designer-certification/index.html#comment-15">What Are The Benefits Of Designer Certification?</a></footer></article></li>
+<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('cleaning')}}#comment-29">New Industrial Cleaning Method Panel Ruling</a></footer></article></li>
+<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('industry')}}#comment-9">Most Successful Construction Industry Myths</a></footer></article></li>
+<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('3dprint')}}#comment-11">How Is 3D Print Affecting The Construction?</a></footer></article></li>
+<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('agreement')}}#comment-13">Construction Agreements of Painting Perfection</a></footer></article></li>
+<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('benefit')}}#comment-15">What Are The Benefits Of Designer Certification?</a></footer></article></li>
 </ol>
 </div></div>
 </section><section id="block-5" class="widget widget_block">
@@ -860,22 +862,22 @@ h3 .kyber-infobox-title {
 
 
 <ul class="wp-block-categories-list wp-block-categories">	<li class="cat-item cat-item-2">
-<a href="./../category/buildings/index.html">Buildings</a>
+<a href="{{route('building')}}">Buildings</a>
 </li>
 	<li class="cat-item cat-item-3">
-<a href="./../category/construction/index.html">Construction</a>
+<a href="{{route('categoryconstruction')}}">Construction</a>
 </li>
 	<li class="cat-item cat-item-4">
-<a href="./../category/educational/index.html">Educational</a>
+<a href="{{route('education')}}">Educational</a>
 </li>
 	<li class="cat-item cat-item-5">
-<a href="./../category/innovations/index.html">Innovations</a>
+<a href="{{route('innovation')}}">Innovations</a>
 </li>
 	<li class="cat-item cat-item-6">
-<a href="./../category/standards/index.html">Standards</a>
+<a href="{{route('standard')}}">Standards</a>
 </li>
 	<li class="cat-item cat-item-7">
-<a href="./../category/technology/index.html">Technology</a>
+<a href="{{route('technology')}}">Technology</a>
 </li>
 </ul>
 </div></div>
@@ -890,7 +892,7 @@ h3 .kyber-infobox-title {
 											<div class="kyber-post-image">
 							<img width="150" height="150" src="./../wp-content/uploads/2020/04/img-0cvf3-2-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
 										<div class="kyber-post-content">
-						<a href="./../commercial-project-with-perfection-creative-design/index.html">Commercial project With Perfection &#038; creative design</a>
+						<a href="{{route('commercial')}}">Commercial project With Perfection &#038; creative design</a>
 													<span class="kyber-post-date">April 6, 2020</span>
 											</div>
 				</li>
@@ -898,7 +900,7 @@ h3 .kyber-infobox-title {
 											<div class="kyber-post-image">
 							<img width="150" height="150" src="./../wp-content/uploads/2020/04/img-03-rt-tu1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
 										<div class="kyber-post-content">
-						<a href="./../we-are-best-construction-plan-business-solution/index.html">We are best Construction Plan business solution</a>
+						<a href="{{route('construction')}}">We are best Construction Plan business solution</a>
 													<span class="kyber-post-date">April 6, 2020</span>
 											</div>
 				</li>
@@ -906,7 +908,7 @@ h3 .kyber-infobox-title {
 											<div class="kyber-post-image">
 							<img width="150" height="150" src="./../wp-content/uploads/2020/04/img-0ftyh3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
 										<div class="kyber-post-content">
-						<a href="./../low-cost-interior-designing-project-planning/index.html">Low cost interior designing Project Planning</a>
+						<a href="{{route('interior')}}">Low cost interior designing Project Planning</a>
 													<span class="kyber-post-date">April 6, 2020</span>
 											</div>
 				</li>
@@ -914,7 +916,7 @@ h3 .kyber-infobox-title {
 											<div class="kyber-post-image">
 							<img width="150" height="150" src="./../wp-content/uploads/2020/04/img-0cvf3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
 										<div class="kyber-post-content">
-						<a href="./../improve-workflow-with-design-construction/index.html">Improve Workflow With Design Construction</a>
+						<a href="{{route('improve')}}">Improve Workflow With Design Construction</a>
 													<span class="kyber-post-date">April 6, 2020</span>
 											</div>
 				</li>
@@ -922,7 +924,7 @@ h3 .kyber-infobox-title {
 											<div class="kyber-post-image">
 							<img width="150" height="150" src="./../wp-content/uploads/2020/04/img-der03-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
 										<div class="kyber-post-content">
-						<a href="./../what-are-the-benefits-of-designer-certification/index.html">What Are The Benefits Of Designer Certification?</a>
+						<a href="{{route('benefit')}}">What Are The Benefits Of Designer Certification?</a>
 													<span class="kyber-post-date">April 6, 2020</span>
 											</div>
 				</li>
@@ -930,33 +932,33 @@ h3 .kyber-infobox-title {
 		</section><section id="categories-2" class="widget widget_categories"><h2 class="widget-title">Categories</h2>
 			<ul>
 					<li class="cat-item cat-item-2">
-<a href="./../category/buildings/index.html">Buildings</a><span>2</span>
+<a href="{{route('building')}}">Buildings</a><span>2</span>
 </li>
 	<li class="cat-item cat-item-3">
-<a href="./../category/construction/index.html">Construction</a><span>1</span>
+<a href="{{route('categoryconstruction')}}">Construction</a><span>1</span>
 </li>
 	<li class="cat-item cat-item-4">
-<a href="./../category/educational/index.html">Educational</a><span>1</span>
+<a href="{{route('education')}}">Educational</a><span>1</span>
 </li>
 	<li class="cat-item cat-item-5">
-<a href="./../category/innovations/index.html">Innovations</a><span>2</span>
+<a href="{{route('innovation')}}">Innovations</a><span>2</span>
 </li>
 	<li class="cat-item cat-item-6">
-<a href="./../category/standards/index.html">Standards</a><span>1</span>
+<a href="{{route('standard')}}">Standards</a><span>1</span>
 </li>
 	<li class="cat-item cat-item-7">
-<a href="./../category/technology/index.html">Technology</a><span>2</span>
+<a href="{{route('technology')}}">Technology</a><span>2</span>
 </li>
 			</ul>
 
 			</section><section id="media_image-1" class="widget widget_media_image"><img width="330" height="515" src="./../wp-content/uploads/2022/02/ad-8s.jpg" class="image wp-image-2563  attachment-full size-full" alt="" loading="lazy" style="max-width: 100%; height: auto;" srcset="./../wp-content/uploads/2022/02/ad-8s.jpg 330w, ./../wp-content/uploads/2022/02/ad-8s-192x300.jpg 192w" sizes="(max-width: 330px) 100vw, 330px"></section><section id="tag_cloud-1" class="widget widget_tag_cloud"><h2 class="widget-title">Tags</h2>
 <div class="tagcloud">
-<a href="./../tag/business/index.html" class="tag-cloud-link tag-link-8 tag-link-position-1" style="font-size: 22pt;" aria-label="Business (2 items)">Business</a>
-<a href="./../tag/department/index.html" class="tag-cloud-link tag-link-9 tag-link-position-2" style="font-size: 8pt;" aria-label="Department (1 item)">Department</a>
-<a href="./../tag/design/index.html" class="tag-cloud-link tag-link-10 tag-link-position-3" style="font-size: 22pt;" aria-label="Design (2 items)">Design</a>
-<a href="./../tag/marketing/index.html" class="tag-cloud-link tag-link-11 tag-link-position-4" style="font-size: 22pt;" aria-label="Marketing (2 items)">Marketing</a>
-<a href="./../tag/partner/index.html" class="tag-cloud-link tag-link-12 tag-link-position-5" style="font-size: 8pt;" aria-label="Partner (1 item)">Partner</a>
-<a href="./../tag/resources/index.html" class="tag-cloud-link tag-link-13 tag-link-position-6" style="font-size: 8pt;" aria-label="Resources (1 item)">Resources</a>
+<a href="{{route('business')}}" class="tag-cloud-link tag-link-8 tag-link-position-1" style="font-size: 22pt;" aria-label="Business (2 items)">Business</a>
+<a href="{{route('department')}}" class="tag-cloud-link tag-link-9 tag-link-position-2" style="font-size: 8pt;" aria-label="Department (1 item)">Department</a>
+<a href="{{route('design')}}" class="tag-cloud-link tag-link-10 tag-link-position-3" style="font-size: 22pt;" aria-label="Design (2 items)">Design</a>
+<a href="{{route('marketing')}}" class="tag-cloud-link tag-link-11 tag-link-position-4" style="font-size: 22pt;" aria-label="Marketing (2 items)">Marketing</a>
+<a href="{{route('partner')}}" class="tag-cloud-link tag-link-12 tag-link-position-5" style="font-size: 8pt;" aria-label="Partner (1 item)">Partner</a>
+<a href="{{route('resource')}}" class="tag-cloud-link tag-link-13 tag-link-position-6" style="font-size: 8pt;" aria-label="Resources (1 item)">Resources</a>
 </div>
 </section></aside><!-- #secondary -->
 

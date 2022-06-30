@@ -228,7 +228,7 @@ h3 .kyber-infobox-title {
 <div class="row">
 <div class="col-sm-4">
 <div class="input-group">
-				<span class="wpcf7-form-control-wrap" data-name="checkbox-75"><span class="wpcf7-form-control wpcf7-checkbox"><span class="wpcf7-list-item first last"><input type="checkbox" name="checkbox-75[]" value="I accept the privacy and terms."><span class="wpcf7-list-item-label">I accept the privacy and terms.</span></span></span></span>
+				<span class="wpcf7-form-control-wrap" data-name="checkbox-75"><span class="wpcf7-form-control wpcf7-checkbox"><span class="wpcf7-list-item first last"><input type="checkbox" name="checkbox-75[]" value="I accept the privacy and terms."><span class="wpcf7-list-item-label"> I accept the privacy and terms.</span></span></span></span>
 			</div>
 </div>
 <div class="col-sm-4">

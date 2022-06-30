@@ -1,6 +1,17 @@
-@include('layout.header')
-<title>About Us &#8211; GeoPrecise</title>
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
 
+	<title>About Us &#8211; GeoPrecise</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+<link rel="alternate" type="application/rss+xml" title="GeoPrecise &raquo; Feed" href="./../feed/index.html">
+<link rel="alternate" type="application/rss+xml" title="GeoPrecise &raquo; Comments Feed" href="./../comments/feed/index.html">
 <script type="text/javascript">
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":".\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0"}};
 /*! This file is auto-generated */
@@ -31,6 +42,39 @@ img.emoji {
     )!important}.wp-block-button__link.has-black-background-color{border-color:var(--wp--preset--color--black,#000)}.wp-block-button__link.has-white-background-color{border-color:var(--wp--preset--color--white,#fff)}.has-ext-small-font-size{font-size:var(--wp--preset--font-size--ext-small)!important}.has-ext-medium-font-size{font-size:var(--wp--preset--font-size--ext-medium)!important}.has-ext-large-font-size{font-size:var(--wp--preset--font-size--ext-large)!important;line-height:1.2}.has-ext-x-large-font-size{font-size:var(--wp--preset--font-size--ext-x-large)!important;line-height:1}.has-ext-xx-large-font-size{font-size:var(--wp--preset--font-size--ext-xx-large)!important;line-height:1}.has-ext-x-large-font-size:not([style*=line-height]),.has-ext-xx-large-font-size:not([style*=line-height]){line-height:1.1}.ext .wp-block-group>*{margin-bottom:0;margin-top:0}.ext .wp-block-group>*+*{margin-bottom:0}.ext .wp-block-group>*+*,.ext h2{margin-top:var(--wp--style--block-gap,1.75rem)}.ext h2{margin-bottom:var(--wp--style--block-gap,1.75rem)}.has-ext-x-large-font-size+h3,.has-ext-x-large-font-size+p{margin-top:.5rem}.ext .wp-block-buttons>.wp-block-button.wp-block-button__width-25{min-width:12rem;width:calc(25% - var(--wp--style--block-gap, .5em)*.75)}.ext .ext-grid>[class*=_inner-container]{display:grid}.ext>[class*=_inner-container]>.ext-grid:not([class*=columns]),.ext>[class*=_inner-container]>.wp-block>.ext-grid:not([class*=columns]){display:initial!important}.ext .ext-grid-cols-1>[class*=_inner-container]{grid-template-columns:repeat(1,minmax(0,1fr))!important}.ext .ext-grid-cols-2>[class*=_inner-container]{grid-template-columns:repeat(2,minmax(0,1fr))!important}.ext .ext-grid-cols-3>[class*=_inner-container]{grid-template-columns:repeat(3,minmax(0,1fr))!important}.ext .ext-grid-cols-4>[class*=_inner-container]{grid-template-columns:repeat(4,minmax(0,1fr))!important}.ext .ext-grid-cols-5>[class*=_inner-container]{grid-template-columns:repeat(5,minmax(0,1fr))!important}.ext .ext-grid-cols-6>[class*=_inner-container]{grid-template-columns:repeat(6,minmax(0,1fr))!important}.ext .ext-grid-cols-7>[class*=_inner-container]{grid-template-columns:repeat(7,minmax(0,1fr))!important}.ext .ext-grid-cols-8>[class*=_inner-container]{grid-template-columns:repeat(8,minmax(0,1fr))!important}.ext .ext-grid-cols-9>[class*=_inner-container]{grid-template-columns:repeat(9,minmax(0,1fr))!important}.ext .ext-grid-cols-10>[class*=_inner-container]{grid-template-columns:repeat(10,minmax(0,1fr))!important}.ext .ext-grid-cols-11>[class*=_inner-container]{grid-template-columns:repeat(11,minmax(0,1fr))!important}.ext .ext-grid-cols-12>[class*=_inner-container]{grid-template-columns:repeat(12,minmax(0,1fr))!important}.ext .ext-grid-cols-13>[class*=_inner-container]{grid-template-columns:repeat(13,minmax(0,1fr))!important}.ext .ext-grid-cols-none>[class*=_inner-container]{grid-template-columns:none!important}.ext .ext-grid-rows-1>[class*=_inner-container]{grid-template-rows:repeat(1,minmax(0,1fr))!important}.ext .ext-grid-rows-2>[class*=_inner-container]{grid-template-rows:repeat(2,minmax(0,1fr))!important}.ext .ext-grid-rows-3>[class*=_inner-container]{grid-template-rows:repeat(3,minmax(0,1fr))!important}.ext .ext-grid-rows-4>[class*=_inner-container]{grid-template-rows:repeat(4,minmax(0,1fr))!important}.ext .ext-grid-rows-5>[class*=_inner-container]{grid-template-rows:repeat(5,minmax(0,1fr))!important}.ext .ext-grid-rows-6>[class*=_inner-container]{grid-template-rows:repeat(6,minmax(0,1fr))!important}.ext .ext-grid-rows-none>[class*=_inner-container]{grid-template-rows:none!important}.ext .ext-items-start>[class*=_inner-container]{align-items:flex-start!important}.ext .ext-items-end>[class*=_inner-container]{align-items:flex-end!important}.ext .ext-items-center>[class*=_inner-container]{align-items:center!important}.ext .ext-items-baseline>[class*=_inner-container]{align-items:baseline!important}.ext .ext-items-stretch>[class*=_inner-container]{align-items:stretch!important}.ext.wp-block-group>:last-child{margin-bottom:0}.ext .wp-block-group__inner-container{padding:0!important}.ext.has-background{padding-left:var(--wp--style--block-gap,1.75rem);padding-right:var(--wp--style--block-gap,1.75rem)}.ext [class*=inner-container]>.alignwide [class*=inner-container],.ext [class*=inner-container]>[data-align=wide] [class*=inner-container]{max-width:var(--responsive--alignwide-width,120rem)}.ext [class*=inner-container]>.alignwide [class*=inner-container]>*,.ext [class*=inner-container]>[data-align=wide] [class*=inner-container]>*{max-width:100%!important}.ext .wp-block-image{position:relative;text-align:center}.ext .wp-block-image img{display:inline-block;vertical-align:middle}body{--extendify--spacing--large:var(
         --wp--custom--spacing--large,clamp(2em,8vw,8em)
     );--wp--preset--font-size--ext-small:1rem;--wp--preset--font-size--ext-medium:1.125rem;--wp--preset--font-size--ext-large:clamp(1.65rem,3.5vw,2.15rem);--wp--preset--font-size--ext-x-large:clamp(3rem,6vw,4.75rem);--wp--preset--font-size--ext-xx-large:clamp(3.25rem,7.5vw,5.75rem);--wp--preset--color--black:#000;--wp--preset--color--white:#fff}.ext *{box-sizing:border-box}.block-editor-block-preview__content-iframe .ext [data-type="core/spacer"] .components-resizable-box__container{background:transparent!important}.block-editor-block-preview__content-iframe .ext [data-type="core/spacer"] .block-library-spacer__resize-container:before{display:none!important}.ext .wp-block-group__inner-container figure.wp-block-gallery.alignfull{margin-bottom:unset;margin-top:unset}.ext .alignwide{margin-left:auto!important;margin-right:auto!important}.is-root-container.block-editor-block-list__layout>[data-align=full]:not(:first-of-type)>.ext-my-0,.is-root-container.block-editor-block-list__layout>[data-align=wide]>.ext-my-0:not([style*=margin]){margin-top:calc(var(--wp--style--block-gap, 28px)*-1)!important}.block-editor-block-preview__content-iframe .preview\:min-h-50{min-height:50vw!important}.block-editor-block-preview__content-iframe .preview\:min-h-60{min-height:60vw!important}.block-editor-block-preview__content-iframe .preview\:min-h-70{min-height:70vw!important}.block-editor-block-preview__content-iframe .preview\:min-h-80{min-height:80vw!important}.block-editor-block-preview__content-iframe .preview\:min-h-100{min-height:100vw!important}.ext-mr-0.alignfull:not([style*=margin]):not([style*=margin]){margin-right:0!important}.ext-ml-0:not([style*=margin]):not([style*=margin]){margin-left:0!important}.is-root-container .wp-block[data-align=full]>.ext-mx-0:not([style*=margin]):not([style*=margin]){margin-left:calc(var(--wp--custom--spacing--outer, 0)*1)!important;margin-right:calc(var(--wp--custom--spacing--outer, 0)*1)!important;overflow:hidden;width:unset}@media (min-width:782px){.tablet\:ext-absolute{position:absolute!important}.tablet\:ext-relative{position:relative!important}.tablet\:ext-top-base{top:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-top-lg{top:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--top-base{top:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--top-lg{top:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-right-base{right:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-right-lg{right:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--right-base{right:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--right-lg{right:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-bottom-base{bottom:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-bottom-lg{bottom:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--bottom-base{bottom:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--bottom-lg{bottom:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-left-base{left:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-left-lg{left:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--left-base{left:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--left-lg{left:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-order-1{order:1!important}.tablet\:ext-order-2{order:2!important}.tablet\:ext-m-0:not([style*=margin]){margin:0!important}.tablet\:ext-m-auto:not([style*=margin]){margin:auto!important}.tablet\:ext-m-base:not([style*=margin]){margin:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-m-lg:not([style*=margin]){margin:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--m-base:not([style*=margin]){margin:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--m-lg:not([style*=margin]){margin:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-mx-0:not([style*=margin]){margin-left:0!important;margin-right:0!important}.tablet\:ext-mx-auto:not([style*=margin]){margin-left:auto!important;margin-right:auto!important}.tablet\:ext-mx-base:not([style*=margin]){margin-left:var(--wp--style--block-gap,1.75rem)!important;margin-right:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-mx-lg:not([style*=margin]){margin-left:var(--extendify--spacing--large,3rem)!important;margin-right:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--mx-base:not([style*=margin]){margin-left:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important;margin-right:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--mx-lg:not([style*=margin]){margin-left:calc(var(--extendify--spacing--large, 3rem)*-1)!important;margin-right:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-my-0:not([style*=margin]){margin-bottom:0!important;margin-top:0!important}.tablet\:ext-my-auto:not([style*=margin]){margin-bottom:auto!important;margin-top:auto!important}.tablet\:ext-my-base:not([style*=margin]){margin-bottom:var(--wp--style--block-gap,1.75rem)!important;margin-top:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-my-lg:not([style*=margin]){margin-bottom:var(--extendify--spacing--large,3rem)!important;margin-top:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--my-base:not([style*=margin]){margin-bottom:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important;margin-top:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--my-lg:not([style*=margin]){margin-bottom:calc(var(--extendify--spacing--large, 3rem)*-1)!important;margin-top:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-mt-0:not([style*=margin]){margin-top:0!important}.tablet\:ext-mt-auto:not([style*=margin]){margin-top:auto!important}.tablet\:ext-mt-base:not([style*=margin]){margin-top:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-mt-lg:not([style*=margin]){margin-top:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--mt-base:not([style*=margin]){margin-top:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--mt-lg:not([style*=margin]){margin-top:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-mr-0:not([style*=margin]){margin-right:0!important}.tablet\:ext-mr-auto:not([style*=margin]){margin-right:auto!important}.tablet\:ext-mr-base:not([style*=margin]){margin-right:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-mr-lg:not([style*=margin]){margin-right:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--mr-base:not([style*=margin]){margin-right:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--mr-lg:not([style*=margin]){margin-right:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-mb-0:not([style*=margin]){margin-bottom:0!important}.tablet\:ext-mb-auto:not([style*=margin]){margin-bottom:auto!important}.tablet\:ext-mb-base:not([style*=margin]){margin-bottom:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-mb-lg:not([style*=margin]){margin-bottom:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--mb-base:not([style*=margin]){margin-bottom:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--mb-lg:not([style*=margin]){margin-bottom:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-ml-0:not([style*=margin]){margin-left:0!important}.tablet\:ext-ml-auto:not([style*=margin]){margin-left:auto!important}.tablet\:ext-ml-base:not([style*=margin]){margin-left:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-ml-lg:not([style*=margin]){margin-left:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--ml-base:not([style*=margin]){margin-left:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--ml-lg:not([style*=margin]){margin-left:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-block{display:block!important}.tablet\:ext-inline-block{display:inline-block!important}.tablet\:ext-inline{display:inline!important}.tablet\:ext-flex{display:flex!important}.tablet\:ext-inline-flex{display:inline-flex!important}.tablet\:ext-grid{display:grid!important}.tablet\:ext-inline-grid{display:inline-grid!important}.tablet\:ext-hidden{display:none!important}.tablet\:ext-w-auto{width:auto!important}.tablet\:ext-w-full{width:100%!important}.tablet\:ext-max-w-full{max-width:100%!important}.tablet\:ext-flex-1{flex:1 1 0%!important}.tablet\:ext-flex-auto{flex:1 1 auto!important}.tablet\:ext-flex-initial{flex:0 1 auto!important}.tablet\:ext-flex-none{flex:none!important}.tablet\:ext-flex-shrink-0{flex-shrink:0!important}.tablet\:ext-flex-shrink{flex-shrink:1!important}.tablet\:ext-flex-grow-0{flex-grow:0!important}.tablet\:ext-flex-grow{flex-grow:1!important}.tablet\:ext-list-none{list-style-type:none!important}.tablet\:ext-grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))!important}.tablet\:ext-grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))!important}.tablet\:ext-grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))!important}.tablet\:ext-grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))!important}.tablet\:ext-grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))!important}.tablet\:ext-grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))!important}.tablet\:ext-grid-cols-7{grid-template-columns:repeat(7,minmax(0,1fr))!important}.tablet\:ext-grid-cols-8{grid-template-columns:repeat(8,minmax(0,1fr))!important}.tablet\:ext-grid-cols-9{grid-template-columns:repeat(9,minmax(0,1fr))!important}.tablet\:ext-grid-cols-10{grid-template-columns:repeat(10,minmax(0,1fr))!important}.tablet\:ext-grid-cols-11{grid-template-columns:repeat(11,minmax(0,1fr))!important}.tablet\:ext-grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))!important}.tablet\:ext-grid-cols-none{grid-template-columns:none!important}.tablet\:ext-flex-row{flex-direction:row!important}.tablet\:ext-flex-row-reverse{flex-direction:row-reverse!important}.tablet\:ext-flex-col{flex-direction:column!important}.tablet\:ext-flex-col-reverse{flex-direction:column-reverse!important}.tablet\:ext-flex-wrap{flex-wrap:wrap!important}.tablet\:ext-flex-wrap-reverse{flex-wrap:wrap-reverse!important}.tablet\:ext-flex-nowrap{flex-wrap:nowrap!important}.tablet\:ext-items-start{align-items:flex-start!important}.tablet\:ext-items-end{align-items:flex-end!important}.tablet\:ext-items-center{align-items:center!important}.tablet\:ext-items-baseline{align-items:baseline!important}.tablet\:ext-items-stretch{align-items:stretch!important}.tablet\:ext-justify-start{justify-content:flex-start!important}.tablet\:ext-justify-end{justify-content:flex-end!important}.tablet\:ext-justify-center{justify-content:center!important}.tablet\:ext-justify-between{justify-content:space-between!important}.tablet\:ext-justify-around{justify-content:space-around!important}.tablet\:ext-justify-evenly{justify-content:space-evenly!important}.tablet\:ext-justify-items-start{justify-items:start!important}.tablet\:ext-justify-items-end{justify-items:end!important}.tablet\:ext-justify-items-center{justify-items:center!important}.tablet\:ext-justify-items-stretch{justify-items:stretch!important}.tablet\:ext-justify-self-auto{justify-self:auto!important}.tablet\:ext-justify-self-start{justify-self:start!important}.tablet\:ext-justify-self-end{justify-self:end!important}.tablet\:ext-justify-self-center{justify-self:center!important}.tablet\:ext-justify-self-stretch{justify-self:stretch!important}.tablet\:ext-p-0:not([style*=padding]){padding:0!important}.tablet\:ext-p-base:not([style*=padding]){padding:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-p-lg:not([style*=padding]){padding:var(--extendify--spacing--large,3rem)!important}.tablet\:ext-px-0:not([style*=padding]){padding-left:0!important;padding-right:0!important}.tablet\:ext-px-base:not([style*=padding]){padding-left:var(--wp--style--block-gap,1.75rem)!important;padding-right:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-px-lg:not([style*=padding]){padding-left:var(--extendify--spacing--large,3rem)!important;padding-right:var(--extendify--spacing--large,3rem)!important}.tablet\:ext-py-0:not([style*=padding]){padding-bottom:0!important;padding-top:0!important}.tablet\:ext-py-base:not([style*=padding]){padding-bottom:var(--wp--style--block-gap,1.75rem)!important;padding-top:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-py-lg:not([style*=padding]){padding-bottom:var(--extendify--spacing--large,3rem)!important;padding-top:var(--extendify--spacing--large,3rem)!important}.tablet\:ext-pt-0:not([style*=padding]){padding-top:0!important}.tablet\:ext-pt-base:not([style*=padding]){padding-top:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-pt-lg:not([style*=padding]){padding-top:var(--extendify--spacing--large,3rem)!important}.tablet\:ext-pr-0:not([style*=padding]){padding-right:0!important}.tablet\:ext-pr-base:not([style*=padding]){padding-right:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-pr-lg:not([style*=padding]){padding-right:var(--extendify--spacing--large,3rem)!important}.tablet\:ext-pb-0:not([style*=padding]){padding-bottom:0!important}.tablet\:ext-pb-base:not([style*=padding]){padding-bottom:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-pb-lg:not([style*=padding]){padding-bottom:var(--extendify--spacing--large,3rem)!important}.tablet\:ext-pl-0:not([style*=padding]){padding-left:0!important}.tablet\:ext-pl-base:not([style*=padding]){padding-left:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-pl-lg:not([style*=padding]){padding-left:var(--extendify--spacing--large,3rem)!important}.tablet\:ext-text-left{text-align:left!important}.tablet\:ext-text-center{text-align:center!important}.tablet\:ext-text-right{text-align:right!important}}@media (min-width:1080px){.desktop\:ext-absolute{position:absolute!important}.desktop\:ext-relative{position:relative!important}.desktop\:ext-top-base{top:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-top-lg{top:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--top-base{top:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--top-lg{top:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-right-base{right:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-right-lg{right:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--right-base{right:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--right-lg{right:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-bottom-base{bottom:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-bottom-lg{bottom:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--bottom-base{bottom:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--bottom-lg{bottom:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-left-base{left:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-left-lg{left:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--left-base{left:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--left-lg{left:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-order-1{order:1!important}.desktop\:ext-order-2{order:2!important}.desktop\:ext-m-0:not([style*=margin]){margin:0!important}.desktop\:ext-m-auto:not([style*=margin]){margin:auto!important}.desktop\:ext-m-base:not([style*=margin]){margin:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-m-lg:not([style*=margin]){margin:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--m-base:not([style*=margin]){margin:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--m-lg:not([style*=margin]){margin:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-mx-0:not([style*=margin]){margin-left:0!important;margin-right:0!important}.desktop\:ext-mx-auto:not([style*=margin]){margin-left:auto!important;margin-right:auto!important}.desktop\:ext-mx-base:not([style*=margin]){margin-left:var(--wp--style--block-gap,1.75rem)!important;margin-right:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-mx-lg:not([style*=margin]){margin-left:var(--extendify--spacing--large,3rem)!important;margin-right:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--mx-base:not([style*=margin]){margin-left:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important;margin-right:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--mx-lg:not([style*=margin]){margin-left:calc(var(--extendify--spacing--large, 3rem)*-1)!important;margin-right:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-my-0:not([style*=margin]){margin-bottom:0!important;margin-top:0!important}.desktop\:ext-my-auto:not([style*=margin]){margin-bottom:auto!important;margin-top:auto!important}.desktop\:ext-my-base:not([style*=margin]){margin-bottom:var(--wp--style--block-gap,1.75rem)!important;margin-top:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-my-lg:not([style*=margin]){margin-bottom:var(--extendify--spacing--large,3rem)!important;margin-top:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--my-base:not([style*=margin]){margin-bottom:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important;margin-top:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--my-lg:not([style*=margin]){margin-bottom:calc(var(--extendify--spacing--large, 3rem)*-1)!important;margin-top:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-mt-0:not([style*=margin]){margin-top:0!important}.desktop\:ext-mt-auto:not([style*=margin]){margin-top:auto!important}.desktop\:ext-mt-base:not([style*=margin]){margin-top:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-mt-lg:not([style*=margin]){margin-top:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--mt-base:not([style*=margin]){margin-top:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--mt-lg:not([style*=margin]){margin-top:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-mr-0:not([style*=margin]){margin-right:0!important}.desktop\:ext-mr-auto:not([style*=margin]){margin-right:auto!important}.desktop\:ext-mr-base:not([style*=margin]){margin-right:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-mr-lg:not([style*=margin]){margin-right:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--mr-base:not([style*=margin]){margin-right:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--mr-lg:not([style*=margin]){margin-right:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-mb-0:not([style*=margin]){margin-bottom:0!important}.desktop\:ext-mb-auto:not([style*=margin]){margin-bottom:auto!important}.desktop\:ext-mb-base:not([style*=margin]){margin-bottom:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-mb-lg:not([style*=margin]){margin-bottom:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--mb-base:not([style*=margin]){margin-bottom:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--mb-lg:not([style*=margin]){margin-bottom:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-ml-0:not([style*=margin]){margin-left:0!important}.desktop\:ext-ml-auto:not([style*=margin]){margin-left:auto!important}.desktop\:ext-ml-base:not([style*=margin]){margin-left:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-ml-lg:not([style*=margin]){margin-left:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--ml-base:not([style*=margin]){margin-left:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--ml-lg:not([style*=margin]){margin-left:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-block{display:block!important}.desktop\:ext-inline-block{display:inline-block!important}.desktop\:ext-inline{display:inline!important}.desktop\:ext-flex{display:flex!important}.desktop\:ext-inline-flex{display:inline-flex!important}.desktop\:ext-grid{display:grid!important}.desktop\:ext-inline-grid{display:inline-grid!important}.desktop\:ext-hidden{display:none!important}.desktop\:ext-w-auto{width:auto!important}.desktop\:ext-w-full{width:100%!important}.desktop\:ext-max-w-full{max-width:100%!important}.desktop\:ext-flex-1{flex:1 1 0%!important}.desktop\:ext-flex-auto{flex:1 1 auto!important}.desktop\:ext-flex-initial{flex:0 1 auto!important}.desktop\:ext-flex-none{flex:none!important}.desktop\:ext-flex-shrink-0{flex-shrink:0!important}.desktop\:ext-flex-shrink{flex-shrink:1!important}.desktop\:ext-flex-grow-0{flex-grow:0!important}.desktop\:ext-flex-grow{flex-grow:1!important}.desktop\:ext-list-none{list-style-type:none!important}.desktop\:ext-grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))!important}.desktop\:ext-grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))!important}.desktop\:ext-grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))!important}.desktop\:ext-grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))!important}.desktop\:ext-grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))!important}.desktop\:ext-grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))!important}.desktop\:ext-grid-cols-7{grid-template-columns:repeat(7,minmax(0,1fr))!important}.desktop\:ext-grid-cols-8{grid-template-columns:repeat(8,minmax(0,1fr))!important}.desktop\:ext-grid-cols-9{grid-template-columns:repeat(9,minmax(0,1fr))!important}.desktop\:ext-grid-cols-10{grid-template-columns:repeat(10,minmax(0,1fr))!important}.desktop\:ext-grid-cols-11{grid-template-columns:repeat(11,minmax(0,1fr))!important}.desktop\:ext-grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))!important}.desktop\:ext-grid-cols-none{grid-template-columns:none!important}.desktop\:ext-flex-row{flex-direction:row!important}.desktop\:ext-flex-row-reverse{flex-direction:row-reverse!important}.desktop\:ext-flex-col{flex-direction:column!important}.desktop\:ext-flex-col-reverse{flex-direction:column-reverse!important}.desktop\:ext-flex-wrap{flex-wrap:wrap!important}.desktop\:ext-flex-wrap-reverse{flex-wrap:wrap-reverse!important}.desktop\:ext-flex-nowrap{flex-wrap:nowrap!important}.desktop\:ext-items-start{align-items:flex-start!important}.desktop\:ext-items-end{align-items:flex-end!important}.desktop\:ext-items-center{align-items:center!important}.desktop\:ext-items-baseline{align-items:baseline!important}.desktop\:ext-items-stretch{align-items:stretch!important}.desktop\:ext-justify-start{justify-content:flex-start!important}.desktop\:ext-justify-end{justify-content:flex-end!important}.desktop\:ext-justify-center{justify-content:center!important}.desktop\:ext-justify-between{justify-content:space-between!important}.desktop\:ext-justify-around{justify-content:space-around!important}.desktop\:ext-justify-evenly{justify-content:space-evenly!important}.desktop\:ext-justify-items-start{justify-items:start!important}.desktop\:ext-justify-items-end{justify-items:end!important}.desktop\:ext-justify-items-center{justify-items:center!important}.desktop\:ext-justify-items-stretch{justify-items:stretch!important}.desktop\:ext-justify-self-auto{justify-self:auto!important}.desktop\:ext-justify-self-start{justify-self:start!important}.desktop\:ext-justify-self-end{justify-self:end!important}.desktop\:ext-justify-self-center{justify-self:center!important}.desktop\:ext-justify-self-stretch{justify-self:stretch!important}.desktop\:ext-p-0:not([style*=padding]){padding:0!important}.desktop\:ext-p-base:not([style*=padding]){padding:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-p-lg:not([style*=padding]){padding:var(--extendify--spacing--large,3rem)!important}.desktop\:ext-px-0:not([style*=padding]){padding-left:0!important;padding-right:0!important}.desktop\:ext-px-base:not([style*=padding]){padding-left:var(--wp--style--block-gap,1.75rem)!important;padding-right:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-px-lg:not([style*=padding]){padding-left:var(--extendify--spacing--large,3rem)!important;padding-right:var(--extendify--spacing--large,3rem)!important}.desktop\:ext-py-0:not([style*=padding]){padding-bottom:0!important;padding-top:0!important}.desktop\:ext-py-base:not([style*=padding]){padding-bottom:var(--wp--style--block-gap,1.75rem)!important;padding-top:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-py-lg:not([style*=padding]){padding-bottom:var(--extendify--spacing--large,3rem)!important;padding-top:var(--extendify--spacing--large,3rem)!important}.desktop\:ext-pt-0:not([style*=padding]){padding-top:0!important}.desktop\:ext-pt-base:not([style*=padding]){padding-top:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-pt-lg:not([style*=padding]){padding-top:var(--extendify--spacing--large,3rem)!important}.desktop\:ext-pr-0:not([style*=padding]){padding-right:0!important}.desktop\:ext-pr-base:not([style*=padding]){padding-right:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-pr-lg:not([style*=padding]){padding-right:var(--extendify--spacing--large,3rem)!important}.desktop\:ext-pb-0:not([style*=padding]){padding-bottom:0!important}.desktop\:ext-pb-base:not([style*=padding]){padding-bottom:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-pb-lg:not([style*=padding]){padding-bottom:var(--extendify--spacing--large,3rem)!important}.desktop\:ext-pl-0:not([style*=padding]){padding-left:0!important}.desktop\:ext-pl-base:not([style*=padding]){padding-left:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-pl-lg:not([style*=padding]){padding-left:var(--extendify--spacing--large,3rem)!important}.desktop\:ext-text-left{text-align:left!important}.desktop\:ext-text-center{text-align:center!important}.desktop\:ext-text-right{text-align:right!important}}</style>
+<link rel="stylesheet" id="contact-form-7-css" href="./../wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.6" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="./../wp-content/themes/kyber/assets/css/bootstrap.min.css?ver=4.0.0" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-css" href="./../wp-content/themes/kyber/assets/css/owl.carousel.min.css?ver=2.3.4" type="text/css" media="all">
+<link rel="stylesheet" id="fontawesome-shims-css" href="./../wp-content/themes/kyber/assets/fonts/css/v4-shims.min.css?ver=5.11.2" type="text/css" media="all">
+<link rel="stylesheet" id="fontawesome-css" href="./../wp-content/themes/kyber/assets/fonts/css/all.min.css?ver=5.11.2" type="text/css" media="all">
+<link rel="stylesheet" id="flaticon-css" href="./../wp-content/themes/kyber/assets/fonts/flaticon/flaticon.css?ver=1.0.6" type="text/css" media="all">
+<link rel="stylesheet" id="magnific-popup-css" href="./../wp-content/themes/kyber/assets/css/magnific-popup.css?ver=1.1.0" type="text/css" media="all">
+<link rel="stylesheet" id="slicknav-css" href="./../wp-content/themes/kyber/assets/css/slicknav.min.css?ver=1.0.10" type="text/css" media="all">
+<link rel="stylesheet" id="kyber-style-css" href="./../wp-content/themes/kyber/style.css?ver=6.0" type="text/css" media="all">
+<link rel="stylesheet" id="kyber-theme-style-css" href="./../wp-content/themes/kyber/assets/css/theme.css?ver=1.0.6" type="text/css" media="all">
+<link rel="stylesheet" id="js_composer_front-css" href="./../wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.8.0" type="text/css" media="all">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Rajdhani:700&#038;display=swap&#038;ver=1647434742">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani:700&#038;display=swap&#038;ver=1647434742" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani:700&#038;display=swap&#038;ver=1647434742"></noscript>
+<script type="text/javascript" src="./../wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
+<script type="text/javascript" src="./../wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="./../wp-content/themes/kyber/assets/js/slicknav.min.js?ver=1.0.10" id="slicknav-js"></script>
+<link rel="https://api.w.org/" href="./../wp-json/index.html">
+<link rel="alternate" type="application/json" href="./../wp-json/wp/v2/pages/909/index.html">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./../wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 6.0">
+<link rel="canonical" href="./index.html">
+<link rel="shortlink" href="{{route('home')}}?p=909">
+<link rel="alternate" type="application/json+oembed" href="./../wp-json/oembed/1.0/embed/index.html?url=https%3A%2F%2F%2Fabout-us%2F">
+<link rel="alternate" type="text/xml+oembed" href="./../wp-json/oembed/1.0/embed/index.html?url=https%3A%2F%2F%2Fabout-us%2F&#038;format=xml">
+<meta name="generator" content="Redux 4.3.14">
+<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
+<meta name="generator" content="Powered by Slider Revolution 6.5.14 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+<link rel="icon" href="./../wp-content/uploads/2022/02/cropped-favicon-32x32.png" sizes="32x32">
+<link rel="icon" href="./../wp-content/uploads/2022/02/cropped-favicon-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="./../wp-content/uploads/2022/02/cropped-favicon-180x180.png">
+<meta name="msapplication-TileImage" content="./wp-content/uploads/2022/02/cropped-favicon-270x270.png">
 <script>function setREVStartSize(e){
 			//window.requestAnimationFrame(function() {
 				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
@@ -109,13 +153,116 @@ h3 .kyber-infobox-title {
     font-size: 22px;
 }</style>
 		<style id="kyber_options-dynamic-css" title="dynamic-css" class="redux-options-output">.kyber-page-title{background-repeat:no-repeat;background-image:url('./../wp-content/uploads/2022/03/Untitled-3se1-1.jpg');background-size:cover;}.site-footer{background-image:url('./../wp-content/uploads/2020/04/footer-bg1.jpg');background-size:cover;}.fof-page-container{background-color:transparent;background-repeat:no-repeat;background-position:right center;background-image:url('./../wp-content/uploads/2020/04/404-bg.jpg');background-size:cover;}</style>
+<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1645637366621{padding-bottom: 100px !important;background-image: url(https://themecrafter.com/kyber/wp-content/uploads/2020/04/about-us-plan.png?id=996) !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}@media (max-width: 767px) {.vc_custom_1645637366623{padding-bottom: 60px !important;}}.vc_custom_1645630512021{padding-bottom: 100px !important;}.vc_custom_1588479328864{padding-bottom: 194px !important;}@media (max-width: 992px) {.vc_custom_1588479328866{padding-bottom: 164px !important;}}@media (max-width: 767px) {.vc_custom_1588479328867{padding-bottom: 115px !important;}}.vc_custom_1587037167387{margin-top: -94px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1586064926132{padding-bottom: 0px !important;}.vc_custom_1588479567174{padding-top: 200px !important;padding-bottom: 100px !important;background-image: url(https://themecrafter.com/kyber/sampledata/wp-content/uploads/sites/4/2020/04/test-bg-02-1.jpg?id=2027) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}@media (max-width: 767px) {.vc_custom_1588479567176{padding-top: 160px !important;padding-bottom: 60px !important;}}.vc_custom_1588479581981{padding-bottom: 70px !important;}@media (max-width: 767px) {.vc_custom_1588479581983{padding-bottom: 30px !important;}}.vc_custom_1587125037824{background-position: 0 0 !important;background-repeat: no-repeat !important;}@media (max-width: 992px) {.vc_custom_1587126085058{margin-top: 40px !important;}}.vc_custom_1586792078715{padding-left: 90px !important;}.vc_custom_1645443436741{margin-bottom: 0px !important;}.vc_custom_1645441231333{margin-bottom: 0px !important;}.vc_custom_1587124939365{margin-top: 30px !important;}.vc_custom_1588503143742{margin-bottom: 0px !important;}.vc_custom_1645444504140{padding-right: 100px !important;}@media (max-width: 992px) {.vc_custom_1588425523735{margin-bottom: 30px !important;}}@media (max-width: 992px) {.vc_custom_1588425532630{margin-bottom: 30px !important;}}@media (max-width: 992px) {.vc_custom_1588425541974{margin-bottom: 30px !important;}}.vc_custom_1586062566643{padding-top: 50px !important;padding-right: 0px !important;padding-bottom: 50px !important;padding-left: 50px !important;}@media (max-width: 767px) {.vc_custom_1586844683063{margin-top: 40px !important;}}@media (max-width: 992px) {.vc_custom_1586842821256{padding-top: 40px !important;}}@media (max-width: 992px) {.vc_custom_1587028385460{padding-top: 40px !important;}}.vc_custom_1586064936583{margin-bottom: -100px !important;}</style>
 <noscript><style>.wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
 </head>
 
-<body class="blog hfeed wpb-js-composer js-comp-ver-6.8.0 vc_responsive">
+<body class="page-template page-template-templates page-template-full-width page-template-templatesfull-width-php page page-id-909 wpb-js-composer js-comp-ver-6.8.0 vc_responsive">
 
 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>
-@include('layout.navbar')
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<header id="masthead" class="site-header-container header-layout-2">
+	
+<div class="site-header">
+	<div class="container site-header-top">
+		<div class="d-flex align-items-center">
+			<div class="site-logo">
+	<a href="{{route('home')}}" rel="home">
+		<img class="img-fluid" src="./../wp-content/uploads/2022/02/logo-geop-1.png" alt="GeoPrecise">
+	</a>
+</div>
+<div class="kyber-header-button-container">
+	<div class="kyber-header-button">
+		<a class="kyber-header-button" href="{{route('contact')}}" title="Request a Quote">Request a Quote</a>
+	</div>
+</div>
+<div class="contact-info">
+			<div class="contact-phone contact-item d-flex align-items-center">
+			<i class="flaticon-call skincolor"></i>
+			<div class="contact-list">
+				<span class="contact-label">Call Now</span>
+				<span class="contact-value">
+					<a href="tel:+2348060545860">+234 806 054 5860</a>
+				</span>
+			</div>
+		</div>
+				<div class="contact-email contact-item d-flex align-items-center">
+			<i class="flaticon-email-1 skincolor"></i>
+			<div class="contact-list">
+				<span class="contact-label">Email</span>
+				<span class="contact-value">
+					<a href="mailto:contact@geoprecisegroup.com">contact@geoprecisegroup.com</a>
+				</span>
+			</div>
+		</div>
+		</div>
+			<div id="site-navigation-mobile">
+			</div>
+		</div>
+	</div>
+	<div class="header-stickable-wrap">	
+		<div class="header-stickable">
+			<div class="kyber-bg-color-secondary">
+				<div class="container">
+					<div class="site-header-bottom">
+						<div class="header-menu-area-inner d-flex align-items-center justify-content-between">
+							<nav id="site-navigation" class="main-navigation">
+								<div class="menu-menu-1-container"><ul id="primary-menu" class="menu">
+<li id="menu-item-2305" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2305 "><a href="{{route('home')}}">Home</a></li>
+<li id="menu-item-2303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2303">
+<a href="{{route('ourservices')}}">Our Services</a>
+<ul class="sub-menu">
+	<li id="menu-item-2311" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2311"><a href="{{route('hydrographic')}}">Hydrographic Survey</a></li>
+	<li id="menu-item-2312" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2312"><a href="{{route('cadastral')}}">Cadastral &#038; Land Survey</a></li>
+	<li id="menu-item-2313" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2313"><a href="{{route('engineering')}}">Engineering Surveying</a></li>
+	<li id="menu-item-2314" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2314"><a href="{{route('sensing')}}">Remote Sensing</a></li>
+	<li id="menu-item-2315" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2315"><a href="{{route('highway')}}">Highway &#038; Road</a></li>
+	<li id="menu-item-2316" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2316"><a href="{{route('aerial')}}">Aerial Data Collection</a></li>
+	<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2318"><a href="{{route('mapping')}}">GIS &#038; Mapping</a></li>
+</ul>
+</li>
+<li id="menu-item-2319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2319"><a href="{{route('ourprojects')}}">Projects</a></li>
+<li id="menu-item-2321" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-828 current_page_item current_page_parent menu-item-2321"><a href="{{route('blog')}}" aria-current="page">Blog</a></li>
+<li id="menu-item-2323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2323">
+<a href="{{route('contact')}}">Contact Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-2307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2307"><a href="{{route('faq')}}">FAQ</a></li>
+</ul>
+</li>
+<li id="menu-item-2324" class="current-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2324">
+<a href="{{route('aboutus')}}">About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-2308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2308"><a href="{{route('ourteam')}}">Our Team</a></li>
+</ul>
+</li>
+</ul></div>							</nav> 
+							<div class="header-right-side">
+								<div class="social-info-wrapper">
+	<ul class="social-info">
+				<li class="social-facebook">
+				<a class="social-icon" target="_blank" href="https://facebook.com/geoprecise1" rel="nofollow"><i class="fab fa-facebook"></i></a>
+			</li>
+						<li class="social-facebook">
+				<a class="social-icon" target="_blank" href="https://twitter.com/geoprecise1" rel="nofollow"><i class="fab fa-twitter"></i></a>
+			</li>
+						<li class="social-facebook">
+				<a class="social-icon" target="_blank" href="https://www.instagram.com/geoprecise1" rel="nofollow"><i class="fab fa-instagram"></i></a>
+			</li>
+				</ul>
+</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</header>
+
 
 	<div id="content" class="site-content">
 
@@ -127,7 +274,7 @@ h3 .kyber-infobox-title {
 					About Us				</h1>
 									<div class="page-breadcrumbs">
 					<div class="breadcrumb">
-<a href="./../index.html">Home</a> > <span class="current">About Us</span>
+<a href="{{route('home')}}">Home</a> > <span class="current">About Us</span>
 </div>					</div>
 								</div>				
 		</div>
@@ -316,7 +463,7 @@ h3 .kyber-infobox-title {
 		<div class="kyber-teammember-content-cover">
 			<div class="kyber-teammember-title">
 				<h3 class="teammember-title">
-					<a href="./../team/merit-christabel/index.html" class="teammember-title-link">Merit Christabel</a>
+					<a href="{{route('merit')}}" class="teammember-title-link">Merit Christabel</a>
 				</h3>
 			</div>
 					</div>
@@ -332,7 +479,7 @@ h3 .kyber-infobox-title {
 		<div class="kyber-teammember-content-cover">
 			<div class="kyber-teammember-title">
 				<h3 class="teammember-title">
-					<a href="./../team/kerry-anderson/index.html" class="teammember-title-link">Hon. John Okwor Nnam</a>
+					<a href="{{route('kerry')}}" class="teammember-title-link">Hon. John Okwor Nnam</a>
 				</h3>
 			</div>
 							<div class="kyber-teammember-social-profiles-container">
@@ -370,7 +517,7 @@ h3 .kyber-infobox-title {
 		<div class="kyber-teammember-content-cover">
 			<div class="kyber-teammember-title">
 				<h3 class="teammember-title">
-					<a href="./../team/surv-nnam-uchechukwu-godwin-mnis-msssi/index.html" class="teammember-title-link">Surv. Nnam Uchechukwu Godwin (MNIS, MSSSI)</a>
+					<a href="{{route('godwin')}}" class="teammember-title-link">Surv. Nnam Uchechukwu Godwin (MNIS, MSSSI)</a>
 				</h3>
 			</div>
 							<div class="kyber-teammember-social-profiles-container">
@@ -403,7 +550,7 @@ h3 .kyber-infobox-title {
 		<div class="kyber-teammember-content-cover">
 			<div class="kyber-teammember-title">
 				<h3 class="teammember-title">
-					<a href="./../team/surv-okwesili-adaeze-merit/index.html" class="teammember-title-link">Surv. Okwesili Adaeze Merit</a>
+					<a href="{{route('merit')}}" class="teammember-title-link">Surv. Okwesili Adaeze Merit</a>
 				</h3>
 			</div>
 							<div class="kyber-teammember-social-profiles-container">
@@ -436,7 +583,7 @@ h3 .kyber-infobox-title {
 		<div class="kyber-teammember-content-cover">
 			<div class="kyber-teammember-title">
 				<h3 class="teammember-title">
-					<a href="./../team/engr-nnam-john-precious/index.html" class="teammember-title-link">Engr. Nnam John Precious</a>
+					<a href="{{route('john')}}" class="teammember-title-link">Engr. Nnam John Precious</a>
 				</h3>
 			</div>
 							<div class="kyber-teammember-social-profiles-container">
@@ -474,7 +621,7 @@ h3 .kyber-infobox-title {
 		<div class="kyber-teammember-content-cover">
 			<div class="kyber-teammember-title">
 				<h3 class="teammember-title">
-					<a href="./../team/steve-smith/index.html" class="teammember-title-link">Nnam Benjamin Onyedikachi</a>
+					<a href="{{route('benjamin')}}" class="teammember-title-link">Nnam Benjamin Onyedikachi</a>
 				</h3>
 			</div>
 							<div class="kyber-teammember-social-profiles-container">
@@ -512,7 +659,7 @@ h3 .kyber-infobox-title {
 		<div class="kyber-teammember-content-cover">
 			<div class="kyber-teammember-title">
 				<h3 class="teammember-title">
-					<a href="./../team/barr-azuh-hilary/index.html" class="teammember-title-link">Hilary .U. Azuh, Esq.</a>
+					<a href="{{route('hilary')}}" class="teammember-title-link">Hilary .U. Azuh, Esq.</a>
 				</h3>
 			</div>
 							<div class="kyber-teammember-social-profiles-container">
@@ -658,14 +805,14 @@ h3 .kyber-infobox-title {
 <span>06</span>Apr</div>
 			<div class="kyber-post-title">
 				<h3 class="post-title">
-					<a href="./../commercial-project-with-perfection-creative-design/index.html">Commercial project With Perfection &amp; creative design</a>
+					<a href="{{route('commercial')}}">Commercial project With Perfection &amp; creative design</a>
 				</h3>
 			</div>
 			<div class="kyber-post-content">						
 				<div class="kyber-post-meta">
 					<div class="post-meta-item post-author">
 						<i class="far fa-user"></i>
-						<a href="./../author/geopadmin/index.html" class="post-author-link"><span class="post-author-name">geopadmin</span></a>
+						<a href="{{route('geopadmin')}}" class="post-author-link"><span class="post-author-name">geopadmin</span></a>
 					</div>
 					<div class="post-meta-item post-comment">
 <i class="far fa-comment"></i>Comments (2)</div>
@@ -687,14 +834,14 @@ h3 .kyber-infobox-title {
 <span>06</span>Apr</div>
 			<div class="kyber-post-title">
 				<h3 class="post-title">
-					<a href="./../we-are-best-construction-plan-business-solution/index.html">We are best Construction Plan business solution</a>
+					<a href="{{route('construction')}}">We are best Construction Plan business solution</a>
 				</h3>
 			</div>
 			<div class="kyber-post-content">						
 				<div class="kyber-post-meta">
 					<div class="post-meta-item post-author">
 						<i class="far fa-user"></i>
-						<a href="./../author/geopadmin/index.html" class="post-author-link"><span class="post-author-name">geopadmin</span></a>
+						<a href="{{route('geopadmin')}}" class="post-author-link"><span class="post-author-name">geopadmin</span></a>
 					</div>
 					<div class="post-meta-item post-comment">
 <i class="far fa-comment"></i>Comments (2)</div>
@@ -716,14 +863,14 @@ h3 .kyber-infobox-title {
 <span>06</span>Apr</div>
 			<div class="kyber-post-title">
 				<h3 class="post-title">
-					<a href="./../low-cost-interior-designing-project-planning/index.html">Low cost interior designing Project Planning</a>
+					<a href="{{route('interior')}}">Low cost interior designing Project Planning</a>
 				</h3>
 			</div>
 			<div class="kyber-post-content">						
 				<div class="kyber-post-meta">
 					<div class="post-meta-item post-author">
 						<i class="far fa-user"></i>
-						<a href="./../author/geopadmin/index.html" class="post-author-link"><span class="post-author-name">geopadmin</span></a>
+						<a href="{{route('geopadmin')}}" class="post-author-link"><span class="post-author-name">geopadmin</span></a>
 					</div>
 					<div class="post-meta-item post-comment">
 <i class="far fa-comment"></i>Comments (2)</div>
@@ -749,7 +896,132 @@ h3 .kyber-infobox-title {
 
 	</div>
 <!-- #content -->
-@include('layout.footer')
+
+	<footer id="colophon" class="site-footer">
+		<div class="kyber-footer-widgets-wrapper">
+	<div class="container">
+		<div class="kyber-footer row">
+							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+					<section id="text-2" class="widget widget_text">			<div class="textwidget">
+<p><img loading="lazy" class="alignnone size-full wp-image-225 footer-logo" src="./../wp-content/uploads/2022/02/GEO-P-f-tt-2.png" alt="" width="202" height="42"></p>
+<h3 class="skincolor">+234 806 054 5860</h3>
+<p><a class="btn btn-outline-light footer-button" href="{{route('contact')}}">REQUEST WITH ONLINE FORM</a></p>
+</div>
+		</section>				</div>
+								<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+					<section id="nav_menu-1" class="widget widget_nav_menu"><h2 class="widget-title">Useful Links</h2>
+<div class="menu-footer-links-container"><ul id="menu-footer-links" class="menu">
+<li id="menu-item-2592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2592"><a href="{{route('ourservices')}}">Our Services</a></li>
+<li id="menu-item-2591" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2591"><a href="{{route('ourprojects')}}">Our Projects</a></li>
+<li id="menu-item-2588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2588"><a href="{{route('aboutus')}}">About Us</a></li>
+<li id="menu-item-2593" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2593"><a href="{{route('ourteam')}}">Our Team</a></li>
+<li id="menu-item-2589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2589"><a href="{{route('contact')}}">Contact Us</a></li>
+<li id="menu-item-2590" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2590"><a href="{{route('faq')}}">FAQ</a></li>
+<li id="menu-item-2587" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2587"><a href="{{route('blog')}}">Blog</a></li>
+</ul></div></section>				</div>
+								<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+							<section id="kyber-recent-posts-2" class="widget widget_kyber_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
+											<li>
+											<div class="kyber-post-image">
+							<img width="150" height="150" src="./../wp-content/uploads/2020/04/img-0cvf3-2-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
+										<div class="kyber-post-content">
+						<a href="{{route('commercial')}}">Commercial project With Perfection &#038; creative design</a>
+													<span class="kyber-post-date">April 6, 2020</span>
+											</div>
+				</li>
+											<li>
+											<div class="kyber-post-image">
+							<img width="150" height="150" src="./../wp-content/uploads/2020/04/img-03-rt-tu1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
+										<div class="kyber-post-content">
+						<a href="{{route('construction')}}">We are best Construction Plan business solution</a>
+													<span class="kyber-post-date">April 6, 2020</span>
+											</div>
+				</li>
+											<li>
+											<div class="kyber-post-image">
+							<img width="150" height="150" src="./../wp-content/uploads/2020/04/img-0ftyh3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
+										<div class="kyber-post-content">
+						<a href="{{route('interior')}}">Low cost interior designing Project Planning</a>
+													<span class="kyber-post-date">April 6, 2020</span>
+											</div>
+				</li>
+					</ul>
+		</section>				</div>
+								<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+					<section id="text-3" class="widget widget_text"><h2 class="widget-title">Get In Touch</h2>			<div class="textwidget">
+<ul class="widget_contact">
+<li>
+<i class="fa fa-map-marker"></i>Suit E01b, The statement Complex, Plot 1002, First Avenue, Central Business District, Abuja.</li>
+<li>
+<i class="fa fa-envelope-o"></i>Email : <a href="mailto:contact@geoprecisegroup.com">contact@geoprecisegroup.com</a>
+</li>
+<li>
+<i class="fa fa-phone"></i>Phone : +234 806 054 5860<br>
+Support : +234 906 297 2785</li>
+</ul>
+</div>
+		</section>				</div>
+						</div>
+	</div>
+</div>
+		<div class="kyber-copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 footer-left">
+						Copyright Geoprecise Services Ltd.					</div>
+					<div class="col-lg-6 col-md-6 footer-right">
+						<ul class="social-icons">
+ 	<li>
+ 	<li>
+ 	<li>
+ 	<li>
+</ul>					</div>
+				</div>
+			</div>
+		</div>
+	</footer><!-- #colophon -->
+</div>
+<!-- #page -->
+
+
+		<script>
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+		<script type="text/html" id="wpb-modifications"></script><link rel="stylesheet" id="kyber-vc-custom-heading-css" href="./../wp-content/plugins/kyber-core/assets/css/shortcodes/custom-heading.css?ver=6.0" type="text/css" media="all">
+<link rel="stylesheet" id="kyber-vc-infobox-css" href="./../wp-content/plugins/kyber-core/assets/css/shortcodes/infobox.css?ver=6.0" type="text/css" media="all">
+<link rel="stylesheet" id="kyber-vc-counter-css" href="./../wp-content/plugins/kyber-core/assets/css/shortcodes/counter.css?ver=6.0" type="text/css" media="all">
+<link rel="stylesheet" id="kyber-vc-team-css" href="./../wp-content/plugins/kyber-core/assets/css/shortcodes/team.css?ver=6.0" type="text/css" media="all">
+<link rel="stylesheet" id="kyber-vc-testimonials-css" href="./../wp-content/plugins/kyber-core/assets/css/shortcodes/testimonials.css?ver=6.0" type="text/css" media="all">
+<link rel="stylesheet" id="kyber-vc-blog-css" href="./../wp-content/plugins/kyber-core/assets/css/shortcodes/blog.css?ver=6.0" type="text/css" media="all">
+<link rel="stylesheet" id="kyber-vc-inline-css-css" href="./../wp-content/uploads/kyber-vc-inline-css/kyber-vc-inline-css.css?ver=220621-154506" type="text/css" media="all">
+<link rel="stylesheet" id="kyber-responsive-style-css" href="./../wp-content/themes/kyber/assets/css/responsive.css?ver=1.0.6" type="text/css" media="all">
+<link rel="stylesheet" id="kyber-color-customizer-css" href="./../wp-content/uploads/kyber-color-customizer/color-customize.css?ver=220316-124542" type="text/css" media="all">
+<link rel="stylesheet" id="rs-plugin-settings-css" href="./../wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.5.14" type="text/css" media="all">
+<style id="rs-plugin-settings-inline-css" type="text/css">#rs-demo-id {}</style>
+<script type="text/javascript" src="./../wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9" id="regenerator-runtime-js"></script>
+<script type="text/javascript" src="./../wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":".\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./../wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.6" id="contact-form-7-js"></script>
+<script type="text/javascript" src="./../wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.5.14" defer async id="tp-tools-js"></script>
+<script type="text/javascript" src="./../wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.5.14" defer async id="revmin-js"></script>
+<script type="text/javascript" src="./../wp-content/themes/kyber/assets/js/bootstrap.min.js?ver=4.0.0" id="bootstrap-js"></script>
+<script type="text/javascript" src="./../wp-content/themes/kyber/assets/js/popper.min.js?ver=1.0.6" id="popper-js"></script>
+<script type="text/javascript" src="./../wp-content/themes/kyber/assets/js/owl.carousel.min.js?ver=2.3.4" id="owl-carousel-js"></script>
+<script type="text/javascript" src="./../wp-content/themes/kyber/assets/js/magnific-popup.js?ver=1.1.0" id="magnific-popup-js"></script>
+<script type="text/javascript" src="./../wp-content/themes/kyber/assets/js/skip-link-focus-fix.js?ver=1.0.6" id="kyber-skip-link-focus-fix-js"></script>
+<script type="text/javascript" src="./../wp-content/themes/kyber/assets/js/custom.js?ver=1.0.6" id="kyber-custom-js"></script>
+<script type="text/javascript" src="./../wp-content/plugins/kyber-core/assets/js/shortcodes.js?ver=6.0" id="kyber-shortcodes-js"></script>
+<script type="text/javascript" src="./../wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=6.8.0" id="wpb_composer_front_js-js"></script>
+
 </body>
 
 

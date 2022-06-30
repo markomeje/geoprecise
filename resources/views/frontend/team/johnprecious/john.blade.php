@@ -1,18 +1,7 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+@include('layout.header')
 
-	<title>Buildings &#8211; GeoPrecise</title>
-<meta name="robots" content="max-image-preview:large">
-<link rel="dns-prefetch" href="//fonts.googleapis.com">
-<link rel="dns-prefetch" href="//s.w.org">
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-<link rel="alternate" type="application/rss+xml" title="GeoPrecise &raquo; Feed" href="./../../feed/index.html">
-<link rel="alternate" type="application/rss+xml" title="GeoPrecise &raquo; Comments Feed" href="./../../comments/feed/index.html">
-<link rel="alternate" type="application/rss+xml" title="GeoPrecise &raquo; Buildings Category Feed" href="./feed/index.html">
+<title>Engr. Nnam John Precious &#8211; GeoPrecise</title>
+
 <script type="text/javascript">
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":".\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0"}};
 /*! This file is auto-generated */
@@ -43,34 +32,7 @@ img.emoji {
     )!important}.wp-block-button__link.has-black-background-color{border-color:var(--wp--preset--color--black,#000)}.wp-block-button__link.has-white-background-color{border-color:var(--wp--preset--color--white,#fff)}.has-ext-small-font-size{font-size:var(--wp--preset--font-size--ext-small)!important}.has-ext-medium-font-size{font-size:var(--wp--preset--font-size--ext-medium)!important}.has-ext-large-font-size{font-size:var(--wp--preset--font-size--ext-large)!important;line-height:1.2}.has-ext-x-large-font-size{font-size:var(--wp--preset--font-size--ext-x-large)!important;line-height:1}.has-ext-xx-large-font-size{font-size:var(--wp--preset--font-size--ext-xx-large)!important;line-height:1}.has-ext-x-large-font-size:not([style*=line-height]),.has-ext-xx-large-font-size:not([style*=line-height]){line-height:1.1}.ext .wp-block-group>*{margin-bottom:0;margin-top:0}.ext .wp-block-group>*+*{margin-bottom:0}.ext .wp-block-group>*+*,.ext h2{margin-top:var(--wp--style--block-gap,1.75rem)}.ext h2{margin-bottom:var(--wp--style--block-gap,1.75rem)}.has-ext-x-large-font-size+h3,.has-ext-x-large-font-size+p{margin-top:.5rem}.ext .wp-block-buttons>.wp-block-button.wp-block-button__width-25{min-width:12rem;width:calc(25% - var(--wp--style--block-gap, .5em)*.75)}.ext .ext-grid>[class*=_inner-container]{display:grid}.ext>[class*=_inner-container]>.ext-grid:not([class*=columns]),.ext>[class*=_inner-container]>.wp-block>.ext-grid:not([class*=columns]){display:initial!important}.ext .ext-grid-cols-1>[class*=_inner-container]{grid-template-columns:repeat(1,minmax(0,1fr))!important}.ext .ext-grid-cols-2>[class*=_inner-container]{grid-template-columns:repeat(2,minmax(0,1fr))!important}.ext .ext-grid-cols-3>[class*=_inner-container]{grid-template-columns:repeat(3,minmax(0,1fr))!important}.ext .ext-grid-cols-4>[class*=_inner-container]{grid-template-columns:repeat(4,minmax(0,1fr))!important}.ext .ext-grid-cols-5>[class*=_inner-container]{grid-template-columns:repeat(5,minmax(0,1fr))!important}.ext .ext-grid-cols-6>[class*=_inner-container]{grid-template-columns:repeat(6,minmax(0,1fr))!important}.ext .ext-grid-cols-7>[class*=_inner-container]{grid-template-columns:repeat(7,minmax(0,1fr))!important}.ext .ext-grid-cols-8>[class*=_inner-container]{grid-template-columns:repeat(8,minmax(0,1fr))!important}.ext .ext-grid-cols-9>[class*=_inner-container]{grid-template-columns:repeat(9,minmax(0,1fr))!important}.ext .ext-grid-cols-10>[class*=_inner-container]{grid-template-columns:repeat(10,minmax(0,1fr))!important}.ext .ext-grid-cols-11>[class*=_inner-container]{grid-template-columns:repeat(11,minmax(0,1fr))!important}.ext .ext-grid-cols-12>[class*=_inner-container]{grid-template-columns:repeat(12,minmax(0,1fr))!important}.ext .ext-grid-cols-13>[class*=_inner-container]{grid-template-columns:repeat(13,minmax(0,1fr))!important}.ext .ext-grid-cols-none>[class*=_inner-container]{grid-template-columns:none!important}.ext .ext-grid-rows-1>[class*=_inner-container]{grid-template-rows:repeat(1,minmax(0,1fr))!important}.ext .ext-grid-rows-2>[class*=_inner-container]{grid-template-rows:repeat(2,minmax(0,1fr))!important}.ext .ext-grid-rows-3>[class*=_inner-container]{grid-template-rows:repeat(3,minmax(0,1fr))!important}.ext .ext-grid-rows-4>[class*=_inner-container]{grid-template-rows:repeat(4,minmax(0,1fr))!important}.ext .ext-grid-rows-5>[class*=_inner-container]{grid-template-rows:repeat(5,minmax(0,1fr))!important}.ext .ext-grid-rows-6>[class*=_inner-container]{grid-template-rows:repeat(6,minmax(0,1fr))!important}.ext .ext-grid-rows-none>[class*=_inner-container]{grid-template-rows:none!important}.ext .ext-items-start>[class*=_inner-container]{align-items:flex-start!important}.ext .ext-items-end>[class*=_inner-container]{align-items:flex-end!important}.ext .ext-items-center>[class*=_inner-container]{align-items:center!important}.ext .ext-items-baseline>[class*=_inner-container]{align-items:baseline!important}.ext .ext-items-stretch>[class*=_inner-container]{align-items:stretch!important}.ext.wp-block-group>:last-child{margin-bottom:0}.ext .wp-block-group__inner-container{padding:0!important}.ext.has-background{padding-left:var(--wp--style--block-gap,1.75rem);padding-right:var(--wp--style--block-gap,1.75rem)}.ext [class*=inner-container]>.alignwide [class*=inner-container],.ext [class*=inner-container]>[data-align=wide] [class*=inner-container]{max-width:var(--responsive--alignwide-width,120rem)}.ext [class*=inner-container]>.alignwide [class*=inner-container]>*,.ext [class*=inner-container]>[data-align=wide] [class*=inner-container]>*{max-width:100%!important}.ext .wp-block-image{position:relative;text-align:center}.ext .wp-block-image img{display:inline-block;vertical-align:middle}body{--extendify--spacing--large:var(
         --wp--custom--spacing--large,clamp(2em,8vw,8em)
     );--wp--preset--font-size--ext-small:1rem;--wp--preset--font-size--ext-medium:1.125rem;--wp--preset--font-size--ext-large:clamp(1.65rem,3.5vw,2.15rem);--wp--preset--font-size--ext-x-large:clamp(3rem,6vw,4.75rem);--wp--preset--font-size--ext-xx-large:clamp(3.25rem,7.5vw,5.75rem);--wp--preset--color--black:#000;--wp--preset--color--white:#fff}.ext *{box-sizing:border-box}.block-editor-block-preview__content-iframe .ext [data-type="core/spacer"] .components-resizable-box__container{background:transparent!important}.block-editor-block-preview__content-iframe .ext [data-type="core/spacer"] .block-library-spacer__resize-container:before{display:none!important}.ext .wp-block-group__inner-container figure.wp-block-gallery.alignfull{margin-bottom:unset;margin-top:unset}.ext .alignwide{margin-left:auto!important;margin-right:auto!important}.is-root-container.block-editor-block-list__layout>[data-align=full]:not(:first-of-type)>.ext-my-0,.is-root-container.block-editor-block-list__layout>[data-align=wide]>.ext-my-0:not([style*=margin]){margin-top:calc(var(--wp--style--block-gap, 28px)*-1)!important}.block-editor-block-preview__content-iframe .preview\:min-h-50{min-height:50vw!important}.block-editor-block-preview__content-iframe .preview\:min-h-60{min-height:60vw!important}.block-editor-block-preview__content-iframe .preview\:min-h-70{min-height:70vw!important}.block-editor-block-preview__content-iframe .preview\:min-h-80{min-height:80vw!important}.block-editor-block-preview__content-iframe .preview\:min-h-100{min-height:100vw!important}.ext-mr-0.alignfull:not([style*=margin]):not([style*=margin]){margin-right:0!important}.ext-ml-0:not([style*=margin]):not([style*=margin]){margin-left:0!important}.is-root-container .wp-block[data-align=full]>.ext-mx-0:not([style*=margin]):not([style*=margin]){margin-left:calc(var(--wp--custom--spacing--outer, 0)*1)!important;margin-right:calc(var(--wp--custom--spacing--outer, 0)*1)!important;overflow:hidden;width:unset}@media (min-width:782px){.tablet\:ext-absolute{position:absolute!important}.tablet\:ext-relative{position:relative!important}.tablet\:ext-top-base{top:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-top-lg{top:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--top-base{top:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--top-lg{top:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-right-base{right:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-right-lg{right:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--right-base{right:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--right-lg{right:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-bottom-base{bottom:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-bottom-lg{bottom:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--bottom-base{bottom:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--bottom-lg{bottom:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-left-base{left:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-left-lg{left:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--left-base{left:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--left-lg{left:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-order-1{order:1!important}.tablet\:ext-order-2{order:2!important}.tablet\:ext-m-0:not([style*=margin]){margin:0!important}.tablet\:ext-m-auto:not([style*=margin]){margin:auto!important}.tablet\:ext-m-base:not([style*=margin]){margin:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-m-lg:not([style*=margin]){margin:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--m-base:not([style*=margin]){margin:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--m-lg:not([style*=margin]){margin:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-mx-0:not([style*=margin]){margin-left:0!important;margin-right:0!important}.tablet\:ext-mx-auto:not([style*=margin]){margin-left:auto!important;margin-right:auto!important}.tablet\:ext-mx-base:not([style*=margin]){margin-left:var(--wp--style--block-gap,1.75rem)!important;margin-right:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-mx-lg:not([style*=margin]){margin-left:var(--extendify--spacing--large,3rem)!important;margin-right:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--mx-base:not([style*=margin]){margin-left:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important;margin-right:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--mx-lg:not([style*=margin]){margin-left:calc(var(--extendify--spacing--large, 3rem)*-1)!important;margin-right:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-my-0:not([style*=margin]){margin-bottom:0!important;margin-top:0!important}.tablet\:ext-my-auto:not([style*=margin]){margin-bottom:auto!important;margin-top:auto!important}.tablet\:ext-my-base:not([style*=margin]){margin-bottom:var(--wp--style--block-gap,1.75rem)!important;margin-top:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-my-lg:not([style*=margin]){margin-bottom:var(--extendify--spacing--large,3rem)!important;margin-top:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--my-base:not([style*=margin]){margin-bottom:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important;margin-top:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--my-lg:not([style*=margin]){margin-bottom:calc(var(--extendify--spacing--large, 3rem)*-1)!important;margin-top:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-mt-0:not([style*=margin]){margin-top:0!important}.tablet\:ext-mt-auto:not([style*=margin]){margin-top:auto!important}.tablet\:ext-mt-base:not([style*=margin]){margin-top:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-mt-lg:not([style*=margin]){margin-top:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--mt-base:not([style*=margin]){margin-top:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--mt-lg:not([style*=margin]){margin-top:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-mr-0:not([style*=margin]){margin-right:0!important}.tablet\:ext-mr-auto:not([style*=margin]){margin-right:auto!important}.tablet\:ext-mr-base:not([style*=margin]){margin-right:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-mr-lg:not([style*=margin]){margin-right:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--mr-base:not([style*=margin]){margin-right:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--mr-lg:not([style*=margin]){margin-right:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-mb-0:not([style*=margin]){margin-bottom:0!important}.tablet\:ext-mb-auto:not([style*=margin]){margin-bottom:auto!important}.tablet\:ext-mb-base:not([style*=margin]){margin-bottom:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-mb-lg:not([style*=margin]){margin-bottom:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--mb-base:not([style*=margin]){margin-bottom:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--mb-lg:not([style*=margin]){margin-bottom:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-ml-0:not([style*=margin]){margin-left:0!important}.tablet\:ext-ml-auto:not([style*=margin]){margin-left:auto!important}.tablet\:ext-ml-base:not([style*=margin]){margin-left:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-ml-lg:not([style*=margin]){margin-left:var(--extendify--spacing--large,3rem)!important}.tablet\:ext--ml-base:not([style*=margin]){margin-left:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.tablet\:ext--ml-lg:not([style*=margin]){margin-left:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.tablet\:ext-block{display:block!important}.tablet\:ext-inline-block{display:inline-block!important}.tablet\:ext-inline{display:inline!important}.tablet\:ext-flex{display:flex!important}.tablet\:ext-inline-flex{display:inline-flex!important}.tablet\:ext-grid{display:grid!important}.tablet\:ext-inline-grid{display:inline-grid!important}.tablet\:ext-hidden{display:none!important}.tablet\:ext-w-auto{width:auto!important}.tablet\:ext-w-full{width:100%!important}.tablet\:ext-max-w-full{max-width:100%!important}.tablet\:ext-flex-1{flex:1 1 0%!important}.tablet\:ext-flex-auto{flex:1 1 auto!important}.tablet\:ext-flex-initial{flex:0 1 auto!important}.tablet\:ext-flex-none{flex:none!important}.tablet\:ext-flex-shrink-0{flex-shrink:0!important}.tablet\:ext-flex-shrink{flex-shrink:1!important}.tablet\:ext-flex-grow-0{flex-grow:0!important}.tablet\:ext-flex-grow{flex-grow:1!important}.tablet\:ext-list-none{list-style-type:none!important}.tablet\:ext-grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))!important}.tablet\:ext-grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))!important}.tablet\:ext-grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))!important}.tablet\:ext-grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))!important}.tablet\:ext-grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))!important}.tablet\:ext-grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))!important}.tablet\:ext-grid-cols-7{grid-template-columns:repeat(7,minmax(0,1fr))!important}.tablet\:ext-grid-cols-8{grid-template-columns:repeat(8,minmax(0,1fr))!important}.tablet\:ext-grid-cols-9{grid-template-columns:repeat(9,minmax(0,1fr))!important}.tablet\:ext-grid-cols-10{grid-template-columns:repeat(10,minmax(0,1fr))!important}.tablet\:ext-grid-cols-11{grid-template-columns:repeat(11,minmax(0,1fr))!important}.tablet\:ext-grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))!important}.tablet\:ext-grid-cols-none{grid-template-columns:none!important}.tablet\:ext-flex-row{flex-direction:row!important}.tablet\:ext-flex-row-reverse{flex-direction:row-reverse!important}.tablet\:ext-flex-col{flex-direction:column!important}.tablet\:ext-flex-col-reverse{flex-direction:column-reverse!important}.tablet\:ext-flex-wrap{flex-wrap:wrap!important}.tablet\:ext-flex-wrap-reverse{flex-wrap:wrap-reverse!important}.tablet\:ext-flex-nowrap{flex-wrap:nowrap!important}.tablet\:ext-items-start{align-items:flex-start!important}.tablet\:ext-items-end{align-items:flex-end!important}.tablet\:ext-items-center{align-items:center!important}.tablet\:ext-items-baseline{align-items:baseline!important}.tablet\:ext-items-stretch{align-items:stretch!important}.tablet\:ext-justify-start{justify-content:flex-start!important}.tablet\:ext-justify-end{justify-content:flex-end!important}.tablet\:ext-justify-center{justify-content:center!important}.tablet\:ext-justify-between{justify-content:space-between!important}.tablet\:ext-justify-around{justify-content:space-around!important}.tablet\:ext-justify-evenly{justify-content:space-evenly!important}.tablet\:ext-justify-items-start{justify-items:start!important}.tablet\:ext-justify-items-end{justify-items:end!important}.tablet\:ext-justify-items-center{justify-items:center!important}.tablet\:ext-justify-items-stretch{justify-items:stretch!important}.tablet\:ext-justify-self-auto{justify-self:auto!important}.tablet\:ext-justify-self-start{justify-self:start!important}.tablet\:ext-justify-self-end{justify-self:end!important}.tablet\:ext-justify-self-center{justify-self:center!important}.tablet\:ext-justify-self-stretch{justify-self:stretch!important}.tablet\:ext-p-0:not([style*=padding]){padding:0!important}.tablet\:ext-p-base:not([style*=padding]){padding:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-p-lg:not([style*=padding]){padding:var(--extendify--spacing--large,3rem)!important}.tablet\:ext-px-0:not([style*=padding]){padding-left:0!important;padding-right:0!important}.tablet\:ext-px-base:not([style*=padding]){padding-left:var(--wp--style--block-gap,1.75rem)!important;padding-right:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-px-lg:not([style*=padding]){padding-left:var(--extendify--spacing--large,3rem)!important;padding-right:var(--extendify--spacing--large,3rem)!important}.tablet\:ext-py-0:not([style*=padding]){padding-bottom:0!important;padding-top:0!important}.tablet\:ext-py-base:not([style*=padding]){padding-bottom:var(--wp--style--block-gap,1.75rem)!important;padding-top:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-py-lg:not([style*=padding]){padding-bottom:var(--extendify--spacing--large,3rem)!important;padding-top:var(--extendify--spacing--large,3rem)!important}.tablet\:ext-pt-0:not([style*=padding]){padding-top:0!important}.tablet\:ext-pt-base:not([style*=padding]){padding-top:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-pt-lg:not([style*=padding]){padding-top:var(--extendify--spacing--large,3rem)!important}.tablet\:ext-pr-0:not([style*=padding]){padding-right:0!important}.tablet\:ext-pr-base:not([style*=padding]){padding-right:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-pr-lg:not([style*=padding]){padding-right:var(--extendify--spacing--large,3rem)!important}.tablet\:ext-pb-0:not([style*=padding]){padding-bottom:0!important}.tablet\:ext-pb-base:not([style*=padding]){padding-bottom:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-pb-lg:not([style*=padding]){padding-bottom:var(--extendify--spacing--large,3rem)!important}.tablet\:ext-pl-0:not([style*=padding]){padding-left:0!important}.tablet\:ext-pl-base:not([style*=padding]){padding-left:var(--wp--style--block-gap,1.75rem)!important}.tablet\:ext-pl-lg:not([style*=padding]){padding-left:var(--extendify--spacing--large,3rem)!important}.tablet\:ext-text-left{text-align:left!important}.tablet\:ext-text-center{text-align:center!important}.tablet\:ext-text-right{text-align:right!important}}@media (min-width:1080px){.desktop\:ext-absolute{position:absolute!important}.desktop\:ext-relative{position:relative!important}.desktop\:ext-top-base{top:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-top-lg{top:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--top-base{top:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--top-lg{top:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-right-base{right:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-right-lg{right:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--right-base{right:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--right-lg{right:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-bottom-base{bottom:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-bottom-lg{bottom:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--bottom-base{bottom:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--bottom-lg{bottom:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-left-base{left:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-left-lg{left:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--left-base{left:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--left-lg{left:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-order-1{order:1!important}.desktop\:ext-order-2{order:2!important}.desktop\:ext-m-0:not([style*=margin]){margin:0!important}.desktop\:ext-m-auto:not([style*=margin]){margin:auto!important}.desktop\:ext-m-base:not([style*=margin]){margin:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-m-lg:not([style*=margin]){margin:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--m-base:not([style*=margin]){margin:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--m-lg:not([style*=margin]){margin:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-mx-0:not([style*=margin]){margin-left:0!important;margin-right:0!important}.desktop\:ext-mx-auto:not([style*=margin]){margin-left:auto!important;margin-right:auto!important}.desktop\:ext-mx-base:not([style*=margin]){margin-left:var(--wp--style--block-gap,1.75rem)!important;margin-right:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-mx-lg:not([style*=margin]){margin-left:var(--extendify--spacing--large,3rem)!important;margin-right:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--mx-base:not([style*=margin]){margin-left:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important;margin-right:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--mx-lg:not([style*=margin]){margin-left:calc(var(--extendify--spacing--large, 3rem)*-1)!important;margin-right:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-my-0:not([style*=margin]){margin-bottom:0!important;margin-top:0!important}.desktop\:ext-my-auto:not([style*=margin]){margin-bottom:auto!important;margin-top:auto!important}.desktop\:ext-my-base:not([style*=margin]){margin-bottom:var(--wp--style--block-gap,1.75rem)!important;margin-top:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-my-lg:not([style*=margin]){margin-bottom:var(--extendify--spacing--large,3rem)!important;margin-top:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--my-base:not([style*=margin]){margin-bottom:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important;margin-top:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--my-lg:not([style*=margin]){margin-bottom:calc(var(--extendify--spacing--large, 3rem)*-1)!important;margin-top:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-mt-0:not([style*=margin]){margin-top:0!important}.desktop\:ext-mt-auto:not([style*=margin]){margin-top:auto!important}.desktop\:ext-mt-base:not([style*=margin]){margin-top:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-mt-lg:not([style*=margin]){margin-top:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--mt-base:not([style*=margin]){margin-top:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--mt-lg:not([style*=margin]){margin-top:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-mr-0:not([style*=margin]){margin-right:0!important}.desktop\:ext-mr-auto:not([style*=margin]){margin-right:auto!important}.desktop\:ext-mr-base:not([style*=margin]){margin-right:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-mr-lg:not([style*=margin]){margin-right:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--mr-base:not([style*=margin]){margin-right:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--mr-lg:not([style*=margin]){margin-right:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-mb-0:not([style*=margin]){margin-bottom:0!important}.desktop\:ext-mb-auto:not([style*=margin]){margin-bottom:auto!important}.desktop\:ext-mb-base:not([style*=margin]){margin-bottom:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-mb-lg:not([style*=margin]){margin-bottom:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--mb-base:not([style*=margin]){margin-bottom:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--mb-lg:not([style*=margin]){margin-bottom:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-ml-0:not([style*=margin]){margin-left:0!important}.desktop\:ext-ml-auto:not([style*=margin]){margin-left:auto!important}.desktop\:ext-ml-base:not([style*=margin]){margin-left:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-ml-lg:not([style*=margin]){margin-left:var(--extendify--spacing--large,3rem)!important}.desktop\:ext--ml-base:not([style*=margin]){margin-left:calc(var(--wp--style--block-gap, 1.75rem)*-1)!important}.desktop\:ext--ml-lg:not([style*=margin]){margin-left:calc(var(--extendify--spacing--large, 3rem)*-1)!important}.desktop\:ext-block{display:block!important}.desktop\:ext-inline-block{display:inline-block!important}.desktop\:ext-inline{display:inline!important}.desktop\:ext-flex{display:flex!important}.desktop\:ext-inline-flex{display:inline-flex!important}.desktop\:ext-grid{display:grid!important}.desktop\:ext-inline-grid{display:inline-grid!important}.desktop\:ext-hidden{display:none!important}.desktop\:ext-w-auto{width:auto!important}.desktop\:ext-w-full{width:100%!important}.desktop\:ext-max-w-full{max-width:100%!important}.desktop\:ext-flex-1{flex:1 1 0%!important}.desktop\:ext-flex-auto{flex:1 1 auto!important}.desktop\:ext-flex-initial{flex:0 1 auto!important}.desktop\:ext-flex-none{flex:none!important}.desktop\:ext-flex-shrink-0{flex-shrink:0!important}.desktop\:ext-flex-shrink{flex-shrink:1!important}.desktop\:ext-flex-grow-0{flex-grow:0!important}.desktop\:ext-flex-grow{flex-grow:1!important}.desktop\:ext-list-none{list-style-type:none!important}.desktop\:ext-grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))!important}.desktop\:ext-grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))!important}.desktop\:ext-grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))!important}.desktop\:ext-grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))!important}.desktop\:ext-grid-cols-5{grid-template-columns:repeat(5,minmax(0,1fr))!important}.desktop\:ext-grid-cols-6{grid-template-columns:repeat(6,minmax(0,1fr))!important}.desktop\:ext-grid-cols-7{grid-template-columns:repeat(7,minmax(0,1fr))!important}.desktop\:ext-grid-cols-8{grid-template-columns:repeat(8,minmax(0,1fr))!important}.desktop\:ext-grid-cols-9{grid-template-columns:repeat(9,minmax(0,1fr))!important}.desktop\:ext-grid-cols-10{grid-template-columns:repeat(10,minmax(0,1fr))!important}.desktop\:ext-grid-cols-11{grid-template-columns:repeat(11,minmax(0,1fr))!important}.desktop\:ext-grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))!important}.desktop\:ext-grid-cols-none{grid-template-columns:none!important}.desktop\:ext-flex-row{flex-direction:row!important}.desktop\:ext-flex-row-reverse{flex-direction:row-reverse!important}.desktop\:ext-flex-col{flex-direction:column!important}.desktop\:ext-flex-col-reverse{flex-direction:column-reverse!important}.desktop\:ext-flex-wrap{flex-wrap:wrap!important}.desktop\:ext-flex-wrap-reverse{flex-wrap:wrap-reverse!important}.desktop\:ext-flex-nowrap{flex-wrap:nowrap!important}.desktop\:ext-items-start{align-items:flex-start!important}.desktop\:ext-items-end{align-items:flex-end!important}.desktop\:ext-items-center{align-items:center!important}.desktop\:ext-items-baseline{align-items:baseline!important}.desktop\:ext-items-stretch{align-items:stretch!important}.desktop\:ext-justify-start{justify-content:flex-start!important}.desktop\:ext-justify-end{justify-content:flex-end!important}.desktop\:ext-justify-center{justify-content:center!important}.desktop\:ext-justify-between{justify-content:space-between!important}.desktop\:ext-justify-around{justify-content:space-around!important}.desktop\:ext-justify-evenly{justify-content:space-evenly!important}.desktop\:ext-justify-items-start{justify-items:start!important}.desktop\:ext-justify-items-end{justify-items:end!important}.desktop\:ext-justify-items-center{justify-items:center!important}.desktop\:ext-justify-items-stretch{justify-items:stretch!important}.desktop\:ext-justify-self-auto{justify-self:auto!important}.desktop\:ext-justify-self-start{justify-self:start!important}.desktop\:ext-justify-self-end{justify-self:end!important}.desktop\:ext-justify-self-center{justify-self:center!important}.desktop\:ext-justify-self-stretch{justify-self:stretch!important}.desktop\:ext-p-0:not([style*=padding]){padding:0!important}.desktop\:ext-p-base:not([style*=padding]){padding:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-p-lg:not([style*=padding]){padding:var(--extendify--spacing--large,3rem)!important}.desktop\:ext-px-0:not([style*=padding]){padding-left:0!important;padding-right:0!important}.desktop\:ext-px-base:not([style*=padding]){padding-left:var(--wp--style--block-gap,1.75rem)!important;padding-right:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-px-lg:not([style*=padding]){padding-left:var(--extendify--spacing--large,3rem)!important;padding-right:var(--extendify--spacing--large,3rem)!important}.desktop\:ext-py-0:not([style*=padding]){padding-bottom:0!important;padding-top:0!important}.desktop\:ext-py-base:not([style*=padding]){padding-bottom:var(--wp--style--block-gap,1.75rem)!important;padding-top:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-py-lg:not([style*=padding]){padding-bottom:var(--extendify--spacing--large,3rem)!important;padding-top:var(--extendify--spacing--large,3rem)!important}.desktop\:ext-pt-0:not([style*=padding]){padding-top:0!important}.desktop\:ext-pt-base:not([style*=padding]){padding-top:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-pt-lg:not([style*=padding]){padding-top:var(--extendify--spacing--large,3rem)!important}.desktop\:ext-pr-0:not([style*=padding]){padding-right:0!important}.desktop\:ext-pr-base:not([style*=padding]){padding-right:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-pr-lg:not([style*=padding]){padding-right:var(--extendify--spacing--large,3rem)!important}.desktop\:ext-pb-0:not([style*=padding]){padding-bottom:0!important}.desktop\:ext-pb-base:not([style*=padding]){padding-bottom:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-pb-lg:not([style*=padding]){padding-bottom:var(--extendify--spacing--large,3rem)!important}.desktop\:ext-pl-0:not([style*=padding]){padding-left:0!important}.desktop\:ext-pl-base:not([style*=padding]){padding-left:var(--wp--style--block-gap,1.75rem)!important}.desktop\:ext-pl-lg:not([style*=padding]){padding-left:var(--extendify--spacing--large,3rem)!important}.desktop\:ext-text-left{text-align:left!important}.desktop\:ext-text-center{text-align:center!important}.desktop\:ext-text-right{text-align:right!important}}</style>
-<link rel="stylesheet" id="contact-form-7-css" href="./../../wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.6" type="text/css" media="all">
-<link rel="stylesheet" id="bootstrap-css" href="./../../wp-content/themes/kyber/assets/css/bootstrap.min.css?ver=4.0.0" type="text/css" media="all">
-<link rel="stylesheet" id="owl-carousel-css" href="./../../wp-content/themes/kyber/assets/css/owl.carousel.min.css?ver=2.3.4" type="text/css" media="all">
-<link rel="stylesheet" id="fontawesome-shims-css" href="./../../wp-content/themes/kyber/assets/fonts/css/v4-shims.min.css?ver=5.11.2" type="text/css" media="all">
-<link rel="stylesheet" id="fontawesome-css" href="./../../wp-content/themes/kyber/assets/fonts/css/all.min.css?ver=5.11.2" type="text/css" media="all">
-<link rel="stylesheet" id="flaticon-css" href="./../../wp-content/themes/kyber/assets/fonts/flaticon/flaticon.css?ver=1.0.6" type="text/css" media="all">
-<link rel="stylesheet" id="magnific-popup-css" href="./../../wp-content/themes/kyber/assets/css/magnific-popup.css?ver=1.1.0" type="text/css" media="all">
-<link rel="stylesheet" id="slicknav-css" href="./../../wp-content/themes/kyber/assets/css/slicknav.min.css?ver=1.0.10" type="text/css" media="all">
-<link rel="stylesheet" id="kyber-style-css" href="./../../wp-content/themes/kyber/style.css?ver=6.0" type="text/css" media="all">
-<link rel="stylesheet" id="kyber-theme-style-css" href="./../../wp-content/themes/kyber/assets/css/theme.css?ver=1.0.6" type="text/css" media="all">
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Rajdhani:700&#038;display=swap&#038;ver=1647434742">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani:700&#038;display=swap&#038;ver=1647434742" media="print" onload="this.media='all'">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani:700&#038;display=swap&#038;ver=1647434742"></noscript>
-<script type="text/javascript" src="./../../wp-includes/js/jquery/jquery.min.js?ver=3.6.0" id="jquery-core-js"></script>
-<script type="text/javascript" src="./../../wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
-<script type="text/javascript" src="./../../wp-content/themes/kyber/assets/js/slicknav.min.js?ver=1.0.10" id="slicknav-js"></script>
-<link rel="https://api.w.org/" href="./../../wp-json/index.html">
-<link rel="alternate" type="application/json" href="./../../wp-json/wp/v2/categories/2/index.html">
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../../xmlrpc.php?rsd">
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./../../wp-includes/wlwmanifest.xml"> 
-<meta name="generator" content="WordPress 6.0">
-<meta name="generator" content="Redux 4.3.14">
-<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
-<meta name="generator" content="Powered by Slider Revolution 6.5.14 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
-<link rel="icon" href="./../../wp-content/uploads/2022/02/cropped-favicon-32x32.png" sizes="32x32">
-<link rel="icon" href="./../../wp-content/uploads/2022/02/cropped-favicon-192x192.png" sizes="192x192">
-<link rel="apple-touch-icon" href="./../../wp-content/uploads/2022/02/cropped-favicon-180x180.png">
-<meta name="msapplication-TileImage" content="./wp-content/uploads/2022/02/cropped-favicon-270x270.png">
+
 <script>function setREVStartSize(e){
 			//window.requestAnimationFrame(function() {
 				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
@@ -149,114 +111,15 @@ h3 .kyber-infobox-title {
     font-size: 22px;
 }</style>
 		<style id="kyber_options-dynamic-css" title="dynamic-css" class="redux-options-output">.kyber-page-title{background-repeat:no-repeat;background-image:url('./../../wp-content/uploads/2022/03/Untitled-3se1-1.jpg');background-size:cover;}.site-footer{background-image:url('./../../wp-content/uploads/2020/04/footer-bg1.jpg');background-size:cover;}.fof-page-container{background-color:transparent;background-repeat:no-repeat;background-position:right center;background-image:url('./../../wp-content/uploads/2020/04/404-bg.jpg');background-size:cover;}</style>
+<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1588152212175{padding-top: 40px !important;}.vc_custom_1586789820836{margin-top: 40px !important;}.vc_custom_1586865188676{margin-top: 40px !important;padding-top: 40px !important;}@media (max-width: 767px) {.vc_custom_1586865188678{margin-top: 0px !important;}}</style>
 <noscript><style>.wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
 </head>
 
-<body class="archive category category-buildings category-2 hfeed wpb-js-composer js-comp-ver-6.8.0 vc_responsive">
+<body class="team-template-default single single-team postid-544 wpb-js-composer js-comp-ver-6.8.0 vc_responsive">
 
 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
-	<header id="masthead" class="site-header-container header-layout-2">
-	
-<div class="site-header">
-	<div class="container site-header-top">
-		<div class="d-flex align-items-center">
-			<div class="site-logo">
-	<a href="./../../index.html" rel="home">
-		<img class="img-fluid" src="./../../wp-content/uploads/2022/02/logo-geop-1.png" alt="GeoPrecise">
-	</a>
-</div>
-<div class="kyber-header-button-container">
-	<div class="kyber-header-button">
-		<a class="kyber-header-button" href="./../../contact-us-1/index.html" title="Request a Quote">Request a Quote</a>
-	</div>
-</div>
-<div class="contact-info">
-			<div class="contact-phone contact-item d-flex align-items-center">
-			<i class="flaticon-call skincolor"></i>
-			<div class="contact-list">
-				<span class="contact-label">Call Now</span>
-				<span class="contact-value">
-					<a href="tel:+2348060545860">+234 806 054 5860</a>
-				</span>
-			</div>
-		</div>
-				<div class="contact-email contact-item d-flex align-items-center">
-			<i class="flaticon-email-1 skincolor"></i>
-			<div class="contact-list">
-				<span class="contact-label">Email</span>
-				<span class="contact-value">
-					<a href="mailto:contact@geoprecisegroup.com">contact@geoprecisegroup.com</a>
-				</span>
-			</div>
-		</div>
-		</div>
-			<div id="site-navigation-mobile">
-			</div>
-		</div>
-	</div>
-	<div class="header-stickable-wrap">	
-		<div class="header-stickable">
-			<div class="kyber-bg-color-secondary">
-				<div class="container">
-					<div class="site-header-bottom">
-						<div class="header-menu-area-inner d-flex align-items-center justify-content-between">
-							<nav id="site-navigation" class="main-navigation">
-								<div class="menu-menu-1-container"><ul id="primary-menu" class="menu">
-<li id="menu-item-2305" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2305"><a href="./../../index.html">Home</a></li>
-<li id="menu-item-2303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2303">
-<a href="./../../our-services/index.html">Our Services</a>
-<ul class="sub-menu">
-	<li id="menu-item-2311" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2311"><a href="./../../service/hydrographic-survey/index.html">Hydrographic Survey</a></li>
-	<li id="menu-item-2312" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2312"><a href="./../../service/cadastral-land-survey/index.html">Cadastral &#038; Land Survey</a></li>
-	<li id="menu-item-2313" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2313"><a href="./../../service/engineering-surveying/index.html">Engineering Surveying</a></li>
-	<li id="menu-item-2314" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2314"><a href="./../../service/remote-sensing/index.html">Remote Sensing</a></li>
-	<li id="menu-item-2315" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2315"><a href="./../../service/highway-road/index.html">Highway &#038; Road</a></li>
-	<li id="menu-item-2316" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2316"><a href="./../../service/aerial-data-collection/index.html">Aerial Data Collection</a></li>
-	<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2318"><a href="./../../service/gis-mapping/index.html">GIS &#038; Mapping</a></li>
-</ul>
-</li>
-<li id="menu-item-2319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2319"><a href="./../../our-projects/index.html">Projects</a></li>
-<li id="menu-item-2321" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-2321"><a href="./../../blog-classic/index.html">Blog</a></li>
-<li id="menu-item-2323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2323">
-<a href="./../../contact-us-1/index.html">Contact Us</a>
-<ul class="sub-menu">
-	<li id="menu-item-2307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2307"><a href="./../../faq/index.html">FAQ</a></li>
-</ul>
-</li>
-<li id="menu-item-2324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2324">
-<a href="./../../about-us/index.html">About Us</a>
-<ul class="sub-menu">
-	<li id="menu-item-2308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2308"><a href="./../../our-team/index.html">Our Team</a></li>
-</ul>
-</li>
-</ul></div>							</nav> 
-							<div class="header-right-side">
-								<div class="social-info-wrapper">
-	<ul class="social-info">
-				<li class="social-facebook">
-				<a class="social-icon" target="_blank" href="https://facebook.com/geoprecise1" rel="nofollow"><i class="fab fa-facebook"></i></a>
-			</li>
-						<li class="social-facebook">
-				<a class="social-icon" target="_blank" href="https://twitter.com/geoprecise1" rel="nofollow"><i class="fab fa-twitter"></i></a>
-			</li>
-						<li class="social-facebook">
-				<a class="social-icon" target="_blank" href="https://www.instagram.com/geoprecise1" rel="nofollow"><i class="fab fa-instagram"></i></a>
-			</li>
-				</ul>
-</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-</header>
+@include('layout.navbar')
 
 
 	<div id="content" class="site-content">
@@ -266,10 +129,10 @@ h3 .kyber-infobox-title {
 		<div class="row">
 			<div class="col-md-12">			
 				<h1 class="page-title">
-					Category: <span>Buildings</span>				</h1>
+					Engr. Nnam John Precious				</h1>
 									<div class="page-breadcrumbs">
 					<div class="breadcrumb">
-<a href="./../../index.html">Home</a> > <span class="current">Category: Buildings</span>
+<a href="{{route('home')}}">Home</a> > <span class="kyber-readcrumb"><a href="{{route('team')}}">Team Member</a></span> > <span class="current">Engr. Nnam John Precious</span>
 </div>					</div>
 								</div>				
 		</div>
@@ -277,440 +140,209 @@ h3 .kyber-infobox-title {
 </div>
 <div class="container">
 	<div class="row">
-		<div id="primary" class="content-area col-sm-12 col-md-12 col-lg-8 col-xl-9">
-			<main id="main" class="site-main">
-							<header class="page-header">
-									</header><!-- .page-header -->
-
-				
-<article id="post-741" class="post-741 post type-post status-publish format-standard has-post-thumbnail hentry category-buildings tag-design">
-	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="./../../commercial-project-with-perfection-creative-design/index.html" aria-hidden="true" tabindex="-1">
-				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/04/img-0cvf3-2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Commercial project With Perfection &#038; creative design" srcset="./../../wp-content/uploads/2020/04/img-0cvf3-2.jpg 1200w, ./../../wp-content/uploads/2020/04/img-0cvf3-2-300x250.jpg 300w, ./../../wp-content/uploads/2020/04/img-0cvf3-2-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/04/img-0cvf3-2-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
-				
-	<div class="kyber-blog-classic-inner">
-		<header class="entry-header">
-							<div class="entry-meta">
-						
-		<span class="posted-on"><a href="./../../2020/04/06/index.html" rel="bookmark">
-			<time class="entry-date published updated" datetime="2020-04-06T04:14:17+00:00">
-			06			<span>Apr</span></time></a>
-		</span>
-						</div>
-<!-- .entry-meta -->
-						<h2 class="entry-title"><a href="./../../commercial-project-with-perfection-creative-design/index.html" rel="bookmark">Commercial project With Perfection &#038; creative design</a></h2>		</header><!-- .entry-header -->
-
-		<div class="entry-content">
-			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
-		</div>
-<!-- .entry-content -->	  
-	<footer class="entry-footer">
-				<div class="entry-meta-footer">
-			<div class="entry-meta-container">
-				<span class="author vcard">
-					<i class="fas fa-user"></i>
-					<a class="url fn n" href="./../../author/geopadmin/index.html">
-						geopadmin					</a>
-				</span>
-										<span class="categories-list">
-							<i class="far fa-folder-open"></i>
-							<a href="./index.html" rel="category tag">Buildings</a>	
-						</span>
-												<span class="tag-list">
-							<i class="fas fa-tags"></i>
-							<a href="./../../tag/design/index.html" rel="tag">Design</a>	
-						</span>
-												<span class="meta-comment">
-							<i class="far fa-comment"></i>
-							<a href="./../../commercial-project-with-perfection-creative-design/index.html#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
-									</div>
-								<div class="social-icon-share">
-						<a href="javascript:void(0)" class="social-share-button">
-							<i class="fas fa-share-alt mr-1"></i>
-						</a>
-						<ul class="social-share-icons">
-															<li class="social-share-icon">
-									<a href="https://www.facebook.com/sharer/sharer.php?u=./commercial-project-with-perfection-creative-design/" class="icon-link" target="popup" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=./commercial-project-with-perfection-creative-design/','popup','width=600,height=600'); return false;">
-										<i class="fab fa-facebook-f"></i>
-									</a>
-								</li>
-																<li class="social-share-icon">
-									<a href="http://twitter.com/intent/tweet?text=Commercial%20project%20With%20Perfection%20&#038;%20creative%20design&#038;./commercial-project-with-perfection-creative-design/" class="icon-link" target="popup" onclick="window.open('http://twitter.com/intent/tweet?text=Commercial%20project%20With%20Perfection%20&#038;%20creative%20design&#038;./commercial-project-with-perfection-creative-design/','popup','width=600,height=600'); return false;">
-										<i class="fab fa-twitter"></i>
-									</a>
-								</li>
-																<li class="social-share-icon">
-									<a href="https://www.linkedin.com/shareArticle?mini=true&#038;url=./commercial-project-with-perfection-creative-design/&#038;title=Commercial%20project%20With%20Perfection%20&#038;%20creative%20design&#038;summary=It%20is%20a%20long%20established%20fact%20that%20a%20reader%20will%20be%20distracted%20by%20the%20readable%20content%20of%20a%20page%20when%20looking%20at%20its%20layout.%20The%20point%20of%20using%20Lorem%20Ipsum%20is%20that%20it%20has%20a%20more-or-less%20normal%20distribution%20of%20letters,%20as%20opposed%20to%20using%20&#8216;Content%20here,%20content%20here&#8217;,%20making%20it%20look%20like%20readable%20English.%20Many%20%5B&hellip;%5D" class="icon-link" target="popup" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&#038;url=./commercial-project-with-perfection-creative-design/&#038;title=Commercial%20project%20With%20Perfection%20&#038;%20creative%20design&#038;summary=It%20is%20a%20long%20established%20fact%20that%20a%20reader%20will%20be%20distracted%20by%20the%20readable%20content%20of%20a%20page%20when%20looking%20at%20its%20layout.%20The%20point%20of%20using%20Lorem%20Ipsum%20is%20that%20it%20has%20a%20more-or-less%20normal%20distribution%20of%20letters,%20as%20opposed%20to%20using%20&#8216;Content%20here,%20content%20here&#8217;,%20making%20it%20look%20like%20readable%20English.%20Many%20%5B&hellip;%5D','popup','width=600,height=600'); return false;">
-										<i class="fab fa-linkedin-in"></i>
-									</a>
-								</li>
-																<li class="social-share-icon">
-									<a href="http://pinterest.com/pin/create/button/?url=./commercial-project-with-perfection-creative-design/" class="icon-link" target="popup" onclick="window.open('http://pinterest.com/pin/create/button/?url=./commercial-project-with-perfection-creative-design/','popup','width=600,height=600'); return false;">
-										<i class="fab fa-pinterest-p"></i>
-									</a>
-								</li>
-														</ul>
+		<div class="col-sm-12">
+			<div id="primary" class="content-area">
+				<main id="main" class="site-main">
+				<article id="post-544" class="row post-544 team type-team status-publish has-post-thumbnail hentry">
+	<div class="col-lg-5">
+		<div class="kyber-teammember-thumbnail">
+						<div class="post-thumbnail">
+				<img width="800" height="800" src="./../../wp-content/uploads/2020/01/img-04.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="./../../wp-content/uploads/2020/01/img-04.jpg 800w, ./../../wp-content/uploads/2020/01/img-04-300x300.jpg 300w, ./../../wp-content/uploads/2020/01/img-04-150x150.jpg 150w, ./../../wp-content/uploads/2020/01/img-04-768x768.jpg 768w" sizes="(max-width: 800px) 100vw, 800px">			</div>
+<!-- .post-thumbnail -->
 					</div>
-							</div>
-			</footer><!-- .entry-footer -->
 	</div>
-	</div>
-</article><!-- #post-741 -->
-
-<article id="post-245" class="post-245 post type-post status-publish format-standard has-post-thumbnail hentry category-buildings tag-design">
-	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="./../../how-is-3d-print-affecting-the-construction/index.html" aria-hidden="true" tabindex="-1">
-				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/04/img-0cvf3-2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="How Is 3D Print Affecting The Construction?" loading="lazy" srcset="./../../wp-content/uploads/2020/04/img-0cvf3-2.jpg 1200w, ./../../wp-content/uploads/2020/04/img-0cvf3-2-300x250.jpg 300w, ./../../wp-content/uploads/2020/04/img-0cvf3-2-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/04/img-0cvf3-2-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
-				
-	<div class="kyber-blog-classic-inner">
-		<header class="entry-header">
-							<div class="entry-meta">
-						
-		<span class="posted-on"><a href="./../../2020/03/12/index.html" rel="bookmark">
-			<time class="entry-date published updated" datetime="2020-03-12T17:57:07+00:00">
-			12			<span>Mar</span></time></a>
-		</span>
-						</div>
-<!-- .entry-meta -->
-						<h2 class="entry-title"><a href="./../../how-is-3d-print-affecting-the-construction/index.html" rel="bookmark">How Is 3D Print Affecting The Construction?</a></h2>		</header><!-- .entry-header -->
-
-		<div class="entry-content">
-			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
-		</div>
-<!-- .entry-content -->	  
-	<footer class="entry-footer">
-				<div class="entry-meta-footer">
-			<div class="entry-meta-container">
-				<span class="author vcard">
-					<i class="fas fa-user"></i>
-					<a class="url fn n" href="./../../author/geopadmin/index.html">
-						geopadmin					</a>
-				</span>
-										<span class="categories-list">
-							<i class="far fa-folder-open"></i>
-							<a href="./index.html" rel="category tag">Buildings</a>	
-						</span>
-												<span class="tag-list">
-							<i class="fas fa-tags"></i>
-							<a href="./../../tag/design/index.html" rel="tag">Design</a>	
-						</span>
-												<span class="meta-comment">
-							<i class="far fa-comment"></i>
-							<a href="./../../how-is-3d-print-affecting-the-construction/index.html#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
-									</div>
-								<div class="social-icon-share">
-						<a href="javascript:void(0)" class="social-share-button">
-							<i class="fas fa-share-alt mr-1"></i>
-						</a>
-						<ul class="social-share-icons">
-															<li class="social-share-icon">
-									<a href="https://www.facebook.com/sharer/sharer.php?u=./how-is-3d-print-affecting-the-construction/" class="icon-link" target="popup" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=./how-is-3d-print-affecting-the-construction/','popup','width=600,height=600'); return false;">
-										<i class="fab fa-facebook-f"></i>
-									</a>
-								</li>
-																<li class="social-share-icon">
-									<a href="http://twitter.com/intent/tweet?text=How%20Is%203D%20Print%20Affecting%20The%20Construction?&#038;./how-is-3d-print-affecting-the-construction/" class="icon-link" target="popup" onclick="window.open('http://twitter.com/intent/tweet?text=How%20Is%203D%20Print%20Affecting%20The%20Construction?&#038;./how-is-3d-print-affecting-the-construction/','popup','width=600,height=600'); return false;">
-										<i class="fab fa-twitter"></i>
-									</a>
-								</li>
-																<li class="social-share-icon">
-									<a href="https://www.linkedin.com/shareArticle?mini=true&#038;url=./how-is-3d-print-affecting-the-construction/&#038;title=How%20Is%203D%20Print%20Affecting%20The%20Construction?&#038;summary=It%20is%20a%20long%20established%20fact%20that%20a%20reader%20will%20be%20distracted%20by%20the%20readable%20content%20of%20a%20page%20when%20looking%20at%20its%20layout.%20The%20point%20of%20using%20Lorem%20Ipsum%20is%20that%20it%20has%20a%20more-or-less%20normal%20distribution%20of%20letters,%20as%20opposed%20to%20using%20&#8216;Content%20here,%20content%20here&#8217;,%20making%20it%20look%20like%20readable%20English.%20Many%20%5B&hellip;%5D" class="icon-link" target="popup" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&#038;url=./how-is-3d-print-affecting-the-construction/&#038;title=How%20Is%203D%20Print%20Affecting%20The%20Construction?&#038;summary=It%20is%20a%20long%20established%20fact%20that%20a%20reader%20will%20be%20distracted%20by%20the%20readable%20content%20of%20a%20page%20when%20looking%20at%20its%20layout.%20The%20point%20of%20using%20Lorem%20Ipsum%20is%20that%20it%20has%20a%20more-or-less%20normal%20distribution%20of%20letters,%20as%20opposed%20to%20using%20&#8216;Content%20here,%20content%20here&#8217;,%20making%20it%20look%20like%20readable%20English.%20Many%20%5B&hellip;%5D','popup','width=600,height=600'); return false;">
-										<i class="fab fa-linkedin-in"></i>
-									</a>
-								</li>
-																<li class="social-share-icon">
-									<a href="http://pinterest.com/pin/create/button/?url=./how-is-3d-print-affecting-the-construction/" class="icon-link" target="popup" onclick="window.open('http://pinterest.com/pin/create/button/?url=./how-is-3d-print-affecting-the-construction/','popup','width=600,height=600'); return false;">
-										<i class="fab fa-pinterest-p"></i>
-									</a>
-								</li>
-														</ul>
+	<div class="col-lg-7">
+		<h3 class="kyber-team-title">Engr. Nnam John Precious</h3>			<div class="kyber-teammember-designation-container">
+				<h5 class="kyber-teammember-designation">Consultant Engineer</h5>
+			</div>
+					<div class="kyber-teammember-details-container">
+							<div class="kyber-teammember-des">
+<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</p>
+</div>
+							<div class="kyber-teammember-details">
+									<div class="kyber-teammember-detail kb-teammember_phone-number">
+						<div class="kyber-teammember-detail-title">Phone Number</div>
+						<div class="kyber-teammember-detail-value">+(123) 1234-567-8901</div>
 					</div>
-							</div>
-			</footer><!-- .entry-footer -->
-	</div>
-	</div>
-</article><!-- #post-245 -->
-				<div class="post-pagination">
-									</div>
-							</main><!-- #main -->
+								</div>
+			<div class="kyber-teammember-link-profiles-container">
+									<ul class="kyber-teammember-link-profiles">
+													<li class="kyber-teammember-link-profile">
+								<a href="#" target="_blank">
+									<i class="fab fa-facebook-f"></i>
+								</a>
+							</li>
+														<li class="kyber-teammember-link-profile">
+								<a href="#" target="_blank">
+									<i class="fab fa-tumblr"></i>
+								</a>
+							</li>
+														<li class="kyber-teammember-link-profile">
+								<a href="#" target="_blank">
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+												</ul>
+								</div>
 		</div>
+	</div>
+	<div class="kyber-teammember-content col-md-12">
+		<div class="vc_row wpb_row vc_row-fluid vc_custom_1588152212175 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default">
+<div class="wpb_column vc_column_container vc_col-sm-6 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper">
+<h2 style="font-size: 30px;line-height: 40px;text-align: left" class="vc_custom_heading">Personal Information</h2>
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. The first place you think of when you are getting ready. Of all of the celestial bodies that capture our attention and fascination as astronomers when you are getting ready.</p>
+
+		</div>
+	</div>
+</div></div></div>
+<div class="wpb_column vc_column_container vc_col-sm-6 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper">
+<h2 style="font-size: 24px;line-height: 34px;text-align: left" class="vc_custom_heading">Skill:</h2>		<div class="kyber_progress_bar_wrapper kyber-progressbar-1335096609 kyber-shortcode-wrapper progress-bar-style-1">
+					<div class="kyber-progress-bar-wrapper">
+			<div class="kyber-progress-bar-title-wrapper">
+									<span class="kyber-progress-bar-title">Industrial</span>
+										<span class="kyber-progress-bar-value">90%</span>
+								</div>
+						<div class="kyber-progress-bar">
+				<div class="kyber-progress-bar-inner" data-bar-value="90" data-bar-height="5"></div>
+			</div>
+		</div>
+				<div class="kyber-progress-bar-wrapper">
+			<div class="kyber-progress-bar-title-wrapper">
+									<span class="kyber-progress-bar-title">Construction</span>
+										<span class="kyber-progress-bar-value">75%</span>
+								</div>
+						<div class="kyber-progress-bar">
+				<div class="kyber-progress-bar-inner" data-bar-value="75" data-bar-height="5"></div>
+			</div>
+		</div>
+				<div class="kyber-progress-bar-wrapper">
+			<div class="kyber-progress-bar-title-wrapper">
+									<span class="kyber-progress-bar-title">Commercial</span>
+										<span class="kyber-progress-bar-value">80%</span>
+								</div>
+						<div class="kyber-progress-bar">
+				<div class="kyber-progress-bar-inner" data-bar-value="80" data-bar-height="5"></div>
+			</div>
+		</div>
+				</div>
+		</div></div></div>
+</div>
+<div class="vc_row wpb_row vc_row-fluid vc_custom_1586789820836 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="wpb_column vc_column_container vc_col-sm-12 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper"><h2 style="font-size: 30px;line-height: 40px;text-align: left" class="vc_custom_heading">Education &amp; Qualification</h2></div></div></div></div>
+<div class="vc_row wpb_row vc_row-fluid kyber-infobox-bg-gray kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default">
+<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper">		<div class="kyber_infobox_wrapper kyber-infobox-1935841772 kyber-shortcode-wrapper icon-type-font infobox-style-3">
+			<div class="kyber-infobox-wrapper">
+						<div class="kyber-infobox-icon"><i class="flaticon-sketch"></i></div>
+						<div class="kyber-infobox-content">
+					<h3 class="kyber-infobox-title">Education</h3>
+						<div class="kyber-infobox-text">University of Campaign, Texas Complete Master Engineering of Civil</div>
+				</div>
+</div>		</div>
+		</div></div></div>
+<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper">		<div class="kyber_infobox_wrapper kyber-infobox-751109185 kyber-shortcode-wrapper icon-type-font infobox-style-3">
+			<div class="kyber-infobox-wrapper">
+						<div class="kyber-infobox-icon"><i class="flaticon-building"></i></div>
+						<div class="kyber-infobox-content">
+					<h3 class="kyber-infobox-title">Career Start</h3>
+						<div class="kyber-infobox-text">After Complete Engineer Join KV construction Ltd as a Building Supervisor</div>
+				</div>
+</div>		</div>
+		</div></div></div>
+<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper">		<div class="kyber_infobox_wrapper kyber-infobox-1872445434 kyber-shortcode-wrapper icon-type-font infobox-style-3">
+			<div class="kyber-infobox-wrapper">
+						<div class="kyber-infobox-icon"><i class="flaticon-survey"></i></div>
+						<div class="kyber-infobox-content">
+					<h3 class="kyber-infobox-title">Experience</h3>
+						<div class="kyber-infobox-text">About 25 Years of Experience &amp; Professional in Construction Business Management</div>
+				</div>
+</div>		</div>
+		</div></div></div>
+<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper">		<div class="kyber_infobox_wrapper kyber-infobox-323707016 kyber-shortcode-wrapper icon-type-font infobox-style-3">
+			<div class="kyber-infobox-wrapper">
+						<div class="kyber-infobox-icon"><i class="flaticon-urban"></i></div>
+						<div class="kyber-infobox-content">
+					<h3 class="kyber-infobox-title">Expert</h3>
+						<div class="kyber-infobox-text">Expert in Bulling Design of Experience &amp; Professional in Construction Management</div>
+				</div>
+</div>		</div>
+		</div></div></div>
+</div>
+<div class="vc_row wpb_row vc_row-fluid vc_custom_1586865188676 vc_custom_1586865188678 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="wpb_column vc_column_container vc_col-sm-12 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper">
+<h2 style="font-size: 30px;line-height: 40px;text-align: left" class="vc_custom_heading">Contact me</h2>
+	<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<p>The first mate and his Skipper too will do their very best to make the others comfortable in their tropic island nest Got a dream and we just know now we’re gonna make our dream come true.</p>
+
+		</div>
+	</div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid kyber-team-form-1 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="wpb_column vc_column_container vc_col-sm-12 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper"><div role="form" class="wpcf7" id="wpcf7-f998-p544-o1" lang="en-US" dir="ltr">
+<div class="screen-reader-response">
+<p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul>
+</div>
+<form action="/team/engr-nnam-john-precious/#wpcf7-f998-p544-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+<div style="display: none;">
+<input type="hidden" name="_wpcf7" value="998">
+<input type="hidden" name="_wpcf7_version" value="5.6">
+<input type="hidden" name="_wpcf7_locale" value="en_US">
+<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f998-p544-o1">
+<input type="hidden" name="_wpcf7_container_post" value="544">
+<input type="hidden" name="_wpcf7_posted_data_hash" value="">
+</div>
+<div class="kyber-form kyber-team-form-1">
+<div class="row">
+<div class="col-sm-6">
+<div class="input-group">
+                    <span class="wpcf7-form-control-wrap" data-name="PhoneNumber"><input type="text" name="PhoneNumber" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Phone Number"></span>
+			</div>
+</div>
+<div class="col-sm-6">
+<div class="input-group">
+                 <span class="wpcf7-form-control-wrap" data-name="email-129"><input type="email" name="email-129" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="Email address"></span>
+			</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div class="input-group">
+                <span class="wpcf7-form-control-wrap" data-name="textarea-693"><textarea name="textarea-693" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Write Message"></textarea></span>
+			</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-6">
+<div class="input-group">
+				<input type="submit" value="Submit Request" class="wpcf7-form-control has-spinner wpcf7-submit">
+			</div>
+</div>
+</div>
+</div>
+<div class="wpcf7-response-output" aria-hidden="true"></div>
+</form>
+</div></div></div></div></div>
+</div></div></div></div>
+	</div>
+</article><!-- #post-544 -->
+
+	<nav class="navigation post-navigation" aria-label="Posts">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links">
+<div class="nav-previous"><a href="{{route('benjamin')}}" rel="prev">Nnam Benjamin Onyedikachi</a></div>
+<div class="nav-next"><a href="{{route('merit')}}" rel="next">Surv. Okwesili Adaeze Merit</a></div>
+</div>
+	</nav>				</main><!-- #main -->
+			</div>
 <!-- #primary -->
-		<aside id="secondary" class="widget-area sidebar col-sm-12 col-md-12 col-lg-4 col-xl-3 column">
-	<section id="block-2" class="widget widget_block widget_search"><form role="search" method="get" action="./" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search">
-<label for="wp-block-search__input-1" class="wp-block-search__label">Search</label><div class="wp-block-search__inside-wrapper ">
-<input type="search" id="wp-block-search__input-1" class="wp-block-search__input " name="s" value="" placeholder="" required><button type="submit" class="wp-block-search__button  ">Search</button>
-</div>
-</form></section><section id="block-3" class="widget widget_block">
-<div class="wp-container-1 wp-block-group"><div class="wp-block-group__inner-container">
-<h2 id="recent-posts">Recent Posts</h2>
-
-
-<ul class="wp-block-latest-posts__list wp-block-latest-posts">
-<li><a class="wp-block-latest-posts__post-title" href="./../../commercial-project-with-perfection-creative-design/index.html">Commercial project With Perfection &#038; creative design</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="./../../we-are-best-construction-plan-business-solution/index.html">We are best Construction Plan business solution</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="./../../low-cost-interior-designing-project-planning/index.html">Low cost interior designing Project Planning</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="./../../improve-workflow-with-design-construction/index.html">Improve Workflow With Design Construction</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="./../../what-are-the-benefits-of-designer-certification/index.html">What Are The Benefits Of Designer Certification?</a></li>
-</ul>
-</div></div>
-</section><section id="block-4" class="widget widget_block">
-<div class="wp-container-2 wp-block-group"><div class="wp-block-group__inner-container">
-<h2 id="recent-comments">Recent Comments</h2>
-
-
-<ol class="wp-block-latest-comments">
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../../new-industrial-cleaning-method-panel-ruling/index.html#comment-29">New Industrial Cleaning Method Panel Ruling</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../../most-successful-construction-industry-myths/index.html#comment-9">Most Successful Construction Industry Myths</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../../how-is-3d-print-affecting-the-construction/index.html#comment-11">How Is 3D Print Affecting The Construction?</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../../construction-agreements-of-painting-perfection/index.html#comment-13">Construction Agreements of Painting Perfection</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../../what-are-the-benefits-of-designer-certification/index.html#comment-15">What Are The Benefits Of Designer Certification?</a></footer></article></li>
-</ol>
-</div></div>
-</section><section id="block-5" class="widget widget_block">
-<div class="wp-container-3 wp-block-group"><div class="wp-block-group__inner-container">
-<h2 id="archives">Archives</h2>
-
-
-<ul class=" wp-block-archives-list wp-block-archives">	<li><a href="./../../2020/04/index.html">April 2020</a></li>
-	<li><a href="./../../2020/03/index.html">March 2020</a></li>
-	<li><a href="./../../2020/01/index.html">January 2020</a></li>
-</ul>
-</div></div>
-</section><section id="block-6" class="widget widget_block">
-<div class="wp-container-4 wp-block-group"><div class="wp-block-group__inner-container">
-<h2 id="categories">Categories</h2>
-
-
-<ul class="wp-block-categories-list wp-block-categories">	<li class="cat-item cat-item-2 current-cat">
-<a aria-current="page" href="./index.html">Buildings</a>
-</li>
-	<li class="cat-item cat-item-3">
-<a href="./../construction/index.html">Construction</a>
-</li>
-	<li class="cat-item cat-item-4">
-<a href="./../educational/index.html">Educational</a>
-</li>
-	<li class="cat-item cat-item-5">
-<a href="./../innovations/index.html">Innovations</a>
-</li>
-	<li class="cat-item cat-item-6">
-<a href="./../standards/index.html">Standards</a>
-</li>
-	<li class="cat-item cat-item-7">
-<a href="./../technology/index.html">Technology</a>
-</li>
-</ul>
-</div></div>
-</section><section id="search-1" class="widget widget_search"><form role="search" method="get" class="search-form" action="./">
-				<label>
-					<span class="screen-reader-text">Search for:</span>
-					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
-				</label>
-				<input type="submit" class="search-submit" value="Search">
-			</form></section>		<section id="kyber-recent-posts-1" class="widget widget_kyber_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
-											<li>
-											<div class="kyber-post-image">
-							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-0cvf3-2-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
-										<div class="kyber-post-content">
-						<a href="./../../commercial-project-with-perfection-creative-design/index.html">Commercial project With Perfection &#038; creative design</a>
-													<span class="kyber-post-date">April 6, 2020</span>
-											</div>
-				</li>
-											<li>
-											<div class="kyber-post-image">
-							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-03-rt-tu1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
-										<div class="kyber-post-content">
-						<a href="./../../we-are-best-construction-plan-business-solution/index.html">We are best Construction Plan business solution</a>
-													<span class="kyber-post-date">April 6, 2020</span>
-											</div>
-				</li>
-											<li>
-											<div class="kyber-post-image">
-							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-0ftyh3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
-										<div class="kyber-post-content">
-						<a href="./../../low-cost-interior-designing-project-planning/index.html">Low cost interior designing Project Planning</a>
-													<span class="kyber-post-date">April 6, 2020</span>
-											</div>
-				</li>
-											<li>
-											<div class="kyber-post-image">
-							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-0cvf3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
-										<div class="kyber-post-content">
-						<a href="./../../improve-workflow-with-design-construction/index.html">Improve Workflow With Design Construction</a>
-													<span class="kyber-post-date">April 6, 2020</span>
-											</div>
-				</li>
-											<li>
-											<div class="kyber-post-image">
-							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-der03-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
-										<div class="kyber-post-content">
-						<a href="./../../what-are-the-benefits-of-designer-certification/index.html">What Are The Benefits Of Designer Certification?</a>
-													<span class="kyber-post-date">April 6, 2020</span>
-											</div>
-				</li>
-					</ul>
-		</section><section id="categories-2" class="widget widget_categories"><h2 class="widget-title">Categories</h2>
-			<ul>
-					<li class="cat-item cat-item-2 current-cat">
-<a aria-current="page" href="./index.html">Buildings</a><span>2</span>
-</li>
-	<li class="cat-item cat-item-3">
-<a href="./../construction/index.html">Construction</a><span>1</span>
-</li>
-	<li class="cat-item cat-item-4">
-<a href="./../educational/index.html">Educational</a><span>1</span>
-</li>
-	<li class="cat-item cat-item-5">
-<a href="./../innovations/index.html">Innovations</a><span>2</span>
-</li>
-	<li class="cat-item cat-item-6">
-<a href="./../standards/index.html">Standards</a><span>1</span>
-</li>
-	<li class="cat-item cat-item-7">
-<a href="./../technology/index.html">Technology</a><span>2</span>
-</li>
-			</ul>
-
-			</section><section id="media_image-1" class="widget widget_media_image"><img width="330" height="515" src="./../../wp-content/uploads/2022/02/ad-8s.jpg" class="image wp-image-2563  attachment-full size-full" alt="" loading="lazy" style="max-width: 100%; height: auto;" srcset="./../../wp-content/uploads/2022/02/ad-8s.jpg 330w, ./../../wp-content/uploads/2022/02/ad-8s-192x300.jpg 192w" sizes="(max-width: 330px) 100vw, 330px"></section><section id="tag_cloud-1" class="widget widget_tag_cloud"><h2 class="widget-title">Tags</h2>
-<div class="tagcloud">
-<a href="./../../tag/business/index.html" class="tag-cloud-link tag-link-8 tag-link-position-1" style="font-size: 22pt;" aria-label="Business (2 items)">Business</a>
-<a href="./../../tag/department/index.html" class="tag-cloud-link tag-link-9 tag-link-position-2" style="font-size: 8pt;" aria-label="Department (1 item)">Department</a>
-<a href="./../../tag/design/index.html" class="tag-cloud-link tag-link-10 tag-link-position-3" style="font-size: 22pt;" aria-label="Design (2 items)">Design</a>
-<a href="./../../tag/marketing/index.html" class="tag-cloud-link tag-link-11 tag-link-position-4" style="font-size: 22pt;" aria-label="Marketing (2 items)">Marketing</a>
-<a href="./../../tag/partner/index.html" class="tag-cloud-link tag-link-12 tag-link-position-5" style="font-size: 8pt;" aria-label="Partner (1 item)">Partner</a>
-<a href="./../../tag/resources/index.html" class="tag-cloud-link tag-link-13 tag-link-position-6" style="font-size: 8pt;" aria-label="Resources (1 item)">Resources</a>
-</div>
-</section></aside><!-- #secondary -->
-
+		</div>
 	</div>
 </div>
 
 	</div>
 <!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="kyber-footer-widgets-wrapper">
-	<div class="container">
-		<div class="kyber-footer row">
-							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-					<section id="text-2" class="widget widget_text">			<div class="textwidget">
-<p><img loading="lazy" class="alignnone size-full wp-image-225 footer-logo" src="./../../wp-content/uploads/2022/02/GEO-P-f-tt-2.png" alt="" width="202" height="42"></p>
-<h3 class="skincolor">+234 806 054 5860</h3>
-<p><a class="btn btn-outline-light footer-button" href="./../../contact-us-1/index.html">REQUEST WITH ONLINE FORM</a></p>
-</div>
-		</section>				</div>
-								<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-					<section id="nav_menu-1" class="widget widget_nav_menu"><h2 class="widget-title">Useful Links</h2>
-<div class="menu-footer-links-container"><ul id="menu-footer-links" class="menu">
-<li id="menu-item-2592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2592"><a href="./../../our-services/index.html">Our Services</a></li>
-<li id="menu-item-2591" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2591"><a href="./../../our-projects/index.html">Our Projects</a></li>
-<li id="menu-item-2588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2588"><a href="./../../about-us/index.html">About Us</a></li>
-<li id="menu-item-2593" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2593"><a href="./../../our-team/index.html">Our Team</a></li>
-<li id="menu-item-2589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2589"><a href="./../../contact-us-1/index.html">Contact Us</a></li>
-<li id="menu-item-2590" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2590"><a href="./../../faq/index.html">FAQ</a></li>
-<li id="menu-item-2587" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-2587"><a href="./../../blog-classic/index.html">Blog</a></li>
-</ul></div></section>				</div>
-								<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-							<section id="kyber-recent-posts-2" class="widget widget_kyber_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
-											<li>
-											<div class="kyber-post-image">
-							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-0cvf3-2-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
-										<div class="kyber-post-content">
-						<a href="./../../commercial-project-with-perfection-creative-design/index.html">Commercial project With Perfection &#038; creative design</a>
-													<span class="kyber-post-date">April 6, 2020</span>
-											</div>
-				</li>
-											<li>
-											<div class="kyber-post-image">
-							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-03-rt-tu1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
-										<div class="kyber-post-content">
-						<a href="./../../we-are-best-construction-plan-business-solution/index.html">We are best Construction Plan business solution</a>
-													<span class="kyber-post-date">April 6, 2020</span>
-											</div>
-				</li>
-											<li>
-											<div class="kyber-post-image">
-							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-0ftyh3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
-										<div class="kyber-post-content">
-						<a href="./../../low-cost-interior-designing-project-planning/index.html">Low cost interior designing Project Planning</a>
-													<span class="kyber-post-date">April 6, 2020</span>
-											</div>
-				</li>
-					</ul>
-		</section>				</div>
-								<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-					<section id="text-3" class="widget widget_text"><h2 class="widget-title">Get In Touch</h2>			<div class="textwidget">
-<ul class="widget_contact">
-<li>
-<i class="fa fa-map-marker"></i>Suit E01b, The statement Complex, Plot 1002, First Avenue, Central Business District, Abuja.</li>
-<li>
-<i class="fa fa-envelope-o"></i>Email : <a href="mailto:contact@geoprecisegroup.com">contact@geoprecisegroup.com</a>
-</li>
-<li>
-<i class="fa fa-phone"></i>Phone : +234 806 054 5860<br>
-Support : +234 906 297 2785</li>
-</ul>
-</div>
-		</section>				</div>
-						</div>
-	</div>
-</div>
-		<div class="kyber-copyright">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-6 footer-left">
-						Copyright Geoprecise Services Ltd.					</div>
-					<div class="col-lg-6 col-md-6 footer-right">
-						<ul class="social-icons">
- 	<li>
- 	<li>
- 	<li>
- 	<li>
-</ul>					</div>
-				</div>
-			</div>
-		</div>
-	</footer><!-- #colophon -->
-</div>
-<!-- #page -->
-
-
-		<script>
-			window.RS_MODULES = window.RS_MODULES || {};
-			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
-			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
-			window.RS_MODULES.defered = true;
-			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
-			window.RS_MODULES.type = 'compiled';
-		</script>
-		<style>.wp-container-1 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-1 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-1 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
-<style>.wp-container-2 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-2 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-2 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
-<style>.wp-container-3 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-3 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-3 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
-<style>.wp-container-4 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-4 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-4 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
-<link rel="stylesheet" id="kyber-responsive-style-css" href="./../../wp-content/themes/kyber/assets/css/responsive.css?ver=1.0.6" type="text/css" media="all">
-<link rel="stylesheet" id="kyber-color-customizer-css" href="./../../wp-content/uploads/kyber-color-customizer/color-customize.css?ver=220316-124542" type="text/css" media="all">
-<link rel="stylesheet" id="rs-plugin-settings-css" href="./../../wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.5.14" type="text/css" media="all">
-<style id="rs-plugin-settings-inline-css" type="text/css">#rs-demo-id {}</style>
-<script type="text/javascript" src="./../../wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9" id="regenerator-runtime-js"></script>
-<script type="text/javascript" src="./../../wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
-<script type="text/javascript" id="contact-form-7-js-extra">
-/* <![CDATA[ */
-var wpcf7 = {"api":{"root":".\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="./../../wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.6" id="contact-form-7-js"></script>
-<script type="text/javascript" src="./../../wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.5.14" defer async id="tp-tools-js"></script>
-<script type="text/javascript" src="./../../wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.5.14" defer async id="revmin-js"></script>
-<script type="text/javascript" src="./../../wp-content/themes/kyber/assets/js/bootstrap.min.js?ver=4.0.0" id="bootstrap-js"></script>
-<script type="text/javascript" src="./../../wp-content/themes/kyber/assets/js/popper.min.js?ver=1.0.6" id="popper-js"></script>
-<script type="text/javascript" src="./../../wp-content/themes/kyber/assets/js/owl.carousel.min.js?ver=2.3.4" id="owl-carousel-js"></script>
-<script type="text/javascript" src="./../../wp-content/themes/kyber/assets/js/magnific-popup.js?ver=1.1.0" id="magnific-popup-js"></script>
-<script type="text/javascript" src="./../../wp-content/themes/kyber/assets/js/skip-link-focus-fix.js?ver=1.0.6" id="kyber-skip-link-focus-fix-js"></script>
-<script type="text/javascript" src="./../../wp-content/themes/kyber/assets/js/custom.js?ver=1.0.6" id="kyber-custom-js"></script>
-<script type="text/javascript" src="./../../wp-content/plugins/kyber-core/assets/js/shortcodes.js?ver=6.0" id="kyber-shortcodes-js"></script>
-
+	@include('layout.footer')
 </body>
 
 
-<!-- Page generated by LiteSpeed Cache 4.6 on 2022-06-21 15:45:28 -->
+<!-- Page generated by LiteSpeed Cache 4.6 on 2022-06-21 15:45:10 -->
 </html>

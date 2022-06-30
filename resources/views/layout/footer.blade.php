@@ -26,7 +26,7 @@
 											<div class="kyber-post-image">
 							<img width="150" height="150" src="././wp-content/uploads/2020/04/img-0cvf3-2-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
 										<div class="kyber-post-content">
-						<a href="././commercial-project-with-perfection-creative-design/index.html">Commercial project With Perfection &#038; creative design</a>
+						<a href="{{route('commercial')}}">Commercial project With Perfection &#038; creative design</a>
 													<span class="kyber-post-date">April 6, 2020</span>
 											</div>
 				</li>
@@ -34,7 +34,7 @@
 											<div class="kyber-post-image">
 							<img width="150" height="150" src="././wp-content/uploads/2020/04/img-03-rt-tu1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
 										<div class="kyber-post-content">
-						<a href="././we-are-best-construction-plan-business-solution/index.html">We are best Construction Plan business solution</a>
+						<a href="{{route('construction')}}">We are best Construction Plan business solution</a>
 													<span class="kyber-post-date">April 6, 2020</span>
 											</div>
 				</li>
@@ -42,7 +42,7 @@
 											<div class="kyber-post-image">
 							<img width="150" height="150" src="././wp-content/uploads/2020/04/img-0ftyh3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
 										<div class="kyber-post-content">
-						<a href="././low-cost-interior-designing-project-planning/index.html">Low cost interior designing Project Planning</a>
+						<a href="{{route('interior')}}">Low cost interior designing Project Planning</a>
 													<span class="kyber-post-date">April 6, 2020</span>
 											</div>
 				</li>
@@ -138,7 +138,8 @@ var wpcf7 = {"api":{"root":".\/wp-json\/","namespace":"contact-form-7\/v1"},"cac
 <script type="text/javascript" src="./../wp-content/plugins/js_composer/assets/lib/vc_accordion/vc-accordion.min.js?ver=6.8.0" id="vc_accordion_script-js"></script>
 <script type="text/javascript" src="./../wp-content/plugins/js_composer/assets/lib/vc-tta-autoplay/vc-tta-autoplay.min.js?ver=6.8.0" id="vc_tta_autoplay_script-js"></script>
 
-<script type="text/javascript">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
 	$(document).ready(function(){
             $('li').click(function() {
             $("li.current-menu-item").removeClass("current-menu-item");

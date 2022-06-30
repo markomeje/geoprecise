@@ -127,7 +127,7 @@ h3 .kyber-infobox-title {
 					Our Team				</h1>
 									<div class="page-breadcrumbs">
 					<div class="breadcrumb">
-<a href="./../index.html">Home</a> > <span class="current">Our Team</span>
+<a href="{{route('home')}}">Home</a> > <span class="current">Our Team</span>
 </div>					</div>
 								</div>				
 		</div>
@@ -159,7 +159,7 @@ h3 .kyber-infobox-title {
 		<div class="kyber-teammember-content-cover">
 			<div class="kyber-teammember-title">
 				<h3 class="teammember-title">
-					<a href="./../team/merit-christabel/index.html" class="teammember-title-link">Merit Christabel</a>
+					<a href="{{route('merit')}}" class="teammember-title-link">Merit Christabel</a>
 				</h3>
 			</div>
 					</div>
@@ -176,7 +176,7 @@ h3 .kyber-infobox-title {
 		<div class="kyber-teammember-content-cover">
 			<div class="kyber-teammember-title">
 				<h3 class="teammember-title">
-					<a href="./../team/kerry-anderson/index.html" class="teammember-title-link">Hon. John Okwor Nnam</a>
+					<a href="{{route('kerry')}}" class="teammember-title-link">Hon. John Okwor Nnam</a>
 				</h3>
 			</div>
 							<div class="kyber-teammember-social-profiles-container">
@@ -215,7 +215,7 @@ h3 .kyber-infobox-title {
 		<div class="kyber-teammember-content-cover">
 			<div class="kyber-teammember-title">
 				<h3 class="teammember-title">
-					<a href="./../team/surv-nnam-uchechukwu-godwin-mnis-msssi/index.html" class="teammember-title-link">Surv. Nnam Uchechukwu Godwin (MNIS, MSSSI)</a>
+					<a href="{{route('godwin')}}" class="teammember-title-link">Surv. Nnam Uchechukwu Godwin (MNIS, MSSSI)</a>
 				</h3>
 			</div>
 							<div class="kyber-teammember-social-profiles-container">
@@ -249,7 +249,7 @@ h3 .kyber-infobox-title {
 		<div class="kyber-teammember-content-cover">
 			<div class="kyber-teammember-title">
 				<h3 class="teammember-title">
-					<a href="./../team/surv-okwesili-adaeze-merit/index.html" class="teammember-title-link">Surv. Okwesili Adaeze Merit</a>
+					<a href="{{route('merit')}}" class="teammember-title-link">Surv. Okwesili Adaeze Merit</a>
 				</h3>
 			</div>
 							<div class="kyber-teammember-social-profiles-container">
@@ -283,7 +283,7 @@ h3 .kyber-infobox-title {
 		<div class="kyber-teammember-content-cover">
 			<div class="kyber-teammember-title">
 				<h3 class="teammember-title">
-					<a href="./../team/engr-nnam-john-precious/index.html" class="teammember-title-link">Engr. Nnam John Precious</a>
+					<a href="{{route('john')}}" class="teammember-title-link">Engr. Nnam John Precious</a>
 				</h3>
 			</div>
 							<div class="kyber-teammember-social-profiles-container">
@@ -322,7 +322,7 @@ h3 .kyber-infobox-title {
 		<div class="kyber-teammember-content-cover">
 			<div class="kyber-teammember-title">
 				<h3 class="teammember-title">
-					<a href="./../team/steve-smith/index.html" class="teammember-title-link">Nnam Benjamin Onyedikachi</a>
+					<a href="{{route('benjamin')}}" class="teammember-title-link">Nnam Benjamin Onyedikachi</a>
 				</h3>
 			</div>
 							<div class="kyber-teammember-social-profiles-container">
@@ -361,7 +361,7 @@ h3 .kyber-infobox-title {
 		<div class="kyber-teammember-content-cover">
 			<div class="kyber-teammember-title">
 				<h3 class="teammember-title">
-					<a href="./../team/barr-azuh-hilary/index.html" class="teammember-title-link">Hilary .U. Azuh, Esq.</a>
+					<a href="{{route('hilary')}}" class="teammember-title-link">Hilary .U. Azuh, Esq.</a>
 				</h3>
 			</div>
 							<div class="kyber-teammember-social-profiles-container">
