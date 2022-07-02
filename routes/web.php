@@ -57,8 +57,15 @@ Route::middleware(['web'])->domain(env('APP_URL'))->group(function() {
     Route::get('/marketing', [\App\Http\Controllers\MarketingController::class, 'index'])->name('marketing');
     Route::get('/resource', [\App\Http\Controllers\ResourcesController::class, 'index'])->name('resource');
     Route::get('/partner', [\App\Http\Controllers\PartnerController::class, 'index'])->name('partner');
-
     Route::get('/agreement', [\App\Http\Controllers\AgreementConstructionController::class, 'index'])->name('agreement');
     Route::get('/industry', [\App\Http\Controllers\IndustryConstructionController::class, 'index'])->name('industry');
     Route::get('/cleaning', [\App\Http\Controllers\IndustrialCleaningController::class, 'index'])->name('cleaning');
+
+    Route::get('/archive', [\App\Http\Controllers\ArchiveController::class, 'index'])->name('archive');
+    Route::get('/archive01', [\App\Http\Controllers\Archive01Controller::class, 'index'])->name('archive01');
+    Route::get('/archive03', [\App\Http\Controllers\Archive03Controller::class, 'index'])->name('archive03');
+    Route::get('/archive04', [\App\Http\Controllers\Archive04Controller::class, 'index'])->name('archive04');
+    Route::get('/archive06', [\App\Http\Controllers\Archive06Controller::class, 'index'])->name('archive06');
+    Route::get('/archive12', [\App\Http\Controllers\Archive12Controller::class, 'index'])->name('archive12');
+    Route::get('/archive18', [\App\Http\Controllers\Archive18Controller::class, 'index'])->name('archive18');
 });
