@@ -17,7 +17,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
-        server: test.geoprecisegroup.com
+        server: ftpes://test.geoprecisegroup.com
         username: ${{ secrets.GEOPRECISE_FTP_USERNAME }}
         password: ${{ secrets.GEOPRECISE_FTP_PASSWORD }}
         server-dir: test.geoprecisegroup.com/

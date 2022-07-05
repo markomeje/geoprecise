@@ -60,7 +60,8 @@ Route::middleware(['web'])->domain(env('APP_URL'))->group(function() {
     Route::get('/agreement', [\App\Http\Controllers\AgreementConstructionController::class, 'index'])->name('agreement');
     Route::get('/industry', [\App\Http\Controllers\IndustryConstructionController::class, 'index'])->name('industry');
     Route::get('/cleaning', [\App\Http\Controllers\IndustrialCleaningController::class, 'index'])->name('cleaning');
-
+    Route::get('/cleaning05', [\App\Http\Controllers\Cleaning05Controller::class, 'index'])->name('cleaning05');
+    Route::get('/cleaning06', [\App\Http\Controllers\Cleaning06Controller::class, 'index'])->name('cleaning06');
     Route::get('/archive', [\App\Http\Controllers\ArchiveController::class, 'index'])->name('archive');
     Route::get('/archive01', [\App\Http\Controllers\Archive01Controller::class, 'index'])->name('archive01');
     Route::get('/archive03', [\App\Http\Controllers\Archive03Controller::class, 'index'])->name('archive03');
