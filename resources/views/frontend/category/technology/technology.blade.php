@@ -164,13 +164,13 @@ h3 .kyber-infobox-title {
 	<div class="container site-header-top">
 		<div class="d-flex align-items-center">
 			<div class="site-logo">
-	<a href="./../../index.html" rel="home">
-		<img class="img-fluid" src="./../../wp-content/uploads/2022/02/logo-geop-1.png" alt="GeoPrecise">
+	<a href="{{route('home')}}" rel="home">
+		<img class="img-fluid" src="./../wp-content/uploads/2022/02/logo-geop-1.png" alt="GeoPrecise">
 	</a>
 </div>
 <div class="kyber-header-button-container">
 	<div class="kyber-header-button">
-		<a class="kyber-header-button" href="./../../contact-us-1/index.html" title="Request a Quote">Request a Quote</a>
+		<a class="kyber-header-button" href="{{route('contact')}}" title="Request a Quote">Request a Quote</a>
 	</div>
 </div>
 <div class="contact-info">
@@ -205,31 +205,31 @@ h3 .kyber-infobox-title {
 						<div class="header-menu-area-inner d-flex align-items-center justify-content-between">
 							<nav id="site-navigation" class="main-navigation">
 								<div class="menu-menu-1-container"><ul id="primary-menu" class="menu">
-<li id="menu-item-2305" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2305"><a href="./../../index.html">Home</a></li>
+<li id="menu-item-2305" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2305 "><a href="{{route('home')}}">Home</a></li>
 <li id="menu-item-2303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2303">
-<a href="./../../our-services/index.html">Our Services</a>
+<a href="{{route('ourservices')}}">Our Services</a>
 <ul class="sub-menu">
-	<li id="menu-item-2311" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2311"><a href="./../../service/hydrographic-survey/index.html">Hydrographic Survey</a></li>
-	<li id="menu-item-2312" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2312"><a href="./../../service/cadastral-land-survey/index.html">Cadastral &#038; Land Survey</a></li>
-	<li id="menu-item-2313" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2313"><a href="./../../service/engineering-surveying/index.html">Engineering Surveying</a></li>
-	<li id="menu-item-2314" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2314"><a href="./../../service/remote-sensing/index.html">Remote Sensing</a></li>
-	<li id="menu-item-2315" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2315"><a href="./../../service/highway-road/index.html">Highway &#038; Road</a></li>
-	<li id="menu-item-2316" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2316"><a href="./../../service/aerial-data-collection/index.html">Aerial Data Collection</a></li>
-	<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2318"><a href="./../../service/gis-mapping/index.html">GIS &#038; Mapping</a></li>
+	<li id="menu-item-2311" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2311"><a href="{{route('hydrographic')}}">Hydrographic Survey</a></li>
+	<li id="menu-item-2312" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2312"><a href="{{route('cadastral')}}">Cadastral &#038; Land Survey</a></li>
+	<li id="menu-item-2313" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2313"><a href="{{route('engineering')}}">Engineering Surveying</a></li>
+	<li id="menu-item-2314" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2314"><a href="{{route('sensing')}}">Remote Sensing</a></li>
+	<li id="menu-item-2315" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2315"><a href="{{route('highway')}}">Highway &#038; Road</a></li>
+	<li id="menu-item-2316" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2316"><a href="{{route('aerial')}}">Aerial Data Collection</a></li>
+	<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2318"><a href="{{route('mapping')}}">GIS &#038; Mapping</a></li>
 </ul>
 </li>
-<li id="menu-item-2319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2319"><a href="./../../our-projects/index.html">Projects</a></li>
-<li id="menu-item-2321" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-2321"><a href="./../../blog-classic/index.html">Blog</a></li>
+<li id="menu-item-2319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2319"><a href="{{route('ourprojects')}}">Projects</a></li>
+<li id="menu-item-2321" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-828 current_page_item current_page_parent menu-item-2321"><a href="{{route('blog')}}" aria-current="page">Blog</a></li>
 <li id="menu-item-2323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2323">
-<a href="./../../contact-us-1/index.html">Contact Us</a>
+<a href="{{route('contact')}}">Contact Us</a>
 <ul class="sub-menu">
-	<li id="menu-item-2307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2307"><a href="./../../faq/index.html">FAQ</a></li>
+	<li id="menu-item-2307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2307"><a href="{{route('faq')}}">FAQ</a></li>
 </ul>
 </li>
 <li id="menu-item-2324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2324">
-<a href="./../../about-us/index.html">About Us</a>
+<a href="{{route('aboutus')}}">About Us</a>
 <ul class="sub-menu">
-	<li id="menu-item-2308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2308"><a href="./../../our-team/index.html">Our Team</a></li>
+	<li id="menu-item-2308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2308"><a href="{{route('ourteam')}}">Our Team</a></li>
 </ul>
 </li>
 </ul></div>							</nav> 
@@ -258,7 +258,6 @@ h3 .kyber-infobox-title {
 </div>
 </header>
 
-
 	<div id="content" class="site-content">
 
 		<div class="kyber-page-title d-flex align-items-center">
@@ -269,7 +268,7 @@ h3 .kyber-infobox-title {
 					Category: <span>Technology</span>				</h1>
 									<div class="page-breadcrumbs">
 					<div class="breadcrumb">
-<a href="./../../index.html">Home</a> > <span class="current">Category: Technology</span>
+<a href="{{route('home')}}">Home</a> > <span class="current">Category: Technology</span>
 </div>					</div>
 								</div>				
 		</div>
@@ -285,20 +284,20 @@ h3 .kyber-infobox-title {
 				
 <article id="post-250" class="post-250 post type-post status-publish format-standard has-post-thumbnail hentry category-technology tag-resources">
 	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="./../../construction-agreements-of-painting-perfection/index.html" aria-hidden="true" tabindex="-1">
+				<a class="post-thumbnail" href="{{route('agreement')}}" aria-hidden="true" tabindex="-1">
 				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/04/img-0cvf3-4.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Construction Agreements of Painting Perfection" srcset="./../../wp-content/uploads/2020/04/img-0cvf3-4.jpg 1200w, ./../../wp-content/uploads/2020/04/img-0cvf3-4-300x250.jpg 300w, ./../../wp-content/uploads/2020/04/img-0cvf3-4-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/04/img-0cvf3-4-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
 				
 	<div class="kyber-blog-classic-inner">
 		<header class="entry-header">
 							<div class="entry-meta">
 						
-		<span class="posted-on"><a href="./../../2020/03/12/index.html" rel="bookmark">
+		<span class="posted-on"><a href="{{route('archive12')}}" rel="bookmark">
 			<time class="entry-date published updated" datetime="2020-03-12T18:01:18+00:00">
 			12			<span>Mar</span></time></a>
 		</span>
 						</div>
 <!-- .entry-meta -->
-						<h2 class="entry-title"><a href="./../../construction-agreements-of-painting-perfection/index.html" rel="bookmark">Construction Agreements of Painting Perfection</a></h2>		</header><!-- .entry-header -->
+						<h2 class="entry-title"><a href="{{route('agreement')}}" rel="bookmark">Construction Agreements of Painting Perfection</a></h2>		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
@@ -309,20 +308,20 @@ h3 .kyber-infobox-title {
 			<div class="entry-meta-container">
 				<span class="author vcard">
 					<i class="fas fa-user"></i>
-					<a class="url fn n" href="./../../author/geopadmin/index.html">
+					<a class="url fn n" href="{{route('geopadmin')}}">
 						geopadmin					</a>
 				</span>
 										<span class="categories-list">
 							<i class="far fa-folder-open"></i>
-							<a href="./index.html" rel="category tag">Technology</a>	
+							<a href="{{route('technology')}}" rel="category tag">Technology</a>	
 						</span>
 												<span class="tag-list">
 							<i class="fas fa-tags"></i>
-							<a href="./../../tag/resources/index.html" rel="tag">Resources</a>	
+							<a href="{{route('resource')}}" rel="tag">Resources</a>	
 						</span>
 												<span class="meta-comment">
 							<i class="far fa-comment"></i>
-							<a href="./../../construction-agreements-of-painting-perfection/index.html#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
+							<a href="{{route('agreement')}}#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
 									</div>
 								<div class="social-icon-share">
 						<a href="javascript:void(0)" class="social-share-button">
@@ -344,7 +343,7 @@ h3 .kyber-infobox-title {
 										<i class="fab fa-linkedin-in"></i>
 									</a>
 								</li>
-																<li class="social-share-icon">
+									<li class="social-share-icon">
 									<a href="http://pinterest.com/pin/create/button/?url=./construction-agreements-of-painting-perfection/" class="icon-link" target="popup" onclick="window.open('http://pinterest.com/pin/create/button/?url=./construction-agreements-of-painting-perfection/','popup','width=600,height=600'); return false;">
 										<i class="fab fa-pinterest-p"></i>
 									</a>
@@ -359,20 +358,20 @@ h3 .kyber-infobox-title {
 
 <article id="post-240" class="post-240 post type-post status-publish format-standard has-post-thumbnail hentry category-technology tag-business">
 	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="./../../most-successful-construction-industry-myths/index.html" aria-hidden="true" tabindex="-1">
+				<a class="post-thumbnail" href="{{route('industry')}}" aria-hidden="true" tabindex="-1">
 				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/04/img-0cvf3-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Most Successful Construction Industry Myths" loading="lazy" srcset="./../../wp-content/uploads/2020/04/img-0cvf3-1.jpg 1200w, ./../../wp-content/uploads/2020/04/img-0cvf3-1-300x250.jpg 300w, ./../../wp-content/uploads/2020/04/img-0cvf3-1-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/04/img-0cvf3-1-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
 				
 	<div class="kyber-blog-classic-inner">
 		<header class="entry-header">
 							<div class="entry-meta">
 						
-		<span class="posted-on"><a href="./../../2020/03/12/index.html" rel="bookmark">
+		<span class="posted-on"><a href="{{route('archive12')}}" rel="bookmark">
 			<time class="entry-date published updated" datetime="2020-03-12T17:53:15+00:00">
 			12			<span>Mar</span></time></a>
 		</span>
 						</div>
 <!-- .entry-meta -->
-						<h2 class="entry-title"><a href="./../../most-successful-construction-industry-myths/index.html" rel="bookmark">Most Successful Construction Industry Myths</a></h2>		</header><!-- .entry-header -->
+						<h2 class="entry-title"><a href="{{route('industry')}}" rel="bookmark">Most Successful Construction Industry Myths</a></h2>		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
@@ -383,20 +382,20 @@ h3 .kyber-infobox-title {
 			<div class="entry-meta-container">
 				<span class="author vcard">
 					<i class="fas fa-user"></i>
-					<a class="url fn n" href="./../../author/geopadmin/index.html">
+					<a class="url fn n" href="{{route('geopadmin')}}">
 						geopadmin					</a>
 				</span>
 										<span class="categories-list">
 							<i class="far fa-folder-open"></i>
-							<a href="./index.html" rel="category tag">Technology</a>	
+							<a href="{{route('technology')}}" rel="category tag">Technology</a>	
 						</span>
 												<span class="tag-list">
 							<i class="fas fa-tags"></i>
-							<a href="./../../tag/business/index.html" rel="tag">Business</a>	
+							<a href="{{route('business')}}" rel="tag">Business</a>	
 						</span>
 												<span class="meta-comment">
 							<i class="far fa-comment"></i>
-							<a href="./../../most-successful-construction-industry-myths/index.html#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
+							<a href="{{route('industry')}}#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
 									</div>
 								<div class="social-icon-share">
 						<a href="javascript:void(0)" class="social-share-button">
@@ -446,10 +445,10 @@ h3 .kyber-infobox-title {
 
 
 <ul class="wp-block-latest-posts__list wp-block-latest-posts">
-<li><a class="wp-block-latest-posts__post-title" href="./../../commercial-project-with-perfection-creative-design/index.html">Commercial project With Perfection &#038; creative design</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="./../../we-are-best-construction-plan-business-solution/index.html">We are best Construction Plan business solution</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="./../../low-cost-interior-designing-project-planning/index.html">Low cost interior designing Project Planning</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="./../../improve-workflow-with-design-construction/index.html">Improve Workflow With Design Construction</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="{{route('commercial')}}">Commercial project With Perfection &#038; creative design</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="{{route('construction')}}">We are best Construction Plan business solution</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="{{route('interior')}}">Low cost interior designing Project Planning</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="{{route('interior')}}">Improve Workflow With Design Construction</a></li>
 <li><a class="wp-block-latest-posts__post-title" href="./../../what-are-the-benefits-of-designer-certification/index.html">What Are The Benefits Of Designer Certification?</a></li>
 </ul>
 </div></div>
@@ -460,9 +459,9 @@ h3 .kyber-infobox-title {
 
 <ol class="wp-block-latest-comments">
 <li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../../new-industrial-cleaning-method-panel-ruling/index.html#comment-29">New Industrial Cleaning Method Panel Ruling</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../../most-successful-construction-industry-myths/index.html#comment-9">Most Successful Construction Industry Myths</a></footer></article></li>
+<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('industry')}}#comment-9">Most Successful Construction Industry Myths</a></footer></article></li>
 <li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../../how-is-3d-print-affecting-the-construction/index.html#comment-11">How Is 3D Print Affecting The Construction?</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../../construction-agreements-of-painting-perfection/index.html#comment-13">Construction Agreements of Painting Perfection</a></footer></article></li>
+<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('agreement')}}#comment-13">Construction Agreements of Painting Perfection</a></footer></article></li>
 <li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../../what-are-the-benefits-of-designer-certification/index.html#comment-15">What Are The Benefits Of Designer Certification?</a></footer></article></li>
 </ol>
 </div></div>
@@ -497,7 +496,7 @@ h3 .kyber-infobox-title {
 <a href="./../standards/index.html">Standards</a>
 </li>
 	<li class="cat-item cat-item-7 current-cat">
-<a aria-current="page" href="./index.html">Technology</a>
+<a aria-current="page" href="{{route('technology')}}">Technology</a>
 </li>
 </ul>
 </div></div>
@@ -512,7 +511,7 @@ h3 .kyber-infobox-title {
 											<div class="kyber-post-image">
 							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-0cvf3-2-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
 										<div class="kyber-post-content">
-						<a href="./../../commercial-project-with-perfection-creative-design/index.html">Commercial project With Perfection &#038; creative design</a>
+						<a href="{{route('commercial')}}">Commercial project With Perfection &#038; creative design</a>
 													<span class="kyber-post-date">April 6, 2020</span>
 											</div>
 				</li>
@@ -520,7 +519,7 @@ h3 .kyber-infobox-title {
 											<div class="kyber-post-image">
 							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-03-rt-tu1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
 										<div class="kyber-post-content">
-						<a href="./../../we-are-best-construction-plan-business-solution/index.html">We are best Construction Plan business solution</a>
+						<a href="{{route('construction')}}">We are best Construction Plan business solution</a>
 													<span class="kyber-post-date">April 6, 2020</span>
 											</div>
 				</li>
@@ -528,7 +527,7 @@ h3 .kyber-infobox-title {
 											<div class="kyber-post-image">
 							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-0ftyh3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
 										<div class="kyber-post-content">
-						<a href="./../../low-cost-interior-designing-project-planning/index.html">Low cost interior designing Project Planning</a>
+						<a href="{{route('interior')}}">Low cost interior designing Project Planning</a>
 													<span class="kyber-post-date">April 6, 2020</span>
 											</div>
 				</li>
@@ -536,7 +535,7 @@ h3 .kyber-infobox-title {
 											<div class="kyber-post-image">
 							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-0cvf3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
 										<div class="kyber-post-content">
-						<a href="./../../improve-workflow-with-design-construction/index.html">Improve Workflow With Design Construction</a>
+						<a href="{{route('interior')}}">Improve Workflow With Design Construction</a>
 													<span class="kyber-post-date">April 6, 2020</span>
 											</div>
 				</li>
@@ -567,18 +566,18 @@ h3 .kyber-infobox-title {
 <a href="./../standards/index.html">Standards</a><span>1</span>
 </li>
 	<li class="cat-item cat-item-7 current-cat">
-<a aria-current="page" href="./index.html">Technology</a><span>2</span>
+<a aria-current="page" href="{{route('technology')}}">Technology</a><span>2</span>
 </li>
 			</ul>
 
 			</section><section id="media_image-1" class="widget widget_media_image"><img width="330" height="515" src="./../../wp-content/uploads/2022/02/ad-8s.jpg" class="image wp-image-2563  attachment-full size-full" alt="" loading="lazy" style="max-width: 100%; height: auto;" srcset="./../../wp-content/uploads/2022/02/ad-8s.jpg 330w, ./../../wp-content/uploads/2022/02/ad-8s-192x300.jpg 192w" sizes="(max-width: 330px) 100vw, 330px"></section><section id="tag_cloud-1" class="widget widget_tag_cloud"><h2 class="widget-title">Tags</h2>
 <div class="tagcloud">
-<a href="./../../tag/business/index.html" class="tag-cloud-link tag-link-8 tag-link-position-1" style="font-size: 22pt;" aria-label="Business (2 items)">Business</a>
+<a href="{{route('business')}}" class="tag-cloud-link tag-link-8 tag-link-position-1" style="font-size: 22pt;" aria-label="Business (2 items)">Business</a>
 <a href="./../../tag/department/index.html" class="tag-cloud-link tag-link-9 tag-link-position-2" style="font-size: 8pt;" aria-label="Department (1 item)">Department</a>
 <a href="./../../tag/design/index.html" class="tag-cloud-link tag-link-10 tag-link-position-3" style="font-size: 22pt;" aria-label="Design (2 items)">Design</a>
 <a href="./../../tag/marketing/index.html" class="tag-cloud-link tag-link-11 tag-link-position-4" style="font-size: 22pt;" aria-label="Marketing (2 items)">Marketing</a>
 <a href="./../../tag/partner/index.html" class="tag-cloud-link tag-link-12 tag-link-position-5" style="font-size: 8pt;" aria-label="Partner (1 item)">Partner</a>
-<a href="./../../tag/resources/index.html" class="tag-cloud-link tag-link-13 tag-link-position-6" style="font-size: 8pt;" aria-label="Resources (1 item)">Resources</a>
+<a href="{{route('resource')}}" class="tag-cloud-link tag-link-13 tag-link-position-6" style="font-size: 8pt;" aria-label="Resources (1 item)">Resources</a>
 </div>
 </section></aside><!-- #secondary -->
 
@@ -616,7 +615,7 @@ h3 .kyber-infobox-title {
 											<div class="kyber-post-image">
 							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-0cvf3-2-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
 										<div class="kyber-post-content">
-						<a href="./../../commercial-project-with-perfection-creative-design/index.html">Commercial project With Perfection &#038; creative design</a>
+						<a href="{{route('commercial')}}">Commercial project With Perfection &#038; creative design</a>
 													<span class="kyber-post-date">April 6, 2020</span>
 											</div>
 				</li>
@@ -624,7 +623,7 @@ h3 .kyber-infobox-title {
 											<div class="kyber-post-image">
 							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-03-rt-tu1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
 										<div class="kyber-post-content">
-						<a href="./../../we-are-best-construction-plan-business-solution/index.html">We are best Construction Plan business solution</a>
+						<a href="{{route('construction')}}">We are best Construction Plan business solution</a>
 													<span class="kyber-post-date">April 6, 2020</span>
 											</div>
 				</li>
@@ -632,7 +631,7 @@ h3 .kyber-infobox-title {
 											<div class="kyber-post-image">
 							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-0ftyh3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
 										<div class="kyber-post-content">
-						<a href="./../../low-cost-interior-designing-project-planning/index.html">Low cost interior designing Project Planning</a>
+						<a href="{{route('interior')}}">Low cost interior designing Project Planning</a>
 													<span class="kyber-post-date">April 6, 2020</span>
 											</div>
 				</li>

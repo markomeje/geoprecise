@@ -119,7 +119,108 @@ h3 .kyber-infobox-title {
 
 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>
 
-@include('layout.navbar')
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<header id="masthead" class="site-header-container header-layout-2">
+	
+<div class="site-header">
+	<div class="container site-header-top">
+		<div class="d-flex align-items-center">
+			<div class="site-logo">
+	<a href="{{route('home')}}" rel="home">
+		<img class="img-fluid" src="./../wp-content/uploads/2022/02/logo-geop-1.png" alt="GeoPrecise">
+	</a>
+</div>
+<div class="kyber-header-button-container">
+	<div class="kyber-header-button">
+		<a class="kyber-header-button" href="{{route('contact')}}" title="Request a Quote">Request a Quote</a>
+	</div>
+</div>
+<div class="contact-info">
+			<div class="contact-phone contact-item d-flex align-items-center">
+			<i class="flaticon-call skincolor"></i>
+			<div class="contact-list">
+				<span class="contact-label">Call Now</span>
+				<span class="contact-value">
+					<a href="tel:+2348060545860">+234 806 054 5860</a>
+				</span>
+			</div>
+		</div>
+				<div class="contact-email contact-item d-flex align-items-center">
+			<i class="flaticon-email-1 skincolor"></i>
+			<div class="contact-list">
+				<span class="contact-label">Email</span>
+				<span class="contact-value">
+					<a href="mailto:contact@geoprecisegroup.com">contact@geoprecisegroup.com</a>
+				</span>
+			</div>
+		</div>
+		</div>
+			<div id="site-navigation-mobile">
+			</div>
+		</div>
+	</div>
+	<div class="header-stickable-wrap">	
+		<div class="header-stickable">
+			<div class="kyber-bg-color-secondary">
+				<div class="container">
+					<div class="site-header-bottom">
+						<div class="header-menu-area-inner d-flex align-items-center justify-content-between">
+							<nav id="site-navigation" class="main-navigation">
+								<div class="menu-menu-1-container"><ul id="primary-menu" class="menu">
+<li id="menu-item-2305" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2305 "><a href="{{route('home')}}">Home</a></li>
+<li id="menu-item-2303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2303">
+<a href="{{route('ourservices')}}">Our Services</a>
+<ul class="sub-menu">
+	<li id="menu-item-2311" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2311"><a href="{{route('hydrographic')}}">Hydrographic Survey</a></li>
+	<li id="menu-item-2312" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2312"><a href="{{route('cadastral')}}">Cadastral &#038; Land Survey</a></li>
+	<li id="menu-item-2313" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2313"><a href="{{route('engineering')}}">Engineering Surveying</a></li>
+	<li id="menu-item-2314" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2314"><a href="{{route('sensing')}}">Remote Sensing</a></li>
+	<li id="menu-item-2315" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2315"><a href="{{route('highway')}}">Highway &#038; Road</a></li>
+	<li id="menu-item-2316" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2316"><a href="{{route('aerial')}}">Aerial Data Collection</a></li>
+	<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2318"><a href="{{route('mapping')}}">GIS &#038; Mapping</a></li>
+</ul>
+</li>
+<li id="menu-item-2319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2319"><a href="{{route('ourprojects')}}">Projects</a></li>
+<li id="menu-item-2321" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-828 current_page_item current_page_parent menu-item-2321"><a href="{{route('blog')}}" aria-current="page">Blog</a></li>
+<li id="menu-item-2323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2323">
+<a href="{{route('contact')}}">Contact Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-2307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2307"><a href="{{route('faq')}}">FAQ</a></li>
+</ul>
+</li>
+<li id="menu-item-2324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2324">
+<a href="{{route('aboutus')}}">About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-2308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2308"><a href="{{route('ourteam')}}">Our Team</a></li>
+</ul>
+</li>
+</ul></div>							</nav> 
+							<div class="header-right-side">
+								<div class="social-info-wrapper">
+	<ul class="social-info">
+				<li class="social-facebook">
+				<a class="social-icon" target="_blank" href="https://facebook.com/geoprecise1" rel="nofollow"><i class="fab fa-facebook"></i></a>
+			</li>
+						<li class="social-facebook">
+				<a class="social-icon" target="_blank" href="https://twitter.com/geoprecise1" rel="nofollow"><i class="fab fa-twitter"></i></a>
+			</li>
+						<li class="social-facebook">
+				<a class="social-icon" target="_blank" href="https://www.instagram.com/geoprecise1" rel="nofollow"><i class="fab fa-instagram"></i></a>
+			</li>
+				</ul>
+</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</header>
 
 
 	<div id="content" class="site-content">
@@ -155,7 +256,7 @@ h3 .kyber-infobox-title {
 		<header class="entry-header">
 							<div class="entry-meta">
 						
-		<span class="posted-on"><a href="./../../2020/04/06/index.html" rel="bookmark">
+		<span class="posted-on"><a href="{{route('archive06')}}" rel="bookmark">
 			<time class="entry-date published updated" datetime="2020-04-06T04:14:17+00:00">
 			06			<span>Apr</span></time></a>
 		</span>
@@ -222,14 +323,14 @@ h3 .kyber-infobox-title {
 
 <article id="post-245" class="post-245 post type-post status-publish format-standard has-post-thumbnail hentry category-buildings tag-design">
 	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="./../../how-is-3d-print-affecting-the-construction/index.html" aria-hidden="true" tabindex="-1">
+				<a class="post-thumbnail" href="{{route('3dprint')}}" aria-hidden="true" tabindex="-1">
 				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/04/img-0cvf3-2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="How Is 3D Print Affecting The Construction?" loading="lazy" srcset="./../../wp-content/uploads/2020/04/img-0cvf3-2.jpg 1200w, ./../../wp-content/uploads/2020/04/img-0cvf3-2-300x250.jpg 300w, ./../../wp-content/uploads/2020/04/img-0cvf3-2-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/04/img-0cvf3-2-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
 				
 	<div class="kyber-blog-classic-inner">
 		<header class="entry-header">
 							<div class="entry-meta">
 						
-		<span class="posted-on"><a href="./../../2020/03/12/index.html" rel="bookmark">
+		<span class="posted-on"><a href="{{route('archive12')}}" rel="bookmark">
 			<time class="entry-date published updated" datetime="2020-03-12T17:57:07+00:00">
 			12			<span>Mar</span></time></a>
 		</span>
@@ -322,11 +423,11 @@ h3 .kyber-infobox-title {
 
 
 <ol class="wp-block-latest-comments">
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../../new-industrial-cleaning-method-panel-ruling/index.html#comment-29">New Industrial Cleaning Method Panel Ruling</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../../most-successful-construction-industry-myths/index.html#comment-9">Most Successful Construction Industry Myths</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../../how-is-3d-print-affecting-the-construction/index.html#comment-11">How Is 3D Print Affecting The Construction?</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../../construction-agreements-of-painting-perfection/index.html#comment-13">Construction Agreements of Painting Perfection</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../../what-are-the-benefits-of-designer-certification/index.html#comment-15">What Are The Benefits Of Designer Certification?</a></footer></article></li>
+<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('cleaning')}}#comment-29">New Industrial Cleaning Method Panel Ruling</a></footer></article></li>
+<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('industry')}}#comment-9">Most Successful Construction Industry Myths</a></footer></article></li>
+<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('3dprint')}}#comment-11">How Is 3D Print Affecting The Construction?</a></footer></article></li>
+<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('agreement')}}#comment-13">Construction Agreements of Painting Perfection</a></footer></article></li>
+<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('benefit')}}#comment-15">What Are The Benefits Of Designer Certification?</a></footer></article></li>
 </ol>
 </div></div>
 </section><section id="block-5" class="widget widget_block">
@@ -334,9 +435,9 @@ h3 .kyber-infobox-title {
 <h2 id="archives">Archives</h2>
 
 
-<ul class=" wp-block-archives-list wp-block-archives">	<li><a href="./../../2020/04/index.html">April 2020</a></li>
-	<li><a href="./../../2020/03/index.html">March 2020</a></li>
-	<li><a href="./../../2020/01/index.html">January 2020</a></li>
+<ul class=" wp-block-archives-list wp-block-archives">	<li><a href="{{route('archive04')}}">April 2020</a></li>
+	<li><a href="{{route('archive03')}}">March 2020</a></li>
+	<li><a href="{{route('archive01')}}">January 2020</a></li>
 </ul>
 </div></div>
 </section><section id="block-6" class="widget widget_block">
@@ -436,12 +537,12 @@ h3 .kyber-infobox-title {
 
 			</section><section id="media_image-1" class="widget widget_media_image"><img width="330" height="515" src="./../../wp-content/uploads/2022/02/ad-8s.jpg" class="image wp-image-2563  attachment-full size-full" alt="" loading="lazy" style="max-width: 100%; height: auto;" srcset="./../../wp-content/uploads/2022/02/ad-8s.jpg 330w, ./../../wp-content/uploads/2022/02/ad-8s-192x300.jpg 192w" sizes="(max-width: 330px) 100vw, 330px"></section><section id="tag_cloud-1" class="widget widget_tag_cloud"><h2 class="widget-title">Tags</h2>
 <div class="tagcloud">
-<a href="./../../tag/business/index.html" class="tag-cloud-link tag-link-8 tag-link-position-1" style="font-size: 22pt;" aria-label="Business (2 items)">Business</a>
-<a href="./../../tag/department/index.html" class="tag-cloud-link tag-link-9 tag-link-position-2" style="font-size: 8pt;" aria-label="Department (1 item)">Department</a>
-<a href="./../../tag/design/index.html" class="tag-cloud-link tag-link-10 tag-link-position-3" style="font-size: 22pt;" aria-label="Design (2 items)">Design</a>
-<a href="./../../tag/marketing/index.html" class="tag-cloud-link tag-link-11 tag-link-position-4" style="font-size: 22pt;" aria-label="Marketing (2 items)">Marketing</a>
-<a href="./../../tag/partner/index.html" class="tag-cloud-link tag-link-12 tag-link-position-5" style="font-size: 8pt;" aria-label="Partner (1 item)">Partner</a>
-<a href="./../../tag/resources/index.html" class="tag-cloud-link tag-link-13 tag-link-position-6" style="font-size: 8pt;" aria-label="Resources (1 item)">Resources</a>
+<a href="{{route('business')}}" class="tag-cloud-link tag-link-8 tag-link-position-1" style="font-size: 22pt;" aria-label="Business (2 items)">Business</a>
+<a href="{{route('department')}}l" class="tag-cloud-link tag-link-9 tag-link-position-2" style="font-size: 8pt;" aria-label="Department (1 item)">Department</a>
+<a href="{{route('design')}}" class="tag-cloud-link tag-link-10 tag-link-position-3" style="font-size: 22pt;" aria-label="Design (2 items)">Design</a>
+<a href="{{route('marketing')}}" class="tag-cloud-link tag-link-11 tag-link-position-4" style="font-size: 22pt;" aria-label="Marketing (2 items)">Marketing</a>
+<a href="{{route('partner')}}" class="tag-cloud-link tag-link-12 tag-link-position-5" style="font-size: 8pt;" aria-label="Partner (1 item)">Partner</a>
+<a href="{{route('resource')}}" class="tag-cloud-link tag-link-13 tag-link-position-6" style="font-size: 8pt;" aria-label="Resources (1 item)">Resources</a>
 </div>
 </section></aside><!-- #secondary -->
 

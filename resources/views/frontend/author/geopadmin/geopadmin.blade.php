@@ -272,7 +272,7 @@ h3 .kyber-infobox-title {
 			<div class="entry-meta-container">
 				<span class="author vcard">
 					<i class="fas fa-user"></i>
-					<a class="url fn n" href="./index.html">
+					<a class="url fn n" href="{{route('geopadmin')}}">
 						geopadmin					</a>
 				</span>
 										<span class="categories-list">
@@ -281,7 +281,7 @@ h3 .kyber-infobox-title {
 						</span>
 												<span class="tag-list">
 							<i class="fas fa-tags"></i>
-							<a href="./../../tag/design/index.html" rel="tag">Design</a>	
+							<a href="{{route('design')}}" rel="tag">Design</a>	
 						</span>
 												<span class="meta-comment">
 							<i class="far fa-comment"></i>
@@ -322,7 +322,7 @@ h3 .kyber-infobox-title {
 
 <article id="post-739" class="post-739 post type-post status-publish format-standard has-post-thumbnail hentry category-construction tag-business">
 	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="./../../we-are-best-construction-plan-business-solution/index.html" aria-hidden="true" tabindex="-1">
+				<a class="post-thumbnail" href="{{route('construction')}}" aria-hidden="true" tabindex="-1">
 				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/04/img-03-rt-tu1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="We are best Construction Plan business solution" loading="lazy" srcset="./../../wp-content/uploads/2020/04/img-03-rt-tu1.jpg 1200w, ./../../wp-content/uploads/2020/04/img-03-rt-tu1-300x250.jpg 300w, ./../../wp-content/uploads/2020/04/img-03-rt-tu1-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/04/img-03-rt-tu1-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
 				
 	<div class="kyber-blog-classic-inner">
@@ -335,7 +335,7 @@ h3 .kyber-infobox-title {
 		</span>
 						</div>
 <!-- .entry-meta -->
-						<h2 class="entry-title"><a href="./../../we-are-best-construction-plan-business-solution/index.html" rel="bookmark">We are best Construction Plan business solution</a></h2>		</header><!-- .entry-header -->
+						<h2 class="entry-title"><a href="{{route('construction')}}" rel="bookmark">We are best Construction Plan business solution</a></h2>		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
@@ -351,22 +351,22 @@ h3 .kyber-infobox-title {
 				</span>
 										<span class="categories-list">
 							<i class="far fa-folder-open"></i>
-							<a href="./../../category/construction/index.html" rel="category tag">Construction</a>	
+							<a href="{{route('categoryconstruction')}}" rel="category tag">Construction</a>	
 						</span>
 												<span class="tag-list">
 							<i class="fas fa-tags"></i>
-							<a href="./../../tag/business/index.html" rel="tag">Business</a>	
+							<a href="{{route('business')}}" rel="tag">Business</a>	
 						</span>
 												<span class="meta-comment">
 							<i class="far fa-comment"></i>
-							<a href="./../../we-are-best-construction-plan-business-solution/index.html#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
+							<a href="{{route('construction')}}#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
 									</div>
 								<div class="social-icon-share">
 						<a href="javascript:void(0)" class="social-share-button">
 							<i class="fas fa-share-alt mr-1"></i>
 						</a>
 						<ul class="social-share-icons">
-															<li class="social-share-icon">
+									<li class="social-share-icon">
 									<a href="https://www.facebook.com/sharer/sharer.php?u=./we-are-best-construction-plan-business-solution/" class="icon-link" target="popup" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=./we-are-best-construction-plan-business-solution/','popup','width=600,height=600'); return false;">
 										<i class="fab fa-facebook-f"></i>
 									</a>
@@ -396,7 +396,7 @@ h3 .kyber-infobox-title {
 
 <article id="post-737" class="post-737 post type-post status-publish format-standard has-post-thumbnail hentry category-educational tag-department">
 	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="./../../low-cost-interior-designing-project-planning/index.html" aria-hidden="true" tabindex="-1">
+				<a class="post-thumbnail" href="{{route('interior')}}" aria-hidden="true" tabindex="-1">
 				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/04/img-0ftyh3.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Low cost interior designing Project Planning" loading="lazy" srcset="./../../wp-content/uploads/2020/04/img-0ftyh3.jpg 1200w, ./../../wp-content/uploads/2020/04/img-0ftyh3-300x250.jpg 300w, ./../../wp-content/uploads/2020/04/img-0ftyh3-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/04/img-0ftyh3-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
 				
 	<div class="kyber-blog-classic-inner">
@@ -409,7 +409,7 @@ h3 .kyber-infobox-title {
 		</span>
 						</div>
 <!-- .entry-meta -->
-						<h2 class="entry-title"><a href="./../../low-cost-interior-designing-project-planning/index.html" rel="bookmark">Low cost interior designing Project Planning</a></h2>		</header><!-- .entry-header -->
+						<h2 class="entry-title"><a href="{{route('interior')}}" rel="bookmark">Low cost interior designing Project Planning</a></h2>		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
@@ -425,15 +425,15 @@ h3 .kyber-infobox-title {
 				</span>
 										<span class="categories-list">
 							<i class="far fa-folder-open"></i>
-							<a href="./../../category/educational/index.html" rel="category tag">Educational</a>	
+							<a href="{{route('education')}}" rel="category tag">Educational</a>	
 						</span>
 												<span class="tag-list">
 							<i class="fas fa-tags"></i>
-							<a href="./../../tag/department/index.html" rel="tag">Department</a>	
+							<a href="{{route('department')}}" rel="tag">Department</a>	
 						</span>
 												<span class="meta-comment">
 							<i class="far fa-comment"></i>
-							<a href="./../../low-cost-interior-designing-project-planning/index.html#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
+							<a href="{{route('interior')}}#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
 									</div>
 								<div class="social-icon-share">
 						<a href="javascript:void(0)" class="social-share-button">
@@ -470,7 +470,7 @@ h3 .kyber-infobox-title {
 
 <article id="post-735" class="post-735 post type-post status-publish format-standard has-post-thumbnail hentry category-innovations tag-marketing">
 	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="./../../improve-workflow-with-design-construction/index.html" aria-hidden="true" tabindex="-1">
+				<a class="post-thumbnail" href="{{route('improve')}}" aria-hidden="true" tabindex="-1">
 				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/04/img-0cvf3.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Improve Workflow With Design Construction" loading="lazy" srcset="./../../wp-content/uploads/2020/04/img-0cvf3.jpg 1200w, ./../../wp-content/uploads/2020/04/img-0cvf3-300x250.jpg 300w, ./../../wp-content/uploads/2020/04/img-0cvf3-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/04/img-0cvf3-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
 				
 	<div class="kyber-blog-classic-inner">
@@ -483,7 +483,7 @@ h3 .kyber-infobox-title {
 		</span>
 						</div>
 <!-- .entry-meta -->
-						<h2 class="entry-title"><a href="./../../improve-workflow-with-design-construction/index.html" rel="bookmark">Improve Workflow With Design Construction</a></h2>		</header><!-- .entry-header -->
+						<h2 class="entry-title"><a href="{{route('improve')}}" rel="bookmark">Improve Workflow With Design Construction</a></h2>		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
@@ -499,15 +499,15 @@ h3 .kyber-infobox-title {
 				</span>
 										<span class="categories-list">
 							<i class="far fa-folder-open"></i>
-							<a href="./../../category/innovations/index.html" rel="category tag">Innovations</a>	
+							<a href="{{route('innovation')}}" rel="category tag">Innovations</a>	
 						</span>
 												<span class="tag-list">
 							<i class="fas fa-tags"></i>
-							<a href="./../../tag/marketing/index.html" rel="tag">Marketing</a>	
+							<a href="{{route('marketing')}}" rel="tag">Marketing</a>	
 						</span>
 												<span class="meta-comment">
 							<i class="far fa-comment"></i>
-							<a href="./../../improve-workflow-with-design-construction/index.html#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
+							<a href="{{route('improve')}}#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
 									</div>
 								<div class="social-icon-share">
 						<a href="javascript:void(0)" class="social-share-button">
@@ -544,7 +544,7 @@ h3 .kyber-infobox-title {
 
 <article id="post-733" class="post-733 post type-post status-publish format-standard has-post-thumbnail hentry category-standards tag-partner">
 	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="./../../what-are-the-benefits-of-designer-certification/index.html" aria-hidden="true" tabindex="-1">
+				<a class="post-thumbnail" href="{{route('benefit')}}" aria-hidden="true" tabindex="-1">
 				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/04/img-der03.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="What Are The Benefits Of Designer Certification?" loading="lazy" srcset="./../../wp-content/uploads/2020/04/img-der03.jpg 1200w, ./../../wp-content/uploads/2020/04/img-der03-300x250.jpg 300w, ./../../wp-content/uploads/2020/04/img-der03-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/04/img-der03-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
 				
 	<div class="kyber-blog-classic-inner">
@@ -557,7 +557,7 @@ h3 .kyber-infobox-title {
 		</span>
 						</div>
 <!-- .entry-meta -->
-						<h2 class="entry-title"><a href="./../../what-are-the-benefits-of-designer-certification/index.html" rel="bookmark">What Are The Benefits Of Designer Certification?</a></h2>		</header><!-- .entry-header -->
+						<h2 class="entry-title"><a href="{{route('benefit')}}" rel="bookmark">What Are The Benefits Of Designer Certification?</a></h2>		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
@@ -573,15 +573,15 @@ h3 .kyber-infobox-title {
 				</span>
 										<span class="categories-list">
 							<i class="far fa-folder-open"></i>
-							<a href="./../../category/standards/index.html" rel="category tag">Standards</a>	
+							<a href="{{route('standard')}}" rel="category tag">Standards</a>	
 						</span>
 												<span class="tag-list">
 							<i class="fas fa-tags"></i>
-							<a href="./../../tag/partner/index.html" rel="tag">Partner</a>	
+							<a href="{{route('partner')}}" rel="tag">Partner</a>	
 						</span>
 												<span class="meta-comment">
 							<i class="far fa-comment"></i>
-							<a href="./../../what-are-the-benefits-of-designer-certification/index.html#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
+							<a href="{{route('benefit')}}#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
 									</div>
 								<div class="social-icon-share">
 						<a href="javascript:void(0)" class="social-share-button">
@@ -603,7 +603,7 @@ h3 .kyber-infobox-title {
 										<i class="fab fa-linkedin-in"></i>
 									</a>
 								</li>
-																<li class="social-share-icon">
+									<li class="social-share-icon">
 									<a href="http://pinterest.com/pin/create/button/?url=./what-are-the-benefits-of-designer-certification/" class="icon-link" target="popup" onclick="window.open('http://pinterest.com/pin/create/button/?url=./what-are-the-benefits-of-designer-certification/','popup','width=600,height=600'); return false;">
 										<i class="fab fa-pinterest-p"></i>
 									</a>
@@ -618,20 +618,20 @@ h3 .kyber-infobox-title {
 
 <article id="post-250" class="post-250 post type-post status-publish format-standard has-post-thumbnail hentry category-technology tag-resources">
 	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="./../../construction-agreements-of-painting-perfection/index.html" aria-hidden="true" tabindex="-1">
+				<a class="post-thumbnail" href="{{route('agreement')}}" aria-hidden="true" tabindex="-1">
 				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/04/img-0cvf3-4.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Construction Agreements of Painting Perfection" loading="lazy" srcset="./../../wp-content/uploads/2020/04/img-0cvf3-4.jpg 1200w, ./../../wp-content/uploads/2020/04/img-0cvf3-4-300x250.jpg 300w, ./../../wp-content/uploads/2020/04/img-0cvf3-4-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/04/img-0cvf3-4-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
 				
 	<div class="kyber-blog-classic-inner">
 		<header class="entry-header">
 							<div class="entry-meta">
 						
-		<span class="posted-on"><a href="./../../2020/03/12/index.html" rel="bookmark">
+		<span class="posted-on"><a href="{{route('archive12')}}" rel="bookmark">
 			<time class="entry-date published updated" datetime="2020-03-12T18:01:18+00:00">
 			12			<span>Mar</span></time></a>
 		</span>
 						</div>
 <!-- .entry-meta -->
-						<h2 class="entry-title"><a href="./../../construction-agreements-of-painting-perfection/index.html" rel="bookmark">Construction Agreements of Painting Perfection</a></h2>		</header><!-- .entry-header -->
+						<h2 class="entry-title"><a href="{{route('agreement')}}" rel="bookmark">Construction Agreements of Painting Perfection</a></h2>		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
@@ -647,15 +647,15 @@ h3 .kyber-infobox-title {
 				</span>
 										<span class="categories-list">
 							<i class="far fa-folder-open"></i>
-							<a href="./../../category/technology/index.html" rel="category tag">Technology</a>	
+							<a href="{{route('technology')}}" rel="category tag">Technology</a>	
 						</span>
 												<span class="tag-list">
 							<i class="fas fa-tags"></i>
-							<a href="./../../tag/resources/index.html" rel="tag">Resources</a>	
+							<a href="{{route('resource')}}" rel="tag">Resources</a>	
 						</span>
 												<span class="meta-comment">
 							<i class="far fa-comment"></i>
-							<a href="./../../construction-agreements-of-painting-perfection/index.html#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
+							<a href="{{route('agreement')}}#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
 									</div>
 								<div class="social-icon-share">
 						<a href="javascript:void(0)" class="social-share-button">
@@ -677,7 +677,7 @@ h3 .kyber-infobox-title {
 										<i class="fab fa-linkedin-in"></i>
 									</a>
 								</li>
-																<li class="social-share-icon">
+									<li class="social-share-icon">
 									<a href="http://pinterest.com/pin/create/button/?url=./construction-agreements-of-painting-perfection/" class="icon-link" target="popup" onclick="window.open('http://pinterest.com/pin/create/button/?url=./construction-agreements-of-painting-perfection/','popup','width=600,height=600'); return false;">
 										<i class="fab fa-pinterest-p"></i>
 									</a>
@@ -692,20 +692,20 @@ h3 .kyber-infobox-title {
 
 <article id="post-245" class="post-245 post type-post status-publish format-standard has-post-thumbnail hentry category-buildings tag-design">
 	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="./../../how-is-3d-print-affecting-the-construction/index.html" aria-hidden="true" tabindex="-1">
+				<a class="post-thumbnail" href="{{route('3dprint')}}" aria-hidden="true" tabindex="-1">
 				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/04/img-0cvf3-2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="How Is 3D Print Affecting The Construction?" loading="lazy" srcset="./../../wp-content/uploads/2020/04/img-0cvf3-2.jpg 1200w, ./../../wp-content/uploads/2020/04/img-0cvf3-2-300x250.jpg 300w, ./../../wp-content/uploads/2020/04/img-0cvf3-2-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/04/img-0cvf3-2-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
 				
 	<div class="kyber-blog-classic-inner">
 		<header class="entry-header">
 							<div class="entry-meta">
 						
-		<span class="posted-on"><a href="./../../2020/03/12/index.html" rel="bookmark">
+		<span class="posted-on"><a href="{{route('archive12')}}" rel="bookmark">
 			<time class="entry-date published updated" datetime="2020-03-12T17:57:07+00:00">
 			12			<span>Mar</span></time></a>
 		</span>
 						</div>
 <!-- .entry-meta -->
-						<h2 class="entry-title"><a href="./../../how-is-3d-print-affecting-the-construction/index.html" rel="bookmark">How Is 3D Print Affecting The Construction?</a></h2>		</header><!-- .entry-header -->
+						<h2 class="entry-title"><a href="{{route('3dprint')}}" rel="bookmark">How Is 3D Print Affecting The Construction?</a></h2>		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
@@ -725,11 +725,11 @@ h3 .kyber-infobox-title {
 						</span>
 												<span class="tag-list">
 							<i class="fas fa-tags"></i>
-							<a href="./../../tag/design/index.html" rel="tag">Design</a>	
+							<a href="{{route('design')}}" rel="tag">Design</a>	
 						</span>
 												<span class="meta-comment">
 							<i class="far fa-comment"></i>
-							<a href="./../../how-is-3d-print-affecting-the-construction/index.html#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
+							<a href="{{route('3dprint')}}#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
 									</div>
 								<div class="social-icon-share">
 						<a href="javascript:void(0)" class="social-share-button">
@@ -766,20 +766,20 @@ h3 .kyber-infobox-title {
 
 <article id="post-240" class="post-240 post type-post status-publish format-standard has-post-thumbnail hentry category-technology tag-business">
 	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="./../../most-successful-construction-industry-myths/index.html" aria-hidden="true" tabindex="-1">
+				<a class="post-thumbnail" href="{{route('industry')}}" aria-hidden="true" tabindex="-1">
 				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/04/img-0cvf3-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Most Successful Construction Industry Myths" loading="lazy" srcset="./../../wp-content/uploads/2020/04/img-0cvf3-1.jpg 1200w, ./../../wp-content/uploads/2020/04/img-0cvf3-1-300x250.jpg 300w, ./../../wp-content/uploads/2020/04/img-0cvf3-1-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/04/img-0cvf3-1-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
 				
 	<div class="kyber-blog-classic-inner">
 		<header class="entry-header">
 							<div class="entry-meta">
 						
-		<span class="posted-on"><a href="./../../2020/03/12/index.html" rel="bookmark">
+		<span class="posted-on"><a href="{{route('archive12')}}" rel="bookmark">
 			<time class="entry-date published updated" datetime="2020-03-12T17:53:15+00:00">
 			12			<span>Mar</span></time></a>
 		</span>
 						</div>
 <!-- .entry-meta -->
-						<h2 class="entry-title"><a href="./../../most-successful-construction-industry-myths/index.html" rel="bookmark">Most Successful Construction Industry Myths</a></h2>		</header><!-- .entry-header -->
+						<h2 class="entry-title"><a href="{{route('industry')}}" rel="bookmark">Most Successful Construction Industry Myths</a></h2>		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
@@ -795,15 +795,15 @@ h3 .kyber-infobox-title {
 				</span>
 										<span class="categories-list">
 							<i class="far fa-folder-open"></i>
-							<a href="./../../category/technology/index.html" rel="category tag">Technology</a>	
+							<a href="{{route('technology')}}" rel="category tag">Technology</a>	
 						</span>
 												<span class="tag-list">
 							<i class="fas fa-tags"></i>
-							<a href="./../../tag/business/index.html" rel="tag">Business</a>	
+							<a href="{{route('business')}}" rel="tag">Business</a>	
 						</span>
 												<span class="meta-comment">
 							<i class="far fa-comment"></i>
-							<a href="./../../most-successful-construction-industry-myths/index.html#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
+							<a href="{{route('industry')}}#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
 									</div>
 								<div class="social-icon-share">
 						<a href="javascript:void(0)" class="social-share-button">
@@ -840,20 +840,20 @@ h3 .kyber-infobox-title {
 
 <article id="post-2304" class="post-2304 post type-post status-publish format-standard has-post-thumbnail hentry category-innovations tag-marketing">
 	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="./../../new-industrial-cleaning-method-panel-ruling/index.html" aria-hidden="true" tabindex="-1">
+				<a class="post-thumbnail" href="{{route('cleaning')}}" aria-hidden="true" tabindex="-1">
 				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/04/img-0cvf3-4.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="New Industrial Cleaning Method Panel Ruling" loading="lazy" srcset="./../../wp-content/uploads/2020/04/img-0cvf3-4.jpg 1200w, ./../../wp-content/uploads/2020/04/img-0cvf3-4-300x250.jpg 300w, ./../../wp-content/uploads/2020/04/img-0cvf3-4-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/04/img-0cvf3-4-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
 				
 	<div class="kyber-blog-classic-inner">
 		<header class="entry-header">
 							<div class="entry-meta">
 						
-		<span class="posted-on"><a href="./../../2020/01/18/index.html" rel="bookmark">
+		<span class="posted-on"><a href="{{route('archive18')}}" rel="bookmark">
 			<time class="entry-date published updated" datetime="2020-01-18T17:23:08+00:00">
 			18			<span>Jan</span></time></a>
 		</span>
 						</div>
 <!-- .entry-meta -->
-						<h2 class="entry-title"><a href="./../../new-industrial-cleaning-method-panel-ruling/index.html" rel="bookmark">New Industrial Cleaning Method Panel Ruling</a></h2>		</header><!-- .entry-header -->
+						<h2 class="entry-title"><a href="{{route('cleaning')}}" rel="bookmark">New Industrial Cleaning Method Panel Ruling</a></h2>		</header><!-- .entry-header -->
 
 		<div class="entry-content">
 			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
@@ -869,15 +869,15 @@ h3 .kyber-infobox-title {
 				</span>
 										<span class="categories-list">
 							<i class="far fa-folder-open"></i>
-							<a href="./../../category/innovations/index.html" rel="category tag">Innovations</a>	
+							<a href="{{route('innovation')}}" rel="category tag">Innovations</a>	
 						</span>
 												<span class="tag-list">
 							<i class="fas fa-tags"></i>
-							<a href="./../../tag/marketing/index.html" rel="tag">Marketing</a>	
+							<a href="{{route('marketing')}}" rel="tag">Marketing</a>	
 						</span>
 												<span class="meta-comment">
 							<i class="far fa-comment"></i>
-							<a href="./../../new-industrial-cleaning-method-panel-ruling/index.html#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
+							<a href="{{route('cleaning')}}#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
 									</div>
 								<div class="social-icon-share">
 						<a href="javascript:void(0)" class="social-share-button">
@@ -928,10 +928,10 @@ h3 .kyber-infobox-title {
 
 <ul class="wp-block-latest-posts__list wp-block-latest-posts">
 <li><a class="wp-block-latest-posts__post-title" href="{{route('commercial')}}">Commercial project With Perfection &#038; creative design</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="./../../we-are-best-construction-plan-business-solution/index.html">We are best Construction Plan business solution</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="./../../low-cost-interior-designing-project-planning/index.html">Low cost interior designing Project Planning</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="./../../improve-workflow-with-design-construction/index.html">Improve Workflow With Design Construction</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="./../../what-are-the-benefits-of-designer-certification/index.html">What Are The Benefits Of Designer Certification?</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="{{route('construction')}}">We are best Construction Plan business solution</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="{{route('interior')}}">Low cost interior designing Project Planning</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="{{route('improve')}}">Improve Workflow With Design Construction</a></li>
+<li><a class="wp-block-latest-posts__post-title" href="{{route('benefit')}}">What Are The Benefits Of Designer Certification?</a></li>
 </ul>
 </div></div>
 </section><section id="block-4" class="widget widget_block">
@@ -940,11 +940,11 @@ h3 .kyber-infobox-title {
 
 
 <ol class="wp-block-latest-comments">
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../../new-industrial-cleaning-method-panel-ruling/index.html#comment-29">New Industrial Cleaning Method Panel Ruling</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../../most-successful-construction-industry-myths/index.html#comment-9">Most Successful Construction Industry Myths</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../../how-is-3d-print-affecting-the-construction/index.html#comment-11">How Is 3D Print Affecting The Construction?</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../../construction-agreements-of-painting-perfection/index.html#comment-13">Construction Agreements of Painting Perfection</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="./../../what-are-the-benefits-of-designer-certification/index.html#comment-15">What Are The Benefits Of Designer Certification?</a></footer></article></li>
+<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('cleaning')}}#comment-29">New Industrial Cleaning Method Panel Ruling</a></footer></article></li>
+<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('industry')}}#comment-9">Most Successful Construction Industry Myths</a></footer></article></li>
+<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('3dprint')}}#comment-11">How Is 3D Print Affecting The Construction?</a></footer></article></li>
+<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('agreement')}}#comment-13">Construction Agreements of Painting Perfection</a></footer></article></li>
+<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('benefit')}}#comment-15">What Are The Benefits Of Designer Certification?</a></footer></article></li>
 </ol>
 </div></div>
 </section><section id="block-5" class="widget widget_block">
@@ -952,9 +952,9 @@ h3 .kyber-infobox-title {
 <h2 id="archives">Archives</h2>
 
 
-<ul class=" wp-block-archives-list wp-block-archives">	<li><a href="./../../2020/04/index.html">April 2020</a></li>
-	<li><a href="./../../2020/03/index.html">March 2020</a></li>
-	<li><a href="./../../2020/01/index.html">January 2020</a></li>
+<ul class=" wp-block-archives-list wp-block-archives">	<li><a href="{{route('archive04')}}">April 2020</a></li>
+	<li><a href="{{route('archive03')}}">March 2020</a></li>
+	<li><a href="{{route('archive01')}}">January 2020</a></li>
 </ul>
 </div></div>
 </section><section id="block-6" class="widget widget_block">
@@ -962,23 +962,24 @@ h3 .kyber-infobox-title {
 <h2 id="categories">Categories</h2>
 
 
-<ul class="wp-block-categories-list wp-block-categories">	<li class="cat-item cat-item-2">
+<ul class="wp-block-categories-list wp-block-categories">
+	<li class="cat-item cat-item-2">
 <a href="{{route('building')}}">Buildings</a>
 </li>
 	<li class="cat-item cat-item-3">
-<a href="./../../category/construction/index.html">Construction</a>
+<a href="{{route('categoryconstruction')}}">Construction</a>
 </li>
 	<li class="cat-item cat-item-4">
-<a href="./../../category/educational/index.html">Educational</a>
+<a href="{{route('education')}}">Educational</a>
 </li>
 	<li class="cat-item cat-item-5">
-<a href="./../../category/innovations/index.html">Innovations</a>
+<a href="{{route('innovation')}}">Innovations</a>
 </li>
 	<li class="cat-item cat-item-6">
-<a href="./../../category/standards/index.html">Standards</a>
+<a href="{{route('standard')}}">Standards</a>
 </li>
 	<li class="cat-item cat-item-7">
-<a href="./../../category/technology/index.html">Technology</a>
+<a href="{{route('technology')}}">Technology</a>
 </li>
 </ul>
 </div></div>
@@ -1001,7 +1002,7 @@ h3 .kyber-infobox-title {
 											<div class="kyber-post-image">
 							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-03-rt-tu1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
 										<div class="kyber-post-content">
-						<a href="./../../we-are-best-construction-plan-business-solution/index.html">We are best Construction Plan business solution</a>
+						<a href="{{route('construction')}}">We are best Construction Plan business solution</a>
 													<span class="kyber-post-date">April 6, 2020</span>
 											</div>
 				</li>
@@ -1009,7 +1010,7 @@ h3 .kyber-infobox-title {
 											<div class="kyber-post-image">
 							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-0ftyh3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
 										<div class="kyber-post-content">
-						<a href="./../../low-cost-interior-designing-project-planning/index.html">Low cost interior designing Project Planning</a>
+						<a href="{{route('interior')}}">Low cost interior designing Project Planning</a>
 													<span class="kyber-post-date">April 6, 2020</span>
 											</div>
 				</li>
@@ -1017,7 +1018,7 @@ h3 .kyber-infobox-title {
 											<div class="kyber-post-image">
 							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-0cvf3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
 										<div class="kyber-post-content">
-						<a href="./../../improve-workflow-with-design-construction/index.html">Improve Workflow With Design Construction</a>
+						<a href="{{route('improve')}}">Improve Workflow With Design Construction</a>
 													<span class="kyber-post-date">April 6, 2020</span>
 											</div>
 				</li>
@@ -1025,7 +1026,7 @@ h3 .kyber-infobox-title {
 											<div class="kyber-post-image">
 							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-der03-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
 										<div class="kyber-post-content">
-						<a href="./../../what-are-the-benefits-of-designer-certification/index.html">What Are The Benefits Of Designer Certification?</a>
+						<a href="{{route('benefit')}}">What Are The Benefits Of Designer Certification?</a>
 													<span class="kyber-post-date">April 6, 2020</span>
 											</div>
 				</li>
@@ -1036,30 +1037,30 @@ h3 .kyber-infobox-title {
 <a href="{{route('building')}}">Buildings</a><span>2</span>
 </li>
 	<li class="cat-item cat-item-3">
-<a href="./../../category/construction/index.html">Construction</a><span>1</span>
+<a href="{{route('categoryconstruction')}}">Construction</a><span>1</span>
 </li>
 	<li class="cat-item cat-item-4">
-<a href="./../../category/educational/index.html">Educational</a><span>1</span>
+<a href="{{route('education')}}">Educational</a><span>1</span>
 </li>
 	<li class="cat-item cat-item-5">
-<a href="./../../category/innovations/index.html">Innovations</a><span>2</span>
+<a href="{{route('innovation')}}">Innovations</a><span>2</span>
 </li>
 	<li class="cat-item cat-item-6">
-<a href="./../../category/standards/index.html">Standards</a><span>1</span>
+<a href="{{route('standard')}}">Standards</a><span>1</span>
 </li>
 	<li class="cat-item cat-item-7">
-<a href="./../../category/technology/index.html">Technology</a><span>2</span>
+<a href="{{route('technology')}}">Technology</a><span>2</span>
 </li>
 			</ul>
 
 			</section><section id="media_image-1" class="widget widget_media_image"><img width="330" height="515" src="./../../wp-content/uploads/2022/02/ad-8s.jpg" class="image wp-image-2563  attachment-full size-full" alt="" loading="lazy" style="max-width: 100%; height: auto;" srcset="./../../wp-content/uploads/2022/02/ad-8s.jpg 330w, ./../../wp-content/uploads/2022/02/ad-8s-192x300.jpg 192w" sizes="(max-width: 330px) 100vw, 330px"></section><section id="tag_cloud-1" class="widget widget_tag_cloud"><h2 class="widget-title">Tags</h2>
 <div class="tagcloud">
-<a href="./../../tag/business/index.html" class="tag-cloud-link tag-link-8 tag-link-position-1" style="font-size: 22pt;" aria-label="Business (2 items)">Business</a>
-<a href="./../../tag/department/index.html" class="tag-cloud-link tag-link-9 tag-link-position-2" style="font-size: 8pt;" aria-label="Department (1 item)">Department</a>
-<a href="./../../tag/design/index.html" class="tag-cloud-link tag-link-10 tag-link-position-3" style="font-size: 22pt;" aria-label="Design (2 items)">Design</a>
-<a href="./../../tag/marketing/index.html" class="tag-cloud-link tag-link-11 tag-link-position-4" style="font-size: 22pt;" aria-label="Marketing (2 items)">Marketing</a>
-<a href="./../../tag/partner/index.html" class="tag-cloud-link tag-link-12 tag-link-position-5" style="font-size: 8pt;" aria-label="Partner (1 item)">Partner</a>
-<a href="./../../tag/resources/index.html" class="tag-cloud-link tag-link-13 tag-link-position-6" style="font-size: 8pt;" aria-label="Resources (1 item)">Resources</a>
+<a href="{{route('business')}}" class="tag-cloud-link tag-link-8 tag-link-position-1" style="font-size: 22pt;" aria-label="Business (2 items)">Business</a>
+<a href="{{route('department')}}" class="tag-cloud-link tag-link-9 tag-link-position-2" style="font-size: 8pt;" aria-label="Department (1 item)">Department</a>
+<a href="{{route('design')}}" class="tag-cloud-link tag-link-10 tag-link-position-3" style="font-size: 22pt;" aria-label="Design (2 items)">Design</a>
+<a href="{{route('marketing')}}" class="tag-cloud-link tag-link-11 tag-link-position-4" style="font-size: 22pt;" aria-label="Marketing (2 items)">Marketing</a>
+<a href="{{route('partner')}}" class="tag-cloud-link tag-link-12 tag-link-position-5" style="font-size: 8pt;" aria-label="Partner (1 item)">Partner</a>
+<a href="{{route('resource')}}" class="tag-cloud-link tag-link-13 tag-link-position-6" style="font-size: 8pt;" aria-label="Resources (1 item)">Resources</a>
 </div>
 </section></aside><!-- #secondary -->
 

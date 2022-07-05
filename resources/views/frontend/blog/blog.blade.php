@@ -256,7 +256,7 @@ h3 .kyber-infobox-title {
 		<header class="entry-header">
 							<div class="entry-meta">
 						
-		<span class="posted-on"><a href="./../2020/04/06/index.html" rel="bookmark">
+		<span class="posted-on"><a href="{{route('archive06')}}" rel="bookmark">
 			<time class="entry-date published updated" datetime="2020-04-06T04:14:17+00:00">
 			06			<span>Apr</span></time></a>
 		</span>
@@ -330,7 +330,7 @@ h3 .kyber-infobox-title {
 		<header class="entry-header">
 							<div class="entry-meta">
 						
-		<span class="posted-on"><a href="./../2020/04/06/index.html" rel="bookmark">
+		<span class="posted-on"><a href="{{route('archive06')}}" rel="bookmark">
 			<time class="entry-date published updated" datetime="2020-04-06T04:13:26+00:00">
 			06			<span>Apr</span></time></a>
 		</span>
@@ -404,7 +404,7 @@ h3 .kyber-infobox-title {
 		<header class="entry-header">
 							<div class="entry-meta">
 						
-		<span class="posted-on"><a href="./../2020/04/06/index.html" rel="bookmark">
+		<span class="posted-on"><a href="{{route('archive06')}}" rel="bookmark">
 			<time class="entry-date published updated" datetime="2020-04-06T04:12:40+00:00">
 			06			<span>Apr</span></time></a>
 		</span>
@@ -478,7 +478,7 @@ h3 .kyber-infobox-title {
 		<header class="entry-header">
 							<div class="entry-meta">
 						
-		<span class="posted-on"><a href="./../2020/04/06/index.html" rel="bookmark">
+		<span class="posted-on"><a href="{{route('archive06')}}" rel="bookmark">
 			<time class="entry-date published updated" datetime="2020-04-06T04:11:24+00:00">
 			06			<span>Apr</span></time></a>
 		</span>
@@ -552,7 +552,7 @@ h3 .kyber-infobox-title {
 		<header class="entry-header">
 							<div class="entry-meta">
 						
-		<span class="posted-on"><a href="./../2020/04/06/index.html" rel="bookmark">
+		<span class="posted-on"><a href="{{route('archive06')}}" rel="bookmark">
 			<time class="entry-date published updated" datetime="2020-04-06T04:09:45+00:00">
 			06			<span>Apr</span></time></a>
 		</span>
@@ -626,7 +626,7 @@ h3 .kyber-infobox-title {
 		<header class="entry-header">
 							<div class="entry-meta">
 						
-		<span class="posted-on"><a href="./../2020/03/12/index.html" rel="bookmark">
+		<span class="posted-on"><a href="{{route('archive12')}}" rel="bookmark">
 			<time class="entry-date published updated" datetime="2020-03-12T18:01:18+00:00">
 			12			<span>Mar</span></time></a>
 		</span>
@@ -700,7 +700,7 @@ h3 .kyber-infobox-title {
 		<header class="entry-header">
 							<div class="entry-meta">
 						
-		<span class="posted-on"><a href="./../2020/03/12/index.html" rel="bookmark">
+		<span class="posted-on"><a href="{{route('archive12')}}" rel="bookmark">
 			<time class="entry-date published updated" datetime="2020-03-12T17:57:07+00:00">
 			12			<span>Mar</span></time></a>
 		</span>
@@ -752,7 +752,7 @@ h3 .kyber-infobox-title {
 										<i class="fab fa-linkedin-in"></i>
 									</a>
 								</li>
-																<li class="social-share-icon">
+									<li class="social-share-icon">
 									<a href="http://pinterest.com/pin/create/button/?url=./how-is-3d-print-affecting-the-construction/" class="icon-link" target="popup" onclick="window.open('http://pinterest.com/pin/create/button/?url=./how-is-3d-print-affecting-the-construction/','popup','width=600,height=600'); return false;">
 										<i class="fab fa-pinterest-p"></i>
 									</a>
@@ -774,7 +774,7 @@ h3 .kyber-infobox-title {
 		<header class="entry-header">
 							<div class="entry-meta">
 						
-		<span class="posted-on"><a href="./../2020/03/12/index.html" rel="bookmark">
+		<span class="posted-on"><a href="{{route('archive12')}}" rel="bookmark">
 			<time class="entry-date published updated" datetime="2020-03-12T17:53:15+00:00">
 			12			<span>Mar</span></time></a>
 		</span>
