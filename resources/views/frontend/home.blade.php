@@ -554,7 +554,7 @@ Services You Need			</h3>
 											<a class="kyber-mfg-popup-image" href="./wp-content/uploads/2022/03/Our-Lady-Of-The-Rosary-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./project/our-lady-of-the-rosary/index.html">
+											<a class="kyber-project-link" href="{{route('rosary')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -582,7 +582,7 @@ Services You Need			</h3>
 											<a class="kyber-mfg-popup-image" href="./wp-content/uploads/2022/03/Senior-Civil-Servants-Association-Of-Nig-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./project/senior-civil-servants-association-of-nig/index.html">
+											<a class="kyber-project-link" href="{{route('civilservant')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -610,7 +610,7 @@ Services You Need			</h3>
 											<a class="kyber-mfg-popup-image" href="./wp-content/uploads/2022/03/Godffrey-Okoye-University-Permanent-Site-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./project/godffrey-okoye-university-permanent-site-2/index.html">
+											<a class="kyber-project-link" href="{{route('godfrey')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -638,7 +638,7 @@ Services You Need			</h3>
 											<a class="kyber-mfg-popup-image" href="./wp-content/uploads/2022/03/PLENTIFF-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./project/plentiff-esther-nohji-engr-nnabuike-and-chioma-vavessa-chukwudi-and-defendant-miss-chinyere-juliet-okenwa-mr-ameachi-nneji-udeh-anayo-oko-mrs-kate-eneh/index.html">
+											<a class="kyber-project-link" href="{{route('plentiff')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -666,7 +666,7 @@ Services You Need			</h3>
 											<a class="kyber-mfg-popup-image" href="./wp-content/uploads/2022/03/Enugu-State-H-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./project/enugu-state-housing-development-cooperation-land-parcel-a1/index.html">
+											<a class="kyber-project-link" href="{{route('housing')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>

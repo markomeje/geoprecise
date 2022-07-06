@@ -69,4 +69,19 @@ Route::middleware(['web'])->domain(env('APP_URL'))->group(function() {
     Route::get('/archive06', [\App\Http\Controllers\Archive06Controller::class, 'index'])->name('archive06');
     Route::get('/archive12', [\App\Http\Controllers\Archive12Controller::class, 'index'])->name('archive12');
     Route::get('/archive18', [\App\Http\Controllers\Archive18Controller::class, 'index'])->name('archive18');
+
+    Route::get('/bluelake', [\App\Http\Controllers\BlueLakeController::class, 'index'])->name('bluelake');
+    Route::get('/choicecity', [\App\Http\Controllers\ChoicecityController::class, 'index'])->name('choicecite');
+    Route::get('/destiny', [\App\Http\Controllers\DestinyLayoutController::class, 'index'])->name('destiny');
+    Route::get('/gateway', [\App\Http\Controllers\GatewayLayoutController::class, 'index'])->name('gateway');
+    Route::get('/goldengate', [\App\Http\Controllers\GoldenGateController::class, 'index'])->name('goldengate');
+    Route::get('/moniclayout', [\App\Http\Controllers\MonicLayoutController::class, 'index'])->name('moniclayout');
+    Route::get('/peacelayout', [\App\Http\Controllers\PeaceLayoutController::class, 'index'])->name('peacelayout');
+
+    Route::get('/rosary', [\App\Http\Controllers\OurladyController::class, 'index'])->name('rosary');
+    Route::get('/civilservant', [\App\Http\Controllers\CivilservantController::class, 'index'])->name('civilservant');
+    Route::get('/godfrey', [\App\Http\Controllers\GodfreyOkoyeController::class, 'index'])->name('godfrey');
+    Route::get('/plentiff', [\App\Http\Controllers\PlentiffController::class, 'index'])->name('plentiff');
+    Route::get('/housing', [\App\Http\Controllers\HousingController::class, 'index'])->name('housing');
+    
 });

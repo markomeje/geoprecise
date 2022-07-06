@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Golden Gate Layout &#8211; GeoPrecise</title>
+	<title>Enugu State Housing Development Cooperation Land (Parcel A1) &#8211; GeoPrecise</title>
 <meta name="robots" content="max-image-preview:large">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//s.w.org">
@@ -59,14 +59,14 @@ img.emoji {
 <script type="text/javascript" src="./../../wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <script type="text/javascript" src="./../../wp-content/themes/kyber/assets/js/slicknav.min.js?ver=1.0.10" id="slicknav-js"></script>
 <link rel="https://api.w.org/" href="./../../wp-json/index.html">
-<link rel="alternate" type="application/json" href="./../../wp-json/wp/v2/project/2612/index.html">
+<link rel="alternate" type="application/json" href="./../../wp-json/wp/v2/project/2634/index.html">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../../xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./../../wp-includes/wlwmanifest.xml"> 
 <meta name="generator" content="WordPress 6.0">
 <link rel="canonical" href="./index.html">
-<link rel="shortlink" href="./../../index.html?p=2612">
-<link rel="alternate" type="application/json+oembed" href="./../../wp-json/oembed/1.0/embed/index.html?url=https%3A%2F%2F%2Fproject%2Fgolden-gate-layout%2F">
-<link rel="alternate" type="text/xml+oembed" href="./../../wp-json/oembed/1.0/embed/index.html?url=https%3A%2F%2F%2Fproject%2Fgolden-gate-layout%2F&#038;format=xml">
+<link rel="shortlink" href="./../../index.html?p=2634">
+<link rel="alternate" type="application/json+oembed" href="./../../wp-json/oembed/1.0/embed/index.html?url=https%3A%2F%2F%2Fproject%2Fenugu-state-housing-development-cooperation-land-parcel-a1%2F">
+<link rel="alternate" type="text/xml+oembed" href="./../../wp-json/oembed/1.0/embed/index.html?url=https%3A%2F%2F%2Fproject%2Fenugu-state-housing-development-cooperation-land-parcel-a1%2F&#038;format=xml">
 <meta name="generator" content="Redux 4.3.14">
 <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
 <meta name="generator" content="Powered by Slider Revolution 6.5.14 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
@@ -155,7 +155,7 @@ h3 .kyber-infobox-title {
 <noscript><style>.wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
 </head>
 
-<body class="project-template-default single single-project postid-2612 wpb-js-composer js-comp-ver-6.8.0 vc_responsive">
+<body class="project-template-default single single-project postid-2634 wpb-js-composer js-comp-ver-6.8.0 vc_responsive">
 
 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>
 <div id="page" class="site">
@@ -167,13 +167,13 @@ h3 .kyber-infobox-title {
 	<div class="container site-header-top">
 		<div class="d-flex align-items-center">
 			<div class="site-logo">
-	<a href="./../../index.html" rel="home">
-		<img class="img-fluid" src="./../../wp-content/uploads/2022/02/logo-geop-1.png" alt="GeoPrecise">
+	<a href="{{route('home')}}" rel="home">
+		<img class="img-fluid" src="./../wp-content/uploads/2022/02/logo-geop-1.png" alt="GeoPrecise">
 	</a>
 </div>
 <div class="kyber-header-button-container">
 	<div class="kyber-header-button">
-		<a class="kyber-header-button" href="./../../contact-us-1/index.html" title="Request a Quote">Request a Quote</a>
+		<a class="kyber-header-button" href="{{route('contact')}}" title="Request a Quote">Request a Quote</a>
 	</div>
 </div>
 <div class="contact-info">
@@ -208,31 +208,31 @@ h3 .kyber-infobox-title {
 						<div class="header-menu-area-inner d-flex align-items-center justify-content-between">
 							<nav id="site-navigation" class="main-navigation">
 								<div class="menu-menu-1-container"><ul id="primary-menu" class="menu">
-<li id="menu-item-2305" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2305"><a href="./../../index.html">Home</a></li>
+<li id="menu-item-2305" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2305 "><a href="{{route('home')}}">Home</a></li>
 <li id="menu-item-2303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2303">
-<a href="./../../our-services/index.html">Our Services</a>
+<a href="{{route('ourservices')}}">Our Services</a>
 <ul class="sub-menu">
-	<li id="menu-item-2311" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2311"><a href="./../../service/hydrographic-survey/index.html">Hydrographic Survey</a></li>
-	<li id="menu-item-2312" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2312"><a href="./../../service/cadastral-land-survey/index.html">Cadastral &#038; Land Survey</a></li>
-	<li id="menu-item-2313" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2313"><a href="./../../service/engineering-surveying/index.html">Engineering Surveying</a></li>
-	<li id="menu-item-2314" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2314"><a href="./../../service/remote-sensing/index.html">Remote Sensing</a></li>
-	<li id="menu-item-2315" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2315"><a href="./../../service/highway-road/index.html">Highway &#038; Road</a></li>
-	<li id="menu-item-2316" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2316"><a href="./../../service/aerial-data-collection/index.html">Aerial Data Collection</a></li>
-	<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2318"><a href="./../../service/gis-mapping/index.html">GIS &#038; Mapping</a></li>
+	<li id="menu-item-2311" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2311"><a href="{{route('hydrographic')}}">Hydrographic Survey</a></li>
+	<li id="menu-item-2312" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2312"><a href="{{route('cadastral')}}">Cadastral &#038; Land Survey</a></li>
+	<li id="menu-item-2313" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2313"><a href="{{route('engineering')}}">Engineering Surveying</a></li>
+	<li id="menu-item-2314" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2314"><a href="{{route('sensing')}}">Remote Sensing</a></li>
+	<li id="menu-item-2315" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2315"><a href="{{route('highway')}}">Highway &#038; Road</a></li>
+	<li id="menu-item-2316" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2316"><a href="{{route('aerial')}}">Aerial Data Collection</a></li>
+	<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2318"><a href="{{route('mapping')}}">GIS &#038; Mapping</a></li>
 </ul>
 </li>
-<li id="menu-item-2319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2319"><a href="./../../our-projects/index.html">Projects</a></li>
-<li id="menu-item-2321" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-2321"><a href="./../../blog-classic/index.html">Blog</a></li>
+<li id="menu-item-2319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2319"><a href="{{route('ourprojects')}}">Projects</a></li>
+<li id="menu-item-2321" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-828 current_page_item current_page_parent menu-item-2321"><a href="{{route('blog')}}" aria-current="page">Blog</a></li>
 <li id="menu-item-2323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2323">
-<a href="./../../contact-us-1/index.html">Contact Us</a>
+<a href="{{route('contact')}}">Contact Us</a>
 <ul class="sub-menu">
-	<li id="menu-item-2307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2307"><a href="./../../faq/index.html">FAQ</a></li>
+	<li id="menu-item-2307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2307"><a href="{{route('faq')}}">FAQ</a></li>
 </ul>
 </li>
 <li id="menu-item-2324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2324">
-<a href="./../../about-us/index.html">About Us</a>
+<a href="{{route('aboutus')}}">About Us</a>
 <ul class="sub-menu">
-	<li id="menu-item-2308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2308"><a href="./../../our-team/index.html">Our Team</a></li>
+	<li id="menu-item-2308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2308"><a href="{{route('ourteam')}}">Our Team</a></li>
 </ul>
 </li>
 </ul></div>							</nav> 
@@ -269,10 +269,10 @@ h3 .kyber-infobox-title {
 		<div class="row">
 			<div class="col-md-12">			
 				<h1 class="page-title">
-					Golden Gate Layout				</h1>
+					Enugu State Housing Development Cooperation Land (Parcel A1)				</h1>
 									<div class="page-breadcrumbs">
 					<div class="breadcrumb">
-<a href="./../../index.html">Home</a> > <span class="kyber-readcrumb"><a href="./../index.html">Project</a></span> > <span class="current">Golden Gate Layout</span>
+<a href="./../../index.html">Home</a> > <span class="kyber-readcrumb"><a href="./../index.html">Project</a></span> > <span class="current">Enugu State Housing Development Cooperation Land (Parcel A1)</span>
 </div>					</div>
 								</div>				
 		</div>
@@ -283,11 +283,11 @@ h3 .kyber-infobox-title {
 		<div class="col-sm-12">
 			<div id="primary" class="content-area">
 				<main id="main" class="site-main">
-				<article id="post-2612" class="row post-2612 project type-project status-publish has-post-thumbnail hentry project-category-layout-survey">
+				<article id="post-2634" class="row post-2634 project type-project status-publish has-post-thumbnail hentry project-category-re-establishment-survey">
 	<div class="col-lg-7">
 		<div class="kyber-project-thumbnail">
 						<div class="post-thumbnail">
-				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/04/img-0cvf3-3.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="./../../wp-content/uploads/2020/04/img-0cvf3-3.jpg 1200w, ./../../wp-content/uploads/2020/04/img-0cvf3-3-300x250.jpg 300w, ./../../wp-content/uploads/2020/04/img-0cvf3-3-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/04/img-0cvf3-3-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</div>
+				<img width="1200" height="1000" src="./../../wp-content/uploads/2022/03/Enugu-State-H.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="./../../wp-content/uploads/2022/03/Enugu-State-H.jpg 1200w, ./../../wp-content/uploads/2022/03/Enugu-State-H-300x250.jpg 300w, ./../../wp-content/uploads/2022/03/Enugu-State-H-1024x853.jpg 1024w, ./../../wp-content/uploads/2022/03/Enugu-State-H-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</div>
 <!-- .post-thumbnail -->
 					</div>
 	</div>
@@ -297,21 +297,21 @@ h3 .kyber-infobox-title {
 				<h3>Project Details</h3>
 								<div class="kyber-project-detail kb-project_phone-number">
 					<div class="kyber-project-detail-title">Project Name</div>
-					<div class="kyber-project-detail-value">Golden Gate Layout</div>					
+					<div class="kyber-project-detail-value">Enugu State Housing Development Cooperation Land (Parcel A1)</div>					
 				</div>
 									<div class="kyber-project-detail kb-project-client-name">
 						<div class="kyber-project-detail-title">Client</div>
-						<div class="kyber-project-detail-value">Golden Gate Layout</div>
+						<div class="kyber-project-detail-value">Enugu State Housing Development Cooperation Land (Parcel A1)</div>
 					</div>
 										<span class="kyber-service-category">
 											</span>
 					<div class="kyber-project-detail kb-project-category">
 						<div class="kyber-project-detail-title">Category</div>
-						<div class="kyber-project-detail-value">Layout Survey</div>
+						<div class="kyber-project-detail-value">Re-Establishment Survey</div>
 					</div>
 										<div class="kyber-project-detail kb-project-location">
 						<div class="kyber-project-detail-title">Location</div>
-						<div class="kyber-project-detail-value">Layout Survey Agbogazi Nike Enugu East LGA Enugu State</div>
+						<div class="kyber-project-detail-value">Umuchigbo Iji - Nike Enugu East Lga, Enugu State</div>
 					</div>
 										<div class="kyber-project-detail kb-project-year">
 						<div class="kyber-project-detail-title">Year</div>
@@ -322,13 +322,13 @@ h3 .kyber-infobox-title {
 	</div>
 	<div class="kyber-project-content col-md-12">
 			</div>
-</article><!-- #post-2612 -->
+</article><!-- #post-2634 -->
 
 	<nav class="navigation post-navigation" aria-label="Posts">
 		<h2 class="screen-reader-text">Post navigation</h2>
 		<div class="nav-links">
-<div class="nav-previous"><a href="./../peace-layout/index.html" rel="prev">Peace Layout</a></div>
-<div class="nav-next"><a href="./../destiny-layout/index.html" rel="next">Destiny Layout</a></div>
+<div class="nav-previous"><a href="./../enugu-state-housing-development-cooperation-land-parcel-a2/index.html" rel="prev">Enugu State Housing Development Cooperation Land (Parcel A2)</a></div>
+<div class="nav-next"><a href="./../plentiff-esther-nohji-engr-nnabuike-and-chioma-vavessa-chukwudi-and-defendant-miss-chinyere-juliet-okenwa-mr-ameachi-nneji-udeh-anayo-oko-mrs-kate-eneh/index.html" rel="next">PRECIOUS LAYOUT</a></div>
 </div>
 	</nav>				</main><!-- #main -->
 			</div>
@@ -460,5 +460,5 @@ var wpcf7 = {"api":{"root":".\/wp-json\/","namespace":"contact-form-7\/v1"},"cac
 </body>
 
 
-<!-- Page generated by LiteSpeed Cache 4.6 on 2022-06-21 15:45:21 -->
+<!-- Page generated by LiteSpeed Cache 4.6 on 2022-06-21 15:45:08 -->
 </html>
