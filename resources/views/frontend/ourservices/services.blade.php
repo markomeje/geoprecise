@@ -271,7 +271,7 @@ h3 .kyber-infobox-title {
 			</div>
 			<div class="kyber-service-content">						
 				<p>At every stage of the road and highway lifecycle, we ensure that the roads are safe and stable.</p>
-				<a href="./../service/highway-road/index.html">Read More</a>
+				<a href="{{route('highway')}}">Read More</a>
 			</div>
 		</div>
 	</div>
@@ -293,7 +293,7 @@ h3 .kyber-infobox-title {
 			</div>
 			<div class="kyber-service-content">						
 				<p>Throughout our long, successful history in Engineering Survey, we’ve worked with land development, surveying, &#8230;</p>
-				<a href="./../service/engineering-surveying/index.html">Read More</a>
+				<a href="{{route('engineering')}}">Read More</a>
 			</div>
 		</div>
 	</div>
@@ -315,7 +315,7 @@ h3 .kyber-infobox-title {
 			</div>
 			<div class="kyber-service-content">						
 				<p>We offer Aerial Data Collection, Geoprecise is a full-service drone data collection company. We &#8230;</p>
-				<a href="./../service/aerial-data-collection/index.html">Read More</a>
+				<a href="{{route('aerial')}}">Read More</a>
 			</div>
 		</div>
 	</div>
@@ -337,7 +337,7 @@ h3 .kyber-infobox-title {
 			</div>
 			<div class="kyber-service-content">						
 				<p>Geoprecise GIS team is trained and knowledgeable in all industries and throughout the public works sector. We provide&#8230;</p>
-				<a href="./../service/gis-mapping/index.html">Read More</a>
+				<a href="{{route('mapping')}}">Read More</a>
 			</div>
 		</div>
 	</div>
@@ -359,7 +359,7 @@ h3 .kyber-infobox-title {
 			</div>
 			<div class="kyber-service-content">						
 				<p>Geoprecise uses state-of-the-art remote sensing technology to transform spatial data into practical knowledge that supports &#8230;</p>
-				<a href="./../service/remote-sensing/index.html">Read More</a>
+				<a href="{{route('sensing')}}">Read More</a>
 			</div>
 		</div>
 	</div>
@@ -381,7 +381,7 @@ h3 .kyber-infobox-title {
 			</div>
 			<div class="kyber-service-content">						
 				<p>We are an award winning land surveying firm, providing services across Nigeria. We specialize in layout surveys, topographical surveys, boundaries, &#8230;</p>
-				<a href="./../service/cadastral-land-survey/index.html">Read More</a>
+				<a href="{{route('cadastral')}}">Read More</a>
 			</div>
 		</div>
 	</div>
@@ -403,7 +403,7 @@ h3 .kyber-infobox-title {
 			</div>
 			<div class="kyber-service-content">						
 				<p>Geoprecise Services fleet is equipped with full ocean depth multibeam echo sounder systems for hydrographic/bathymetric surveys and charting. &#8230;</p>
-				<a href="./../service/hydrographic-survey/index.html">Read More</a>
+				<a href="{{route('hydrographic')}}">Read More</a>
 			</div>
 		</div>
 	</div>

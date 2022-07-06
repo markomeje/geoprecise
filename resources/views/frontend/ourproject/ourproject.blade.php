@@ -231,7 +231,7 @@ h3 .kyber-infobox-title {
 					Our Projects				</h1>
 									<div class="page-breadcrumbs">
 					<div class="breadcrumb">
-<a href="./../index.html">Home</a> > <span class="current">Our Projects</span>
+<a href="{{route('home')}}">Home</a> > <span class="current">Our Projects</span>
 </div>					</div>
 								</div>				
 		</div>
