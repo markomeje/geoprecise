@@ -285,7 +285,6 @@ h3 .kyber-infobox-title {
       </div>
     </div>
     <div class="row">
-    	
       <div class="col-xl-4 col-sm-6 col-12"> 
         <div class="card">
           <div class="card-content">

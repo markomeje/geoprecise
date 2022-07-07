@@ -9,6 +9,6 @@ class SiteInspectionFormController extends Controller
     //
         public function index()
     {
-        return view('siteinspection');
+        return view('forms.siteinspection');
     }
 }

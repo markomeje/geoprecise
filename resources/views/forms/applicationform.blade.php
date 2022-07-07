@@ -329,7 +329,7 @@ h3 .kyber-infobox-title {
 		</div>
 		<div class="col-sm-12 col-md-6  col-lg-6">
 		<div class="input-group">
-		<input type="submit" value="Submit Request" class="wpcf7-form-control has-spinner wpcf7-submit">
+		<input type="submit" value="Submit form" class="wpcf7-form-control has-spinner wpcf7-submit">
 		</div>
 		</div>
 		</div>
