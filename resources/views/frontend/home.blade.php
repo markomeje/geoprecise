@@ -201,7 +201,7 @@ h3 .kyber-infobox-title {
 							--><rs-layer id="slider-2-slide-4-layer-3" data-type="text" data-color="#09162a" data-rsp_ch="on" data-xy="xo:67px,67px,53px,32px;yo:409px,409px,261px,181px;" data-text="w:normal;s:20,20,15,9;l:25,25,18,11;fw:600;" data-vbility="t,t,t,f" data-frame_0="x:50,50,31,19;" data-frame_1="st:1050;sp:1000;sR:1050;" data-frame_999="o:0;st:w;sR:6950;" style="z-index:8;font-family:'Muli';">We provide feasible technical solutions on all frontiers. 
 							</rs-layer><!--
 
-							--><rs-layer id="slider-2-slide-4-layer-4" class="rev-btn" data-type="button" data-rsp_ch="on" data-xy="xo:30px;y:m;yo:130px,130px,83px,63px;" data-text="w:normal;s:16,16,12,13;l:55,55,38,35;ls:0,0,0.5px,0.5px;fw:600;" data-dim="minh:0px,0px,none,none;" data-padding="r:30,30,20,15;l:30,30,20,15;" data-frame_0="y:bottom;" data-frame_1="st:1490;sp:1000;sR:1490;" data-frame_999="o:0;st:w;sR:6510;" data-frame_hover="bgc:#09162a;bor:0px,0px,0px,0px;sp:200;e:power1.inOut;" style="z-index:12;background-color:#fd972e;font-family:'Muli';">Read More 
+							--><rs-layer id="slider-2-slide-4-layer-4" class="rev-btn" data-type="button" data-rsp_ch="on" data-xy="xo:30px;y:m;yo:130px,130px,83px,63px;" data-text="w:normal;s:16,16,12,13;l:55,55,38,35;ls:0,0,0.5px,0.5px;fw:600;" data-dim="minh:0px,0px,none,none;" data-padding="r:30,30,20,15;l:30,30,20,15;" data-frame_0="y:bottom;" data-frame_1="st:1490;sp:1000;sR:1490;" data-frame_999="o:0;st:w;sR:6510;" data-frame_hover="bgc:#09162a;bor:0px,0px,0px,0px;sp:200;e:power1.inOut;" style="z-index:12;background-color:#fd972e;font-family:'Muli';"><a href="{{route('forms')}}" style="color:white;">Get A Form </a>
 							</rs-layer><!--
 -->						</rs-slide>
 						<rs-slide style="position: absolute;" data-key="rs-5" data-title="Slide" data-thumb="./wp-content/uploads/2022/04/shutterstock_146632814-1H-a-Copy-50x100.jpg" data-in="o:0;" data-out="a:false;">
@@ -220,7 +220,7 @@ h3 .kyber-infobox-title {
 							--><rs-layer id="slider-2-slide-5-layer-3" data-type="text" data-color="#09162a" data-rsp_ch="on" data-xy="xo:67px,67px,53px,32px;yo:409px,409px,261px,181px;" data-text="w:normal;s:20,20,15,9;l:25,25,18,11;fw:600;" data-vbility="t,t,t,f" data-frame_0="x:50,50,31,19;" data-frame_1="st:1050;sp:1000;sR:1050;" data-frame_999="o:0;st:w;sR:6950;" style="z-index:8;font-family:'Muli';">We provide feasible technical solutions on all frontiers. 
 							</rs-layer><!--
 
-							--><rs-layer id="slider-2-slide-5-layer-4" class="rev-btn" data-type="button" data-rsp_ch="on" data-xy="xo:30px;y:m;yo:130px,130px,83px,63px;" data-text="w:normal;s:16,16,12,13;l:55,55,38,35;ls:0,0,0.5px,0.5px;fw:600;" data-dim="minh:0px,0px,none,none;" data-padding="r:30,30,20,15;l:30,30,20,15;" data-frame_0="y:bottom;" data-frame_1="st:1490;sp:1000;sR:1490;" data-frame_999="o:0;st:w;sR:6510;" data-frame_hover="bgc:#09162a;bor:0px,0px,0px,0px;sp:200;e:power1.inOut;" style="z-index:12;background-color:#fd972e;font-family:'Muli';">Read More 
+							--><rs-layer id="slider-2-slide-5-layer-4" class="rev-btn" data-type="button" data-rsp_ch="on" data-xy="xo:30px;y:m;yo:130px,130px,83px,63px;" data-text="w:normal;s:16,16,12,13;l:55,55,38,35;ls:0,0,0.5px,0.5px;fw:600;" data-dim="minh:0px,0px,none,none;" data-padding="r:30,30,20,15;l:30,30,20,15;" data-frame_0="y:bottom;" data-frame_1="st:1490;sp:1000;sR:1490;" data-frame_999="o:0;st:w;sR:6510;" data-frame_hover="bgc:#09162a;bor:0px,0px,0px,0px;sp:200;e:power1.inOut;" style="z-index:12;background-color:#fd972e;font-family:'Muli';"><a href="{{route('forms')}}" style="color:white;">Get A Form </a>
 							</rs-layer><!--
 -->						</rs-slide>
 					</rs-slides>
@@ -230,6 +230,7 @@ h3 .kyber-infobox-title {
 				</script>
 			</rs-module-wrap>
 			<!-- END REVOLUTION SLIDER -->
+
 </div></div></div></div>
 <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1588429507766 vc_custom_1588429507767 vc_custom_1588429507768 kyber-bg-color-secondary kyber-background-position-left-top kyber-title-color-light"><div class="text-center wpb_column vc_column_container vc_col-sm-12 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper">		<div class="kyber_custom_heading_wrapper kyber-custom-heading-129033197 kyber-shortcode-wrapper custom-heading-style-1 subtitle-text- title-text- heading-alignment-center">
 			<div class="kyber-custom-heading-wrapper">

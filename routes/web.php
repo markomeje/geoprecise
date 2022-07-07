@@ -69,7 +69,6 @@ Route::middleware(['web'])->domain(env('APP_URL'))->group(function() {
     Route::get('/archive06', [\App\Http\Controllers\Archive06Controller::class, 'index'])->name('archive06');
     Route::get('/archive12', [\App\Http\Controllers\Archive12Controller::class, 'index'])->name('archive12');
     Route::get('/archive18', [\App\Http\Controllers\Archive18Controller::class, 'index'])->name('archive18');
-
     Route::get('/bluelake', [\App\Http\Controllers\BlueLakeController::class, 'index'])->name('bluelake');
     Route::get('/choicecity', [\App\Http\Controllers\ChoicecityController::class, 'index'])->name('choicecite');
     Route::get('/destiny', [\App\Http\Controllers\DestinyLayoutController::class, 'index'])->name('destiny');
@@ -77,11 +76,17 @@ Route::middleware(['web'])->domain(env('APP_URL'))->group(function() {
     Route::get('/goldengate', [\App\Http\Controllers\GoldenGateController::class, 'index'])->name('goldengate');
     Route::get('/moniclayout', [\App\Http\Controllers\MonicLayoutController::class, 'index'])->name('moniclayout');
     Route::get('/peacelayout', [\App\Http\Controllers\PeaceLayoutController::class, 'index'])->name('peacelayout');
-
     Route::get('/rosary', [\App\Http\Controllers\OurladyController::class, 'index'])->name('rosary');
     Route::get('/civilservant', [\App\Http\Controllers\CivilservantController::class, 'index'])->name('civilservant');
     Route::get('/godfrey', [\App\Http\Controllers\GodfreyOkoyeController::class, 'index'])->name('godfrey');
     Route::get('/plentiff', [\App\Http\Controllers\PlentiffController::class, 'index'])->name('plentiff');
     Route::get('/housing', [\App\Http\Controllers\HousingController::class, 'index'])->name('housing');
+    Route::get('/forms', [\App\Http\Controllers\FormsController::class, 'index'])->name('forms');
+
+ Route::get('/propertysearchform', [\App\Http\Controllers\PropertySearchFormController::class, 'index'])->name('propertysearchform');
+    Route::get('/plancollectionform', [\App\Http\Controllers\PlanCollectionFormController::class, 'index'])->name('plancollectionform');
+    Route::get('/cisform', [\App\Http\Controllers\CISFormsController::class, 'index'])->name('cisform');
+    Route::get('/applicationform', [\App\Http\Controllers\ApplicationFormsController::class, 'index'])->name('applicationform');
+    Route::get('/siteinspectionform', [\App\Http\Controllers\SiteInspectionFormController::class, 'index'])->name('siteinspectionform');
     
 });

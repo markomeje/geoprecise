@@ -516,7 +516,7 @@ h3 .kyber-infobox-title {
 	</div>
 <!-- #content -->
 
-	@include('include/footer')
+	@include('layout.footer')
 </body>
 
 

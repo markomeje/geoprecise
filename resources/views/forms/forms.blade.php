@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Business &#8211; GeoPrecise</title>
+	<title>Forms &#8211; GeoPrecise</title>
 <meta name="robots" content="max-image-preview:large">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//s.w.org">
@@ -267,326 +267,121 @@ h3 .kyber-infobox-title {
 		<div class="row">
 			<div class="col-md-12">			
 				<h1 class="page-title">
-					Tag: <span>Business</span>				</h1>
-									<div class="page-breadcrumbs">
+					Geoprecise: <span>Forms</span></h1>
+					<div class="page-breadcrumbs">
 					<div class="breadcrumb">
-<a href="{{route('home')}}">Home</a> > <span class="current">Tag: Business</span>
+<a href="{{route('home')}}">Home</a> > <span class="current">forms</span>
 </div>					</div>
 								</div>				
 		</div>
 	</div>
 </div>
-<div class="container">
-	<div class="row">
-		<div id="primary" class="content-area col-sm-12 col-md-12 col-lg-8 col-xl-9">
-			<main id="main" class="site-main">
-							<header class="page-header">
-									</header><!-- .page-header -->
+@include('layout.forms')
+<div class="grey-bg container pt-4 pb-4" >
+  <section id="minimal-statistics">
+    <div class="row">
+      <div class="col-12 mt-3 mb-1">
+        <h4 class="text-uppercase">Geoprecise Available forms</h4>
+      </div>
+    </div>
+    <div class="row">
+    	
+      <div class="col-xl-4 col-sm-6 col-12"> 
+        <div class="card">
+          <div class="card-content">
+          	<a href="{{route('applicationform')}}">
+            <div class="card-body shadow-sm">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6>Application Form For Lifting</h6>
+                </div>
+                  <div class="align-self-center icon">
+                  <i style="color:rgb(253 151 46);" class="fab fa-wpforms  font-medium-3 float-right"></i>
+                </div>
+              </div>
+            </div>
+       		 </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-sm-6 col-12"> 
+        <div class="card">
+          <div class="card-content">
+          	<a href="{{route('cisform')}}">
+            <div class="card-body shadow-sm" style="border-color: rgb(253 151 46);">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6>Client's Information System</h6>
+                </div>
+                  <div class="align-self-center">
+                  <i style="color:rgb(253 151 46);" class="fab fa-wpforms  font-medium-3 float-right"></i>
+                </div>
+              </div>
+            </div>
+        	</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-xl-4 col-sm-6 col-12"> 
+        <div class="card">
+          <div class="card-content">
+          	<a href="{{route('plancollectionform')}}">
+            <div class="card-body shadow-sm" style="border-color: rgb(253 151 46);">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6>Plan Collection Form</h6>
+                </div>
+                  <div class="align-self-center">
+                  <i style="color:rgb(253 151 46);" class="fab fa-wpforms  font-medium-3 float-right"></i>
+                </div>
+              </div>
+            </div>
+        	</a>
+          </div>
+        </div>
+      </div>
 
-				
-<article id="post-739" class="post-739 post type-post status-publish format-standard has-post-thumbnail hentry category-construction tag-business">
-	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="{{route('construction')}}" aria-hidden="true" tabindex="-1">
-				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/04/img-03-rt-tu1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="We are best Construction Plan business solution" srcset="./../../wp-content/uploads/2020/04/img-03-rt-tu1.jpg 1200w, ./../../wp-content/uploads/2020/04/img-03-rt-tu1-300x250.jpg 300w, ./../../wp-content/uploads/2020/04/img-03-rt-tu1-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/04/img-03-rt-tu1-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
-				
-	<div class="kyber-blog-classic-inner">
-		<header class="entry-header">
-							<div class="entry-meta">
-						
-		<span class="posted-on"><a href="{{route('archive06')}}" rel="bookmark">
-			<time class="entry-date published updated" datetime="2020-04-06T04:13:26+00:00">
-			06			<span>Apr</span></time></a>
-		</span>
-						</div>
-<!-- .entry-meta -->
-						<h2 class="entry-title"><a href="{{route('construction')}}" rel="bookmark">We are best Construction Plan business solution</a></h2>		</header><!-- .entry-header -->
+      <div class="col-xl-4 col-sm-6 col-12"> 
+        <div class="card">
+          <div class="card-content">
+          	<a href="{{route('propertysearchform')}}">
+            <div class="card-body shadow-sm" style="border-color: rgb(253 151 46);">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6>Property Search Request</h6>
+                </div>
+                  <div class="align-self-center">
+                  <i style="color:rgb(253 151 46);" class="fab fa-wpforms  font-medium-3 float-right"></i>
+                </div>
+              </div>
+            </div>
+        	</a>
+          </div>
+        </div>
+      </div>
 
-		<div class="entry-content">
-			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
-		</div>
-<!-- .entry-content -->	  
-	<footer class="entry-footer">
-				<div class="entry-meta-footer">
-			<div class="entry-meta-container">
-				<span class="author vcard">
-					<i class="fas fa-user"></i>
-					<a class="url fn n" href="{{route('geopadmin')}}">
-						geopadmin					</a>
-				</span>
-										<span class="categories-list">
-							<i class="far fa-folder-open"></i>
-							<a href="{{route('categoryconstruction')}}" rel="category tag">Construction</a>	
-						</span>
-												<span class="tag-list">
-							<i class="fas fa-tags"></i>
-							<a href="{{route('business')}}" rel="tag">Business</a>	
-						</span>
-												<span class="meta-comment">
-							<i class="far fa-comment"></i>
-							<a href="{{route('construction')}}#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
-									</div>
-								<div class="social-icon-share">
-						<a href="javascript:void(0)" class="social-share-button">
-							<i class="fas fa-share-alt mr-1"></i>
-						</a>
-						<ul class="social-share-icons">
-									<li class="social-share-icon">
-									<a href="https://www.facebook.com/sharer/sharer.php?u=./we-are-best-construction-plan-business-solution/" class="icon-link" target="popup" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=./we-are-best-construction-plan-business-solution/','popup','width=600,height=600'); return false;">
-										<i class="fab fa-facebook-f"></i>
-									</a>
-								</li>
-																<li class="social-share-icon">
-									<a href="http://twitter.com/intent/tweet?text=We%20are%20best%20Construction%20Plan%20business%20solution&#038;./we-are-best-construction-plan-business-solution/" class="icon-link" target="popup" onclick="window.open('http://twitter.com/intent/tweet?text=We%20are%20best%20Construction%20Plan%20business%20solution&#038;./we-are-best-construction-plan-business-solution/','popup','width=600,height=600'); return false;">
-										<i class="fab fa-twitter"></i>
-									</a>
-								</li>
-																<li class="social-share-icon">
-									<a href="https://www.linkedin.com/shareArticle?mini=true&#038;url=./we-are-best-construction-plan-business-solution/&#038;title=We%20are%20best%20Construction%20Plan%20business%20solution&#038;summary=It%20is%20a%20long%20established%20fact%20that%20a%20reader%20will%20be%20distracted%20by%20the%20readable%20content%20of%20a%20page%20when%20looking%20at%20its%20layout.%20The%20point%20of%20using%20Lorem%20Ipsum%20is%20that%20it%20has%20a%20more-or-less%20normal%20distribution%20of%20letters,%20as%20opposed%20to%20using%20&#8216;Content%20here,%20content%20here&#8217;,%20making%20it%20look%20like%20readable%20English.%20Many%20%5B&hellip;%5D" class="icon-link" target="popup" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&#038;url=./we-are-best-construction-plan-business-solution/&#038;title=We%20are%20best%20Construction%20Plan%20business%20solution&#038;summary=It%20is%20a%20long%20established%20fact%20that%20a%20reader%20will%20be%20distracted%20by%20the%20readable%20content%20of%20a%20page%20when%20looking%20at%20its%20layout.%20The%20point%20of%20using%20Lorem%20Ipsum%20is%20that%20it%20has%20a%20more-or-less%20normal%20distribution%20of%20letters,%20as%20opposed%20to%20using%20&#8216;Content%20here,%20content%20here&#8217;,%20making%20it%20look%20like%20readable%20English.%20Many%20%5B&hellip;%5D','popup','width=600,height=600'); return false;">
-										<i class="fab fa-linkedin-in"></i>
-									</a>
-								</li>
-																<li class="social-share-icon">
-									<a href="http://pinterest.com/pin/create/button/?url=./we-are-best-construction-plan-business-solution/" class="icon-link" target="popup" onclick="window.open('http://pinterest.com/pin/create/button/?url=./we-are-best-construction-plan-business-solution/','popup','width=600,height=600'); return false;">
-										<i class="fab fa-pinterest-p"></i>
-									</a>
-								</li>
-														</ul>
-					</div>
-							</div>
-			</footer><!-- .entry-footer -->
-	</div>
-	</div>
-</article><!-- #post-739 -->
-
-<article id="post-240" class="post-240 post type-post status-publish format-standard has-post-thumbnail hentry category-technology tag-business">
-	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="{{route('industry')}}" aria-hidden="true" tabindex="-1">
-				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/04/img-0cvf3-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Most Successful Construction Industry Myths" loading="lazy" srcset="./../../wp-content/uploads/2020/04/img-0cvf3-1.jpg 1200w, ./../../wp-content/uploads/2020/04/img-0cvf3-1-300x250.jpg 300w, ./../../wp-content/uploads/2020/04/img-0cvf3-1-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/04/img-0cvf3-1-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
-				
-	<div class="kyber-blog-classic-inner">
-		<header class="entry-header">
-							<div class="entry-meta">
-						
-		<span class="posted-on"><a href="{{route('archive12')}}" rel="bookmark">
-			<time class="entry-date published updated" datetime="2020-03-12T17:53:15+00:00">
-			12			<span>Mar</span></time></a>
-		</span>
-						</div>
-<!-- .entry-meta -->
-						<h2 class="entry-title"><a href="{{route('industry')}}" rel="bookmark">Most Successful Construction Industry Myths</a></h2>		</header><!-- .entry-header -->
-
-		<div class="entry-content">
-			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
-		</div>
-<!-- .entry-content -->	  
-	<footer class="entry-footer">
-				<div class="entry-meta-footer">
-			<div class="entry-meta-container">
-				<span class="author vcard">
-					<i class="fas fa-user"></i>
-					<a class="url fn n" href="{{route('geopadmin')}}">
-						geopadmin					</a>
-				</span>
-										<span class="categories-list">
-							<i class="far fa-folder-open"></i>
-							<a href="{{route('technology')}}" rel="category tag">Technology</a>	
-						</span>
-												<span class="tag-list">
-							<i class="fas fa-tags"></i>
-							<a href="{{route('business')}}" rel="tag">Business</a>	
-						</span>
-												<span class="meta-comment">
-							<i class="far fa-comment"></i>
-							<a href="{{route('industry')}}#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
-									</div>
-								<div class="social-icon-share">
-						<a href="javascript:void(0)" class="social-share-button">
-							<i class="fas fa-share-alt mr-1"></i>
-						</a>
-						<ul class="social-share-icons">
-															<li class="social-share-icon">
-									<a href="https://www.facebook.com/sharer/sharer.php?u=./most-successful-construction-industry-myths/" class="icon-link" target="popup" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=./most-successful-construction-industry-myths/','popup','width=600,height=600'); return false;">
-										<i class="fab fa-facebook-f"></i>
-									</a>
-								</li>
-																<li class="social-share-icon">
-									<a href="http://twitter.com/intent/tweet?text=Most%20Successful%20Construction%20Industry%20Myths&#038;./most-successful-construction-industry-myths/" class="icon-link" target="popup" onclick="window.open('http://twitter.com/intent/tweet?text=Most%20Successful%20Construction%20Industry%20Myths&#038;./most-successful-construction-industry-myths/','popup','width=600,height=600'); return false;">
-										<i class="fab fa-twitter"></i>
-									</a>
-								</li>
-																<li class="social-share-icon">
-									<a href="https://www.linkedin.com/shareArticle?mini=true&#038;url=./most-successful-construction-industry-myths/&#038;title=Most%20Successful%20Construction%20Industry%20Myths&#038;summary=It%20is%20a%20long%20established%20fact%20that%20a%20reader%20will%20be%20distracted%20by%20the%20readable%20content%20of%20a%20page%20when%20looking%20at%20its%20layout.%20The%20point%20of%20using%20Lorem%20Ipsum%20is%20that%20it%20has%20a%20more-or-less%20normal%20distribution%20of%20letters,%20as%20opposed%20to%20using%20&#8216;Content%20here,%20content%20here&#8217;,%20making%20it%20look%20like%20readable%20English.%20Many%20%5B&hellip;%5D" class="icon-link" target="popup" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&#038;url=./most-successful-construction-industry-myths/&#038;title=Most%20Successful%20Construction%20Industry%20Myths&#038;summary=It%20is%20a%20long%20established%20fact%20that%20a%20reader%20will%20be%20distracted%20by%20the%20readable%20content%20of%20a%20page%20when%20looking%20at%20its%20layout.%20The%20point%20of%20using%20Lorem%20Ipsum%20is%20that%20it%20has%20a%20more-or-less%20normal%20distribution%20of%20letters,%20as%20opposed%20to%20using%20&#8216;Content%20here,%20content%20here&#8217;,%20making%20it%20look%20like%20readable%20English.%20Many%20%5B&hellip;%5D','popup','width=600,height=600'); return false;">
-										<i class="fab fa-linkedin-in"></i>
-									</a>
-								</li>
-																<li class="social-share-icon">
-									<a href="http://pinterest.com/pin/create/button/?url=./most-successful-construction-industry-myths/" class="icon-link" target="popup" onclick="window.open('http://pinterest.com/pin/create/button/?url=./most-successful-construction-industry-myths/','popup','width=600,height=600'); return false;">
-										<i class="fab fa-pinterest-p"></i>
-									</a>
-								</li>
-														</ul>
-					</div>
-							</div>
-			</footer><!-- .entry-footer -->
-	</div>
-	</div>
-</article><!-- #post-240 -->
-				<div class="post-pagination">
-									</div>
-							</main><!-- #main -->
-		</div>
-<!-- #primary -->
-		<aside id="secondary" class="widget-area sidebar col-sm-12 col-md-12 col-lg-4 col-xl-3 column">
-	<section id="block-2" class="widget widget_block widget_search"><form role="search" method="get" action="./" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search">
-<label for="wp-block-search__input-1" class="wp-block-search__label">Search</label><div class="wp-block-search__inside-wrapper ">
-<input type="search" id="wp-block-search__input-1" class="wp-block-search__input " name="s" value="" placeholder="" required><button type="submit" class="wp-block-search__button  ">Search</button>
+         <div class="col-xl-4 col-sm-6 col-12"> 
+        <div class="card">
+          <div class="card-content">
+          	<a href="{{route('siteinspectionform')}}">
+            <div class="card-body shadow-sm" style="border-color: rgb(253 151 46);">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6>Site Inspection Form</h6>
+                </div>
+                  <div class="align-self-center">
+                  <i style="color:rgb(253 151 46);" class="fab fa-wpforms  font-medium-3 float-right"></i>
+                </div>
+              </div>
+            </div>
+        	</a>
+          </div>
+        </div>
+      </div>
+      
+  </section>
 </div>
-</form></section><section id="block-3" class="widget widget_block">
-<div class="wp-container-1 wp-block-group"><div class="wp-block-group__inner-container">
-<h2 id="recent-posts">Recent Posts</h2>
-
-
-<ul class="wp-block-latest-posts__list wp-block-latest-posts">
-<li><a class="wp-block-latest-posts__post-title" href="{{route('commercial')}}">Commercial project With Perfection &#038; creative design</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="{{route('construction')}}">We are best Construction Plan business solution</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="{{route('interior')}}">Low cost interior designing Project Planning</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="{{route('improve')}}">Improve Workflow With Design Construction</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="{{route('benefit')}}">What Are The Benefits Of Designer Certification?</a></li>
-</ul>
-</div></div>
-</section><section id="block-4" class="widget widget_block">
-<div class="wp-container-2 wp-block-group"><div class="wp-block-group__inner-container">
-<h2 id="recent-comments">Recent Comments</h2>
-
-
-<ol class="wp-block-latest-comments">
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('cleaning')}}#comment-29">New Industrial Cleaning Method Panel Ruling</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('industry')}}#comment-9">Most Successful Construction Industry Myths</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('3dprint')}}#comment-11">How Is 3D Print Affecting The Construction?</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('agreement')}}#comment-13">Construction Agreements of Painting Perfection</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('benefit')}}#comment-15">What Are The Benefits Of Designer Certification?</a></footer></article></li>
-</ol>
-</div></div>
-</section><section id="block-5" class="widget widget_block">
-<div class="wp-container-3 wp-block-group"><div class="wp-block-group__inner-container">
-<h2 id="archives">Archives</h2>
-
-
-<ul class=" wp-block-archives-list wp-block-archives">	<li><a href="{{route('archive04')}}">April 2020</a></li>
-	<li><a href="{{route('archive03')}}">March 2020</a></li>
-	<li><a href="{{route('archive01')}}">January 2020</a></li>
-</ul>
-</div></div>
-</section><section id="block-6" class="widget widget_block">
-<div class="wp-container-4 wp-block-group"><div class="wp-block-group__inner-container">
-<h2 id="categories">Categories</h2>
-
-
-<ul class="wp-block-categories-list wp-block-categories">	<li class="cat-item cat-item-2">
-<a href="{{route('building')}}">Buildings</a>
-</li>
-	<li class="cat-item cat-item-3">
-<a href="{{route('categoryconstruction')}}">Construction</a>
-</li>
-	<li class="cat-item cat-item-4">
-<a href="{{route('education')}}">Educational</a>
-</li>
-	<li class="cat-item cat-item-5">
-<a href="{{route('innovation')}}">Innovations</a>
-</li>
-	<li class="cat-item cat-item-6">
-<a href="{{route('standard')}}">Standards</a>
-</li>
-	<li class="cat-item cat-item-7">
-<a href="{{route('technology')}}">Technology</a>
-</li>
-</ul>
-</div></div>
-</section><section id="search-1" class="widget widget_search"><form role="search" method="get" class="search-form" action="./">
-				<label>
-					<span class="screen-reader-text">Search for:</span>
-					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
-				</label>
-				<input type="submit" class="search-submit" value="Search">
-			</form></section>		<section id="kyber-recent-posts-1" class="widget widget_kyber_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
-											<li>
-											<div class="kyber-post-image">
-							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-0cvf3-2-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
-										<div class="kyber-post-content">
-						<a href="{{route('commercial')}}">Commercial project With Perfection &#038; creative design</a>
-													<span class="kyber-post-date">April 6, 2020</span>
-											</div>
-				</li>
-											<li>
-											<div class="kyber-post-image">
-							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-03-rt-tu1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
-										<div class="kyber-post-content">
-						<a href="{{route('construction')}}">We are best Construction Plan business solution</a>
-													<span class="kyber-post-date">April 6, 2020</span>
-											</div>
-				</li>
-											<li>
-											<div class="kyber-post-image">
-							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-0ftyh3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
-										<div class="kyber-post-content">
-						<a href="{{route('interior')}}">Low cost interior designing Project Planning</a>
-													<span class="kyber-post-date">April 6, 2020</span>
-											</div>
-				</li>
-											<li>
-											<div class="kyber-post-image">
-							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-0cvf3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
-										<div class="kyber-post-content">
-						<a href="{{route('improve')}}">Improve Workflow With Design Construction</a>
-													<span class="kyber-post-date">April 6, 2020</span>
-											</div>
-				</li>
-											<li>
-											<div class="kyber-post-image">
-							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-der03-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
-										<div class="kyber-post-content">
-						<a href="{{route('benefit')}}">What Are The Benefits Of Designer Certification?</a>
-													<span class="kyber-post-date">April 6, 2020</span>
-											</div>
-				</li>
-					</ul>
-		</section><section id="categories-2" class="widget widget_categories"><h2 class="widget-title">Categories</h2>
-			<ul>
-					<li class="cat-item cat-item-2">
-<a href="{{route('building')}}">Buildings</a><span>2</span>
-</li>
-	<li class="cat-item cat-item-3">
-<a href="{{route('categoryconstruction')}}">Construction</a><span>1</span>
-</li>
-	<li class="cat-item cat-item-4">
-<a href="{{route('education')}}">Educational</a><span>1</span>
-</li>
-	<li class="cat-item cat-item-5">
-<a href="{{route('innovation')}}">Innovations</a><span>2</span>
-</li>
-	<li class="cat-item cat-item-6">
-<a href="{{route('standard')}}">Standards</a><span>1</span>
-</li>
-	<li class="cat-item cat-item-7">
-<a href="{{route('technology')}}">Technology</a><span>2</span>
-</li>
-			</ul>
-
-			</section><section id="media_image-1" class="widget widget_media_image"><img width="330" height="515" src="./../../wp-content/uploads/2022/02/ad-8s.jpg" class="image wp-image-2563  attachment-full size-full" alt="" loading="lazy" style="max-width: 100%; height: auto;" srcset="./../../wp-content/uploads/2022/02/ad-8s.jpg 330w, ./../../wp-content/uploads/2022/02/ad-8s-192x300.jpg 192w" sizes="(max-width: 330px) 100vw, 330px"></section><section id="tag_cloud-1" class="widget widget_tag_cloud"><h2 class="widget-title">Tags</h2>
-<div class="tagcloud">
-<a href="{{route('business')}}" class="tag-cloud-link tag-link-8 tag-link-position-1" style="font-size: 22pt;" aria-label="Business (2 items)">Business</a>
-<a href="{{route('business')}}" class="tag-cloud-link tag-link-9 tag-link-position-2" style="font-size: 8pt;" aria-label="Department (1 item)">Department</a>
-<a href="{{route('design')}}" class="tag-cloud-link tag-link-10 tag-link-position-3" style="font-size: 22pt;" aria-label="Design (2 items)">Design</a>
-<a href="{{route('marketing')}}" class="tag-cloud-link tag-link-11 tag-link-position-4" style="font-size: 22pt;" aria-label="Marketing (2 items)">Marketing</a>
-<a href="{{route('partner')}}" class="tag-cloud-link tag-link-12 tag-link-position-5" style="font-size: 8pt;" aria-label="Partner (1 item)">Partner</a>
-<a href="{{route('resource')}}" class="tag-cloud-link tag-link-13 tag-link-position-6" style="font-size: 8pt;" aria-label="Resources (1 item)">Resources</a>
-</div>
-</section></aside><!-- #secondary -->
-
-	</div>
-</div>
-
-	</div>
 <!-- #content -->
 
 	@include('layout.footer')

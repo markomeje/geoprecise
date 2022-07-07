@@ -5,14 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
-	<title>Business &#8211; GeoPrecise</title>
+	<title>Precious Layout &#8211; GeoPrecise</title>
 <meta name="robots" content="max-image-preview:large">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//s.w.org">
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 <link rel="alternate" type="application/rss+xml" title="GeoPrecise &raquo; Feed" href="./../../feed/index.html">
 <link rel="alternate" type="application/rss+xml" title="GeoPrecise &raquo; Comments Feed" href="./../../comments/feed/index.html">
-<link rel="alternate" type="application/rss+xml" title="GeoPrecise &raquo; Business Tag Feed" href="./feed/index.html">
 <script type="text/javascript">
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":".\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0"}};
 /*! This file is auto-generated */
@@ -53,6 +52,7 @@ img.emoji {
 <link rel="stylesheet" id="slicknav-css" href="./../../wp-content/themes/kyber/assets/css/slicknav.min.css?ver=1.0.10" type="text/css" media="all">
 <link rel="stylesheet" id="kyber-style-css" href="./../../wp-content/themes/kyber/style.css?ver=6.0" type="text/css" media="all">
 <link rel="stylesheet" id="kyber-theme-style-css" href="./../../wp-content/themes/kyber/assets/css/theme.css?ver=1.0.6" type="text/css" media="all">
+<link rel="stylesheet" id="js_composer_front-css" href="./../../wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.8.0" type="text/css" media="all">
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Rajdhani:700&#038;display=swap&#038;ver=1647434742">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani:700&#038;display=swap&#038;ver=1647434742" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani:700&#038;display=swap&#038;ver=1647434742"></noscript>
@@ -60,10 +60,14 @@ img.emoji {
 <script type="text/javascript" src="./../../wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2" id="jquery-migrate-js"></script>
 <script type="text/javascript" src="./../../wp-content/themes/kyber/assets/js/slicknav.min.js?ver=1.0.10" id="slicknav-js"></script>
 <link rel="https://api.w.org/" href="./../../wp-json/index.html">
-<link rel="alternate" type="application/json" href="./../../wp-json/wp/v2/tags/8/index.html">
+<link rel="alternate" type="application/json" href="./../../wp-json/wp/v2/project/197/index.html">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../../xmlrpc.php?rsd">
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./../../wp-includes/wlwmanifest.xml"> 
 <meta name="generator" content="WordPress 6.0">
+<link rel="canonical" href="./index.html">
+<link rel="shortlink" href="{{route('home')}}?p=197">
+<link rel="alternate" type="application/json+oembed" href="./../../wp-json/oembed/1.0/embed/index.html?url=https%3A%2F%2F%2Fproject%2Fapartment-design%2F">
+<link rel="alternate" type="text/xml+oembed" href="./../../wp-json/oembed/1.0/embed/index.html?url=https%3A%2F%2F%2Fproject%2Fapartment-design%2F&#038;format=xml">
 <meta name="generator" content="Redux 4.3.14">
 <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
 <meta name="generator" content="Powered by Slider Revolution 6.5.14 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
@@ -149,10 +153,11 @@ h3 .kyber-infobox-title {
     font-size: 22px;
 }</style>
 		<style id="kyber_options-dynamic-css" title="dynamic-css" class="redux-options-output">.kyber-page-title{background-repeat:no-repeat;background-image:url('./../../wp-content/uploads/2022/03/Untitled-3se1-1.jpg');background-size:cover;}.site-footer{background-image:url('./../../wp-content/uploads/2020/04/footer-bg1.jpg');background-size:cover;}.fof-page-container{background-color:transparent;background-repeat:no-repeat;background-position:right center;background-image:url('./../../wp-content/uploads/2020/04/404-bg.jpg');background-size:cover;}</style>
+<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1646762310761{padding-top: 40px !important;}@media (max-width: 767px) {.vc_custom_1646762310762{padding-top: 20px !important;}}.vc_custom_1646762320062{padding-top: 30px !important;}.vc_custom_1646762327509{padding-top: 80px !important;}@media (max-width: 992px) {.vc_custom_1646762327510{padding-top: 50px !important;}}@media (max-width: 767px) {.vc_custom_1646762327510{padding-top: 30px !important;}}.vc_custom_1646762338862{padding-top: 45px !important;}@media (max-width: 767px) {.vc_custom_1646762338863{padding-top: 20px !important;}}.vc_custom_1646762349902{padding-top: 45px !important;}.vc_custom_1646762355809{padding-top: 40px !important;}@media (max-width: 767px) {.vc_custom_1646762355810{padding-top: 10px !important;}}@media (max-width: 992px) {.vc_custom_1588489732264{margin-bottom: 30px !important;}}@media (max-width: 992px) {.vc_custom_1588489717102{margin-bottom: 30px !important;}}@media (max-width: 767px) {.vc_custom_1588489717103{padding-top: 30px !important;padding-bottom: 30px !important;}}@media (max-width: 992px) {.vc_custom_1588489700240{margin-bottom: 30px !important;}}@media (max-width: 767px) {.vc_custom_1586864103777{padding-top: 30px !important;padding-bottom: 30px !important;}}</style>
 <noscript><style>.wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
 </head>
 
-<body class="archive tag tag-business tag-8 hfeed wpb-js-composer js-comp-ver-6.8.0 vc_responsive">
+<body class="project-template-default single single-project postid-197 wpb-js-composer js-comp-ver-6.8.0 vc_responsive">
 
 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>
 <div id="page" class="site">
@@ -226,7 +231,7 @@ h3 .kyber-infobox-title {
 	<li id="menu-item-2307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2307"><a href="{{route('faq')}}">FAQ</a></li>
 </ul>
 </li>
-<li id="menu-item-2324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2324">
+<li id="menu-item-2324" class="current-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2324">
 <a href="{{route('aboutus')}}">About Us</a>
 <ul class="sub-menu">
 	<li id="menu-item-2308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2308"><a href="{{route('ourteam')}}">Our Team</a></li>
@@ -259,7 +264,6 @@ h3 .kyber-infobox-title {
 </header>
 
 
-
 	<div id="content" class="site-content">
 
 		<div class="kyber-page-title d-flex align-items-center">
@@ -267,10 +271,10 @@ h3 .kyber-infobox-title {
 		<div class="row">
 			<div class="col-md-12">			
 				<h1 class="page-title">
-					Tag: <span>Business</span>				</h1>
+					Precious Layout				</h1>
 									<div class="page-breadcrumbs">
 					<div class="breadcrumb">
-<a href="{{route('home')}}">Home</a> > <span class="current">Tag: Business</span>
+<a href="{{route('home')}}">Home</a> > <span class="kyber-readcrumb"><a href="{{route('project')}}">Project</a></span> > <span class="current">Precious Layout</span>
 </div>					</div>
 								</div>				
 		</div>
@@ -278,320 +282,71 @@ h3 .kyber-infobox-title {
 </div>
 <div class="container">
 	<div class="row">
-		<div id="primary" class="content-area col-sm-12 col-md-12 col-lg-8 col-xl-9">
-			<main id="main" class="site-main">
-							<header class="page-header">
-									</header><!-- .page-header -->
-
-				
-<article id="post-739" class="post-739 post type-post status-publish format-standard has-post-thumbnail hentry category-construction tag-business">
-	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="{{route('construction')}}" aria-hidden="true" tabindex="-1">
-				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/04/img-03-rt-tu1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="We are best Construction Plan business solution" srcset="./../../wp-content/uploads/2020/04/img-03-rt-tu1.jpg 1200w, ./../../wp-content/uploads/2020/04/img-03-rt-tu1-300x250.jpg 300w, ./../../wp-content/uploads/2020/04/img-03-rt-tu1-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/04/img-03-rt-tu1-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
-				
-	<div class="kyber-blog-classic-inner">
-		<header class="entry-header">
-							<div class="entry-meta">
-						
-		<span class="posted-on"><a href="{{route('archive06')}}" rel="bookmark">
-			<time class="entry-date published updated" datetime="2020-04-06T04:13:26+00:00">
-			06			<span>Apr</span></time></a>
-		</span>
-						</div>
-<!-- .entry-meta -->
-						<h2 class="entry-title"><a href="{{route('construction')}}" rel="bookmark">We are best Construction Plan business solution</a></h2>		</header><!-- .entry-header -->
-
-		<div class="entry-content">
-			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
-		</div>
-<!-- .entry-content -->	  
-	<footer class="entry-footer">
-				<div class="entry-meta-footer">
-			<div class="entry-meta-container">
-				<span class="author vcard">
-					<i class="fas fa-user"></i>
-					<a class="url fn n" href="{{route('geopadmin')}}">
-						geopadmin					</a>
-				</span>
-										<span class="categories-list">
-							<i class="far fa-folder-open"></i>
-							<a href="{{route('categoryconstruction')}}" rel="category tag">Construction</a>	
-						</span>
-												<span class="tag-list">
-							<i class="fas fa-tags"></i>
-							<a href="{{route('business')}}" rel="tag">Business</a>	
-						</span>
-												<span class="meta-comment">
-							<i class="far fa-comment"></i>
-							<a href="{{route('construction')}}#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
-									</div>
-								<div class="social-icon-share">
-						<a href="javascript:void(0)" class="social-share-button">
-							<i class="fas fa-share-alt mr-1"></i>
-						</a>
-						<ul class="social-share-icons">
-									<li class="social-share-icon">
-									<a href="https://www.facebook.com/sharer/sharer.php?u=./we-are-best-construction-plan-business-solution/" class="icon-link" target="popup" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=./we-are-best-construction-plan-business-solution/','popup','width=600,height=600'); return false;">
-										<i class="fab fa-facebook-f"></i>
-									</a>
-								</li>
-																<li class="social-share-icon">
-									<a href="http://twitter.com/intent/tweet?text=We%20are%20best%20Construction%20Plan%20business%20solution&#038;./we-are-best-construction-plan-business-solution/" class="icon-link" target="popup" onclick="window.open('http://twitter.com/intent/tweet?text=We%20are%20best%20Construction%20Plan%20business%20solution&#038;./we-are-best-construction-plan-business-solution/','popup','width=600,height=600'); return false;">
-										<i class="fab fa-twitter"></i>
-									</a>
-								</li>
-																<li class="social-share-icon">
-									<a href="https://www.linkedin.com/shareArticle?mini=true&#038;url=./we-are-best-construction-plan-business-solution/&#038;title=We%20are%20best%20Construction%20Plan%20business%20solution&#038;summary=It%20is%20a%20long%20established%20fact%20that%20a%20reader%20will%20be%20distracted%20by%20the%20readable%20content%20of%20a%20page%20when%20looking%20at%20its%20layout.%20The%20point%20of%20using%20Lorem%20Ipsum%20is%20that%20it%20has%20a%20more-or-less%20normal%20distribution%20of%20letters,%20as%20opposed%20to%20using%20&#8216;Content%20here,%20content%20here&#8217;,%20making%20it%20look%20like%20readable%20English.%20Many%20%5B&hellip;%5D" class="icon-link" target="popup" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&#038;url=./we-are-best-construction-plan-business-solution/&#038;title=We%20are%20best%20Construction%20Plan%20business%20solution&#038;summary=It%20is%20a%20long%20established%20fact%20that%20a%20reader%20will%20be%20distracted%20by%20the%20readable%20content%20of%20a%20page%20when%20looking%20at%20its%20layout.%20The%20point%20of%20using%20Lorem%20Ipsum%20is%20that%20it%20has%20a%20more-or-less%20normal%20distribution%20of%20letters,%20as%20opposed%20to%20using%20&#8216;Content%20here,%20content%20here&#8217;,%20making%20it%20look%20like%20readable%20English.%20Many%20%5B&hellip;%5D','popup','width=600,height=600'); return false;">
-										<i class="fab fa-linkedin-in"></i>
-									</a>
-								</li>
-																<li class="social-share-icon">
-									<a href="http://pinterest.com/pin/create/button/?url=./we-are-best-construction-plan-business-solution/" class="icon-link" target="popup" onclick="window.open('http://pinterest.com/pin/create/button/?url=./we-are-best-construction-plan-business-solution/','popup','width=600,height=600'); return false;">
-										<i class="fab fa-pinterest-p"></i>
-									</a>
-								</li>
-														</ul>
+		<div class="col-sm-12">
+			<div id="primary" class="content-area">
+				<main id="main" class="site-main">
+				<article id="post-197" class="row post-197 project type-project status-publish has-post-thumbnail hentry project-category-layout-survey">
+	<div class="col-lg-7">
+		<div class="kyber-project-thumbnail">
+						<div class="post-thumbnail">
+				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/04/img-0cvf3.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="./../../wp-content/uploads/2020/04/img-0cvf3.jpg 1200w, ./../../wp-content/uploads/2020/04/img-0cvf3-300x250.jpg 300w, ./../../wp-content/uploads/2020/04/img-0cvf3-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/04/img-0cvf3-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</div>
+<!-- .post-thumbnail -->
 					</div>
-							</div>
-			</footer><!-- .entry-footer -->
 	</div>
-	</div>
-</article><!-- #post-739 -->
-
-<article id="post-240" class="post-240 post type-post status-publish format-standard has-post-thumbnail hentry category-technology tag-business">
-	<div class="kyber-blog-classic">
-				<a class="post-thumbnail" href="{{route('industry')}}" aria-hidden="true" tabindex="-1">
-				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/04/img-0cvf3-1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="Most Successful Construction Industry Myths" loading="lazy" srcset="./../../wp-content/uploads/2020/04/img-0cvf3-1.jpg 1200w, ./../../wp-content/uploads/2020/04/img-0cvf3-1-300x250.jpg 300w, ./../../wp-content/uploads/2020/04/img-0cvf3-1-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/04/img-0cvf3-1-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</a>
-				
-	<div class="kyber-blog-classic-inner">
-		<header class="entry-header">
-							<div class="entry-meta">
-						
-		<span class="posted-on"><a href="{{route('archive12')}}" rel="bookmark">
-			<time class="entry-date published updated" datetime="2020-03-12T17:53:15+00:00">
-			12			<span>Mar</span></time></a>
-		</span>
-						</div>
-<!-- .entry-meta -->
-						<h2 class="entry-title"><a href="{{route('industry')}}" rel="bookmark">Most Successful Construction Industry Myths</a></h2>		</header><!-- .entry-header -->
-
-		<div class="entry-content">
-			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using &#8216;Content here, content here&#8217;, making it look like readable English. Many [&hellip;]</p>
-		</div>
-<!-- .entry-content -->	  
-	<footer class="entry-footer">
-				<div class="entry-meta-footer">
-			<div class="entry-meta-container">
-				<span class="author vcard">
-					<i class="fas fa-user"></i>
-					<a class="url fn n" href="{{route('geopadmin')}}">
-						geopadmin					</a>
-				</span>
-										<span class="categories-list">
-							<i class="far fa-folder-open"></i>
-							<a href="{{route('technology')}}" rel="category tag">Technology</a>	
-						</span>
-												<span class="tag-list">
-							<i class="fas fa-tags"></i>
-							<a href="{{route('business')}}" rel="tag">Business</a>	
-						</span>
-												<span class="meta-comment">
-							<i class="far fa-comment"></i>
-							<a href="{{route('industry')}}#comments"><span class="comment-count">2</span> <span class="comment-count-label">comments</span></a>						</span>
-									</div>
-								<div class="social-icon-share">
-						<a href="javascript:void(0)" class="social-share-button">
-							<i class="fas fa-share-alt mr-1"></i>
-						</a>
-						<ul class="social-share-icons">
-															<li class="social-share-icon">
-									<a href="https://www.facebook.com/sharer/sharer.php?u=./most-successful-construction-industry-myths/" class="icon-link" target="popup" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=./most-successful-construction-industry-myths/','popup','width=600,height=600'); return false;">
-										<i class="fab fa-facebook-f"></i>
-									</a>
-								</li>
-																<li class="social-share-icon">
-									<a href="http://twitter.com/intent/tweet?text=Most%20Successful%20Construction%20Industry%20Myths&#038;./most-successful-construction-industry-myths/" class="icon-link" target="popup" onclick="window.open('http://twitter.com/intent/tweet?text=Most%20Successful%20Construction%20Industry%20Myths&#038;./most-successful-construction-industry-myths/','popup','width=600,height=600'); return false;">
-										<i class="fab fa-twitter"></i>
-									</a>
-								</li>
-																<li class="social-share-icon">
-									<a href="https://www.linkedin.com/shareArticle?mini=true&#038;url=./most-successful-construction-industry-myths/&#038;title=Most%20Successful%20Construction%20Industry%20Myths&#038;summary=It%20is%20a%20long%20established%20fact%20that%20a%20reader%20will%20be%20distracted%20by%20the%20readable%20content%20of%20a%20page%20when%20looking%20at%20its%20layout.%20The%20point%20of%20using%20Lorem%20Ipsum%20is%20that%20it%20has%20a%20more-or-less%20normal%20distribution%20of%20letters,%20as%20opposed%20to%20using%20&#8216;Content%20here,%20content%20here&#8217;,%20making%20it%20look%20like%20readable%20English.%20Many%20%5B&hellip;%5D" class="icon-link" target="popup" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&#038;url=./most-successful-construction-industry-myths/&#038;title=Most%20Successful%20Construction%20Industry%20Myths&#038;summary=It%20is%20a%20long%20established%20fact%20that%20a%20reader%20will%20be%20distracted%20by%20the%20readable%20content%20of%20a%20page%20when%20looking%20at%20its%20layout.%20The%20point%20of%20using%20Lorem%20Ipsum%20is%20that%20it%20has%20a%20more-or-less%20normal%20distribution%20of%20letters,%20as%20opposed%20to%20using%20&#8216;Content%20here,%20content%20here&#8217;,%20making%20it%20look%20like%20readable%20English.%20Many%20%5B&hellip;%5D','popup','width=600,height=600'); return false;">
-										<i class="fab fa-linkedin-in"></i>
-									</a>
-								</li>
-																<li class="social-share-icon">
-									<a href="http://pinterest.com/pin/create/button/?url=./most-successful-construction-industry-myths/" class="icon-link" target="popup" onclick="window.open('http://pinterest.com/pin/create/button/?url=./most-successful-construction-industry-myths/','popup','width=600,height=600'); return false;">
-										<i class="fab fa-pinterest-p"></i>
-									</a>
-								</li>
-														</ul>
+	<div class="col-lg-5">
+		<div class="kyber-project-details-container">
+			<div class="kyber-project-details">
+				<h3>Project Details</h3>
+								<div class="kyber-project-detail kb-project_phone-number">
+					<div class="kyber-project-detail-title">Project Name</div>
+					<div class="kyber-project-detail-value">Precious Layout</div>					
+				</div>
+									<div class="kyber-project-detail kb-project-client-name">
+						<div class="kyber-project-detail-title">Client</div>
+						<div class="kyber-project-detail-value">Precious Layout</div>
 					</div>
-							</div>
-			</footer><!-- .entry-footer -->
-	</div>
-	</div>
-</article><!-- #post-240 -->
-				<div class="post-pagination">
-									</div>
-							</main><!-- #main -->
+										<span class="kyber-service-category">
+											</span>
+					<div class="kyber-project-detail kb-project-category">
+						<div class="kyber-project-detail-title">Category</div>
+						<div class="kyber-project-detail-value">Layout Survey</div>
+					</div>
+										<div class="kyber-project-detail kb-project-location">
+						<div class="kyber-project-detail-title">Location</div>
+						<div class="kyber-project-detail-value">Ogbozianne Ogologo Eji Ndiagu Akpugo Nike, Enugu East LGA</div>
+					</div>
+										<div class="kyber-project-detail kb-project-year">
+						<div class="kyber-project-detail-title">Year</div>
+						<div class="kyber-project-detail-value">2019</div>
+					</div>
+								</div>
 		</div>
+	</div>
+	<div class="kyber-project-content col-md-12">
+		<p></p>
+	</div>
+</article><!-- #post-197 -->
+
+	<nav class="navigation post-navigation" aria-label="Posts">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links">
+<div class="nav-previous"><a href="{{route('highway')}}" rel="prev">Estatern Homes Layout</a></div>
+<div class="nav-next"><a href="{{route('railway')}}" rel="next">Unity Layout</a></div>
+</div>
+	</nav>				</main><!-- #main -->
+			</div>
 <!-- #primary -->
-		<aside id="secondary" class="widget-area sidebar col-sm-12 col-md-12 col-lg-4 col-xl-3 column">
-	<section id="block-2" class="widget widget_block widget_search"><form role="search" method="get" action="./" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search">
-<label for="wp-block-search__input-1" class="wp-block-search__label">Search</label><div class="wp-block-search__inside-wrapper ">
-<input type="search" id="wp-block-search__input-1" class="wp-block-search__input " name="s" value="" placeholder="" required><button type="submit" class="wp-block-search__button  ">Search</button>
-</div>
-</form></section><section id="block-3" class="widget widget_block">
-<div class="wp-container-1 wp-block-group"><div class="wp-block-group__inner-container">
-<h2 id="recent-posts">Recent Posts</h2>
-
-
-<ul class="wp-block-latest-posts__list wp-block-latest-posts">
-<li><a class="wp-block-latest-posts__post-title" href="{{route('commercial')}}">Commercial project With Perfection &#038; creative design</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="{{route('construction')}}">We are best Construction Plan business solution</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="{{route('interior')}}">Low cost interior designing Project Planning</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="{{route('improve')}}">Improve Workflow With Design Construction</a></li>
-<li><a class="wp-block-latest-posts__post-title" href="{{route('benefit')}}">What Are The Benefits Of Designer Certification?</a></li>
-</ul>
-</div></div>
-</section><section id="block-4" class="widget widget_block">
-<div class="wp-container-2 wp-block-group"><div class="wp-block-group__inner-container">
-<h2 id="recent-comments">Recent Comments</h2>
-
-
-<ol class="wp-block-latest-comments">
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('cleaning')}}#comment-29">New Industrial Cleaning Method Panel Ruling</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('industry')}}#comment-9">Most Successful Construction Industry Myths</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('3dprint')}}#comment-11">How Is 3D Print Affecting The Construction?</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('agreement')}}#comment-13">Construction Agreements of Painting Perfection</a></footer></article></li>
-<li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><span class="wp-block-latest-comments__comment-author">Petey Cruiser</span> on <a class="wp-block-latest-comments__comment-link" href="{{route('benefit')}}#comment-15">What Are The Benefits Of Designer Certification?</a></footer></article></li>
-</ol>
-</div></div>
-</section><section id="block-5" class="widget widget_block">
-<div class="wp-container-3 wp-block-group"><div class="wp-block-group__inner-container">
-<h2 id="archives">Archives</h2>
-
-
-<ul class=" wp-block-archives-list wp-block-archives">	<li><a href="{{route('archive04')}}">April 2020</a></li>
-	<li><a href="{{route('archive03')}}">March 2020</a></li>
-	<li><a href="{{route('archive01')}}">January 2020</a></li>
-</ul>
-</div></div>
-</section><section id="block-6" class="widget widget_block">
-<div class="wp-container-4 wp-block-group"><div class="wp-block-group__inner-container">
-<h2 id="categories">Categories</h2>
-
-
-<ul class="wp-block-categories-list wp-block-categories">	<li class="cat-item cat-item-2">
-<a href="{{route('building')}}">Buildings</a>
-</li>
-	<li class="cat-item cat-item-3">
-<a href="{{route('categoryconstruction')}}">Construction</a>
-</li>
-	<li class="cat-item cat-item-4">
-<a href="{{route('education')}}">Educational</a>
-</li>
-	<li class="cat-item cat-item-5">
-<a href="{{route('innovation')}}">Innovations</a>
-</li>
-	<li class="cat-item cat-item-6">
-<a href="{{route('standard')}}">Standards</a>
-</li>
-	<li class="cat-item cat-item-7">
-<a href="{{route('technology')}}">Technology</a>
-</li>
-</ul>
-</div></div>
-</section><section id="search-1" class="widget widget_search"><form role="search" method="get" class="search-form" action="./">
-				<label>
-					<span class="screen-reader-text">Search for:</span>
-					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
-				</label>
-				<input type="submit" class="search-submit" value="Search">
-			</form></section>		<section id="kyber-recent-posts-1" class="widget widget_kyber_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
-											<li>
-											<div class="kyber-post-image">
-							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-0cvf3-2-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
-										<div class="kyber-post-content">
-						<a href="{{route('commercial')}}">Commercial project With Perfection &#038; creative design</a>
-													<span class="kyber-post-date">April 6, 2020</span>
-											</div>
-				</li>
-											<li>
-											<div class="kyber-post-image">
-							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-03-rt-tu1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
-										<div class="kyber-post-content">
-						<a href="{{route('construction')}}">We are best Construction Plan business solution</a>
-													<span class="kyber-post-date">April 6, 2020</span>
-											</div>
-				</li>
-											<li>
-											<div class="kyber-post-image">
-							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-0ftyh3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
-										<div class="kyber-post-content">
-						<a href="{{route('interior')}}">Low cost interior designing Project Planning</a>
-													<span class="kyber-post-date">April 6, 2020</span>
-											</div>
-				</li>
-											<li>
-											<div class="kyber-post-image">
-							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-0cvf3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
-										<div class="kyber-post-content">
-						<a href="{{route('improve')}}">Improve Workflow With Design Construction</a>
-													<span class="kyber-post-date">April 6, 2020</span>
-											</div>
-				</li>
-											<li>
-											<div class="kyber-post-image">
-							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-der03-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
-										<div class="kyber-post-content">
-						<a href="{{route('benefit')}}">What Are The Benefits Of Designer Certification?</a>
-													<span class="kyber-post-date">April 6, 2020</span>
-											</div>
-				</li>
-					</ul>
-		</section><section id="categories-2" class="widget widget_categories"><h2 class="widget-title">Categories</h2>
-			<ul>
-					<li class="cat-item cat-item-2">
-<a href="{{route('building')}}">Buildings</a><span>2</span>
-</li>
-	<li class="cat-item cat-item-3">
-<a href="{{route('categoryconstruction')}}">Construction</a><span>1</span>
-</li>
-	<li class="cat-item cat-item-4">
-<a href="{{route('education')}}">Educational</a><span>1</span>
-</li>
-	<li class="cat-item cat-item-5">
-<a href="{{route('innovation')}}">Innovations</a><span>2</span>
-</li>
-	<li class="cat-item cat-item-6">
-<a href="{{route('standard')}}">Standards</a><span>1</span>
-</li>
-	<li class="cat-item cat-item-7">
-<a href="{{route('technology')}}">Technology</a><span>2</span>
-</li>
-			</ul>
-
-			</section><section id="media_image-1" class="widget widget_media_image"><img width="330" height="515" src="./../../wp-content/uploads/2022/02/ad-8s.jpg" class="image wp-image-2563  attachment-full size-full" alt="" loading="lazy" style="max-width: 100%; height: auto;" srcset="./../../wp-content/uploads/2022/02/ad-8s.jpg 330w, ./../../wp-content/uploads/2022/02/ad-8s-192x300.jpg 192w" sizes="(max-width: 330px) 100vw, 330px"></section><section id="tag_cloud-1" class="widget widget_tag_cloud"><h2 class="widget-title">Tags</h2>
-<div class="tagcloud">
-<a href="{{route('business')}}" class="tag-cloud-link tag-link-8 tag-link-position-1" style="font-size: 22pt;" aria-label="Business (2 items)">Business</a>
-<a href="{{route('business')}}" class="tag-cloud-link tag-link-9 tag-link-position-2" style="font-size: 8pt;" aria-label="Department (1 item)">Department</a>
-<a href="{{route('design')}}" class="tag-cloud-link tag-link-10 tag-link-position-3" style="font-size: 22pt;" aria-label="Design (2 items)">Design</a>
-<a href="{{route('marketing')}}" class="tag-cloud-link tag-link-11 tag-link-position-4" style="font-size: 22pt;" aria-label="Marketing (2 items)">Marketing</a>
-<a href="{{route('partner')}}" class="tag-cloud-link tag-link-12 tag-link-position-5" style="font-size: 8pt;" aria-label="Partner (1 item)">Partner</a>
-<a href="{{route('resource')}}" class="tag-cloud-link tag-link-13 tag-link-position-6" style="font-size: 8pt;" aria-label="Resources (1 item)">Resources</a>
-</div>
-</section></aside><!-- #secondary -->
-
+		</div>
 	</div>
 </div>
 
 	</div>
 <!-- #content -->
 
-	@include('layout.footer')
+	@include('include/footer')
+
 </body>
 
 
-<!-- Page generated by LiteSpeed Cache 4.6 on 2022-06-21 15:45:29 -->
+<!-- Page generated by LiteSpeed Cache 4.6 on 2022-06-21 15:45:26 -->
 </html>
