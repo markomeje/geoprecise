@@ -9,6 +9,6 @@ class PlanCollectionFormController extends Controller
     //
         public function index()
     {
-        return view('forms.plancollection');
+        return view('forms.plan');
     }
 }

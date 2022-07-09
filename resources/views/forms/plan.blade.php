@@ -1,5 +1,5 @@
 @include('layout.header')
-<title>Site Inspection Booking Form &#8211; GeoPrecise</title>
+<title>Plan Collection Form &#8211; GeoPrecise</title>
 
 <script type="text/javascript">
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":".\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0"}};
@@ -230,7 +230,7 @@ h3 .kyber-infobox-title {
 							Geoprecise: <span>Forms</span></h1>
 							<div class="page-breadcrumbs">
 							<div class="breadcrumb">
-		<a href="{{route('home')}}">Home</a> > <span class="current">Site Inspection Booking</span>
+		<a href="{{route('home')}}">Home</a> > <span class="current">Plan Collection Form</span>
 		</div>					</div>
 										</div>				
 				</div>
@@ -238,7 +238,7 @@ h3 .kyber-infobox-title {
 		</div>
 		<div class="container" style="padding-top:5%; padding-bottom:5%;">
 		<div class="col-12 mt-3 mb-1">
-	    <h6 class="text-uppercase text-sm">Site Inspection Booking Form</h6>
+	    <h6 class="text-uppercase text-sm">Plan Collection Form</h6>
 	    </div>
 		<form action="/contact-us-1/#wpcf7-f6-p830-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
 		<div style="display: none;">
@@ -251,49 +251,34 @@ h3 .kyber-infobox-title {
 		</div>
 		<div class="kyber-form kyber-form-style-1">
 		<div class="row">
-		<div class="col-sm-12 col-md-12 col-lg-12 ">
-		<div class="input-group">
-		<div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-user"></i></span>
-      </div>
-			<input type="text" name="clientname" class="form-control"  aria-required="true" aria-invalid="false" placeholder="Client's Name" aria-describedby="basic-addon2">
-		</div>
-		</div>
+		
 		<div class="col-sm-12 col-md-12 col-lg-4 ">
-		<div class="input-group">
-		 <input type="text" name="clientaddress" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Client's Address">
-		 <div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class='fa fa-address-card'></i></span>
-      </div>
-		</div>
-		</div>
-		<div class="col-sm-12 col-md-12 col-lg-4 ">
-		<div class="input-group">
-		 <input type="text" name="phonenumber" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone Number">
-		 <div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-phone" aria-hidden="true"></i></span>
-      </div>
-		</div>
-		</div>
-		<div class="col-sm-12 col-md-12 col-lg-4 ">
-		<div class="input-group">
-		 <input type="text" name="Plotnumber" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Plot(s) Number">
-		 <div class="input-group-append">
+		<div class="input-group mb-3">
+         <div class="input-group-append">
         <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-sort-numeric-down"></i></span>
       </div>
+        <input type="text" class="form-control" placeholder="Plan Number" aria-label="Plan Number" aria-describedby="basic-addon2">
+    </div>
 		</div>
+		<div class="col-sm-12 col-md-12 col-lg-4 ">
+		<div class="input-group mb-3">
+         <div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-header" aria-hidden="true"></i></span>
+      </div>
+        <input type="text" class="form-control" placeholder="Plan Title" aria-label="Plan Title" aria-describedby="basic-addon2">
+    </div>
 		</div>
-		<div class="col-sm-12 col-md-12 col-lg-12 ">
-		<div class="input-group">
-			<div class="input-group-append">
+		<div class="col-sm-12 col-md-12 col-lg-4 ">
+		<div class="input-group mb-3">
+            <div class="input-group-append">
         <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
       </div>
-		 <input type="text" name="layout" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Location">
-		</div>
-		</div>
-		</div>
-		<div class="col-sm-12 col-md-12  col-lg-6">
-		<div class="input-group" style="margin-top: 10px;">
+        <input type="text" class="form-control" placeholder="Location" aria-label="location" aria-describedby="basic-addon2">
+    </div>
+        
+	    </div>
+		<div class="col-sm-12 col-md-12  col-lg-10 d-felx justify-content-center mt-4">
+		<div class="input-group">
 		<input type="submit" value="Submit Form" class="wpcf7-form-control has-spinner wpcf7-submit">
 		</div>
 		</div>
