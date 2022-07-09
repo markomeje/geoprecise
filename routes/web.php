@@ -69,4 +69,67 @@ Route::middleware(['web'])->domain(env('APP_URL'))->group(function() {
     Route::get('/archive06', [\App\Http\Controllers\Archive06Controller::class, 'index'])->name('archive06');
     Route::get('/archive12', [\App\Http\Controllers\Archive12Controller::class, 'index'])->name('archive12');
     Route::get('/archive18', [\App\Http\Controllers\Archive18Controller::class, 'index'])->name('archive18');
+
+    Route::get('/login', function () {
+        return redirect()->route('account.login');
+    })->name('login');
+
+    Route::get('/signup', function () {
+        return redirect()->route('account.signup');
+    })->name('signup');
+
+    Route::get('/logout', function () {
+        return redirect()->route('account.logout');
+    })->name('logout');
+});
+
+/**
+ * Everything to do with account authentication, verification and authorization
+ */
+Route::middleware(['web'])->domain(env('ACCOUNT_URL'))->group(function() {
+    Route::get('/logout', [\App\Http\Controllers\Account\AuthController::class, 'logout'])->name('account.logout');
+    Route::middleware(['guest'])->group(function() {
+        Route::get('/', [\App\Http\Controllers\Account\LoginController::class, 'index'])->name('account.login');
+        Route::get('/signup', [\App\Http\Controllers\Account\SignupController::class, 'index'])->name('account.signup');
+
+        Route::prefix('auth')->group(function() {
+            Route::post('/login', [\App\Http\Controllers\Account\LoginController::class, 'login'])->name('auth.login');
+            Route::post('/signup', [\App\Http\Controllers\Account\SignupController::class, 'signup'])->name('auth.signup');
+        });
+    });
+});
+
+Route::domain(env('ADMIN_URL'))->group(function() {
+    // Route::middleware(['auth', 'admin'])->group(function() {
+        Route::get('/', [\App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('admin');
+
+        Route::prefix('news')->group(function () {
+            Route::get('/', [\App\Http\Controllers\Admin\NewsController::class, 'index'])->name('admin.news');
+
+            Route::match(['get', 'post'], '/add', [\App\Http\Controllers\Admin\NewsController::class, 'add'])->name('admin.news.add');
+            Route::post('/status/{id}', [\App\Http\Controllers\Admin\NewsController::class, 'status'])->name('admin.news.status.update');
+            Route::post('/delete/{id}', [\App\Http\Controllers\Admin\NewsController::class, 'delete'])->name('admin.news.delete');
+
+            Route::post('/edit/{id}', [\App\Http\Controllers\Admin\NewsController::class, 'edit'])->name('admin.news.edit');
+            Route::get('/edit/{id}', [\App\Http\Controllers\Admin\NewsController::class, 'edit'])->name('admin.news.edit');
+        });
+
+        Route::prefix('supporters')->group(function () {
+            Route::get('/', [\App\Http\Controllers\Admin\SupportersController::class, 'index'])->name('admin.supporters');
+        });
+
+        Route::prefix('blogs')->group(function () {
+            Route::get('/', [\App\Http\Controllers\Admin\NewsController::class, 'index'])->name('admin.blogs');
+        });
+
+        Route::prefix('gallery')->group(function () {
+            Route::get('/', [\App\Http\Controllers\Admin\GalleryController::class, 'index'])->name('admin.gallery');
+        });
+
+        Route::prefix('image')->group(function () {
+            Route::post('/upload', [\App\Http\Controllers\Admin\ImagesController::class, 'upload'])->name('admin.image.upload');
+            Route::match(['delete', 'post'], '/delete', [\App\Http\Controllers\Admin\ImagesController::class, 'delete'])->name('admin.image.delete');
+        });
+    // });
+
 });
