@@ -230,7 +230,7 @@ h3 .kyber-infobox-title {
 							Geoprecise: <span>Forms</span></h1>
 							<div class="page-breadcrumbs">
 							<div class="breadcrumb">
-		<a href="{{route('home')}}">Home</a> > <span class="current">Plan Collection Form</span>
+		<a href="{{route('home')}}">Home</a> > <a href="{{route('forms')}}">Forms</a> > <span class="current">Plan Collection Form</span>
 		</div>					</div>
 										</div>				
 				</div>
@@ -270,11 +270,11 @@ h3 .kyber-infobox-title {
 		</div>
 		<div class="col-sm-12 col-md-12 col-lg-4 ">
 		<div class="input-group mb-3">
-            <div class="input-group-append">
+         <div class="input-group-append">
         <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
       </div>
         <input type="text" class="form-control" placeholder="Location" aria-label="location" aria-describedby="basic-addon2">
-    </div>
+   		 </div>
         
 	    </div>
 		<div class="col-sm-12 col-md-12  col-lg-10 d-felx justify-content-center mt-4">

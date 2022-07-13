@@ -230,7 +230,7 @@ h3 .kyber-infobox-title {
 							Geoprecise: <span>Forms</span></h1>
 							<div class="page-breadcrumbs">
 							<div class="breadcrumb">
-		<a href="{{route('home')}}">Home</a> > <span class="current">Site Inspection Booking</span>
+		<a href="{{route('home')}}">Home</a> > <a href="{{route('forms')}}">Forms</a> > <span class="current">Site Inspection Booking</span>
 		</div>					</div>
 										</div>				
 				</div>
@@ -289,7 +289,6 @@ h3 .kyber-infobox-title {
         <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
       </div>
 		 <input type="text" name="layout" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Location">
-		</div>
 		</div>
 		</div>
 		<div class="col-sm-12 col-md-12  col-lg-6">

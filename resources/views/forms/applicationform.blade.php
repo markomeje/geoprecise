@@ -231,9 +231,9 @@ h3 .kyber-infobox-title {
 							Geoprecise: <span>Forms</span></h1>
 							<div class="page-breadcrumbs">
 							<div class="breadcrumb">
-		<a href="{{route('home')}}">Home</a> > <span class="current">Application Form For Lifting / Extraction</span>
+		<a href="{{route('home')}}">Home</a>  >  <a href="{{route('forms')}}"> Forms</a> > <span class="current">Application Form For Lifting / Extraction</span>
 		</div>					</div>
-										</div>				
+										</div>			     	
 				</div>
 			</div>
 		</div>
@@ -254,52 +254,84 @@ h3 .kyber-infobox-title {
 		<div class="row gy-5">
 		<div class="col-sm-12 col-md-6  col-lg-4 ">
 		<div class="input-group">
-		<span class="wpcf7-form-control-wrap" data-name="Allotteename"><input type="text" name="Allotteename" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Allottee's Name"></span>
+		<div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-user"></i></span>
+      </div>
+		<input type="text" name="Allotteename" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Allottee's Name">
 		</div>
 		</div>
 		<div class="col-sm-12 col-md-6  col-lg-4 ">
 		<div class="input-group">
-		 <span class="wpcf7-form-control-wrap" data-name="alloteeaddress"><input type="text" name="alloteeaddress" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Allotee Address"></span>
+		<input type="text" name="alloteenumber" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Allotee Number">
+		<div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-phone"></i></span>
+      </div>
 		</div>
 		</div>
 		<div class="col-sm-12 col-md-6  col-lg-4 ">
 		<div class="input-group">
-		 <span class="wpcf7-form-control-wrap" data-name="alloteenumber"><input type="text" name="alloteenumber" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Allotee Number"></span>
+		 <input type="text" name="alloteeaddress" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Allotee Address">
+		 <div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-address-card"></i></span>
+      </div>
+		</div>
+		</div>
+		
+		<div class="col-sm-12 col-md-6  col-lg-4 ">
+		<div class="input-group">
+		<div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-user"></i></span>
+      </div>
+		<input type="text" name="donorname" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Donor's Name">
 		</div>
 		</div>
 		<div class="col-sm-12 col-md-6  col-lg-4 ">
 		<div class="input-group">
-		 <span class="wpcf7-form-control-wrap" data-name="number-110"><input type="text" name="number-110" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone Number"></span>
-		</div>
-		</div>
-		<div class="col-sm-12 col-md-6  col-lg-4 ">
-		<div class="input-group">
-		 <span class="wpcf7-form-control-wrap" data-name="donorname"><input type="text" name="donorname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Donor's Name"></span>
+		<input type="text" name="number-110" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone Number">
+		<div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-phone"></i></span>
+      </div>
 		</div>
 		</div>
 		<div class="col-sm-12 col-md-6  col-lg-4">
 		<div class="input-group">
-		<span class="wpcf7-form-control-wrap" data-name="donoraddress"><input type="text" name="donoraddress" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Donor's Address"></span>
+		<input type="text" name="donoraddress" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Donor's Address">
+		<div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-address-card"></i></span>
 		</div>
-		</div>
-		<div class="col-sm-12 col-md-6  col-lg-4 ">
-		<div class="input-group">
-		 <span class="wpcf7-form-control-wrap" data-name="plotnumber"><input type="text" name="plotnumber" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Plot(s) Number"></span>
 		</div>
 		</div>
 		<div class="col-sm-12 col-md-6  col-lg-4 ">
 		<div class="input-group">
-		 <span class="wpcf7-form-control-wrap" data-name="layout"><input type="text" name="layout" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Layout or Location"></span>
+		<div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-sort-numeric-down"></i></span>
+      	</div>
+		 <input type="text" name="plotnumber" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Plot(s) Number">
 		</div>
 		</div>
 		<div class="col-sm-12 col-md-6  col-lg-4 ">
 		<div class="input-group">
-		 <span class="wpcf7-form-control-wrap" data-name="typeofdocument"><input type="text" name="typeofdocument" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Type of Document Presented"></span>
+		<input type="text" name="layout" value="" size="40" class=" form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Layout or Location">
+		<div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+      </div>
 		</div>
 		</div>
 		<div class="col-sm-12 col-md-6  col-lg-4 ">
 		<div class="input-group">
-		 <span class="wpcf7-form-control-wrap" data-name="signature"><input type="text" name="signature" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Signature"></span>
+		 <input type="text" name="typeofdocument" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Type of Document Presented">
+		 <div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-file"></i></span>
+      	</div>
+		</div>
+		</div>
+		<div class="col-sm-12 col-md-6  col-lg-4 ">
+		<label>Upload Siginature</label>
+		<div class="input-group">
+		<div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-file-signature"></i></span>
+      	</div>
+		 <input type="file" name="signature" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Signature">
 		</div>
 		</div>
 	      <div class="col-12 mt-3 mb-1">
@@ -307,25 +339,37 @@ h3 .kyber-infobox-title {
 	      </div>
 	      <div class="col-sm-12 col-md-6  col-lg-4">
 		<div class="input-group">
-		<span class="wpcf7-form-control-wrap" data-name="fullname"><input type="text" name="fullname" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name"></span>
+		<div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-user"></i></span>
+      </div>
+		<input type="text" name="fullname" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name">
 		</div>
 		<div class="input-group">
-		 <span class="wpcf7-form-control-wrap" data-name="address"><input type="text" name="address" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Address"></span>
+		<div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-address-card"></i></span>
 		</div>
-		<div class="input-group">
-		 <span class="wpcf7-form-control-wrap" data-name="date"><input type="text" name="date" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Date"></span>
+		<input type="text" name="address" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Address">
 		</div>
 		</div>
 		<div class="col-sm-12 col-md-6  col-lg-4">
 		<div class="input-group">
-		<span class="wpcf7-form-control-wrap" data-name="signature"><input type="text" name="signature" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Signature"></span>
+		<div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-calendar-alt"></i></span>
+		<input type="text" name="date" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Date">
 		</div>
+		<label>Upload Siginature</label>
+		<div class="input-group">
+		<div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-file-signature"></i></span>
+      	</div>
+		 <input type="file" name="signature" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Signature">
+		</div>
+		</div>
+		</div>
+		<div class="col-sm-12 col-md-6  col-lg-4">
 		<div class="input-group">
 		 <span class="wpcf7-form-control-wrap" data-name="comment"><textarea type="text" name="comment" value=""  rows="0.5" cols="42" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Comment"></textarea></span>
 		</div>
-		</div>
-
-	    </div>
 		</div>
 		<div class="col-sm-12 col-md-6  col-lg-6">
 		<div class="input-group">

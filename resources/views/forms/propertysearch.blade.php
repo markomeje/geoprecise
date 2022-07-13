@@ -230,7 +230,7 @@ h3 .kyber-infobox-title {
 							Geoprecise: <span>Forms</span></h1>
 							<div class="page-breadcrumbs">
 							<div class="breadcrumb">
-		<a href="{{route('home')}}">Home</a> > <span class="current">Property Search Request</span>
+		<a href="{{route('home')}}">Home</a> > <a href="{{route('forms')}}">Forms</a> > <span class="current">Property Search Request</span>
 		</div>					</div>
 										</div>				
 				</div>
@@ -251,45 +251,84 @@ h3 .kyber-infobox-title {
 		</div>
 		<div class="kyber-form kyber-form-style-1">
 		<div class="row">
-		<div class="col-sm-12 col-md-12 col-lg-12 ">
+		<div class="col-sm-12 col-md-12 col-lg-6">
 		<div class="input-group">
 		<div class="input-group-append">
         <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-user"></i></span>
       </div>
-			<input type="text" name="clientname" class="form-control"  aria-required="true" aria-invalid="false" placeholder="Client's Name" aria-describedby="basic-addon2">
+			<input type="text" name="name" class="form-control"  aria-required="true" aria-invalid="false" placeholder="FullName" aria-describedby="basic-addon2">
 		</div>
 		</div>
-		<div class="col-sm-12 col-md-12 col-lg-4 ">
+		<div class="col-sm-12 col-md-12 col-lg-6">
 		<div class="input-group">
-		 <input type="text" name="clientaddress" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Client's Address">
-		 <div class="input-group-append">
+		<div class="input-group-append">
         <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class='fa fa-address-card'></i></span>
       </div>
+		 <input type="text" name="address" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Address">
 		</div>
 		</div>
-		<div class="col-sm-12 col-md-12 col-lg-4 ">
+		<div class="col-sm-12 col-md-12 col-lg-6 ">
 		<div class="input-group">
-		 <input type="text" name="phonenumber" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone Number">
-		 <div class="input-group-append">
+		<div class="input-group-append">
         <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-phone" aria-hidden="true"></i></span>
       </div>
+		 <input type="text" name="phonenumber" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone Number">
 		</div>
 		</div>
-		<div class="col-sm-12 col-md-12 col-lg-4 ">
+		<div class="col-sm-12 col-md-12 col-lg-6 ">
 		<div class="input-group">
-		 <input type="text" name="Plotnumber" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Plot(s) Number">
+		 <div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-tasks"></i></span>
+      	</div>
+		 <input type="text" name="occupation" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Occupation">
+		</div>
+		</div>
+		<div class="col-sm-12 col-md-12 col-lg-6 ">
+		<div class="input-group">
 		 <div class="input-group-append">
         <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-sort-numeric-down"></i></span>
       </div>
+		 <input type="text" name="plot" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Plot(s) Number">
 		</div>
 		</div>
-		<div class="col-sm-12 col-md-12 col-lg-12 ">
+		<div class="col-sm-12 col-md-12 col-lg-6 ">
 		<div class="input-group">
-			<div class="input-group-append">
+		<div class="input-group-append">
         <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-      </div>
-		 <input type="text" name="layout" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Location">
+      	</div>
+		 <input type="text" name="layout" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Layout">
 		</div>
+		</div>
+		<div class="col-sm-12 col-md-12 col-lg-12">
+		<div class="input-group">
+		<div class="input-group-append">
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-user"></i></span>
+      </div>
+			<input type="text" name="name" class="form-control"  aria-required="true" aria-invalid="false" placeholder="Sold By" aria-describedby="basic-addon2">
+		</div>
+		</div>
+
+		<div class="col-12 mt-3 mb-1">
+	        <h6 class="text-uppercase text-sm"style="color:rgb(253 151 46);">Status</h6>
+	      </div>
+	      <div class="col-sm-6 col-md-4 col-lg-3 ">
+		<div class="input-group">
+		 <input type="checkbox" name="status" value="" class="" aria-required="true" aria-invalid="false"><span class="text-sm ml-2">Buyer</span>
+		</div>
+		</div>
+		 <div class="col-sm-6 col-md-4 col-lg-3 ">
+		<div class="input-group">
+		 <input type="checkbox" name="status" value="" class="" aria-required="true" aria-invalid="false"><span class="text-sm ml-2">Seller</span>
+		</div>
+		</div>
+		 <div class="col-sm-6 col-md-4 col-lg-3  ">
+		<div class="input-group">
+		 <input type="checkbox" name="status" value="" class="" aria-required="true" aria-invalid="false"><span class="text-sm ml-2">Agent
+		</div>
+		</div>
+		 <div class="col-sm-6 col-md-4 col-lg-3 ">
+		<div class="input-group">
+		 <input type="checkbox" name="status" value="" class="" aria-required="true" aria-invalid="false"><span class="text-sm ml-2">Other</span>
 		</div>
 		</div>
 		<div class="col-sm-12 col-md-12  col-lg-6">
