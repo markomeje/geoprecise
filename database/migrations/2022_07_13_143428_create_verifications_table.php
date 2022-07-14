@@ -13,15 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('verifications', function (Blueprint $table) {
             $table->id();
-            $table->string('email')->unique();
+            $table->string('type');
+            $table->bigInteger('user_id')->unsigned()->nullable();
+            $table->integer('verified')->boolean(false);
+            $table->string('token');
+            $table->dateTime('expiry')->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->string('status')->default('inactive');
-            $table->string('phone')->unique();
-            $table->string('role')->default('client');
-            $table->integer('verified')->default(0);
-            $table->string('password');
-            $table->rememberToken();
             $table->timestamps();
         });
     }
@@ -33,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('verifications');
     }
 };

@@ -1,15 +1,14 @@
 <?php
 
 namespace Database\Factories;
-
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
-use Hash;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\User>
  */
-class UserFactory extends Factory
+class ClientFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -19,12 +18,10 @@ class UserFactory extends Factory
     public function definition()
     {
         return [
-            'status' => 'inactive',
-            'email' => $this->faker->unique()->safeEmail(),
-            'phone' => $this->faker->unique()->phoneNumber(),
-            'password' => Hash::make('1234'), // password
-            'verified' => $this->faker->boolean(40),
-            'role' => 'client',
+            'name' => $this->faker->name(),
+            'user_id' => $this->faker->numberBetween(1, User::count()),
+            'status' => '',
         ];
     }
+
 }

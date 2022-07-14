@@ -15,7 +15,12 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')->hourly();
+        if (config('app.env') !== 'production') {
+            $schedule->command('cache:clear')->everyMinute();
+            $schedule->command('config:clear')->everyMinute();
+            $schedule->command('view:clear')->everyMinute();
+            $schedule->command('route:clear')->everyMinute();
+        }
     }
 
     /**

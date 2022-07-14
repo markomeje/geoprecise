@@ -9,31 +9,33 @@
             <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
               <div class="card card-plain">
                 <div class="card-header bg-transparent pb-0 text-start">
-	                <div class="mb-3" style="max-width: 240px;">
-	                	<img src="/argon/images/logo.png" class="img-fluid w-100 object-fit">
-	                </div>
+	                <a href="{{ route('home') }}" class="mb-3 d-block" style="max-width: 240px;">
+	                	<img src="/images/logo.png" class="img-fluid w-100 object-fit">
+	                </a>
                  <h4 class="font-weight-bolder">Login Here</h4>
                  <p class="mb-0">Please enter your phone number and password below to login.</p>
                 </div>
                 <div class="card-body">
-                  <form role="form" action="javascript:;" method="post" data-action="{{ route('auth.login') }}">
+                  <form class="login-form" action="javascript:;" method="post" data-action="{{ route('auth.login') }}">
+                    @csrf
                     <div class="form-group">
                     	<label class="text-muted">Phone number</label>
-                      	<input type="email" class="form-control form-control-lg phone" placeholder="Your phone number" aria-label="Phone">
-                        <small class="error phone-error text-danger"></small>
+                      	<input type="email" class="form-control form-control-lg email" placeholder="Your phone number" aria-label="Phone" name="email">
+                        <small class="email-error text-danger"></small>
                     </div>
                     <div class="form-group">
                     	<label class="text-muted">Password</label>
-                      <input type="password" class="form-control form-control-lg" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" aria-label="Password">
-                      <small class="error password-error text-danger"></small>
+                      <input type="password" class="form-control form-control-lg password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" aria-label="Password" name="password">
+                      <small class="password-error text-danger"></small>
                     </div>
-                    <div class="form-check form-switch">
-                      <input class="form-check-input" type="checkbox" id="rememberMe">
-                      <label class="form-check-label" for="rememberMe">Remember me</label>
+                    <div class="form-check form-switch mb-3">
+                      <input class="form-check-input" type="checkbox" id="rememberme">
+                      <label class="form-check-label" for="rememberme">Remember me</label>
                     </div>
+                    <div class="alert d-none login-message m-0 text-white"></div>
                     <div class="text-center">
-                      <button type="button" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">
-                        <img src="/images/spinner.svg" class="me-2 d-non login-spinner mb-1">Login
+                      <button type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">
+                        <img src="/images/spinner.svg" class="me-2 d-none login-spinner mb-1">Login
                       </button>
                     </div>
                   </form>

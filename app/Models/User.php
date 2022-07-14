@@ -6,9 +6,8 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject;
 
-class User extends Authenticatable implements JWTSubject
+class User extends Authenticatable
 {
     use HasFactory, Notifiable;
 
@@ -18,9 +17,24 @@ class User extends Authenticatable implements JWTSubject
      * @var array<int, string>
      */
     protected $fillable = [
-        'name',
+        'phone',
         'email',
         'password',
+        'role',
+        'status',
+    ];
+
+    /**
+     * Applicable user titles
+     *
+     */
+    public const NAME_TITLES = [
+        'mr',
+        'prof.',
+        'mrs',
+        'dr.',
+        'miss',
+        'barr.'
     ];
 
     /**
@@ -38,28 +52,16 @@ class User extends Authenticatable implements JWTSubject
      *
      * @var array<string, string>
      */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
-
-     /**
-     * Get the identifier that will be stored in the subject claim of the JWT.
-     *
-     * @return mixed
-     */
-    public function getJWTIdentifier()
-    {
-        return $this->getKey();
-    }
+    protected $casts = [];
 
     /**
-     * Return a key value array, containing any custom claims to be added to the JWT.
+     * A user may have one profile image
      *
-     * @return array
+     * @var array<string, string>
      */
-    public function getJWTCustomClaims()
+    public function image()
     {
-        return [];
+        return this->hasOne(Image::class, 'model_id');
     }
 
 }

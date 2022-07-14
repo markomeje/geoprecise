@@ -4,9 +4,15 @@
   <script src="{{ config('app.url') }}/argon/js/plugins/perfect-scrollbar.min.js"></script>
   <script src="{{ config('app.url') }}/argon/js/plugins/smooth-scrollbar.min.js"></script>
   <script src="{{ config('app.url') }}/argon/js/plugins/chartjs.min.js"></script>
-  <script>
-    var ctx1 = document.getElementById("chart-line").getContext("2d");
 
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  {{-- Custom Js --}}
+  <script src="{{ config('app.url') }}/custom/js/index.js"></script>
+  <script src="{{ config('app.url') }}/custom/js/ajax.js"></script>
+  <script src="{{ config('app.url') }}/custom/js/forms.js"></script>
+  {{-- <script>
+    var ctx1 = document.getElementById("chart-line").getContext("2d");
     var gradientStroke1 = ctx1.createLinearGradient(0, 230, 0, 50);
 
     gradientStroke1.addColorStop(1, 'rgba(94, 114, 228, 0.2)');
@@ -86,7 +92,8 @@
         },
       },
     });
-  </script>
+  </script> --}}
+  
   <script>
     var win = navigator.platform.indexOf('Win') > -1;
     if (win && document.querySelector('#sidenav-scrollbar')) {

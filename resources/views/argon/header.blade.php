@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="76x76" href="/argon/images/apple-icon.png">
-  <link rel="icon" type="image/png" href="/argon/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon.png">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
   <title>Geoprecise Dashboard</title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -18,4 +18,4 @@
   <!-- CSS Files -->
   <link id="pagestyle" href="/argon/css/argon-dashboard.css?v=2.0.4" rel="stylesheet" />
 </head>
-<body class="g-sidenav-show   bg-gray-100">
+<body class="g-sidenav-show bg-gray-100">
