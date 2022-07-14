@@ -255,7 +255,7 @@ h3 .kyber-infobox-title {
 		<div class="col-sm-12 col-md-12 col-lg-4 ">
 		<div class="input-group mb-3">
          <div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-sort-numeric-down"></i></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fas fa-sort-numeric-down"></i></span>
       </div>
         <input type="text" class="form-control" placeholder="Plan Number" aria-label="Plan Number" aria-describedby="basic-addon2">
     </div>
@@ -263,7 +263,7 @@ h3 .kyber-infobox-title {
 		<div class="col-sm-12 col-md-12 col-lg-4 ">
 		<div class="input-group mb-3">
          <div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-header" aria-hidden="true"></i></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fa fa-header" aria-hidden="true"></i></span>
       </div>
         <input type="text" class="form-control" placeholder="Plan Title" aria-label="Plan Title" aria-describedby="basic-addon2">
     </div>
@@ -271,7 +271,7 @@ h3 .kyber-infobox-title {
 		<div class="col-sm-12 col-md-12 col-lg-4 ">
 		<div class="input-group mb-3">
          <div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fa fa-map-marker" aria-hidden="true"></i></span>
       </div>
         <input type="text" class="form-control" placeholder="Location" aria-label="location" aria-describedby="basic-addon2">
    		 </div>

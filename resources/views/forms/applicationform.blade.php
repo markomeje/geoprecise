@@ -255,7 +255,7 @@ h3 .kyber-infobox-title {
 		<div class="col-sm-12 col-md-6  col-lg-4 ">
 		<div class="input-group">
 		<div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-user"></i></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fas fa-user"></i></span>
       </div>
 		<input type="text" name="Allotteename" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Allottee's Name">
 		</div>
@@ -264,7 +264,7 @@ h3 .kyber-infobox-title {
 		<div class="input-group">
 		<input type="text" name="alloteenumber" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Allotee Number">
 		<div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-phone"></i></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fa fa-phone"></i></span>
       </div>
 		</div>
 		</div>
@@ -272,7 +272,7 @@ h3 .kyber-infobox-title {
 		<div class="input-group">
 		 <input type="text" name="alloteeaddress" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Allotee Address">
 		 <div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-address-card"></i></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fa fa-address-card"></i></span>
       </div>
 		</div>
 		</div>
@@ -280,7 +280,7 @@ h3 .kyber-infobox-title {
 		<div class="col-sm-12 col-md-6  col-lg-4 ">
 		<div class="input-group">
 		<div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-user"></i></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fas fa-user"></i></span>
       </div>
 		<input type="text" name="donorname" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Donor's Name">
 		</div>
@@ -289,7 +289,7 @@ h3 .kyber-infobox-title {
 		<div class="input-group">
 		<input type="text" name="number-110" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone Number">
 		<div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-phone"></i></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fa fa-phone"></i></span>
       </div>
 		</div>
 		</div>
@@ -297,14 +297,14 @@ h3 .kyber-infobox-title {
 		<div class="input-group">
 		<input type="text" name="donoraddress" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Donor's Address">
 		<div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-address-card"></i></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fa fa-address-card"></i></span>
 		</div>
 		</div>
 		</div>
 		<div class="col-sm-12 col-md-6  col-lg-4 ">
 		<div class="input-group">
 		<div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-sort-numeric-down"></i></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fas fa-sort-numeric-down"></i></span>
       	</div>
 		 <input type="text" name="plotnumber" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Plot(s) Number">
 		</div>
@@ -313,7 +313,7 @@ h3 .kyber-infobox-title {
 		<div class="input-group">
 		<input type="text" name="layout" value="" size="40" class=" form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Layout or Location">
 		<div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fa fa-map-marker" aria-hidden="true"></i></span>
       </div>
 		</div>
 		</div>
@@ -321,17 +321,8 @@ h3 .kyber-infobox-title {
 		<div class="input-group">
 		 <input type="text" name="typeofdocument" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Type of Document Presented">
 		 <div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-file"></i></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fas fa-file"></i></span>
       	</div>
-		</div>
-		</div>
-		<div class="col-sm-12 col-md-6  col-lg-4 ">
-		<label>Upload Siginature</label>
-		<div class="input-group">
-		<div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-file-signature"></i></span>
-      	</div>
-		 <input type="file" name="signature" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Signature">
 		</div>
 		</div>
 	      <div class="col-12 mt-3 mb-1">
@@ -340,35 +331,31 @@ h3 .kyber-infobox-title {
 	      <div class="col-sm-12 col-md-6  col-lg-4">
 		<div class="input-group">
 		<div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-user"></i></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fas fa-user"></i></span>
       </div>
 		<input type="text" name="fullname" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full Name">
 		</div>
 		<div class="input-group">
 		<div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-address-card"></i></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fa fa-address-card"></i></span>
 		</div>
 		<input type="text" name="address" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Address">
 		</div>
-		</div>
-		<div class="col-sm-12 col-md-6  col-lg-4">
 		<div class="input-group">
 		<div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-calendar-alt"></i></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fas fa-calendar-alt"></i></span>
 		<input type="text" name="date" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Date">
 		</div>
-		<label>Upload Siginature</label>
+		</div>
+		</div>
+		<div class="col-sm-12 col-md-6  col-lg-8">
 		<div class="input-group">
-		<div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-file-signature"></i></span>
-      	</div>
-		 <input type="file" name="signature" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Signature">
+		 <textarea type="text" name="comment" value=""  rows="5" cols="40" class=" wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Comment" style=" height:210px;"></textarea>
 		</div>
 		</div>
-		</div>
-		<div class="col-sm-12 col-md-6  col-lg-4">
+		<div class="col-sm-12 col-md-12  col-lg-12">
 		<div class="input-group">
-		 <span class="wpcf7-form-control-wrap" data-name="comment"><textarea type="text" name="comment" value=""  rows="0.5" cols="42" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Comment"></textarea></span>
+		 <input type="checkbox" name="terms"><span style="margin-left:10px;"> I Agree with the Terms and condition</span>
 		</div>
 		</div>
 		<div class="col-sm-12 col-md-6  col-lg-6">

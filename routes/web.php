@@ -82,11 +82,12 @@ Route::middleware(['web'])->domain(env('APP_URL'))->group(function() {
     Route::get('/plentiff', [\App\Http\Controllers\PlentiffController::class, 'index'])->name('plentiff');
     Route::get('/housing', [\App\Http\Controllers\HousingController::class, 'index'])->name('housing');
     Route::get('/forms', [\App\Http\Controllers\FormsController::class, 'index'])->name('forms');
-
- Route::get('/propertysearchform', [\App\Http\Controllers\PropertySearchFormController::class, 'index'])->name('propertysearchform');
+    Route::get('/propertysearchform', [\App\Http\Controllers\PropertySearchFormController::class, 'index'])->name('propertysearchform');
     Route::get('/plancollectionform', [\App\Http\Controllers\PlanCollectionFormController::class, 'index'])->name('plancollectionform');
     Route::get('/cisform', [\App\Http\Controllers\CISFormsController::class, 'index'])->name('cisform');
     Route::get('/applicationform', [\App\Http\Controllers\ApplicationFormsController::class, 'index'])->name('applicationform');
     Route::get('/siteinspectionform', [\App\Http\Controllers\SiteInspectionFormController::class, 'index'])->name('siteinspectionform');
+
+   Route::get('/layouts', [\App\Http\Controllers\LayoutController::class, 'index'])->name('layouts');
     
 });

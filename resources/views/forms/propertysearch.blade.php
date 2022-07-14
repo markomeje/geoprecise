@@ -254,7 +254,7 @@ h3 .kyber-infobox-title {
 		<div class="col-sm-12 col-md-12 col-lg-6">
 		<div class="input-group">
 		<div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-user"></i></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fas fa-user"></i></span>
       </div>
 			<input type="text" name="name" class="form-control"  aria-required="true" aria-invalid="false" placeholder="FullName" aria-describedby="basic-addon2">
 		</div>
@@ -262,7 +262,7 @@ h3 .kyber-infobox-title {
 		<div class="col-sm-12 col-md-12 col-lg-6">
 		<div class="input-group">
 		<div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class='fa fa-address-card'></i></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class='fa fa-address-card'></i></span>
       </div>
 		 <input type="text" name="address" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Address">
 		</div>
@@ -270,7 +270,7 @@ h3 .kyber-infobox-title {
 		<div class="col-sm-12 col-md-12 col-lg-6 ">
 		<div class="input-group">
 		<div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-phone" aria-hidden="true"></i></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fa fa-phone" aria-hidden="true"></i></span>
       </div>
 		 <input type="text" name="phonenumber" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone Number">
 		</div>
@@ -278,7 +278,7 @@ h3 .kyber-infobox-title {
 		<div class="col-sm-12 col-md-12 col-lg-6 ">
 		<div class="input-group">
 		 <div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-tasks"></i></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fas fa-tasks"></i></span>
       	</div>
 		 <input type="text" name="occupation" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Occupation">
 		</div>
@@ -286,7 +286,7 @@ h3 .kyber-infobox-title {
 		<div class="col-sm-12 col-md-12 col-lg-6 ">
 		<div class="input-group">
 		 <div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-sort-numeric-down"></i></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fas fa-sort-numeric-down"></i></span>
       </div>
 		 <input type="text" name="plot" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Plot(s) Number">
 		</div>
@@ -294,7 +294,7 @@ h3 .kyber-infobox-title {
 		<div class="col-sm-12 col-md-12 col-lg-6 ">
 		<div class="input-group">
 		<div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fa fa-map-marker" aria-hidden="true"></i></span>
       	</div>
 		 <input type="text" name="layout" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Layout">
 		</div>
@@ -302,7 +302,7 @@ h3 .kyber-infobox-title {
 		<div class="col-sm-12 col-md-12 col-lg-12">
 		<div class="input-group">
 		<div class="input-group-append">
-        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i class="fas fa-user"></i></span>
+        <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fas fa-user"></i></span>
       </div>
 			<input type="text" name="name" class="form-control"  aria-required="true" aria-invalid="false" placeholder="Sold By" aria-describedby="basic-addon2">
 		</div>

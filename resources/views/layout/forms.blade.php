@@ -9,9 +9,10 @@
   background: rgb(253 151 46);
   border-radius:5px;
   transform: scale(1.1);
-  z-index: 9;
+  z-index: 9; 
 }
-i:hover{
-  color:white !important;
+ i{
+  background-color:white;
 }
+
 </style>
