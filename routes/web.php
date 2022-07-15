@@ -89,5 +89,11 @@ Route::middleware(['web'])->domain(env('APP_URL'))->group(function() {
     Route::get('/siteinspectionform', [\App\Http\Controllers\SiteInspectionFormController::class, 'index'])->name('siteinspectionform');
 
    Route::get('/layouts', [\App\Http\Controllers\LayoutController::class, 'index'])->name('layouts');
+   Route::get('/moniclayout', [\App\Http\Controllers\MoniclandLayoutController::class, 'index'])->name('moniclayout');
+   Route::get('/preciouslayout', [\App\Http\Controllers\PreciouslandLayoutController::class, 'index'])->name('preciouslayout');
+   Route::get('/peacelayout', [\App\Http\Controllers\PeacelandLayoutController::class, 'index'])->name('peacelayout');
+   Route::get('/glodengatelayout', [\App\Http\Controllers\GoldenGatelandLayoutController::class, 'index'])->name('goldengatelayout');
+   Route::get('/chrsitalayout', [\App\Http\Controllers\ChristalandLayoutController::class, 'index'])->name('christalayout');
+   Route::get('/choicelayout', [\App\Http\Controllers\ChoicelandLayoutController::class, 'index'])->name('choicelayout');
     
 });
