@@ -320,9 +320,9 @@ h3 .kyber-infobox-title {
                           <div class="col-md-7 px-3">
                             <div class="card-block px-6">
                               <p class="card-text mt-5">
-                                The Carousel code can be replaced with an img src, no problem. The added CSS brings shadow to the card and some adjustments to the prev/next buttons and the indicators is rounded now. As in Bootstrap 3
-                              </p>
-                              <p class="card-text">Made for usage, commonly searched for. Fork, like and use it. Just move the carousel div above the col containing the text for left alignment of images</p>
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                               <br>
                               <a href="{{route('forms')}}" class="mt-auto btn " style="background-color:rgb(253 151 46); color:white;">Get A Form</a>
                             </div>
