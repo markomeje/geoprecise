@@ -87,7 +87,6 @@ Route::middleware(['web'])->domain(env('APP_URL'))->group(function() {
     Route::get('/cisform', [\App\Http\Controllers\CISFormsController::class, 'index'])->name('cisform');
     Route::get('/applicationform', [\App\Http\Controllers\ApplicationFormsController::class, 'index'])->name('applicationform');
     Route::get('/siteinspectionform', [\App\Http\Controllers\SiteInspectionFormController::class, 'index'])->name('siteinspectionform');
-
    Route::get('/layouts', [\App\Http\Controllers\LayoutController::class, 'index'])->name('layouts');
    Route::get('/moniclayout', [\App\Http\Controllers\MoniclandLayoutController::class, 'index'])->name('moniclayout');
    Route::get('/preciouslayout', [\App\Http\Controllers\PreciouslandLayoutController::class, 'index'])->name('preciouslayout');
@@ -95,5 +94,11 @@ Route::middleware(['web'])->domain(env('APP_URL'))->group(function() {
    Route::get('/glodengatelayout', [\App\Http\Controllers\GoldenGatelandLayoutController::class, 'index'])->name('goldengatelayout');
    Route::get('/chrsitalayout', [\App\Http\Controllers\ChristalandLayoutController::class, 'index'])->name('christalayout');
    Route::get('/choicelayout', [\App\Http\Controllers\ChoicelandLayoutController::class, 'index'])->name('choicelayout');
+
+   Route::get('/destinylayout', [\App\Http\Controllers\DestinylandlayoutController::class, 'index'])->name('destinylayout');
+   Route::get('/easternlayout', [\App\Http\Controllers\EasternlandlayoutController::class, 'index'])->name('easternlayout');
+   Route::get('/ressurectionelayout', [\App\Http\Controllers\RessurrectionlandlayoutController::class, 'index'])->name('ressurrectionlayout');
+   Route::get('/uprightlayout', [\App\Http\Controllers\UprightlandlayoutController::class, 'index'])->name('uprightlayout');
+   Route::get('/victorylayout', [\App\Http\Controllers\VictorylandlayoutController::class, 'index'])->name('victorylayout');
     
 });

@@ -363,7 +363,7 @@ h3 .kyber-infobox-title {
                             src="././images/layouts/land01.jpeg" />
                     </div>
 
-                    <a class="card-action" href="#"><i class="fa fa-home"></i></a>
+                    <a class="card-action" href="{{route('uprightlayout')}}"><i class="fa fa-home"></i></a>
                     <div class="card-heading text-uppercase">
                         <u>Upright City</u>
                     </div>
@@ -371,7 +371,7 @@ h3 .kyber-infobox-title {
                         <p> Excepteur sint occaecat cupidatat non
                         proident, sunt in culpa.</p>
                     </div>
-                    <a href="#" class="card-button"><i style="margin-right:5px; font-size: small; margin-top: auto;margin-bottom: auto;"  class="fa fa-plus"></i> More</a>
+                    <a href="{{route('uprightlayout')}}" class="card-button"><i style="margin-right:5px; font-size: small; margin-top: auto;margin-bottom: auto;"  class="fa fa-plus"></i> More</a>
                 </div>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-3" style="margin-bottom: 40px;">
@@ -381,7 +381,7 @@ h3 .kyber-infobox-title {
                             src="././images/layouts/land08.jpg" />
                     </div>
 
-                    <a class="card-action" href="#"><i class="fa fa-home"></i></a>
+                    <a class="card-action" href="{{route('victorylayout')}}"><i class="fa fa-home"></i></a>
                     <div class="card-heading text-uppercase">
                         <u>Victory Layout</u>
                     </div>
@@ -389,7 +389,7 @@ h3 .kyber-infobox-title {
                         <p> Excepteur sint occaecat cupidatat non
                         proident, sunt in culpa.</p>
                     </div>
-                    <a href="#" class="card-button"><i style="margin-right:5px; font-size: small; margin-top: auto;margin-bottom: auto;"  class="fa fa-plus"></i> More</a>
+                    <a href="{{route('victorylayout')}}" class="card-button"><i style="margin-right:5px; font-size: small; margin-top: auto;margin-bottom: auto;"  class="fa fa-plus"></i> More</a>
                 </div>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-3" style="margin-bottom: 40px;">
@@ -399,7 +399,7 @@ h3 .kyber-infobox-title {
                             src="././images/layouts/land10.jpg" />
                     </div>
 
-                    <a class="card-action" href="#"><i class="fa fa-home"></i></a>
+                    <a class="card-action" href="{{route('ressurrectionlayout')}}"><i class="fa fa-home"></i></a>
                     <div class="card-heading text-uppercase">
                         <u>Ressurrection</u>
                     </div>
@@ -407,7 +407,7 @@ h3 .kyber-infobox-title {
                         <p> Excepteur sint occaecat cupidatat non
                         proident, sunt in culpa.</p>
                     </div>
-                    <a href="#" class="card-button"><i style="margin-right:5px; font-size: small; margin-top: auto;margin-bottom: auto;"  class="fa fa-plus"></i> More</a>
+                    <a href="{{route('ressurrectionlayout')}}" class="card-button"><i style="margin-right:5px; font-size: small; margin-top: auto;margin-bottom: auto;"  class="fa fa-plus"></i> More</a>
                 </div>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-3" style="margin-bottom: 40px;">
@@ -417,7 +417,7 @@ h3 .kyber-infobox-title {
                             src="././images/layouts/land03.jpg" />
                     </div>
 
-                    <a class="card-action" href="#"><i class="fa fa-home"></i></a>
+                    <a class="card-action" href="{{route('easternlayout')}}"><i class="fa fa-home"></i></a>
                     <div class="card-heading text-uppercase">
                         <u>Eastern Homes</u>
                     </div>
@@ -425,7 +425,7 @@ h3 .kyber-infobox-title {
                         <p> Eastern Homes Estate layout
                         proident, sunt in culpa.</p>
                     </div>
-                    <a href="#" class="card-button"><i style="margin-right:5px; font-size: small; margin-top: auto;margin-bottom: auto;"  class="fa fa-plus"></i> More</a>
+                    <a href="{{route('easternlayout')}}" class="card-button"><i style="margin-right:5px; font-size: small; margin-top: auto;margin-bottom: auto;"  class="fa fa-plus"></i> More</a>
                 </div>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-3" style="margin-bottom: 40px;">
@@ -435,7 +435,7 @@ h3 .kyber-infobox-title {
                             src="././images/layouts/destiny.jpg" />
                     </div>
 
-                    <a class="card-action" href="#"><i class="fa fa-home"></i></a>
+                    <a class="card-action" href="{{route('destinylayout')}}"><i class="fa fa-home"></i></a>
                     <div class="card-heading text-uppercase">
                         <u>Destiny Layout</u>
                     </div>
@@ -443,7 +443,7 @@ h3 .kyber-infobox-title {
                         <p> Excepteur sint occaecat cupidatat non
                         proident, sunt in culpa.</p>
                     </div>
-                    <a href="#" class="card-button"><i style="margin-right:5px; font-size: small; margin-top: auto;margin-bottom: auto;"  class="fa fa-plus"></i> More</a>
+                    <a href="{{route('destinylayout')}}" class="card-button"><i style="margin-right:5px; font-size: small; margin-top: auto;margin-bottom: auto;"  class="fa fa-plus"></i> More</a>
                 </div>
             </div>
             <div class="col-sm-12 col-md-4 col-lg-3" style="margin-bottom: 40px;">

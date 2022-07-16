@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
 
-    <title>Choice Layout &#8211; GeoPrecise</title>
+    <title>Victory Layout &#8211; GeoPrecise</title>
 <meta name="robots" content="max-image-preview:large">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//s.w.org">
@@ -271,7 +271,7 @@ h3 .kyber-infobox-title {
                                         Geoprecise: <span>Layouts</span></h1>
                                         <div class="page-breadcrumbs">
                                         <div class="breadcrumb">
-                    <a href="{{route('home')}}">Home</a> > <a href="{{route('layouts')}}">Layouts</a> > <span class="current">Choice Layout</span>
+                    <a href="{{route('home')}}">Home</a> > <a href="{{route('layouts')}}">Layouts</a> > <span class="current">Victory Layout</span>
                     </div>                  </div>
                                                     </div>              
                             </div>
@@ -281,7 +281,7 @@ h3 .kyber-infobox-title {
                      <div class="container" style="margin-top:70px; margin-bottom:60px;">
                     <div class="row">
                           <div class="col-12 mt-3 mb-1">
-                            <h4 class="text-uppercase">Choice Layout</h4>
+                            <h4 class="text-uppercase">Victory Layout</h4>
                           </div>
                         </div>
                       <div class="card">
