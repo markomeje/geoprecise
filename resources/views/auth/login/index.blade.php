@@ -1,5 +1,5 @@
 <div class="">
-	@include('argon.header')
+	@include('auth.includes.header')
 	<!-- End Navbar -->
   <main class="main-content  mt-0">
     <section>
@@ -59,5 +59,5 @@
       </div>
     </section>
   </main>
-  @include('argon.footer')
+  @include('auth.includes.footer')
 </div>

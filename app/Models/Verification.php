@@ -15,10 +15,9 @@ class Verification extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'reference',
         'token',
-        'user_id',
         'verified',
+        'user_id',
         'type',
         'expiry',
         'status',

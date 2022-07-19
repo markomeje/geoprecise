@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('type');
             $table->bigInteger('user_id')->unsigned()->nullable();
-            $table->integer('verified')->boolean(false);
+            $table->boolean('verified')->default(false);
             $table->string('token');
             $table->dateTime('expiry')->nullable();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');

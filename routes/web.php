@@ -93,7 +93,7 @@ Route::middleware(['web'])->domain(env('APP_URL'))->group(function() {
  */
 Route::middleware(['web'])->domain(env('AUTH_URL'))->group(function() {
     Route::get('/', function () {
-        return redirect()->route('home');
+        return redirect()->route('home'); 
     });
 
     Route::get('/logout', [\App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('auth.logout');
@@ -117,6 +117,10 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
     Route::prefix('layouts')->group(function () {
         Route::get('/', [\App\Http\Controllers\Admin\LayoutsController::class, 'index'])->name('admin.layouts');
     });
+
+    Route::prefix('payments')->group(function () {
+        Route::get('/', [\App\Http\Controllers\Admin\LayoutsController::class, 'index'])->name('admin.payments');
+    }); 
 });
 
 Route::domain(env('CLIENT_URL'))->middleware(['auth', 'client'])->group(function() {

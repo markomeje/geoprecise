@@ -8,40 +8,7 @@
       <!-- End Navbar -->
       <div class="container-fluid py-4">
         <div class="row">
-          <?php $panels = [
-            'clients' => ['name' => 'All Clients', 'count' => rand(45, 209), 'text' => '', 'icon' => 'ni-money-coins'],
-            'layouts' => ['name' => 'All Layouts', 'count' => rand(45, 209), 'text' => '', 'icon' => 'ni-money-coins']
-          ]; ?>
-          @if(!empty($panels))
-            @foreach($panels as $link => $details)
-            <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
-              <div class="card">
-                <div class="card-body p-3">
-                  <div class="row">
-                    <div class="col-8">
-                      <div class="numbers">
-                        <a href="{{ route("admin.{$link}") }}">
-                          <p class="text-sm mb-0 font-weight-bold">
-                            {{ $details['name'] }}
-                          </p>
-                        </a>
-                          
-                        <h5 class="font-weight-bolder">
-                          {{ $details['count'] }}
-                        </h5>
-                      </div>
-                    </div>
-                    <div class="col-4 text-end">
-                      <div class="icon icon-shape bg-gradient-primary shadow-primary text-center rounded-circle">
-                        <i class="ni {{ $details['icon'] }} text-lg opacity-10" aria-hidden="true"></i>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            @endforeach
-          @endif
+          @include('admin.dashboard.partials.panels')
         </div>
         <div class="row mt-4">
           <div class="col-lg-7 mb-lg-0 mb-4">
@@ -64,8 +31,7 @@
             <div class="card card-carousel overflow-hidden h-100 p-0">
               <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
                 <div class="carousel-inner border-radius-lg h-100">
-                  <div class="carousel-item h-100 active" style="background-image: url('/admin/images/carousel-1.jpg');
-        background-size: cover;">
+                  <div class="carousel-item h-100 active" style="background-image: url('/argon/images/1.jpg'); background-size: cover;">
                     <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
                       <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
                         <i class="ni ni-camera-compact text-dark opacity-10"></i>
@@ -74,8 +40,7 @@
                       <p>There’s nothing I really wanted to do in life that I wasn’t able to get good at.</p>
                     </div>
                   </div>
-                  <div class="carousel-item h-100" style="background-image: url('/admin/images/carousel-2.jpg');
-        background-size: cover;">
+                  <div class="carousel-item h-100" style="background-image: url('/argon/images/2.jpg'); background-size: cover;">
                     <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
                       <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
                         <i class="ni ni-bulb-61 text-dark opacity-10"></i>
@@ -84,8 +49,7 @@
                       <p>That’s my skill. I’m not really specifically talented at anything except for the ability to learn.</p>
                     </div>
                   </div>
-                  <div class="carousel-item h-100" style="background-image: url('/admin/images/carousel-3.jpg');
-        background-size: cover;">
+                  <div class="carousel-item h-100" style="background-image: url('/argon/images/3.jpg'); background-size: cover;">
                     <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
                       <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
                         <i class="ni ni-trophy text-dark opacity-10"></i>
@@ -106,6 +70,52 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="row mt-4">
+          @if(empty($forms))
+            <div class="alert alert-info">No froms available</div>
+          @else
+            @foreach($forms as $key => $form)
+              <div class="col-12 col-md-6 col-lg-3 mb-4">
+                <div class="card shadow-lg z-index-2 bg-transparent">
+                  <div class="card-body d-flex justify-content-center flex-column border-radius-lg h-100" style="background-image: url('/argon/images/3.jpg'); background-size: cover; background-position: center; height: 280px !important; object-fit: cover;">
+                    <div class="mb-3">
+                      <?php $status = strtolower($form->status ?? ''); ?>
+                      <span class="badge text-capitalize badge-sm bg-gradient-{{ $status === 'active' ? 'success' : 'danger' }}">
+                        <small class="">
+                          {{ ucwords($status) }}
+                        </small>
+                      </span>
+                    </div>
+                    <a href="" class="text-white mb-4 d-block">
+                      {{ $form->name }} {{ empty($form->code) ? '' : '('.$form->code.')'; }}
+                    </a>
+                    <div class="d-flex align-items-center">
+                      <div class="d-flex align-items-center">
+                        <div class="bg-danger text-center me-3 rounded-circle" style="width: 42px; height: 42px; line-height: 42px !important; font-size: 12px;">
+                          <div class="text-white mt-3">
+                            <i class="icofont-trash"></i>
+                          </div>
+                        </div>
+                        <div class="bg-warning text-center me-3 rounded-circle" style="width: 42px; height: 42px; line-height: 42px !important; font-size: 12px;">
+                          <div class="text-white mt-3">
+                            <i class="icofont-ui-edit"></i>
+                          </div>
+                        </div>
+                      </div>
+                       <div class="d-flex align-items-center">
+                         <div class="bg-success px-4 text-center rounded-pill" style="height: 42px; font-size: 14px;">
+                          <div class="text-white mt-3">
+                            <i class="icofont-long-arrow-right"></i>
+                          </div>
+                        </div>
+                       </div> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            @endforeach
+          @endif
         </div>
       </div>
     </main>

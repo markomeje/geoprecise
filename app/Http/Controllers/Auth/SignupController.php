@@ -18,7 +18,7 @@ class SignupController extends Controller
     //
     public function index()
     {
-        return view('auth.signup.index');
+        return view('auth.signup.index', ['title' => "Signup | Geoprecise Services Limited"]);
     }
 
     //
