@@ -9,6 +9,6 @@ class CivilservantController extends Controller
     //
      public function index()
     {
-        return view('frontend.project.seniorcivilservant.servant');
+        return view('frontend.project.civilservant.servant');
     }
 }

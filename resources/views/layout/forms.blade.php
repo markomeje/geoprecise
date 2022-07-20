@@ -11,7 +11,7 @@
   transform: scale(1.1);
   z-index: 9; 
 }
- i{
+ .fab{
   background-color:white;
 }
 

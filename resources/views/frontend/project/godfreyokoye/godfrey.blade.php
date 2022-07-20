@@ -64,7 +64,7 @@ img.emoji {
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./../../wp-includes/wlwmanifest.xml"> 
 <meta name="generator" content="WordPress 6.0">
 <link rel="canonical" href="./index.html">
-<link rel="shortlink" href="./../../index.html?p=2641">
+<link rel="shortlink" href="{{route('home')}}?p=2641">
 <link rel="alternate" type="application/json+oembed" href="./../../wp-json/oembed/1.0/embed/index.html?url=https%3A%2F%2F%2Fproject%2Fgodffrey-okoye-university-permanent-site-2%2F">
 <link rel="alternate" type="text/xml+oembed" href="./../../wp-json/oembed/1.0/embed/index.html?url=https%3A%2F%2F%2Fproject%2Fgodffrey-okoye-university-permanent-site-2%2F&#038;format=xml">
 <meta name="generator" content="Redux 4.3.14">
@@ -167,13 +167,13 @@ h3 .kyber-infobox-title {
 	<div class="container site-header-top">
 		<div class="d-flex align-items-center">
 			<div class="site-logo">
-	<a href="./../../index.html" rel="home">
-		<img class="img-fluid" src="./../../wp-content/uploads/2022/02/logo-geop-1.png" alt="GeoPrecise">
+	<a href="{{route('home')}}" rel="home">
+		<img class="img-fluid" src="./../wp-content/uploads/2022/02/logo-geop-1.png" alt="GeoPrecise">
 	</a>
 </div>
 <div class="kyber-header-button-container">
 	<div class="kyber-header-button">
-		<a class="kyber-header-button" href="./../../contact-us-1/index.html" title="Request a Quote">Request a Quote</a>
+		<a class="kyber-header-button" href="{{route('contact')}}" title="Request a Quote">Request a Quote</a>
 	</div>
 </div>
 <div class="contact-info">
@@ -208,31 +208,31 @@ h3 .kyber-infobox-title {
 						<div class="header-menu-area-inner d-flex align-items-center justify-content-between">
 							<nav id="site-navigation" class="main-navigation">
 								<div class="menu-menu-1-container"><ul id="primary-menu" class="menu">
-<li id="menu-item-2305" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2305"><a href="./../../index.html">Home</a></li>
+<li id="menu-item-2305" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2305 "><a href="{{route('home')}}">Home</a></li>
 <li id="menu-item-2303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2303">
-<a href="./../../our-services/index.html">Our Services</a>
+<a href="{{route('ourservices')}}">Our Services</a>
 <ul class="sub-menu">
-	<li id="menu-item-2311" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2311"><a href="./../../service/hydrographic-survey/index.html">Hydrographic Survey</a></li>
-	<li id="menu-item-2312" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2312"><a href="./../../service/cadastral-land-survey/index.html">Cadastral &#038; Land Survey</a></li>
-	<li id="menu-item-2313" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2313"><a href="./../../service/engineering-surveying/index.html">Engineering Surveying</a></li>
-	<li id="menu-item-2314" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2314"><a href="./../../service/remote-sensing/index.html">Remote Sensing</a></li>
-	<li id="menu-item-2315" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2315"><a href="./../../service/highway-road/index.html">Highway &#038; Road</a></li>
-	<li id="menu-item-2316" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2316"><a href="./../../service/aerial-data-collection/index.html">Aerial Data Collection</a></li>
-	<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2318"><a href="./../../service/gis-mapping/index.html">GIS &#038; Mapping</a></li>
+	<li id="menu-item-2311" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2311"><a href="{{route('hydrographic')}}">Hydrographic Survey</a></li>
+	<li id="menu-item-2312" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2312"><a href="{{route('cadastral')}}">Cadastral &#038; Land Survey</a></li>
+	<li id="menu-item-2313" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2313"><a href="{{route('engineering')}}">Engineering Surveying</a></li>
+	<li id="menu-item-2314" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2314"><a href="{{route('sensing')}}">Remote Sensing</a></li>
+	<li id="menu-item-2315" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2315"><a href="{{route('highway')}}">Highway &#038; Road</a></li>
+	<li id="menu-item-2316" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2316"><a href="{{route('aerial')}}">Aerial Data Collection</a></li>
+	<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2318"><a href="{{route('mapping')}}">GIS &#038; Mapping</a></li>
 </ul>
 </li>
-<li id="menu-item-2319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2319"><a href="./../../our-projects/index.html">Projects</a></li>
-<li id="menu-item-2321" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-2321"><a href="./../../blog-classic/index.html">Blog</a></li>
+<li id="menu-item-2319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2319"><a href="{{route('ourprojects')}}">Projects</a></li>
+<li id="menu-item-2321" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-828 current_page_item current_page_parent menu-item-2321"><a href="{{route('blog')}}" aria-current="page">Blog</a></li>
 <li id="menu-item-2323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2323">
-<a href="./../../contact-us-1/index.html">Contact Us</a>
+<a href="{{route('contact')}}">Contact Us</a>
 <ul class="sub-menu">
-	<li id="menu-item-2307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2307"><a href="./../../faq/index.html">FAQ</a></li>
+	<li id="menu-item-2307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2307"><a href="{{route('faq')}}">FAQ</a></li>
 </ul>
 </li>
 <li id="menu-item-2324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2324">
-<a href="./../../about-us/index.html">About Us</a>
+<a href="{{route('aboutus')}}">About Us</a>
 <ul class="sub-menu">
-	<li id="menu-item-2308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2308"><a href="./../../our-team/index.html">Our Team</a></li>
+	<li id="menu-item-2308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2308"><a href="{{route('ourteam')}}">Our Team</a></li>
 </ul>
 </li>
 </ul></div>							</nav> 
@@ -272,7 +272,7 @@ h3 .kyber-infobox-title {
 					Monic Layout				</h1>
 									<div class="page-breadcrumbs">
 					<div class="breadcrumb">
-<a href="./../../index.html">Home</a> > <span class="kyber-readcrumb"><a href="./../index.html">Project</a></span> > <span class="current">Monic Layout</span>
+<a href="{{route('home')}}">Home</a> > <span class="kyber-readcrumb"><a href="{{route('ourprojects')}}">Project</a></span> > <span class="current">Monic Layout</span>
 </div>					</div>
 								</div>				
 		</div>
@@ -329,8 +329,8 @@ h3 .kyber-infobox-title {
 	<nav class="navigation post-navigation" aria-label="Posts">
 		<h2 class="screen-reader-text">Post navigation</h2>
 		<div class="nav-links">
-<div class="nav-previous"><a href="./../plentiff-esther-nohji-engr-nnabuike-and-chioma-vavessa-chukwudi-and-defendant-miss-chinyere-juliet-okenwa-mr-ameachi-nneji-udeh-anayo-oko-mrs-kate-eneh/index.html" rel="prev">PRECIOUS LAYOUT</a></div>
-<div class="nav-next"><a href="./../senior-civil-servants-association-of-nig/index.html" rel="next">BEUROCRAT ESTATE II</a></div>
+<div class="nav-previous"><a href="{{route('plentiff')}}" rel="prev">PRECIOUS LAYOUT</a></div>
+<div class="nav-next"><a href="{{route('civilservant')}}" rel="next">BEUROCRAT ESTATE II</a></div>
 </div>
 	</nav>				</main><!-- #main -->
 			</div>
@@ -342,122 +342,7 @@ h3 .kyber-infobox-title {
 	</div>
 <!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="kyber-footer-widgets-wrapper">
-	<div class="container">
-		<div class="kyber-footer row">
-							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-					<section id="text-2" class="widget widget_text">			<div class="textwidget">
-<p><img loading="lazy" class="alignnone size-full wp-image-225 footer-logo" src="./../../wp-content/uploads/2022/02/GEO-P-f-tt-2.png" alt="" width="202" height="42"></p>
-<h3 class="skincolor">+234 806 054 5860</h3>
-<p><a class="btn btn-outline-light footer-button" href="./../../contact-us-1/index.html">REQUEST WITH ONLINE FORM</a></p>
-</div>
-		</section>				</div>
-								<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-					<section id="nav_menu-1" class="widget widget_nav_menu"><h2 class="widget-title">Useful Links</h2>
-<div class="menu-footer-links-container"><ul id="menu-footer-links" class="menu">
-<li id="menu-item-2592" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2592"><a href="./../../our-services/index.html">Our Services</a></li>
-<li id="menu-item-2591" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2591"><a href="./../../our-projects/index.html">Our Projects</a></li>
-<li id="menu-item-2588" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2588"><a href="./../../about-us/index.html">About Us</a></li>
-<li id="menu-item-2593" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2593"><a href="./../../our-team/index.html">Our Team</a></li>
-<li id="menu-item-2589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2589"><a href="./../../contact-us-1/index.html">Contact Us</a></li>
-<li id="menu-item-2590" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2590"><a href="./../../faq/index.html">FAQ</a></li>
-<li id="menu-item-2587" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-2587"><a href="./../../blog-classic/index.html">Blog</a></li>
-</ul></div></section>				</div>
-								<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-							<section id="kyber-recent-posts-2" class="widget widget_kyber_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
-											<li>
-											<div class="kyber-post-image">
-							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-0cvf3-2-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
-										<div class="kyber-post-content">
-						<a href="./../../commercial-project-with-perfection-creative-design/index.html">Commercial project With Perfection &#038; creative design</a>
-													<span class="kyber-post-date">April 6, 2020</span>
-											</div>
-				</li>
-											<li>
-											<div class="kyber-post-image">
-							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-03-rt-tu1-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
-										<div class="kyber-post-content">
-						<a href="./../../we-are-best-construction-plan-business-solution/index.html">We are best Construction Plan business solution</a>
-													<span class="kyber-post-date">April 6, 2020</span>
-											</div>
-				</li>
-											<li>
-											<div class="kyber-post-image">
-							<img width="150" height="150" src="./../../wp-content/uploads/2020/04/img-0ftyh3-150x150.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy">						</div>
-										<div class="kyber-post-content">
-						<a href="./../../low-cost-interior-designing-project-planning/index.html">Low cost interior designing Project Planning</a>
-													<span class="kyber-post-date">April 6, 2020</span>
-											</div>
-				</li>
-					</ul>
-		</section>				</div>
-								<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
-					<section id="text-3" class="widget widget_text"><h2 class="widget-title">Get In Touch</h2>			<div class="textwidget">
-<ul class="widget_contact">
-<li>
-<i class="fa fa-map-marker"></i>Suit E01b, The statement Complex, Plot 1002, First Avenue, Central Business District, Abuja.</li>
-<li>
-<i class="fa fa-envelope-o"></i>Email : <a href="mailto:contact@geoprecisegroup.com">contact@geoprecisegroup.com</a>
-</li>
-<li>
-<i class="fa fa-phone"></i>Phone : +234 806 054 5860<br>
-Support : +234 906 297 2785</li>
-</ul>
-</div>
-		</section>				</div>
-						</div>
-	</div>
-</div>
-		<div class="kyber-copyright">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-6 footer-left">
-						Copyright Geoprecise Services Ltd.					</div>
-					<div class="col-lg-6 col-md-6 footer-right">
-						<ul class="social-icons">
- 	<li>
- 	<li>
- 	<li>
- 	<li>
-</ul>					</div>
-				</div>
-			</div>
-		</div>
-	</footer><!-- #colophon -->
-</div>
-<!-- #page -->
-
-
-		<script>
-			window.RS_MODULES = window.RS_MODULES || {};
-			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
-			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
-			window.RS_MODULES.defered = true;
-			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
-			window.RS_MODULES.type = 'compiled';
-		</script>
-		<link rel="stylesheet" id="kyber-responsive-style-css" href="./../../wp-content/themes/kyber/assets/css/responsive.css?ver=1.0.6" type="text/css" media="all">
-<link rel="stylesheet" id="kyber-color-customizer-css" href="./../../wp-content/uploads/kyber-color-customizer/color-customize.css?ver=220316-124542" type="text/css" media="all">
-<link rel="stylesheet" id="rs-plugin-settings-css" href="./../../wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.5.14" type="text/css" media="all">
-<style id="rs-plugin-settings-inline-css" type="text/css">#rs-demo-id {}</style>
-<script type="text/javascript" src="./../../wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.9" id="regenerator-runtime-js"></script>
-<script type="text/javascript" src="./../../wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
-<script type="text/javascript" id="contact-form-7-js-extra">
-/* <![CDATA[ */
-var wpcf7 = {"api":{"root":".\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="./../../wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.6" id="contact-form-7-js"></script>
-<script type="text/javascript" src="./../../wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.5.14" defer async id="tp-tools-js"></script>
-<script type="text/javascript" src="./../../wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.5.14" defer async id="revmin-js"></script>
-<script type="text/javascript" src="./../../wp-content/themes/kyber/assets/js/bootstrap.min.js?ver=4.0.0" id="bootstrap-js"></script>
-<script type="text/javascript" src="./../../wp-content/themes/kyber/assets/js/popper.min.js?ver=1.0.6" id="popper-js"></script>
-<script type="text/javascript" src="./../../wp-content/themes/kyber/assets/js/owl.carousel.min.js?ver=2.3.4" id="owl-carousel-js"></script>
-<script type="text/javascript" src="./../../wp-content/themes/kyber/assets/js/magnific-popup.js?ver=1.1.0" id="magnific-popup-js"></script>
-<script type="text/javascript" src="./../../wp-content/themes/kyber/assets/js/skip-link-focus-fix.js?ver=1.0.6" id="kyber-skip-link-focus-fix-js"></script>
-<script type="text/javascript" src="./../../wp-content/themes/kyber/assets/js/custom.js?ver=1.0.6" id="kyber-custom-js"></script>
-<script type="text/javascript" src="./../../wp-content/plugins/kyber-core/assets/js/shortcodes.js?ver=6.0" id="kyber-shortcodes-js"></script>
+	@include('layout.footer')
 
 </body>
 

@@ -262,7 +262,6 @@ h3 .kyber-infobox-title {
 </header>
 
 
-
 	<div id="content" class="site-content">
 
 		<div class="kyber-page-title d-flex align-items-center">
@@ -273,7 +272,7 @@ h3 .kyber-infobox-title {
 					Blue Lake Layout				</h1>
 									<div class="page-breadcrumbs">
 					<div class="breadcrumb">
-<a href="{{route('home')}}">Home</a> > <span class="kyber-readcrumb"><a href="{{route('project')}}">Project</a></span> > <span class="current">Blue Lake Layout</span>
+<a href="{{route('home')}}">Home</a> > <span class="kyber-readcrumb"><a href="{{route('ourprojects')}}">Project</a></span> > <span class="current">Blue Lake Layout</span>
 </div>					</div>
 								</div>				
 		</div>
@@ -341,7 +340,7 @@ h3 .kyber-infobox-title {
 	</div>
 <!-- #content -->
 
-	@include('include/footer')
+	@include('layout.footer')
 </body>
 
 

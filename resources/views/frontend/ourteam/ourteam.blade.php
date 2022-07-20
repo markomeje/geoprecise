@@ -180,7 +180,6 @@ h3 .kyber-infobox-title {
 </ul>
 </li>
 <li id="menu-item-2319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2319"><a href="{{route('ourprojects')}}">Projects</a></li>
-<li id="menu-item-2319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2319"><a href="{{route('layouts')}}">Layouts</a></li>
 <li id="menu-item-2321" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-828 current_page_item current_page_parent menu-item-2321"><a href="{{route('blog')}}" aria-current="page">Blog</a></li>
 <li id="menu-item-2323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2323">
 <a href="{{route('contact')}}">Contact Us</a>

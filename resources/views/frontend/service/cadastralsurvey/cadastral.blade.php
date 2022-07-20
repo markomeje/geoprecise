@@ -143,7 +143,7 @@ h3 .kyber-infobox-title {
 			<main id="main" class="site-main">
 			<div class="kyber-service-thumbnail-container">
 				<div class="post-thumbnail">
-				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/03/Cadastral-Land-Survey.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="./../../wp-content/uploads/2020/03/Cadastral-Land-Survey.jpg 1200w, ./../../wp-content/uploads/2020/03/Cadastral-Land-Survey-300x250.jpg 300w, ./../../wp-content/uploads/2020/03/Cadastral-Land-Survey-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/03/Cadastral-Land-Survey-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</div>
+				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/03/Cadastral-Land-Survey.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="./../../wp-content/uploads/2020/03/Cadastral-Land-Survey.jpg 1200w, ./../../wp-content/uploads/2020/03/Cadastral-Land-Survey-300x250.jpg 300w, ./../../wp-content/uploads/2020/03/Cadastral-Land-Survey-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/03/Cadastral-Land-Survey-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px"></div>
 <!-- .post-thumbnail -->
 			</div>
 <div class="kyber-service-entry-content">
@@ -156,8 +156,112 @@ We specialize in layout surveys, topographical surveys, boundaries, subdivision 
 
 		</div>
 	</div>
+
 </div></div></div></div>
+
+
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1587041640569 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="kyber-accordion-style-1 wpb_column vc_column_container vc_col-sm-12 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_tta-container" data-vc-action="collapse"><div class="vc_general vc_tta vc_tta-accordion vc_tta-color-white vc_tta-style-classic vc_tta-shape-square vc_tta-o-shape-group vc_tta-controls-align-left vc_custom_1586514109796"><div class="vc_tta-panels-container"><div class="vc_tta-panels">
+
+		@include('layout.forms')
+<div class="container" >
+    <div class="row">
+      <div class="col-xl-6 col-sm-6 col-12"> 
+        <div class="card" style="background-color:#f5f7fa;">
+          <div class="card-content">
+          	<a href="{{route('applicationform')}}">
+            <div class="card-body shadow-sm">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6>Get Application Form For Lifting</h6>
+                </div>
+                  <div class="align-self-center icon">
+                  <i style="color:rgb(253 151 46);" class="fab fa-wpforms  font-medium-3 float-right"></i>
+                </div>
+              </div>
+            </div>
+       		 </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6 col-sm-6 col-12"> 
+        <div class="card" style="background-color:#f5f7fa;">
+          <div class="card-content">
+          	<a href="{{route('cisform')}}">
+            <div class="card-body shadow-sm" style="border-color: rgb(253 151 46);">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6>Get Client's Information System</h6>
+                </div>
+                  <div class="align-self-center">
+                  <i style="color:rgb(253 151 46);" class="fab fa-wpforms  font-medium-3 float-right"></i>
+                </div>
+              </div>
+            </div>
+        	</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-xl-6 col-sm-6 col-12"> 
+        <div class="card" style="background-color:#f5f7fa;">
+          <div class="card-content">
+          	<a href="{{route('plancollectionform')}}">
+            <div class="card-body shadow-sm" style="border-color: rgb(253 151 46);">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6>Get Plan Collection Form</h6>
+                </div>
+                  <div class="align-self-center">
+                  <i style="color:rgb(253 151 46);" class="fab fa-wpforms  font-medium-3 float-right"></i>
+                </div>
+              </div>
+            </div>
+        	</a>
+          </div>
+        </div>
+      </div>
+
+         <div class="col-xl-6 col-sm-6 col-12"> 
+        <div class="card" style="background-color:#f5f7fa;">
+          <div class="card-content">
+          	<a href="{{route('siteinspectionform')}}">
+            <div class="card-body shadow-sm" style="border-color: rgb(253 151 46);">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6>Get Site Inspection Form</h6>
+                </div>
+                  <div class="align-self-center">
+                  <i style="color:rgb(253 151 46);" class="fab fa-wpforms  font-medium-3 float-right"></i>
+                </div>
+              </div>
+            </div>
+        	</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-6 col-sm-6 col-12"> 
+        <div class="card" style="background-color:#f5f7fa;">
+          <div class="card-content">
+          	<a href="{{route('propertysearchform')}}">
+            <div class="card-body shadow-sm" style="border-color: rgb(253 151 46);">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6>Get Property Search Request Form</h6>
+                </div>
+                  <div class="align-self-center">
+                  <i style="color:rgb(253 151 46);" class="fab fa-wpforms  font-medium-3 float-right"></i>
+                </div>
+              </div>
+            </div>
+        	</a>
+          </div>
+        </div>
+      </div>
+      
+  </section>
+</div>
+
 <div class="vc_tta-panel vc_active" id="1585768153475-cb5f3c27-f8e2" data-vc-content=".vc_tta-panel-body">
 <div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-right"><a href="#1585768153475-cb5f3c27-f8e2" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">WHY HIRE Geoprecise AS YOUR BOUNDARY SURVEYOR?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div>
 <div class="vc_tta-panel-body">
@@ -190,6 +294,7 @@ We specialize in layout surveys, topographical surveys, boundaries, subdivision 
 </div>
 </div></div></div></div></div></div></div></div>
 </div>
+
 <!-- .entry-content -->
 
 	<nav class="navigation post-navigation" aria-label="Posts">
@@ -251,7 +356,6 @@ We specialize in layout surveys, topographical surveys, boundaries, subdivision 
 
 	</div>
 </div>
-
 	</div>
 <!-- #content -->
 

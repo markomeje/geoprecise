@@ -231,7 +231,7 @@ h3 .kyber-infobox-title {
 	<li id="menu-item-2307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2307"><a href="{{route('faq')}}">FAQ</a></li>
 </ul>
 </li>
-<li id="menu-item-2324" class="current-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2324">
+<li id="menu-item-2324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2324">
 <a href="{{route('aboutus')}}">About Us</a>
 <ul class="sub-menu">
 	<li id="menu-item-2308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2308"><a href="{{route('ourteam')}}">Our Team</a></li>
@@ -263,7 +263,6 @@ h3 .kyber-infobox-title {
 </div>
 </header>
 
-
 	<div id="content" class="site-content">
 
 		<div class="kyber-page-title d-flex align-items-center">
@@ -274,7 +273,7 @@ h3 .kyber-infobox-title {
 					Precious Layout				</h1>
 									<div class="page-breadcrumbs">
 					<div class="breadcrumb">
-<a href="{{route('home')}}">Home</a> > <span class="kyber-readcrumb"><a href="{{route('project')}}">Project</a></span> > <span class="current">Precious Layout</span>
+<a href="{{route('home')}}">Home</a> > <span class="kyber-readcrumb"><a href="{{route('ourprojects')}}">Projects</a></span> > <span class="current">Precious Layout</span>
 </div>					</div>
 								</div>				
 		</div>
@@ -331,7 +330,7 @@ h3 .kyber-infobox-title {
 		<h2 class="screen-reader-text">Post navigation</h2>
 		<div class="nav-links">
 <div class="nav-previous"><a href="{{route('highway')}}" rel="prev">Estatern Homes Layout</a></div>
-<div class="nav-next"><a href="{{route('railway')}}" rel="next">Unity Layout</a></div>
+<div class="nav-next"><a href="{{route('railwayconstruction')}}" rel="next">Unity Layout</a></div>
 </div>
 	</nav>				</main><!-- #main -->
 			</div>
@@ -343,7 +342,7 @@ h3 .kyber-infobox-title {
 	</div>
 <!-- #content -->
 
-	@include('include/footer')
+	@include('layout.footer')
 
 </body>
 
