@@ -235,13 +235,13 @@ function navbarFixed(el) {
   if (!el.getAttribute("checked")) {
     toggleNavLinksColor('blur');
     navbar.classList.add(...classes);
-    navbar.setAttribute('data-scroll', 'true');
+    navbar.setAttribute('data-scroll', 'false');
     navbarBlurOnScroll('navbarBlur');
     el.setAttribute("checked", "true");
   } else {
     toggleNavLinksColor('transparent');
     navbar.classList.remove(...classes);
-    navbar.setAttribute('data-scroll', 'false');
+    navbar.setAttribute('data-scroll', 'true');
     navbarBlurOnScroll('navbarBlur');
     el.removeAttribute("checked");
   }

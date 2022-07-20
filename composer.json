@@ -13,6 +13,7 @@
         "laravel/tinker": "^2.7",
         "symfony/http-client": "^6.0",
         "symfony/mailgun-mailer": "^6.0",
+        "unicodeveloper/laravel-paystack": "^1.0",
         "wildbit/swiftmailer-postmark": "^3.3"
     },
     "require-dev": {

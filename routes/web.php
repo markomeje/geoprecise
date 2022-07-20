@@ -100,9 +100,10 @@ Route::middleware(['web'])->domain(env('AUTH_URL'))->group(function() {
     Route::middleware(['guest'])->group(function() {
         Route::get('/login', [\App\Http\Controllers\Auth\LoginController::class, 'index'])->name('login.ui');
         Route::get('/signup', [\App\Http\Controllers\Auth\SignupController::class, 'index'])->name('signup.ui');
+        Route::post('/signup', [\App\Http\Controllers\Auth\SignupController::class, 'signup'])->name('auth.signup');
+        Route::post('/signup/verify', [\App\Http\Controllers\Auth\SignupController::class, 'verify'])->name('signup.verify');
 
         Route::post('/login', [\App\Http\Controllers\Auth\LoginController::class, 'login'])->name('auth.login');
-        Route::post('/signup', [\App\Http\Controllers\Auth\SignupController::class, 'signup'])->name('auth.signup');
         Route::post('/email/verify', [\App\Http\Controllers\Auth\SignupController::class, 'signup'])->name('email.verify');
     });
 });

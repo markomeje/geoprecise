@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
-use App\Mail\EmailVerification;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use App\Models\{User, Verification, Client};
@@ -25,9 +24,8 @@ class SignupController extends Controller
     public function signup()
     {
         $data = request()->all();
-        $validator = Validator::make($data, [ 
-            'firstname' => ['required', 'string'], 
-            'surname' => ['required', 'string'], 
+        $validator = Validator::make($data, [
+            'fullname' => ['required', 'string'], 
             'email' => ['required', (new EmailRule), 'unique:users'], 
             'phone' => ['required', 'unique:users'], 
             'password' => ['required', 'string'],
@@ -53,11 +51,15 @@ class SignupController extends Controller
                 'status' => 'inactive',
             ]);
 
-            $id = $user->id ?? null;
+            if (empty($user)) {
+                throw new Exception('Error Processing Request');
+            }
+
+            $fullname = $data['fullname'] ?? '';
             Client::create([
-                'name' => $data['firstname'].' '.$data['surname'],
+                'fullname' => $fullname,
                 'title' => $data['title'] ?? null,
-                'user_id' => $id,
+                'user_id' => $user->id,
             ]);
 
             $token = Str::random(64);
@@ -65,27 +67,24 @@ class SignupController extends Controller
                 'token' => $token,
                 'type' => 'email',
                 'expiry' => Carbon::now()->addMinutes(60),
-                'user_id' => $id,
+                'user_id' => $user->id,
                 'verified' => false,
             ]);
 
-            // $mailable = (new TemplatedMailable())->identifier(8675309)->include([
-            //     'name' => $email,
-            //     'action_url' => 'https://example.com/login',
-            // ]);
-
-            // Mail::to('contact@geoprecisegroup.com')->send($mailable);
-
-            Mail::to('contact@geoprecisegroup.com')->send(new EmailVerification([
-                'email' => $email, 
-                'token' => $token
-            ]));
+            // $company = config('app.name');
+            // Mail::to($email)->send((new TemplatedMailable())->identifier(28625150)->include([
+            //     'product_name' => $company,
+            //     'name' => $fullname,
+            //     'action_url' => route('signup.verify', ['token' => $token]),
+            //     'company_name' => $company,
+            //     'company_address' => config('app.address')
+            // ]));
 
             DB::commit();
             return response()->json([
                 'status' => 1,
                 'info' => 'Signup successful. Please wait . . .',
-                'redirect' => route('signup', ['success' => $token]),
+                'redirect' => route('signup.ui', ['success' => 'true']),
             ]);
 
         } catch (Exception $error) {
@@ -95,5 +94,11 @@ class SignupController extends Controller
                 'info' => 'Unknown error. Try again later',
             ]);
         }
+    }
+
+    //
+    public function verify()
+    {
+        return view('auth.signup.verify', ['title' => "Signup Verification | Geoprecise Services Limited"]);
     }
 }

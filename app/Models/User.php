@@ -34,7 +34,9 @@ class User extends Authenticatable
         'mrs',
         'dr.',
         'miss',
-        'barr.'
+        'barr.',
+        'miss',
+        'none',
     ];
 
     /**
@@ -61,7 +63,17 @@ class User extends Authenticatable
      */
     public function image()
     {
-        return this->hasOne(Image::class, 'model_id');
+        return $this->hasOne(Image::class, 'model_id');
+    }
+
+    /**
+     * A user have one client details
+     *
+     * @var array<string, string>
+     */
+    public function client()
+    {
+        return $this->hasOne(Client::class, 'user_id');
     }
 
 }

@@ -18,7 +18,8 @@ class ClientFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->name(),
+            'fullname' => $this->faker->name(),
+            'title' => $this->faker->title(),
             'user_id' => $this->faker->numberBetween(1, User::count()),
             'status' => '',
         ];
