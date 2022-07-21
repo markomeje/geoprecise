@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Factories;
-use App\Models\User;
+use App\Models\Client;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
@@ -11,6 +11,13 @@ use Illuminate\Support\Str;
 class ClientFactory extends Factory
 {
     /**
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
+    protected $model = Client::class;
+
+    /**
      * Define the model's default state.
      *
      * @return array<string, mixed>
@@ -19,9 +26,11 @@ class ClientFactory extends Factory
     {
         return [
             'fullname' => $this->faker->name(),
+            'dob' => $this->faker->date(),
             'title' => $this->faker->title(),
-            'user_id' => $this->faker->numberBetween(1, User::count()),
-            'status' => '',
+            'occupation' => $this->faker->jobTitle(),
+            'address' => $this->faker->address(),
+            'status' => 'incomplete',
         ];
     }
 

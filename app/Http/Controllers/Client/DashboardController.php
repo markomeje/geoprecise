@@ -9,6 +9,6 @@ class DashboardController extends Controller
     //
     public function index()
     {
-        return view('client.dashboard.index', []);
+        return view('client.dashboard.index', ['forms' => Form::all()]);
     }
 }

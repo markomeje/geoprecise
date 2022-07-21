@@ -22,7 +22,7 @@ class UserFactory extends Factory
             'status' => 'inactive',
             'email' => $this->faker->unique()->safeEmail(),
             'phone' => $this->faker->unique()->phoneNumber(),
-            'password' => Hash::make('1234'), // password
+            'password' => Hash::make('1234'),
             'verified' => $this->faker->boolean(40),
             'role' => 'client',
         ];

@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Seeders;
-use App\Models\User;
+use App\Models\{User, Client};
 use Illuminate\Database\Seeder;
 use Hash;
 
@@ -17,16 +17,19 @@ class UserSeeder extends Seeder
         if(config('app.env') !== 'production') {
             $users = [
                 ['phone' => '08158212666', 'email' => 'admin@admin.io', 'role' => 'admin', 'password' => Hash::make('1234'), 'status' => 'active'],
-                // ['phone' => '08087752375', 'email' => 'client@client.io', 'role' => 'client', 'password' => Hash::make('1234'), 'status' => 'active'],
+                ['phone' => '08087752375', 'email' => 'client@client.io', 'role' => 'client', 'password' => Hash::make('1234'), 'status' => 'active'],
             ];
 
             User::where('id', '>', 0)->delete();
-            User::factory()->count(132)->create();
             foreach ($users as $user) {
-                if (empty(User::where(['email' => $user['email']])->first())) {
-                    User::create($user);
-                } 
+                User::create($user);
             }
+
+            User::factory()->count(67)->create()->each(function($user) {
+                Client::factory(rand(1, 150))->create([
+                    'user_id' => $user->id
+                ]);
+            });
         }
     }
 }

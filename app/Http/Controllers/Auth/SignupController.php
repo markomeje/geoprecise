@@ -60,6 +60,7 @@ class SignupController extends Controller
                 'fullname' => $fullname,
                 'title' => $data['title'] ?? null,
                 'user_id' => $user->id,
+                'status' => 'incomplete',
             ]);
 
             $token = Str::random(64);

@@ -22,7 +22,7 @@ class FormSeeder extends Seeder
             ['name' => 'Plan Collection form', 'code' => null, 'description' => null, 'status' => 'active'],
         ];
 
-        Form::truncate();
+        Form::where('id', '>', 0)->delete();
         foreach ($forms as $form) {
             Form::create($form);
         }

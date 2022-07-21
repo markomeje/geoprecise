@@ -124,6 +124,7 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
     }); 
 });
 
-Route::domain(env('CLIENT_URL'))->middleware(['auth', 'client'])->group(function() {
+Route::domain(env('CLIENT_URL'))->middleware(['auth', 'client', 'profile.setup'])->group(function() {
     Route::get('/', [\App\Http\Controllers\Client\DashboardController::class, 'index'])->name('client');
+    Route::get('/profile', [\App\Http\Controllers\Client\ProfileController::class, 'index'])->name('client.profile');
 });

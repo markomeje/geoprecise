@@ -29,7 +29,7 @@
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-credit-card text-success text-sm opacity-10"></i>
             </div>
-            <span class="nav-link-text ms-1">Clients</span>
+            <span class="nav-link-text ms-1">Documents</span>
           </a>
         </li>
         <li class="nav-item">
@@ -37,7 +37,7 @@
             <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
               <i class="ni ni-app text-info text-sm opacity-10"></i>
             </div>
-            <span class="nav-link-text ms-1">Staff</span>
+            <span class="nav-link-text ms-1">Profile</span>
           </a>
         </li>
         <li class="nav-item">
@@ -46,6 +46,14 @@
               <i class="ni ni-world-2 text-danger text-sm opacity-10"></i>
             </div>
             <span class="nav-link-text ms-1">Layouts</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="{{ route('admin.layouts') }}">
+            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-world-2 text-danger text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Plots</span>
           </a>
         </li>
       </ul>
