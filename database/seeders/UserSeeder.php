@@ -25,11 +25,7 @@ class UserSeeder extends Seeder
                 User::create($user);
             }
 
-            User::factory()->count(67)->create()->each(function($user) {
-                Client::factory(rand(1, 150))->create([
-                    'user_id' => $user->id
-                ]);
-            });
+            User::factory()->count(67)->create();
         }
     }
 }

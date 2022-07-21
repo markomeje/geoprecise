@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Factories;
-use App\Models\Client;
+use App\Models\{Client, User};
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
@@ -31,6 +31,7 @@ class ClientFactory extends Factory
             'occupation' => $this->faker->jobTitle(),
             'address' => $this->faker->address(),
             'status' => 'incomplete',
+            'user_id' => rand(1, User::count()),
         ];
     }
 
