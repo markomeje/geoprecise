@@ -168,7 +168,7 @@ We specialize in layout surveys, topographical surveys, boundaries, subdivision 
       <div class="col-xl-6 col-sm-6 col-12"> 
         <div class="card" style="background-color:#f5f7fa;">
           <div class="card-content">
-          	<a href="{{route('applicationform')}}">
+          	<a href="#">
             <div class="card-body shadow-sm">
               <div class="media d-flex">
                 <div class="media-body text-left">
@@ -186,7 +186,7 @@ We specialize in layout surveys, topographical surveys, boundaries, subdivision 
       <div class="col-xl-6 col-sm-6 col-12"> 
         <div class="card" style="background-color:#f5f7fa;">
           <div class="card-content">
-          	<a href="{{route('cisform')}}">
+          	<a href="#">
             <div class="card-body shadow-sm" style="border-color: rgb(253 151 46);">
               <div class="media d-flex">
                 <div class="media-body text-left">
@@ -205,7 +205,7 @@ We specialize in layout surveys, topographical surveys, boundaries, subdivision 
       <div class="col-xl-6 col-sm-6 col-12"> 
         <div class="card" style="background-color:#f5f7fa;">
           <div class="card-content">
-          	<a href="{{route('plancollectionform')}}">
+          	<a href="#">
             <div class="card-body shadow-sm" style="border-color: rgb(253 151 46);">
               <div class="media d-flex">
                 <div class="media-body text-left">
@@ -224,7 +224,7 @@ We specialize in layout surveys, topographical surveys, boundaries, subdivision 
          <div class="col-xl-6 col-sm-6 col-12"> 
         <div class="card" style="background-color:#f5f7fa;">
           <div class="card-content">
-          	<a href="{{route('siteinspectionform')}}">
+          	<a href="#">
             <div class="card-body shadow-sm" style="border-color: rgb(253 151 46);">
               <div class="media d-flex">
                 <div class="media-body text-left">
@@ -243,7 +243,7 @@ We specialize in layout surveys, topographical surveys, boundaries, subdivision 
       <div class="col-xl-6 col-sm-6 col-12"> 
         <div class="card" style="background-color:#f5f7fa;">
           <div class="card-content">
-          	<a href="{{route('propertysearchform')}}">
+          	<a href="#">
             <div class="card-body shadow-sm" style="border-color: rgb(253 151 46);">
               <div class="media d-flex">
                 <div class="media-body text-left">
