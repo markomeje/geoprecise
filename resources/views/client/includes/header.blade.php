@@ -17,6 +17,7 @@
   <link href="/argon/css/nucleo-svg.css" rel="stylesheet" />
   {{-- Icofont icons --}}
   <link href="/icofont/icofont.min.css" rel="stylesheet" />
+  <link href="/custom/css/style.css" rel="stylesheet" />
   <!-- CSS Files -->
   <link id="pagestyle" href="/argon/css/argon-dashboard.css?v=2.0.4" rel="stylesheet" />
 </head>

@@ -2,7 +2,6 @@
 
 namespace App\Http\Middleware;
 use Illuminate\Http\Request;
-use App\Models\{User, Profile};
 use Closure;
 
 class ProfileMiddleware
@@ -18,9 +17,11 @@ class ProfileMiddleware
     {
         $user = auth()->user();
         if (!empty($user->client)) {
-            if (empty($user->client->status) || ($user->client->status ?? null) === 'incomplete') {
+            if (empty($user->client->status) || $user->client->status === 'incomplete') {
                 if (strtoupper($request->method()) === 'GET') {
-                    return redirect()->route('client.profile');
+                    return response()->view('client.profile.setup', [
+                        'client' => auth()->user()->client
+                    ]);
                 }
             }
         }

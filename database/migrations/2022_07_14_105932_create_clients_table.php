@@ -16,10 +16,13 @@ return new class extends Migration
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
             $table->string('fullname');
+            $table->string('title')->nullable();
             $table->string('dob')->nullable();
             $table->string('occupation')->nullable();
+            $table->string('city')->nullable();
             $table->string('address')->nullable();
-            $table->string('title')->nullable();
+            $table->string('state')->nullable();
+            $table->string('phone')->nullable();
             $table->bigInteger('user_id')->unsigned()->nullable();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->string('status')->nullable();

@@ -124,7 +124,15 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
     }); 
 });
 
-Route::domain(env('CLIENT_URL'))->middleware(['auth', 'client', 'profile.setup'])->group(function() {
+Route::domain(env('CLIENT_URL'))->middleware(['auth', 'client'])->group(function() {
     Route::get('/', [\App\Http\Controllers\Client\DashboardController::class, 'index'])->name('client');
     Route::get('/profile', [\App\Http\Controllers\Client\ProfileController::class, 'index'])->name('client.profile');
+
+    Route::get('/documents', [\App\Http\Controllers\Client\DocumentsController::class, 'index'])->name('client.documents');
+    Route::post('/document/add', [\App\Http\Controllers\Client\DocumentsController::class, 'add'])->name('document.add');
+
+    Route::get('/plots', [\App\Http\Controllers\Client\ProfileController::class, 'index'])->name('client.plots');
+    Route::get('/payments', [\App\Http\Controllers\Client\ProfileController::class, 'index'])->name('client.payments');
+
+    Route::post('/profile/edit/{id}', [\App\Http\Controllers\Client\ProfileController::class, 'edit'])->name('client.profile.edit');
 });

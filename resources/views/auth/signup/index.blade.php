@@ -7,7 +7,7 @@
     </div>
     <div class="container">
       <div class="row justify-content-center" style="margin-top: -24rem !important;">
-        <div class="col-xl-5 col-lg-7 col-md-9 mx-auto">
+        <div class="col-xl-6 col-lg-7 col-md-9 mx-auto">
           <div class="card py-3 z-index-0 mb-5">
             <div class="card-header pt-4">
               <a href="{{ route('home') }}" class="mb-3 d-block" style="max-width: 240px;">
@@ -40,7 +40,7 @@
                   @csrf
                   <div class="row">
                       <div class="form-group col-sm-12 col-md-6 col-lg-6">
-                        <label class="text-muted">Title</label>
+                        <label class="text-muted">Title (Optional)</label>
                         <select class="form-control custom-select title" name="title">
                           <option value="" class="text-muted">Select title</option>
                           <?php $titles = \App\Models\User::NAME_TITLES; ?>
@@ -64,10 +64,10 @@
                   </div>
                   <div class="row">
                     <div class="form-group col-sm-12 col-md-6 col-lg-6">
-                      <label class="text-muted">Phone number</label>
-                      <input type="text" class="form-control phone" placeholder="Enter your phone number" aria-label="Phone" name="phone">
-                      <small class="phone-error text-danger"></small>
-                    </div>
+                        <label class="text-muted">Phone number</label>
+                        <input type="text" class="form-control phone" placeholder="Enter your phone number" aria-label="Phone" name="phone">
+                        <small class="phone-error text-danger"></small>
+                      </div>
                     <div class="form-group col-sm-12 col-md-6 col-lg-6">
                       <label class="text-muted">Email</label>
                       <input type="email" class="form-control email" placeholder="Enter your email" aria-label="Email" name="email">
@@ -86,10 +86,32 @@
                       <small class="retype-error text-danger"></small>
                     </div>
                   </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="text-muted">Date of birth</label>
+                        <input class="form-control dob" type="date" name="dob">
+                        <small class="dob-error text-danger"></small>
+                      </div>
+                    </div>
+                    <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                      <label class="text-muted">Occupation</label>
+                      <input type="text" class="form-control occupation" placeholder="Enter your occupation" aria-label="Phone" name="occupation">
+                      <small class="occupation-error text-danger"></small>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label class="text-muted">Address</label>
+                        <textarea class="form-control address" name="address" rows="3" placeholder="Your address"></textarea>
+                        <small class="address-error text-danger"></small>
+                      </div>
+                    </div>
                   <div>
-                    <div class="form-check form-check-info text-start">
-                      <input class="form-check-input agree" type="checkbox" id="flexCheckDefault" name="agree">
-                      <label class="form-check-label mt-1 d-block" for="flexCheckDefault">
+                    <div class="form-check form-switch text-start">
+                      <input class="form-check-input agree" checked type="checkbox" id="agree-terms" name="agree">
+                      <label class="form-check-label d-block" for="agree-terms">
                         I agree the <a href="javascript:;" class="text-dark font-weight-bolder">Terms and Conditions</a>
                       </label>
                     </div>

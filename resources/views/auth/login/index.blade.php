@@ -34,7 +34,7 @@
                     </div>
                     <div class="alert d-none login-message m-0 text-white"></div>
                     <div class="text-center">
-                      <button type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">
+                      <button type="submit" class="btn btn-primary btn-lg w-100 mt-4 mb-0">
                         <img src="/images/spinner.svg" class="me-2 d-none login-spinner mb-1">Login
                       </button>
                     </div>

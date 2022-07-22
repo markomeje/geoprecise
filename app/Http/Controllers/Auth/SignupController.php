@@ -31,7 +31,12 @@ class SignupController extends Controller
             'password' => ['required', 'string'],
             'retype' => ['required', 'same:password'],
             'agree' => ['required', 'string'],
-        ], ['retype.required' => 'Please enter a password', 'agree.required' => 'You have to agree to our terms and conditions', 'phone.required' => 'Please enter your phone number.', 'retype.same:password' => 'Retype thesame password', 'phone.unique:users' => 'The phone number is already in use.']);
+            'dob' => ['required', 'string'],
+            'occupation' => ['required', 'string'],
+            'city' => ['nullable', 'string'],
+            'state' => ['nullable', 'string'],
+            'address' => ['required', 'string'],
+        ], ['retype.required' => 'Please enter a password', 'agree.required' => 'You have to agree to our terms and conditions', 'phone.required' => 'Please enter your phone number.', 'retype.same:password' => 'Retype thesame password', 'phone.unique:users' => 'The phone number is already in use.', 'dob.required' => 'Date of birth is required', 'dob.string' => 'Date of birth is invalid']);
 
         if ($validator->fails()) {
             return response()->json([
@@ -60,7 +65,12 @@ class SignupController extends Controller
                 'fullname' => $fullname,
                 'title' => $data['title'] ?? null,
                 'user_id' => $user->id,
-                'status' => 'incomplete',
+                'status' => 'complete',
+                'occupation' => $data['occupation'],
+                'state' => $data['state'] ?? null,
+                'dob' => $data['dob'],
+                'city' => $data['city'] ?? null,
+                'address' => $data['address'],
             ]);
 
             $token = Str::random(64);

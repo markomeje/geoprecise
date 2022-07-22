@@ -2,9 +2,14 @@
 
 	'use strict';
 
-    $('.update-password-form').submit(function(event){
+    $('.add-document-form').submit(function(event){
         event.preventDefault();
-        handleForm({form: $(this), button: 'update-password-button', spinner: 'update-password-spinner', message: 'update-password-message'});
+        handleForm({form: $(this), button: 'add-document-button', spinner: 'add-document-spinner', message: 'add-document-message'});
+    });
+
+    $('.edit-client-profile-form').submit(function(event){
+        event.preventDefault();
+        handleForm({form: $(this), button: 'edit-client-profile-button', spinner: 'edit-client-profile-spinner', message: 'edit-client-profile-message'});
     });
 
     $('.login-form').submit(function(event){

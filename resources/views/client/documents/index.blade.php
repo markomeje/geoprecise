@@ -8,15 +8,17 @@
       <!-- End Navbar -->
       <div class="container-fluid py-4">
         <div class="">
-          <h4 class="m-0 text-white">Welcome {{ ucfirst(auth()->user()->client->title ?? '') }} {{ ucwords(auth()->user()->client->fullname ?? '') }}</h4>
+          <a class="btn bg-gradient-dark mb-1" href="javascript:;" data-bs-toggle="modal" data-bs-target="#add-document">
+            <i class="fas fa-plus"></i>&nbsp;&nbsp;Add Document</a>
+            @include('client.documents.partials.add')
         </div>
-        @if(empty($forms))
-          <div class="alert alert-info mt-4 border-0">No froms available</div>
+        @if(empty($documents))
+          <div class="alert alert-info mt-4 border-0 text-white">No documents available</div>
         @else
           <div class="row mt-4">
-            @foreach($forms as $key => $form)
+            @foreach($documents as $document)
               <div class="col-12 col-md-6 col-lg-3 mb-4">
-                @include('client.forms.partials.card')
+                @include('client.documents.partials.card')
               </div>
             @endforeach
           </div>
