@@ -1,0 +1,39 @@
+/* Custom Heading Style 1 */
+.custom-heading-style-1 {
+	margin-bottom: 50px;
+}
+.custom-heading-style-1.kyber-light-space {
+	margin-bottom: 30px;
+}
+.custom-heading-style-1 .heading-title {
+	font-weight: 800;
+}
+.kyber_custom_heading_wrapper .kyber-heading-subtitle-wrapper .heading-subtitle {
+	margin-bottom: 5px;
+}
+.custom-heading-style-1.heading-alignment-left{
+	text-align: left;
+}
+
+.custom-heading-style-1.heading-alignment-right{
+	text-align: right;
+}
+
+.custom-heading-style-1.heading-alignment-center{
+	text-align: center;
+}
+
+.kyber_custom_heading_wrapper.subtitle-text-uppercase .heading-subtitle,
+.kyber_custom_heading_wrapper.title-text-uppercase .heading-title{
+    text-transform: uppercase;
+}
+
+.kyber_custom_heading_wrapper.subtitle-text-lowercase .heading-subtitle,
+.kyber_custom_heading_wrapper.title-text-lowercase .heading-title{
+    text-transform: lowercase;
+}
+
+.kyber_custom_heading_wrapper.subtitle-text-capitalize .heading-subtitle,
+.kyber_custom_heading_wrapper.title-text-capitalize .heading-title{
+    text-transform: capitalize;
+}

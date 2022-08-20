@@ -1,0 +1,39 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('psrs', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('form_id')->nullable();
+            $table->string('plots')->nullable();
+            $table->foreignId('layout_id')->nullable();
+
+            $table->foreignId('user_id');
+            $table->string('status')->nullable();
+            $table->boolean('completed')->default(false);
+            $table->text('description')->nullable();
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('psrs');
+    }
+};

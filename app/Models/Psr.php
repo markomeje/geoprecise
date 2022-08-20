@@ -1,0 +1,70 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Psr extends Model
+{
+    use HasFactory;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'form_id',
+        'plots',
+        'layout_id',
+        'completed',
+        'description',
+        'user_id',
+        'status',
+    ];
+
+
+    /**
+     * Property search requests status
+     *
+     * @var array<int, string>
+     */
+    public const STATUS = [
+        'Buyer sell',
+        'Agent',
+        'Others',
+        'Intending Buyer',
+    ];
+
+    /**
+     * A property search request must belong to a user
+     *
+     * @var array<string, string>
+     */
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    /**
+     * A property search request must belong to a form
+     *
+     * @var array<string, string>
+     */
+    public function form()
+    {
+        return $this->belongsTo(Form::class);
+    }
+
+    /**
+     * A property search request may have a payment
+     *
+     * @var array<string, string>
+     */
+    public function payment()
+    {
+        return $this->hasOne(Payment::class, 'model_id')->where(['type' => 'form', 'model' => 'psr', 'status' => 'paid', 'paid' => true]);
+    }
+
+}

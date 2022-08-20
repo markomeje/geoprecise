@@ -1,0 +1,80 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Survey extends Model
+{
+    use HasFactory;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'form_id',
+        'purchaser_name',
+        'purchaser_address',
+        'purchaser_phone',
+
+        'seller_name',
+        'seller_address',
+        'seller_phone',
+
+        'layout_id',
+        'document_presented',
+        'plot_numbers',
+
+        'approval_comments',
+        'approval_name',
+        'approval_address',
+
+        'user_id',
+        'completed',
+        'status',
+    ];
+
+    /**
+     * A survey belongs to a layout
+     *
+     * @var array<string, string>
+     */
+    public function layout()
+    {
+        return $this->belongsTo(Layout::class);
+    }
+
+    /**
+     * A survey has many document
+     *
+     * @var array<string, string>
+     */
+    public function documents()
+    {
+        return $this->hasMany(Document::class, 'model_id')->where(['model' => 'survey']);
+    }
+
+    /**
+     * A survey belongs to a form
+     *
+     * @var array<string, string>
+     */
+    public function form()
+    {
+        return $this->belongsTo(Form::class);
+    }
+
+    /**
+     * A survey has one payment
+     *
+     * @var array<string, string>
+     */
+    public function payment()
+    {
+        return $this->hasOne(Payment::class, 'model_id')->where(['model' => 'survey']);
+    }
+    
+}

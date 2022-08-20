@@ -1,0 +1,463 @@
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1170px;
+	}
+	/* Custom */
+	.kyber-extend-des>.vc_column-inner {
+		max-width: 890px;
+		padding-top: 80px !important;
+		padding-bottom: 80px !important;
+		padding-left: 80px !important;
+	}
+}
+
+@media (max-width: 1200px) {
+	/* Header */
+	#site-navigation-mobile {
+		display: block;
+	}
+	.site-header .contact-info {
+		display: none;
+	}
+	.header-layout-1 .header-stickable {
+		display: none;
+	}
+	.header-layout-1+.site-content .kyber-page-title {
+		margin-top: 0;
+	}
+	/* Shortcode */
+	.counter-style-1 .kyber-counter-icon i:before {
+		font-size: 52px;
+		line-height: 52px;
+		margin-right: 12px;
+	}
+	.infobox-style-4 {
+		padding: 0 0 20px 0 !important;
+	}
+	/* Custom */
+	.kyber-action-style1.kyber_custom_heading_wrapper .kyber-heading-title-wrapper .heading-title {
+		font-size: 24px;
+	}
+	.kyber-extend-des>.vc_column-inner {
+		max-width: 635px;
+		padding-top: 60px !important;
+		padding-bottom: 60px !important;
+		padding-left: 40px !important;
+	}
+	.kyber-video-box-style1 h4 {
+		font-size: 20px !important;
+		line-height: 22px !important;
+	}
+	.wpb_single_image.vc_align_right {
+		margin-left: 30px;
+	}
+	.kyber-about .about-icon2 {
+		right: 45px;
+	}
+	.kyber-about-us2 .about-icon {
+		left: 20px;
+	}
+}
+
+
+@media(max-width:1024px) {
+   .kyber-video-box-style2 {
+       padding: 90px 0;
+   }
+    .vc_row.ipad-content-bottom {
+	    display: flex;
+	    box-sizing: border-box;
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	}
+   .vc_row.ipad-content-bottom > .vc_column_container {
+	    -webkit-box-align: end;
+	    -webkit-align-items: flex-end;
+	    -ms-flex-align: end;
+	    align-items: flex-end;
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -ms-flexbox;
+	    display: flex;
+	}
+	.vc_row.ipad-content-bottom > .vc_column_container > .vc_column-inner {
+	    -webkit-box-pack: end;
+	    -webkit-justify-content: flex-end;
+	    -ms-flex-pack: end;
+	    justify-content: flex-end;
+	    -webkit-box-flex: 1;
+	    -webkit-flex-grow: 1;
+	    -ms-flex-positive: 1;
+	    flex-grow: 1;
+	    display: -webkit-box;
+	    display: -webkit-flex;
+	    display: -ms-flexbox;
+	    display: flex;
+	    -webkit-box-orient: vertical;
+	    -webkit-box-direction: normal;
+	    -webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	    flex-direction: column;
+	    z-index: 1;
+	}
+	
+}
+
+
+@media (max-width: 991px) {
+	/* Sidebar */
+	.content-area.col-lg-8 {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+		padding-bottom: 50px;
+	}
+	.content-area.col-md-12 {
+		padding-bottom: 50px;
+	}
+	.site-content .widget-area.col-lg-4{
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+		margin-top: 0;
+	}
+	/* Effect */
+	.hide-ipad {
+		display: none !important;
+	}
+	.kyber-extend-right-bg .kyber-extend-right-col:after {
+		display: none;
+	}
+	/* Custom */
+	.kyber-action-style1.kyber_custom_heading_wrapper .kyber-heading-title-wrapper .heading-title {
+		font-size: 24px;
+	}
+	.kyber-extend-des>.vc_column-inner {
+		max-width: 100%;
+		padding: 100px 40px !important;
+	}
+	body .kyber-video-box-style2 {
+		margin-bottom: 40px !important;
+	}
+	.kyber-contact-box-style1.contact-page-box {
+		max-width: 100%;
+		position: relative;
+		right: 0;
+		top: 0;
+		margin-bottom: 50px;
+	}
+	.infobox-pad.infobox-style-2 {
+		margin-bottom: 40px;
+	}
+	.kyber-about-us2 .about-icon {
+		left: 30%;
+	}
+	.kyber-about-introbox h6 {
+		left: -195px;
+		top: 115px;
+		letter-spacing: 1px;
+	}
+	.counter-style-3 {
+       top: 25%;
+    }
+	
+    /* kyber contact box style1 */
+	.kyber-contact-box-style1 h4 {
+      left: -95px;
+    }
+    /* Contact us */
+    .kyber-contact-info .kyber-contact-box-style1 h4 {
+      left: -115px;
+    }
+    /* Footer */
+    .kyber-footer-widgets-wrapper{
+	   padding-top: 50px;
+       padding-bottom: 40px;
+	}
+	.kyber-footer-widgets-wrapper .col-xl-3.col-lg-3.col-md-6.col-sm-12{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	 /* Site Content */
+	.site-content .sidebar {
+       padding-bottom: 70px;
+    }
+    /* Services Details */
+    .kyber-project-detail {
+       width: 50%;
+       float: left;
+     }
+    .kyber-project-details-container .kyber-project-detail-des {
+      margin-bottom: 15px;
+    }
+    .single-post .content-area.col-md-12,
+    .single-post .content-area.col-lg-8{
+    	padding-bottom: 30px;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+	/* Page Title */
+	.kyber-page-title .breadcrumb{
+		padding-left: 0;
+	}
+	.kyber-page-title .text-right{
+		text-align: left !important;
+	}
+	/* Sidebar */
+	body.page-template-full-width #content .site-main .entry-content>.wpb_row.vc_row-fluid {
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
+	.single-team .site-main {
+        padding-top: 60px;
+    }
+	.site-main {
+	  padding-top: 60px;
+	} 
+	.site-content .sidebar {
+	  padding-bottom: 30px !important;
+	}
+	/* Blog */
+	.comment-list .comment-body,
+	.post-author-box {
+		display: block;
+	}
+	.comment-list .comment-avatar,
+	.post-author-box .post-author-image {
+		margin-bottom: 30px;
+	}
+	.comment-list .children {
+		padding-left: 30px;
+	}
+	.kyber-blog-classic footer .entry-meta-container>span {
+	    margin-right: 10px;
+	    display: inline-block; 
+    }
+    .gallery-columns-2 .gallery-item {
+    	max-width: 100%;
+     }
+     .comment-respond p.comment-form-author, 
+     .comment-respond p.comment-form-email {
+        margin-right: 0;
+        flex: 100%;
+     }
+     .comment-form .form-submit{
+       margin: 0;
+     }
+     .kyber-blog-classic blockquote {
+       margin-left: 0;
+     }
+     .kyber-blog-classic blockquote:before {
+      left: inherit;
+      top: inherit;
+      bottom: 10px;
+     right: 10px;
+     opacity: 0.8;
+     color: #fff !important;
+    }
+	 /* Shortcode */
+	.kyber_custom_heading_wrapper .kyber-heading-title-wrapper .heading-title{
+		line-height: 36px !important;
+    	font-size: 28px !important;
+	}
+	.infobox-pad.infobox-style-2 {
+		margin-bottom: 30px;
+	}
+	.infobox-style-3 .kyber-infobox-wrapper{
+		margin-right: 0;
+	}
+	.infobox-style-4 .kyber-infobox-title {
+		font-size: 22px;
+		line-height: 28px;
+	}
+	.counter-style-1 .kyber-counter-number {
+    font-size: 52px;
+    line-height: 52px;
+    }	
+    .testimonials-style-1 .kyber-testimonial-content p {
+      max-width: 100%;
+      margin-left: 0;
+     }
+     .kyber-teammember-thumbnail .post-thumbnail {
+      margin-bottom: 20px;
+     }
+     .kyber-teammember-details{
+     	display: inherit;
+     }
+     .testimonials-style-2 .kyber-testimonial-content p {
+	    font-size: 20px;
+	    line-height: 30px;
+	}
+     .single-team .content-area, 
+     .single-project .content-area{
+     	padding-bottom: 60px;
+     }
+     .counter-style-3 {
+       top: 0;
+       right: 15px;
+    }
+	/* 404 */
+	section.error-404 {
+		padding: 50px 0;
+	}
+	section.error-404 h1.page-title {
+		font-size: 180px;
+		line-height: 180px;
+	}
+	/* Footer */
+	.kyber-footer-widgets-wrapper .col-xl-3.col-lg-3.col-md-6.col-sm-12 {
+       margin-top: 15px;
+       margin-bottom: 15px;
+    }
+	.kyber-footer-widgets-wrapper {
+		padding-bottom: 30px;
+	}
+	.kyber-copyright .footer-left {
+		text-align: center;
+	}
+	.kyber-copyright .footer-right {
+		text-align: center;
+		margin-top: 20px;
+	}
+	.kyber-footer-widgets-wrapper .col-xl-3.col-lg-3.col-md-6.col-sm-12{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.kyber-contact-info .wpcf7-form-control-wrap {
+        width: 100%;
+     }
+	/* Nav */
+	.comment-navigation .nav-previous,
+	.posts-navigation .nav-previous,
+	.post-navigation .nav-previous {
+		width: 100%;
+	}
+	.comment-navigation .nav-next,
+	.posts-navigation .nav-next,
+	.post-navigation .nav-next {
+		max-width: 100%;
+		margin-top: 30px;
+	}
+	/* Custom */
+	.kyber-teammember-thumbnail .post-thumbnail:after {
+		display: none;
+	}
+	.kyber-extend-des>.vc_column-inner {
+		max-width: 100%;
+        padding: 60px 15px !important;
+    }
+	.vc_btn3-container.vc_btn3-right {
+	    text-align: left;
+	}
+	.custom-heading-style-1 {
+        margin-bottom: 35px;
+    }
+    .custom-heading-style-1.kyber-light-space {
+        margin-bottom: 20px;
+     }
+     .testimonials-style-2 .owl-dots{
+     	display: none;
+     }
+     .services-style-1 h3 {
+        font-size: 26px;
+        line-height: 36px;
+      }
+      .kyber-d-inherit-sm{
+    	display: inherit !important;
+     }
+     .arrow-on-hover .owl-nav, 
+     .arrow-middle-right .owl-nav {
+      display: none;
+     }
+   	/* Home Page */
+	.kyber-about1 {
+		margin-left: 80px;
+	}
+	.kyber-about-us2 .about-icon {
+		left: 50px;
+	}
+	.kyber-about-introbox h6 {
+		left: -214px;
+		top: 190px;
+		letter-spacing: 3px;
+	}
+	.kyber-contact-box-style1 h4{
+		left: -95px;
+	}
+	.infobox-style-4 i {
+	    width: 55px;
+	    height: 55px;
+	    line-height: 55px;
+	    font-size: 20px;
+	}
+	.infobox-style-4 .kyber-infobox-wrapper {
+		padding-left: 0;
+	}
+	/* Header */
+	.header-layout-1 .site-header .site-logo, 
+	.header-layout-2 .site-header .site-logo {
+		height: 100px;
+	}
+	.kyber-about-us2 img{
+       padding-left: 64px;
+	}
+	/* Page Title */
+	.kyber-page-title {
+      height: 300px !important;
+    }
+    .kyber-page-title .page-title {
+	    font-size: 32px;
+	    line-height: 42px;
+    }
+    /* Services Details */
+    .kyber-project-detail {
+       width: 100%;
+    }
+   }
+
+@media (max-width: 575px) {
+	 /* Contact us */
+    .kyber-contact-info .infobox-style-4 .kyber-infobox-wrapper {
+      display: inherit;
+    }
+    .kyber-contact-info .infobox-style-4 .kyber-infobox-wrapper .kyber-infobox-content{
+      margin-top: 15px; 	
+    }
+    .kyber-contact-info .kyber-contact-box-style1 h4 {
+     top: 72px;
+    }
+	.kyber-about .kyber-about2 img {
+		width: 60%;
+	}
+	.kyber-about .about-icon2 span {
+		width: 80px;
+		height: 80px;
+	}
+	.kyber-about .about-icon2 span:before {
+		line-height: 80px;
+	}
+	.kyber-about .about-icon2 span:after {
+		width: 100px;
+		height: 100px;
+	}
+	.wpb_single_image.vc_align_right {
+       margin-left: 0;
+    }
+    .post.sticky .kyber-blog-classic-inner {
+	    padding: 30px 40px 25px;
+	}
+	.post.sticky .kyber-blog-classic-inner:after {
+	    font-size: 20px;
+	    width: 50px;
+	    line-height: 50px;
+	    height: 50px;
+	}    
+}

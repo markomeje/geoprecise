@@ -1,0 +1,162 @@
+/* Projects Style 1 */
+.projects-style-1 .kyber-project-image-container:before,
+.projects-style-1 .kyber-project-image-container:after,
+.projects-style-1 .h-one,
+.projects-style-1 .h-two,
+.projects-style-1 .h-three,
+.projects-style-1 .h-four {
+    -webkit-transition: all 0.3s ease-out 0.3s;
+    -moz-transition: all 0.3s ease-out 0.3s;
+    -ms-transition: all 0.3s ease-out 0.3s;
+    -o-transition: all 0.3s ease-out 0.3s;
+    transition: all 0.3s ease-out 0.3s;
+}
+.projects-style-1 .kyber-project-thumbnail-wrapper {
+    position: relative;
+}
+.projects-style-1 .project-title {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 0;
+    position: absolute;
+    left: 30px;
+    bottom: 60px;
+    color: #ffffff;
+    text-align: left;
+}
+.projects-style-1 .kyber-project-category {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    color: #ffffff;
+}
+.kyber-project-action-icons {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -15px;
+    margin-top: -15px;
+}
+.projects-style-1 .kyber-project-action-icons i {
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.projects-style-1 .kyber-project-action-icons i:hover {
+    background: #ffffff;
+}
+.projects-style-1 .kyber-project-image-container {
+    position: relative;
+}
+.kyber-mfg-popup-image {
+    display: none;
+}
+.projects-style-1 .kyber-project-image-container:before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 22, 42, 0.6);
+}
+.projects-style-1 .kyber-project-thumbnail-wrapper:hover .kyber-project-image-container:before {
+    background-color: rgba(9, 22, 42, 1.0);
+}
+.projects-style-1 .kyber-project-action-icons {
+    opacity: 0;
+    -webkit-transition: all 0.9s ease-out 0s;
+    -moz-transition: all 0.9s ease-out 0s;
+    -ms-transition: all 0.9s ease-out 0s;
+    -o-transition: all 0.9s ease-out 0s;
+    transition: all 0.9s ease-out 0s;
+    transform: scale(1.01);
+}
+.projects-style-1 .kyber-project-wrapper:hover .kyber-project-action-icons {
+    opacity: 1.0;
+    transform: scale(1.2);
+}
+.projects-style-1 .h-one {
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    box-sizing: border-box;
+    border: 1px solid #fc952b;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    border-bottom: 0;
+    border-right: 0;
+    opacity: 0;
+}
+.projects-style-1 .kyber-project-wrapper:hover .h-one {
+    top: 10px;
+    left: 10px;
+    opacity: 1.0;
+}
+.projects-style-1 .h-two {
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    box-sizing: border-box;
+    border: 1px solid #fc952b;
+    background-color: transparent;
+    top: 0;
+    right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    opacity: 0;
+}
+.projects-style-1 .kyber-project-wrapper:hover .h-two {
+    top: 10px;
+    right: 10px;
+    opacity: 1.0;
+}
+.projects-style-1 .h-three {
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    box-sizing: border-box;
+    border: 1px solid #fc952b;
+    background-color: transparent;
+    bottom: 0;
+    left: 0;
+    border-top: 0;
+    border-right: 0;
+    opacity: 0;
+}
+.projects-style-1 .kyber-project-wrapper:hover .h-three {
+    bottom: 10px;
+    left: 10px;
+    opacity: 1.0;
+}
+.projects-style-1 .h-four {
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 25px;
+    box-sizing: border-box;
+    border: 1px solid #fc952b;
+    background-color: transparent;
+    bottom: 0;
+    right: 0;
+    border-top: 0;
+    border-left: 0;
+    opacity: 0;
+}
+.projects-style-1 .kyber-project-wrapper:hover .h-four {
+    bottom: 10px;
+    right: 10px;
+    opacity: 1.0;
+}
+.projects-style-1.projects-layout-grid .kyber-project-slide {
+    margin-bottom: 30px;
+}
