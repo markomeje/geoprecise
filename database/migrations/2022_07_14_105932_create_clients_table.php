@@ -23,8 +23,7 @@ return new class extends Migration
             $table->string('address')->nullable();
             $table->string('state')->nullable();
             $table->string('phone')->nullable();
-            $table->bigInteger('user_id')->unsigned()->nullable();
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('set null');
+            $table->foreignId('user_id');
             $table->string('status')->nullable();
             $table->timestamps();
         });

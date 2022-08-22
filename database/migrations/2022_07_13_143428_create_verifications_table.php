@@ -16,7 +16,6 @@ return new class extends Migration
         Schema::create('verifications', function (Blueprint $table) {
             $table->id();
             $table->string('type');
-            $table->bigInteger('user_id')->unsigned()->nullable();
             $table->boolean('verified')->default(false);
             $table->string('token');
             $table->dateTime('expiry')->nullable();
