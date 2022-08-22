@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Factories;
-use App\Models\{Layout, Plot, User, Form};
+use App\Models\{Layout, Plot, User, Form, Psr};
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
