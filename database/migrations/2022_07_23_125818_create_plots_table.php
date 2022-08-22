@@ -19,7 +19,7 @@ return new class extends Migration
             $table->boolean('sold')->default(false);
             $table->string('name');
             $table->bigInteger('layout_id')->unsigned()->nullable();
-            $table->foreign('layout_id')->references('id')->on('layouts')->onDelete('cascade');
+            $table->foreign('layout_id')->references('id')->on('layouts')->onDelete('set null');
             $table->text('description')->nullable();
             $table->string('category')->nullable();
             $table->timestamps();
