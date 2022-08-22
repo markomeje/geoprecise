@@ -18,8 +18,7 @@ return new class extends Migration
             $table->string('number'); 
             $table->boolean('sold')->default(false);
             $table->string('name');
-            $table->bigInteger('layout_id')->unsigned()->nullable();
-            $table->foreign('layout_id')->references('id')->on('layouts')->onDelete('set null');
+            $table->foreignId('layout_id');
             $table->text('description')->nullable();
             $table->string('category')->nullable();
             $table->timestamps();

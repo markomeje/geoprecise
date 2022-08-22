@@ -20,7 +20,7 @@ return new class extends Migration
             $table->boolean('verified')->default(false);
             $table->string('token');
             $table->dateTime('expiry')->nullable();
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('set null');
+            $table->foreignId('user_id');
             $table->string('status')->default('inactive');
             $table->timestamps();
         });
