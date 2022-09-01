@@ -8,6 +8,17 @@
       <!-- End Navbar -->
       <div class="container-fluid py-4">
         <div class="bg-white p-4 border-radius-xl">
+          <div class="row">
+            <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+              <a href="javascript:;" class="btn d-flex m-0 align-items-center justify-content-center btn-dark" data-bs-toggle="modal" data-bs-target="#add-client">
+                <small class="me-2">
+                  <i class="ni ni-add text-primary text-sm opacity-10"></i>
+                </small>
+                <small class="text-white">Add Client</small>
+              </a>
+              @include('admin.clients.partials.add')
+            </div>
+          </div>
           <h5 class="mb-4">All Clients</h5>
           @if(empty($clients->count()))
             <div class="alert alert-info">No clients yet</div>

@@ -1,6 +1,6 @@
 <div class="card border">
 	<form action="javascript:;">
-    	<input type="file" name="document" class="document-input-{{ $document->id }}" data-url="{{ route('client.document.change', ['model_id' => $document->model_id, 'type' => $document->type, 'model' => $document->model]) }}" style="display: none;">
+    	<input type="file" name="document" class="document-input-{{ $document->id }}" data-url="{{ route('admin.document.change', ['model_id' => $document->model_id, 'type' => $document->type, 'model' => $document->model]) }}" style="display: none;">
   	</form>
 	<div class="card-body">
 		<a href="{{ $document->url }}" class="d-block position-relative mb-3">
@@ -21,7 +21,7 @@
 		        </div>
 	    	</div>
 	    	<div class="col-6">
-	    		<div class="cursor-pointer delete-document-{{ $document->id }}" data-url="{{ route('client.document.delete', ['id' => $document->id]) }}">
+	    		<div class="cursor-pointer delete-document-{{ $document->id }}" data-url="{{ route('admin.document.delete', ['id' => $document->id]) }}">
 		          <button class="text-white btn btn-danger w-100 delete-document-button-{{ $document->id }}">
 		            <img src="/images/spinner.svg" class="delete-document-loader-{{ $document->id }} d-none me-2 text-center position-relative rounded-circle border" data-id="{{ $document->id}}" style="top: -2px;">
 		            <small style="font-size: 8px;">Delete Doc</small>

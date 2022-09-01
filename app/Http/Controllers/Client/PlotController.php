@@ -99,10 +99,10 @@ class PlotController extends Controller
         }
 
         if(!empty($model->payment)) {
-            if ($model->payment->status == 'paid') {
+            if ($model->payment->status === 'paid') {
                 return response()->json([
                     'status' => 0,
-                    'info' => 'Operation not allowed.'
+                    'info' => 'Sorry. Plot number cannot be deleted after payment.'
                 ]);
             }
         }

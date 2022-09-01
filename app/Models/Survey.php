@@ -35,6 +35,7 @@ class Survey extends Model
         'user_id',
         'completed',
         'status',
+        'staff_id',
     ];
 
     /**
@@ -75,6 +76,16 @@ class Survey extends Model
     public function payment()
     {
         return $this->hasOne(Payment::class, 'model_id')->where(['model' => 'survey']);
+    }
+
+    /**
+     * A survey belongs to a user
+     *
+     * @var array<string, string>
+     */
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
     
 }

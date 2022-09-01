@@ -113,6 +113,7 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
     Route::prefix('clients')->group(function () {
         Route::get('/', [\App\Http\Controllers\Admin\ClientsController::class, 'index'])->name('admin.clients');
         Route::get('/profile/{id}', [\App\Http\Controllers\Admin\ClientsController::class, 'profile'])->name('admin.clients.profile');
+        Route::post('/add', [\App\Http\Controllers\Admin\ClientsController::class, 'add'])->name('admin.client.add');
     });
 
     Route::prefix('payments')->group(function () {
@@ -134,6 +135,24 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
         Route::get('/', [\App\Http\Controllers\Admin\PlotsController::class, 'index'])->name('admin.plots');
         Route::post('/add', [\App\Http\Controllers\Admin\PlotsController::class, 'add'])->name('admin.plot.add');
         Route::post('/edit/{id}', [\App\Http\Controllers\Admin\PlotsController::class, 'edit'])->name('admin.plot.edit');
+    });
+
+    Route::prefix('surveys')->group(function () {
+        Route::get('/', [\App\Http\Controllers\Admin\SurveysController::class, 'index'])->name('admin.surveys');
+        Route::post('/add/{user_id}', [\App\Http\Controllers\Admin\SurveysController::class, 'add'])->name('admin.survey.add');
+        Route::get('/survey/{id}', [\App\Http\Controllers\Admin\SurveysController::class, 'survey'])->name('admin.survey');
+        Route::get('/apply/{user_id}', [\App\Http\Controllers\Admin\SurveysController::class, 'apply'])->name('admin.survey.apply');
+
+        Route::post('/plot/add', [\App\Http\Controllers\Client\PlotController::class, 'add'])->name('admin.client.plot.add');
+        Route::post('/plot/delete', [\App\Http\Controllers\Client\PlotController::class, 'delete'])->name('admin.client.plot.delete');
+    });
+
+    Route::prefix('documents')->group(function () {
+        Route::get('/', [\App\Http\Controllers\DocumentsController::class, 'index'])->name('admin.documents');
+        Route::post('/upload', [\App\Http\Controllers\DocumentsController::class, 'upload'])->name('admin.document.upload');
+        Route::post('/change', [\App\Http\Controllers\DocumentsController::class, 'change'])->name('admin.document.change');
+
+        Route::post('/delete/{id}', [\App\Http\Controllers\DocumentsController::class, 'delete'])->name('admin.document.delete'); 
     });
 });
 

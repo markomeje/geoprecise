@@ -26,4 +26,12 @@ class Payment extends Model
         'status',
     ];
 
+    /**
+     * Scope only completed payments
+     */
+    public function scopePaid($query)
+    {
+        return $query->where(['status' => 'paid']);
+    }
+
 }

@@ -13,91 +13,76 @@
   <script src="{{ config('app.url') }}/custom/js/forms.js"></script>
   
   <script>
-    var chartLine = document.getElementById("chart-line");
-    if (chartLine !== null) {
-      var ctx1 = chartLine.getContext("2d");
-        var gradientStroke1 = ctx1.createLinearGradient(0, 230, 0, 50);
+    $.ajaxSetup({
+      headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      }
+    });
 
-      gradientStroke1.addColorStop(1, 'rgba(94, 114, 228, 0.2)');
-      gradientStroke1.addColorStop(0.2, 'rgba(94, 114, 228, 0.0)');
-      gradientStroke1.addColorStop(0, 'rgba(94, 114, 228, 0)');
-      new Chart(ctx1, {
-        type: "line",
-        data: {
-          labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-          datasets: [{
-            label: "Mobile apps",
-            tension: 0.4,
-            borderWidth: 0,
-            pointRadius: 0,
-            borderColor: "#5e72e4",
-            backgroundColor: gradientStroke1,
-            borderWidth: 3,
-            fill: true,
-            data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
-            maxBarThickness: 6
+    @if(!empty($documents))
+      @foreach($documents as $document)
+        $('.upload-document-{{ $document->id }}').click(function() {
+          uploader({target: $(this), button: 'upload-document-{{ $document->id }}', input: 'document-input-{{ $document->id }}', loader: 'document-loader-{{ $document->id }}', preview: 'document-preview-{{ $document->id }}'});
+      }); 
 
-          }],
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-            legend: {
-              display: false,
-            }
-          },
-          interaction: {
-            intersect: false,
-            mode: 'index',
-          },
-          scales: {
-            y: {
-              grid: {
-                drawBorder: false,
-                display: true,
-                drawOnChartArea: true,
-                drawTicks: false,
-                borderDash: [5, 5]
+        $('.delete-document-{{ $document->id }}').on('click', function() {
+            handleAjax({that: $(this), button: 'delete-document-button-{{ $document->id }}', spinner: 'delete-document-spinner-{{ $document->id }}'});    
+        });
+      @endforeach
+    @endif
+
+    var form = $('#upload-document-form');
+    if (form) {
+      $(form).submit(function(event){
+        event.preventDefault();
+        console.log(form.attr('data-action'));
+        var button = $('.upload-document-button');
+        var spinner = $('.upload-document-spinner');
+        var message = $('.upload-document-message');
+
+        button.attr('disabled', true);
+        spinner.removeClass('d-none');
+        message.hasClass('d-none') ? '' : message.fadeOut();
+        var formData = new FormData(form[0]);
+        formData.append('document', $('input[type=file]')[0].files[0]);
+
+          $.ajax({
+              type: "post",
+              url: form.attr('data-action'),
+              data: formData,
+              //use contentType, processData for sure.
+              contentType: false,
+              processData: false,
+              
+              
+              success: function(response) {
+                  if (response.status === 0) {
+                      if($.isEmptyObject(response.error)){
+                          handleButton(button, spinner);
+                          message.removeClass('d-none alert-success').addClass('alert-danger');
+                          message.html(response.info).fadeIn();
+                      }else{
+                          handleErrors(response.error);
+                          handleButton(button, spinner);
+                      }
+                  }else if(response.status === 1) {
+                      message.removeClass('d-none alert-danger').addClass('alert-success');
+                      message.html(response.info).fadeIn();
+                      return window.location.href = response.redirect;
+
+                  }else {
+                      handleButton(button, spinner);
+                      alert('Network error. Try again.');
+                  }
               },
-              ticks: {
-                display: true,
-                padding: 10,
-                color: '#fbfbfb',
-                font: {
-                  size: 11,
-                  family: "Open Sans",
-                  style: 'normal',
-                  lineHeight: 2
-                },
-              }
-            },
-            x: {
-              grid: {
-                drawBorder: false,
-                display: false,
-                drawOnChartArea: false,
-                drawTicks: false,
-                borderDash: [5, 5]
+
+              error: function(error) {
+                  handleButton(button, spinner);
+                  alert('Unknown error. Try again.');
               },
-              ticks: {
-                display: true,
-                color: '#ccc',
-                padding: 20,
-                font: {
-                  size: 11,
-                  family: "Open Sans",
-                  style: 'normal',
-                  lineHeight: 2
-                },
-              }
-            },
-          },
-        },
+          });
       });
     }
-
-      
   </script>
   <script>
     var win = navigator.platform.indexOf('Win') > -1;

@@ -13,18 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('payments', function (Blueprint $table) {
+        Schema::create('staff', function (Blueprint $table) {
             $table->id();
-            $table->string('type');
-            $table->bigInteger('amount');
-            $table->foreignId('model_id')->nullable();
-            $table->string('reference');
-            $table->string('note')->nullable();
-            $table->string('model')->nullable();
-            $table->text('description')->nullable();
+            $table->string('fullname');
             $table->foreignId('user_id');
+            $table->string('code')->nullable();
+            $table->string('title')->nullable();
+            $table->string('address');
+            $table->foreignId('creator')->nullable();
             $table->string('status')->nullable();
-            $table->boolean('verified')->default(false);
             $table->timestamps();
         });
     }
@@ -36,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('payments');
+        Schema::dropIfExists('staff');
     }
 };

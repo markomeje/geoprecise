@@ -8,6 +8,33 @@
       <!-- End Navbar -->
       <div class="container-fluid py-4">
         <div class="row">
+          <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+            <a href="javascript:;" class="btn d-flex m-0 align-items-center justify-content-center btn-dark" data-bs-toggle="modal" data-bs-target="#add-client">
+              <small class="me-2">
+                <i class="ni ni-add text-primary text-sm opacity-10"></i>
+              </small>
+              <small class="text-white">Add Client</small>
+            </a>
+            @include('admin.clients.partials.add')
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+            <a href="" class="btn d-flex m-0 align-items-center justify-content-center btn-dark">
+              <small class="me-2">
+                <i class="ni ni-add text-primary text-sm opacity-10"></i>
+              </small>
+              <small class="text-white">Get Form</small>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-3 col-xl-2 mb-3">
+            <a href="" class="btn d-flex m-0 align-items-center justify-content-center btn-dark">
+              <small class="me-2">
+                <i class="ni ni-add text-primary text-sm opacity-10"></i>
+              </small>
+              <small class="text-white">Add Payment</small>
+            </a>
+          </div>
+        </div>
+        <div class="row">
           @include('admin.dashboard.partials.panels')
         </div>
         <div class="row mt-4">

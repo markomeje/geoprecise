@@ -2,6 +2,11 @@
 
 	'use strict';
 
+    $('.add-client-form').submit(function(event){
+        event.preventDefault();
+        handleForm({form: $(this), button: 'add-client-button', spinner: 'add-client-spinner', message: 'add-client-message'});
+    });
+
     $('.add-client-sib-form').submit(function(event){
         event.preventDefault();
         handleForm({form: $(this), button: 'add-client-sib-button', spinner: 'add-client-sib-spinner', message: 'add-client-sib-message'});
