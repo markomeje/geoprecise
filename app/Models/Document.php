@@ -21,7 +21,7 @@ class Document extends Model
         'filename',
         'public_id',
         'type',
-        'user_id',
+        'client_id',
         'model',
     ];
 

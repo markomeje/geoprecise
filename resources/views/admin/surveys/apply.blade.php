@@ -10,12 +10,12 @@
         @if(empty($client))
           <div class="alert alert-danger d-block mb-4 text-white border-0">Unkwon error. Client details not found.</div>
         @else
-          <?php $user_id = $client->user_id; ?>
+          <?php $client_id = $client->id; ?>
           <div class="">
             <div class="row">
               <div class="col-12 col-lg-8 col-xl-7">
                 <div class="alert alert-info border-0 text-white mb-4">Survey Application for {{ ucwords($client->fullname) }}</div>
-                <form class="survey-form" method="post" action="javascript:;" data-action="{{ route('admin.survey.add', ['user_id' => $user_id]) }}">
+                <form class="survey-form" method="post" action="javascript:;" data-action="{{ route('admin.survey.add', ['client_id' => $client_id]) }}">
                   @csrf
                   <div class="card border-0 shadow-sm mb-4">
                     <div class="card-header border-bottom">Purchaser or Allottee Details</div>

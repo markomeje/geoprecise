@@ -16,11 +16,11 @@ class Psr extends Model
      */
     protected $fillable = [
         'form_id',
-        'plots',
+        'plot_numbers',
         'layout_id',
         'completed',
         'description',
-        'user_id',
+        'client_id',
         'status',
     ];
 
@@ -38,13 +38,13 @@ class Psr extends Model
     ];
 
     /**
-     * A property search request must belong to a user
+     * A property search request must belong to a client
      *
      * @var array<string, string>
      */
-    public function user()
+    public function client()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(Client::class);
     }
 
     /**
@@ -64,7 +64,17 @@ class Psr extends Model
      */
     public function payment()
     {
-        return $this->hasOne(Payment::class, 'model_id')->where(['type' => 'form', 'model' => 'psr', 'status' => 'paid', 'paid' => true]);
+        return $this->hasOne(Payment::class, 'model_id')->where(['type' => 'form', 'model' => 'psr', 'status' => 'paid']);
+    }
+
+    /**
+     * A PSR belongs to a layout
+     *
+     * @var array<string, string>
+     */
+    public function layout()
+    {
+        return $this->belongsTo(Layout::class);
     }
 
 }

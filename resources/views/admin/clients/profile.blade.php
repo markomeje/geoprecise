@@ -7,22 +7,10 @@
         @include('admin.includes.navbar')
       <!-- End Navbar -->
       <div class="container-fluid py-4">
-        @if(empty($client))
-          <div class="alert alert-danger d-block mb-4 text-white border-0">Unkwon error. Client details not found.</div>
-          @if(!empty($clients))
-            <div class="p-4 bg-white border-radius-lg">
-              <h5 class="mb-4">Other Clients</h5>
-              <div class="row">
-                @foreach($clients as $client)
-                  <div class="col-lg-3 col-md-4 col-12 mb-4">
-                  @include('admin.clients.partials.card')
-                </div>
-                @endforeach
-              </div>
-            </div>
-          @endif
+        @if(empty($client) || empty($client->user_id))
+          <div class="alert alert-danger d-block mb-4 text-white border-0">Unknown error. Client details not found.</div>
         @else
-          <?php $user_id = $client->user_id; ?>
+          <?php $user_id = $client->user_id; $client_id = $client->id ?>
           <div class="">
             <div class="mb-4 p-4 bg-white border-radius-lg">
               <div class="text-dark">
@@ -32,8 +20,12 @@
             <div class="row">
               <div class="col-12 col-md-7 col-lg-8 col-xl-9">
                 <div class="">
-                  <div class="alert alert-info text-white border-0 mb-4">Property Search Requests</div>
-                  <?php $psrs = \App\Models\Psr::where(['user_id' => $user_id])->get(); ?>
+                  <div class="alert alert-info text-white border-0 mb-4 d-flex justify-content-between">
+                    <span>Property Search Requests</span>
+                    <a href="javascript:;" class="text-white" data-bs-toggle="modal" data-bs-target="#add-psr">Apply</a>
+                  </div>
+                  @include('admin.psrs.partials.add')
+                  <?php $psrs = \App\Models\Psr::where(['client_id' => $client_id])->get(); ?>
                   @if(empty($psrs->count()))
                     <div class="alert alert-danger text-white border-0 mb-4">No Property Search Requests</div>
                   @else
@@ -49,9 +41,9 @@
                 <div class="">
                     <div class="alert alert-info text-white border-0 mb-4 d-flex justify-content-between">
                       <span>Surveying applications</span>
-                      <a href="{{ route('admin.survey.apply', ['user_id' => $user_id]) }}" class="text-white">Apply</a>
+                      <a href="{{ route('admin.survey.apply', ['client_id' => $client_id]) }}" class="text-white">Apply</a>
                     </div>
-                  <?php $surveys = \App\Models\Survey::latest()->where(['user_id' => $user_id])->get(); ?>
+                  <?php $surveys = \App\Models\Survey::latest()->where(['client_id' => $client_id])->get(); ?>
                   @if(empty($surveys->count()))
                     <div class="alert alert-danger text-white border-0 mb-4">No Surveying applications.</div>
                   @else
@@ -67,8 +59,8 @@
               </div>
               <div class="col-12 col-md-5 col-lg-4 col-xl-3">
                 <div class="alert alert-info border-0 text-white mb-4">{{ ucwords($client->fullname) }} Payments</div>
-                <?php $payments = \App\Models\Payment::latest()->paid()->where(['user_id' => $user_id])->get(); ?>
-                @if(empty($payments->count()))
+                {{-- <?php $payments = \App\Models\Payment::latest()->paid()->where(['client_id' => $client_id])->get(); ?> --}}
+                @if(empty($payments))
                   <div class="alert alert-danger border-0 text-white mb-4">{{ ucwords($client->fullname) }} Payments</div>
                 @else
                   <div class="row">

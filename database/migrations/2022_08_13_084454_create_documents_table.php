@@ -23,7 +23,8 @@ return new class extends Migration
             $table->string('name')->nullable();
             $table->string('public_id')->nullable();
             $table->string('type');
-            $table->foreignId('user_id');
+            $table->foreignId('client_id');
+            $table->foreignId('staff_id')->nullable();
             $table->string('role')->nullable();
             $table->text('comment')->nullable();
             $table->timestamps();

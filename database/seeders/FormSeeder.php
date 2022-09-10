@@ -14,17 +14,17 @@ class FormSeeder extends Seeder
     public function run()
     {
         $forms = [
-            ['name' => 'Lifting or Extraction of Survey form', 'code' => 'LES', 'per' => 'Per Plot', 'amount' => 160000, 'status' => 'active', 'category' => 'survey', 'payable' => true],
+            ['name' => 'Lifting or Extraction of Survey form', 'code' => 'LES', 'per' => 'Per Plot', 'amount' => 160000, 'status' => 'active', 'category' => 'surveys', 'payable' => true],
 
-            ['name' => 'Change of title of Survey form', 'code' => 'CTS', 'per' => 'Per Plot', 'amount' => 160000, 'status' => 'active', 'category' => 'survey', 'payable' => true],
+            ['name' => 'Change of title of Survey form', 'code' => 'CTS', 'per' => 'Per Plot', 'amount' => 160000, 'status' => 'active', 'category' => 'surveys', 'payable' => true],
 
-            ['name' => 'Correction of name on Survey', 'code' => 'CNS', 'per' => 'Per Plot', 'amount' => 160000, 'status' => 'active', 'category' => 'survey', 'payable' => true],
+            ['name' => 'Correction of name on Survey', 'code' => 'CNS', 'per' => 'Per Plot', 'amount' => 160000, 'status' => 'active', 'category' => 'surveys', 'payable' => true],
 
-            ['name' => 'Site inspection or Beacon identification', 'code' => 'SIB', 'per' => 'Per Plot', 'amount' => 20000, 'status' => 'active', 'category' => 'survey', 'payable' => true],
+            ['name' => 'Site inspection or Beacon identification', 'code' => 'SIB', 'per' => 'Per Plot', 'amount' => 20000, 'status' => 'active', 'category' => 'sibs', 'payable' => true],
 
-            ['name' => 'Property Search Request form', 'code' => 'PSR', 'per' => 'Per Lodgement', 'amount' => 5000, 'status' => 'active', 'category' => 'search', 'payable' => true],
+            ['name' => 'Property Search Request form', 'code' => 'PSR', 'per' => 'Per Lodgement', 'amount' => 5000, 'status' => 'active', 'category' => 'psrs', 'payable' => true],
 
-            ['name' => 'Plan Collection form', 'code' => 'PCO', 'per' => null, 'amount' => null, 'status' => 'active', 'category' => 'plan', 'payable' => true],
+            ['name' => 'Plan Collection form', 'code' => 'PCF', 'per' => null, 'amount' => null, 'status' => 'active', 'category' => 'pcfs', 'payable' => true],
         ];
 
         Form::truncate();

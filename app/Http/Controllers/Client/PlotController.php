@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Client;
 use App\Http\Controllers\Controller;
-use App\Models\{Survey, Sib};
+use App\Models\{Survey, Sib, Psr};
 use Validator;
 use Exception;
 
@@ -31,9 +31,11 @@ class PlotController extends Controller
             case 'sib':
                 $model = Sib::find($id);
                 break;
-            
+            case 'psr':
+                $model = Psr::find($id);
+                break;
             default:
-                throw new Exception('Invalid operation');
+                throw new Exception('Invalid model name passed');
                 break;
         }
         
@@ -80,21 +82,36 @@ class PlotController extends Controller
     public function delete()
     {
         $data = request()->all(['plot_number', 'model', 'model_id']);
-        if (empty($data['plot_number']) || empty($data['model']) || empty($data['model_id'])) {
+        $model = $data['model'] ?? '';
+        $id = $data['model_id'] ?? 0;
+        $plot_number = $data['plot_number'] ?? '';
+
+        if (empty($plot_number) || empty($model) || empty($id)) {
             return response()->json([
                 'status' => 0,
                 'info' => 'Invalid operation. Try again.'
             ]);
         }
 
-        $id = $data['model_id'] ?? null;
-        $plot_number = $data['plot_number'] ?? null;
-        $model = Survey::find($id);
+        switch ($model) {
+            case 'survey':
+                $model = Survey::find($id);
+                break;
+            case 'sib':
+                $model = Sib::find($id);
+                break;
+            case 'psr':
+                $model = Psr::find($id);
+                break;
+            default:
+                $model = '';
+                break;
+        }
 
         if (empty($model)) {
             return response()->json([
                 'status' => 0,
-                'info' => 'Invalid operation. Try again.'
+                'info' => 'Model not found.'
             ]);
         }
 

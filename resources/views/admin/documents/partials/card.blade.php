@@ -12,19 +12,19 @@
 	      </div>
 	    </a>
 	    <div class="row">
-	    	<div class="col-6">
+	    	{{-- <div class="col-6">
 	    		<div class="cursor-pointer upload-document-{{ $document->id }}">
 		          <button class="text-white btn btn-primary w-100 document-button-{{ $document->id }}">
 		            <img src="/images/spinner.svg" class="document-loader-{{ $document->id }} d-none me-2 text-center position-relative rounded-circle border" data-id="{{ $document->id}}" style="top: -2px;">
 		            <small style="font-size: 8px;">Change Doc</small>
 		          </button>
 		        </div>
-	    	</div>
-	    	<div class="col-6">
+	    	</div> --}}
+	    	<div class="col-12">
 	    		<div class="cursor-pointer delete-document-{{ $document->id }}" data-url="{{ route('admin.document.delete', ['id' => $document->id]) }}">
 		          <button class="text-white btn btn-danger w-100 delete-document-button-{{ $document->id }}">
 		            <img src="/images/spinner.svg" class="delete-document-loader-{{ $document->id }} d-none me-2 text-center position-relative rounded-circle border" data-id="{{ $document->id}}" style="top: -2px;">
-		            <small style="font-size: 8px;">Delete Doc</small>
+		            <span>Delete Doc</span>
 		          </button>
 		        </div>
 	    	</div>

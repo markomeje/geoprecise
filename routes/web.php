@@ -117,7 +117,8 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
     });
 
     Route::prefix('payments')->group(function () {
-        Route::get('/', [\App\Http\Controllers\Admin\LayoutsController::class, 'index'])->name('admin.payments');
+        Route::get('/', [\App\Http\Controllers\Admin\PaymentsController::class, 'index'])->name('admin.payments');
+        Route::post('/record', [\App\Http\Controllers\Admin\PaymentsController::class, 'record'])->name('admin.payment.record');
     });
 
     Route::prefix('fees')->group(function () {
@@ -131,6 +132,15 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
         Route::get('/plots/{id}/{name}', [\App\Http\Controllers\Admin\LayoutsController::class, 'plots'])->name('admin.layouts.plots');
     });
 
+    Route::prefix('psrs')->group(function () {
+        Route::get('/', [\App\Http\Controllers\Admin\PsrsController::class, 'index'])->name('admin.psrs');
+        Route::post('/add/{client_id}', [\App\Http\Controllers\Admin\PsrsController::class, 'add'])->name('admin.psr.add');
+        
+        Route::get('/edit/{id}', [\App\Http\Controllers\Admin\PsrsController::class, 'edit'])->name('admin.psr.edit');
+        Route::post('/save/{id}', [\App\Http\Controllers\Admin\PsrsController::class, 'save'])->name('admin.psr.save');
+        Route::get('/plots/{id}/{name}', [\App\Http\Controllers\Admin\PsrsController::class, 'plots'])->name('admin.layouts.plots');
+    });
+
     Route::prefix('plots')->group(function () {
         Route::get('/', [\App\Http\Controllers\Admin\PlotsController::class, 'index'])->name('admin.plots');
         Route::post('/add', [\App\Http\Controllers\Admin\PlotsController::class, 'add'])->name('admin.plot.add');
@@ -139,9 +149,11 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
 
     Route::prefix('surveys')->group(function () {
         Route::get('/', [\App\Http\Controllers\Admin\SurveysController::class, 'index'])->name('admin.surveys');
-        Route::post('/add/{user_id}', [\App\Http\Controllers\Admin\SurveysController::class, 'add'])->name('admin.survey.add');
-        Route::get('/survey/{id}', [\App\Http\Controllers\Admin\SurveysController::class, 'survey'])->name('admin.survey');
-        Route::get('/apply/{user_id}', [\App\Http\Controllers\Admin\SurveysController::class, 'apply'])->name('admin.survey.apply');
+        Route::post('/add/{client_id}', [\App\Http\Controllers\Admin\SurveysController::class, 'add'])->name('admin.survey.add');
+        Route::post('/edit/{id}', [\App\Http\Controllers\Admin\SurveysController::class, 'edit'])->name('admin.survey.edit');
+
+        Route::get('/edit/{id}', [\App\Http\Controllers\Admin\SurveysController::class, 'edit'])->name('admin.survey.edit');
+        Route::get('/apply/{client_id}', [\App\Http\Controllers\Admin\SurveysController::class, 'apply'])->name('admin.survey.apply');
 
         Route::post('/plot/add', [\App\Http\Controllers\Client\PlotController::class, 'add'])->name('admin.client.plot.add');
         Route::post('/plot/delete', [\App\Http\Controllers\Client\PlotController::class, 'delete'])->name('admin.client.plot.delete');
@@ -153,6 +165,14 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
         Route::post('/change', [\App\Http\Controllers\DocumentsController::class, 'change'])->name('admin.document.change');
 
         Route::post('/delete/{id}', [\App\Http\Controllers\DocumentsController::class, 'delete'])->name('admin.document.delete'); 
+    });
+
+    Route::prefix('sibs')->group(function () {
+        Route::get('/', [\App\Http\Controllers\Admin\PsrsController::class, 'index'])->name('admin.sibs');
+    });
+
+    Route::prefix('pcfs')->group(function () {
+        Route::get('/', [\App\Http\Controllers\Admin\PcfsController::class, 'index'])->name('admin.pcfs');
     });
 });
 

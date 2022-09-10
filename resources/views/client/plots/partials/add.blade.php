@@ -7,19 +7,18 @@
           <i class="icofont-close"></i>
         </button>
       </div>
-      <form class="add-client-plot-form" action="javascript:;" method="post" data-action="{{ route('client.plot.add', ['model_id' => $model_id, 'model' => $model]) }}">
+      <form class="add-client-plot-form" action="javascript:;" method="post" data-action="{{ $route }}">
           @csrf
         <div class="modal-body">
           <div class="row">
             <div class="form-group col-12">
-              <label class="text-muted">Plots</label>
+              <label class="text-muted">{{ ucfirst($layout->name) }} Plots</label>
               <select class="form-control plot_number" name="plot_number">
                 <option value="">Select plot number</option>
-                <?php $plots = \App\Models\Plot::all(); ?>
-                @if(empty($plots))
+                @if(empty($layout->plots->count()))
                   <option value="">No plots listed</option>
                 @else
-                  @foreach($plots as $plot)
+                  @foreach($layout->plots as $plot)
                     <option value="{{ $plot->number }}">
                       {{ ucwords($plot->name).' ('.$plot->number.')' }}
                     </option>

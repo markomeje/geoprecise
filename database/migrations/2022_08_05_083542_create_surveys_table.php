@@ -32,7 +32,7 @@ return new class extends Migration
             $table->text('approval_name')->nullable();
             $table->text('approval_address')->nullable();
 
-            $table->foreignId('user_id');
+            $table->foreignId('client_id');
             $table->string('status')->nullable();
             $table->boolean('completed')->default(false);
             $table->foreignId('staff_id')->nullable();

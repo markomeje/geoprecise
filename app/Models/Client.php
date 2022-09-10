@@ -19,10 +19,7 @@ class Client extends Model
         'title',
         'dob',
         'occupation',
-        'city',
         'address',
-        'state',
-        'phone',
         'user_id',
         'status',
     ];
@@ -34,6 +31,16 @@ class Client extends Model
      */
     public function user()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id');
+    }
+
+    /**
+     * A user may have many psrs
+     *
+     * @var array<string, string>
+     */
+    public function psrs()
+    {
+        return $this->hasMany(Psrs::class, 'client_id');
     }
 }

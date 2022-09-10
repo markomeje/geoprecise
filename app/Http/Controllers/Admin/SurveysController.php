@@ -8,13 +8,13 @@ use Validator;
 class SurveysController extends Controller
 {
     //
-    public function index()
+    public function index($limit = 20)
     {
-        return view('admin.surveys.index', ['title' => 'All surveys', 'surveys' => Survey::all()]);
+        return view('admin.surveys.index', ['title' => 'All Surveys', 'surveys' => Survey::latest()->paginate($limit)]);
     }
 
     //
-    public function add($user_id = 0)
+    public function add($client_id = 0)
     {
         $data = request()->all();
         $validator = Validator::make($data, [
@@ -58,17 +58,21 @@ class SurveysController extends Controller
 
                 'layout_id' => $data['layout'],
                 'completed' => false,
-                'user_id' => $user_id, //User is the client
+                'client_id' => $client_id,
                 'status' => 'started',
             ]);
 
-            return empty($survey->id) ? response()->json([
-                'status' => 0,
-                'info' => 'Operation error. Try again',
-            ]) : response()->json([
+            if(empty($survey->id)) {
+                return response()->json([
+                    'status' => 0,
+                    'info' => 'Operation error. Try again',
+                ]);
+            }
+
+            return response()->json([
                 'status' => 1,
                 'info' => 'Operation successful.',
-                'redirect' => route('admin.survey', ['id' => $survey->id])
+                'redirect' => route('admin.survey.edit', ['id' => $survey->id])
             ]);
         }catch(Exception $exception) {
             return response()->json([
@@ -79,9 +83,9 @@ class SurveysController extends Controller
     }
 
     //
-    public function apply($user_id = 0)
+    public function apply($client_id = 0)
     {
-        return view('admin.surveys.apply', ['title' => 'Surveying Application', 'client' => Client::where(['user_id' => $user_id])->first()]);
+        return view('admin.surveys.apply', ['title' => 'Surveying Application', 'client' => Client::where(['id' => $client_id])->first()]);
     }
 
     //
@@ -132,7 +136,7 @@ class SurveysController extends Controller
     }
 
     //
-    public function survey($id = 0)
+    public function edit($id = 0)
     {
         return view('admin.surveys.survey', ['title' => 'Edit Surveying Application', 'survey' => Survey::find($id)]);
     }

@@ -15,11 +15,12 @@ return new class extends Migration
     {
         Schema::create('sibs', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('form_id')->nullable();
+            $table->foreignId('form_id');
             $table->string('plot_numbers')->nullable();
             $table->foreignId('layout_id')->nullable();
 
-            $table->foreignId('user_id');
+            $table->foreignId('client_id');
+            $table->foreignId('staff_id')->nullable();
             $table->boolean('completed')->default(false);
             $table->timestamps();
         });

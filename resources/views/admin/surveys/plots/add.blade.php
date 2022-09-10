@@ -12,14 +12,13 @@
         <div class="modal-body">
           <div class="row">
             <div class="form-group col-12">
-              <label class="text-muted">Plots</label>
+              <label class="text-muted">{{ ucfirst($layout_name) }} Plots</label>
               <select class="form-control plot_number" name="plot_number">
                 <option value="">Select plot number</option>
-                <?php $plots = \App\Models\Plot::all(); ?>
-                @if(empty($plots))
-                  <option value="">No plots listed</option>
+                @if(empty($layout_plots->count()))
+                  <option value="">No plots for the selected layout</option>
                 @else
-                  @foreach($plots as $plot)
+                  @foreach($layout_plots as $plot)
                     <option value="{{ $plot->number }}">
                       {{ ucwords($plot->name).' ('.$plot->number.')' }}
                     </option>

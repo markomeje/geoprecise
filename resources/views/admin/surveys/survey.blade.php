@@ -7,25 +7,29 @@
         @include('admin.includes.navbar')
       <!-- End Navbar -->
       <div class="container-fluid py-4">
-        @if(empty($survey))
+        @if(empty($survey) || empty($survey->client))
           <div class="alert alert-danger d-block mb-4 text-white border-0">Unkwon error. Application details not found.</div>
         @else
-          <?php $user_id = $survey->user_id; $model_id = $survey->id; $model = 'survey'; $completed = (boolean)$survey->completed; ?>
+          <?php $client_id = $survey->client->id; $model_id = $survey->id; $model = 'survey'; $completed = (boolean)$survey->completed; $plot_numbers = $survey->plot_numbers; $client_name = $survey->client->fullname; $layout = $survey->layout; ?>
           <div class="">
             <div class="row">
               <div class="col-12 col-lg-8 mb-4">
-                @include('admin.surveys.plots.add')
+                <div class="alert alert-dark mb-4 text-white border-0">Surveying application for {{ ucwords($client_name) }}</div>
                 <div class="card shadow mb-4">
-                    <div class="card-header border-bottom">
-                      <a href="javascript:;" class="m-0" data-bs-toggle="modal" data-bs-target="#add-client-plot">Add Plot(s)</a>
+                  <div class="card-header border-bottom d-flex justify-content-between align-items-center">
+                    <div class="text-dark">
+                      {{ empty($plot_numbers) ? 0 : (str_contains($plot_numbers, '-') ? count(explode('-', $plot_numbers)) : 1) }} Plot(s)
                     </div>
-                    <?php $plots = \App\Models\Plot::all(); ?>
+                    <span class="cursor-pointer text-underline text-dark" data-bs-toggle="modal" data-bs-target="#add-client-plot">Add Plot(s)</span>
+                  </div>
+                  <?php $route = route('admin.client.plot.add', ['model_id' => $model_id, 'model' => $model]); ?>
+                  @include('client.plots.partials.add')
                     <div class="card-body">
-                      @if(empty($survey->plot_numbers))
+                      @if(empty($plot_numbers))
                         <div class="alert alert-danger m-0 border-0 text-white">No plot(s) added for this application.</div>
                       @else
                         <div class="row d-flex flex-wrap g-0">
-                          <?php $plot_numbers = str_contains($survey->plot_numbers, '-') ? explode('-', $survey->plot_numbers) : $survey->plot_numbers; ?>
+                          <?php $plot_numbers = str_contains($plot_numbers, '-') ? explode('-', $plot_numbers) : $plot_numbers; ?>
                           @if(is_array($plot_numbers))
                             <?php $count = 1; ?>
                             @foreach($plot_numbers as $number)
@@ -45,41 +49,26 @@
                           @else
                             <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
                               <small class="">{{ $plot_numbers }}</small>
-                              <small class="text-danger tiny-font cursor-pointer client-delete-plot" data-url="{{ route('client.plot.delete', ['plot_number' => $plot_numbers, 'model_id' => $survey->id, 'model' => 'survey']) }}" data-message="Are you sure to delete?">
+                              <small class="text-danger tiny-font cursor-pointer client-delete-plot" data-url="{{ route('admin.client.plot.delete', ['plot_number' => $plot_numbers, 'model_id' => $survey->id, 'model' => 'survey']) }}" data-message="Are you sure to delete?">
                                 <i class="icofont-trash"></i>
                               </small>
-                            </div>
-                          @endif
-                          @if(empty($survey->payment))
-                            @if(!empty($survey->form))
-                              @if(!empty($survey->form->amount))
-                                <?php $total_plots = is_array($plot_numbers) ? count($plot_numbers) : 1; $amount = $total_plots * (int)$survey->form->amount; ?>
-                                <div class="mt-4 make-payment" data-url="{{ route('payment.process', ['form_id' => $survey->form->id, 'type' => 'form', 'model_id' => $survey->id, 'model' => 'survey', 'amount' => $amount]) }}">
-                                  <button class="btn btn-primary make-payment-button">
-                                    <img src="/images/spinner.svg" class="me-2 d-none make-payment-spinner mb-1"> Pay NGN{{ number_format($amount) }}
-                                  </button>
-                                </div>
-                              @endif
-                            @endif
-                          @elseif($survey->payment->status !== 'paid')
-                            @if(!empty($survey->form))
-                              @if(!empty($survey->form->amount))
-                                <?php $total_plots = is_array($plot_numbers) ? count($plot_numbers) : 1; $amount = $total_plots * (int)$survey->form->amount; ?>
-                                <div class="mt-4 make-payment" data-url="{{ route('payment.process', ['form_id' => $survey->form->id, 'type' => 'form', 'model_id' => $survey->id, 'model' => 'survey', 'amount' => $amount]) }}">
-                                  <button class="btn btn-primary make-payment-button">
-                                    <img src="/images/spinner.svg" class="me-2 d-none make-payment-spinner mb-1"> Pay NGN{{ number_format($amount) }}
-                                  </button>
-                                </div>
-                              @endif
-                            @endif
-                          @else
-                            <div class="alert alert-info mt-3 text-white">
-                              Payment successfull. {{ (boolean)$survey->payment->verified == false ? 'Pending office verificaion' : 'Payment verified' }}
                             </div>
                           @endif
                         </div>
                       @endif
                     </div>
+                    @if(!empty($plot_numbers))
+                      <?php $amount = $survey->form ? ($survey->form->amount ?? 0) : 0; $total_plots = is_array($plot_numbers) ? count($plot_numbers) : 1; $total_amount = $total_plots * (int)$amount; ?>
+                      <div class="card-footer d-flex border-top justify-content-between">
+                        <div class="">
+                          {{ $total_plots }} plot(s) at NGN{{ number_format($amount) }} {{ $total_plots > 1 ? 'each totaling NGN'.number_format($total_amount) : '' }}
+                        </div>
+                        <a href="javascript:;" class="m-0 text-underline" data-bs-toggle="modal" data-bs-target="#admin-record-payment">
+                            Add payment
+                        </a>
+                          @include('admin.payments.partials.record')
+                      </div>
+                    @endif
                 </div>
                   <div class="card mb-4 shadow-sm border-0">
                     <div class="card-header border-bottom">

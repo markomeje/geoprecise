@@ -122,13 +122,13 @@
                           </div>
                         </div>
                       </div>
-                       <div class="d-flex align-items-center">
+                       <a href="{{ route("admin.$form->category") }}" class="d-flex align-items-center">
                          <div class="bg-success px-4 text-center rounded-pill" style="height: 42px; font-size: 14px;">
                           <div class="text-white mt-3">
                             <i class="icofont-long-arrow-right"></i>
                           </div>
                         </div>
-                       </div> 
+                       </a> 
                     </div>
                   </div>
                 </div>

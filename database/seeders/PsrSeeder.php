@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Seeders;
-use App\Models\{Psr, User};
+use App\Models\{Psr, Client};
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -15,6 +15,6 @@ class PsrSeeder extends Seeder
     public function run()
     {
         Psr::truncate();
-        Psr::factory()->count(User::count() * 10)->create();
+        Psr::factory()->count(Client::count() * 10)->create();
     }
 }

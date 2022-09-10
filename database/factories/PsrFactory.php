@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Factories;
-use App\Models\{Layout, Plot, User, Form, Psr};
+use App\Models\{Layout, Plot, Client, Form, Psr};
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -18,11 +18,11 @@ class PsrFactory extends Factory
     {
         $plots = Plot::all()->pluck('number')->toArray();
         return [
-            'plots' => $this->faker->randomElement($plots),
+            'sold_by' => $this->faker->name(),
             'layout_id' => rand(1, Layout::count()),
             'form_id' => Form::where(['code' => 'PSR'])->pluck('id')->toArray()[0],
-            'user_id' => rand(1, User::count() * 2),
             'status' => $this->faker->randomElement(Psr::STATUS),
+            'client_id' => rand(1, Client::count()),
             'completed' => false,
         ];
     }

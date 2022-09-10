@@ -15,14 +15,14 @@ return new class extends Migration
     {
         Schema::create('psrs', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('form_id')->nullable();
-            $table->string('plots')->nullable();
+            $table->foreignId('form_id');
             $table->foreignId('layout_id')->nullable();
-
-            $table->foreignId('user_id');
+            $table->foreignId('staff_id')->nullable();
+            $table->string('plot_numbers')->nullable();
+            $table->foreignId('client_id');
             $table->string('status')->nullable();
+            $table->string('sold_by')->nullable();
             $table->boolean('completed')->default(false);
-            $table->text('description')->nullable();
             $table->timestamps();
         });
     }

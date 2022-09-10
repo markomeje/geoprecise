@@ -27,6 +27,13 @@ class Payment extends Model
     ];
 
     /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    public static $verified = ['yes' => true, 'no' => false];
+
+    /**
      * Scope only completed payments
      */
     public function scopePaid($query)

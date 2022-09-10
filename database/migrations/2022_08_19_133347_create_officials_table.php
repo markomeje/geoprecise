@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('officials', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('staff_id');
             $table->timestamps();
         });
     }

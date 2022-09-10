@@ -22,7 +22,8 @@ return new class extends Migration
             $table->string('note')->nullable();
             $table->string('model')->nullable();
             $table->text('description')->nullable();
-            $table->foreignId('user_id');
+            $table->foreignId('client_id');
+            $table->foreignId('staff_id')->nullable();
             $table->string('status')->nullable();
             $table->boolean('verified')->default(false);
             $table->timestamps();

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Document;
+use Illuminate\Support\Str;
 use Exception;
 use Validator;
 
@@ -31,7 +32,6 @@ class DocumentsController extends Controller
 
         $model_id = $data['model_id'] ?? 0;
         $model = $data['model'] ?? '';
-
         if (empty($model_id) || empty($model)) {
             return response()->json([
                 'status' => 0, 
@@ -40,10 +40,10 @@ class DocumentsController extends Controller
         }
 
         $extension = strtolower($file->getClientOriginalExtension());
-        $path = $extension === 'pdf' ? 'documents/pdfs' : 'documents/images';
+        $folder = $extension === 'pdf' ? 'pdfs' : 'images';
+        $path = "documents/{$folder}";
 
-        $filename = \Str::uuid().'.'.$extension;
-        $file->move($path, $filename);
+        $filename = Str::uuid().'.'.$extension;
         $url = config('app.url')."/{$path}/{$filename}";
 
         $document = Document::where(['model_id' => $model_id])->first();
@@ -62,6 +62,7 @@ class DocumentsController extends Controller
         $document->model = $model;
 
         if ($document->update()) {
+            $file->move($path, $filename);
             return response()->json([
                 'status' => 1, 
                 'info' => 'Operation successful'
@@ -81,7 +82,7 @@ class DocumentsController extends Controller
     public function upload()
     {
         $file = request()->file('document');
-        $data = request()->all(['model_id', 'model', 'type']);
+        $data = request()->all(['model_id', 'model', 'type', 'client_id']);
         $validator = Validator::make(['type' => $data['type'], 'document' => $file], [
             'document' => ['mimes:jpg,png,jpeg,pdf'],
             'type' => ['required', 'string'],
@@ -97,6 +98,7 @@ class DocumentsController extends Controller
         $type = $data['type'] ?? '';
         $model_id = $data['model_id'] ?? 0;
         $model = $data['model'] ?? '';
+        $client_id = $data['client_id'] ?? '';
 
         if (empty($model_id) || empty($model)) {
             return response()->json([
@@ -105,7 +107,10 @@ class DocumentsController extends Controller
             ]);
         }
 
-        $documents = Document::where(['model_id' => $model_id])->get();
+        $documents = Document::where([
+            'model_id' => $model_id, 
+            'client_id' => $client_id
+        ])->get();
         foreach ($documents as $document) {
             if (strtolower($document->type) == strtolower($type)) {
                 return response()->json([
@@ -117,17 +122,27 @@ class DocumentsController extends Controller
             
 
         $extension = strtolower($file->getClientOriginalExtension());
-        $path = $extension === 'pdf' ? 'documents/pdfs' : 'documents/images';
+        $folder = $extension === 'pdf' ? 'pdfs' : 'images';
+        $path = "documents/{$folder}";
 
-        $filename = \Str::uuid().'.'.$extension;
+        $filename = Str::uuid().'.'.$extension;
+        $is_staff = $client_id == auth()->id() ? null : auth()->id();
+        if ($is_staff && empty($client_id)) {
+            return response()->json([
+                'status' => 0, 
+                'info' => 'Invalid Operation'
+            ]);
+        }
+
         $document = Document::create([
             'url' => config('app.url')."/{$path}/{$filename}",
+            'type' => $type,
             'model_id' => $model_id,
             'filename' => $filename,
             'format' => $extension,
-            'type' => $type,
-            'user_id' => auth()->id(),
+            'staff_id' => $is_staff,
             'model' => $model,
+            'client_id' => $client_id,
         ]);
 
         if ($document->id > 0) {
@@ -140,7 +155,7 @@ class DocumentsController extends Controller
         }
 
         return response()->json([
-            'status' => 1, 
+            'status' => 0, 
             'info' => 'Operation failed'
         ]);
             
@@ -162,9 +177,9 @@ class DocumentsController extends Controller
             $filename = end($url);
 
             $extension = explode('.', $filename);
-            $path = end($extension) === 'pdf' ? 'documents/pdfs' : 'documents/images';
+            $folder = end($extension) === 'pdf' ? 'pdfs' : 'images';
 
-            $file = "{$path}/{$filename}";
+            $file = "documents/{$folder}/{$filename}";
             if (file_exists($file)) {
                 unlink($file);
             }

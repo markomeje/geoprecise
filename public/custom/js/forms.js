@@ -2,6 +2,11 @@
 
 	'use strict';
 
+    $('.admin-record-payment-form').submit(function(event){
+        event.preventDefault();
+        handleForm({form: $(this), button: 'admin-record-payment-button', spinner: 'admin-record-payment-spinner', message: 'admin-record-payment-message'});
+    });
+
     $('.add-client-form').submit(function(event){
         event.preventDefault();
         handleForm({form: $(this), button: 'add-client-button', spinner: 'add-client-spinner', message: 'add-client-message'});

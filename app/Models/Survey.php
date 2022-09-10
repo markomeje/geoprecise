@@ -32,7 +32,7 @@ class Survey extends Model
         'approval_name',
         'approval_address',
 
-        'user_id',
+        'client_id',
         'completed',
         'status',
         'staff_id',
@@ -79,13 +79,13 @@ class Survey extends Model
     }
 
     /**
-     * A survey belongs to a user
+     * A survey belongs to a client
      *
      * @var array<string, string>
      */
-    public function user()
+    public function client()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(Client::class);
     }
     
 }
