@@ -13,7 +13,7 @@
 				{{ ucwords($plot->layout->name) }}
 			</div>
 			<div class="text-white">
-				<i class="icofont-caret-down"></i>
+				{{ ucwords($plot->category) }}
 			</div> 
 		</div>	
 	</div>

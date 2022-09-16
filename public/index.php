@@ -5,55 +5,11 @@ use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));
 
-// function birthday($s, $d, $m) {
-//     // Write your code here
-//     $total = 0;
-//     $count = count($s); // 5
-//     foreach($s as $bar) {
-//         $day = 0; $month = 0;
-//         $position = [];
-//         for($i = 0; $i < $count; $i++) {
-//             $crrentIndex = $i; 
-//             $previousIndex = $currentIndex == 0 ? $currentIndex :  $currentIndex - 1;
-//             $nextIndex = ($currentIndex + 1) >= $count ? $count : ($currentIndex + 1);
-            
-//             if(($s[$i] + $s[$i + 1]) == $d) {
-//                 $total++
-//             }
-            
-//             if(($s[$i] + $s[$i - 1]) == $d) {
-//                 $total++
-//             }
-//         }
-//     }
-    
-//     return $total;
-
-// }
-
-//Js
-// Understand the question;
-// Check stop condition;
-// function birthday(s, d, m) {
-//     // Write your code here 
-//     let length = s.length;
-//     let count = 0;
-//     for(let i = 0; i <= length - m; i++) {
-//         const bars = s.slice(i, i + m);
-//         const sum = bars.reduce((partial, a) => partial + a, 0);
-//         if(sum == d) {
-//             count++;
-//         }
-//     }
-    
-//     return count;
-
-// }
-
 /*
-    Lifting and survey must be done before site inspection.
-    Must have bought a plot before coming for lifting.
-    You can't blacklist any plot - Plots can be resold
+Approvals for payment and plan collection notification mut be sent.
+Lifting and survey must be done before site inspection.
+Must have bought a plot before coming for lifting.
+You can't blacklist any plot - Plots can be resold
 |--------------------------------------------------------------------------
 | Check If The Application Is Under Maintenance
 |--------------------------------------------------------------------------

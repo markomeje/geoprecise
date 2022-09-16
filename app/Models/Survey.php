@@ -87,5 +87,23 @@ class Survey extends Model
     {
         return $this->belongsTo(Client::class);
     }
+
+    /**
+     * Approver of a particular survey.
+     *
+     * @var array<string, string>
+     */
+    public function approver()
+    {
+        return $this->belongsTo(User::class, 'approved_by');
+    }
+
+     /**
+     * Get the staff who recorded the survey.
+     */
+    public function recorder()
+    {
+        return $this->belongsTo(User::class, 'recorded_by');
+    }
     
 }

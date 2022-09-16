@@ -116,9 +116,16 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
         Route::post('/add', [\App\Http\Controllers\Admin\ClientsController::class, 'add'])->name('admin.client.add');
     });
 
+    Route::prefix('staff')->group(function () {
+        Route::get('/', [\App\Http\Controllers\Admin\StaffController::class, 'index'])->name('admin.staff');
+        Route::get('/profile/{id}', [\App\Http\Controllers\Admin\StaffController::class, 'profile'])->name('admin.staff.profile');
+        Route::post('/add', [\App\Http\Controllers\Admin\StaffController::class, 'add'])->name('admin.client.add');
+    });
+
     Route::prefix('payments')->group(function () {
         Route::get('/', [\App\Http\Controllers\Admin\PaymentsController::class, 'index'])->name('admin.payments');
         Route::post('/record', [\App\Http\Controllers\Admin\PaymentsController::class, 'record'])->name('admin.payment.record');
+        Route::post('/approve', [\App\Http\Controllers\Admin\PaymentsController::class, 'approve'])->name('admin.payment.approve');
     });
 
     Route::prefix('fees')->group(function () {
@@ -135,6 +142,7 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
     Route::prefix('psrs')->group(function () {
         Route::get('/', [\App\Http\Controllers\Admin\PsrsController::class, 'index'])->name('admin.psrs');
         Route::post('/add/{client_id}', [\App\Http\Controllers\Admin\PsrsController::class, 'add'])->name('admin.psr.add');
+        Route::post('/delete/{id}', [\App\Http\Controllers\Admin\PsrsController::class, 'delete'])->name('admin.psr.delete');
         
         Route::get('/edit/{id}', [\App\Http\Controllers\Admin\PsrsController::class, 'edit'])->name('admin.psr.edit');
         Route::post('/save/{id}', [\App\Http\Controllers\Admin\PsrsController::class, 'save'])->name('admin.psr.save');
@@ -150,7 +158,7 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
     Route::prefix('surveys')->group(function () {
         Route::get('/', [\App\Http\Controllers\Admin\SurveysController::class, 'index'])->name('admin.surveys');
         Route::post('/add/{client_id}', [\App\Http\Controllers\Admin\SurveysController::class, 'add'])->name('admin.survey.add');
-        Route::post('/edit/{id}', [\App\Http\Controllers\Admin\SurveysController::class, 'edit'])->name('admin.survey.edit');
+        Route::post('/save/{id}', [\App\Http\Controllers\Admin\SurveysController::class, 'save'])->name('admin.survey.save');
 
         Route::get('/edit/{id}', [\App\Http\Controllers\Admin\SurveysController::class, 'edit'])->name('admin.survey.edit');
         Route::get('/apply/{client_id}', [\App\Http\Controllers\Admin\SurveysController::class, 'apply'])->name('admin.survey.apply');

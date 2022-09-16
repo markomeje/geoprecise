@@ -11,7 +11,7 @@
           <form class="d-block w-100" method="get">
             <div class="row">
               <div class="form-group input-group-lg col-12 col-md-10 mb-4">
-                <input type="text" name="search" class="form-control" placeholder="Search Clients . . .">
+                <input type="text" name="search" class="form-control" placeholder="Enter search . . .">
               </div>
               <div class="col-12 col-md-2 mb-4">
                 <button class="btn w-100 btn-lg btn-primary m-0">
@@ -21,23 +21,18 @@
             </div>
           </form>
         </div>
-        <div class="bg-white p-4 border-radius-xl">
-          <div class="alert alert-info d-flex align-items-center mb-4">
-            <div class="me-3 text-white">All Clients ({{ $clients->total() }})</div>
-            <a href="javascript:;" class="text-white align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#add-client">Add Client</a>
-            @include('admin.clients.partials.add')
-          </div>
-          @if(empty($clients->count()))
-            <div class="alert alert-info">No clients yet</div>
+        <div class="">
+          @if(empty($payments->count()))
+            <div class="alert alert-info">No payments yet</div>
           @else
             <div class="row">
-              @foreach($clients as $client)
+              @foreach($payments as $payment)
                 <div class="col-xl-3 col-md-4 col-12 mb-4">
-                @include('admin.clients.partials.card')
-              </div>
+                  @include('admin.payments.partials.card')
+                </div>
               @endforeach
             </div>
-            {{ $clients->links('vendor.pagination.default') }}
+            {{ $payments->links('vendor.pagination.default') }}
           @endif
         </div>
     </main>

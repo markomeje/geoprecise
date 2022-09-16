@@ -17,11 +17,24 @@ return new class extends Migration
             $table->id();
             $table->foreignId('form_id');
             $table->foreignId('layout_id')->nullable();
-            $table->foreignId('staff_id')->nullable();
+
             $table->string('plot_numbers')->nullable();
             $table->foreignId('client_id');
-            $table->string('status')->nullable();
             $table->string('sold_by')->nullable();
+
+            $table->boolean('approved')->default(false);
+            $table->foreignId('approved_by')->nullable();
+            $table->timestamp('approved_at')->nullable();
+
+            $table->string('ref_no')->nullable();
+            $table->string('status');
+
+            $table->timestamp('result_date')->nullable();
+            $table->timestamp('lodgement_date')->nullable();
+
+            $table->string('recorder_type')->default('staff');
+            $table->foreignId('recorded_by')->nullable();
+            $table->text('comments')->nullable();
             $table->boolean('completed')->default(false);
             $table->timestamps();
         });

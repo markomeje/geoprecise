@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
-use App\Models\{Plot, Client, Survey, Form};
+use App\Models\{Plot, Client, Survey, Form, Staff};
+use Carbon\Carbon;
 use Validator;
 
 class SurveysController extends Controller
@@ -54,12 +55,13 @@ class SurveysController extends Controller
                 'approval_name' => $data['approval_name'] ?? null,
                 'approval_comments' => $data['approval_comments'] ?? null,
                 'approval_address' => $data['approval_address'] ?? null,
-                'staff_id' => auth()->id(),
 
                 'layout_id' => $data['layout'],
                 'completed' => false,
                 'client_id' => $client_id,
-                'status' => 'started',
+                'status' => 'incomplete',
+                'recorder_type' => 'staff',
+                'recorded_by' => auth()->id(),
             ]);
 
             if(empty($survey->id)) {
@@ -93,51 +95,100 @@ class SurveysController extends Controller
     {
         $data = request()->all();
         $validator = Validator::make($data, [
-            'name' => ['required', 'string'], 
-            'description' => ['nullable', 'string'],
-            'category' => ['required', 'string'],
-            'layout' => ['required', 'string'],
-            'number' => ['required', 'string'],
+            'purchaser_name' => ['required', 'string', 'max:255'], 
+            'purchaser_address' => ['required', 'string', 'max:255'], 
+            'purchaser_phone' => ['required', 'string', 'max:17'],
+
+            'seller_name' => ['required', 'string', 'max:255'], 
+            'seller_address' => ['required', 'string', 'max:255'], 
+            'seller_phone' => ['required', 'string', 'max:17'],
+
+            'approval_name' => ['required', 'string', 'max:255'], 
+            'approval_comments' => ['required', 'string', 'max:500'], 
+            'approval_address' => ['required', 'string', 'max:255'], 
         ]);
 
         if ($validator->fails()) {
             return response()->json([
                 'status' => 0,
-                'error' => $validator->errors()
+                'error' => $validator->errors(),
             ]);
         }
 
-        $plot = Survey::find($id);
-        if (empty($plot)) {
+        $survey = Survey::find($id);
+        if (empty($survey)) {
+            response()->json([
+                'status' => 0,
+                'info' => 'Unknown error. Survey not found.'
+            ]);
+        }
+
+        $approved = (boolean)($data['approved'] ?? 0) === true;
+        if ($approved && empty($survey->documents->count())) {
             return response()->json([
                 'status' => 0,
-                'info' => 'An error occured. Try again later.',
+                'info' => 'Incomplete survey. Upload survey documents.',
             ]);
         }
 
-        $plot->name = $data['name'];
-        $plot->description = $data['description'] ?? null;
-        $plot->number = $data['number'];
-        $plot->category = $data['category'];
-        $plot->layout_id = $data['layout'];
-
-        if ($plot->update()) {
+        if ($approved && empty($survey->payment)) {
             return response()->json([
-                'status' => 1,
-                'info' => 'Plot updated. Please wait . . .',
-                'redirect' => '',
+                'status' => 0,
+                'info' => 'Incomplete survey. No payment.',
             ]);
         }
 
-        return response()->json([
-            'status' => 0,
-            'info' => 'Unknown error. Try again later',
-        ]);
+        if ($approved && $survey->payment->status !== 'paid') {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Please make payment before final submission',
+            ]);
+        }
+
+        try{
+            $survey->approval_name = $data['approval_name'] ?? null;
+            $survey->approval_comments = $data['approval_comments'] ?? null;
+            $survey->approval_address = $data['approval_address'] ?? null;
+
+            $survey->purchaser_name = $data['purchaser_name'] ?? null;
+            $survey->purchaser_address = $data['purchaser_address'] ?? null;
+            $survey->purchaser_phone = $data['purchaser_phone'] ?? null;
+
+            $survey->seller_phone = $data['seller_phone'] ?? null;
+            $survey->seller_address = $data['seller_address'] ?? null;
+            $survey->seller_name = $data['seller_name'] ?? null;
+            $survey->approved = $approved;
+            $survey->status = $approved ? 'completed' : 'incomplete';
+            $survey->completed = $approved;
+
+            if ($approved) {
+                $survey->approved_by = auth()->id();
+                $survey->approved_at = Carbon::now();
+            }
+
+            if($survey->update()){
+                return response()->json([
+                    'status' => 1,
+                    'info' => 'Survey updated successfully.',
+                    'redirect' => ''
+                ]);
+            }
+
+            return response()->json([
+                'status' => 0,
+                'info' => 'Update failed. Try again.'
+            ]);
+        }catch(Exception $exception) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Unknown error. Try again.'
+            ]);
+        }
     }
 
     //
     public function edit($id = 0)
     {
-        return view('admin.surveys.survey', ['title' => 'Edit Surveying Application', 'survey' => Survey::find($id)]);
+        return view('admin.surveys.edit', ['title' => 'Edit Surveying Application', 'survey' => Survey::find($id)]);
     }
 }

@@ -19,7 +19,8 @@ class Psr extends Model
         'plot_numbers',
         'layout_id',
         'completed',
-        'description',
+        'completed',
+        'comments',
         'client_id',
         'status',
     ];
@@ -64,7 +65,7 @@ class Psr extends Model
      */
     public function payment()
     {
-        return $this->hasOne(Payment::class, 'model_id')->where(['type' => 'form', 'model' => 'psr', 'status' => 'paid']);
+        return $this->hasOne(Payment::class, 'model_id')->where(['model' => 'psr']);
     }
 
     /**
@@ -75,6 +76,24 @@ class Psr extends Model
     public function layout()
     {
         return $this->belongsTo(Layout::class);
+    }
+
+    /**
+     * Approver of a particular psr.
+     *
+     * @var array<string, string>
+     */
+    public function approver()
+    {
+        return $this->belongsTo(User::class, 'approved_by');
+    }
+
+     /**
+     * Get the staff who recorded the psr.
+     */
+    public function recorder()
+    {
+        return $this->belongsTo(User::class, 'recorded_by');
     }
 
 }

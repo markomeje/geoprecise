@@ -13,15 +13,13 @@ class LayoutSeeder extends Seeder
      */
     public function run()
     {
-        $layouts = [
-            ['name' => 'Choice city layout'],
-            ['name' => 'Peace layout'],
-            ['name' => 'Christa City Layout'],
-        ];
+        $layouts = ['Choice city layout', 'Peace layout', 'Christa City Layout'];
 
-        Layout::where('id', '>', 0)->delete();
+        Layout::truncate();
         foreach ($layouts as $layout) {
-            Layout::create($layout);
+            Layout::create([
+                'name' => $layout,
+            ]);
         }
     }
 }

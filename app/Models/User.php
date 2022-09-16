@@ -67,13 +67,13 @@ class User extends Authenticatable
     }
 
     /**
-     * A user have one client details
+     * A user may have one client details
      *
      * @var array<string, string>
      */
     public function client()
     {
-        return $this->hasOne(Client::class, 'user_id');
+        return $this->hasOne(Client::class);
     }
 
     /**
@@ -84,6 +84,16 @@ class User extends Authenticatable
     public function payments()
     {
         return $this->hasMany(Payment::class);
+    }
+
+    /**
+     * A user may have one staff details
+     *
+     * @var array<string, string>
+     */
+    public function staff()
+    {
+        return $this->hasOne(Staff::class);
     }
 
 }

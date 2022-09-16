@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Factories;
-
+use App\Models\{User, Staff};
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +17,11 @@ class StaffFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'fullname' => $this->faker->name(),
+            'created_by' => rand(1, 20),
+            'user_id' => $this->faker->randomElement([1, 2, 3, 4]),
+            'address' => $this->faker->address(),
+            'status' => $this->faker->randomElement(Staff::STATUS),
         ];
     }
 }

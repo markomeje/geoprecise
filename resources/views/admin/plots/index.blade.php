@@ -29,6 +29,7 @@
               </div>
               @include('admin.plots.partials.edit')
             @endforeach
+            {{ $plots->links('vendor.pagination.default') }}
           </div>
         @endif
       </div>

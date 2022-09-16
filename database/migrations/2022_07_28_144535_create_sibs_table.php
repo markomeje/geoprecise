@@ -18,10 +18,19 @@ return new class extends Migration
             $table->foreignId('form_id');
             $table->string('plot_numbers')->nullable();
             $table->foreignId('layout_id')->nullable();
+            $table->foreignId('survey_id');
 
             $table->foreignId('client_id');
-            $table->foreignId('staff_id')->nullable();
+            
+            $table->boolean('approved')->default(false);
+            $table->foreignId('approved_by')->nullable();
+            $table->timestamp('approved_at')->nullable();
+            
+            $table->string('recorder_type')->default('staff');
+            $table->foreignId('recorded_by')->nullable();
+
             $table->boolean('completed')->default(false);
+            $table->text('comments')->nullable();
             $table->timestamps();
         });
     }

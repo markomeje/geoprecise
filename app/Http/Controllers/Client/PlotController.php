@@ -46,6 +46,13 @@ class PlotController extends Controller
             ]);
         }
 
+        if ((boolean)($model->approved ?? 0) === true || (empty($model->payment) ? '' : $model->payment->status) == 'paid') {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Not allowed after payment or approval'
+            ]);
+        }
+
         $plot_number = $data['plot_number'] ?? '';
         $plot_numbers = str_contains($model->plot_numbers, '-') ? explode('-', $model->plot_numbers) : $model->plot_numbers;
 
@@ -115,13 +122,11 @@ class PlotController extends Controller
             ]);
         }
 
-        if(!empty($model->payment)) {
-            if ($model->payment->status === 'paid') {
-                return response()->json([
-                    'status' => 0,
-                    'info' => 'Sorry. Plot number cannot be deleted after payment.'
-                ]);
-            }
+        if ((boolean)($model->approved ?? 0) == true || (empty($model->payment) ? '' : $model->payment->status) == 'paid') {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Not allowed after payment or approval'
+            ]);
         }
 
         $plot_numbers = str_contains($model->plot_numbers, '-') ? explode('-', $model->plot_numbers) : $model->plot_numbers;

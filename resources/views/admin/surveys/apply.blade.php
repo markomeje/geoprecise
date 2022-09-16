@@ -34,7 +34,7 @@
                       </div>
                       <div class="form-group input-group-lg">
                         <label class="text-muted">Purchaser or Allottee Address</label>
-                        <textarea class="form-control purchaser_address" name="purchaser_address" placeholder="Enter purchaser or allottee address"></textarea>
+                        <input type="text" class="form-control purchaser_address" name="purchaser_address" placeholder="Enter purchaser or allottee address" />
                         <small class="purchaser_address-error text-danger"></small>
                       </div>
                     </div>
@@ -56,7 +56,7 @@
                       </div>
                       <div class="form-group input-group-lg">
                         <label class="text-muted">Land Seller or Donor Address</label>
-                        <textarea class="form-control seller_address" name="seller_address" placeholder="Enter seller or donor address"></textarea>
+                        <input type="text" class="form-control seller_address" name="seller_address" placeholder="Enter seller or donor address" />
                         <small class="seller_address-error text-danger"></small>
                       </div>
                     </div>

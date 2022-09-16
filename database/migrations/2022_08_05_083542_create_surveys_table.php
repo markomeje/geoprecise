@@ -24,9 +24,8 @@ return new class extends Migration
             $table->string('seller_address')->nullable();
             $table->string('seller_phone')->nullable();
 
-            $table->foreignId('layout_id')->nullable();
+            $table->foreignId('layout_id');
             $table->string('plot_numbers')->nullable();
-            $table->string('document_presented')->nullable();
 
             $table->text('approval_comments')->nullable();
             $table->text('approval_name')->nullable();
@@ -35,7 +34,16 @@ return new class extends Migration
             $table->foreignId('client_id');
             $table->string('status')->nullable();
             $table->boolean('completed')->default(false);
-            $table->foreignId('staff_id')->nullable();
+
+            $table->boolean('approved')->default(false);
+            $table->timestamp('approved_at')->nullable();
+            $table->foreignId('approved_by')->nullable();
+
+            $table->timestamp('lifted_on')->nullable();
+            $table->foreignId('lifted_by')->nullable();
+
+            $table->string('recorder_type')->default('staff');
+            $table->foreignId('recorded_by')->nullable();
             $table->timestamps();
         });
     }

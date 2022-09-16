@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Factories;
-
+use App\Models\{Client, Layout, Survey, Staff, Form};
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,7 +17,16 @@ class PcfFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'survey_id' => rand(1, Survey::count()),
+            'added_by' => rand(1, Staff::count()),
+            'issued_by' => rand(1, Staff::count()),
+            'form_id' => Form::where(['code' => 'PCFS'])->pluck('id')->toArray()[0] ?? null,
+            'plan_number' => rand(1, 45),
+            'plot_location' => $this->faker->address(),
+            'plan_title' => $this->faker->name(),
+            'client_id' => rand(1, Client::count()),
+            'survey_id' => rand(1, Survey::count()),
+            'status' => 'collected',
         ];
     }
 }

@@ -14,7 +14,7 @@
       <div class="">
           <div class="row">
             <div class="col-6 col-sm-12 col-lg-6">
-              <a href="tel:{{ $client->user ? $client->user->phone : 'Nill' }}" class="btn d-flex align-items-center justify-content-center btn-dark">
+              <a href="tel:{{ empty($client->user) ? 'Nill' : $client->user->phone }}" class="btn d-flex align-items-center justify-content-center btn-dark">
                 <small class="me-2 tiny-font">
                   <i class="ni ni-headphones text-primary text-sm opacity-10"></i>
                 </small>

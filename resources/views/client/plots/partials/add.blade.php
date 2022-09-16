@@ -12,7 +12,7 @@
         <div class="modal-body">
           <div class="row">
             <div class="form-group col-12">
-              <label class="text-muted">{{ ucfirst($layout->name) }} Plots</label>
+              <label class="text-muted">{{ $layout ? ucfirst($layout->name) : 'Nill' }} Plots</label>
               <select class="form-control plot_number" name="plot_number">
                 <option value="">Select plot number</option>
                 @if(empty($layout->plots->count()))

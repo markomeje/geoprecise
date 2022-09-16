@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\{Psr, Client, Form};
+use Carbon\Carbon;
 use Validator;
 
 class PsrsController extends Controller
@@ -43,6 +44,9 @@ class PsrsController extends Controller
             'layout_id' => $data['layout'],
             'sold_by' => $data['sold_by'],
             'client_id' => $client_id,
+            'comments' => $data['comments'] ?? null,
+            'recorded_by' => auth()->id(),
+            'recorder_type' => 'staff',
             'form_id' => Form::where(['code' => 'PSR'])->pluck('id')->toArray()[0],
         ]);
 
@@ -91,21 +95,80 @@ class PsrsController extends Controller
             ]);
         }
 
-        $psr->layout_id = $data['layout'];
-        $psr->status = $data['status'];
-        $psr->sold_by = $data['sold_by'];
-        if (empty($psr->update())) {
+        $approved = (boolean)($data['approved'] ?? 0) === true;
+        if ($approved && empty($psr->payment)) {
             return response()->json([
                 'status' => 0,
-                'info' => 'Operation failed. Try again.',
+                'info' => 'Incomplete psr. No payment.',
+            ]);
+        }
+
+        if ($approved && $psr->payment->status !== 'paid') {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Incomplete psr. Invalid payment',
+            ]);
+        }
+
+        try{
+            $psr->layout_id = $data['layout'];
+            $psr->status = $data['status'];
+            $psr->sold_by = $data['sold_by'];
+            $psr->comments = $data['comments'] ?? '';
+            $psr->status = $data['status'] ?? '';
+
+            $psr->approved = $approved;
+            $psr->completed = $approved;
+
+            if ($approved) {
+                $psr->approved_by = auth()->id();
+                $psr->approved_at = Carbon::now();
+            }
+
+            if (empty($psr->update())) {
+                return response()->json([
+                    'status' => 0,
+                    'info' => 'Operation failed. Try again.',
+                ]);
+            }
+
+            return response()->json([
+                'status' => 1,
+                'info' => 'Request updated. Please wait . . .',
+                'redirect' => route('admin.psr.edit', ['id' => $psr->id]),
+            ]);
+        }catch(Exception $exception) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Unknown error. Try again.'
+            ]);
+        }
+    }
+
+    //
+    public function delete($id = 0)
+    {
+        $psr = Psr::find($id);
+        if (empty($psr)) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Unknown error. Psr not found.',
+            ]);
+        }
+
+        if ($psr->delete()) {
+            return response()->json([
+                'status' => 1,
+                'info' => 'Operation successful.',
+                'redirect' => '',
             ]);
         }
 
         return response()->json([
-            'status' => 1,
-            'info' => 'Request updated. Please wait . . .',
-            'redirect' => route('admin.psr.edit', ['id' => $psr->id]),
+            'status' => 0,
+            'info' => 'Failed to delete PSR',
         ]);
     }
+
 
 }

@@ -41,7 +41,6 @@ class SurveyController extends Controller
             $plot_numbers = $data['plot_numbers'] ?? null;
             $plot_numbers = is_array($plot_numbers) ? implode('-', $plot_numbers) : $plot_numbers;
             $survey = Survey::create([
-                'plot_numbers' => $plot_numbers,
                 'form_id' => Form::where(['code' => 'LES'])->pluck('id')->toArray()[0],
                 'approval_name' => $data['approval_name'] ?? null,
                 'approval_comments' => $data['approval_comments'] ?? null,
@@ -93,7 +92,6 @@ class SurveyController extends Controller
         }
 
         $data = request()->all();
-        // dd($data);
         $validator = Validator::make($data, [
             'purchaser_name' => ['required', 'string', 'max:255'], 
             'purchaser_address' => ['required', 'string', 'max:255'], 
@@ -116,15 +114,15 @@ class SurveyController extends Controller
             ]);
         }
 
-        $completed = empty($data['completed']) ? false : ($data['completed'] == 'yes' ? true : false);
-        if ($completed === true && empty($survey->payment)) {
+        $completed = empty($data['completed']) ? false : ($data['completed'] === 'yes' ? true : false);
+        if ($completed && empty($survey->payment)) {
             return response()->json([
                 'status' => 0,
                 'info' => 'Please make payment before final submission',
             ]);
         }
 
-        if ($completed === true && $survey->payment->status !== 'paid') {
+        if ($completed && $survey->payment->status !== 'paid') {
             return response()->json([
                 'status' => 0,
                 'info' => 'Please make payment before final submission',

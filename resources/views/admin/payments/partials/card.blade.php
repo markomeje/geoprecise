@@ -1,24 +1,21 @@
-<?php $verified = true === (boolean)$payment->verified; ?>
+<?php $approved = true === (boolean)$payment->approved; ?>
 <div class="card shadow-lg">
   <div class="card-body">
-    <div class="d-flex align-items-center justify-content-between pb-3">
+    <div class="d-flex align-items-center justify-content-between pb-3 mb-3 border-bottom">
       <div>
         NGN{{ number_format($payment->amount) }}
       </div>
-      <div class="text-primary">
-        {{ ucfirst($payment->status) }}
+      <div class="text-success">
+        {{ ucfirst($payment->status) }} by (<a href="{{ route('admin.clients.profile', ['id' => $payment->client->id]) }}">{{ \Str::limit(ucwords($payment->client->fullname), 8) }}</a>)
       </div>
     </div>
     <div class="d-flex align-items-center justify-content-between">
-      @if($verified)
-        <a class="btn btn-success w-100 veirfy-payment m-0" data-url="{{ $payment->id }}">
-            Verified - Undo?
-        </a>
-      @else
-        <a class="btn btn-danger w-100 veirfy-payment m-0" data-url="{{ $payment->id }}">
-            Not verified - Verify
-        </a>
-      @endif
+      <div class="text-dark">
+        {{ $approved ? 'Approved' : 'Unapproved' }}
+      </div>
+      <div class="text-dark">
+        {{ ucwords($payment->type) }}
+      </div>
     </div>
   </div>
   <div class="card-footer bg-primary">
@@ -26,7 +23,7 @@
       <small class="text-white">
         {{ $payment->updated_at->diffForHumans() }}
       </small>
-      @if(true === (boolean)$payment->verified)
+      @if($approved)
         <div class="bg-success text-center small-circle rounded-circle text-white" style="">
           <div class="small-circle-icon">
             <i class="icofont-tick-mark"></i>

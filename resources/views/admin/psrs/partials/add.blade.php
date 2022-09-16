@@ -51,6 +51,11 @@
             <input type="text" class="form-control sold_by" name="sold_by" rows="4" placeholder="Enter seller name">
             <small class="sold_by-error text-danger"></small>
           </div>
+          <div class="form-group">
+            <label class="text-muted">Comments</label>
+            <textarea class="form-control comments" rows="4" name="comments" placeholder="Enter comments"></textarea>
+            <small class="comments-error text-danger"></small>
+          </div>
           <div class="alert d-none psr-message mb-2 text-white"></div>
         </div>
         <div class="modal-footer pb-0">

@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('code')->nullable();
             $table->string('title')->nullable();
             $table->string('address');
-            $table->foreignId('creator')->nullable();
+            $table->foreignId('created_by')->nullable();
             $table->string('status')->nullable();
             $table->timestamps();
         });

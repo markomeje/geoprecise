@@ -10,7 +10,7 @@ class PlotsController extends Controller
     //
     public function index()
     {
-        return view('admin.plots.index', ['title' => 'All Plots', 'plots' => Plot::all()]);
+        return view('admin.plots.index', ['title' => 'All Plots', 'plots' => Plot::latest()->paginate(20)]);
     }
 
     //

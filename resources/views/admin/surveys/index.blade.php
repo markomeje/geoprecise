@@ -10,7 +10,7 @@
           @if(empty($surveys->count()))
             <div class="alert alert-danger border-0 text-white">No surveys yet</div>
           @else
-            <div class="alert alert-info border-0 mb-4 text-white">{{ $surveys->total() }} Surveying or Lifting Applications</div>
+            <div class="alert alert-info border-0 mb-4 text-white">{{ $surveys->total() }} Surveys and Lifting</div>
             <div class="row">
               @foreach($surveys as $survey)
                 <div class="col-xl-3 col-md-4 col-12 mb-4">

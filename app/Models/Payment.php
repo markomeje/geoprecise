@@ -20,7 +20,7 @@ class Payment extends Model
         'model_id',
         'reference',
         'model',
-        'user_id',
+        'client_id',
         'verified',
         'paid',
         'status',
@@ -31,7 +31,18 @@ class Payment extends Model
      *
      * @var array<int, string>
      */
-    public static $verified = ['yes' => true, 'no' => false];
+    public static $approved = ['yes' => true, 'no' => false];
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    public static $types = [
+        'bank transfer',
+        'pos',
+        'bank deposit',
+    ];
 
     /**
      * Scope only completed payments
@@ -39,6 +50,30 @@ class Payment extends Model
     public function scopePaid($query)
     {
         return $query->where(['status' => 'paid']);
+    }
+
+    /**
+     * Get the staff who recorded the payment.
+     */
+    public function recorder()
+    {
+        return $this->belongsTo(User::class, 'recorded_by');
+    }
+
+    /**
+     * Get the staff who approved the payment.
+     */
+    public function approver()
+    {
+        return $this->belongsTo(User::class, 'approved_by');
+    }
+
+    /**
+     * A payment belongs to a client
+     */
+    public function client()
+    {
+        return $this->belongsTo(Client::class);
     }
 
 }
