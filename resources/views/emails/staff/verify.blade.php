@@ -4,7 +4,7 @@
 <p>Please click on the button below to verify your Email address.</p>
 
 <div style="text-align: left;">
-	@component('mail::button', ['url' => route('verify.email', ['token' => $data['token']])])
+	@component('mail::button', ['url' => route('email.verify', ['token' => $data['token']])])
 		Click Here
 	@endcomponent
 </div>

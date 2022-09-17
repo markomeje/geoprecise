@@ -22,7 +22,9 @@ class StaffFactory extends Factory
             'user_id' => $this->faker->randomElement([1, 2, 3, 4]),
             'address' => $this->faker->address(),
             'code' => strtoupper($this->faker->text($maxNbChars = 6)),
-            'status' => $this->faker->randomElement(Staff::STATUS),
+            'status' => $this->faker->randomElement(['inactive']),
+            'role' => $this->faker->randomElement(Staff::$roles),
+            'verified' => false,
         ];
     }
 }

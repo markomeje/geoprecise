@@ -21,5 +21,7 @@ class Verification extends Model
         'type',
         'expiry',
         'status',
+        'model',
+        'model_id',
     ];
 }

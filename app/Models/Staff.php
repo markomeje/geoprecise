@@ -16,12 +16,12 @@ class Staff extends Model
      */
     protected $fillable = [
         'fullname',
-        'role',
         'user_id',
         'code',
         'title',
         'address',
         'created_by',
+        'role',
         'status',
     ];
 

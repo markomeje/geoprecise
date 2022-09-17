@@ -13,7 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
 Route::middleware(['web'])->domain(env('APP_URL'))->group(function() {
     Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/aboutus', [\App\Http\Controllers\AboutController::class, 'index'])->name('aboutus');
@@ -135,6 +134,7 @@ Route::middleware(['web'])->domain(env('AUTH_URL'))->group(function() {
     Route::get('/logout', [\App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('auth.logout');
     Route::middleware(['guest'])->group(function() {
         Route::get('/login', [\App\Http\Controllers\Auth\LoginController::class, 'index'])->name('login.ui');
+
         Route::get('/signup', [\App\Http\Controllers\Auth\SignupController::class, 'index'])->name('signup.ui');
         Route::post('/signup', [\App\Http\Controllers\Auth\SignupController::class, 'signup'])->name('auth.signup');
         Route::post('/signup/verify', [\App\Http\Controllers\Auth\SignupController::class, 'verify'])->name('signup.verify');
@@ -156,6 +156,7 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
         Route::get('/', [\App\Http\Controllers\Admin\StaffController::class, 'index'])->name('admin.staff');
         Route::get('/profile/{id}', [\App\Http\Controllers\Admin\StaffController::class, 'profile'])->name('admin.staff.profile');
         Route::post('/add', [\App\Http\Controllers\Admin\StaffController::class, 'add'])->name('admin.staff.add');
+        Route::post('/edit/{id}', [\App\Http\Controllers\Admin\StaffController::class, 'edit'])->name('admin.staff.edit');
     });
 
     Route::prefix('payments')->group(function () {
