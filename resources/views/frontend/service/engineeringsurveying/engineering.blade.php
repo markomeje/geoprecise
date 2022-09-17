@@ -1,6 +1,6 @@
 @include('layout.header')
 
-<title>Engineering Surveying &#8211; GeoPrecise</title>
+<title>Engineering Survey &#8211; GeoPrecise</title>
 <script type="text/javascript">
 window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":".\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.0"}};
 /*! This file is auto-generated */
@@ -128,10 +128,10 @@ h3 .kyber-infobox-title {
 		<div class="row">
 			<div class="col-md-12">			
 				<h1 class="page-title">
-					Engineering Surveying				</h1>
+					Engineering Survey				</h1>
 									<div class="page-breadcrumbs">
 					<div class="breadcrumb">
-<a href="{{route('home')}}">Home</a> > <span class="kyber-readcrumb"><a href="{{route('services')}}">Service</a></span> > <span class="current">Engineering Surveying</span>
+<a href="{{route('home')}}">Home</a> > <span class="kyber-readcrumb"><a href="{{route('ourservices')}}">Service</a></span> > <span class="current">Engineering Survey</span>
 </div>					</div>
 								</div>				
 		</div>
@@ -148,7 +148,7 @@ h3 .kyber-infobox-title {
 			</div>
 <div class="kyber-service-entry-content">
 	<div class="vc_row wpb_row vc_row-fluid vc_custom_1586492563322 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="wpb_column vc_column_container vc_col-sm-12 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper">
-<h2 style="font-size: 30px;line-height: 40px;text-align: left" class="vc_custom_heading">Engineering Surveying</h2>
+<h2 style="font-size: 30px;line-height: 40px;text-align: left" class="vc_custom_heading">Engineering Survey</h2>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1645453767700">
 		<div class="wpb_wrapper">
 			<p>Throughout our long, successful history in Engineering Survey, we’ve worked with land development, surveying, environmental, and GIS experts — delivering creative, cost-effective designs that transform communities.</p>
@@ -157,6 +157,16 @@ h3 .kyber-infobox-title {
 		</div>
 	</div>
 </div></div></div></div>
+
+<section id="recent-services-1" class="widget widget_recent_services">
+	<ul>
+	<li>
+	<div class="kyber-service-content mt-5">
+	<a href="{{route('highway')}}" style="background-color:#fd972e;">Highway &#038; Road</a>
+	</div>					
+	</li>					
+	</ul>
+	</section>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1587041640569 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="kyber-accordion-style-1 wpb_column vc_column_container vc_col-sm-12 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_tta-container" data-vc-action="collapse"><div class="vc_general vc_tta vc_tta-accordion vc_tta-color-white vc_tta-style-classic vc_tta-shape-square vc_tta-o-shape-group vc_tta-controls-align-left vc_custom_1586514109796"><div class="vc_tta-panels-container"><div class="vc_tta-panels">
 <div class="vc_tta-panel vc_active" id="1585768153475-cb5f3c27-f8e2" data-vc-content=".vc_tta-panel-body">
 <div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-right"><a href="#1585768153475-cb5f3c27-f8e2" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Ensure That Your Project Starts Off the Right Way</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div>
@@ -187,7 +197,7 @@ h3 .kyber-infobox-title {
 <div class="vc_tta-panel-body">
 	<div class="wpb_text_column wpb_content_element ">
 		<div class="wpb_wrapper">
-			<p>When it comes to engineering surveying and land development, every project is unique. Our Surveyors work with our clients to realize their vision from the initial concept development through construction.</p>
+			<p>When it comes to Engineering Survey and proprty development, every project is unique. Our Surveyors work with our clients to realize their vision from the initial concept development through construction.</p>
 <p>We work closely with our clients to design projects that meet their goals, all while balancing site constraints, the environment, and costs. Through our data-driven, best-in-class technologies, we are able to deliver our products on time and under budget — and ensure that our projects meet the quality standards our customers have come to expect.</p>
 
 		</div>
@@ -344,44 +354,38 @@ h3 .kyber-infobox-title {
 		</div>
 <!-- #primary -->
 		<aside id="secondary" class="widget-area sidebar col-sm-12 col-md-12 col-lg-4 col-xl-3 column">
-			<section id="recent-services-1" class="widget widget_recent_services">		<h2 class="widget-title">Recent services</h2>		<ul>
+			<section id="recent-services-1" class="widget widget_recent_services">		<h2 class="widget-title">Recent services</h2>			<ul>
+									<li>
+										<div class="kyber-service-content">
+						<a href="{{route('cadastral')}}">Cadastral &#038; Property Survey</a>
+											</div>					
+				</li>
+					
 											<li>
 										<div class="kyber-service-content">
-						<a href="{{route('highway')}}">Highway &#038; Road</a>
+						<a href="{{route('engineering')}}">Engineering Survey</a>
+											</div>					
+				</li>
+										<li>
+										<div class="kyber-service-content">
+						<a href="{{route('hydrographic')}}">Hydrographic Survey</a>
+											</div>					
+				</li>
+						
+											<li>
+										<div class="kyber-service-content">
+						<a href="{{route('mapping')}}">GIS &#038; Digital Mapping</a>
 											</div>					
 				</li>
 											<li>
 										<div class="kyber-service-content">
-						<a href="{{route('engineering')}">Engineering Surveying</a>
+						<a href="{{route('sensing')}}">Remote Sensing</a>
 											</div>					
 				</li>
-											<li>
-										<div class="kyber-service-content">
-						<a href="{{route('aerial')}" aria-current="page">Aerial Data Collection</a>
-											</div>					
-				</li>
-											<li>
-										<div class="kyber-service-content">
-						<a href="{{route('mapping')}">GIS &#038; Mapping</a>
-											</div>					
-				</li>
-											<li>
-										<div class="kyber-service-content">
-						<a href="{{route('sensing')}">Remote Sensing</a>
-											</div>					
-				</li>
-											<li>
-										<div class="kyber-service-content">
-						<a href="{{route('cadastral')}">Cadastral &#038; Land Survey</a>
-											</div>					
-				</li>
-											<li>
-										<div class="kyber-service-content">
-						<a href="{{route('hydrographic')}">Hydrographic Survey</a>
-											</div>					
-				</li>
+						
 					</ul>
-		</section><section id="custom_html-1" class="widget_text widget widget_custom_html"><h2 class="widget-title">Download</h2>
+		</section>
+			<section id="custom_html-1" class="widget_text widget widget_custom_html"><h2 class="widget-title">Download</h2>
 <div class="textwidget custom-html-widget">
 <div class="item-download">
 	<a href="#" target="_blank" rel="noopener"> Company Report 2019 <span class="far fa-file-alt"></span> </a>

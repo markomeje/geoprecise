@@ -214,13 +214,12 @@ h3 .kyber-infobox-title {
 <li id="menu-item-2303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2303">
 <a href="{{route('ourservices')}}">Our Services</a>
 <ul class="sub-menu">
+	
+	<li id="menu-item-2312" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2312"><a href="{{route('cadastral')}}">Cadastral &#038; Property Survey</a></li>
+	<li id="menu-item-2313" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2313"><a href="{{route('engineering')}}">Engineering Survey</a></li>
 	<li id="menu-item-2311" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2311"><a href="{{route('hydrographic')}}">Hydrographic Survey</a></li>
-	<li id="menu-item-2312" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2312"><a href="{{route('cadastral')}}">Cadastral &#038; Land Survey</a></li>
-	<li id="menu-item-2313" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2313"><a href="{{route('engineering')}}">Engineering Surveying</a></li>
+	<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2318"><a href="{{route('mapping')}}">GIS &#038; Digital Mapping</a></li>
 	<li id="menu-item-2314" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2314"><a href="{{route('sensing')}}">Remote Sensing</a></li>
-	<li id="menu-item-2315" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2315"><a href="{{route('highway')}}">Highway &#038; Road</a></li>
-	<li id="menu-item-2316" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2316"><a href="{{route('aerial')}}">Aerial Data Collection</a></li>
-	<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2318"><a href="{{route('mapping')}}">GIS &#038; Mapping</a></li>
 </ul>
 </li>
 <li id="menu-item-2319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2319"><a href="{{route('ourprojects')}}">Projects</a></li>
@@ -904,7 +903,7 @@ h3 .kyber-infobox-title {
 							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
 					<section id="text-2" class="widget widget_text">			<div class="textwidget">
 <p><img loading="lazy" class="alignnone size-full wp-image-225 footer-logo" src="./../wp-content/uploads/2022/02/GEO-P-f-tt-2.png" alt="" width="202" height="42"></p>
-<h3 class="skincolor">+234 806 054 5860</h3>
+<h5 class="skincolor">+234 806 054 5860</h5>
 <p><a class="btn btn-outline-light footer-button" href="{{route('contact')}}">REQUEST WITH ONLINE FORM</a></p>
 </div>
 		</section>				</div>
@@ -951,7 +950,8 @@ h3 .kyber-infobox-title {
 					<section id="text-3" class="widget widget_text"><h2 class="widget-title">Get In Touch</h2>			<div class="textwidget">
 <ul class="widget_contact">
 <li>
-<i class="fa fa-map-marker"></i>Suit E01b, The statement Complex, Plot 1002, First Avenue, Central Business District, Abuja.</li>
+<i class="fa fa-map-marker"></i>26 Moorehouse Street Ogui,
+				Enugu, Enugu State.</li>
 <li>
 <i class="fa fa-envelope-o"></i>Email : <a href="mailto:contact@geoprecisegroup.com">contact@geoprecisegroup.com</a>
 </li>

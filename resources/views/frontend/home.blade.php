@@ -192,7 +192,7 @@ h3 .kyber-infobox-title {
 							</rs-layer><!--
 
 							--><rs-layer id="slider-2-slide-4-layer-1" data-type="text" data-color="#09162a" data-rsp_ch="on" data-xy="xo:60px,60px,48px,47px;y:m;yo:-81px,-81px,-51px,-21px;" data-text="w:nowrap;s:90,90,55,40;l:100,100,60,46;fw:700;" data-frame_0="x:50,50,31,19;" data-frame_1="st:850;sp:1000;sR:850;" data-frame_999="o:0;st:w;sR:7150;" style="z-index:9;font-family:'Rajdhani';">Geospatial Intelligence <br>
-<span class="skincolor">& Digital Mapping</span> 
+							<span class="skincolor">& Digital Mapping</span> 
 							</rs-layer><!--
 
 							--><rs-layer id="slider-2-slide-4-layer-2" data-type="shape" data-rsp_ch="on" data-xy="xo:30px;yo:160px,160px,103px,114px;" data-text="w:normal;s:20,20,12,7;l:0,0,15,9;" data-dim="w:5px,5px,3px,3px;h:270px,270px,174px,80px;" data-frame_0="x:-50,-50,-31,-19;" data-frame_1="sp:1000;" data-frame_999="o:0;st:w;sR:8000;" style="z-index:11;background-color:#fd972e;"> 
@@ -201,7 +201,7 @@ h3 .kyber-infobox-title {
 							--><rs-layer id="slider-2-slide-4-layer-3" data-type="text" data-color="#09162a" data-rsp_ch="on" data-xy="xo:67px,67px,53px,32px;yo:409px,409px,261px,181px;" data-text="w:normal;s:20,20,15,9;l:25,25,18,11;fw:600;" data-vbility="t,t,t,f" data-frame_0="x:50,50,31,19;" data-frame_1="st:1050;sp:1000;sR:1050;" data-frame_999="o:0;st:w;sR:6950;" style="z-index:8;font-family:'Muli';">We provide feasible technical solutions on all frontiers. 
 							</rs-layer><!--
 
-							--><rs-layer id="slider-2-slide-4-layer-4" class="rev-btn" data-type="button" data-rsp_ch="on" data-xy="xo:30px;y:m;yo:130px,130px,83px,63px;" data-text="w:normal;s:16,16,12,13;l:55,55,38,35;ls:0,0,0.5px,0.5px;fw:600;" data-dim="minh:0px,0px,none,none;" data-padding="r:30,30,20,15;l:30,30,20,15;" data-frame_0="y:bottom;" data-frame_1="st:1490;sp:1000;sR:1490;" data-frame_999="o:0;st:w;sR:6510;" data-frame_hover="bgc:#09162a;bor:0px,0px,0px,0px;sp:200;e:power1.inOut;" style="z-index:12;background-color:#fd972e;font-family:'Muli';">Read More 
+							--><rs-layer id="slider-2-slide-4-layer-4" class="rev-btn" data-type="button" data-rsp_ch="on" data-xy="xo:30px;y:m;yo:130px,130px,83px,63px;" data-text="w:normal;s:16,16,12,13;l:55,55,38,35;ls:0,0,0.5px,0.5px;fw:600;" data-dim="minh:0px,0px,none,none;" data-padding="r:30,30,20,15;l:30,30,20,15;" data-frame_0="y:bottom;" data-frame_1="st:1490;sp:1000;sR:1490;" data-frame_999="o:0;st:w;sR:6510;" data-frame_hover="bgc:#09162a;bor:0px,0px,0px,0px;sp:200;e:power1.inOut;" style="z-index:12;background-color:#fd972e;font-family:'Muli';"><a href="#" style="color:white;">Read More</a>
 							</rs-layer><!--
 -->						</rs-slide>
 						<rs-slide style="position: absolute;" data-key="rs-5" data-title="Slide" data-thumb="./wp-content/uploads/2022/04/shutterstock_146632814-1H-a-Copy-50x100.jpg" data-in="o:0;" data-out="a:false;">
@@ -211,7 +211,7 @@ h3 .kyber-infobox-title {
 							</rs-layer><!--
 
 							--><rs-layer id="slider-2-slide-5-layer-1" data-type="text" data-color="#09162a" data-rsp_ch="on" data-xy="xo:60px,60px,48px,47px;y:m;yo:-81px,-81px,-51px,-21px;" data-text="w:nowrap;s:90,90,55,40;l:100,100,60,46;fw:700;" data-frame_0="x:50,50,31,19;" data-frame_1="st:850;sp:1000;sR:850;" data-frame_999="o:0;st:w;sR:7150;" style="z-index:9;font-family:'Rajdhani';">Geospatial Intelligence<br>
-<span class="skincolor">& Digital Mapping</span> 
+							<span class="skincolor">& Digital Mapping</span> 
 							</rs-layer><!--
 
 							--><rs-layer id="slider-2-slide-5-layer-2" data-type="shape" data-rsp_ch="on" data-xy="xo:30px;yo:160px,160px,103px,114px;" data-text="w:normal;s:20,20,12,7;l:0,0,15,9;" data-dim="w:5px,5px,3px,3px;h:270px,270px,174px,80px;" data-frame_0="x:-50,-50,-31,-19;" data-frame_1="sp:1000;" data-frame_999="o:0;st:w;sR:8000;" style="z-index:11;background-color:#fd972e;"> 
@@ -220,7 +220,7 @@ h3 .kyber-infobox-title {
 							--><rs-layer id="slider-2-slide-5-layer-3" data-type="text" data-color="#09162a" data-rsp_ch="on" data-xy="xo:67px,67px,53px,32px;yo:409px,409px,261px,181px;" data-text="w:normal;s:20,20,15,9;l:25,25,18,11;fw:600;" data-vbility="t,t,t,f" data-frame_0="x:50,50,31,19;" data-frame_1="st:1050;sp:1000;sR:1050;" data-frame_999="o:0;st:w;sR:6950;" style="z-index:8;font-family:'Muli';">We provide feasible technical solutions on all frontiers. 
 							</rs-layer><!--
 
-							--><rs-layer id="slider-2-slide-5-layer-4" class="rev-btn" data-type="button" data-rsp_ch="on" data-xy="xo:30px;y:m;yo:130px,130px,83px,63px;" data-text="w:normal;s:16,16,12,13;l:55,55,38,35;ls:0,0,0.5px,0.5px;fw:600;" data-dim="minh:0px,0px,none,none;" data-padding="r:30,30,20,15;l:30,30,20,15;" data-frame_0="y:bottom;" data-frame_1="st:1490;sp:1000;sR:1490;" data-frame_999="o:0;st:w;sR:6510;" data-frame_hover="bgc:#09162a;bor:0px,0px,0px,0px;sp:200;e:power1.inOut;" style="z-index:12;background-color:#fd972e;font-family:'Muli';">Read More 
+							--><rs-layer id="slider-2-slide-5-layer-4" class="rev-btn" data-type="button" data-rsp_ch="on" data-xy="xo:30px;y:m;yo:130px,130px,83px,63px;" data-text="w:normal;s:16,16,12,13;l:55,55,38,35;ls:0,0,0.5px,0.5px;fw:600;" data-dim="minh:0px,0px,none,none;" data-padding="r:30,30,20,15;l:30,30,20,15;" data-frame_0="y:bottom;" data-frame_1="st:1490;sp:1000;sR:1490;" data-frame_999="o:0;st:w;sR:6510;" data-frame_hover="bgc:#09162a;bor:0px,0px,0px,0px;sp:200;e:power1.inOut;" style="z-index:12;background-color:#fd972e;font-family:'Muli';"><a href="#" style="color:white;">Read More</a>
 							</rs-layer><!--
 -->						</rs-slide>
 					</rs-slides>
@@ -230,6 +230,7 @@ h3 .kyber-infobox-title {
 				</script>
 			</rs-module-wrap>
 			<!-- END REVOLUTION SLIDER -->
+
 </div></div></div></div>
 <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1588429507766 vc_custom_1588429507767 vc_custom_1588429507768 kyber-bg-color-secondary kyber-background-position-left-top kyber-title-color-light"><div class="text-center wpb_column vc_column_container vc_col-sm-12 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper">		<div class="kyber_custom_heading_wrapper kyber-custom-heading-129033197 kyber-shortcode-wrapper custom-heading-style-1 subtitle-text- title-text- heading-alignment-center">
 			<div class="kyber-custom-heading-wrapper">
@@ -247,27 +248,30 @@ Services You Need			</h3>
 <div class="vc_row-full-width vc_clearfix"></div>
 <div class="vc_row wpb_row vc_row-fluid row-overflow-vs vc_custom_1586844567078 vc_custom_1586844567079 vc_custom_1586844567080 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="wpb_column vc_column_container vc_col-sm-12 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper">		<div class="kyber_services_wrapper kyber-services-565714610 kyber-shortcode-wrapper text-center services-style-1 services-layout-slider">
 			<div class="owl-carousel owl-theme kyber-service-wrapper" data-owl_options="{&quot;items&quot;:&quot;3&quot;,&quot;loop&quot;:&quot;&quot;,&quot;margin&quot;:30,&quot;nav&quot;:&quot;&quot;,&quot;dots&quot;:&quot;&quot;,&quot;autoplay&quot;:&quot;&quot;,&quot;smartSpeed&quot;:1000,&quot;navText&quot;:[&quot;&lt;i class=&#039;flaticon-left-arrow&#039;&gt;&lt;\/i&gt;&quot;,&quot;&lt;i class=&#039;flaticon-next&#039;&gt;&lt;\/i&gt;&quot;],&quot;responsive&quot;:{&quot;0&quot;:{&quot;items&quot;:1},&quot;576&quot;:{&quot;items&quot;:2},&quot;768&quot;:{&quot;items&quot;:2},&quot;992&quot;:{&quot;items&quot;:3}}}">
-	<div class="kyber-service-slide">
+
+
+<div class="kyber-service-slide">
 	<div class="kyber-service-service-wrapper">				
 		<div class="kyber-service-service-thumbnail-wrapper">
 						<div class="kyber-service-image-container">
-									<img class="service-image" src="./wp-content/uploads/2020/04/Highway-Road-600x340.jpg" alt="Highway &amp; Road">
+									<img class="service-image" src="./wp-content/uploads/2020/03/Cadastral-Land-Survey-600x340.jpg" alt="Cadastral &amp; Land Survey">
 								</div>					
 		</div>
 		<div class="kyber-service-content-cover">
 			<div class="kyber-service-date">
-							<i class="flaticon-survey"></i>
+							<i class="flaticon-survey-1"></i>
 							</div>
 			<div class="kyber-service-title">
-				<h3 class="service-title">Highway &amp; Road</h3>
+				<h3 class="service-title">Cadastral &amp; Property Survey</h3>
 			</div>
 			<div class="kyber-service-content">						
-				<p>At every stage of the road and highway lifecycle, we ensure that the roads are safe and stable.</p>
-				<a href="{{route('highway')}}">Read More</a>
+				<p>We are an award winning land surveying firm. &#8230;</p>
+				<a href="{{route('cadastral')}}">Read More</a>
 			</div>
 		</div>
 	</div>
 </div>
+
 <div class="kyber-service-slide">
 	<div class="kyber-service-service-wrapper">				
 		<div class="kyber-service-service-thumbnail-wrapper">
@@ -280,7 +284,7 @@ Services You Need			</h3>
 							<i class="flaticon-skyline"></i>
 							</div>
 			<div class="kyber-service-title">
-				<h3 class="service-title">Engineering Surveying</h3>
+				<h3 class="service-title">Engineering Survey</h3>
 			</div>
 			<div class="kyber-service-content">						
 				<p>Throughout our long, successful history in Engineering Survey, we’ve worked with land development, surveying, &#8230;</p>
@@ -289,27 +293,29 @@ Services You Need			</h3>
 		</div>
 	</div>
 </div>
+
 <div class="kyber-service-slide">
 	<div class="kyber-service-service-wrapper">				
 		<div class="kyber-service-service-thumbnail-wrapper">
 						<div class="kyber-service-image-container">
-									<img class="service-image" src="./wp-content/uploads/2020/04/Aerial-Data-Collection-600x340.jpg" alt="Aerial Data Collection">
+									<img class="service-image" src="./../wp-content/uploads/2020/03/Hydrographic-Survey-600x340.jpg" alt="Hydrographic Survey">
 								</div>					
 		</div>
 		<div class="kyber-service-content-cover">
 			<div class="kyber-service-date">
-							<i class="flaticon-factory"></i>
+							<i class="flaticon-skyline"></i>
 							</div>
 			<div class="kyber-service-title">
-				<h3 class="service-title">Aerial Data Collection</h3>
+				<h3 class="service-title">Hydrographic Survey</h3>
 			</div>
 			<div class="kyber-service-content">						
-				<p>We offer Aerial Data Collection, Geoprecise is a full-service drone data collection company. We &#8230;</p>
-				<a href="{{route('aerial')}}">Read More</a>
+				<p>Geoprecise Services fleet is equipped with full ocean depth multibeam echo sounder systems for hydrographic &#8230;</p>
+				<a href="{{route('hydrographic')}}">Read More</a>
 			</div>
 		</div>
 	</div>
 </div>
+
 <div class="kyber-service-slide">
 	<div class="kyber-service-service-wrapper">				
 		<div class="kyber-service-service-thumbnail-wrapper">
@@ -322,7 +328,7 @@ Services You Need			</h3>
 							<i class="flaticon-urban"></i>
 							</div>
 			<div class="kyber-service-title">
-				<h3 class="service-title">GIS &amp; Mapping</h3>
+				<h3 class="service-title">GIS &amp; Digital Mapping</h3>
 			</div>
 			<div class="kyber-service-content">						
 				<p>Geoprecise GIS team is trained and knowledgeable in all industries and throughout the public works sector. We provide&#8230;</p>
@@ -352,28 +358,9 @@ Services You Need			</h3>
 		</div>
 	</div>
 </div>
-<div class="kyber-service-slide">
-	<div class="kyber-service-service-wrapper">				
-		<div class="kyber-service-service-thumbnail-wrapper">
-						<div class="kyber-service-image-container">
-									<img class="service-image" src="./wp-content/uploads/2020/03/Cadastral-Land-Survey-600x340.jpg" alt="Cadastral &amp; Land Survey">
-								</div>					
-		</div>
-		<div class="kyber-service-content-cover">
-			<div class="kyber-service-date">
-							<i class="flaticon-survey-1"></i>
-							</div>
-			<div class="kyber-service-title">
-				<h3 class="service-title">Cadastral &amp; Land Survey</h3>
-			</div>
-			<div class="kyber-service-content">						
-				<p>We are an award winning land surveying firm, providing services across Nigeria. We specialize in layout surveys, topographical surveys, boundaries, &#8230;</p>
-				<a href="{{route('cadastral')}}">Read More</a>
-			</div>
-		</div>
-	</div>
+
 </div>
-</div>		</div>
+</div>
 		
 	<div class="wpb_raw_code wpb_content_element wpb_raw_html vc_custom_1587095026726">
 		<div class="wpb_wrapper">
@@ -554,7 +541,7 @@ Services You Need			</h3>
 											<a class="kyber-mfg-popup-image" href="./wp-content/uploads/2022/03/Our-Lady-Of-The-Rosary-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./project/our-lady-of-the-rosary/index.html">
+											<a class="kyber-project-link" href="{{route('rosary')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -582,7 +569,7 @@ Services You Need			</h3>
 											<a class="kyber-mfg-popup-image" href="./wp-content/uploads/2022/03/Senior-Civil-Servants-Association-Of-Nig-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./project/senior-civil-servants-association-of-nig/index.html">
+											<a class="kyber-project-link" href="{{route('civilservant')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -610,7 +597,7 @@ Services You Need			</h3>
 											<a class="kyber-mfg-popup-image" href="./wp-content/uploads/2022/03/Godffrey-Okoye-University-Permanent-Site-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./project/godffrey-okoye-university-permanent-site-2/index.html">
+											<a class="kyber-project-link" href="{{route('godfrey')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -638,7 +625,7 @@ Services You Need			</h3>
 											<a class="kyber-mfg-popup-image" href="./wp-content/uploads/2022/03/PLENTIFF-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./project/plentiff-esther-nohji-engr-nnabuike-and-chioma-vavessa-chukwudi-and-defendant-miss-chinyere-juliet-okenwa-mr-ameachi-nneji-udeh-anayo-oko-mrs-kate-eneh/index.html">
+											<a class="kyber-project-link" href="{{route('plentiff')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -666,7 +653,7 @@ Services You Need			</h3>
 											<a class="kyber-mfg-popup-image" href="./wp-content/uploads/2022/03/Enugu-State-H-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./project/enugu-state-housing-development-cooperation-land-parcel-a1/index.html">
+											<a class="kyber-project-link" href="{{route('housing')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -857,24 +844,17 @@ Services You Need			</h3>
 						<div class="kyber-teammember-image-container">
 							</div>					
 		</div>
-		<div class="kyber-teammember-content-cover">
-			<div class="kyber-teammember-title">
-				<h3 class="teammember-title">
-					<a href="{{route('merit')}}" class="teammember-title-link">Merit Christabel</a>
-				</h3>
-			</div>
-					</div>
-	</div>
-</div>
-<div class="kyber-teammember-slide">
-	<div class="kyber-teammember-wrapper">				
+
+		<div class="kyber-teammember-slide">
+			<a href="{{route('kerry')}}">
+	<div class="kyber-teammember-wrapper" style="height:480px;">				
 		<div class="kyber-teammember-thumbnail-wrapper">
 						<div class="kyber-teammember-image-container">
 									<img class="teammember-image" src="./wp-content/uploads/2020/04/IMG-6397-1-min-600x645.jpg" alt="Hon. John Okwor Nnam">
 								</div>					
 		</div>
-		<div class="kyber-teammember-content-cover">
-			<div class="kyber-teammember-title">
+		<div class="kyber-teammember-content-cover" style="height:125px !important;">
+			<div class="kyber-teammember-title" >
 				<h3 class="teammember-title">
 					<a href="{{route('kerry')}}" class="teammember-title-link">Hon. John Okwor Nnam</a>
 				</h3>
@@ -904,14 +884,20 @@ Services You Need			</h3>
 						</div>
 	</div>
 </div>
+	</div>
+	</a>
+</div>
+
+
 <div class="kyber-teammember-slide">
-	<div class="kyber-teammember-wrapper">				
+	<a href="{{route('godwin')}}">
+	<div class="kyber-teammember-wrapper" style="height:460px;">				
 		<div class="kyber-teammember-thumbnail-wrapper">
 						<div class="kyber-teammember-image-container">
 									<img class="teammember-image" src="./wp-content/uploads/2020/04/IMG-4019-1a-min-600x645.jpg" alt="Surv. Nnam Uchechukwu Godwin (MNIS, MSSSI)">
 								</div>					
 		</div>
-		<div class="kyber-teammember-content-cover">
+		<div class="kyber-teammember-content-cover" style="height:125px !important;">
 			<div class="kyber-teammember-title">
 				<h3 class="teammember-title">
 					<a href="{{route('godwin')}}" class="teammember-title-link">Surv. Nnam Uchechukwu Godwin (MNIS, MSSSI)</a>
@@ -931,20 +917,59 @@ Services You Need			</h3>
 								</li>
 													</ul>
 				</div>
-								<div class="kyber-teammember-designation-container">
-					<h5 class="kyber-teammember-designation">Principal Consultant</h5>
+								<div class="kyber-teammember-designation-container" >
+					<h5 class="kyber-teammember-designation" >Principal Consultant</h5>
 				</div>
 						</div>
 	</div>
+	</a>
 </div>
+
+
 <div class="kyber-teammember-slide">
-	<div class="kyber-teammember-wrapper">				
+	<a href="{{route('john')}}">
+	<div class="kyber-teammember-wrapper" style="height:460px;">				
 		<div class="kyber-teammember-thumbnail-wrapper">
 						<div class="kyber-teammember-image-container">
+									<img class="teammember-image" src="../images/john.JPG" alt="Engr. Nnam John Precious" style="height:380px; width:100%; object-fit: center; object-position: center;">
+								</div>					
+		</div>
+		<div class="kyber-teammember-content-cover" style="height:125px !important;">
+			<div class="kyber-teammember-title">
+				<h3 class="teammember-title">
+					<a href="{{route('john')}}" class="teammember-title-link">Engr. Nnam John Precious</a>
+				</h3>
+			</div>
+							<div class="kyber-teammember-social-profiles-container">
+					<ul class="kyber-teammember-social-profiles">
+														<li class="kyber-teammember-social-profile">
+									<a href="#" target="_blank">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+																<li class="kyber-teammember-social-profile">
+									<a href="#" target="_blank">
+										<i class="fab fa-instagram"></i>
+									</a>
+								</li>
+													</ul>
+				</div>
+								<div class="kyber-teammember-designation-container" >
+					<h5 class="kyber-teammember-designation" >Consultant Engineer</h5>
+				</div>
+						</div>
+	</div>
+	</a>
+</div>
+
+<div class="kyber-teammember-slide">
+	<div class="kyber-teammember-wrapper" style="height:460px;">				
+		<div class="kyber-teammember-thumbnail-wrapper">
+		<div class="kyber-teammember-image-container">
 									<img class="teammember-image" src="./wp-content/uploads/2020/04/DSC_8657-p-3-600x645.jpg" alt="Surv. Okwesili Adaeze Merit">
 								</div>					
 		</div>
-		<div class="kyber-teammember-content-cover">
+		<div class="kyber-teammember-content-cover" style="height:125px !important;">
 			<div class="kyber-teammember-title">
 				<h3 class="teammember-title">
 					<a href="{{route('merit')}}" class="teammember-title-link">Surv. Okwesili Adaeze Merit</a>
@@ -970,52 +995,15 @@ Services You Need			</h3>
 						</div>
 	</div>
 </div>
+
 <div class="kyber-teammember-slide">
-	<div class="kyber-teammember-wrapper">				
-		<div class="kyber-teammember-thumbnail-wrapper">
-						<div class="kyber-teammember-image-container">
-									<img class="teammember-image" src="./wp-content/uploads/2020/01/img-04-600x645.jpg" alt="Engr. Nnam John Precious">
-								</div>					
-		</div>
-		<div class="kyber-teammember-content-cover">
-			<div class="kyber-teammember-title">
-				<h3 class="teammember-title">
-					<a href="{{route('john')}}" class="teammember-title-link">Engr. Nnam John Precious</a>
-				</h3>
-			</div>
-							<div class="kyber-teammember-social-profiles-container">
-					<ul class="kyber-teammember-social-profiles">
-														<li class="kyber-teammember-social-profile">
-									<a href="#" target="_blank">
-										<i class="fab fa-facebook-f"></i>
-									</a>
-								</li>
-																<li class="kyber-teammember-social-profile">
-									<a href="#" target="_blank">
-										<i class="fab fa-tumblr"></i>
-									</a>
-								</li>
-																<li class="kyber-teammember-social-profile">
-									<a href="#" target="_blank">
-										<i class="fab fa-twitter"></i>
-									</a>
-								</li>
-													</ul>
-				</div>
-								<div class="kyber-teammember-designation-container">
-					<h5 class="kyber-teammember-designation">Consultant Engineer</h5>
-				</div>
-						</div>
-	</div>
-</div>
-<div class="kyber-teammember-slide">
-	<div class="kyber-teammember-wrapper">				
+	<div class="kyber-teammember-wrapper" style="height:460px;">				
 		<div class="kyber-teammember-thumbnail-wrapper">
 						<div class="kyber-teammember-image-container">
 									<img class="teammember-image" src="./wp-content/uploads/2020/04/IMG-4017-1a-min-600x645.jpg" alt="Nnam Benjamin Onyedikachi">
 								</div>					
 		</div>
-		<div class="kyber-teammember-content-cover">
+		<div class="kyber-teammember-content-cover" style="height:125px !important;">
 			<div class="kyber-teammember-title">
 				<h3 class="teammember-title">
 					<a href="{{route('benjamin')}}" class="teammember-title-link">Nnam Benjamin Onyedikachi</a>
@@ -1047,13 +1035,13 @@ Services You Need			</h3>
 	</div>
 </div>
 <div class="kyber-teammember-slide">
-	<div class="kyber-teammember-wrapper">				
+	<div class="kyber-teammember-wrapper" style="height:460px;">				
 		<div class="kyber-teammember-thumbnail-wrapper">
 						<div class="kyber-teammember-image-container">
 									<img class="teammember-image" src="./wp-content/uploads/2020/02/WhatsApp-Image-2022-02-23-at-12.14.12-PM-600x645.jpeg" alt="Hilary .U. Azuh, Esq.">
 								</div>					
 		</div>
-		<div class="kyber-teammember-content-cover">
+		<div class="kyber-teammember-content-cover" style="height:125px !important;">
 			<div class="kyber-teammember-title">
 				<h3 class="teammember-title">
 					<a href="{{route('hilary')}}" class="teammember-title-link">Hilary .U. Azuh, Esq.</a>
@@ -1334,7 +1322,7 @@ Services You Need			</h3>
 							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
 					<section id="text-2" class="widget widget_text">			<div class="textwidget">
 <p><img loading="lazy" class="alignnone size-full wp-image-225 footer-logo" src="./wp-content/uploads/2022/02/GEO-P-f-tt-2.png" alt="" width="202" height="42"></p>
-<h3 class="skincolor">+234 806 054 5860</h3>
+<h5 class="skincolor">+234 806 054 5860</h5>
 <p><a class="btn btn-outline-light footer-button" href="{{route('contact')}}">REQUEST WITH ONLINE FORM</a></p>
 </div>
 		</section>				</div>
@@ -1381,7 +1369,7 @@ Services You Need			</h3>
 					<section id="text-3" class="widget widget_text"><h2 class="widget-title">Get In Touch</h2>			<div class="textwidget">
 <ul class="widget_contact">
 <li>
-<i class="fa fa-map-marker"></i>Suit E01b, The statement Complex, Plot 1002, First Avenue, Central Business District, Abuja.</li>
+<i class="fa fa-map-marker"></i>26 Moorehouse Street Ogui,Enugu, Enugu State. </li>
 <li>
 <i class="fa fa-envelope-o"></i>Email : <a href="mailto:contact@geoprecisegroup.com">contact@geoprecisegroup.com</a>
 </li>

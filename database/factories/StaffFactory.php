@@ -21,6 +21,7 @@ class StaffFactory extends Factory
             'created_by' => rand(1, 20),
             'user_id' => $this->faker->randomElement([1, 2, 3, 4]),
             'address' => $this->faker->address(),
+            'code' => strtoupper($this->faker->text($maxNbChars = 6)),
             'status' => $this->faker->randomElement(Staff::STATUS),
         ];
     }

@@ -8,7 +8,11 @@
       <!-- End Navbar -->
       <div class="container-fluid py-4">
           <div class="p-4 bg-white border-radius-lg">
-            <div class="alert alert-info border-0 mb-4 text-white">Total Staff {{ $staffs->total() }}</div>
+            <div class="alert alert-info border-0 mb-4 text-white d-flex justify-content-between align-items-center">
+              <span class="text-white">All Staff ({{ $staffs->total() }})</span>
+              <span class="text-white cursor-pointer" data-bs-toggle="modal" data-bs-target="#add-staff">Add Staff</span>
+            </div>
+            @include('admin.staff.partials.add')
             @if(empty($staffs->count()))
               <div class="alert alert-danger border-0 text-white">No staff yet</div>
             @else

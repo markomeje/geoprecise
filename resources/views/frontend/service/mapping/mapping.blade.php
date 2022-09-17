@@ -129,10 +129,10 @@ h3 .kyber-infobox-title {
 		<div class="row">
 			<div class="col-md-12">			
 				<h1 class="page-title">
-					GIS &#038; Mapping				</h1>
+					GIS &#038; Digital Mapping				</h1>
 									<div class="page-breadcrumbs">
 					<div class="breadcrumb">
-<a href="{{route('home')}}">Home</a> > <span class="kyber-readcrumb"><a href="{{route('services')}}">Service</a></span> > <span class="current">GIS & Mapping</span>
+<a href="{{route('home')}}">Home</a> > <span class="kyber-readcrumb"><a href="{{route('ourservices')}}">Service</a></span> > <span class="current">GIS & Digital Mapping</span>
 </div>					</div>
 								</div>				
 		</div>
@@ -149,7 +149,7 @@ h3 .kyber-infobox-title {
 			</div>
 <div class="kyber-service-entry-content">
 	<div class="vc_row wpb_row vc_row-fluid vc_custom_1586492563322 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="wpb_column vc_column_container vc_col-sm-12 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper">
-<h2 style="font-size: 30px;line-height: 40px;text-align: left" class="vc_custom_heading">GIS and Mapping</h2>
+<h2 style="font-size: 30px;line-height: 40px;text-align: left" class="vc_custom_heading">GIS and Digital Mapping</h2>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1645448409846">
 		<div class="wpb_wrapper">
 			<p>Geoprecise GIS team is trained and knowledgeable in all industries and throughout the public works sector. We provide practical geospatial mapping solutions regardless of the scale. Whether it’s analyzing a single parcel, a state, or the nation, the diverse experience and backgrounds of our GIS consulting team allows us to achieve the best results with our GIS services.</p>
@@ -213,31 +213,33 @@ h3 .kyber-infobox-title {
 		<h2 class="screen-reader-text">Post navigation</h2>
 		<div class="nav-links">
 <div class="nav-previous"><a href="{{route('sensing')}}" rel="prev">Remote Sensing</a></div>
-<div class="nav-next"><a href="{{route('aerial')}}" rel="next">Aerial Data Collection</a></div>
+<div class="nav-next"><a href="{{route('engineering')}}">Engineering Survey</a></div>
 </div>
 	</nav>			</main><!-- #main -->
 		</div>
 <!-- #primary -->
 		<aside id="secondary" class="widget-area sidebar col-sm-12 col-md-12 col-lg-4 col-xl-3 column">
-			<section id="recent-services-1" class="widget widget_recent_services">		<h2 class="widget-title">Recent services</h2>		<ul>
-											<li>
+			<section id="recent-services-1" class="widget widget_recent_services">		<h2 class="widget-title">Recent services</h2>			<ul>
+									<li>
 										<div class="kyber-service-content">
-						<a href="{{route('highway')}}">Highway &#038; Road</a>
+						<a href="{{route('cadastral')}}">Cadastral &#038; Property Survey</a>
 											</div>					
 				</li>
+					
 											<li>
 										<div class="kyber-service-content">
-						<a href="{{route('engineering')}}">Engineering Surveying</a>
+						<a href="{{route('engineering')}}">Engineering Survey</a>
 											</div>					
 				</li>
-											<li>
+										<li>
 										<div class="kyber-service-content">
-						<a href="{{route('aerial')}}" aria-current="page">Aerial Data Collection</a>
+						<a href="{{route('hydrographic')}}">Hydrographic Survey</a>
 											</div>					
 				</li>
+						
 											<li>
 										<div class="kyber-service-content">
-						<a href="{{route('mapping')}}">GIS &#038; Mapping</a>
+						<a href="{{route('mapping')}}">GIS &#038; Digital Mapping</a>
 											</div>					
 				</li>
 											<li>
@@ -245,18 +247,10 @@ h3 .kyber-infobox-title {
 						<a href="{{route('sensing')}}">Remote Sensing</a>
 											</div>					
 				</li>
-											<li>
-										<div class="kyber-service-content">
-						<a href="{{route('cadastral')}}">Cadastral &#038; Land Survey</a>
-											</div>					
-				</li>
-											<li>
-										<div class="kyber-service-content">
-						<a href="{{route('hydrographic')}}">Hydrographic Survey</a>
-											</div>					
-				</li>
+						
 					</ul>
-		</section><section id="custom_html-1" class="widget_text widget widget_custom_html"><h2 class="widget-title">Download</h2>
+		</section>
+		<section id="custom_html-1" class="widget_text widget widget_custom_html"><h2 class="widget-title">Download</h2>
 <div class="textwidget custom-html-widget">
 <div class="item-download">
 	<a href="#" target="_blank" rel="noopener"> Company Report 2019 <span class="far fa-file-alt"></span> </a>

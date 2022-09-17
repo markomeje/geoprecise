@@ -209,13 +209,11 @@ h3 .kyber-infobox-title {
 <li id="menu-item-2303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2303">
 <a href="{{route('ourservices')}}">Our Services</a>
 <ul class="sub-menu">
+	<li id="menu-item-2312" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2312"><a href="{{route('cadastral')}}">Cadastral &#038; Property Survey</a></li>
+	<li id="menu-item-2313" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2313"><a href="{{route('engineering')}}">Engineering Survey</a></li>
 	<li id="menu-item-2311" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2311"><a href="{{route('hydrographic')}}">Hydrographic Survey</a></li>
-	<li id="menu-item-2312" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2312"><a href="{{route('cadastral')}}">Cadastral &#038; Land Survey</a></li>
-	<li id="menu-item-2313" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2313"><a href="{{route('engineering')}}">Engineering Surveying</a></li>
+	<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2318"><a href="{{route('mapping')}}">GIS &#038; Digital Mapping</a></li>
 	<li id="menu-item-2314" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2314"><a href="{{route('sensing')}}">Remote Sensing</a></li>
-	<li id="menu-item-2315" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2315"><a href="{{route('highway')}}">Highway &#038; Road</a></li>
-	<li id="menu-item-2316" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2316"><a href="{{route('aerial')}}">Aerial Data Collection</a></li>
-	<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2318"><a href="{{route('mapping')}}">GIS &#038; Mapping</a></li>
 </ul>
 </li>
 <li id="menu-item-2319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2319"><a href="{{route('ourprojects')}}">Projects</a></li>

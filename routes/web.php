@@ -119,7 +119,7 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
     Route::prefix('staff')->group(function () {
         Route::get('/', [\App\Http\Controllers\Admin\StaffController::class, 'index'])->name('admin.staff');
         Route::get('/profile/{id}', [\App\Http\Controllers\Admin\StaffController::class, 'profile'])->name('admin.staff.profile');
-        Route::post('/add', [\App\Http\Controllers\Admin\StaffController::class, 'add'])->name('admin.client.add');
+        Route::post('/add', [\App\Http\Controllers\Admin\StaffController::class, 'add'])->name('admin.staff.add');
     });
 
     Route::prefix('payments')->group(function () {

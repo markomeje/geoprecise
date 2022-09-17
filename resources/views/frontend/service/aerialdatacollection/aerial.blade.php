@@ -129,7 +129,7 @@ h3 .kyber-infobox-title {
 					Aerial Data Collection				</h1>
 									<div class="page-breadcrumbs">
 					<div class="breadcrumb">
-<a href="{{route('home')}}">Home</a> > <span class="kyber-readcrumb"><a href="{{route('services')}}">Service</a></span> > <span class="current">Aerial Data Collection</span>
+<a href="{{route('home')}}">Home</a> > <span class="kyber-readcrumb"><a href="{{route('ourservices')}}">Service</a></span> > <span class="current">Aerial Data Collection</span>
 </div>					</div>
 								</div>				
 		</div>
@@ -160,32 +160,34 @@ h3 .kyber-infobox-title {
 	<nav class="navigation post-navigation" aria-label="Posts">
 		<h2 class="screen-reader-text">Post navigation</h2>
 		<div class="nav-links">
-<div class="nav-previous"><a href="{{route('mapping')}}" rel="prev">GIS &#038; Mapping</a></div>
-<div class="nav-next"><a href="{{route('engineering')}}" rel="next">Engineering Surveying</a></div>
+<div class="nav-previous"><a href="{{route('mapping')}}" rel="prev">GIS &#038; Digital Mapping</a></div>
+<div class="nav-next"><a href="{{route('engineering')}}" rel="next">Engineering Survey</a></div>
 </div>
 	</nav>			</main><!-- #main -->
 		</div>
 <!-- #primary -->
 		<aside id="secondary" class="widget-area sidebar col-sm-12 col-md-12 col-lg-4 col-xl-3 column">
-			<section id="recent-services-1" class="widget widget_recent_services">		<h2 class="widget-title">Recent services</h2>		<ul>
-											<li>
+			<section id="recent-services-1" class="widget widget_recent_services">		<h2 class="widget-title">Recent services</h2>			<ul>
+									<li>
 										<div class="kyber-service-content">
-						<a href="{{route('highway')}}">Highway &#038; Road</a>
+						<a href="{{route('cadastral')}}">Cadastral &#038; Property Survey</a>
 											</div>					
 				</li>
+					
 											<li>
 										<div class="kyber-service-content">
-						<a href="{{route('engineering')}}">Engineering Surveying</a>
+						<a href="{{route('engineering')}}">Engineering Survey</a>
 											</div>					
 				</li>
-											<li>
+										<li>
 										<div class="kyber-service-content">
-						<a href="{{route('aerial')}}" aria-current="page">Aerial Data Collection</a>
+						<a href="{{route('hydrographic')}}">Hydrographic Survey</a>
 											</div>					
 				</li>
+						
 											<li>
 										<div class="kyber-service-content">
-						<a href="{{route('mapping')}}">GIS &#038; Mapping</a>
+						<a href="{{route('mapping')}}">GIS &#038; Digital Mapping</a>
 											</div>					
 				</li>
 											<li>
@@ -193,16 +195,7 @@ h3 .kyber-infobox-title {
 						<a href="{{route('sensing')}}">Remote Sensing</a>
 											</div>					
 				</li>
-											<li>
-										<div class="kyber-service-content">
-						<a href="{{route('cadastral')}}">Cadastral &#038; Land Survey</a>
-											</div>					
-				</li>
-											<li>
-										<div class="kyber-service-content">
-						<a href="{{route('hydrographic')}}">Hydrographic Survey</a>
-											</div>					
-				</li>
+						
 					</ul>
 		</section><section id="custom_html-1" class="widget_text widget widget_custom_html"><h2 class="widget-title">Download</h2>
 <div class="textwidget custom-html-widget">

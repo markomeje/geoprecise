@@ -170,13 +170,11 @@ h3 .kyber-infobox-title {
 <li id="menu-item-2303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2303">
 <a href="{{route('ourservices')}}">Our Services</a>
 <ul class="sub-menu">
+	<li id="menu-item-2312" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2312"><a href="{{route('cadastral')}}">Cadastral &#038; Property Survey</a></li>
+	<li id="menu-item-2313" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2313"><a href="{{route('engineering')}}">Engineering Survey</a></li>
 	<li id="menu-item-2311" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2311"><a href="{{route('hydrographic')}}">Hydrographic Survey</a></li>
-	<li id="menu-item-2312" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2312"><a href="{{route('cadastral')}}">Cadastral &#038; Land Survey</a></li>
-	<li id="menu-item-2313" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2313"><a href="{{route('engineering')}}">Engineering Surveying</a></li>
+	<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2318"><a href="{{route('mapping')}}">GIS &#038; Digital Mapping</a></li>
 	<li id="menu-item-2314" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2314"><a href="{{route('sensing')}}">Remote Sensing</a></li>
-	<li id="menu-item-2315" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2315"><a href="{{route('highway')}}">Highway &#038; Road</a></li>
-	<li id="menu-item-2316" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2316"><a href="{{route('aerial')}}">Aerial Data Collection</a></li>
-	<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2318"><a href="{{route('mapping')}}">GIS &#038; Mapping</a></li>
 </ul>
 </li>
 <li id="menu-item-2319" class=" current-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2319"><a href="{{route('ourprojects')}}">Projects</a></li>
@@ -231,7 +229,7 @@ h3 .kyber-infobox-title {
 					Our Projects				</h1>
 									<div class="page-breadcrumbs">
 					<div class="breadcrumb">
-<a href="./../index.html">Home</a> > <span class="current">Our Projects</span>
+<a href="{{route('home')}}">Home</a> > <span class="current">Our Projects</span>
 </div>					</div>
 								</div>				
 		</div>
@@ -265,7 +263,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2022/03/Our-Lady-Of-The-Rosary-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/our-lady-of-the-rosary/index.html">
+											<a class="kyber-project-link" href="{{route('rosary')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -294,7 +292,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2022/03/Senior-Civil-Servants-Association-Of-Nig-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/senior-civil-servants-association-of-nig/index.html">
+											<a class="kyber-project-link" href="{{route('civilservant')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -323,7 +321,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2022/03/Godffrey-Okoye-University-Permanent-Site-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/godffrey-okoye-university-permanent-site-2/index.html">
+											<a class="kyber-project-link" href="{{route('godfrey')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -332,7 +330,7 @@ h3 .kyber-infobox-title {
 				</div>
 									<span class="kyber-project-category">
 						Layout Survey					</span>
-								</div>			
+			</div>			
 			<span class="h-one"></span>
 			<span class="h-two"></span>
 			<span class="h-three"></span>
@@ -352,7 +350,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2022/03/PLENTIFF-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/plentiff-esther-nohji-engr-nnabuike-and-chioma-vavessa-chukwudi-and-defendant-miss-chinyere-juliet-okenwa-mr-ameachi-nneji-udeh-anayo-oko-mrs-kate-eneh/index.html">
+											<a class="kyber-project-link" href="{{route('plentiff')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -381,7 +379,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2022/03/Enugu-State-H-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/enugu-state-housing-development-cooperation-land-parcel-a1/index.html">
+											<a class="kyber-project-link" href="{{route('enugustate')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -410,7 +408,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2022/03/Enugu-State-Hou-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/enugu-state-housing-development-cooperation-land-parcel-a2/index.html">
+											<a class="kyber-project-link" href="{{route('housing')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -439,7 +437,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2022/02/img-02-1024x85-rfg3-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/gateway-layout/index.html">
+											<a class="kyber-project-link" href="{{route('gateway')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -468,7 +466,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2020/04/img-0cvf3-1-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/umuobuna-anigbo-family-land/index.html">
+											<a class="kyber-project-link" href="{{route('umuobunafamily')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -497,7 +495,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2020/04/img-0cvf3-4-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/umuhnahman-nwoko-family/index.html">
+											<a class="kyber-project-link" href="{{route('nwoko')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -526,7 +524,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2020/04/img-03-rt-tu1-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/umuoko-aga-family/index.html">
+											<a class="kyber-project-link" href="{{route('umuokofamily')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -555,7 +553,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2020/04/img-0cvf3-2-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/dr-aka-chike-anigbo/index.html">
+											<a class="kyber-project-link" href="{{route('chikeanigbo')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -584,7 +582,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2020/04/img-03-rt-tu1-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/destiny-layout/index.html">
+											<a class="kyber-project-link" href="{{route('destiny')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -613,7 +611,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2020/04/img-0cvf3-3-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/golden-gate-layout/index.html">
+											<a class="kyber-project-link" href="{{route('goldengate')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -642,7 +640,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2020/04/img-0ftyh3-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/peace-layout/index.html">
+											<a class="kyber-project-link" href="{{route('peacelayout')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -671,7 +669,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2020/04/img-0cvf3-2-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/choice-city-layout/index.html">
+											<a class="kyber-project-link" href="{{route('choicecity')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -700,7 +698,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2020/04/img-0cvf3-3-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/blue-lake-layout/index.html">
+											<a class="kyber-project-link" href="{{route('bluelake')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -729,7 +727,8 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2020/04/img-0cvf3-1-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/upright-city-a-and-b-layout/index.html">
+											<a class="kyber-project-link" href="
+											">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -758,7 +757,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2020/04/img-der03-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/triumphant-a-and-b-layout/index.html">
+											<a class="kyber-project-link" href="{{route('triumphantlayout')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -787,7 +786,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2020/04/img-0cvf3-2-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/victory-layout/index.html">
+											<a class="kyber-project-link" href="{{route('victorylayout')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -816,7 +815,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2020/04/img-0cvf3-4-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/monic-layout/index.html">
+											<a class="kyber-project-link" href="{{route('moniclayout')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -845,7 +844,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2020/04/img-03-rt-tu1-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/building-construction/index.html">
+											<a class="kyber-project-link" href="{{route('buildingconstruction')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -874,7 +873,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2020/04/img-0cvf3-5-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/institute-design/index.html">
+											<a class="kyber-project-link" href="{{route('institutedesign')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -903,7 +902,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2020/04/img-0cvf3-3-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/bridge-contract/index.html">
+											<a class="kyber-project-link" href="{{route('bridge')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -932,7 +931,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2020/04/img-0cvf3-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/mall-design/index.html">
+											<a class="kyber-project-link" href="{{route('malldesign')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -961,7 +960,8 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2022/02/img-02-1024x85-rfg3-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/house-planning/index.html">
+											<a class="kyber-project-link" href="
+											">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -990,7 +990,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2020/04/img-0cvf3-4-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/railway-construction/index.html">
+											<a class="kyber-project-link" href="{{route('railwayconstruction')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -1019,7 +1019,7 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2020/04/img-0cvf3-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/apartment-design/index.html">
+											<a class="kyber-project-link" href="{{route('apartmentdesign')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
@@ -1048,16 +1048,16 @@ h3 .kyber-infobox-title {
 											<a class="kyber-mfg-popup-image" href="./../wp-content/uploads/2020/04/img-0cvf3-3-600x700.jpg">
 							<i class="fas fa-expand"></i>
 						</a>
-											<a class="kyber-project-link" href="./../project/highway-contract/index.html">
+				<a class="kyber-project-link" href="{{route('highwaycontract')}}">
 						<i class="fas fa-link"></i>
 					</a>
 				</div>
 				<div class="kyber-project-title">
-					<h3 class="project-title">Estatern Homes Layout</h3>
+				<h3 class="project-title">Estatern Homes Layout</h3>
 				</div>
-									<span class="kyber-project-category">
-						Layout Survey					</span>
-								</div>			
+			<span class="kyber-project-category">
+				Layout Survey</span>
+			</div>			
 			<span class="h-one"></span>
 			<span class="h-two"></span>
 			<span class="h-three"></span>

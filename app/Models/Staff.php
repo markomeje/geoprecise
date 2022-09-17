@@ -15,12 +15,13 @@ class Staff extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'form_id',
-        'plot_numbers',
-        'staff_id',
-        'completed',
-        'description',
-        'client_id',
+        'fullname',
+        'role',
+        'user_id',
+        'code',
+        'title',
+        'address',
+        'created_by',
         'status',
     ];
 
@@ -29,10 +30,20 @@ class Staff extends Model
      *
      * @var array<int, string>
      */
-    public const STATUS = [
-        'active',
-        'banned',
-        'pending',
-        'denied',
+    public static $roles = [
+        'Secretary',
+        'Admin',
+        'Manager',
+    ];
+
+    /**
+     * Staff titles
+     *
+     * @var array<int, string>
+     */
+    public static $titles = [
+        'Surv',
+        'Mr',
+        'Miss',
     ];
 }

@@ -170,13 +170,12 @@ h3 .kyber-infobox-title {
 <li id="menu-item-2303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2303">
 <a href="{{route('ourservices')}}">Our Services</a>
 <ul class="sub-menu">
+	
+	<li id="menu-item-2312" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2312"><a href="{{route('cadastral')}}">Cadastral &#038; Property Survey</a></li>
+	<li id="menu-item-2313" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2313"><a href="{{route('engineering')}}">Engineering Survey</a></li>
 	<li id="menu-item-2311" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2311"><a href="{{route('hydrographic')}}">Hydrographic Survey</a></li>
-	<li id="menu-item-2312" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2312"><a href="{{route('cadastral')}}">Cadastral &#038; Land Survey</a></li>
-	<li id="menu-item-2313" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2313"><a href="{{route('engineering')}}">Engineering Surveying</a></li>
+	<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2318"><a href="{{route('mapping')}}">GIS &#038; Digital Mapping</a></li>
 	<li id="menu-item-2314" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2314"><a href="{{route('sensing')}}">Remote Sensing</a></li>
-	<li id="menu-item-2315" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2315"><a href="{{route('highway')}}">Highway &#038; Road</a></li>
-	<li id="menu-item-2316" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2316"><a href="{{route('aerial')}}">Aerial Data Collection</a></li>
-	<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2318"><a href="{{route('mapping')}}">GIS &#038; Mapping</a></li>
 </ul>
 </li>
 <li id="menu-item-2319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2319"><a href="{{route('ourprojects')}}">Projects</a></li>
@@ -223,58 +222,18 @@ h3 .kyber-infobox-title {
 
 		<div class="container">
 	<div class="row">
-		<div class="col-sm-12">
-			<div id="primary" class="content-area">
-				<main id="main" class="site-main">
-
-				
-<article id="post-830" class="post-830 page type-page status-publish hentry without-image">
-
-	
-	
-	<div class="entry-content">
-		<div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid kyber-z-index-down vc_custom_1588160106953 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default vc_row-no-padding"><div class="wpb_column vc_column_container vc_col-sm-12 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper">
-	<div class="wpb_raw_code wpb_content_element wpb_raw_html">
-		<div class="wpb_wrapper">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1969.982506434621!2d7.495180944051406!3d9.066951900000007!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0bb302e2d753%3A0xfa2781d1e39056c!2s1002%20First%20Ave%2C%20Central%20Business%20District%20900103%2C%20Abuja!5e0!3m2!1sen!2sng!4v1645260356545!5m2!1sen!2sng" width="600" height="638" style="border:0; width:100%;" allowfullscreen></iframe>
-		</div>
-	</div>
-</div></div></div></div>
-<div class="vc_row-full-width vc_clearfix"></div>
-<div class="vc_row wpb_row vc_row-fluid kyber-contact-info kyber-shadow-1 row-overflow-vs kyber-z-index-3 vc_custom_1645273583856 vc_custom_1645273583857 kyber-bg-color-white kyber-background-position-left-top kyber-title-color-default"><div class="wpb_column vc_column_container vc_col-sm-12 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper">
-<div class="vc_row wpb_row vc_inner vc_row-fluid kyber-contact-box-style1 contact-page-box vc_custom_1586752534157 vc_row-has-fill kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="text-center wpb_column vc_column_container vc_col-sm-12 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper">		<div class="kyber_infobox_wrapper kyber-infobox-550276119 kyber-shortcode-wrapper align-items-left icon-type-font infobox-style-4  vc_custom_1645273645585">
-			<div class="kyber-infobox-wrapper">
-						<div class="kyber-infobox-icon"><i class="flaticon-call"></i></div>
-						<div class="kyber-infobox-content">
-					<div class="kyber-infobox-text">For any inquiries call now</div>
-						<h3 class="kyber-infobox-title">+234 806 054 5860</h3>
-				</div>
-</div>
-		</div>
-		
-	<div class="wpb_text_column wpb_content_element  mb-0">
-		<div class="wpb_wrapper">
-			<p><a href="mail:contact@geoprecisegroup.com">contact@geoprecisegroup.com</a></p>
-
-		</div>
-	</div>
-
-	<div class="wpb_text_column wpb_content_element  text-uppercase mb-0">
-		<div class="wpb_wrapper">
-			<h4>Contact Us</h4>
-
-		</div>
-	</div>
-</div></div></div></div>
+		<div class="col-sm-12 col-md-12 col-lg-12 mt-0">
+			
 <div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1586752737469 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default">
 <div class="wpb_column vc_column_container vc_col-sm-6 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper">		<div class="kyber_infobox_wrapper kyber-infobox-1868898395 kyber-shortcode-wrapper icon-type-font infobox-style-3">
 			<div class="kyber-infobox-wrapper">
 						<div class="kyber-infobox-icon"><i class="flaticon-pin"></i></div>
 						<div class="kyber-infobox-content">
 					<h3 class="kyber-infobox-title">Address</h3>
-						<div class="kyber-infobox-text">Suit E01b, The statement Complex, Plot 1002, First Avenue, Central Business District, Abuja.</div>
-				</div>
-</div>		</div>
+						<div class="kyber-infobox-text">26 Moorehouse Street Ogui,
+				Enugu, Enugu State.</div>
+								</div>
+				</div>		</div>
 		</div></div></div>
 <div class="wpb_column vc_column_container vc_col-sm-6 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div>
 </div>
@@ -305,36 +264,47 @@ h3 .kyber-infobox-title {
 </div>
 <div class="kyber-form kyber-form-style-1">
 <div class="row">
-<div class="col-sm-4">
+<div class="col-sm-12 col-md-6 col-lg-4">
 <div class="input-group">
-                    <span class="wpcf7-form-control-wrap" data-name="FirstName"><input type="text" name="FirstName" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="First Name"></span>
-			</div>
-<div class="input-group">
-                 <span class="wpcf7-form-control-wrap" data-name="email-129"><input type="email" name="email-129" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email address"></span>
-			</div>
+<div class="input-group-append">
+<span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fas fa-user"></i></span>
 </div>
-<div class="col-sm-4">
-<div class="input-group">
-                    <span class="wpcf7-form-control-wrap" data-name="your-subject"><input type="text" name="your-subject" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Subject"></span>
+<input type="text" name="FirstName" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="First Name">
 			</div>
 <div class="input-group">
-                <span class="wpcf7-form-control-wrap" data-name="number-110"><input type="text" name="number-110" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone Number"></span>
-			</div>
+<div class="input-group-append">
+<span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fas fa-envelope"></i></span>
 </div>
-<div class="col-sm-4">
+<input type="email" name="email-129" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email address">
+</div>
+</div>
+<div class="col-sm-12 col-md-6 col-lg-4">
 <div class="input-group">
-                <span class="wpcf7-form-control-wrap" data-name="textarea-693"><textarea name="textarea-693" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Write Message"></textarea></span><br>
-<span class="wpcf7-form-control-wrap" data-name="math-quiz"><label><span class="wpcf7-quiz-label">What is 12+48=?</span> <input type="text" name="math-quiz" size="40" class="wpcf7-form-control wpcf7-quiz" autocomplete="off" aria-required="true" aria-invalid="false"></label><input type="hidden" name="_wpcf7_quiz_answer_math-quiz" value="55b4ba2f7b1469d2a9d2069446f08e11"></span>
+<div class="input-group-append">
+<span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fa fa-tasks"></i></span>
+</div>
+<input type="text" name="your-subject" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Subject">
+</div>
+<div class="input-group">
+ <div class="input-group-append">
+<span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fa fa-phone"></i></span>
+</div>
+<input type="text" name="number-110" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone Number">
+</div>
+</div>
+<div class="col-sm-12 col-md-6 col-lg-4">
+<div class="input-group">
+                <span class="wpcf7-form-control-wrap" data-name="textarea-693"><textarea name="textarea-693" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Write Message"></textarea></span>
 			</div>
 </div>
 </div>
 <div class="row">
-<div class="col-sm-4">
+<div class="col-sm-12 col-md-6 col-lg-4">
 <div class="input-group">
 				<span class="wpcf7-form-control-wrap" data-name="checkbox-75"><span class="wpcf7-form-control wpcf7-checkbox"><span class="wpcf7-list-item first last"><input type="checkbox" name="checkbox-75[]" value="I accept the privacy and terms."><span class="wpcf7-list-item-label"> I accept the privacy and terms.</span></span></span></span>
 			</div>
 </div>
-<div class="col-sm-4">
+<div class="col-sm-12 col-md-6 col-lg-4">
 <div class="input-group">
 				<input type="submit" value="Submit Request" class="wpcf7-form-control has-spinner wpcf7-submit">
 			</div>
@@ -344,10 +314,29 @@ h3 .kyber-infobox-title {
 <div class="wpcf7-response-output" aria-hidden="true"></div>
 </form>
 </div>
-</div></div></div></div>
-	</div>
-<!-- .entry-content -->
+</div></div></div>
+<div id="primary" class="content-area">
+				<main id="main" class="mt-4 mb-0 p-0" >
 
+				
+<article id="post-830" class="post-830 page type-page status-publish hentry without-image">
+
+	
+	
+	<div class="entry-content mb-0" style="margin-bottom: 0px !important;">
+		<div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid kyber-z-index-down vc_custom_1588160106953 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default vc_row-no-padding"><div class="wpb_column vc_column_container vc_col-sm-12 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html">
+		<div class="wpb_wrapper">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.646824983353!2d7.492906450671298!3d6.439381725898378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1044a3d8f51f6071%3A0x6b07f5ee68d7e660!2s26%20Moorehouse%20St%2C%20Ogui%20400001%2C%20Enugu!5e0!3m2!1sen!2sng!4v1651311872154!5m2!1sen!2sng" width="600" height="560" style="border:0; width:100%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			
+		</div>
+	</div>
+</div></div></div></div>
+<div class="vc_row-full-width vc_clearfix"></div>
+<div class="vc_row wpb_row vc_row-fluid kyber-contact-info kyber-shadow-1 row-overflow-vs kyber-z-index-3 vc_custom_1645273583856 vc_custom_1645273583857 kyber-bg-color-white kyber-background-position-left-top kyber-title-color-default"><div class="wpb_column vc_column_container vc_col-sm-12 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default">
+
+<!-- .entry-content -->
+	
 	</article><!-- #post-830 -->
 
 				</main><!-- #main -->
@@ -360,7 +349,7 @@ h3 .kyber-infobox-title {
 	</div>
 <!-- #content -->
 
-@include('../layout.footer')
+@include('layout.footer')
 
 </body>
 

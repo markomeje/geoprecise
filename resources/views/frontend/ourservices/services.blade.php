@@ -171,13 +171,11 @@ h3 .kyber-infobox-title {
 <li id="menu-item-2303" class="current-menu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2303">
 <a href="{{route('ourservices')}}">Our Services</a>
 <ul class="sub-menu">
+	<li id="menu-item-2312" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2312"><a href="{{route('cadastral')}}">Cadastral &#038; Property Survey</a></li>
+	<li id="menu-item-2313" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2313"><a href="{{route('engineering')}}">Engineering Survey</a></li>
 	<li id="menu-item-2311" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2311"><a href="{{route('hydrographic')}}">Hydrographic Survey</a></li>
-	<li id="menu-item-2312" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2312"><a href="{{route('cadastral')}}">Cadastral &#038; Land Survey</a></li>
-	<li id="menu-item-2313" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2313"><a href="{{route('engineering')}}">Engineering Surveying</a></li>
+	<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2318"><a href="{{route('mapping')}}">GIS &#038; Digital Mapping</a></li>
 	<li id="menu-item-2314" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2314"><a href="{{route('sensing')}}">Remote Sensing</a></li>
-	<li id="menu-item-2315" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2315"><a href="{{route('highway')}}">Highway &#038; Road</a></li>
-	<li id="menu-item-2316" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2316"><a href="{{route('aerial')}}">Aerial Data Collection</a></li>
-	<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2318"><a href="{{route('mapping')}}">GIS &#038; Mapping</a></li>
 </ul>
 </li>
 <li id="menu-item-2319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2319"><a href="{{route('ourprojects')}}">Projects</a></li>
@@ -254,117 +252,8 @@ h3 .kyber-infobox-title {
 	<div class="entry-content">
 		<div class="vc_row wpb_row vc_row-fluid text-center vc_custom_1588487607131 vc_custom_1588487607134 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="wpb_column vc_column_container vc_col-sm-12 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper">		<div class="kyber_services_wrapper kyber-services-149372087 kyber-shortcode-wrapper services-style-1 services-layout-grid">
 			<div class="row">
+
 			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-			<div class="kyber-service-slide">
-	<div class="kyber-service-service-wrapper">				
-		<div class="kyber-service-service-thumbnail-wrapper">
-						<div class="kyber-service-image-container">
-									<img class="service-image" src="./../wp-content/uploads/2020/04/Highway-Road-600x340.jpg" alt="Highway &amp; Road">
-								</div>					
-		</div>
-		<div class="kyber-service-content-cover">
-			<div class="kyber-service-date">
-							<i class="flaticon-survey"></i>
-							</div>
-			<div class="kyber-service-title">
-				<h3 class="service-title">Highway &amp; Road</h3>
-			</div>
-			<div class="kyber-service-content">						
-				<p>At every stage of the road and highway lifecycle, we ensure that the roads are safe and stable.</p>
-				<a href="./../service/highway-road/index.html">Read More</a>
-			</div>
-		</div>
-	</div>
-</div>		</div>
-				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-			<div class="kyber-service-slide">
-	<div class="kyber-service-service-wrapper">				
-		<div class="kyber-service-service-thumbnail-wrapper">
-						<div class="kyber-service-image-container">
-									<img class="service-image" src="./../wp-content/uploads/2020/04/Engineering-Surveying-600x340.jpg" alt="Engineering Surveying">
-								</div>					
-		</div>
-		<div class="kyber-service-content-cover">
-			<div class="kyber-service-date">
-							<i class="flaticon-skyline"></i>
-							</div>
-			<div class="kyber-service-title">
-				<h3 class="service-title">Engineering Surveying</h3>
-			</div>
-			<div class="kyber-service-content">						
-				<p>Throughout our long, successful history in Engineering Survey, we’ve worked with land development, surveying, &#8230;</p>
-				<a href="./../service/engineering-surveying/index.html">Read More</a>
-			</div>
-		</div>
-	</div>
-</div>		</div>
-				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-			<div class="kyber-service-slide">
-	<div class="kyber-service-service-wrapper">				
-		<div class="kyber-service-service-thumbnail-wrapper">
-						<div class="kyber-service-image-container">
-									<img class="service-image" src="./../wp-content/uploads/2020/04/Aerial-Data-Collection-600x340.jpg" alt="Aerial Data Collection">
-								</div>					
-		</div>
-		<div class="kyber-service-content-cover">
-			<div class="kyber-service-date">
-							<i class="flaticon-factory"></i>
-							</div>
-			<div class="kyber-service-title">
-				<h3 class="service-title">Aerial Data Collection</h3>
-			</div>
-			<div class="kyber-service-content">						
-				<p>We offer Aerial Data Collection, Geoprecise is a full-service drone data collection company. We &#8230;</p>
-				<a href="./../service/aerial-data-collection/index.html">Read More</a>
-			</div>
-		</div>
-	</div>
-</div>		</div>
-				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-			<div class="kyber-service-slide">
-	<div class="kyber-service-service-wrapper">				
-		<div class="kyber-service-service-thumbnail-wrapper">
-						<div class="kyber-service-image-container">
-									<img class="service-image" src="./../wp-content/uploads/2020/04/GIS-Mapping-600x340.jpg" alt="GIS &amp; Mapping">
-								</div>					
-		</div>
-		<div class="kyber-service-content-cover">
-			<div class="kyber-service-date">
-							<i class="flaticon-urban"></i>
-							</div>
-			<div class="kyber-service-title">
-				<h3 class="service-title">GIS &amp; Mapping</h3>
-			</div>
-			<div class="kyber-service-content">						
-				<p>Geoprecise GIS team is trained and knowledgeable in all industries and throughout the public works sector. We provide&#8230;</p>
-				<a href="./../service/gis-mapping/index.html">Read More</a>
-			</div>
-		</div>
-	</div>
-</div>		</div>
-				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-			<div class="kyber-service-slide">
-	<div class="kyber-service-service-wrapper">				
-		<div class="kyber-service-service-thumbnail-wrapper">
-						<div class="kyber-service-image-container">
-									<img class="service-image" src="./../wp-content/uploads/2020/04/Remote-Sensing-600x340.jpg" alt="Remote Sensing">
-								</div>					
-		</div>
-		<div class="kyber-service-content-cover">
-			<div class="kyber-service-date">
-							<i class="flaticon-motorway"></i>
-							</div>
-			<div class="kyber-service-title">
-				<h3 class="service-title">Remote Sensing</h3>
-			</div>
-			<div class="kyber-service-content">						
-				<p>Geoprecise uses state-of-the-art remote sensing technology to transform spatial data into practical knowledge that supports &#8230;</p>
-				<a href="./../service/remote-sensing/index.html">Read More</a>
-			</div>
-		</div>
-	</div>
-</div>		</div>
-				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 			<div class="kyber-service-slide">
 	<div class="kyber-service-service-wrapper">				
 		<div class="kyber-service-service-thumbnail-wrapper">
@@ -377,21 +266,23 @@ h3 .kyber-infobox-title {
 							<i class="flaticon-survey-1"></i>
 							</div>
 			<div class="kyber-service-title">
-				<h3 class="service-title">Cadastral &amp; Land Survey</h3>
+				<h3 class="service-title">Cadastral &amp; Property Survey</h3>
 			</div>
 			<div class="kyber-service-content">						
-				<p>We are an award winning land surveying firm, providing services across Nigeria. We specialize in layout surveys, topographical surveys, boundaries, &#8230;</p>
-				<a href="./../service/cadastral-land-survey/index.html">Read More</a>
+				<p>We are an award winning land surveying firm across Nigeria.  &#8230;</p>
+				<a href="{{route('cadastral')}}">Read More</a>
 			</div>
 		</div>
 	</div>
-</div>		</div>
-				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+</div>
+</div>
+
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 			<div class="kyber-service-slide">
 	<div class="kyber-service-service-wrapper">				
 		<div class="kyber-service-service-thumbnail-wrapper">
 						<div class="kyber-service-image-container">
-									<img class="service-image" src="./../wp-content/uploads/2020/03/Hydrographic-Survey-600x340.jpg" alt="Hydrographic Survey">
+									<img class="service-image" src="./../wp-content/uploads/2020/04/Engineering-Surveying-600x340.jpg" alt="Engineering Surveying">
 								</div>					
 		</div>
 		<div class="kyber-service-content-cover">
@@ -399,15 +290,93 @@ h3 .kyber-infobox-title {
 							<i class="flaticon-skyline"></i>
 							</div>
 			<div class="kyber-service-title">
-				<h3 class="service-title">Hydrographic Survey</h3>
+				<h3 class="service-title">Engineering Survey</h3>
 			</div>
 			<div class="kyber-service-content">						
-				<p>Geoprecise Services fleet is equipped with full ocean depth multibeam echo sounder systems for hydrographic/bathymetric surveys and charting. &#8230;</p>
-				<a href="./../service/hydrographic-survey/index.html">Read More</a>
+				<p>Throughout our long, successful history in Engineering Survey, we’ve worked with land development, surveying, &#8230;</p>
+				<a href="{{route('engineering')}}">Read More</a>
 			</div>
 		</div>
 	</div>
-</div>		</div>
+</div>
+</div>
+
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+<div class="kyber-service-slide">
+	<div class="kyber-service-service-wrapper">				
+	<div class="kyber-service-service-thumbnail-wrapper">
+	<div class="kyber-service-image-container">
+	<img class="service-image" src="./../wp-content/uploads/2020/03/Hydrographic-Survey-600x340.jpg" alt="Hydrographic Survey">
+	</div>					
+		</div>
+		<div class="kyber-service-content-cover">
+		<div class="kyber-service-date">
+		<i class="flaticon-skyline"></i>
+		</div>
+			<div class="kyber-service-title">
+				<h3 class="service-title">Hydrographic Survey</h3>
+			</div>
+			<div class="kyber-service-content">						
+				<p>Geoprecise Services fleet is equipped with full ocean depth multibeam echo sounder systems for hydrographic &#8230;</p>
+				<a href="{{route('hydrographic')}}">Read More</a>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+	<div class="kyber-service-slide">
+	<div class="kyber-service-service-wrapper">				
+	<div class="kyber-service-service-thumbnail-wrapper">
+	<div class="kyber-service-image-container">
+	<img class="service-image" src="./../wp-content/uploads/2020/04/GIS-Mapping-600x340.jpg" alt="GIS &amp; Mapping">
+	</div>					
+	</div>
+	<div class="kyber-service-content-cover">
+	<div class="kyber-service-date">
+	<i class="flaticon-urban"></i>
+	</div>
+	<div class="kyber-service-title">
+	<h3 class="service-title">GIS &amp; Digital Mapping</h3>
+	</div>
+	<div class="kyber-service-content">						
+	<p>Geoprecise GIS team is trained and knowledgeable in all industries and throughout the public works sector. We provide&#8230;</p>
+	<a href="{{route('mapping')}}">Read More</a>
+	</div>
+	</div>
+	</div>
+</div>
+</div>
+
+<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+	<div class="kyber-service-slide">
+	<div class="kyber-service-service-wrapper">				
+	<div class="kyber-service-service-thumbnail-wrapper">
+	<div class="kyber-service-image-container">
+	<img class="service-image" src="./../wp-content/uploads/2020/04/Remote-Sensing-600x340.jpg" alt="Remote Sensing">
+	</div>					
+		</div>
+		<div class="kyber-service-content-cover">
+			<div class="kyber-service-date">
+							<i class="flaticon-motorway"></i>
+							</div>
+			<div class="kyber-service-title">
+				<h3 class="service-title">Remote Sensing</h3>
+			</div>
+			<div class="kyber-service-content">						
+				<p>Geoprecise uses state-of-the-art remote sensing technology to transform spatial data into practical knowledge that supports &#8230;</p>
+				<a href="{{route('sensing')}}">Read More</a>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+		
+	
+	
+
+	
 		</div>
 		</div>
 		</div></div></div></div>

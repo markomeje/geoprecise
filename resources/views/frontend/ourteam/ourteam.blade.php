@@ -115,7 +115,109 @@ h3 .kyber-infobox-title {
 <body class="blog hfeed wpb-js-composer js-comp-ver-6.8.0 vc_responsive">
 
 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>
-@include('layout.navbar')
+
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<header id="masthead" class="site-header-container header-layout-2">
+	
+<div class="site-header">
+	<div class="container site-header-top">
+		<div class="d-flex align-items-center">
+			<div class="site-logo">
+	<a href="{{route('home')}}" rel="home">
+		<img class="img-fluid" src="./../wp-content/uploads/2022/02/logo-geop-1.png" alt="GeoPrecise">
+	</a>
+</div>
+<div class="kyber-header-button-container">
+	<div class="kyber-header-button">
+		<a class="kyber-header-button" href="{{route('contact')}}" title="Request a Quote">Request a Quote</a>
+	</div>
+</div>
+<div class="contact-info">
+			<div class="contact-phone contact-item d-flex align-items-center">
+			<i class="flaticon-call skincolor"></i>
+			<div class="contact-list">
+				<span class="contact-label">Call Now</span>
+				<span class="contact-value">
+					<a href="tel:+2348060545860">+234 806 054 5860</a>
+				</span>
+			</div>
+		</div>
+				<div class="contact-email contact-item d-flex align-items-center">
+			<i class="flaticon-email-1 skincolor"></i>
+			<div class="contact-list">
+				<span class="contact-label">Email</span>
+				<span class="contact-value">
+					<a href="mailto:contact@geoprecisegroup.com">contact@geoprecisegroup.com</a>
+				</span>
+			</div>
+		</div>
+		</div>
+			<div id="site-navigation-mobile">
+			</div>
+		</div>
+	</div>
+	<div class="header-stickable-wrap">	
+		<div class="header-stickable">
+			<div class="kyber-bg-color-secondary">
+				<div class="container">
+					<div class="site-header-bottom">
+						<div class="header-menu-area-inner d-flex align-items-center justify-content-between">
+							<nav id="site-navigation" class="main-navigation">
+								<div class="menu-menu-1-container"><ul id="primary-menu" class="menu">
+<li id="menu-item-2305" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2305 "><a href="{{route('home')}}">Home</a></li>
+<li id="menu-item-2303" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2303">
+<a href="{{route('ourservices')}}">Our Services</a>
+<ul class="sub-menu">
+	
+	<li id="menu-item-2312" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2312"><a href="{{route('cadastral')}}">Cadastral &#038; Property Survey</a></li>
+	<li id="menu-item-2313" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2313"><a href="{{route('engineering')}}">Engineering Survey</a></li>
+	<li id="menu-item-2311" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2311"><a href="{{route('hydrographic')}}">Hydrographic Survey</a></li>
+	<li id="menu-item-2318" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2318"><a href="{{route('mapping')}}">GIS &#038; Digital Mapping</a></li>
+	<li id="menu-item-2314" class="menu-item menu-item-type-post_type menu-item-object-service menu-item-2314"><a href="{{route('sensing')}}">Remote Sensing</a></li>
+</ul>
+</li>
+<li id="menu-item-2319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2319"><a href="{{route('ourprojects')}}">Projects</a></li>
+<li id="menu-item-2321" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-828 current_page_item current_page_parent menu-item-2321"><a href="{{route('blog')}}" aria-current="page">Blog</a></li>
+<li id="menu-item-2323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2323">
+<a href="{{route('contact')}}">Contact Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-2307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2307"><a href="{{route('faq')}}">FAQ</a></li>
+</ul>
+</li>
+<li id="menu-item-2324" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2324">
+<a href="{{route('aboutus')}}">About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-2308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2308"><a href="{{route('ourteam')}}">Our Team</a></li>
+</ul>
+</li>
+</ul></div>							</nav> 
+							<div class="header-right-side">
+								<div class="social-info-wrapper">
+	<ul class="social-info">
+				<li class="social-facebook">
+				<a class="social-icon" target="_blank" href="https://facebook.com/geoprecise1" rel="nofollow"><i class="fab fa-facebook"></i></a>
+			</li>
+						<li class="social-facebook">
+				<a class="social-icon" target="_blank" href="https://twitter.com/geoprecise1" rel="nofollow"><i class="fab fa-twitter"></i></a>
+			</li>
+						<li class="social-facebook">
+				<a class="social-icon" target="_blank" href="https://www.instagram.com/geoprecise1" rel="nofollow"><i class="fab fa-instagram"></i></a>
+			</li>
+				</ul>
+</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</header>
+
 
 	<div id="content" class="site-content">
 
@@ -149,31 +251,16 @@ h3 .kyber-infobox-title {
 	<div class="entry-content">
 		<div class="vc_row wpb_row vc_row-fluid vc_custom_1588486761964 vc_custom_1588486761967 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="wpb_column vc_column_container vc_col-sm-12 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper">		<div class="kyber_team_wrapper kyber-team-586878948 kyber-shortcode-wrapper team-style-1 team-layout-grid">
 			<div class="row">
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-			<div class="kyber-teammember-slide">
-	<div class="kyber-teammember-wrapper">				
-		<div class="kyber-teammember-thumbnail-wrapper">
-						<div class="kyber-teammember-image-container">
-							</div>					
-		</div>
-		<div class="kyber-teammember-content-cover">
-			<div class="kyber-teammember-title">
-				<h3 class="teammember-title">
-					<a href="{{route('merit')}}" class="teammember-title-link">Merit Christabel</a>
-				</h3>
-			</div>
-					</div>
-	</div>
-</div>		</div>
+				<a href="{{route('kerry')}}">	
 				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 			<div class="kyber-teammember-slide">
-	<div class="kyber-teammember-wrapper">				
+	<div class="kyber-teammember-wrapper">			
 		<div class="kyber-teammember-thumbnail-wrapper">
-						<div class="kyber-teammember-image-container">
+						<div class="kyber-teammember-image-container" style="height:350px;">
 									<img class="teammember-image" src="./../wp-content/uploads/2020/04/IMG-6397-1-min-600x645.jpg" alt="Hon. John Okwor Nnam">
 								</div>					
 		</div>
-		<div class="kyber-teammember-content-cover">
+		<div class="kyber-teammember-content-cover" style="height:125px !important;">
 			<div class="kyber-teammember-title">
 				<h3 class="teammember-title">
 					<a href="{{route('kerry')}}" class="teammember-title-link">Hon. John Okwor Nnam</a>
@@ -204,11 +291,14 @@ h3 .kyber-infobox-title {
 						</div>
 	</div>
 </div>		</div>
+				</a>
+				<a href="{{route('godwin')}}">	
+
 				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 			<div class="kyber-teammember-slide">
 	<div class="kyber-teammember-wrapper">				
 		<div class="kyber-teammember-thumbnail-wrapper">
-						<div class="kyber-teammember-image-container">
+						<div class="kyber-teammember-image-container" style="height:350px;">
 									<img class="teammember-image" src="./../wp-content/uploads/2020/04/IMG-4019-1a-min-600x645.jpg" alt="Surv. Nnam Uchechukwu Godwin (MNIS, MSSSI)">
 								</div>					
 		</div>
@@ -238,49 +328,18 @@ h3 .kyber-infobox-title {
 						</div>
 	</div>
 </div>		</div>
+				</a>
+				<a href="{{route('john')}}">	
+				
 				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 			<div class="kyber-teammember-slide">
 	<div class="kyber-teammember-wrapper">				
 		<div class="kyber-teammember-thumbnail-wrapper">
-						<div class="kyber-teammember-image-container">
-									<img class="teammember-image" src="./../wp-content/uploads/2020/04/DSC_8657-p-3-600x645.jpg" alt="Surv. Okwesili Adaeze Merit">
+						<div class="kyber-teammember-image-container" style="height:350px;">
+									<img class="teammember-image" src="../images/john.JPG" alt="Engr. Nnam John Precious" style="height:445px; width:100%; object-fit: center; object-position: center;">
 								</div>					
 		</div>
-		<div class="kyber-teammember-content-cover">
-			<div class="kyber-teammember-title">
-				<h3 class="teammember-title">
-					<a href="{{route('merit')}}" class="teammember-title-link">Surv. Okwesili Adaeze Merit</a>
-				</h3>
-			</div>
-							<div class="kyber-teammember-social-profiles-container">
-					<ul class="kyber-teammember-social-profiles">
-														<li class="kyber-teammember-social-profile">
-									<a href="https://facebook.com/merit.christabel" target="_blank">
-										<i class="fab fa-facebook-f"></i>
-									</a>
-								</li>
-																<li class="kyber-teammember-social-profile">
-									<a href="https://twitter.com/ChristabelMerit" target="_blank">
-										<i class="fab fa-twitter"></i>
-									</a>
-								</li>
-													</ul>
-				</div>
-								<div class="kyber-teammember-designation-container">
-					<h5 class="kyber-teammember-designation">Surveyor</h5>
-				</div>
-						</div>
-	</div>
-</div>		</div>
-				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-			<div class="kyber-teammember-slide">
-	<div class="kyber-teammember-wrapper">				
-		<div class="kyber-teammember-thumbnail-wrapper">
-						<div class="kyber-teammember-image-container">
-									<img class="teammember-image" src="./../wp-content/uploads/2020/01/img-04-600x645.jpg" alt="Engr. Nnam John Precious">
-								</div>					
-		</div>
-		<div class="kyber-teammember-content-cover">
+		<div class="kyber-teammember-content-cover" style="height:125px !important;">
 			<div class="kyber-teammember-title">
 				<h3 class="teammember-title">
 					<a href="{{route('john')}}" class="teammember-title-link">Engr. Nnam John Precious</a>
@@ -311,15 +370,54 @@ h3 .kyber-infobox-title {
 						</div>
 	</div>
 </div>		</div>
+				</a>
+				<a href="{{route('merit')}}">	
+				
 				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 			<div class="kyber-teammember-slide">
 	<div class="kyber-teammember-wrapper">				
 		<div class="kyber-teammember-thumbnail-wrapper">
-						<div class="kyber-teammember-image-container">
+						<div class="kyber-teammember-image-container" style="height:350px;">
+									<img class="teammember-image" src="./../wp-content/uploads/2020/04/DSC_8657-p-3-600x645.jpg" alt="Surv. Okwesili Adaeze Merit">
+								</div>					
+		</div>
+		<div class="kyber-teammember-content-cover" style="height:125px !important;">
+			<div class="kyber-teammember-title">
+				<h3 class="teammember-title">
+					<a href="{{route('merit')}}" class="teammember-title-link">Surv. Okwesili Adaeze Merit</a>
+				</h3>
+			</div>
+							<div class="kyber-teammember-social-profiles-container">
+					<ul class="kyber-teammember-social-profiles">
+														<li class="kyber-teammember-social-profile">
+									<a href="https://facebook.com/merit.christabel" target="_blank">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+																<li class="kyber-teammember-social-profile">
+									<a href="https://twitter.com/ChristabelMerit" target="_blank">
+										<i class="fab fa-twitter"></i>
+									</a>
+								</li>
+													</ul>
+				</div>
+								<div class="kyber-teammember-designation-container">
+					<h5 class="kyber-teammember-designation">Surveyor</h5>
+				</div>
+						</div>
+	</div>
+</div>		</div>
+				</a>
+				<a href="{{route('benjamin')}}">	
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+			<div class="kyber-teammember-slide">
+	<div class="kyber-teammember-wrapper">				
+		<div class="kyber-teammember-thumbnail-wrapper">
+						<div class="kyber-teammember-image-container" style="height:350px;">
 									<img class="teammember-image" src="./../wp-content/uploads/2020/04/IMG-4017-1a-min-600x645.jpg" alt="Nnam Benjamin Onyedikachi">
 								</div>					
 		</div>
-		<div class="kyber-teammember-content-cover">
+		<div class="kyber-teammember-content-cover" style="height:125px !important;">
 			<div class="kyber-teammember-title">
 				<h3 class="teammember-title">
 					<a href="{{route('benjamin')}}" class="teammember-title-link">Nnam Benjamin Onyedikachi</a>
@@ -350,15 +448,17 @@ h3 .kyber-infobox-title {
 						</div>
 	</div>
 </div>		</div>
+				</a>
+				<a href="{{route('hilary')}}">	
 				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 			<div class="kyber-teammember-slide">
 	<div class="kyber-teammember-wrapper">				
 		<div class="kyber-teammember-thumbnail-wrapper">
-						<div class="kyber-teammember-image-container">
+						<div class="kyber-teammember-image-container" style="height:350px;">
 									<img class="teammember-image" src="./../wp-content/uploads/2020/02/WhatsApp-Image-2022-02-23-at-12.14.12-PM-600x645.jpeg" alt="Hilary .U. Azuh, Esq.">
 								</div>					
 		</div>
-		<div class="kyber-teammember-content-cover">
+		<div class="kyber-teammember-content-cover" style="height:125px !important;">
 			<div class="kyber-teammember-title">
 				<h3 class="teammember-title">
 					<a href="{{route('hilary')}}" class="teammember-title-link">Hilary .U. Azuh, Esq.</a>
@@ -392,7 +492,7 @@ h3 .kyber-infobox-title {
 					<h5 class="kyber-teammember-designation">Legal</h5>
 				</div>
 						</div>
-	</div>
+	</div>		 </a>
 </div>		</div>
 		</div>
 		</div>

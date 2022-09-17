@@ -132,7 +132,7 @@ h3 .kyber-infobox-title {
 					Remote Sensing				</h1>
 									<div class="page-breadcrumbs">
 					<div class="breadcrumb">
-<a href="{{route('home')}}">Home</a> > <span class="kyber-readcrumb"><a href="{{route('services')}}">Service</a></span> > <span class="current">Remote Sensing</span>
+<a href="{{route('home')}}">Home</a> > <span class="kyber-readcrumb"><a href="{{route('ourservices')}}">Service</a></span> > <span class="current">Remote Sensing</span>
 </div>					</div>
 								</div>				
 		</div>
@@ -162,6 +162,16 @@ h3 .kyber-infobox-title {
 		</div>
 	</div>
 </div></div></div></div>
+
+<section id="recent-services-1" class="widget widget_recent_services">
+	<ul>
+	<li>
+	<div class="kyber-service-content mt-5">
+	<a href="{{route('aerial')}}" style="background-color:#fd972e;" aria-current="page">Aerial Data Collection</a>
+	</div>					
+	</li>
+</ul>
+</section>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1587041640569 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="kyber-accordion-style-1 wpb_column vc_column_container vc_col-sm-12 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_tta-container" data-vc-action="collapse"><div class="vc_general vc_tta vc_tta-accordion vc_tta-color-white vc_tta-style-classic vc_tta-shape-square vc_tta-o-shape-group vc_tta-controls-align-left vc_custom_1586514109796"><div class="vc_tta-panels-container"><div class="vc_tta-panels">
 <div class="vc_tta-panel vc_active" id="1585768153475-cb5f3c27-f8e2" data-vc-content=".vc_tta-panel-body">
 <div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-right"><a href="#1585768153475-cb5f3c27-f8e2" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">Lidar Mapping</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div>
@@ -321,25 +331,27 @@ Transportation corridor mapping, change detection, decision-support tools.</li>
 		</div>
 <!-- #primary -->
 		<aside id="secondary" class="widget-area sidebar col-sm-12 col-md-12 col-lg-4 col-xl-3 column">
-			<section id="recent-services-1" class="widget widget_recent_services">		<h2 class="widget-title">Recent services</h2>		<ul>
-											<li>
+			<section id="recent-services-1" class="widget widget_recent_services">		<h2 class="widget-title">Recent services</h2>			<ul>
+									<li>
 										<div class="kyber-service-content">
-						<a href="{{route('highway')}}">Highway &#038; Road</a>
+						<a href="{{route('cadastral')}}">Cadastral &#038; Property Survey</a>
 											</div>					
 				</li>
+					
 											<li>
 										<div class="kyber-service-content">
-						<a href="{{route('engineering')}}">Engineering Surveying</a>
+						<a href="{{route('engineering')}}">Engineering Survey</a>
 											</div>					
 				</li>
-											<li>
+										<li>
 										<div class="kyber-service-content">
-						<a href="{{route('aerial')}}" aria-current="page">Aerial Data Collection</a>
+						<a href="{{route('hydrographic')}}">Hydrographic Survey</a>
 											</div>					
 				</li>
+						
 											<li>
 										<div class="kyber-service-content">
-						<a href="{{route('mapping')}}">GIS &#038; Mapping</a>
+						<a href="{{route('mapping')}}">GIS &#038; Digital Mapping</a>
 											</div>					
 				</li>
 											<li>
@@ -347,18 +359,10 @@ Transportation corridor mapping, change detection, decision-support tools.</li>
 						<a href="{{route('sensing')}}">Remote Sensing</a>
 											</div>					
 				</li>
-											<li>
-										<div class="kyber-service-content">
-						<a href="{{route('cadastral')}}">Cadastral &#038; Land Survey</a>
-											</div>					
-				</li>
-											<li>
-										<div class="kyber-service-content">
-						<a href="{{route('hydrographic')}}">Hydrographic Survey</a>
-											</div>					
-				</li>
+						
 					</ul>
-		</section><section id="custom_html-1" class="widget_text widget widget_custom_html"><h2 class="widget-title">Download</h2>
+		</section>
+		<section id="custom_html-1" class="widget_text widget widget_custom_html"><h2 class="widget-title">Download</h2>
 <div class="textwidget custom-html-widget">
 <div class="item-download">
 	<a href="#" target="_blank" rel="noopener"> Company Report 2019 <span class="far fa-file-alt"></span> </a>

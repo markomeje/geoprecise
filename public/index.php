@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 define('LARAVEL_START', microtime(true));
 
 /*
-Approvals for payment and plan collection notification mut be sent.
+Approvals for payment and plan collection notification must be sent.
 Lifting and survey must be done before site inspection.
 Must have bought a plot before coming for lifting.
 You can't blacklist any plot - Plots can be resold

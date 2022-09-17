@@ -128,10 +128,10 @@ h3 .kyber-infobox-title {
 		<div class="row">
 			<div class="col-md-12">			
 				<h1 class="page-title">
-					Cadastral &#038; Land Survey				</h1>
+					Cadastral &#038; Property Survey				</h1>
 									<div class="page-breadcrumbs">
 					<div class="breadcrumb">
-<a href="{{route('home')}}">Home</a> > <span class="kyber-readcrumb"><a href="{{route('services')}}">Service</a></span> > <span class="current">Cadastral & Land Survey</span>
+<a href="{{route('home')}}">Home</a> > <span class="kyber-readcrumb"><a href="{{route('ourservices')}}">Service</a></span> > <span class="current">Cadastral & Property Survey</span>
 </div>					</div>
 								</div>				
 		</div>
@@ -143,12 +143,12 @@ h3 .kyber-infobox-title {
 			<main id="main" class="site-main">
 			<div class="kyber-service-thumbnail-container">
 				<div class="post-thumbnail">
-				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/03/Cadastral-Land-Survey.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="./../../wp-content/uploads/2020/03/Cadastral-Land-Survey.jpg 1200w, ./../../wp-content/uploads/2020/03/Cadastral-Land-Survey-300x250.jpg 300w, ./../../wp-content/uploads/2020/03/Cadastral-Land-Survey-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/03/Cadastral-Land-Survey-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px">			</div>
+				<img width="1200" height="1000" src="./../../wp-content/uploads/2020/03/Cadastral-Land-Survey.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" srcset="./../../wp-content/uploads/2020/03/Cadastral-Land-Survey.jpg 1200w, ./../../wp-content/uploads/2020/03/Cadastral-Land-Survey-300x250.jpg 300w, ./../../wp-content/uploads/2020/03/Cadastral-Land-Survey-1024x853.jpg 1024w, ./../../wp-content/uploads/2020/03/Cadastral-Land-Survey-768x640.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px"></div>
 <!-- .post-thumbnail -->
 			</div>
 <div class="kyber-service-entry-content">
 	<div class="vc_row wpb_row vc_row-fluid vc_custom_1586492563322 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="wpb_column vc_column_container vc_col-sm-12 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper">
-<h2 style="font-size: 30px;line-height: 40px;text-align: left" class="vc_custom_heading">Cadastral &amp; Land Survey</h2>
+<h2 style="font-size: 30px;line-height: 40px;text-align: left" class="vc_custom_heading">Cadastral &amp; Property Survey</h2>
 	<div class="wpb_text_column wpb_content_element  vc_custom_1645449270063">
 		<div class="wpb_wrapper">
 			<p>We are an award winning land surveying firm, providing services across Nigeria.<br>
@@ -156,8 +156,94 @@ We specialize in layout surveys, topographical surveys, boundaries, subdivision 
 
 		</div>
 	</div>
+
 </div></div></div></div>
+
+
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1587041640569 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="kyber-accordion-style-1 wpb_column vc_column_container vc_col-sm-12 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="vc_tta-container" data-vc-action="collapse"><div class="vc_general vc_tta vc_tta-accordion vc_tta-color-white vc_tta-style-classic vc_tta-shape-square vc_tta-o-shape-group vc_tta-controls-align-left vc_custom_1586514109796"><div class="vc_tta-panels-container"><div class="vc_tta-panels">
+
+@include('layout.forms')
+<div class="container" >
+    <div class="row">
+      <div class="col-xl-6 col-sm-6 col-12"> 
+        <div class="card" style="background-color:#f5f7fa;">
+          <div class="card-content">
+          	<a href="#">
+            <div class="card-body shadow-sm">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6>Apply for Survey Plan</h6>
+                </div>
+                  <div class="align-self-center icon">
+                  <i style="color:rgb(253 151 46);" class="fab fa-wpforms  font-medium-3 float-right form-icon"></i>
+                </div>
+              </div>
+            </div>
+       		 </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-xl-6 col-sm-6 col-12"> 
+        <div class="card" style="background-color:#f5f7fa;">
+          <div class="card-content">
+          	<a href="#">
+            <div class="card-body shadow-sm" style="border-color: rgb(253 151 46);">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6>Collect Your Survey Plan</h6>
+                </div>
+                  <div class="align-self-center">
+                  <i style="color:rgb(253 151 46);" class="fab fa-wpforms  font-medium-3 float-right form-icon"></i>
+                </div>
+              </div>
+            </div>
+        	</a>
+          </div>
+        </div>
+      </div>
+
+         <div class="col-xl-6 col-sm-6 col-12"> 
+        <div class="card" style="background-color:#f5f7fa;">
+          <div class="card-content">
+          	<a href="#">
+            <div class="card-body shadow-sm" style="border-color: rgb(253 151 46);">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6>Book site inspection with us Today</h6>
+                </div>
+                  <div class="align-self-center">
+                  <i style="color:rgb(253 151 46);" class="fab fa-wpforms  font-medium-3 float-right form-icon"></i>
+                </div>
+              </div>
+            </div>
+        	</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xl-6 col-sm-6 col-12"> 
+        <div class="card" style="background-color:#f5f7fa;">
+          <div class="card-content">
+          	<a href="#">
+            <div class="card-body shadow-sm" style="border-color: rgb(253 151 46);">
+              <div class="media d-flex">
+                <div class="media-body text-left">
+                  <h6>Property Inquiry Form</h6>
+                </div>
+                  <div class="align-self-center">
+                  <i style="color:rgb(253 151 46);" class="fab fa-wpforms  font-medium-3 float-right form-icon"></i>
+                </div>
+              </div>
+            </div>
+        	</a>
+          </div>
+        </div>
+      </div>
+      
+  </section>
+</div>
+
 <div class="vc_tta-panel vc_active" id="1585768153475-cb5f3c27-f8e2" data-vc-content=".vc_tta-panel-body">
 <div class="vc_tta-panel-heading"><h4 class="vc_tta-panel-title vc_tta-controls-icon-position-right"><a href="#1585768153475-cb5f3c27-f8e2" data-vc-accordion data-vc-container=".vc_tta-container"><span class="vc_tta-title-text">WHY HIRE Geoprecise AS YOUR BOUNDARY SURVEYOR?</span><i class="vc_tta-controls-icon vc_tta-controls-icon-plus"></i></a></h4></div>
 <div class="vc_tta-panel-body">
@@ -190,6 +276,7 @@ We specialize in layout surveys, topographical surveys, boundaries, subdivision 
 </div>
 </div></div></div></div></div></div></div></div>
 </div>
+
 <!-- .entry-content -->
 
 	<nav class="navigation post-navigation" aria-label="Posts">
@@ -202,25 +289,27 @@ We specialize in layout surveys, topographical surveys, boundaries, subdivision 
 		</div>
 <!-- #primary -->
 		<aside id="secondary" class="widget-area sidebar col-sm-12 col-md-12 col-lg-4 col-xl-3 column">
-			<section id="recent-services-1" class="widget widget_recent_services">		<h2 class="widget-title">Recent services</h2>		<ul>
-											<li>
+			<section id="recent-services-1" class="widget widget_recent_services">		<h2 class="widget-title">Recent services</h2>			<ul>
+									<li>
 										<div class="kyber-service-content">
-						<a href="{{route('highway')}}">Highway &#038; Road</a>
+						<a href="{{route('cadastral')}}">Cadastral &#038; Property Survey</a>
 											</div>					
 				</li>
+					
 											<li>
 										<div class="kyber-service-content">
-						<a href="{{route('engineering')}}">Engineering Surveying</a>
+						<a href="{{route('engineering')}}">Engineering Survey</a>
 											</div>					
 				</li>
-											<li>
+										<li>
 										<div class="kyber-service-content">
-						<a href="{{route('aerial')}}" aria-current="page">Aerial Data Collection</a>
+						<a href="{{route('hydrographic')}}">Hydrographic Survey</a>
 											</div>					
 				</li>
+						
 											<li>
 										<div class="kyber-service-content">
-						<a href="{{route('mapping')}}">GIS &#038; Mapping</a>
+						<a href="{{route('mapping')}}">GIS &#038; Digital Mapping</a>
 											</div>					
 				</li>
 											<li>
@@ -228,18 +317,10 @@ We specialize in layout surveys, topographical surveys, boundaries, subdivision 
 						<a href="{{route('sensing')}}">Remote Sensing</a>
 											</div>					
 				</li>
-											<li>
-										<div class="kyber-service-content">
-						<a href="{{route('cadastral')}}">Cadastral &#038; Land Survey</a>
-											</div>					
-				</li>
-											<li>
-										<div class="kyber-service-content">
-						<a href="{{route('hydrographic')}}">Hydrographic Survey</a>
-											</div>					
-				</li>
+						
 					</ul>
-		</section><section id="custom_html-1" class="widget_text widget widget_custom_html"><h2 class="widget-title">Download</h2>
+		</section>
+		<section id="custom_html-1" class="widget_text widget widget_custom_html"><h2 class="widget-title">Download</h2>
 <div class="textwidget custom-html-widget">
 <div class="item-download">
 	<a href="#" target="_blank" rel="noopener"> Company Report 2019 <span class="far fa-file-alt"></span> </a>
@@ -251,7 +332,6 @@ We specialize in layout surveys, topographical surveys, boundaries, subdivision 
 
 	</div>
 </div>
-
 	</div>
 <!-- #content -->
 
