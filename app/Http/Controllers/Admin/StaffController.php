@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 use App\Mail\{StaffVerificationMail};
+use Illuminate\Support\Str;
 use App\Rules\EmailRule;
-use Illuminate\Support\DB;
-use App\Models\Staff;
+use App\Models\{Staff, User, Verification};
+use Carbon\Carbon;
 use Validator;
 use Hash;
+use Mail;
 
 class StaffController extends Controller
 {
@@ -66,12 +69,15 @@ class StaffController extends Controller
             ]);
 
             $token = Str::random(64);
+            $staff_id = $staff->id ?? 0;
             Verification::create([
                 'token' => $token,
                 'type' => 'email',
                 'expiry' => Carbon::now()->addMinutes(60),
                 'user_id' => $user_id,
                 'verified' => false,
+                'model' => 'staff',
+                'model_id' => $staff_id,
             ]);
 
             $mail = new StaffVerificationMail([
@@ -85,7 +91,7 @@ class StaffController extends Controller
             return response()->json([
                 'status' => 1,
                 'info' => 'Operation successful. Please wait . . .',
-                'redirect' => route('admin.staff.profile', ['id' => $staff->id]),
+                'redirect' => route('admin.staff.profile', ['id' => $staff_id]),
             ]);
         } catch (Exception $error) {
             DB::rollback();

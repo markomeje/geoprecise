@@ -2,6 +2,16 @@
 
 	'use strict';
 
+    $('.edit-staff-form').submit(function(event){
+        event.preventDefault();
+        handleForm({form: $(this), button: 'edit-staff-button', spinner: 'edit-staff-spinner', message: 'edit-staff-message'});
+    });
+
+    $('.add-staff-form').submit(function(event){
+        event.preventDefault();
+        handleForm({form: $(this), button: 'add-staff-button', spinner: 'add-staff-spinner', message: 'add-staff-message'});
+    });
+
     $('.admin-record-payment-form').submit(function(event){
         event.preventDefault();
         handleForm({form: $(this), button: 'admin-record-payment-button', spinner: 'admin-record-payment-spinner', message: 'admin-record-payment-message'});
