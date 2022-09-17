@@ -69,6 +69,42 @@ Route::middleware(['web'])->domain(env('APP_URL'))->group(function() {
     Route::get('/archive06', [\App\Http\Controllers\Archive06Controller::class, 'index'])->name('archive06');
     Route::get('/archive12', [\App\Http\Controllers\Archive12Controller::class, 'index'])->name('archive12');
     Route::get('/archive18', [\App\Http\Controllers\Archive18Controller::class, 'index'])->name('archive18');
+    Route::get('/bluelake', [\App\Http\Controllers\BlueLakeController::class, 'index'])->name('bluelake');
+    Route::get('/choicecity', [\App\Http\Controllers\ChoicecityController::class, 'index'])->name('choicecity');
+    Route::get('/destiny', [\App\Http\Controllers\DestinyLayoutController::class, 'index'])->name('destiny');
+    Route::get('/gateway', [\App\Http\Controllers\GatewayLayoutController::class, 'index'])->name('gateway');
+    Route::get('/goldengate', [\App\Http\Controllers\GoldenGateController::class, 'index'])->name('goldengate');
+    Route::get('/moniclayout', [\App\Http\Controllers\MonicLayoutController::class, 'index'])->name('moniclayout');
+    Route::get('/peacelayout', [\App\Http\Controllers\PeaceLayoutController::class, 'index'])->name('peacelayout');
+    Route::get('/rosary', [\App\Http\Controllers\OurladyController::class, 'index'])->name('rosary');
+    Route::get('/civilservant', [\App\Http\Controllers\CivilservantController::class, 'index'])->name('civilservant');
+    Route::get('/godfrey', [\App\Http\Controllers\GodfreyOkoyeController::class, 'index'])->name('godfrey');
+    Route::get('/plentiff', [\App\Http\Controllers\PlentiffController::class, 'index'])->name('plentiff');
+    Route::get('/housing', [\App\Http\Controllers\HousingController::class, 'index'])->name('housing');
+    Route::get('/forms', [\App\Http\Controllers\FormsController::class, 'index'])->name('forms');
+    Route::get('/propertysearchform', [\App\Http\Controllers\PropertySearchFormController::class, 'index'])->name('propertysearchform');
+    Route::get('/plancollectionform', [\App\Http\Controllers\PlanCollectionFormController::class, 'index'])->name('plancollectionform');
+    Route::get('/cisform', [\App\Http\Controllers\CISFormsController::class, 'index'])->name('cisform');
+    Route::get('/applicationform', [\App\Http\Controllers\ApplicationFormsController::class, 'index'])->name('applicationform');
+    Route::get('/siteinspectionform', [\App\Http\Controllers\SiteInspectionFormController::class, 'index'])->name('siteinspectionform');
+
+   Route::get('/apartmentdesign', [\App\Http\Controllers\ApartmentController::class, 'index'])->name('apartmentdesign');
+   Route::get('/bridge', [\App\Http\Controllers\BridgeContractController::class, 'index'])->name('bridge');
+   Route::get('/buildingconstruction', [\App\Http\Controllers\BuildingConstructionController::class, 'index'])->name('buildingconstruction');
+   Route::get('/chikeanigbo', [\App\Http\Controllers\ChikeanigboController::class, 'index'])->name('chikeanigbo');
+   Route::get('/enugustate', [\App\Http\Controllers\EnugustateController::class, 'index'])->name('enugustate');
+   Route::get('/highwaycontract', [\App\Http\Controllers\HighwaycontractController::class, 'index'])->name('highwaycontract');
+   Route::get('/housingplanning', [\App\Http\Controllers\HousePlanningController::class, 'index'])->name('housingplanning');
+   Route::get('/institutedesign', [\App\Http\Controllers\InstituteDesignController::class, 'index'])->name('institutedesign');
+   Route::get('/malldesign', [\App\Http\Controllers\MalldesignController::class, 'index'])->name('malldesign');
+   Route::get('/nwoko', [\App\Http\Controllers\NwokoFamilyController::class, 'index'])->name('nwoko');
+   Route::get('/railwayconstruction', [\App\Http\Controllers\RailwayconstructionController::class, 'index'])->name('railwayconstruction');
+   Route::get('/triumphantlayout', [\App\Http\Controllers\TriumphantlayoutController::class, 'index'])->name('triumphantlayout');
+   Route::get('/umuobunafamily', [\App\Http\Controllers\UmuobunafamilyController::class, 'index'])->name('umuobunafamily');
+   Route::get('/umuokofamily', [\App\Http\Controllers\UmuokofamilyController::class, 'index'])->name('umuokofamily');
+   Route::get('/uprightlayout', [\App\Http\Controllers\UprightAlayoutController::class, 'index'])->name('uprightlayout');
+   Route::get('/victorylayout', [\App\Http\Controllers\VictoryController::class, 'index'])->name('victorylayout');
+   Route::get('/uprightcity', [\App\Http\Controllers\UprightCityController::class, 'index'])->name('uprightcity');
 
     Route::get('/login', function () {
         return redirect()->route('login.ui');

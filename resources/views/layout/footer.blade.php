@@ -5,7 +5,7 @@
 							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
 					<section id="text-2" class="widget widget_text">			<div class="textwidget">
 <p><img loading="lazy" class="alignnone size-full wp-image-225 footer-logo" src="././wp-content/uploads/2022/02/GEO-P-f-tt-2.png" alt="" width="202" height="42"></p>
-<h3 class="skincolor">+234 806 054 5860</h3>
+<h5 class="skincolor">+234 806 054 5860</h5>
 <p><a class="btn btn-outline-light footer-button" href="{{route('contact')}}">REQUEST WITH ONLINE FORM</a></p>
 </div>
 		</section>				</div>
@@ -52,7 +52,7 @@
 					<section id="text-3" class="widget widget_text"><h2 class="widget-title">Get In Touch</h2>			<div class="textwidget">
 <ul class="widget_contact">
 <li>
-<i class="fa fa-map-marker"></i>Suit E01b, The statement Complex, Plot 1002, First Avenue, Central Business District, Abuja.</li>
+<i class="fa fa-map-marker"></i>26 Moorehouse Street Ogui,Enugu, Enugu State.</li>
 <li>
 <i class="fa fa-envelope-o"></i>Email : <a href="mailto:contact@geoprecisegroup.com">contact@geoprecisegroup.com</a>
 </li>
