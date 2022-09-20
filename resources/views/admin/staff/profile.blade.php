@@ -19,7 +19,7 @@
                   <div class="card border-0 mb-4">
                     <div class="card-header border-bottom">Edit Profile</div>
                     <div class="card-body">
-                      <form class="edit-staff-form" action="javascript:;" data-action="{{ route('admin.staff.edit', ['id' => $staff->id]) }}">
+                      <form class="edit-staff-form" action="javascript:;" data-action="{{ route('admin.staff.edit', ['id' => $staff->id]) }}" method="post">
                         <div class="row">
                           <div class="form-group col-md-6">
                             <label class="text-muted">Fullname</label>
@@ -35,7 +35,7 @@
                                 <option value="">No titles listed</option>
                               @else
                                 @foreach($titles as $title)
-                                  <option value="{{ $title }}">
+                                  <option value="{{ $title }}" {{ $title == $staff->title ? 'selected' : '' }}>
                                     {{ ucwords($title) }}
                                   </option>
                                 @endforeach
@@ -69,30 +69,7 @@
                             <small class="role-error text-danger"></small>
                           </div>
                         </div>
-                        <div class="alert d-none edit-staff-message mb-2 text-white"></div>
-                        <button type="submit" class="btn btn-primary edit-staff-button">
-                          <img src="/images/spinner.svg" class="me-2 d-none edit-staff-spinner mb-1">Save
-                        </button>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="card border-0 mb-4">
-                    <div class="card-header border-bottom">Login Update</div>
-                    <div class="card-body">
-                      <form class="">
-                        <div class="row">
-                          <div class="form-group col-md-6">
-                            <label class="text-muted">Email</label>
-                            <input type="email" class="form-control email" name="email" placeholder="Enter email" value="{{ $staff->user == null ? '' : $staff->user->email }}">
-                            <small class="email-error text-danger"></small>
-                          </div>
-                          <div class="form-group col-md-6">
-                            <label class="text-muted">Password</label>
-                            <input type="password" name="password" class="form-control password" placeholder="Enter password" value="{{ $staff->password }}">
-                            <small class="password-error text-danger"></small>
-                          </div>
-                        </div>
-                        <div class="alert d-none edit-staff-message mb-2 text-white"></div>
+                        <div class="alert d-none edit-staff-message mb-3 text-white"></div>
                         <button type="submit" class="btn btn-primary edit-staff-button">
                           <img src="/images/spinner.svg" class="me-2 d-none edit-staff-spinner mb-1">Save
                         </button>

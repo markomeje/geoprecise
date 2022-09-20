@@ -7,18 +7,12 @@
         @include('admin.includes.navbar')
       <!-- End Navbar -->
       <div class="container-fluid py-4">
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="">
-            <a class="text-white" href="javascript:;">
+        <div class="alert alert-info d-flex border-0 align-items-center">
+          <a class="text-white me-2" href="javascript:;">
               {{ \App\Models\Plot::count() }} Plots</a>
-          </div>
-          <div class="">
-            <a class="btn w-100 bg-gradient-dark m-0" href="javascript:;" data-bs-toggle="modal" data-bs-target="#add-plot">
-              <i class="fas fa-plus"></i>&nbsp;&nbsp;Add Plot
-            </a>
-              @include('admin.plots.partials.add')
-          </div>
+          <a class="m-0 text-white" href="javascript:;" data-bs-toggle="modal" data-bs-target="#add-plot">Add Plot</a>
         </div>
+        @include('admin.plots.partials.add')
         @if(empty($plots))
           <div class="alert alert-info mt-4 border-0 text-white">No plots available</div>
         @else

@@ -38,14 +38,6 @@ class StaffController extends Controller
             ]);
         }
 
-        $client = auth()->user()->client;
-        if (empty($client)) {
-            return response()->json([
-                'status' => 0,
-                'info' => 'An error occured. Try again later.',
-            ]);
-        }
-
         try {
             DB::beginTransaction();
             $password = Str::random(9);
@@ -106,6 +98,59 @@ class StaffController extends Controller
     public function profile($id = 0)
     {
         return view('admin.staff.profile', ['title' => 'Staff Profile', 'staff' => Staff::find($id)]);
+    }
+
+    //
+    public function edit($id = 0)
+    {
+        $data = request()->all();
+        $validator = Validator::make($data, [
+            'fullname' => ['required', 'string'], 
+            'role' => ['nullable', 'string'],
+            'title' => ['required', 'string'],
+            'address' => ['required', 'string'],
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'status' => 0,
+                'error' => $validator->errors()
+            ]);
+        }
+
+        try {
+            $staff = Staff::find($id);
+            if (empty($staff)) {
+                return response()->json([
+                    'status' => 0,
+                    'info' => 'Staff not found.'
+                ]);
+            }
+
+            $staff->fullname = $data['fullname'];
+            $staff->address = $data['address'] ?? null;
+            $staff->title = $data['title'] ?? null;
+
+            if ($staff->update()) {
+                return response()->json([
+                    'status' => 1,
+                    'info' => 'Operation successful. Please wait . . .',
+                    'redirect' => '',
+                ]);
+            }
+
+            return response()->json([
+                'status' => 0,
+                'info' => 'Unknown error. Try again.',
+            ]);
+                
+        } catch (Exception $error) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Unknown error. Try again.',
+            ]);
+        }
+            
     }
 
 }

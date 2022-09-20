@@ -23,11 +23,6 @@
                     </a>
                     <div class="d-flex align-items-center">
                       <div class="d-flex align-items-center">
-                        <div class="bg-danger text-center me-3 rounded-circle" style="width: 42px; height: 42px; line-height: 42px !important; font-size: 12px;">
-                          <div class="text-white mt-3">
-                            <i class="icofont-trash"></i>
-                          </div>
-                        </div>
                         <div class="bg-warning text-center me-3 rounded-circle" style="width: 42px; height: 42px; line-height: 42px !important; font-size: 12px;">
                           <div class="text-white mt-3">
                             <i class="icofont-ui-edit"></i>

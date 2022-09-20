@@ -13,7 +13,7 @@ class PaymentsController extends Controller
     //
     public function index()
     {
-        return view('admin.payments.index', ['title' => 'All Payments', 'payments' => Payment::paid()->latest()->paginate(20)]);
+        return view('admin.payments.index', ['title' => 'All Payments', 'payments' => Payment::latest()->paginate(20)]);
     }
 
     /**
@@ -25,6 +25,7 @@ class PaymentsController extends Controller
         $validator = Validator::make($data, [
             'approved' => ['nullable', 'boolean'], 
             'amount' => ['required', 'numeric'],
+            'type' => ['required', 'string'],
         ]);
 
         if ($validator->fails()) {

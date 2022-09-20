@@ -11,11 +11,11 @@
           <form class="d-block w-100" method="get">
             <div class="row">
               <div class="form-group input-group-lg col-12 col-md-10 mb-4">
-                <input type="text" name="search" class="form-control" placeholder="Enter search . . .">
+                <input type="text" name="search" class="form-control" placeholder="Search payments . . .">
               </div>
               <div class="col-12 col-md-2 mb-4">
                 <button class="btn w-100 btn-lg btn-primary m-0">
-                  <i class="icofont-search"></i>
+                  <i class="icofont-search"></i> Search
                 </button>
               </div>
             </div>
@@ -23,7 +23,7 @@
         </div>
         <div class="">
           @if(empty($payments->count()))
-            <div class="alert alert-info">No payments yet</div>
+            <div class="alert alert-danger border-0 text-white">No payments yet</div>
           @else
             <div class="row">
               @foreach($payments as $payment)

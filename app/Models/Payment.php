@@ -42,6 +42,7 @@ class Payment extends Model
         'bank transfer',
         'pos',
         'bank deposit',
+        'ussd',
     ];
 
     /**

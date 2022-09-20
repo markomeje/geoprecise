@@ -59,9 +59,9 @@
               </div>
               <div class="col-12 col-md-5 col-lg-4 col-xl-3">
                 <div class="alert alert-info border-0 text-white mb-4">{{ ucwords($client->fullname) }} Payments</div>
-                {{-- <?php $payments = \App\Models\Payment::latest()->paid()->where(['client_id' => $client_id])->get(); ?> --}}
-                @if(empty($payments))
-                  <div class="alert alert-danger border-0 text-white mb-4">{{ ucwords($client->fullname) }} Payments</div>
+                <?php $payments = \App\Models\Payment::latest()->paid()->where(['client_id' => $client_id])->get(); ?>
+                @if(empty($payments->count()))
+                  <div class="alert alert-danger border-0 text-white mb-4">No payments yet.</div>
                 @else
                   <div class="row">
                     @foreach($payments as $payment)
