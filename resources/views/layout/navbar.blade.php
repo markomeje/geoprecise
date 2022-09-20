@@ -8,7 +8,7 @@
 		<div class="d-flex align-items-center">
 			<div class="site-logo">
 	<a href="{{route('home')}}" rel="home">
-		<img class="img-fluid" src="./../wp-content/uploads/2022/02/logo-geop-1.png" alt="GeoPrecise">
+		<img class="img-fluid" src="./../content/uploads/2022/02/logo-geop-1.png" alt="GeoPrecise">
 	</a>
 </div>
 <div class="kyber-header-button-container">
