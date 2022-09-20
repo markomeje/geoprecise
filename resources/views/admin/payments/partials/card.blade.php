@@ -6,7 +6,7 @@
         NGN{{ number_format($payment->amount) }}
       </div>
       <div class="text-success">
-        {{ ucfirst($payment->status) }} by (<a href="{{ route('admin.clients.profile', ['id' => $payment->client->id]) }}">{{ \Str::limit(ucwords($payment->client->fullname), 8) }}</a>)
+        By <a href="{{ route('admin.clients.profile', ['id' => $payment->client->id]) }}">{{ \Str::limit(ucwords($payment->client->fullname), 8) }}</a>
       </div>
     </div>
     <div class="d-flex align-items-center justify-content-between">
@@ -14,7 +14,7 @@
         {{ $approved ? 'Approved' : 'Unapproved' }}
       </div>
       <div class="text-dark">
-        {{ ucwords($payment->type) }}
+        {{ ucwords(empty($payment->type) ? 'Card' : $payment->type) }}
       </div>
     </div>
   </div>

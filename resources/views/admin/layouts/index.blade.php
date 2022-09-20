@@ -7,18 +7,12 @@
         @include('admin.includes.navbar')
       <!-- End Navbar -->
       <div class="container-fluid py-4">
-        <div class="row">
-          <div class="col-12 col-md-3 col-lg-2 mb-3">
-            <a class="btn w-100 border border-white text-white m-0" href="javascript:;">
+        <div class="alert alert-dark border-0 d-flex align-items-center">
+          <a class="text-white me-2" href="javascript:;">
               {{ \App\Models\Layout::count() }} Layouts</a>
-          </div>
-          <div class="col-12 col-md-3 col-lg-2">
-            <a class="btn w-100 bg-gradient-dark m-0" href="javascript:;" data-bs-toggle="modal" data-bs-target="#add-layout">
-              <i class="fas fa-plus"></i>&nbsp;&nbsp;Add Layout
-            </a>
-              @include('admin.layouts.partials.add')
-          </div>
+          <a class="text-white" href="javascript:;" data-bs-toggle="modal" data-bs-target="#add-layout">Add Layout</a>
         </div>
+        @include('admin.layouts.partials.add')
         @if(empty($layouts))
           <div class="alert alert-info mt-4 border-0 text-white">No layouts available</div>
         @else

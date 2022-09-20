@@ -16,10 +16,18 @@ class Sib extends Model
      */
     protected $fillable = [
         'form_id',
-        'plot_ids',
+        'plot_numbers',
+        'client_id',
         'layout_id',
         'user_id',
         'completed',
+        'survey_id',
+        'approved',
+        'approved_by',
+        'approved_at',
+        'recorder_type',
+        'recorded_by',
+        'comments',
     ];
 
     /**

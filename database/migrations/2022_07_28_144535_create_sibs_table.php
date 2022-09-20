@@ -18,7 +18,7 @@ return new class extends Migration
             $table->foreignId('form_id');
             $table->string('plot_numbers')->nullable();
             $table->foreignId('layout_id')->nullable();
-            $table->foreignId('survey_id');
+            $table->foreignId('survey_id')->nullable();
 
             $table->foreignId('client_id');
             

@@ -2,24 +2,28 @@
   <div class="card-body">
     <div class="d-flex align-items-center mb-3 pb-3 border-bottom justify-content-between">
       <a href="{{ route('admin.psr.edit', ['id' => $psr->id]) }}" class="text-dark">
-        {{ (boolean)($psr->approved ?? false) === true ? 'Approved' : 'Unapproved' }}
+        <small>
+          Psr({{ (boolean)($psr->approved ?? false) === true ? 'Approved' : 'Unapproved' }})
+        </small>
       </a>
-      <a href="{{ route('admin.psr.edit', ['id' => $psr->id]) }}" class="text-dark">Status ({{ ucfirst($psr->status) }})</a>
+      <a href="{{ route('admin.psr.edit', ['id' => $psr->id]) }}" class="text-dark">
+        <small>{{ ucfirst($psr->status) }}</small>
+      </a>
     </div>
     <div class="d-flex align-items-center justify-content-between">
       @if(empty($psr->payment))
-        <div class="text-danger">Unpaid</div>
+        <small class="text-danger">Unpaid</small>
       @elseif($psr->payment->status !== 'paid')
-        <div class="text-danger">Unpaid</div>
+        <small class="text-danger">Unpaid</small>
       @else
-        <div class="text-success">Paid</div>
+        <small class="text-success">Paid</small>
       @endif
-      <div class="">
+      <small class="text-dark">
         {{ empty($psr->layout) ? 'Nill' : \Str::limit(ucwords($psr->layout->name), 12) }}
-      </div>
+      </small>
     </div>
   </div>
-  <div class="card-footer bg-primary d-flex align-items-center justify-content-between">
+  <div class="card-footer bg-dark d-flex align-items-center justify-content-between">
     <small class="text-white">
       {{ $psr->created_at->diffForHumans() }}
     </small>

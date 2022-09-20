@@ -1,9 +1,9 @@
-<div class="modal fade" id="add-layout" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="add-layout" tabindex="-1" role="dialog" aria-labelledby="add-layout-model-sm" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="layout">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Layout</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+        <h5 class="modal-title" id="add-layout-model-sm">Add Layout</h5>
+        <button type="button" class="btn-close text-danger" data-bs-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
