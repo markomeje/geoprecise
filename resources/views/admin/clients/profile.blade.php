@@ -20,8 +20,8 @@
             <div class="row">
               <div class="col-12 col-md-7 col-lg-8 col-xl-9">
                 <div class="">
-                  <div class="alert alert-info text-white border-0 mb-4 d-flex justify-content-between">
-                    <span>Property Search Requests</span>
+                  <div class="alert alert-info border-0 mb-4 d-flex justify-content-between">
+                    <span class="text-white">Property Search Requests</span>
                     <a href="javascript:;" class="text-white" data-bs-toggle="modal" data-bs-target="#add-psr">Apply</a>
                   </div>
                   @include('admin.psrs.partials.add')
@@ -39,8 +39,8 @@
                   @endif
                 </div>
                 <div class="">
-                    <div class="alert alert-info text-white border-0 mb-4 d-flex justify-content-between">
-                      <span>Surveying applications</span>
+                    <div class="alert alert-info border-0 mb-4 d-flex justify-content-between">
+                      <span class="text-white">Surveying applications</span>
                       <a href="{{ route('admin.survey.apply', ['client_id' => $client_id]) }}" class="text-white">Apply</a>
                     </div>
                   <?php $surveys = \App\Models\Survey::latest()->where(['client_id' => $client_id])->get(); ?>

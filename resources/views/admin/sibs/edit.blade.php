@@ -10,17 +10,17 @@
         @if(empty($sib) || empty($sib->client))
           <div class="alert alert-danger text-white mt-4 border-0">Unkown error. Details may have been deleted.</div>
         @else
-          <?php $client_name = $sib->client->fullname; $model_id = $sib->id; $model = 'psr'; $layout = $sib->layout; $plot_numbers = $sib->plot_numbers; $client_id = $sib->client_id ?? 0; $approved = (boolean)$sib->approved === true; ?>
+          <?php $client_name = $sib->client->fullname; $model_id = $sib->id; $model = 'sib'; $layout = $sib->layout; $plot_numbers = $sib->plot_numbers; $client_id = $sib->client_id ?? 0; $approved = (boolean)$sib->approved === true; ?>
           <div class="row">
             <div class="col-12 col-lg-7 col-xl-6">
               <div class="alert alert-dark mb-4 text-white border-0 d-flex justify-content-between align-items-center">
-                <span>Property Search Request for {{ ucwords($client_name) }}</span>
+                <span>Site Inspection Booking for {{ ucwords($client_name) }}</span>
                 <span>{{ $approved ? 'Approved' : 'Unapproved' }}</span>
               </div>
               <div class="card mb-4">
                 <div class="card-header border-bottom d-flex justify-content-between align-items-center">
                   <div class="text-dark">
-                    {{ empty($plot_numbers) ? 0 : (str_contains($plot_numbers, '-') ? count(explode('-', $plot_numbers)) : 1) }} Plot(s)
+                    {{ empty($plot_numbers) ? 0 : (str_contains($plot_numbers, '-') ? count(explode('-', $plot_numbers)) : 1) }} Plot(s) in {{ $sib->layout->name }}
                   </div>
                   <span class="cursor-pointer text-dark" data-bs-toggle="modal" data-bs-target="#add-client-plot">Add Plot(s)</span>
                 </div>
@@ -102,57 +102,52 @@
                 @endif
               @endif
               <div class="card mb-4">
-                <div class="card-header border-bottom">Edit Property Search Request Details</div>
+                <div class="card-header border-bottom">Edit Site Inspection Booking Details</div>
                 <div class="card-body">
-                  <form class="psr-form" action="javascript:;" method="post" data-action="{{ route('admin.psr.save', ['id' => $sib->id]) }}">
+                  <form class="sib-form" action="javascript:;" method="post" data-action="{{ route('admin.sib.save', ['id' => $sib->id]) }}">
                     @csrf
                     <div class="row">
                       <div class="form-group col-md-6">
-                        <label class="text-muted">Status</label>
-                        <select class="form-control status" name="status">
-                          <option value="">Select status</option>
-                          <?php $status = \App\Models\Psr::STATUS; ?>
-                          @if(empty($status))
-                            <option value="">No status listed</option>
-                          @else
-                            @foreach($status as $value)
-                              <option value="{{ $value }}" {{ $value == $sib->status ? 'selected' : '' }}>
-                                {{ ucwords($value) }}
-                              </option>
-                            @endforeach
-                          @endif
-                        </select>
-                        <small class="status-error text-danger"></small>
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label class="text-muted">Layout</label>
+                        <label class="text-muted">Layout Name</label>
                         <select class="form-control layout" name="layout">
                           <option value="">Select layout</option>
                           <?php $layouts = \App\Models\Layout::all(); ?>
-                          @if(empty($layouts->count()))
-                            <option value="">No layout listed</option>
+                          @if(empty($layouts))
+                            <option value="">No layouts listed</option>
                           @else
-                            @foreach($layouts as $layout)
-                              <option value="{{ $layout->id }}" {{ $sib->layout_id == $layout->id ? 'selected' : '' }}>
-                                {{ ucwords($layout->name) }}
+                            @foreach($layouts as $area)
+                              <option value="{{ $area->id }}" {{ isset($layout) && $layout->id == $area->id ? 'selected' : '' }}>
+                                {{ ucwords($area->name) }}
                               </option>
                             @endforeach
                           @endif
                         </select>
                         <small class="layout-error text-danger"></small>
                       </div>
+                      <div class="form-group col-md-6">
+                        <label class="text-muted">Client</label>
+                        <select class="form-control client" name="client">
+                          <option value="">Select client</option>
+                          <?php $clients = \App\Models\Client::all(); ?>
+                          @if(empty($clients->count()))
+                            <option value="">No clients listed</option>
+                          @else
+                            @foreach($clients as $client)
+                              <option value="{{ $client->id }}">
+                                {{ ucwords($client->fullname) }}
+                              </option>
+                            @endforeach
+                          @endif
+                        </select>
+                        <small class="client-error text-danger"></small>
+                      </div>
                     </div>
-                    <div class="form-group mb-4">
-                      <label class="text-muted">Sold by?</label>
-                      <input type="text" class="form-control sold_by" name="sold_by" rows="4" placeholder="Enter seller name" value="{{ $sib->sold_by }}">
-                      <small class="sold_by-error text-danger"></small>
-                    </div>
-                    <div class="form-group">
+                    <div class="'form-group mb-3">
                       <label class="text-muted">Comments</label>
-                      <textarea class="form-control comments" rows="4" name="comments" placeholder="Enter comments">{{ $sib->comments }}</textarea>
+                      <textarea class="form-control comments" rows="4" name="comments" placeholder="Enter any comments">{{ $sib->comments }}</textarea>
                       <small class="comments-error text-danger"></small>
                     </div>
-                    <div class="alert d-none psr-message text-white"></div>
+                    <div class="alert d-none sib-message text-white"></div>
                     @if($approved)
                       <div class="alert alert-success text-white my-4">Approved by {{ $sib->approver ? $sib->approver->staff->fullname : '' }} on {{ date("F j, Y, g:i a", strtotime($sib->approved_at)) }}</div>
                     @else
@@ -160,12 +155,12 @@
                       <div class="form-group p-3 border mb-4 rounded">
                         <div class="form-check form-switch m-0">
                           <input class="form-check-input" name="approved" type="checkbox" id="approved" value="1">
-                          <label class="form-check-label" for="approved">Approve Property Search Request</label>
+                          <label class="form-check-label" for="approved">Approve Site Inspection Booking</label>
                         </div>
                         <small class="approved-error text-danger"></small>
                       </div>
-                      <button type="submit" class="btn btn-primary btn-lg w-100 psr-button mb-0">
-                        <img src="/images/spinner.svg" class="me-2 d-none psr-spinner mb-1">Save
+                      <button type="submit" class="btn btn-primary btn-lg w-100 sib-button mb-0">
+                        <img src="/images/spinner.svg" class="me-2 d-none sib-spinner mb-1">Save
                       </button>
                     @endif
                   </form>
@@ -174,7 +169,7 @@
             </div>
             <div class="col-12 col-lg-5 col-xl-6">
                 <div class="alert alert-dark text-white mb-4 border-0">Other Request by {{ ucwords($client_name) }}</div>
-                <?php $sibs = \App\Models\Psr::where(['client_id' => $client_id])->take(6)->get(); ?>
+                <?php $sibs = \App\Models\sib::where(['client_id' => $client_id])->take(6)->get(); ?>
                 @if(empty($sibs->count()))
                   <div class="alert alert-danger text-white mb-4 border-0">No other Request available</div>
                 @else

@@ -99,14 +99,21 @@ class PsrsController extends Controller
         if ($approved && empty($psr->payment)) {
             return response()->json([
                 'status' => 0,
-                'info' => 'Incomplete psr. No payment.',
+                'info' => 'Incomplete application. No payment.',
             ]);
         }
 
         if ($approved && $psr->payment->status !== 'paid') {
             return response()->json([
                 'status' => 0,
-                'info' => 'Incomplete psr. Invalid payment',
+                'info' => 'Incomplete application. Invalid payment',
+            ]);
+        }
+
+        if ($approved && (boolean)$psr->payment->approved !== true) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Please approved payment first.',
             ]);
         }
 

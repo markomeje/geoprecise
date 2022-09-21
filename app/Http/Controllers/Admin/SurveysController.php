@@ -141,7 +141,14 @@ class SurveysController extends Controller
         if ($approved && $survey->payment->status !== 'paid') {
             return response()->json([
                 'status' => 0,
-                'info' => 'Please make payment before final submission',
+                'info' => 'Incomplete application. Invalid payment',
+            ]);
+        }
+
+        if ($approved && (boolean)$survey->payment->approved !== true) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Please approved payment first.',
             ]);
         }
 

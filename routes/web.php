@@ -216,6 +216,7 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
         Route::get('/', [\App\Http\Controllers\Admin\SibsController::class, 'index'])->name('admin.sibs');
         Route::get('/edit/{id}', [\App\Http\Controllers\Admin\SibsController::class, 'edit'])->name('admin.sib.edit');
         Route::post('/apply', [\App\Http\Controllers\Admin\SibsController::class, 'apply'])->name('admin.sib.apply');
+        Route::post('/save/{id}', [\App\Http\Controllers\Admin\SibsController::class, 'save'])->name('admin.sib.save');
     });
 
     Route::prefix('pcfs')->group(function () {
