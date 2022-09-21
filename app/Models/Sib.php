@@ -26,6 +26,7 @@ class Sib extends Model
         'approved_by',
         'approved_at',
         'recorder_type',
+        'status',
         'recorded_by',
         'comments',
     ];
@@ -60,4 +61,33 @@ class Sib extends Model
     {
         return $this->belongsTo(Layout::class);
     }
+
+    /**
+     * Site inspection must belong to a client
+     *
+     * @var array<string, string>
+     */
+    public function client()
+    {
+        return $this->belongsTo(Client::class);
+    }
+
+    /**
+     * Approver of a particular site inspection.
+     *
+     * @var array<string, string>
+     */
+    public function approver()
+    {
+        return $this->belongsTo(User::class, 'approved_by');
+    }
+
+     /**
+     * Get the staff who recorded the site inspection.
+     */
+    public function recorder()
+    {
+        return $this->belongsTo(User::class, 'recorded_by');
+    }
+
 }

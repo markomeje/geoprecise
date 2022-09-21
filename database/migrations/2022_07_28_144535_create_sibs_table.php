@@ -15,9 +15,9 @@ return new class extends Migration
     {
         Schema::create('sibs', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('form_id');
-            $table->string('plot_numbers')->nullable();
-            $table->foreignId('layout_id')->nullable();
+            // $table->foreignId('form_id');
+            // $table->string('plot_numbers')->nullable();
+            // $table->foreignId('layout_id')->nullable();
             $table->foreignId('survey_id')->nullable();
 
             $table->foreignId('client_id');
@@ -31,6 +31,7 @@ return new class extends Migration
 
             $table->boolean('completed')->default(false);
             $table->text('comments')->nullable();
+            $table->string('status')->default('incomplete');
             $table->timestamps();
         });
     }

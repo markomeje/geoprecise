@@ -2,11 +2,6 @@
 
 	'use strict';
 
-    $('.apply-sib-form').submit(function(event){
-        event.preventDefault();
-        handleForm({form: $(this), button: 'apply-sib-button', spinner: 'apply-sib-spinner', message: 'apply-sib-message'});
-    });
-
     $('.edit-staff-form').submit(function(event){
         event.preventDefault();
         handleForm({form: $(this), button: 'edit-staff-button', spinner: 'edit-staff-spinner', message: 'edit-staff-message'});

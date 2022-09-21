@@ -14,10 +14,19 @@
           <div class="">
             <div class="row">
               <div class="col-12 col-lg-8 mb-4">
-                <div class="alert alert-dark mb-4 text-white border-0 d-flex justify-content-between align-items-center">
-                  <span>Survey or Lifting for {{ ucwords($client_name) }}</span>
-                  <span>Survey {{ $approved ? 'Approved' : 'Unapproved' }}</span>
+                <div class="alert alert-dark mb-4 border-0 d-flex justify-content-between align-items-center">
+                  <span class="text-white">Survey or Lifting for {{ ucwords($client_name) }}</span>
+                  <span class="text-{{ $approved ? 'success' : 'danger' }}">
+                    {{ $approved ? 'Approved' : 'Unapproved' }}
+                  </span>
                 </div>
+                @if($approved)
+                  <div class="alert alert-success mb-4 border-0 d-flex justify-content-between align-items-center">
+                    <span class="text-white">Want to book for Site Inspection?</span>
+                    <a href="javascript:;" class="text-white" data-url="{{ route('admin.sib.apply', ['client_id' => $client_id, 'survey_id' => $survey->id]) }}">Apply Here</a>
+                  </div>
+                  {{-- @include('admin.sibs.partials.apply') --}}
+                @endif
                 <div class="card shadow mb-4">
                   <div class="card-header border-bottom d-flex justify-content-between align-items-center">
                     <div class="text-dark">

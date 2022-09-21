@@ -21,7 +21,7 @@ class SibsController extends Controller
         $validator = Validator::make($data, [ 
             'layout' => ['required', 'string'],
             'client' => ['required'],
-        ], ['sold_by.required' => 'Please enter the seller\'s name', 'client.required' => 'Please select client.']);
+        ]);
 
         if ($validator->fails()) {
             return response()->json([
@@ -79,11 +79,10 @@ class SibsController extends Controller
     public function save($id = 0)
     {
         $data = request()->all();
-        $validator = Validator::make($data, [
-            'status' => ['required', 'string'], 
-            'sold_by' => ['required', 'string'],
+        $validator = Validator::make($data, [ 
             'layout' => ['required', 'string'],
-        ], ['sold_by.required' => 'Please enter the seller\'s name']);
+            'client' => ['required'],
+        ]);
 
         if ($validator->fails()) {
             return response()->json([
@@ -92,45 +91,48 @@ class SibsController extends Controller
             ]);
         }
 
-        $Sib = Sib::find($id);
-        if (empty($Sib)) {
+        $sib = Sib::find($id);
+        if (empty($sib)) {
             return response()->json([
                 'status' => 0,
-                'info' => 'Unknown error. Sib not found.',
+                'info' => 'Unknown error. Not found.',
             ]);
         }
 
         $approved = (boolean)($data['approved'] ?? 0) === true;
-        if ($approved && empty($Sib->payment)) {
+        if ($approved && empty($sib->payment)) {
             return response()->json([
                 'status' => 0,
-                'info' => 'Incomplete Sib. No payment.',
+                'info' => 'Incomplete application. No payment.',
             ]);
         }
 
-        if ($approved && $Sib->payment->status !== 'paid') {
+        if ($approved && $sib->payment->status !== 'paid') {
             return response()->json([
                 'status' => 0,
-                'info' => 'Incomplete Sib. Invalid payment',
+                'info' => 'Incomplete application. Invalid payment',
+            ]);
+        }
+
+        if ($approved && (boolean)$sib->payment->approved !== true) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Please approved payment first.',
             ]);
         }
 
         try{
-            $Sib->layout_id = $data['layout'];
-            $Sib->status = $data['status'];
-            $Sib->sold_by = $data['sold_by'];
-            $Sib->comments = $data['comments'] ?? '';
-            $Sib->status = $data['status'] ?? '';
-
-            $Sib->approved = $approved;
-            $Sib->completed = $approved;
+            $sib->layout_id = $data['layout'];
+            $sib->comments = $data['comments'] ?? '';
+            $sib->approved = $approved;
+            $sib->completed = $approved;
 
             if ($approved) {
-                $Sib->approved_by = auth()->id();
-                $Sib->approved_at = Carbon::now();
+                $sib->approved_by = auth()->id();
+                $sib->approved_at = Carbon::now();
             }
 
-            if (empty($Sib->update())) {
+            if (empty($sib->update())) {
                 return response()->json([
                     'status' => 0,
                     'info' => 'Operation failed. Try again.',
@@ -140,7 +142,7 @@ class SibsController extends Controller
             return response()->json([
                 'status' => 1,
                 'info' => 'Request updated. Please wait . . .',
-                'redirect' => route('admin.Sib.edit', ['id' => $Sib->id]),
+                'redirect' => route('admin.sibs.edit', ['id' => $sib->id]),
             ]);
         }catch(Exception $exception) {
             return response()->json([
