@@ -104,6 +104,10 @@ Route::middleware(['web'])->domain(env('APP_URL'))->group(function() {
    Route::get('/uprightlayout', [\App\Http\Controllers\UprightAlayoutController::class, 'index'])->name('uprightlayout');
    Route::get('/victorylayout', [\App\Http\Controllers\VictoryController::class, 'index'])->name('victorylayout');
    Route::get('/uprightcity', [\App\Http\Controllers\UprightCityController::class, 'index'])->name('uprightcity');
+   //Route for login and Register
+   Route::get('/login', [\App\Http\Controllers\VictoryController::class, 'index'])->name('login');
+   Route::get('/signup', [\App\Http\Controllers\VictoryController::class, 'index'])->name('signup');
+
 
     Route::get('/login', function () {
         return redirect()->route('login.ui');

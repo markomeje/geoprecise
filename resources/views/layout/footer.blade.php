@@ -19,6 +19,8 @@
 <li id="menu-item-2589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2589"><a href="{{route('contact')}}">Contact Us</a></li>
 <li id="menu-item-2590" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2590"><a href="{{route('faq')}}">FAQ</a></li>
 <li id="menu-item-2587" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2587"><a href="{{route('blog')}}">Blog</a></li>
+<li id="menu-item-2305" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2305 "><a href="{{route('login')}}">Login</a></li>
+<li id="menu-item-2305" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2305 "><a href="{{route('signup')}}">Sign Up</a></li>
 </ul></div></section>				</div>
 								<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
 							<section id="kyber-recent-posts-2" class="widget widget_kyber_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>

@@ -193,6 +193,8 @@ h3 .kyber-infobox-title {
 	<li id="menu-item-2308" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2308"><a href="{{route('ourteam')}}">Our Team</a></li>
 </ul>
 </li>
+<li id="menu-item-2305" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2305 "><a href="{{route('login')}}">Login</a></li>
+<li id="menu-item-2305" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2305 "><a href="{{route('signup')}}">Sign Up</a></li>
 </ul></div>							</nav> 
 							<div class="header-right-side">
 								<div class="social-info-wrapper">
