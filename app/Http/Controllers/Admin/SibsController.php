@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
-use App\Models\{Sib, Client, Form};
+use App\Models\{Sib, Client, Form, Survey};
 use Carbon\Carbon;
 use Validator;
 
@@ -18,19 +18,14 @@ class SibsController extends Controller
     public function apply()
     {
         $data = request()->all();
-        $validator = Validator::make($data, [ 
-            'layout' => ['required', 'string'],
-            'client' => ['required'],
-        ]);
-
-        if ($validator->fails()) {
+        if (empty($data['survey_id']) || empty($data['client_id'])) {
             return response()->json([
                 'status' => 0,
-                'error' => $validator->errors()
+                'info' => 'Invalid operation.',
             ]);
         }
 
-        $client = Client::where(['id' => $data['client']])->first();
+        $client = Client::where(['id' => $data['client_id']])->first();
         if (empty($client)) {
             return response()->json([
                 'status' => 0,
@@ -38,12 +33,26 @@ class SibsController extends Controller
             ]);
         }
 
+        $survey = Survey::where(['id' => $data['survey_id']])->first();
+        if (empty($survey)) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Unknown error. Survey not found.',
+            ]);
+        }
+
+        if ((boolean)$survey->approved !== true) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Survey must be approved first.',
+            ]);
+        }
+
         try {
             $sib = Sib::create([
-                'layout_id' => $data['layout'],
-                'client_id' => $client->id,
+                'client_id' => $data['client_id'],
                 'recorded_by' => auth()->id(),
-                'survey_id' => 0,
+                'survey_id' => $data['survey_id'],
                 'recorder_type' => 'staff',
                 'form_id' => Form::where(['code' => 'SIB'])->pluck('id')->toArray()[0],
             ]);
@@ -57,7 +66,7 @@ class SibsController extends Controller
 
             return response()->json([
                 'status' => 1,
-                'info' => 'Request added. Please wait . . .',
+                'info' => 'Operation successful. Click ok . . .',
                 'redirect' => route('admin.sib.edit', ['id' => $sib->id]),
             ]);
         } catch (Exception $error) {
@@ -78,19 +87,7 @@ class SibsController extends Controller
     //
     public function save($id = 0)
     {
-        $data = request()->all();
-        $validator = Validator::make($data, [ 
-            'layout' => ['required', 'string'],
-            'client' => ['required'],
-        ]);
-
-        if ($validator->fails()) {
-            return response()->json([
-                'status' => 0,
-                'error' => $validator->errors()
-            ]);
-        }
-
+        $data = request()->all(['approved', 'comments']);
         $sib = Sib::find($id);
         if (empty($sib)) {
             return response()->json([
@@ -122,12 +119,10 @@ class SibsController extends Controller
         }
 
         try{
-            $sib->layout_id = $data['layout'];
             $sib->comments = $data['comments'] ?? '';
             $sib->approved = $approved;
-            $sib->completed = $approved;
-
             if ($approved) {
+                $sib->completed = true;
                 $sib->approved_by = auth()->id();
                 $sib->approved_at = Carbon::now();
             }
@@ -141,8 +136,8 @@ class SibsController extends Controller
 
             return response()->json([
                 'status' => 1,
-                'info' => 'Request updated. Please wait . . .',
-                'redirect' => route('admin.sibs.edit', ['id' => $sib->id]),
+                'info' => 'Operation successful. Please wait . . .',
+                'redirect' => route('admin.sib.edit', ['id' => $sib->id]),
             ]);
         }catch(Exception $exception) {
             return response()->json([
@@ -155,15 +150,15 @@ class SibsController extends Controller
     //
     public function delete($id = 0)
     {
-        $Sib = Sib::find($id);
-        if (empty($Sib)) {
+        $sib = Sib::find($id);
+        if (empty($sib)) {
             return response()->json([
                 'status' => 0,
                 'info' => 'Unknown error. Sib not found.',
             ]);
         }
 
-        if ($Sib->delete()) {
+        if ($sib->delete()) {
             return response()->json([
                 'status' => 1,
                 'info' => 'Operation successful.',

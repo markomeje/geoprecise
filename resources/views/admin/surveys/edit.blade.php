@@ -21,11 +21,24 @@
                   </span>
                 </div>
                 @if($approved)
-                  <div class="alert alert-success mb-4 border-0 d-flex justify-content-between align-items-center">
-                    <span class="text-white">Want to book for Site Inspection?</span>
-                    <a href="javascript:;" class="text-white" data-url="{{ route('admin.sib.apply', ['client_id' => $client_id, 'survey_id' => $survey->id]) }}">Apply Here</a>
-                  </div>
-                  {{-- @include('admin.sibs.partials.apply') --}}
+                  @if(empty($survey->sib))
+                    <div class="alert alert-success mb-4 border-0 d-flex justify-content-between align-items-center">
+                      <span class="text-white">Want to book for Site Inspection?</span>
+                      <a href="javascript:;" class="text-white apply-sib" data-url="{{ route('admin.sib.apply', ['client_id' => $client_id, 'survey_id' => $survey->id]) }}" data-message="Are you sure to proceed"><img src="/images/spinner.svg" class="me-2 d-none apply-sib-spinner mb-1">Apply Here</a>
+                    </div>
+                  @else
+                    <div class="bg-dark p-4 mb-4 border-0 d-flex justify-content-between align-items-center">
+                      <span class="text-white">
+                        Site Inspection
+                        (@if(true === (boolean)$survey->sib->approved)
+                          <a href="{{ route('admin.sib.edit', ['id' => $survey->sib->id]) }}" class="text-success">Approved</a>
+                        @else
+                          <a href="{{ route('admin.sib.edit', ['id' => $survey->sib->id]) }}" class="text-danger apply-sib">Unapproved</a>
+                        @endif)
+                      </span>
+                      <a href="{{ route('admin.sib.edit', ['id' => $survey->sib->id]) }}" class="text-white">See details</a>
+                    </div>
+                  @endif
                 @endif
                 <div class="card shadow mb-4">
                   <div class="card-header border-bottom d-flex justify-content-between align-items-center">

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Str;
-use App\Models\{Payment, Psr, Survey};
+use App\Models\{Payment, Psr, Survey, Sib};
 use Carbon\Carbon;
 use Validator;
 use Exception;
@@ -152,6 +152,9 @@ class PaymentsController extends Controller
                     break;
                 case 'psr':
                     $model = Psr::where(['id' => $model_id])->first();
+                    break;
+                case 'sib':
+                    $model = Sib::where(['id' => $model_id])->first();
                     break;
                 default:
                     throw new Exception('Invalid model name passed');

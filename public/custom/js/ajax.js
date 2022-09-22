@@ -2,6 +2,10 @@
 
 	'use strict';
 
+    $('.apply-sib').on('click', function() {
+        handleAjax({that: $(this), button: 'apply-sib-button', spinner: 'apply-sib-spinner'});    
+    });
+
     $('.approve-payment').on('click', function() {
         handleAjax({that: $(this), button: 'approve-payment-button', spinner: 'approve-payment-spinner'});    
     });

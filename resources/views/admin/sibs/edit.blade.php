@@ -7,32 +7,31 @@
         @include('admin.includes.navbar')
       <!-- End Navbar -->
       <div class="container-fluid py-4">
-        @if(empty($sib) || empty($sib->client))
+        @if(empty($sib) || empty($sib->client) || empty($sib->survey))
           <div class="alert alert-danger text-white mt-4 border-0">Unkown error. Details may have been deleted.</div>
         @else
-          <?php $client_name = $sib->client->fullname; $model_id = $sib->id; $model = 'sib'; $layout = $sib->layout; $plot_numbers = $sib->plot_numbers; $client_id = $sib->client_id ?? 0; $approved = (boolean)$sib->approved === true; ?>
+          <?php $survey = $sib->survey; $client_name = $sib->client->fullname; $model_id = $sib->id; $model = 'sib'; $layout = $survey->layout; $plot_numbers = $survey->plot_numbers; $client_id = $sib->client_id ?? 0; $approved = (boolean)$sib->approved === true; ?>
           <div class="row">
             <div class="col-12 col-lg-7 col-xl-6">
               <div class="alert alert-dark mb-4 text-white border-0 d-flex justify-content-between align-items-center">
                 <span>Site Inspection Booking for {{ ucwords($client_name) }}</span>
-                <span>{{ $approved ? 'Approved' : 'Unapproved' }}</span>
+                @if($approved)
+                <div>
+                  <span class="text-success">Approved</span>
+                  (<a class="text-white" href="{{ route('admin.survey.edit', ['id' => $survey->id]) }}">View Survey</a>)
+                </div>
+                @else
+                  <span class="text-danger">Unapproved</span>
+                @endif
               </div>
+              <?php $plot_numbers = str_contains($plot_numbers, '-') ? explode('-', $plot_numbers) : $plot_numbers; ?>
               <div class="card mb-4">
                 <div class="card-header border-bottom d-flex justify-content-between align-items-center">
-                  <div class="text-dark">
-                    {{ empty($plot_numbers) ? 0 : (str_contains($plot_numbers, '-') ? count(explode('-', $plot_numbers)) : 1) }} Plot(s) in {{ $sib->layout->name }}
-                  </div>
-                  <span class="cursor-pointer text-dark" data-bs-toggle="modal" data-bs-target="#add-client-plot">Add Plot(s)</span>
+                  <div class="text-dark">List of Plots Lifted</div>
+                  <div class="text-dark">Approved on {{ date("F j, Y, g:i a", strtotime($survey->approved_at)) }}</div>
                 </div>
-                <?php $route = route('admin.client.plot.add', ['model_id' => $model_id, 'model' => $model]); ?>
-                @include('client.plots.partials.add')
                 <div class="card-body">
-                    <?php $plots = \App\Models\Plot::all(); ?>
-                    @if(empty($sib->plot_numbers))
-                      <div class="alert alert-info m-0 border-0 text-white">No plot(s) added for this application.</div>
-                    @else
-                      <div class="row d-flex flex-wrap g-0">
-                      <?php $plot_numbers = str_contains($sib->plot_numbers, '-') ? explode('-', $sib->plot_numbers) : $sib->plot_numbers; ?>
+                  <div class="row d-flex flex-wrap g-0">
                       @if(is_array($plot_numbers))
                         <?php $count = 1; ?>
                         @foreach($plot_numbers as $number)
@@ -42,9 +41,6 @@
                                 <small class="tiny-font">
                                   ({{ $count++ }}) {{ $number }}
                                 </small>
-                                <small class="text-danger tiny-font cursor-pointer client-delete-plot" data-url="{{ route('admin.client.plot.delete', ['plot_number' => $number, 'model_id' => $model_id, 'model' => $model]) }}" data-message="Are you sure to delete?">
-                                  <i class="icofont-trash"></i>
-                                </small>
                               </div>
                             </div>
                           @endif
@@ -52,18 +48,14 @@
                       @else
                         <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
                           <small class="">{{ $plot_numbers }}</small>
-                          <small class="text-danger tiny-font cursor-pointer client-delete-plot" data-url="{{ route('admin.client.plot.delete', ['plot_number' => $plot_numbers, 'model_id' => $model_id, 'model' => $model]) }}" data-message="Are you sure to delete?">
-                            <i class="icofont-trash"></i>
-                          </small>
                         </div>
                       @endif
                   </div>
-                    @endif
                 </div>
               </div>
               @if(!empty($plot_numbers))
-                <?php $payment = \App\Models\Payment::where(['model' => $model, 'model_id' => $model_id])->first(); ?>
-                <?php $amount = $sib->form ? ($sib->form->amount ?? 0) : 0; $total_plots = is_array($plot_numbers) ? count($plot_numbers) : 1; $total_amount = $total_plots * (int)$amount; ?>
+                <?php $payment = \App\Models\Payment::where(['model' => $model, 'model_id' => $model_id])->first(); //dd($payment); ?>
+                <?php $amount = $sib->form ? ($sib->form->amount ?? 0) : 0; $plots = is_array($plot_numbers) ? count($plot_numbers) : 1; $total_amount = $plots * (int)$amount; ?>
                 @include('admin.payments.partials.record')
                 @if(empty($payment))
                   <div class="alert alert-dark mb-4 text-white d-flex justify-content-between">
@@ -104,63 +96,27 @@
               <div class="card mb-4">
                 <div class="card-header border-bottom">Edit Site Inspection Booking Details</div>
                 <div class="card-body">
-                  <form class="sib-form" action="javascript:;" method="post" data-action="{{ route('admin.sib.save', ['id' => $sib->id]) }}">
+                  <form class="save-sib-form" action="javascript:;" method="post" data-action="{{ route('admin.sib.save', ['id' => $sib->id]) }}">
                     @csrf
-                    <div class="row">
-                      <div class="form-group col-md-6">
-                        <label class="text-muted">Layout Name</label>
-                        <select class="form-control layout" name="layout">
-                          <option value="">Select layout</option>
-                          <?php $layouts = \App\Models\Layout::all(); ?>
-                          @if(empty($layouts))
-                            <option value="">No layouts listed</option>
-                          @else
-                            @foreach($layouts as $area)
-                              <option value="{{ $area->id }}" {{ isset($layout) && $layout->id == $area->id ? 'selected' : '' }}>
-                                {{ ucwords($area->name) }}
-                              </option>
-                            @endforeach
-                          @endif
-                        </select>
-                        <small class="layout-error text-danger"></small>
-                      </div>
-                      <div class="form-group col-md-6">
-                        <label class="text-muted">Client</label>
-                        <select class="form-control client" name="client">
-                          <option value="">Select client</option>
-                          <?php $clients = \App\Models\Client::all(); ?>
-                          @if(empty($clients->count()))
-                            <option value="">No clients listed</option>
-                          @else
-                            @foreach($clients as $client)
-                              <option value="{{ $client->id }}">
-                                {{ ucwords($client->fullname) }}
-                              </option>
-                            @endforeach
-                          @endif
-                        </select>
-                        <small class="client-error text-danger"></small>
-                      </div>
-                    </div>
                     <div class="'form-group mb-3">
                       <label class="text-muted">Comments</label>
                       <textarea class="form-control comments" rows="4" name="comments" placeholder="Enter any comments">{{ $sib->comments }}</textarea>
                       <small class="comments-error text-danger"></small>
                     </div>
-                    <div class="alert d-none sib-message text-white"></div>
+                    <div class="alert d-none save-sib-message text-white"></div>
                     @if($approved)
                       <div class="alert alert-success text-white my-4">Approved by {{ $sib->approver ? $sib->approver->staff->fullname : '' }} on {{ date("F j, Y, g:i a", strtotime($sib->approved_at)) }}</div>
                     @else
                       <label class="text-muted">Approve?</label>
                       <div class="form-group p-3 border mb-4 rounded">
                         <div class="form-check form-switch m-0">
-                          <input class="form-check-input" name="approved" type="checkbox" id="approved" value="1">
-                          <label class="form-check-label" for="approved">Approve Site Inspection Booking</label>
+                          <input class="form-check-input" name="approved" type="checkbox" id="approved" value="1" {{ $approved ? 'checked' : '' }}>
+                          <label class="form-check-label" for="approved">{{ $approved ? 'Approved' : 'Approve Site Inspection' }}</label>
                         </div>
                         <small class="approved-error text-danger"></small>
                       </div>
-                      <button type="submit" class="btn btn-primary btn-lg w-100 sib-button mb-0">
-                        <img src="/images/spinner.svg" class="me-2 d-none sib-spinner mb-1">Save
+                      <button type="submit" class="btn btn-primary btn-lg w-100 save-sib-button mb-0">
+                        <img src="/images/spinner.svg" class="me-2 d-none save-sib-spinner mb-1">Save
                       </button>
                     @endif
                   </form>
