@@ -123,6 +123,7 @@ class SibsController extends Controller
             $sib->approved = $approved;
             if ($approved) {
                 $sib->completed = true;
+                $sib->status = 'completed';
                 $sib->approved_by = auth()->id();
                 $sib->approved_at = Carbon::now();
             }

@@ -10,7 +10,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <div class="">
             <a class="text-white" href="javascript:;">
-              {{ \App\Models\Pcf::count() }} Plan Collections</a>
+              {{ \App\Models\Pcf::count() }} Plans Collected</a>
           </div>
           {{-- <div class="">
             <a class="btn w-100 bg-gradient-dark m-0" href="javascript:;" data-bs-toggle="modal" data-bs-target="#add-plot">

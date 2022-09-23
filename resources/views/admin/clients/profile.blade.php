@@ -40,7 +40,7 @@
                 </div>
                 <div class="">
                     <div class="alert alert-info border-0 mb-4 d-flex justify-content-between">
-                      <span class="text-white">Surveying applications</span>
+                      <span class="text-white">Surveying and Lifting Applications</span>
                       <a href="{{ route('admin.survey.apply', ['client_id' => $client_id]) }}" class="text-white">Apply</a>
                     </div>
                   <?php $surveys = \App\Models\Survey::latest()->where(['client_id' => $client_id])->get(); ?>
@@ -51,6 +51,24 @@
                         @foreach($surveys as $survey)
                           <div class="col-12 col-lg-6 col-xl-4 mb-4">
                               @include('admin.surveys.partials.card')
+                          </div>
+                        @endforeach
+                    </div>
+                  @endif
+                </div>
+                <div class="">
+                    <div class="alert alert-info border-0 mb-4 d-flex justify-content-between">
+                      <span class="text-white">Site Inspection Bookings</span>
+                      {{-- <a href="{{ route('admin.sib.apply', ['client_id' => $client_id]) }}" class="text-white">Apply</a> --}}
+                    </div>
+                  <?php $sibs = \App\Models\Sib::latest()->where(['client_id' => $client_id])->get(); ?>
+                  @if(empty($sibs->count()))
+                    <div class="alert alert-danger text-white border-0 mb-4">No Surveys</div>
+                  @else
+                    <div class="row">
+                        @foreach($sibs as $sib)
+                          <div class="col-12 col-lg-6 col-xl-4 mb-4">
+                              @include('admin.sibs.partials.card')
                           </div>
                         @endforeach
                     </div>

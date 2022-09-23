@@ -20,6 +20,7 @@ return new class extends Migration
             $table->foreignId('form_id')->nullable();
 
             $table->foreignId('issued_by')->nullable();
+            $table->boolean('issued')->default(false);
             $table->timestamp('issued_at')->nullable();
 
             $table->string('recorder_type')->default('staff');

@@ -237,7 +237,23 @@
                   </form>
                 </div>
               </div>
-              <div class="col-12 col-lg-4 col-xl-5"></div>
+              <div class="col-12 col-lg-4">
+                @if($approved)
+                  <?php $plan = \App\Models\Pcf::where(['survey_id' => $survey->id])->first(); ?>
+                  @if(empty($plan))
+                    <div class="alert alert-dark d-flex align-items-center justify-content-between text-white border-0">
+                      <span>Plan not collected.</span>
+                      <a href="javascript:;" class="text-white">Record it.</a>
+                    </div>
+                  @else
+                    <div class="alert alert-danger text-white border-0 mb-4">
+                      <span>Plan Collection</span>
+                      <span>{{ '' }}</span>
+                    </div>
+                    <div class="card"></div>
+                  @endif
+                @endif
+              </div>
             </div>
           </div>
         @endif

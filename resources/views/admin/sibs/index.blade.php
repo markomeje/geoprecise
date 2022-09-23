@@ -7,13 +7,11 @@
         @include('admin.includes.navbar')
       <!-- End Navbar -->
       <div class="container-fluid py-4">
-        <div class="alert alert-info border-0 text-white d-flex align-items-center">
+        <div class="alert alert-info border-0 mb-4 text-white d-flex align-items-center">
           <span class="me-3">
             {{ $sibs->total() }} Site Inspection Bookings
           </span>
-          <a class="m-0 text-white" href="javascript:;" data-bs-toggle="modal" data-bs-target="#apply-sib">Apply</a>
         </div>
-        @include('admin.sibs.partials.apply')
         <div class="">
           @if(empty($sibs->count()))
             <div class="alert alert-danger border-0 text-white">No Site Inspection Bookings yet</div>
