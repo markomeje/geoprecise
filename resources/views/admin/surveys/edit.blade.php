@@ -93,7 +93,7 @@
                       <a href="javascript:;" class="m-0 text-white" data-bs-toggle="modal" data-bs-target="#admin-record-payment">Record Payment</a>
                     </div>
                   @else
-                    <?php $payment_status = $payment->status ?? 'Unpaid'; $payment_approved = true === (boolean)$payment->approved ?>
+                    <?php $payment_status = $payment->status ?? 'Unpaid'; $payment_approved = true === (boolean)$payment->approved; ?>
                     <div class="card mb-4">
                       <div class="card-header border-bottom d-flex justify-content-between align-items-center">
                         <div class="text-dark">
@@ -239,18 +239,21 @@
               </div>
               <div class="col-12 col-lg-4">
                 @if($approved)
-                  <?php $plan = \App\Models\Pcf::where(['survey_id' => $survey->id])->first(); ?>
-                  @if(empty($plan))
-                    <div class="alert alert-dark d-flex align-items-center justify-content-between text-white border-0">
-                      <span>Plan not collected.</span>
-                      <a href="javascript:;" class="text-white">Record it.</a>
+                  <?php $pcf = $survey->pcf; ?>
+                  @if(empty($pcf))
+                    <div class="alert alert-dark d-flex align-items-center justify-content-between text-white border-0 mb-4">
+                      <span class="text-white">Plan Collection.</span>
+                      <a href="javascript:;" class="text-white" data-bs-toggle="modal" data-bs-target="#record-plan">Record Plan</a>
                     </div>
+                    @include('admin.pcfs.partials.add')
+                    <div class="alert alert-danger text-white border-0">Plan not collected yet.</div>
                   @else
-                    <div class="alert alert-danger text-white border-0 mb-4">
-                      <span>Plan Collection</span>
-                      <span>{{ '' }}</span>
+                    <?php $issued = true === (boolean)$pcf->issued; ?>
+                    <div class="alert alert-dark text-white d-flex align-items-center justify-content-between border-0 mb-4">
+                      <span class="text-white">Plan Collection</span>
+                      <span class="text-{{ $issued ? 'success' : 'danger' }}">{{ $issued ? 'Collected' : 'Not Collected' }}</span>
                     </div>
-                    <div class="card"></div>
+                    @include('admin.pcfs.partials.card')
                   @endif
                 @endif
               </div>

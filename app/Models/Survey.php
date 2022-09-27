@@ -113,5 +113,16 @@ class Survey extends Model
     {
         return $this->hasOne(Sib::class, 'survey_id');
     }
+
+    /**
+     * A survey has one plan
+     *
+     * Plan collection form
+     * @var array<string, string>
+     */
+    public function pcf()
+    {
+        return $this->hasOne(Pcf::class, 'survey_id');
+    }
     
 }

@@ -16,13 +16,29 @@ class Pcf extends Model
      */
     protected $fillable = [
         'form_id',
-        'plot_numbers',
-        'staff_id',
+        'plan_number',
+        'location',
         'completed',
-        'description',
+        'plan_title',
+        'issued',
         'client_id',
+        'recorded_by',
         'status',
+        'survey_id',
+        'recorder_type',
+        'issued_by',
+        'issued_at',
     ];
+
+    /**
+     * A plan belongs to a form
+     *
+     * @var array<string, string>
+     */
+    public function form()
+    {
+        return $this->belongsTo(Form::class);
+    }
 
     /**
      * A property search request must belong to a client
@@ -35,12 +51,20 @@ class Pcf extends Model
     }
 
     /**
-     * A Plan collection must be issued by a staff.
+     * Issued of a particular plan.
      *
      * @var array<string, string>
      */
-    public function staff()
+    public function issuer()
     {
-        return $this->belongsTo(Staff::class, 'issued_by');
+        return $this->belongsTo(User::class, 'issued_by');
+    }
+
+    /**
+     * Get the staff who recorded the plan.
+     */
+    public function recorder()
+    {
+        return $this->belongsTo(User::class, 'recorded_by');
     }
 }

@@ -222,6 +222,8 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
 
     Route::prefix('pcfs')->group(function () {
         Route::get('/', [\App\Http\Controllers\Admin\PcfsController::class, 'index'])->name('admin.pcfs');
+        Route::post('/record', [\App\Http\Controllers\Admin\PcfsController::class, 'record'])->name('admin.pcf.record');
+        Route::post('/issue/{id}', [\App\Http\Controllers\Admin\PcfsController::class, 'issue'])->name('admin.pcf.issue');
     });
 });
 

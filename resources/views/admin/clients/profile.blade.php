@@ -56,24 +56,6 @@
                     </div>
                   @endif
                 </div>
-                <div class="">
-                    <div class="alert alert-info border-0 mb-4 d-flex justify-content-between">
-                      <span class="text-white">Site Inspection Bookings</span>
-                      {{-- <a href="{{ route('admin.sib.apply', ['client_id' => $client_id]) }}" class="text-white">Apply</a> --}}
-                    </div>
-                  <?php $sibs = \App\Models\Sib::latest()->where(['client_id' => $client_id])->get(); ?>
-                  @if(empty($sibs->count()))
-                    <div class="alert alert-danger text-white border-0 mb-4">No Surveys</div>
-                  @else
-                    <div class="row">
-                        @foreach($sibs as $sib)
-                          <div class="col-12 col-lg-6 col-xl-4 mb-4">
-                              @include('admin.sibs.partials.card')
-                          </div>
-                        @endforeach
-                    </div>
-                  @endif
-                </div>
               </div>
               <div class="col-12 col-md-5 col-lg-4 col-xl-3">
                 <div class="alert alert-info border-0 text-white mb-4">{{ ucwords($client->fullname) }} Payments</div>

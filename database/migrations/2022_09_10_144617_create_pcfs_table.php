@@ -27,7 +27,7 @@ return new class extends Migration
             $table->foreignId('recorded_by')->nullable();
 
             $table->string('plan_title');
-            $table->string('plot_location');
+            $table->string('location');
             $table->foreignId('client_id');
             $table->foreignId('survey_id')->nullable();
             $table->string('status')->nullable();

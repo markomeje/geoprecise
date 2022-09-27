@@ -4,16 +4,26 @@
 			<div class="text-white" data-bs-toggle="modal" data-bs-target="#edit-pcf-{{ $pcf->id }}">
 				Plan No({{ ucwords($pcf->plan_number) }})
 			</div>
-			<a href="{{ route('admin.clients.profile', ['id' => $pcf->client->id]) }}" class="text-white">
-				Collected by ({{ \Str::limit(ucwords($pcf->plan_title), 8) }})
-			</a>
+			@if($issued)
+				<a href="{{ route('admin.clients.profile', ['id' => $pcf->client->id]) }}" class="text-white">
+					Collected by ({{ \Str::limit(ucwords($pcf->plan_title), 8) }})
+				</a>
+			@else
+			 <div class="text-danger">Not Collected</div>
+			@endif
 		</div>
 		<div class="d-flex align-items-center justify-content-between">
-			<a href="{{ route('admin.staff.profile', ['id' => $pcf->staff->id]) }}" class="text-white">
-				Issued by ({{ \Str::limit(ucwords($pcf->staff->fullname), 10) }})
-			</a>
+			@if($issued)
+				<a href="{{ route('admin.staff.profile', ['id' => $pcf->issuer->staff->id]) }}" class="text-white">
+					Issued by ({{ \Str::limit(ucwords($pcf->issuer->staff->fullname), 10) }})
+				</a>
+			@else
+				<a href="javascript:;" class="text-white issue-plan" data-url="{{ route('admin.pcf.issue', ['id' => $pcf->id]) }}" data-message="Are you sure to proceed"><img src="/images/spinner.svg" class="me-2 d-none issue-plan-spinner mb-1">Issue Now?</a>
+			@endif
 			<div class="text-white">
-				{{ ucfirst($pcf->status) }}
+				<a href="{{ route('admin.staff.profile', ['id' => $pcf->recorder->staff->id]) }}" class="text-white">
+					Recorded by ({{ \Str::limit(ucwords($pcf->recorder->staff->fullname), 10) }})
+				</a>
 			</div>
 		</div>	
 	</div>
