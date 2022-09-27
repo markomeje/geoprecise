@@ -20,13 +20,14 @@ return new class extends Migration
             $table->foreignId('form_id')->nullable();
 
             $table->foreignId('issued_by')->nullable();
+            $table->boolean('issued')->default(false);
             $table->timestamp('issued_at')->nullable();
 
             $table->string('recorder_type')->default('staff');
             $table->foreignId('recorded_by')->nullable();
 
             $table->string('plan_title');
-            $table->string('plot_location');
+            $table->string('location');
             $table->foreignId('client_id');
             $table->foreignId('survey_id')->nullable();
             $table->string('status')->nullable();

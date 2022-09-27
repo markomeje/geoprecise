@@ -1,26 +1,25 @@
 <div class="card bg-white shadow-sm border-radius-lg">
+  <?php $approved = (boolean)($psr->approved ?? false) === true; ?>
   <div class="card-body">
     <div class="d-flex align-items-center mb-3 pb-3 border-bottom justify-content-between">
-      <a href="{{ route('admin.psr.edit', ['id' => $psr->id]) }}" class="text-dark">
-        <small>
-          Psr({{ (boolean)($psr->approved ?? false) === true ? 'Approved' : 'Unapproved' }})
-        </small>
+      <a href="{{ route('admin.psr.edit', ['id' => $psr->id]) }}" class="text-{{ $approved ? 'success' : 'danger' }}">
+          {{ $approved ? 'Approved' : 'Unapproved' }}
       </a>
       <a href="{{ route('admin.psr.edit', ['id' => $psr->id]) }}" class="text-dark">
-        <small>{{ ucfirst($psr->status) }}</small>
+        {{ ucfirst($psr->status) }}
       </a>
     </div>
     <div class="d-flex align-items-center justify-content-between">
+      <a href="{{ route('admin.clients.profile', ['id' => $psr->client_id]) }}" class="text-dark">
+        {{ empty($psr->client) ? 'Nill' : 'By '.\Str::limit(ucwords($psr->client->fullname), 12) }}
+      </a>
       @if(empty($psr->payment))
-        <small class="text-danger">Unpaid</small>
+        <div class="text-danger">Unpaid</div>
       @elseif($psr->payment->status !== 'paid')
-        <small class="text-danger">Unpaid</small>
+        <div class="text-danger">Unpaid</div>
       @else
-        <small class="text-success">Paid</small>
+        <div class="text-success">Paid</div>
       @endif
-      <small class="text-dark">
-        {{ empty($psr->layout) ? 'Nill' : \Str::limit(ucwords($psr->layout->name), 12) }}
-      </small>
     </div>
   </div>
   <div class="card-footer bg-dark d-flex align-items-center justify-content-between">

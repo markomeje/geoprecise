@@ -16,10 +16,7 @@ class Sib extends Model
      */
     protected $fillable = [
         'form_id',
-        'plot_numbers',
         'client_id',
-        'layout_id',
-        'user_id',
         'completed',
         'survey_id',
         'approved',
@@ -88,6 +85,16 @@ class Sib extends Model
     public function recorder()
     {
         return $this->belongsTo(User::class, 'recorded_by');
+    }
+
+    /**
+     * Site inspection must belong to a survey
+     *
+     * @var array<string, string>
+     */
+    public function survey()
+    {
+        return $this->belongsTo(Survey::class);
     }
 
 }

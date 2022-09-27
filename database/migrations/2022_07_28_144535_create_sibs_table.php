@@ -15,11 +15,8 @@ return new class extends Migration
     {
         Schema::create('sibs', function (Blueprint $table) {
             $table->id();
-            // $table->foreignId('form_id');
-            // $table->string('plot_numbers')->nullable();
-            // $table->foreignId('layout_id')->nullable();
-            $table->foreignId('survey_id')->nullable();
-
+            $table->foreignId('form_id');
+            $table->foreignId('survey_id');
             $table->foreignId('client_id');
             
             $table->boolean('approved')->default(false);

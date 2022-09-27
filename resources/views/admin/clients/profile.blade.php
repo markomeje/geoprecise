@@ -40,7 +40,7 @@
                 </div>
                 <div class="">
                     <div class="alert alert-info border-0 mb-4 d-flex justify-content-between">
-                      <span class="text-white">Surveying applications</span>
+                      <span class="text-white">Surveying and Lifting Applications</span>
                       <a href="{{ route('admin.survey.apply', ['client_id' => $client_id]) }}" class="text-white">Apply</a>
                     </div>
                   <?php $surveys = \App\Models\Survey::latest()->where(['client_id' => $client_id])->get(); ?>

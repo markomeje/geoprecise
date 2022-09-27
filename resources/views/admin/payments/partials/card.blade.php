@@ -10,7 +10,7 @@
       </div>
     </div>
     <div class="d-flex align-items-center justify-content-between">
-      <div class="text-dark">
+      <div class="text-{{ $approved ? 'success' : 'danger'}}">
         {{ $approved ? 'Approved' : 'Unapproved' }}
       </div>
       <div class="text-dark">

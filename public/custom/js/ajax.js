@@ -2,6 +2,14 @@
 
 	'use strict';
 
+    $('.issue-plan').on('click', function() {
+        handleAjax({that: $(this), button: 'issue-plan-button', spinner: 'issue-plan-spinner'});    
+    });
+
+    $('.apply-sib').on('click', function() {
+        handleAjax({that: $(this), button: 'apply-sib-button', spinner: 'apply-sib-spinner'});    
+    });
+
     $('.approve-payment').on('click', function() {
         handleAjax({that: $(this), button: 'approve-payment-button', spinner: 'approve-payment-spinner'});    
     });

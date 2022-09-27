@@ -21,11 +21,24 @@
                   </span>
                 </div>
                 @if($approved)
-                  <div class="alert alert-success mb-4 border-0 d-flex justify-content-between align-items-center">
-                    <span class="text-white">Want to book for Site Inspection?</span>
-                    <a href="javascript:;" class="text-white" data-url="{{ route('admin.sib.apply', ['client_id' => $client_id, 'survey_id' => $survey->id]) }}">Apply Here</a>
-                  </div>
-                  {{-- @include('admin.sibs.partials.apply') --}}
+                  @if(empty($survey->sib))
+                    <div class="alert alert-success mb-4 border-0 d-flex justify-content-between align-items-center">
+                      <span class="text-white">Want to book for Site Inspection?</span>
+                      <a href="javascript:;" class="text-white apply-sib" data-url="{{ route('admin.sib.apply', ['client_id' => $client_id, 'survey_id' => $survey->id]) }}" data-message="Are you sure to proceed"><img src="/images/spinner.svg" class="me-2 d-none apply-sib-spinner mb-1">Apply Here</a>
+                    </div>
+                  @else
+                    <div class="bg-dark p-4 mb-4 border-0 d-flex justify-content-between align-items-center">
+                      <span class="text-white">
+                        Site Inspection
+                        (@if(true === (boolean)$survey->sib->approved)
+                          <a href="{{ route('admin.sib.edit', ['id' => $survey->sib->id]) }}" class="text-success">Approved</a>
+                        @else
+                          <a href="{{ route('admin.sib.edit', ['id' => $survey->sib->id]) }}" class="text-danger apply-sib">Unapproved</a>
+                        @endif)
+                      </span>
+                      <a href="{{ route('admin.sib.edit', ['id' => $survey->sib->id]) }}" class="text-white">See details</a>
+                    </div>
+                  @endif
                 @endif
                 <div class="card shadow mb-4">
                   <div class="card-header border-bottom d-flex justify-content-between align-items-center">
@@ -80,7 +93,7 @@
                       <a href="javascript:;" class="m-0 text-white" data-bs-toggle="modal" data-bs-target="#admin-record-payment">Record Payment</a>
                     </div>
                   @else
-                    <?php $payment_status = $payment->status ?? 'Unpaid'; $payment_approved = true === (boolean)$payment->approved ?>
+                    <?php $payment_status = $payment->status ?? 'Unpaid'; $payment_approved = true === (boolean)$payment->approved; ?>
                     <div class="card mb-4">
                       <div class="card-header border-bottom d-flex justify-content-between align-items-center">
                         <div class="text-dark">
@@ -224,7 +237,26 @@
                   </form>
                 </div>
               </div>
-              <div class="col-12 col-lg-4 col-xl-5"></div>
+              <div class="col-12 col-lg-4">
+                @if($approved)
+                  <?php $pcf = $survey->pcf; ?>
+                  @if(empty($pcf))
+                    <div class="alert alert-dark d-flex align-items-center justify-content-between text-white border-0 mb-4">
+                      <span class="text-white">Plan Collection.</span>
+                      <a href="javascript:;" class="text-white" data-bs-toggle="modal" data-bs-target="#record-plan">Record Plan</a>
+                    </div>
+                    @include('admin.pcfs.partials.add')
+                    <div class="alert alert-danger text-white border-0">Plan not collected yet.</div>
+                  @else
+                    <?php $issued = true === (boolean)$pcf->issued; ?>
+                    <div class="alert alert-dark text-white d-flex align-items-center justify-content-between border-0 mb-4">
+                      <span class="text-white">Plan Collection</span>
+                      <span class="text-{{ $issued ? 'success' : 'danger' }}">{{ $issued ? 'Collected' : 'Not Collected' }}</span>
+                    </div>
+                    @include('admin.pcfs.partials.card')
+                  @endif
+                @endif
+              </div>
             </div>
           </div>
         @endif

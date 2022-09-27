@@ -98,12 +98,31 @@ class Survey extends Model
         return $this->belongsTo(User::class, 'approved_by');
     }
 
-     /**
+    /**
      * Get the staff who recorded the survey.
      */
     public function recorder()
     {
         return $this->belongsTo(User::class, 'recorded_by');
+    }
+
+    /**
+     * A survey may have one site inspection record.
+     */
+    public function sib()
+    {
+        return $this->hasOne(Sib::class, 'survey_id');
+    }
+
+    /**
+     * A survey has one plan
+     *
+     * Plan collection form
+     * @var array<string, string>
+     */
+    public function pcf()
+    {
+        return $this->hasOne(Pcf::class, 'survey_id');
     }
     
 }
