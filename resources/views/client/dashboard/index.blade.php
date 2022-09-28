@@ -15,9 +15,11 @@
         @else
           <div class="row mt-4">
             @foreach($forms as $key => $form)
-              <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-                @include('client.forms.partials.card')
-              </div>
+              @if(!empty($form->amount))
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                  @include('client.forms.partials.card')
+                </div>
+              @endif
             @endforeach
           </div>
         @endif

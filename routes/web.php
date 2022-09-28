@@ -250,7 +250,7 @@ Route::domain(env('CLIENT_URL'))->middleware(['auth', 'client'])->group(function
     });
 
     Route::get('/payments', [\App\Http\Controllers\Client\PaymentController::class, 'index'])->name('client.payments');
-    Route::post('/payment/process', [\App\Http\Controllers\Client\PaymentController::class, 'pay'])->name('payment.process');
+    Route::post('/payment/process', [\App\Http\Controllers\Client\PaymentController::class, 'pay'])->name('client.payment.process');
 
     Route::post('/profile/edit/{id}', [\App\Http\Controllers\Client\ProfileController::class, 'edit'])->name('client.profile.edit');
 
@@ -259,17 +259,21 @@ Route::domain(env('CLIENT_URL'))->middleware(['auth', 'client'])->group(function
         Route::get('/{id}/{slug}', [\App\Http\Controllers\Client\FormsController::class, 'form'])->name('client.form');
     });
 
-    Route::prefix('psr')->group(function () {
-        Route::post('/save', [\App\Http\Controllers\Client\PsrController::class, 'save'])->name('client.psr.save');
+    Route::prefix('psrs')->group(function () {
+        Route::get('/', [\App\Http\Controllers\Client\PsrsController::class, 'index'])->name('client.psrs');
+        Route::post('/save/{id}', [\App\Http\Controllers\Client\PsrsController::class, 'save'])->name('client.psr.save');
+        Route::get('/edit/{id}', [\App\Http\Controllers\Client\PsrsController::class, 'edit'])->name('client.psr.edit');
     });
 
-    Route::prefix('survey')->group(function () {
+    Route::prefix('surveys')->group(function () {
+        Route::post('/', [\App\Http\Controllers\Client\SurveyController::class, 'index'])->name('client.surveys');
         Route::post('/add', [\App\Http\Controllers\Client\SurveyController::class, 'add'])->name('client.survey.add');
         Route::get('/edit/{id}', [\App\Http\Controllers\Client\SurveyController::class, 'edit'])->name('client.survey.edit');
         Route::post('/update/{id}', [\App\Http\Controllers\Client\SurveyController::class, 'edit'])->name('client.survey.update');
     });
 
-    Route::prefix('sib')->group(function () {
+    Route::prefix('sibs')->group(function () {
+        Route::post('/', [\App\Http\Controllers\Client\SibController::class, 'index'])->name('client.sibs');
         Route::post('/add', [\App\Http\Controllers\Client\SibController::class, 'add'])->name('client.sib.add');
         Route::get('/edit/{id}', [\App\Http\Controllers\Client\SibController::class, 'edit'])->name('client.sib.edit');
         Route::post('/update/{id}', [\App\Http\Controllers\Client\SibController::class, 'edit'])->name('client.sib.update');

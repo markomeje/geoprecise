@@ -12,12 +12,6 @@
             <a class="text-white" href="javascript:;">
               {{ \App\Models\Pcf::count() }} Plans Collected</a>
           </div>
-          {{-- <div class="">
-            <a class="btn w-100 bg-gradient-dark m-0" href="javascript:;" data-bs-toggle="modal" data-bs-target="#add-plot">
-              <i class="fas fa-plus"></i>&nbsp;&nbsp;Add Plot
-            </a>
-              @include('admin.plots.partials.add')
-          </div> --}}
         </div>
         @if(empty($pcfs->count()))
           <div class="alert alert-info mt-4 border-0 text-white">No plan collections available</div>

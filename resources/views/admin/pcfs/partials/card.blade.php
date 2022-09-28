@@ -4,6 +4,7 @@
 			<div class="text-white" data-bs-toggle="modal" data-bs-target="#edit-pcf-{{ $pcf->id }}">
 				Plan No({{ ucwords($pcf->plan_number) }})
 			</div>
+			<?php $issued = true === (boolean)$pcf->issued; ?>
 			@if($issued)
 				<a href="{{ route('admin.clients.profile', ['id' => $pcf->client->id]) }}" class="text-white">
 					Collected by ({{ \Str::limit(ucwords($pcf->plan_title), 8) }})
@@ -15,16 +16,18 @@
 		<div class="d-flex align-items-center justify-content-between">
 			@if($issued)
 				<a href="{{ route('admin.staff.profile', ['id' => $pcf->issuer->staff->id]) }}" class="text-white">
-					Issued by ({{ \Str::limit(ucwords($pcf->issuer->staff->fullname), 10) }})
+					Issued by ({{ \Str::limit(ucwords($pcf->issuer->staff->fullname), 8) }})
 				</a>
 			@else
 				<a href="javascript:;" class="text-white issue-plan" data-url="{{ route('admin.pcf.issue', ['id' => $pcf->id]) }}" data-message="Are you sure to proceed"><img src="/images/spinner.svg" class="me-2 d-none issue-plan-spinner mb-1">Issue Now?</a>
 			@endif
-			<div class="text-white">
-				<a href="{{ route('admin.staff.profile', ['id' => $pcf->recorder->staff->id]) }}" class="text-white">
-					Recorded by ({{ \Str::limit(ucwords($pcf->recorder->staff->fullname), 10) }})
-				</a>
-			</div>
+			@if(empty($pcf->issued_at))
+				<div class="text-white">Nill</div>
+			@else
+				<div class="text-white">
+					{{ date("F j, Y", strtotime($pcf->issued_at)) }}
+				</div>
+			@endif
 		</div>	
 	</div>
 	<div class="card-footer d-flex align-items-center justify-content-between">

@@ -36,7 +36,7 @@ class PaymentController extends Controller
             $reference = Str::uuid();
             $payment = Payment::create([
                 'amount' => $amount,
-                'user_id' => auth()->id(),
+                'client_id' => auth()->id()->client->id,
                 'type' => $type,
                 'status' => 'initialized',
                 'model_id' => $model_id,
