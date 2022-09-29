@@ -35,7 +35,7 @@ class PlotController extends Controller
                 $model = Psr::find($id);
                 break;
             default:
-                throw new Exception('Invalid model name passed');
+                $model = null;
                 break;
         }
         
@@ -46,10 +46,10 @@ class PlotController extends Controller
             ]);
         }
 
-        if ((boolean)($model->approved ?? 0) === true || (empty($model->payment) ? '' : $model->payment->status) == 'paid') {
+        if ((boolean)($model->approved ?? 0) === true || (empty($model->payment) ? '' : $model->payment->status) === 'paid') {
             return response()->json([
                 'status' => 0,
-                'info' => 'Not allowed after payment or approval'
+                'info' => 'Not allowed after Payment'
             ]);
         }
 

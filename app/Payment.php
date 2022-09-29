@@ -21,7 +21,7 @@ class Payment
 
         $payment = \App\Models\Payment::where([
             'reference' => $reference,
-            'user_id' => auth()->id(),
+            'client_id' => auth()->user()->client->id,
         ])->first();
 
         if (empty($payment)) {
@@ -31,7 +31,7 @@ class Payment
             ];
         }
 
-        if ('paid' === strtolower($payment->status) && true === (boolean)$payment->paid) {
+        if ('paid' === strtolower($payment->status)) {
             return [
                 'status' => 1,
                 'info' => 'Payment already verified',
@@ -43,7 +43,6 @@ class Payment
         	$status = (string)$paystack->data->status ?? '';
         	if('success' === strtolower($status)) {
         		$payment->status = 'paid';
-        		$payment->paid = true;
         		$payment->update();
         		return [
         			'status' => 1, 
@@ -52,7 +51,6 @@ class Payment
         	}
 
         	$payment->status = $status;
-        	$payment->paid = false;
         	$payment->update();
 
         	return [

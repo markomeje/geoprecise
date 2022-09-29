@@ -13,7 +13,7 @@ class PaymentController extends Controller
     //
     public function index()
     {
-        return view('client.payments.index', ['title' => 'All Payments', 'payments' => auth()->user()->payments]);
+        return view('client.payments.index', ['title' => 'All Payments', 'payments' => Payment::paid()->where(['client_id' => auth()->user()->client->id])->get()]);
     }
 
     //
@@ -36,7 +36,7 @@ class PaymentController extends Controller
             $reference = Str::uuid();
             $payment = Payment::create([
                 'amount' => $amount,
-                'client_id' => auth()->id()->client->id,
+                'client_id' => auth()->user()->client->id,
                 'type' => $type,
                 'status' => 'initialized',
                 'model_id' => $model_id,
@@ -53,7 +53,7 @@ class PaymentController extends Controller
             }else {
                 $data = ['amount' => $amount, 'email' => auth()->user()->email, 'reference' => $reference];
                 $paysack = (new Paystack())->initialize($data);
-                $response = (false !== $paysack && isset($paysack->data)) ? ['status' => 1, 'info' => 'Redirecting, please accept . . .', 'redirect' => $paysack->data->authorization_url] : ['status' => 0, 'info' => 'Payment initialization failed. Try again later.'];
+                $response = (false !== $paysack && isset($paysack->data)) ? ['status' => 1, 'info' => 'Redirecting, Click Ok', 'redirect' => $paysack->data->authorization_url] : ['status' => 0, 'info' => 'Payment initialization failed. Try again later.'];
                 return response()->json($response);
             }
         }catch(Exception $exception) {

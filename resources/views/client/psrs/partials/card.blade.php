@@ -18,7 +18,7 @@
         @if(empty($psr->payment))
           <div class="text-danger">Not Payment</div>
         @elseif($psr->payment->status !== 'paid')
-          <div class="text-danger">Not Payment</div>
+          <div class="text-danger">No Payment</div>
         @else
           <div class="text-success">Paid</div>
         @endif

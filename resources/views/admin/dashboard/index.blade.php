@@ -17,7 +17,7 @@
             @foreach($forms as $key => $form)
               @if(!empty($form->amount))
                 <div class="col-12 col-md-6 col-lg-3 mb-4">
-                  @include('client.forms.partials.card')
+                  @include('admin.forms.partials.card')
                 </div>
               @endif
             @endforeach

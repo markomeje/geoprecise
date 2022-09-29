@@ -65,7 +65,7 @@ class Psr extends Model
      */
     public function payment()
     {
-        return $this->hasOne(Payment::class, 'model_id')->where(['model' => 'psr']);
+        return $this->hasOne(Payment::class, 'model_id')->where(['model' => 'psr', 'status' => 'paid']);
     }
 
     /**

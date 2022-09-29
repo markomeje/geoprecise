@@ -62,42 +62,20 @@
                 </div>
               </div>
               @if(!empty($plot_numbers))
-                <?php $payment = \App\Models\Payment::where(['model' => $model, 'model_id' => $model_id])->first(); ?>
+                <?php $payment = \App\Models\Payment::paid()->where(['model' => $model, 'model_id' => $model_id])->first(); ?>
                 <?php $amount = $psr->form ? ($psr->form->amount ?? 0) : 0; $total_plots = is_array($plot_numbers) ? count($plot_numbers) : 1; $total_amount = $total_plots * (int)$amount; ?>
                 @if(empty($payment))
                   <div class="alert alert-dark mb-4 text-white d-flex justify-content-between">
                     <span class="text-white">Total: NGN{{ number_format($total_amount) }} Unpaid</span>
-                    <a href="javascript:;" class="m-0 text-white make-payment" data-message="Are you sure to make payment now?" data-url="{{ route('client.payment.process', ['type' => 'paystack', 'model_id' => $psr->id, 'model' => $model, 'amount' => $total_amount]) }}">Make Payment</a>
+                    <a href="javascript:;" class="m-0 text-white make-payment" data-message="Are you sure to make payment now?" data-url="{{ route('client.payment.process', ['type' => 'paystack', 'model_id' => $psr->id, 'model' => $model, 'amount' => $total_amount]) }}"><img src="/images/spinner.svg" class="me-2 d-none make-payment-spinner mb-1">Make Payment</a>
                   </div>
                 @else
                   <?php $payment_status = $payment->status ?? 'Unpaid'; $payment_approved = true === (boolean)$payment->approved ?>
-                  <div class="card mb-4">
-                    <div class="card-header border-bottom d-flex justify-content-between align-items-center">
-                      <div class="text-dark">
-                        Total: NGN{{ number_format($total_amount) }}
-                      </div>
-                      <div class="text-dark">
-                        {{ ucwords($payment_status) }} ({{ $payment_approved ? 'Approved' : 'Unapproved' }})
-                      </div>
-                    </div>
-                    <div class="card-body">
-                      <div class="d-flex align-items-center">
-                        @if($payment_status == 'paid')
-                          @if($payment_approved)
-                            <div class="alert alert-success w-100 m-0 text-white">Payment Approved By {{ $payment->approver ? $payment->approver->staff->fullname : '' }} on {{ date("F j, Y, g:i a", strtotime($payment->approved_at)) }}</div>
-                          @else
-                            <div class="approve-payment" data-url="{{ route('client.payment.approve', ['model' => $model, 'model_id' => $model_id, 'client_id' => $client_id, 'reference' => $payment->reference]) }}">
-                              <a href="javascript:;" class="btn btn-primary approve-payment-button mb-0">
-                                <img src="/images/spinner.svg" class="me-2 d-none approve-payment-spinner mb-1">Approve payment
-                              </a>
-                            </div>
-                          @endif
-                        @else
-                          <a href="javascript:;" class="m-0 btn btn-primary make-payment" data-message="Are you sure to make payment now?" data-url="{{ route('client.payment.process', ['type' => 'paystack', 'model_id' => $psr->id, 'model' => $model, 'amount' => $total_amount]) }}">Record Payment</a>
-                        @endif
-                      </div>
-                    </div>
-                  </div>
+                  @if($payment_approved)
+                    <div class="alert alert-success w-100 m-0 text-white mb-4">Payment Approved on {{ date("F j, Y, g:i a", strtotime($payment->approved_at)) }}</div>
+                  @else
+                    <div class="alert alert-info mb-4 text-white">Payment Awaiting Approval</div>
+                  @endif
                 @endif
               @endif
               <div class="card mb-4">

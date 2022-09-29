@@ -63,39 +63,34 @@
                 </div>
               </div>
               @if(!empty($plot_numbers))
-                <?php $payment = \App\Models\Payment::where(['model' => $model, 'model_id' => $model_id])->first(); ?>
                 <?php $amount = $psr->form ? ($psr->form->amount ?? 0) : 0; $total_plots = is_array($plot_numbers) ? count($plot_numbers) : 1; $total_amount = $total_plots * (int)$amount; ?>
                 @include('admin.payments.partials.record')
-                @if(empty($payment))
+                @if(empty($psr->payment))
                   <div class="alert alert-dark mb-4 text-white d-flex justify-content-between">
                     <span class="text-white">Total: NGN{{ number_format($total_amount) }} Unpaid</span>
                     <a href="javascript:;" class="m-0 text-white" data-bs-toggle="modal" data-bs-target="#admin-record-payment">Record Payment</a>
                   </div>
                 @else
-                  <?php $payment_status = $payment->status ?? 'Unpaid'; $payment_approved = true === (boolean)$payment->approved ?>
+                  <?php $payment = $psr->payment; $payment_status = $payment->status ?? 'Unpaid'; $payment_approved = true === (boolean)$payment->approved ?>
                   <div class="card mb-4">
                     <div class="card-header border-bottom d-flex justify-content-between align-items-center">
                       <div class="text-dark">
                         Total: NGN{{ number_format($total_amount) }}
                       </div>
                       <div class="text-dark">
-                        {{ ucwords($payment_status) }} ({{ $payment_approved ? 'Approved' : 'Unapproved' }})
+                        <span class="text-success">{{ ucwords($payment_status) }}</span> ({{ $payment_approved ? 'Approved' : 'Unapproved' }})
                       </div>
                     </div>
                     <div class="card-body">
                       <div class="d-flex align-items-center">
-                        @if($payment_status == 'paid')
-                          @if($payment_approved)
-                            <div class="alert alert-success w-100 m-0 text-white">Payment Approved By {{ $payment->approver ? $payment->approver->staff->fullname : '' }} on {{ date("F j, Y, g:i a", strtotime($payment->approved_at)) }}</div>
-                          @else
-                            <div class="approve-payment" data-url="{{ route('admin.payment.approve', ['model' => $model, 'model_id' => $model_id, 'client_id' => $client_id, 'reference' => $payment->reference]) }}">
-                              <a href="javascript:;" class="btn btn-primary approve-payment-button mb-0">
-                                <img src="/images/spinner.svg" class="me-2 d-none approve-payment-spinner mb-1">Approve payment
-                              </a>
-                            </div>
-                          @endif
+                        @if($payment_approved)
+                          <div class="alert alert-success w-100 m-0 text-white">Payment Approved By {{ $payment->approver ? $payment->approver->staff->fullname : '' }} on {{ date("F j, Y, g:i a", strtotime($payment->approved_at)) }}</div>
                         @else
-                          <a href="javascript:;" class="m-0 btn btn-primary" data-bs-toggle="modal" data-bs-target="#admin-record-payment">Record Payment</a>
+                          <div class="approve-payment" data-url="{{ route('admin.payment.approve', ['model' => $model, 'model_id' => $model_id, 'client_id' => $client_id, 'reference' => $payment->reference]) }}">
+                            <a href="javascript:;" class="btn btn-primary approve-payment-button mb-0">
+                              <img src="/images/spinner.svg" class="me-2 d-none approve-payment-spinner mb-1">Approve payment
+                            </a>
+                          </div>
                         @endif
                       </div>
                     </div>
@@ -154,6 +149,9 @@
                       <small class="comments-error text-danger"></small>
                     </div>
                     <div class="alert d-none psr-message text-white"></div>
+                    @if(true === (boolean)$psr->completed && !$approved)
+                      <div class="alert alert-success text-white my-4">Request Completed. Awaiting Approval.</div>
+                    @endif
                     @if($approved)
                       <div class="alert alert-success text-white my-4">Approved by {{ $psr->approver ? $psr->approver->staff->fullname : '' }} on {{ date("F j, Y, g:i a", strtotime($psr->approved_at)) }}</div>
                     @else

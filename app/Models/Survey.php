@@ -75,7 +75,7 @@ class Survey extends Model
      */
     public function payment()
     {
-        return $this->hasOne(Payment::class, 'model_id')->where(['model' => 'survey']);
+        return $this->hasOne(Payment::class, 'model_id')->where(['model' => 'survey', 'status' => 'paid']);
     }
 
     /**
