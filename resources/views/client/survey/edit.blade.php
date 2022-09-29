@@ -7,13 +7,14 @@
         @include('client.includes.navbar')
       <!-- End Navbar -->
       <div class="container-fluid py-4">
-        @if(empty($survey))
+        @if(empty($survey) || empty($survey->client))
           <div class="alert alert-danger text-white mt-4 border-0">Surveying details not available</div>
         @else
-          <?php $completed = (boolean)$survey->completed; //dd($survey); ?>
+          <?php $model_id = $survey->id; $model = 'survey'; $layout = $survey->layout; $plot_numbers = $survey->plot_numbers; $client_id = $survey->client_id ?? 0; $approved = (boolean)$survey->approved === true; $completed = true === (boolean)$survey->completed; ?>
           <div class="row">
             <div class="col-12 col-lg-8 mb-4">
               <div class="alert alert-dark border-0 text-white cursor-pointer btn-lg mb-4" data-bs-toggle="modal" data-bs-target="#add-client-plot">Add Plot(s) for your application (+)</div>
+              <?php $route = route('client.plot.add', ['model_id' => $model_id, 'model' => $model]); ?>
               @include('client.plots.partials.add')
               <div class="mb-4 p-4 bg-white shadow">
                 <?php $plots = \App\Models\Plot::all(); ?>
@@ -187,14 +188,14 @@
               </div>
             </div>
             <div class="col-12 col-lg-4 mb-4">
-                <?php $surveys = \App\Models\Survey::where(['user_id' => auth()->id()])->get(); ?>
-                @if(empty($surveys))
+                <?php $surveys = \App\Models\Survey::where(['client_id' => $client_id])->get(); ?>
+                @if(empty($surveys->count()))
                   <div class="alert alert-info mb-4 border-0 text-white">Other related applications appears here</div>
                 @else
                   <div class="alert alert-info mb-4 border-0 text-white">Submitted Survey or Lifting Applications</div>
                   <div class="row">
                     @foreach($surveys as $survey)
-                      @if($survey->id !== (int)$id)
+                      @if($survey->id !== (int)$model_id)
                         <div class="col-12 col-md-6 col-lg-12 mb-4">
                           @include('client.survey.partials.card')
                         </div>

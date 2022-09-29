@@ -3,10 +3,10 @@
     url('/argon/images/3.jpg'); object-fit: cover;">
 		<div class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom">
 			<a href="{{ route('client.survey.edit', ['id' => $survey->id]) }}" class="text-white">
-				Survey {{ $survey->verified ? 'Verified' : 'Not Verified' }}
+				{{ true === (boolean)$survey->approved ? 'Approved' : 'Unapproved' }}
 			</a>
 			<div class="text-white">
-				{{ empty($survey->payment) ? 'Not paid' : ($survey->payment->status !== 'paid' ? 'Not paid' : 'Paid') }}
+				{{ empty($survey->payment) ? 'Not Paid' : ($survey->payment->status !== 'paid' ? 'Not Paid' : 'Paid') }}
 			</div>
 		</div>
 		<div class="d-flex justify-content-between align-items-center">
@@ -23,9 +23,14 @@
 			</div>
 		</div>
 	</div>
-	<div class="card-footer bg-primary">
+	<div class="card-footer bg-primary d-flex justify-content-between">
 		<small class="text-white">
 			{{ $survey->created_at->diffForHumans() }}
 		</small>
+		<a href="{{ route('client.survey.edit', ['id' => $survey->id]) }}">
+	        <small class="text-white cursor-pointer">
+	          <i class="icofont-edit"></i>
+	        </small>
+	      </a>
 	</div>
 </div>

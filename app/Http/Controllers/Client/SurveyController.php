@@ -8,6 +8,14 @@ use Exception;
 
 class SurveyController extends Controller
 {
+
+    //
+    public function index($limit = 20)
+    {
+        $client = auth()->user()->client;
+        return view('client.survey.index', ['title' => 'Surveys and Lifting Applications', 'surveys' => Survey::latest('id')->where(['client_id' => ($client->id ?? 0)])->paginate($limit)]);
+    }
+
     //
     public function add()
     {
@@ -79,18 +87,11 @@ class SurveyController extends Controller
 
     public function edit($id = 0)
     {
-        $survey = Survey::find($id);
-        if('GET' === strtoupper(request()->method())) {
-            return view('client.survey.edit', ['survey' => $survey, 'id' => $id]);
-        }
+        return view('client.survey.edit', ['title' => 'Edit Survey or Lifting Application', 'survey' => Survey::find($id)]);
+    }
 
-        if (empty($survey)) {
-            response()->json([
-                'status' => 0,
-                'info' => 'Unknown error. Survey not found'
-            ]);
-        }
-
+    public function save($id = 0)
+    {
         $data = request()->all();
         $validator = Validator::make($data, [
             'purchaser_name' => ['required', 'string', 'max:255'], 
@@ -106,11 +107,18 @@ class SurveyController extends Controller
             'approval_address' => ['required', 'string', 'max:255'], 
         ]);
 
-
         if ($validator->fails()) {
             return response()->json([
                 'status' => 0,
                 'error' => $validator->errors(),
+            ]);
+        }
+
+        $survey = Survey::find($id);
+        if (empty($survey)) {
+            response()->json([
+                'status' => 0,
+                'info' => 'Unknown error. Survey not found'
             ]);
         }
 

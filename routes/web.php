@@ -266,7 +266,7 @@ Route::domain(env('CLIENT_URL'))->middleware(['auth', 'client'])->group(function
     });
 
     Route::prefix('surveys')->group(function () {
-        Route::post('/', [\App\Http\Controllers\Client\SurveyController::class, 'index'])->name('client.surveys');
+        Route::get('/', [\App\Http\Controllers\Client\SurveyController::class, 'index'])->name('client.surveys');
         Route::post('/add', [\App\Http\Controllers\Client\SurveyController::class, 'add'])->name('client.survey.add');
         Route::get('/edit/{id}', [\App\Http\Controllers\Client\SurveyController::class, 'edit'])->name('client.survey.edit');
         Route::post('/update/{id}', [\App\Http\Controllers\Client\SurveyController::class, 'edit'])->name('client.survey.update');

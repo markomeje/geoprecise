@@ -35,9 +35,6 @@
           <i class="icofont-edit"></i>
         </small>
       </a>
-      {{-- <small class="text-danger delete-psr cursor-pointer" data-url="{{ route('client.psr.delete', ['id' => $psr->id]) }}" data-message="Are you sure to delete?">
-        <i class="icofont-trash"></i>
-      </small> --}}
     </div>
   </div>
 </div>
