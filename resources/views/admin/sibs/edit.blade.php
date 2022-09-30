@@ -54,8 +54,7 @@
                 </div>
               </div>
               @if(!empty($plot_numbers))
-                <?php $payment = \App\Models\Payment::where(['model' => $model, 'model_id' => $model_id])->first(); //dd($payment); ?>
-                <?php $amount = $sib->form ? ($sib->form->amount ?? 0) : 0; $plots = is_array($plot_numbers) ? count($plot_numbers) : 1; $total_amount = $plots * (int)$amount; ?>
+                <?php $payment = $sib->payment; $amount = $sib->form ? ($sib->form->amount ?? 0) : 0; $plots = is_array($plot_numbers) ? count($plot_numbers) : 1; $total_amount = $plots * (int)$amount; ?>
                 @include('admin.payments.partials.record')
                 @if(empty($payment))
                   <div class="alert alert-dark mb-4 text-white d-flex justify-content-between">

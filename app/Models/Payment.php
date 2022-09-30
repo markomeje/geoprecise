@@ -24,6 +24,11 @@ class Payment extends Model
         'verified',
         'paid',
         'status',
+        'recorder_type',
+        'recorded_by',
+        'approved',
+        'approved_by',
+        'approved_at',
     ];
 
     /**

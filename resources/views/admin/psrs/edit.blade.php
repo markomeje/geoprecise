@@ -10,7 +10,6 @@
         @if(empty($psr) || empty($psr->client))
           <div class="alert alert-danger text-white mt-4 border-0">Unkown error. Details may have been deleted.</div>
         @else
-          {{-- {{ dd($psr) }} --}}
           <?php $client_name = $psr->client->fullname; $model_id = $psr->id; $model = 'psr'; $layout = $psr->layout; $plot_numbers = $psr->plot_numbers; $client_id = $psr->client_id ?? 0; $approved = (boolean)$psr->approved === true; ?>
           <div class="row">
             <div class="col-12 col-lg-7 col-xl-6">

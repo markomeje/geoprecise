@@ -2,49 +2,71 @@
 
 namespace App\Http\Controllers\Client;
 use App\Http\Controllers\Controller;
-use App\Models\{Sib, Form};
+use App\Models\{Sib, Form, Survey};
 use Validator;
 use Exception;
 
 class SibController extends Controller
 {
     //
-    public function add()
+    public function index($limit = 20)
+    {
+        $client = auth()->user()->client;
+        return view('client.sib.index', ['title' => 'Site Inspection Bookings', 'sibs' => Sib::latest()->where(['client_id' => ($client->id ?? 0)])->paginate($limit)]);
+    }
+
+    //
+    public function apply()
     {
         $data = request()->all();
-        $validator = Validator::make($data, [
-            'layout' => ['required', 'integer'],
-        ]);
-
-        if ($validator->fails()) {
+        if (empty($data['survey_id'])) {
             return response()->json([
                 'status' => 0,
-                'error' => $validator->errors(),
+                'info' => 'Invalid operation.',
             ]);
         }
 
-        try{
-            $sib = Sib::create([
-                'form_id' => $data['form_id'],
-                'layout_id' => $data['layout'],
-                'completed' => false,
-                'user_id' => auth()->id(),
-            ]);
-
-            return ($sib->id > 0) ? response()->json([
-                'status' => 1,
-                'info' => 'Operation successful.',
-                'redirect' => route('client.sib.edit', ['id' => $sib->id])
-            ]) : response()->json([
-                'status' => 0,
-                'info' => 'Operation error. Try again.'
-            ]);
-        }catch(Exception $exception) {
+        $survey = Survey::where(['id' => $data['survey_id']])->first();
+        if (empty($survey)) {
             return response()->json([
                 'status' => 0,
-                'info' => 'Unknown error. Try again.'
+                'info' => 'Unknown error. Survey not found.',
             ]);
-        } 
+        }
+
+        if (true !== (boolean)$survey->approved) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Survey must be approved first.',
+            ]);
+        }
+
+        try {
+            $sib = Sib::create([
+                'client_id' => auth()->user()->client->id,
+                'survey_id' => $data['survey_id'],
+                'form_id' => Form::where(['code' => 'SIB'])->pluck('id')->toArray()[0],
+            ]);
+
+            if (empty($sib->id)) {
+                return response()->json([
+                    'status' => 0,
+                    'info' => 'Operation failed. Try again.',
+                ]);
+            }
+
+            return response()->json([
+                'status' => 1,
+                'info' => 'Operation successful. Click ok . . .',
+                'redirect' => route('client.sib.edit', ['id' => $sib->id]),
+            ]);
+        } catch (Exception $error) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Operation failed. Try again'
+            ]);
+        }
+            
     }
 
     //
@@ -54,42 +76,53 @@ class SibController extends Controller
     }
 
     //
-    public function update($id = 0)
+    public function save($id = 0)
     {
-        $data = request()->all();
-        $validator = Validator::make($data, [
-            'layout' => ['required', 'integer'],
-        ]);
-
-        if ($validator->fails()) {
+        $data = request()->all(['completed', 'comments']);
+        $sib = Sib::find($id);
+        if (empty($sib)) {
             return response()->json([
                 'status' => 0,
-                'error' => $validator->errors(),
+                'info' => 'Unknown error. Not found.',
+            ]);
+        }
+
+        $completed = (boolean)($data['completed'] ?? 0) === true;
+        if ($completed && empty($sib->payment)) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Incomplete application. No payment.',
+            ]);
+        }
+
+        if ($completed && $sib->payment->status !== 'paid') {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Incomplete application. Invalid payment',
             ]);
         }
 
         try{
-            $sib = Sib::create([
-                'form_id' => $data['form_id'],
-                'layout_id' => $data['layout'],
-                'completed' => false,
-                'user_id' => auth()->id(),
-            ]);
+            $sib->comments = $data['comments'] ?? '';
+            $sib->completed = $completed;
+            if (empty($sib->update())) {
+                return response()->json([
+                    'status' => 0,
+                    'info' => 'Operation failed. Try again.',
+                ]);
+            }
 
-            return ($sib->id > 0) ? response()->json([
+            return response()->json([
                 'status' => 1,
-                'info' => 'Operation successful.',
-                'redirect' => route('client.sib.edit', ['id' => $sib->id])
-            ]) : response()->json([
-                'status' => 0,
-                'info' => 'Operation error. Try again.'
+                'info' => 'Operation successful. Please wait . . .',
+                'redirect' => route('client.sib.edit', ['id' => $sib->id]),
             ]);
         }catch(Exception $exception) {
             return response()->json([
                 'status' => 0,
                 'info' => 'Unknown error. Try again.'
             ]);
-        } 
+        }
     }
 
 }

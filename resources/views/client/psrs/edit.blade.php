@@ -137,11 +137,11 @@
                         <div class="alert alert-success text-white my-4">Awaiting Approval</div>
                       @endif
                     @else
-                      <label class="text-muted">Completed?</label>
-                      <div class="form-group p-3 border mb-4 rounded">
+                      <div class="text-muted mb-2">Completed? Click the switch below only after you're done. You cannot modify any parts of your request afterwards.</div>
+                      <div class="form-group p-3 border bg-light mb-4 rounded">
                         <div class="form-check form-switch m-0">
                           <input class="form-check-input" name="completed" type="checkbox" id="completed" value="1">
-                          <label class="form-check-label" for="completed">Complete Property Search Request?</label>
+                          <label class="form-check-label" for="completed">Final Submission?</label>
                         </div>
                         <small class="completed-error text-danger"></small>
                       </div>

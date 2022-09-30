@@ -267,15 +267,16 @@ Route::domain(env('CLIENT_URL'))->middleware(['auth', 'client'])->group(function
 
     Route::prefix('surveys')->group(function () {
         Route::get('/', [\App\Http\Controllers\Client\SurveyController::class, 'index'])->name('client.surveys');
+        Route::get('/apply', [\App\Http\Controllers\Client\SurveyController::class, 'apply'])->name('client.survey.apply');
         Route::post('/add', [\App\Http\Controllers\Client\SurveyController::class, 'add'])->name('client.survey.add');
         Route::get('/edit/{id}', [\App\Http\Controllers\Client\SurveyController::class, 'edit'])->name('client.survey.edit');
-        Route::post('/update/{id}', [\App\Http\Controllers\Client\SurveyController::class, 'edit'])->name('client.survey.update');
+        Route::post('/save/{id}', [\App\Http\Controllers\Client\SurveyController::class, 'save'])->name('client.survey.save');
     });
 
     Route::prefix('sibs')->group(function () {
-        Route::post('/', [\App\Http\Controllers\Client\SibController::class, 'index'])->name('client.sibs');
-        Route::post('/add', [\App\Http\Controllers\Client\SibController::class, 'add'])->name('client.sib.add');
+        Route::get('/', [\App\Http\Controllers\Client\SibController::class, 'index'])->name('client.sibs');
+        Route::post('/apply', [\App\Http\Controllers\Client\SibController::class, 'apply'])->name('client.sib.apply');
         Route::get('/edit/{id}', [\App\Http\Controllers\Client\SibController::class, 'edit'])->name('client.sib.edit');
-        Route::post('/update/{id}', [\App\Http\Controllers\Client\SibController::class, 'edit'])->name('client.sib.update');
+        Route::post('/save/{id}', [\App\Http\Controllers\Client\SibController::class, 'save'])->name('client.sib.save');
     });
 });

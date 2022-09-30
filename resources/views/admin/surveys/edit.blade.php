@@ -10,7 +10,7 @@
         @if(empty($survey) || empty($survey->client))
           <div class="alert alert-danger d-block mb-4 text-white border-0">Unkwon error. Application details not found.</div>
         @else
-          <?php $client_id = $survey->client->id; $model_id = $survey->id; $model = 'survey'; $completed = (boolean)$survey->completed; $plot_numbers = $survey->plot_numbers; $client_name = $survey->client->fullname; $approved = (true === (boolean)$survey->approved); ?>
+          <?php $client_id = $survey->client->id; $model_id = $survey->id; $model = 'survey'; $completed = true === (boolean)$survey->completed; $plot_numbers = $survey->plot_numbers; $client_name = $survey->client->fullname; $approved = (true === (boolean)$survey->approved); ?>
           <div class="">
             <div class="row">
               <div class="col-12 col-lg-8 mb-4">
@@ -84,8 +84,7 @@
                     </div>
                 </div>
                 @if(!empty($plot_numbers))
-                  <?php $payment = \App\Models\Payment::where(['model' => $model, 'model_id' => $model_id])->first(); ?>
-                  <?php $amount = $survey->form ? ($survey->form->amount ?? 0) : 0; $total_plots = is_array($plot_numbers) ? count($plot_numbers) : 1; $total_amount = $total_plots * (int)$amount; ?>
+                  <?php $payment = $survey->payment; $amount = $survey->form ? ($survey->form->amount ?? 0) : 0; $total_plots = is_array($plot_numbers) ? count($plot_numbers) : 1; $total_amount = $total_plots * (int)$amount; ?>
                   @include('admin.payments.partials.record')
                   @if(empty($payment))
                     <div class="alert alert-dark mb-4 text-white d-flex justify-content-between">
@@ -93,30 +92,26 @@
                       <a href="javascript:;" class="m-0 text-white" data-bs-toggle="modal" data-bs-target="#admin-record-payment">Record Payment</a>
                     </div>
                   @else
-                    <?php $payment_status = $payment->status ?? 'Unpaid'; $payment_approved = true === (boolean)$payment->approved; ?>
+                    <?php $payment_approved = true === (boolean)$payment->approved; ?>
                     <div class="card mb-4">
                       <div class="card-header border-bottom d-flex justify-content-between align-items-center">
                         <div class="text-dark">
                           Total: NGN{{ number_format($total_amount) }}
                         </div>
                         <div class="text-dark">
-                          {{ ucwords($payment_status) }} ({{ $payment_approved ? 'Approved' : 'Unapproved' }})
+                          <span class="text-success">Paid</span> ({{ $payment_approved ? 'Approved' : 'Unapproved' }})
                         </div>
                       </div>
                       <div class="card-body">
                         <div class="d-flex align-items-center">
-                          @if($payment_status == 'paid')
-                            @if($payment_approved)
-                              <div class="alert alert-success w-100 m-0 text-white">Payment Approved By {{ $payment->approver ? $payment->approver->staff->fullname : '' }} on {{ date("F j, Y, g:i a", strtotime($payment->approved_at)) }}</div>
-                            @else
-                              <div class="approve-payment" data-url="{{ route('admin.payment.approve', ['model' => $model, 'model_id' => $model_id, 'client_id' => $client_id, 'reference' => $payment->reference]) }}">
-                                <a href="javascript:;" class="btn btn-primary approve-payment-button mb-0">
-                                  <img src="/images/spinner.svg" class="me-2 d-none approve-payment-spinner mb-1">Approve payment
-                                </a>
-                              </div>
-                            @endif
+                          @if($payment_approved)
+                            <div class="alert alert-success w-100 m-0 text-white">Payment Approved By {{ $payment->approver ? $payment->approver->staff->fullname : '' }} on {{ date("F j, Y, g:i a", strtotime($payment->approved_at)) }}</div>
                           @else
-                            <a href="javascript:;" class="m-0 btn btn-primary" data-bs-toggle="modal" data-bs-target="#admin-record-payment">Record Payment</a>
+                            <div class="approve-payment" data-url="{{ route('admin.payment.approve', ['model' => $model, 'model_id' => $model_id, 'client_id' => $client_id, 'reference' => $payment->reference]) }}">
+                              <a href="javascript:;" class="btn btn-primary approve-payment-button mb-0">
+                                <img src="/images/spinner.svg" class="me-2 d-none approve-payment-spinner mb-1">Approve payment
+                              </a>
+                            </div>
                           @endif
                         </div>
                       </div>
@@ -124,11 +119,13 @@
                   @endif
                 @endif
                 <?php $documents = $survey->documents; ?>
-                @if(!$approved)
+                @if(true !== $completed)
                   <div class="card mb-4 shadow-sm border-0">
                     <div class="card-header border-bottom d-flex align-items-center justify-content-between">
-                      <span>Upload Document(s)</span>
-                      <span>{{ $documents->count() }} Uploaded</span>
+                      <span class="text-dark">Upload Document(s)</span>
+                      <span class="text-dark">
+                        {{ $documents->count() }} Uploaded
+                      </span>
                     </div>
                     <div class="card-body pb-0">
                       @include('admin.documents.partials.add')
@@ -139,6 +136,12 @@
                   @if(empty($documents->count()))
                     <div class="alert alert-danger text-white mb-4">No documents uploaded yet.</div>
                   @else
+                    @if($completed)
+                      <div class="alert alert-dark d-flex align-items-center justify-content-between mb-4">
+                        <span class="text-white">Uploaded Document(s)</span>
+                        <span class="text-white">{{ $documents->count() }} Uploaded</span>
+                      </div>
+                    @endif
                     <div class="row">
                       @foreach($documents as $document)
                         <div class="col-12 col-md-4 mb-4">

@@ -10,7 +10,7 @@
     </div>
     <a href="{{ route("client.$form->category") }}" class="mb-3 w-100 px-0 btn btn-lg btn-block bg-primary text-white">
       <small>
-        {{ 'Pay  NGN'.number_format($form->amount) }} {{ empty($form->per) ? '' : '('.ucwords($form->per).')' }}
+        {{ 'NGN'.number_format($form->amount) }} {{ empty($form->per) ? '' : '('.ucwords($form->per).')' }}
       </small>
     </a>
   </div>

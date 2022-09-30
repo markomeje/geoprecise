@@ -1,4 +1,4 @@
-<form class="upload-document-form" id="upload-document-form" action="javascript:;" method="post" data-action="{{ route('client.document.upload', ['model_id' => $model_id, 'model' => $model]) }}" enctype="multipar/form-data">
+<form class="upload-document-form" id="upload-document-form" action="javascript:;" method="post" data-action="{{ route('client.document.upload', ['model_id' => $model_id, 'model' => $model, 'client_id' => $client_id]) }}" enctype="multipar/form-data">
     @csrf
     <div class="row">
       <div class="form-group col-md-6 mb-3">

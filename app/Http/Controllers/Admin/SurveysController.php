@@ -166,7 +166,6 @@ class SurveysController extends Controller
             $survey->seller_name = $data['seller_name'] ?? null;
             $survey->approved = $approved;
             $survey->status = $approved ? 'completed' : 'incomplete';
-            $survey->completed = $approved;
 
             if ($approved) {
                 $survey->approved_by = auth()->id();

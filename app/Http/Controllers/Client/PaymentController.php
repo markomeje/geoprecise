@@ -13,7 +13,7 @@ class PaymentController extends Controller
     //
     public function index()
     {
-        return view('client.payments.index', ['title' => 'All Payments', 'payments' => Payment::paid()->where(['client_id' => auth()->user()->client->id])->get()]);
+        return view('client.payments.index', ['title' => 'All Payments', 'payments' => Payment::paid()->latest('id')->where(['client_id' => auth()->user()->client->id])->get()]);
     }
 
     //
@@ -43,6 +43,7 @@ class PaymentController extends Controller
                 'verified' => false,
                 'reference' => $reference,
                 'model' => $model,
+                'recorder_type' => '',
             ]);
 
             if (empty($payment->id)) {

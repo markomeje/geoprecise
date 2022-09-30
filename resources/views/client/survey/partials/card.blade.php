@@ -1,13 +1,14 @@
 <div class="card shadow border-0">
 	<div class="card-body" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
     url('/argon/images/3.jpg'); object-fit: cover;">
+    	<?php $approved = true === ((boolean)$survey->approved ?? 0); $paid = 'paid' === ($survey->payment->status ?? null); ?>
 		<div class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom">
-			<a href="{{ route('client.survey.edit', ['id' => $survey->id]) }}" class="text-white">
-				{{ true === (boolean)$survey->approved ? 'Approved' : 'Unapproved' }}
+			<a href="{{ route('client.survey.edit', ['id' => $survey->id]) }}" class="text-{{ $approved ? 'success' : 'danger' }}">
+				{{ $approved ? 'Approved' : 'Unapproved' }}
 			</a>
-			<div class="text-white">
-				{{ empty($survey->payment) ? 'Not Paid' : ($survey->payment->status !== 'paid' ? 'Not Paid' : 'Paid') }}
-			</div>
+			<a href="{{ route('client.survey.edit', ['id' => $survey->id]) }}" class="text-{{ $paid ? 'success' : 'danger' }}">
+				{{ $paid ? 'Paid' : 'Not Paid' }}
+			</a>
 		</div>
 		<div class="d-flex justify-content-between align-items-center">
 			<?php $plot_numbers = str_contains($survey->plot_numbers, '-') ? explode('-', $survey->plot_numbers) : $survey->plot_numbers; ?>

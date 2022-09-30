@@ -13,85 +13,112 @@
           <?php $model_id = $survey->id; $model = 'survey'; $layout = $survey->layout; $plot_numbers = $survey->plot_numbers; $client_id = $survey->client_id ?? 0; $approved = (boolean)$survey->approved === true; $completed = true === (boolean)$survey->completed; ?>
           <div class="row">
             <div class="col-12 col-lg-8 mb-4">
-              <div class="alert alert-dark border-0 text-white cursor-pointer btn-lg mb-4" data-bs-toggle="modal" data-bs-target="#add-client-plot">Add Plot(s) for your application (+)</div>
-              <?php $route = route('client.plot.add', ['model_id' => $model_id, 'model' => $model]); ?>
-              @include('client.plots.partials.add')
-              <div class="mb-4 p-4 bg-white shadow">
-                <?php $plots = \App\Models\Plot::all(); ?>
+              <div class="alert alert-dark mb-4 text-white border-0 d-flex justify-content-between align-items-center">
+                <span>Survey or Lifting Application</span>
+                <span>{{ $approved ? 'Approved' : 'Unapproved' }}</span>
+              </div>
+              @if($approved)
+                @if(empty($survey->sib))
+                  <div class="alert alert-success mb-4 border-0 d-flex justify-content-between align-items-center">
+                    <span class="text-white">Want to book for Site Inspection?</span>
+                    <a href="javascript:;" class="text-white apply-sib" data-url="{{ route('client.sib.apply', ['survey_id' => $model_id]) }}" data-message="Are you sure to proceed"><img src="/images/spinner.svg" class="me-2 d-none apply-sib-spinner mb-1">Apply Here</a>
+                  </div>
+                @else
+                  <?php $sib_id = $survey->sib->id; ?>
+                  <div class="alert bg-dark mb-4 border-0 d-flex justify-content-between align-items-center">
+                    <span class="text-white">
+                      Site Inspection
+                      @if(true === (boolean)($survey->sib->approved ?? 0))
+                        <a href="{{ route('client.sib.edit', ['id' => $sib_id]) }}" class="text-success">(Approved)</a>
+                      @else
+                        <a href="{{ route('client.sib.edit', ['id' => $sib_id]) }}" class="text-danger apply-sib">(Unapproved)</a>
+                      @endif
+                    </span>
+                    <a href="{{ route('client.sib.edit', ['id' => $sib_id]) }}" class="text-white">See details</a>
+                  </div>
+                @endif
+              @endif
+              <div class="card mb-4">
+                <div class="card-header border-bottom d-flex justify-content-between align-items-center">
+                  <div class="text-dark">
+                    {{ empty($plot_numbers) ? 0 : (str_contains($plot_numbers, '-') ? count(explode('-', $plot_numbers)) : 1) }} Plot(s)
+                  </div>
+                  <span class="cursor-pointer text-dark" data-bs-toggle="modal" data-bs-target="#add-client-plot">Add Plot(s)</span>
+                </div>
+                <?php $route = route('client.plot.add', ['model_id' => $model_id, 'model' => $model]); ?>
+                @include('client.plots.partials.add')
+                <div class="card-body">
                   @if(empty($survey->plot_numbers))
-                    <div class="alert alert-info m-0 border-0 text-white">No plot(s) added for your application.</div>
+                    <div class="alert alert-danger m-0 border-0 text-white">No plot(s) added for this application.</div>
                   @else
                     <div class="row d-flex flex-wrap g-0">
-                    <?php $plot_numbers = str_contains($survey->plot_numbers, '-') ? explode('-', $survey->plot_numbers) : $survey->plot_numbers; ?>
-                    @if(is_array($plot_numbers))
-                      <?php $count = 1; ?>
-                      @foreach($plot_numbers as $number)
-                        @if(!empty($number))
-                          <div class="col-6 col-md-4 col-lg-3">
-                            <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
-                              <small class="tiny-font">
-                                ({{ $count++ }}) {{ $number }}
-                              </small>
-                              <small class="text-danger tiny-font cursor-pointer client-delete-plot" data-url="{{ route('client.plot.delete', ['plot_number' => $number, 'model_id' => $survey->id, 'model' => 'survey']) }}" data-message="Are you sure to delete?">
-                                <i class="icofont-trash"></i>
-                              </small>
+                      <?php $plot_numbers = str_contains($survey->plot_numbers, '-') ? explode('-', $survey->plot_numbers) : $survey->plot_numbers; ?>
+                      @if(is_array($plot_numbers))
+                        <?php $count = 1; ?>
+                        @foreach($plot_numbers as $number)
+                          @if(!empty($number))
+                            <div class="col-6 col-md-4 col-lg-3">
+                              <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
+                                <small class="tiny-font">
+                                  ({{ $count++ }}) {{ $number }}
+                                </small>
+                                <small class="text-danger tiny-font cursor-pointer client-delete-plot" data-url="{{ route('client.plot.delete', ['plot_number' => $number, 'model_id' => $model_id, 'model' => $model]) }}" data-message="Are you sure to delete?">
+                                  <i class="icofont-trash"></i>
+                                </small>
+                              </div>
                             </div>
-                          </div>
-                        @endif
-                      @endforeach
-                    @else
-                      <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
-                        <small class="">{{ $plot_numbers }}</small>
-                        <small class="text-danger tiny-font cursor-pointer client-delete-plot" data-url="{{ route('client.plot.delete', ['plot_number' => $plot_numbers, 'model_id' => $survey->id, 'model' => 'survey']) }}" data-message="Are you sure to delete?">
-                          <i class="icofont-trash"></i>
-                        </small>
-                      </div>
-                    @endif
-                    @if(empty($survey->payment))
-                      @if(!empty($survey->form))
-                        @if(!empty($survey->form->amount))
-                          <?php $total_plots = is_array($plot_numbers) ? count($plot_numbers) : 1; $amount = $total_plots * (int)$survey->form->amount; ?>
-                          <div class="mt-4 make-payment" data-url="{{ route('payment.process', ['form_id' => $survey->form->id, 'type' => 'form', 'model_id' => $survey->id, 'model' => 'survey', 'amount' => $amount]) }}">
-                            <button class="btn btn-primary make-payment-button">
-                              <img src="/images/spinner.svg" class="me-2 d-none make-payment-spinner mb-1"> Pay NGN{{ number_format($amount) }}
-                            </button>
-                          </div>
-                        @endif
+                          @endif
+                        @endforeach
+                      @else
+                        <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
+                          <small class="">{{ $plot_numbers }}</small>
+                          <small class="text-danger tiny-font cursor-pointer client-delete-plot" data-url="{{ route('client.plot.delete', ['plot_number' => $plot_numbers, 'model_id' => $model_id, 'model' => $model]) }}" data-message="Are you sure to delete?">
+                            <i class="icofont-trash"></i>
+                          </small>
+                        </div>
                       @endif
-                    @elseif($survey->payment->status !== 'paid')
-                      @if(!empty($survey->form))
-                        @if(!empty($survey->form->amount))
-                          <?php $total_plots = is_array($plot_numbers) ? count($plot_numbers) : 1; $amount = $total_plots * (int)$survey->form->amount; ?>
-                          <div class="mt-4 make-payment" data-url="{{ route('payment.process', ['form_id' => $survey->form->id, 'type' => 'form', 'model_id' => $survey->id, 'model' => 'survey', 'amount' => $amount]) }}">
-                            <button class="btn btn-primary make-payment-button">
-                              <img src="/images/spinner.svg" class="me-2 d-none make-payment-spinner mb-1"> Pay NGN{{ number_format($amount) }}
-                            </button>
-                          </div>
-                        @endif
-                      @endif
-                    @else
-                      <div class="alert alert-info mt-3 text-white">
-                        Payment successfull. {{ (boolean)$survey->payment->verified == false ? 'Pending office verificaion' : 'Payment verified' }}
-                      </div>
-                    @endif
-                </div>
+                    </div>
                   @endif
+                </div>
               </div>
-                <div class="card mb-4 shadow-sm border-0">
-                  <div class="card-header border-bottom">
-                    <?php $types = \App\Models\Document::TYPES; ?>
-                    Upload necessary document(s) like {{ implode(', ', $types) }}
+              @if(!empty($plot_numbers))
+                <?php $payment = $survey->payment; $amount = $survey->form ? ($survey->form->amount ?? 0) : 0; $total_plots = is_array($plot_numbers) ? count($plot_numbers) : 1; $total_amount = $total_plots * (int)$amount; ?>
+                @if(empty($payment))
+                  <div class="alert alert-dark mb-4 text-white d-flex justify-content-between">
+                    <span class="text-white">Total: NGN{{ number_format($total_amount) }} Unpaid</span>
+                    <a href="javascript:;" class="m-0 text-white make-payment" data-message="Are you sure to make payment now?" data-url="{{ route('client.payment.process', ['type' => 'paystack', 'model_id' => $survey->id, 'model' => $model, 'amount' => $total_amount]) }}"><img src="/images/spinner.svg" class="me-2 d-none make-payment-spinner mb-1">Make Payment</a>
                   </div>
-                  <div class="card-body">
-                    <?php $model_id = $survey->id; $model = 'survey'; ?>
+                @else
+                  <?php $payment_approved = true === (boolean)$payment->approved ?>
+                  @if($payment_approved)
+                    <div class="alert alert-success w-100 m-0 text-white mb-4">Payment of <span class="font-weight-bolder">NGN{{ number_format($payment->amount) }}</span> Approved on {{ date("F j, Y, g:i a", strtotime($payment->approved_at)) }}</div>
+                  @else
+                    <div class="alert alert-info mb-4 text-white">Payment of <span class="font-weight-bolder">NGN{{ number_format($payment->amount) }}</span> Awaiting Approval</div>
+                  @endif
+                @endif
+              @endif
+              <?php $documents = $survey->documents; ?>
+              @if(true !== $completed)
+                <div class="card mb-4 shadow-sm border-0">
+                  <div class="card-header border-bottom d-flex align-items-center justify-content-between">
+                    <span class="text-dark">Upload Document(s)</span>
+                    <span class="text-dark">{{ $documents->count() }} Uploaded</span>
+                  </div>
+                  <div class="card-body pb-0">
                     @include('client.documents.partials.add')
                   </div>
                 </div>
+              @endif
               <div class="">
-                <?php $documents = $survey->documents; ?>
                 @if(empty($documents->count()))
                   <div class="alert alert-danger text-white mb-4">No documents uploaded yet.</div>
                 @else
+                  @if($completed)
+                    <div class="alert alert-info d-flex align-items-center justify-content-between mb-4">
+                      <span class="text-white">Uploaded Document(s)</span>
+                      <span class="text-white">{{ $documents->count() }} Uploaded</span>
+                    </div>
+                  @endif
                   <div class="row">
                     @foreach($documents as $document)
                       <div class="col-12 col-md-4 mb-4">
@@ -103,7 +130,7 @@
               </div>
               <div class="">
                 <div class="alert alert-info mb-4 border-0 text-white">Edit submitted Survey or Lifting Application</div>
-                <form class="survey-form" method="post" action="javascript:;" data-action="{{ route('client.survey.update', ['id' => $survey->id]) }}">
+                <form class="survey-form" method="post" action="javascript:;" data-action="{{ route('client.survey.save', ['id' => $survey->id]) }}">
                   <div class="card border-0 shadow-sm mb-4">
                     <div class="card-header border-bottom">Purchaser or Allottee Details</div>
                     <div class="card-body">
@@ -171,19 +198,27 @@
                     </div>
                   </div>
                   <div class="alert d-none survey-message mb-4 text-white"></div>
-                  <div class="card border-0 mb-4 shadow-sm">
-                    <div class="card-header border-bottom">Click the switch below only after you're sure that all information provided are acurate and that you agree to <a href="" class="text-primary">our terms and conditions</a>. Note that you cannot modify any parts of your application afterwards.</div>
-                    <div class="card-body">
-                      <div class="form-check form-switch">
-                        <input class="form-check-input" name="completed" type="checkbox" id="completed" value="yes" {{ $completed === true ? 'checked' : '' }}>
-                        <label class="form-check-label" for="completed">Final submission</label>
+                  @if($completed)
+                      @if($approved)
+                        <div class="alert alert-success text-white my-4">Approved on {{ date("F j, Y, g:i a", strtotime($survey->approved_at)) }}</div>
+                      @else
+                        <div class="alert alert-success text-white my-4">Awaiting Approval</div>
+                      @endif
+                  @else
+                    <div class="card border-0 mb-4 shadow-sm">
+                      <div class="card-header border-bottom">Click the switch below only after you're sure that all information provided are acurate and that you agree to <a href="" class="text-primary">our terms and conditions</a>. Note that you cannot modify any parts of your application afterwards.</div>
+                      <div class="card-body">
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" name="completed" type="checkbox" id="completed" value="1">
+                          <label class="form-check-label" for="completed">Final submission</label>
+                        </div>
+                        <small class="completed-error text-danger"></small>
                       </div>
-                      <small class="completed-error text-danger"></small>
                     </div>
-                  </div>
-                  <button type="submit" class="btn btn-primary btn-lg survey-button mb-0">
-                      <img src="/images/spinner.svg" class="me-2 d-none survey-spinner mb-1">Save
-                  </button>
+                    <button type="submit" class="btn btn-primary w-100 btn-lg survey-button mb-0">
+                        <img src="/images/spinner.svg" class="me-2 d-none survey-spinner mb-1">Save
+                    </button>
+                  @endif
                 </form>
               </div>
             </div>

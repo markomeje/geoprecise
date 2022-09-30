@@ -48,6 +48,7 @@ class Sib extends Model
     {
         return $this->hasOne(Payment::class, 'model_id')->where(['model' => 'sib', 'status' => 'paid']);
     }
+    
 
     /**
      * A sib belongs to a layout
