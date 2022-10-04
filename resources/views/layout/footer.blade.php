@@ -4,7 +4,8 @@
 		<div class="kyber-footer row">
 							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
 					<section id="text-2" class="widget widget_text">			<div class="textwidget">
-<p><img loading="lazy" class="alignnone size-full wp-image-225 footer-logo" src="././content/uploads/2022/02/GEO-P-f-tt-2.png" alt="" width="202" height="42"></p>
+<p>
+	<a href="{{route('home')}}"></a><img loading="lazy" class="alignnone size-full wp-image-225 footer-logo" src="././content/uploads/2022/02/GEO-P-f-tt-2.png" alt="" width="202" height="42"></p>
 <h5 class="skincolor">+234 806 054 5860</h5>
 <p><a class="btn btn-outline-light footer-button" href="{{route('contact')}}">REQUEST WITH ONLINE FORM</a></p>
 </div>
@@ -18,7 +19,7 @@
 <li id="menu-item-2593" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2593"><a href="{{route('ourteam')}}">Our Team</a></li>
 <li id="menu-item-2589" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2589"><a href="{{route('contact')}}">Contact Us</a></li>
 <li id="menu-item-2590" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2590"><a href="{{route('faq')}}">FAQ</a></li>
-<li id="menu-item-2587" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2587"><a href="{{route('blog')}}">Blog</a></li>
+<!-- <li id="menu-item-2587" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2587"><a href="{{route('blog')}}">Blog</a></li> -->
 <li id="menu-item-2305" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2305 "><a href="{{route('login')}}">Login</a></li>
 <li id="menu-item-2305" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-2305 "><a href="{{route('signup')}}">Sign Up</a></li>
 </ul></div></section>				</div>
