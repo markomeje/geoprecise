@@ -61,8 +61,8 @@
 </ul>
 </li>
 <li id="menu-item-2319" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2319"><a href="{{route('ourprojects')}}">Projects</a></li>
-<li id="menu-item-2321" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-828 current_page_item current_page_parent menu-item-2321"><a href="{{route('blog')}}" aria-current="page">Blog</a></li>
-<li id="menu-item-2323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2323">
+<!-- <li id="menu-item-2321" class="menu-item menu-item-type-post_type menu-item-object-page page_item page-item-828 current_page_item current_page_parent menu-item-2321"><a href="{{route('blog')}}" aria-current="page">Blog</a></li>
+ --><li id="menu-item-2323" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2323">
 <a href="{{route('contact')}}">Contact Us</a>
 <ul class="sub-menu">
 	<li id="menu-item-2307" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2307"><a href="{{route('faq')}}">FAQ</a></li>
