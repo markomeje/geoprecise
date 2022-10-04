@@ -11,7 +11,7 @@
           <div class="alert alert-danger d-block mb-4 text-white border-0">Unkwon error. Application details not found.</div>
         @else
           <?php $client_id = $survey->client->id; $model_id = $survey->id; $model = 'survey'; $completed = true === (boolean)$survey->completed; $plot_numbers = $survey->plot_numbers; $client_name = $survey->client->fullname; $approved = (true === (boolean)$survey->approved); ?>
-          <div class="">
+          <div class="p-4 bg-white border-radius-lg min-vh-100">
             <div class="row">
               <div class="col-12 col-lg-8 mb-4">
                 <div class="alert alert-dark mb-4 border-0 d-flex justify-content-between align-items-center">
@@ -27,7 +27,7 @@
                       <a href="javascript:;" class="text-white apply-sib" data-url="{{ route('admin.sib.apply', ['client_id' => $client_id, 'survey_id' => $survey->id]) }}" data-message="Are you sure to proceed"><img src="/images/spinner.svg" class="me-2 d-none apply-sib-spinner mb-1">Apply Here</a>
                     </div>
                   @else
-                    <div class="bg-dark p-4 mb-4 border-0 d-flex justify-content-between align-items-center">
+                    <div class="alert alert-dark mb-4 border-0 d-flex justify-content-between align-items-center">
                       <span class="text-white">
                         Site Inspection
                         (@if(true === (boolean)$survey->sib->approved)

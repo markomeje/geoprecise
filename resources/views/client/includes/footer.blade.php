@@ -18,6 +18,12 @@
 
   {{-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> --}}
   <script>
+    $.ajaxSetup({
+      headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+      }
+    });
+
     $(function(){
 
       var uploadImage = $('.upload-document');
@@ -38,12 +44,6 @@
           });
         @endforeach
       @endif
-
-      $.ajaxSetup({
-          headers: {
-              'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-          }
-      });
 
       @if(!empty($psrs))
         @foreach($psrs as $psr)
