@@ -152,6 +152,7 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
     Route::get('/', [\App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('admin');
     Route::prefix('clients')->group(function () {
         Route::get('/', [\App\Http\Controllers\Admin\ClientsController::class, 'index'])->name('admin.clients');
+        Route::get('/search', [\App\Http\Controllers\Admin\ClientsController::class, 'search'])->name('admin.clients.search');
         Route::get('/profile/{id}', [\App\Http\Controllers\Admin\ClientsController::class, 'profile'])->name('admin.clients.profile');
         Route::post('/add', [\App\Http\Controllers\Admin\ClientsController::class, 'add'])->name('admin.client.add');
     });
