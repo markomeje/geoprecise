@@ -25,8 +25,8 @@
           <div class="alert alert-info d-flex align-items-center mb-4">
             <div class="me-3 text-white">All Clients ({{ $clients->total() }})</div>
             <a href="javascript:;" class="text-white align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#add-client">Add Client</a>
-            @include('admin.clients.partials.add')
           </div>
+          @include('admin.clients.partials.add')
           @if(empty($clients->count()))
             <div class="alert alert-info">No clients yet</div>
           @else
