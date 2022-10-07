@@ -199,6 +199,8 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
 
     Route::prefix('surveys')->group(function () {
         Route::get('/', [\App\Http\Controllers\Admin\SurveysController::class, 'index'])->name('admin.surveys');
+        Route::get('/search', [\App\Http\Controllers\Admin\SurveysController::class, 'search'])->name('admin.surveys.search');
+        
         Route::post('/add/{client_id}', [\App\Http\Controllers\Admin\SurveysController::class, 'add'])->name('admin.survey.add');
         Route::post('/save/{id}', [\App\Http\Controllers\Admin\SurveysController::class, 'save'])->name('admin.survey.save');
 

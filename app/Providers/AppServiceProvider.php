@@ -35,7 +35,6 @@ class AppServiceProvider extends ServiceProvider
             $searchTerm = '%'.$searchTerm.'%';
             $this->where(function (Builder $query) use ($attributes, $searchTerm) {
                 foreach (Arr::wrap($attributes) as $attribute) {
-                    $contains = str_contains($attribute, '.');
                     $query->when(
                         str_contains($attribute, '.'), 
                         function (Builder $query) use ($attribute, $searchTerm) {

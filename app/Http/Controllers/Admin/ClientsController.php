@@ -83,7 +83,7 @@ class ClientsController extends Controller
     public function search()
     {
         $query = request()->get('search');
-        $clients = Client::search(['fullname', 'title', 'occupation', 'address', 'phone', 'city', 'state', 'status'], $query)->paginate();
+        $clients = Client::search(['fullname', 'title', 'occupation', 'address', 'phone', 'city', 'state', 'status'], $query)->paginate(24);
         return view('admin.clients.search')->with(['clients' => $clients]);
     }
 

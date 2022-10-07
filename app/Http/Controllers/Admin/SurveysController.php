@@ -197,4 +197,11 @@ class SurveysController extends Controller
     {
         return view('admin.surveys.edit', ['title' => 'Edit Surveying Application', 'survey' => Survey::find($id)]);
     }
+
+    public function search()
+    {
+        $query = request()->get('search');
+        $surveys = Survey::search(['client.fullname', 'seller_name', 'seller_address', 'client.phone', 'purchaser_name', 'purchaser_address', 'approval_name', 'approval_address'], $query)->paginate(24);
+        return view('admin.surveys.search')->with(['surveys' => $surveys]);
+    }
 }

@@ -150,10 +150,9 @@ Request A Quote			</h3>
 </div>		</div>
 </div></div></div></div>
 <div role="form" class="wpcf7" id="wpcf7-f6-p830-o1" lang="en-US" dir="ltr">
-<div class="screen-reader-response">
-<p role="status" aria-live="polite" aria-atomic="true"></p> <ul></ul>
+<div class="screen-reader-response"><ul></ul>
 </div>
-<form action="/contact-us-1/#wpcf7-f6-p830-o1" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
+<form action="javascript:;" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init" style="padding-bottom: 80px;">
 <div style="display: none;">
 <input type="hidden" name="_wpcf7" value="6">
 <input type="hidden" name="_wpcf7_version" value="5.6">
@@ -164,7 +163,7 @@ Request A Quote			</h3>
 </div>
 <div class="kyber-form kyber-form-style-1">
 <div class="row">
-<div class="col-sm-12 col-md-6 col-lg-4">
+<div class="col-sm-12 col-md-6">
 <div class="input-group">
 <div class="input-group-append">
 <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fas fa-user"></i></span>
@@ -178,7 +177,7 @@ Request A Quote			</h3>
 <input type="email" name="email-129" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email address">
 </div>
 </div>
-<div class="col-sm-12 col-md-6 col-lg-4">
+<div class="col-sm-12 col-md-6">
 <div class="input-group">
 <div class="input-group-append">
 <span class="input-group-text" id="basic-addon2" style="background-color:rgb(253 151 46);"><i style="color:white;" class="fa fa-tasks"></i></span>
@@ -192,9 +191,11 @@ Request A Quote			</h3>
 <input type="text" name="number-110" value="" size="40" class="form-control wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Phone Number">
 </div>
 </div>
-<div class="col-sm-12 col-md-6 col-lg-4">
+<div class="col-12">
 <div class="input-group">
-<span class="wpcf7-form-control-wrap" data-name="textarea-693"><textarea name="textarea-693" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Write Message"></textarea></span>
+	<span class="mt-2 w-100" data-name="">
+		<textarea name="" rows="" class="wpcf7-form-control border wpcf7-textarea" style="width: 100%" aria-invalid="false" placeholder="Write Message"></textarea>
+	</span>
 </div>
 </div>
 </div>
@@ -204,6 +205,8 @@ Request A Quote			</h3>
 <span class="wpcf7-form-control-wrap" data-name="checkbox-75"><span class="wpcf7-form-control wpcf7-checkbox"><span class="wpcf7-list-item first last"><input type="checkbox" name="checkbox-75[]" value="I accept the privacy and terms."><span class="wpcf7-list-item-label"> I accept the privacy and terms.</span></span></span></span>
 </div>
 </div>
+</div>
+<div class="row">
 <div class="col-sm-12 col-md-6 col-lg-4">
 <div class="input-group">
 <input type="submit" value="Submit Request" class="wpcf7-form-control has-spinner wpcf7-submit">
