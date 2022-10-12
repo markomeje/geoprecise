@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Providers;
-
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Gate;
+use App\Models\User;
 
 class AuthServiceProvider extends ServiceProvider
 {
@@ -24,7 +24,31 @@ class AuthServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerPolicies();
+        $permissions = function($user, $resource) {
+            $permissions = [];
+            if (!$user->permissions()->exists() || !($user->permissions()->count() > 0)) return [];
+            foreach ($user->permissions as $access) {
+                $permissions[] = ($resource === $access->resource) ? $access->permission : [];
+            }
 
-        //
+            return $permissions;
+        };
+
+        $allowed = ['superadmin'];
+        Gate::define('view', function(User $user, $resource) use($allowed, $permissions) {
+            return in_array('view', $permissions($user, $resource)) || in_array($user->role, $allowed);
+        });
+
+        Gate::define('create', function(User $user, $resource) use($allowed, $permissions) {
+            return in_array('create', $permissions($user, $resource)) || in_array($user->role, $allowed);
+        });
+
+        Gate::define('update', function(User $user, $resource) use($allowed, $permissions) {
+            return in_array('update', $permissions($user, $resource)) || in_array($user->role, $allowed);   
+        });
+
+        Gate::define('delete', function(User $user, $resource) use($allowed, $permissions) {
+            return in_array('delete', $permissions($user, $resource)) || in_array($user->role, $allowed);   
+        });
     }
 }
