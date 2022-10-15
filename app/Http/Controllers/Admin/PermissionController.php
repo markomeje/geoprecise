@@ -51,8 +51,8 @@ class PermissionController extends Controller
             ]); 
         }
 
-        $permission->permission = $data['permission'];
         $permission->staff_id = $data['staff_id'];
+        $permission->permission = $data['permission'];
         $permission->resource = $data['resource'];
         $permission->update();
         return response()->json([

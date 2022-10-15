@@ -157,6 +157,11 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
         Route::post('/add', [\App\Http\Controllers\Admin\ClientsController::class, 'add'])->name('admin.client.add');
     });
 
+    Route::prefix('permissions')->group(function () {
+        Route::post('/assign', [\App\Http\Controllers\Api\PermissionsController::class, 'assign'])->name('admin.permission.assign');
+        Route::post('/remove/{id}', [\App\Http\Controllers\Api\PermissionsController::class, 'remove'])->name('admin.permission.remove');
+    });
+
     Route::prefix('staff')->group(function () {
         Route::get('/', [\App\Http\Controllers\Admin\StaffController::class, 'index'])->name('admin.staff');
         Route::get('/profile/{id}', [\App\Http\Controllers\Admin\StaffController::class, 'profile'])->name('admin.staff.profile');
