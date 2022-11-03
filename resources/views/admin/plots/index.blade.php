@@ -7,7 +7,7 @@
         @include('admin.includes.navbar')
       <!-- End Navbar -->
       <div class="container-fluid py-4">
-        <div class="alert alert-info d-flex border-0 align-items-center">
+        <div class="alert alert-dark d-flex border-0 align-items-center">
           <a class="text-white me-2" href="javascript:;">
               {{ \App\Models\Plot::count() }} Plots</a>
           <a class="m-0 text-white" href="javascript:;" data-bs-toggle="modal" data-bs-target="#add-plot">Add Plot</a>

@@ -7,28 +7,22 @@
         @include('admin.includes.navbar')
       <!-- End Navbar -->
       <div class="container-fluid py-4">
-        <div class="row">
-          <div class="col-12 col-md-3 col-lg-2 mb-3">
-            <a class="btn w-100 border border-white text-white m-0" href="javascript:;">
-              {{ $plots->count() }} Layouts
-            </a>
-          </div>
-          <div class="col-12 col-md-3 col-lg-2">
-            <a class="btn w-100 bg-gradient-dark m-0" href="javascript:;" data-bs-toggle="modal" data-bs-target="#add-plot">
-              <i class="fas fa-plus"></i>&nbsp;&nbsp;Add Plot
-            </a>
-              @include('admin.plots.partials.add')
-          </div>
-        </div>
-        @if(empty($plots))
-          <div class="alert alert-info mt-4 border-0 text-white">No plots available</div>
+        @if(empty($plots->count()))
+          <div class="alert alert-info mt-4 border-0 text-white">No plots available for the layout</div>
         @else
+          <div class="alert alert-dark border-0 text-white">
+              <a class=" text-white me-3" href="javascript:;">
+                {{ $plots->count() }} Plots in {{ ucwords($plots[0]->layout->name) }}
+              </a>
+              <a class="text-white" href="javascript:;" data-bs-toggle="modal" data-bs-target="#add-plot">Add Plot</a>
+            @include('admin.plots.partials.add')
+          </div>
           <div class="row mt-4">
             @foreach($plots as $plot)
               <div class="col-12 col-md-4 col-lg-3 mb-4">
-                @include('admin.layouts.partials.card')
+                @include('admin.plots.partials.card')
               </div>
-              @include('admin.layouts.partials.edit')
+              @include('admin.plots.partials.edit')
             @endforeach
           </div>
         @endif

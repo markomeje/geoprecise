@@ -2,10 +2,10 @@
 	<div class="card-body" style="background-image:url('/images/title-bg.jpg'); background-size: cover;">
 		<div class="d-flex align-items-center justify-content-between border-bottom mb-3 pb-3">
 			<div class="text-white cursor-pointer" data-bs-toggle="modal" data-bs-target="#edit-plot-{{ $plot->id }}">
-				{{ ucwords($plot->name) }}
+				Number ({{ ucwords($plot->number) }})
 			</div>
 			<div class="text-white">
-				({{ $plot->number }})
+				{{ \Str::limit($plot->name, 12) }}
 			</div>
 		</div>
 		<div class="d-flex align-items-center justify-content-between">
