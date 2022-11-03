@@ -5,12 +5,12 @@
 				Number ({{ ucwords($plot->number) }})
 			</div>
 			<div class="text-white">
-				{{ \Str::limit($plot->name, 12) }}
+				{{ \Str::limit($plot->name, 10) }}
 			</div>
 		</div>
 		<div class="d-flex align-items-center justify-content-between">
 			<div class="text-white">
-				{{ ucwords($plot->layout->name) }}
+				{{ \Str::limit(ucwords($plot->layout->name), 12) }}
 			</div>
 			<div class="text-white">
 				{{ ucwords($plot->category) }}
