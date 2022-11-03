@@ -3,10 +3,10 @@
       <div class="image-overlay p-4 border-radius-lg" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('/images/tar.jpg');">
           <?php $name = empty($layout->name) ? '' : strtolower($layout->name); ?>
           <div class="d-flex align-items-center mb-3 pb-3 border-bottom justify-content-between">
-            <a href="{{ route('admin.layouts.plots', ['id' => $layout->id, 'name' => \Str::slug($name)]) }}" class="text-white">
+            <a href="{{ route('admin.layout.plots', ['id' => $layout->id, 'name' => \Str::slug($name)]) }}" class="text-white">
               {{ ucwords(\Str::limit($name, 16)) }}
             </a>
-            <a href="{{ route('admin.layouts.plots', ['id' => $layout->id, 'name' => \Str::slug($name)]) }}" class="text-white">
+            <a href="{{ route('admin.layout.plots', ['id' => $layout->id, 'name' => \Str::slug($name)]) }}" class="text-white">
               <i class="icofont-long-arrow-right"></i>
             </a>
           </div>
