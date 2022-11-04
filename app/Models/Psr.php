@@ -19,7 +19,7 @@ class Psr extends Model
         'plot_numbers',
         'layout_id',
         'completed',
-        'completed',
+        'sold_by',
         'comments',
         'client_id',
         'status',

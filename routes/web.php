@@ -193,7 +193,8 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
         
         Route::get('/edit/{id}', [\App\Http\Controllers\Admin\PsrsController::class, 'edit'])->name('admin.psr.edit');
         Route::post('/save/{id}', [\App\Http\Controllers\Admin\PsrsController::class, 'save'])->name('admin.psr.save');
-        Route::get('/plots/{id}/{name}', [\App\Http\Controllers\Admin\PsrsController::class, 'plots'])->name('admin.layouts.plots');
+        
+        // Route::get('/plots/{id}/{name}', [\App\Http\Controllers\Admin\PsrsController::class, 'plots'])->name('admin.layouts.plots');
     });
 
     Route::prefix('plots')->group(function () {
