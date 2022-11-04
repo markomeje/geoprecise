@@ -173,6 +173,8 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
         Route::get('/', [\App\Http\Controllers\Admin\PaymentsController::class, 'index'])->name('admin.payments');
         Route::post('/record', [\App\Http\Controllers\Admin\PaymentsController::class, 'record'])->name('admin.payment.record');
         Route::post('/approve', [\App\Http\Controllers\Admin\PaymentsController::class, 'approve'])->name('admin.payment.approve');
+
+        Route::get('/search', [\App\Http\Controllers\Admin\PaymentsController::class, 'search'])->name('admin.payments.search');
     });
 
     Route::prefix('fees')->group(function () {
