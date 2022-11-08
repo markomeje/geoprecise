@@ -12,11 +12,11 @@
         @else
           <div class="alert alert-dark border-0 text-white">
               <a class=" text-white me-3" href="javascript:;">
-                {{ $plots->count() }} Plots
+                {{ isset($plots[0]) ? ucwords($plots[0]->layout->name) : '' }} ({{ $plots->count() }}) Plots
               </a>
               <a class="text-white" href="javascript:;" data-bs-toggle="modal" data-bs-target="#add-plot">Add Plot</a>
-            @include('admin.plots.partials.add')
           </div>
+            @include('admin.plots.partials.add')
           <div class="row mt-4">
             @foreach($plots as $plot)
               <div class="col-12 col-md-4 col-lg-3 mb-4">

@@ -17,6 +17,9 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->text('description')->nullable();
+            $table->string('plot_sizes')->nullable();
+            $table->text('address')->nullable();
+            $table->boolean('active')->default(true);
             $table->timestamps();
         });
     }

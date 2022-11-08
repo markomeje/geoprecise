@@ -14,7 +14,10 @@
             <div class="text-white">
               {{ $layout->plots->count() > 0 ? $layout->plots->count() : 'No' }} Plots
             </div>
-            <div class="text-white">Nill</div>
+            <div class="form-check form-switch mb-3">
+              <input class="form-check-input" type="checkbox" id="rememberme" {{ true === (boolean)$layout->active ? 'checked' : '' }}>
+              <label class="form-check-label" for="rememberme"></label>
+            </div>
           </div>
       </div>
     </div>

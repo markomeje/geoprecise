@@ -16,7 +16,10 @@ class Layout extends Model
      */
     protected $fillable = [
         'name',
-        'description'
+        'description',
+        'active',
+        'address',
+        'plot_sizes'
     ];
 
     /**

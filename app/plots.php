@@ -307,7 +307,7 @@ return [
 				'name'=>'commercial plots',
 				'number'=>'C/1-C/5',
 				]
-		]
+		],
 
 		'name' => 'Monic layout',
 		'plots' => [
@@ -335,7 +335,7 @@ return [
 				'name'=>'Utility plots',
 				'number'=>'UT/1',
 				]
-		]
+		],
 
 		'name' => 'Divine City layout',
 		'plots' => [
@@ -363,7 +363,7 @@ return [
 				'name'=>'Utility plots',
 				'number'=>'UT/1-UT/3',
 				]
-		]
+		],
 
 		'name' => 'Agu Ibite layout',
 		'plots' => [
@@ -395,7 +395,7 @@ return [
 				'name'=>'Special plots',
 				'number'=>'S/1-S/2',
 				]
-		]
+		],
 
 		'name' => 'Akagu Owuinyi layout',
 		'plots' => [
@@ -440,7 +440,7 @@ return [
 				'name'=>'Police post',
 				'number'=>'PP/1',
 				]
-		]
+		],
 
 
 		'name' => 'Beloved layout',
@@ -469,7 +469,7 @@ return [
 				'name'=>'Utility plots',
 				'number'=>'UT/1-UT/33',
 				]
-		]
+		],
 
 		'name' => 'Trinity\ layout',
 		'plots' => [
