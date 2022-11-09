@@ -2,8 +2,16 @@
 
 	'use strict';
 
+    $('.delete-layout').on('click', function() {
+        handleAjax({that: $(this), button: 'delete-layout-button', spinner: 'delete-layout-spinner'});
+    });
+
     $('.issue-plan').on('click', function() {
-        handleAjax({that: $(this), button: 'issue-plan-button', spinner: 'issue-plan-spinner'});    
+        handleAjax({that: $(this), button: 'issue-plan-button', spinner: 'issue-plan-spinner'});
+    });
+
+    $('.toggle-layout-status').on('click', function() {
+        handleAjax({that: $(this), button: 'toggle-layout-status-button', spinner: 'toggle-layout-status-spinner'});
     });
 
     $('.apply-sib').on('click', function() {

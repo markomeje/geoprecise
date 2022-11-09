@@ -22,7 +22,6 @@ class DatabaseSeeder extends Seeder
             StaffSeeder::class,
             FeeSeeder::class,
             LayoutSeeder::class,
-            PlotSeeder::class,
             PsrSeeder::class,
             PcfSeeder::class,
             SurveySeeder::class,

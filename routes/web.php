@@ -185,7 +185,10 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
         Route::get('/', [\App\Http\Controllers\Admin\LayoutsController::class, 'index'])->name('admin.layouts');
         Route::post('/add', [\App\Http\Controllers\Admin\LayoutsController::class, 'add'])->name('admin.layout.add');
         Route::post('/edit/{id}', [\App\Http\Controllers\Admin\LayoutsController::class, 'edit'])->name('admin.layout.edit');
-        Route::get('/plots/{id}/{name}', [\App\Http\Controllers\Admin\LayoutsController::class, 'plots'])->name('admin.layout.plots');
+        Route::post('/toggle/status/{id}', [\App\Http\Controllers\Admin\LayoutsController::class, 'status'])->name('admin.layout.toggle.status');
+        Route::get('/{id}/{name}', [\App\Http\Controllers\Admin\LayoutsController::class, 'layout'])->name('admin.layout');
+
+        Route::post('/delete/{id}', [\App\Http\Controllers\Admin\LayoutsController::class, 'delete'])->name('admin.layout.delete');
     });
 
     Route::prefix('psrs')->group(function () {

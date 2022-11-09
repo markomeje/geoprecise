@@ -10,7 +10,7 @@ class LayoutsController extends Controller
     //
     public function index()
     {
-        return view('admin.layouts.index', ['title' => 'All Layouts', 'layouts' => Layout::all()]);
+        return view('admin.layouts.index', ['title' => 'All Layouts', 'layouts' => Layout::paginate(20)]);
     }
 
     //
@@ -62,7 +62,8 @@ class LayoutsController extends Controller
         $data = request()->all();
         $validator = Validator::make($data, [
             'name' => ['required', 'string'], 
-            'description' => ['nullable', 'string'],
+            'address' => ['nullable', 'string'],
+            'status' => ['nullable', 'boolean'],
         ]);
 
         if ($validator->fails()) {
@@ -81,7 +82,8 @@ class LayoutsController extends Controller
         }
 
         $Layout->name = $data['name'];
-        $Layout->description = $data['description'] ?? null;
+        $Layout->active = (boolean)($data['status'] ?? 0);
+        $Layout->address = $data['address'] ?? null;
         if ($Layout->update()) {
             return response()->json([
                 'status' => 1,
@@ -97,13 +99,70 @@ class LayoutsController extends Controller
     }
 
     //
-    public function plots($id)
+    public function layout($id)
+    {
+        $layout = Layout::find($id);
+        if (empty($layout) || empty($layout->plots->count())) {
+            return view('admin.layouts.layout', ['title' => 'Invalid Layout', 'plots' => '', 'layout' => '']);
+        }
+
+        return view('admin.layouts.layout', ['title' => ucwords($layout->name), 'plots' => $layout->plots->paginate(32), 'layout' => $layout]);
+    }
+
+    public function status($id = 0)
     {
         $layout = Layout::find($id);
         if (empty($layout)) {
-            return view('admin.layouts.plots', ['title' => 'Invalid Layout', 'plots' => '', 'layout' => '']);
+            return response()->json([
+                'status' => 0,
+                'info' => 'Layout not found.',
+            ]);
         }
 
-        return view('admin.layouts.plots', ['title' => ucwords($layout->name), 'plots' => $layout->plots, 'layout' => $layout]);
+        $status = (boolean)$layout->active;
+        $layout->active = !$status;
+        if ($layout->update()) {
+            return response()->json([
+                'status' => 1,
+                'info' => 'Operation successful.',
+                'redirect' => ''
+            ]);
+        }
+
+        return response()->json([
+            'status' => 0,
+            'info' => 'Unknown error. Try again.',
+        ]);
+    }
+
+    public function delete($id = 0)
+    {
+        $layout = Layout::find($id);
+        if (empty($layout)) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Layout not found.',
+            ]);
+        }
+
+        if($layout->plots()->exists()) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Layout is already in use.',
+            ]);
+        }
+
+        if ($layout->delete()) {
+            return response()->json([
+                'status' => 1,
+                'info' => 'Operation successful.',
+                'redirect' => ''
+            ]);
+        }
+
+        return response()->json([
+            'status' => 0,
+            'info' => 'Unknown error. Try again.',
+        ]);
     }
 }

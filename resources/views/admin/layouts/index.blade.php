@@ -24,6 +24,7 @@
               @include('admin.layouts.partials.edit')
             @endforeach
           </div>
+          {{ $layouts->links('vendor.pagination.default') }}
         @endif
       </div>
     </main>

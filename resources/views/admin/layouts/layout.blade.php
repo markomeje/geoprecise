@@ -7,12 +7,12 @@
         @include('admin.includes.navbar')
       <!-- End Navbar -->
       <div class="container-fluid py-4">
-        @if(empty($plots->count()))
-          <div class="alert alert-info mt-4 border-0 text-white">No plots available for the layout</div>
+        @if(empty($plots))
+          <div class="alert alert-danger mt-4 border-0 text-white">No Plots Available for The Layout</div>
         @else
           <div class="alert alert-dark border-0 text-white">
               <a class=" text-white me-3" href="javascript:;">
-                {{ isset($plots[0]) ? ucwords($plots[0]->layout->name) : '' }} ({{ $plots->count() }}) Plots
+                {{ !empty($layout->name) ? ucwords($layout->name) : '' }} ({{ $plots->total() }}) Plots
               </a>
               <a class="text-white" href="javascript:;" data-bs-toggle="modal" data-bs-target="#add-plot">Add Plot</a>
           </div>
@@ -25,6 +25,7 @@
               @include('admin.plots.partials.edit')
             @endforeach
           </div>
+          {{ $plots->links('vendor.pagination.default') }}
         @endif
       </div>
     </main>

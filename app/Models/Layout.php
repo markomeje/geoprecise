@@ -23,6 +23,16 @@ class Layout extends Model
     ];
 
     /**
+     * The status of the layout
+     *
+     * @var array<int, string>
+     */
+    public static $status = [
+        'active' => true,
+        'inactive' => false,
+    ];
+
+    /**
      * A layout has many plots
      *
      * @var array<string, string>
