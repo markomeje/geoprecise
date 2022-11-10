@@ -14,9 +14,12 @@
             <div class="text-white">
               {{ $layout->plots->count() > 0 ? $layout->plots->count() : 'No' }} Plots
             </div>
-            <div class="form-check form-switch mb-0">
-              <input class="form-check-input toggle-layout-status" type="checkbox" id="rememberme" {{ true === (boolean)$layout->active ? 'checked' : '' }} data-url="{{ route('admin.layout.toggle.status', ['id' => $layout->id]) }}">
-              <label class="form-check-label" for="rememberme"></label>
+            <div class="cursor-pointer" data-bs-toggle="modal" data-bs-target="#edit-layout-{{ $layout->id }}">
+              @if(true === (boolean)$layout->active)
+                <div class="text-success">Enabled</div>
+              @else
+                <div class="text-danger">Disabled</div>
+              @endif
             </div>
           </div>
       </div>

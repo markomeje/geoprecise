@@ -28,8 +28,8 @@ class Layout extends Model
      * @var array<int, string>
      */
     public static $status = [
-        'active' => true,
-        'inactive' => false,
+        'enable' => true,
+        'disable' => false,
     ];
 
     /**

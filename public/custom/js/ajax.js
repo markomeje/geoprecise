@@ -10,10 +10,6 @@
         handleAjax({that: $(this), button: 'issue-plan-button', spinner: 'issue-plan-spinner'});
     });
 
-    $('.toggle-layout-status').on('click', function() {
-        handleAjax({that: $(this), button: 'toggle-layout-status-button', spinner: 'toggle-layout-status-spinner'});
-    });
-
     $('.apply-sib').on('click', function() {
         handleAjax({that: $(this), button: 'apply-sib-button', spinner: 'apply-sib-spinner'});    
     });
