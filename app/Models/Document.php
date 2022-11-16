@@ -36,6 +36,7 @@ class Document extends Model
         'Deed of Assignment',
         'Irrevocable Power of Attorney',
         'Authority to Lift',
+        'Certificate of Occupancy',
     ];
 
     /**

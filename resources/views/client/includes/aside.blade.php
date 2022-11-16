@@ -40,6 +40,14 @@
             <span class="nav-link-text ms-1">Forms</span>
           </a>
         </li>
+        <li class="nav-item border mb-4 rounded">
+          <a class="nav-link " href="{{ route('client.surveys') }}">
+            <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="ni ni-watch-time text-dark text-sm opacity-10"></i>
+            </div>
+            <span class="nav-link-text ms-1">Surveys</span>
+          </a>
+        </li>
       </ul>
     </div>
   </aside>

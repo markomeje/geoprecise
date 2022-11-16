@@ -276,6 +276,7 @@ Route::domain(env('CLIENT_URL'))->middleware(['auth', 'client'])->group(function
     Route::prefix('psrs')->group(function () {
         Route::get('/', [\App\Http\Controllers\Client\PsrsController::class, 'index'])->name('client.psrs');
         Route::post('/save/{id}', [\App\Http\Controllers\Client\PsrsController::class, 'save'])->name('client.psr.save');
+        Route::get('/psr/apply', [\App\Http\Controllers\Client\PsrsController::class, 'apply'])->name('client.psr.apply');
         Route::get('/edit/{id}', [\App\Http\Controllers\Client\PsrsController::class, 'edit'])->name('client.psr.edit');
     });
 

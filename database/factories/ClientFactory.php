@@ -31,7 +31,7 @@ class ClientFactory extends Factory
             'occupation' => $this->faker->jobTitle(),
             'address' => $this->faker->address(),
             'status' => 'incomplete',
-            'user_id' => rand(1, User::count()),
+            'user_id' => $this->faker->unique()->numberBetween($min = 1, $max = 500),
         ];
     }
 

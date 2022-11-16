@@ -24,6 +24,9 @@ return new class extends Migration
             $table->foreignId('created_by')->nullable();
             $table->string('status')->nullable();
             $table->boolean('verified')->default(false);
+
+            $table->boolean('deleted')->default(false);
+            $table->dateTime('deleted_at')->nullable();
             $table->timestamps();
         });
     }

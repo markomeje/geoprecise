@@ -20,6 +20,9 @@ return new class extends Migration
             $table->string('plot_sizes')->nullable();
             $table->text('address')->nullable();
             $table->boolean('active')->default(true);
+
+            $table->boolean('deleted')->default(false);
+            $table->dateTime('deleted_at')->nullable();
             $table->timestamps();
         });
     }

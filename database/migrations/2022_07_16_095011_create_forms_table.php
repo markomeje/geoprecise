@@ -22,6 +22,9 @@ return new class extends Migration
             $table->boolean('payable')->default(false);
             $table->string('per')->nullable();
             $table->string('status')->default('active');
+
+            $table->boolean('deleted')->default(false);
+            $table->dateTime('deleted_at')->nullable();
             $table->timestamps();
         });
     }

@@ -39,28 +39,37 @@
                 @endif
               @endif
               <div class="card mb-4">
-                <div class="card-header border-bottom d-flex justify-content-between align-items-center">
-                  <div class="text-dark">
-                    {{ empty($plot_numbers) ? 0 : (str_contains($plot_numbers, '-') ? count(explode('-', $plot_numbers)) : 1) }} Plot(s)
+                <div class="card-header pb-0 border-bottom bg-transparent">
+                  <div class="row">
+                    <div class="col-12 col-md-6 mb-4">
+                      <div class="p-4 w-100 d-block border border-primary">
+                        <small class="text-primary">
+                          {{ ucwords($survey->layout->name) }} Plots
+                        </small>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                      <div class="cursor-pointer w-100 d-block bg-primary border border-primary p-4" data-bs-toggle="modal" data-bs-target="#add-client-plot">
+                        <small class="text-white">Add Plot(s)</small>
+                      </div>
+                    </div>
                   </div>
-                  <span class="cursor-pointer text-dark" data-bs-toggle="modal" data-bs-target="#add-client-plot">Add Plot(s)</span>
                 </div>
                 <?php $route = route('client.plot.add', ['model_id' => $model_id, 'model' => $model]); ?>
                 @include('client.plots.partials.add')
-                <div class="card-body">
+                <div class="card-body pb-2">
                   @if(empty($survey->plot_numbers))
                     <div class="alert alert-danger m-0 border-0 text-white">No plot(s) added for this application.</div>
                   @else
-                    <div class="row d-flex flex-wrap g-0">
+                    <div class="row d-flex flex-wrap">
                       <?php $plot_numbers = str_contains($survey->plot_numbers, '-') ? explode('-', $survey->plot_numbers) : $survey->plot_numbers; ?>
                       @if(is_array($plot_numbers))
-                        <?php $count = 1; ?>
                         @foreach($plot_numbers as $number)
                           @if(!empty($number))
-                            <div class="col-6 col-md-4 col-lg-3">
+                            <div class="col-12 col-md-6 col-xl-4 mb-4">
                               <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
-                                <small class="tiny-font">
-                                  ({{ $count++ }}) {{ $number }}
+                                <small class="">
+                                  {{ $number }}
                                 </small>
                                 <small class="text-danger tiny-font cursor-pointer client-delete-plot" data-url="{{ route('client.plot.delete', ['plot_number' => $number, 'model_id' => $model_id, 'model' => $model]) }}" data-message="Are you sure to delete?">
                                   <i class="icofont-trash"></i>
@@ -70,11 +79,13 @@
                           @endif
                         @endforeach
                       @else
-                        <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
-                          <small class="">{{ $plot_numbers }}</small>
-                          <small class="text-danger tiny-font cursor-pointer client-delete-plot" data-url="{{ route('client.plot.delete', ['plot_number' => $plot_numbers, 'model_id' => $model_id, 'model' => $model]) }}" data-message="Are you sure to delete?">
-                            <i class="icofont-trash"></i>
-                          </small>
+                        <div class="col-12 col-md-6 col-xl-4 mb-4">
+                          <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
+                            <small class="">{{ $plot_numbers }}</small>
+                            <small class="text-danger tiny-font cursor-pointer client-delete-plot" data-url="{{ route('client.plot.delete', ['plot_number' => $plot_numbers, 'model_id' => $model_id, 'model' => $model]) }}" data-message="Are you sure to delete?">
+                              <i class="icofont-trash"></i>
+                            </small>
+                          </div>
                         </div>
                       @endif
                     </div>
@@ -84,9 +95,14 @@
               @if(!empty($plot_numbers))
                 <?php $payment = $survey->payment; $amount = $survey->form ? ($survey->form->amount ?? 0) : 0; $total_plots = is_array($plot_numbers) ? count($plot_numbers) : 1; $total_amount = $total_plots * (int)$amount; ?>
                 @if(empty($payment))
-                  <div class="alert alert-dark mb-4 text-white d-flex justify-content-between">
-                    <span class="text-white">Total: NGN{{ number_format($total_amount) }} Unpaid</span>
-                    <a href="javascript:;" class="m-0 text-white make-payment" data-message="Are you sure to make payment now?" data-url="{{ route('client.payment.process', ['type' => 'paystack', 'model_id' => $survey->id, 'model' => $model, 'amount' => $total_amount]) }}"><img src="/images/spinner.svg" class="me-2 d-none make-payment-spinner mb-1">Make Payment</a>
+                  <div class="card mb-4">
+                    <div class="card-header border-bottom">
+                      <span class="text-dark">One Plot NGN{{ number_format($amount) }} x {{ $total_plots }}Plot(s) Total: NGN{{ number_format($total_amount) }} Unpaid</span>
+                    </div>
+                    <div class="card-body">
+                      <a href="javascript:;" class="m-0 btn btn-primary text-white make-payment" data-message="Are you sure to make payment now?" data-url="{{ route('client.payment.process', ['type' => 'paystack', 'model_id' => $survey->id, 'model' => $model, 'amount' => $total_amount]) }}">
+                        <img src="/images/spinner.svg" class="me-2 d-none make-payment-spinner mb-1">Make Payment</a>
+                    </div>
                   </div>
                 @else
                   <?php $payment_approved = true === (boolean)$payment->approved ?>
@@ -101,8 +117,7 @@
               @if(true !== $completed)
                 <div class="card mb-4 shadow-sm border-0">
                   <div class="card-header border-bottom d-flex align-items-center justify-content-between">
-                    <span class="text-dark">Upload Document(s)</span>
-                    <span class="text-dark">{{ $documents->count() }} Uploaded</span>
+                    <span class="text-dark">Upload Document(s). Note that submission of fraudulent documents are at owners risk.</span>
                   </div>
                   <div class="card-body pb-0">
                     @include('client.documents.partials.add')
@@ -116,7 +131,6 @@
                   @if($completed)
                     <div class="alert alert-info d-flex align-items-center justify-content-between mb-4">
                       <span class="text-white">Uploaded Document(s)</span>
-                      <span class="text-white">{{ $documents->count() }} Uploaded</span>
                     </div>
                   @endif
                   <div class="row">
@@ -132,24 +146,24 @@
                 <div class="alert alert-info mb-4 border-0 text-white">Edit submitted Survey or Lifting Application</div>
                 <form class="survey-form" method="post" action="javascript:;" data-action="{{ route('client.survey.save', ['id' => $survey->id]) }}">
                   <div class="card border-0 shadow-sm mb-4">
-                    <div class="card-header border-bottom">Purchaser or Allottee Details</div>
+                    <div class="card-header border-bottom">Client or Allottee Details</div>
                     <div class="card-body">
                       <div class="row">
                         <div class="form-group col-md-6 input-group-lg">
-                          <label class="text-muted">Purchaser or Allottee Name</label>
-                          <input type="text" class="form-control purchaser_name" name="purchaser_name" placeholder="Enter purchaser or allottee name" name="purchaser_name" value="{{ $survey->purchaser_name }}">
-                          <small class="purchaser_name-error text-danger"></small>
+                          <label class="text-muted">Client or Allottee Name</label>
+                          <input type="text" class="form-control client_name" name="client_name" placeholder="Enter Client or allottee name" name="client_name" value="{{ $survey->client_name }}">
+                          <small class="client_name-error text-danger"></small>
                         </div>
                         <div class="form-group col-md-6 input-group-lg">
-                          <label class="text-muted">Purchaser or Allottee Phone</label>
-                          <input type="text" class="form-control purchaser_phone" name="purchaser_phone" placeholder="Enter purchaser or allottee name" name="purchaser_phone" value="{{ $survey->purchaser_phone }}">
-                          <small class="purchaser_phone-error text-danger"></small>
+                          <label class="text-muted">Client or Allottee Phone</label>
+                          <input type="text" class="form-control client_phone" name="client_phone" placeholder="Enter Client or allottee name" name="client_phone" value="{{ $survey->client_phone }}">
+                          <small class="client_phone-error text-danger"></small>
                         </div>
                       </div>
                       <div class="form-group input-group-lg">
-                        <label class="text-muted">Purchaser or Allottee Address</label>
-                        <textarea class="form-control purchaser_address" name="purchaser_address" placeholder="Enter purchaser or allottee address">{{ $survey->purchaser_address }}</textarea>
-                        <small class="purchaser_address-error text-danger"></small>
+                        <label class="text-muted">Client or Allottee Address</label>
+                        <textarea class="form-control client_address" name="client_address" placeholder="Enter Client or allottee address">{{ $survey->client_address }}</textarea>
+                        <small class="client_address-error text-danger"></small>
                       </div>
                     </div>
                   </div>
@@ -175,28 +189,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="card border-0 shadow-sm mb-4">
-                    <div class="card-header border-bottom">Approval by Community Lands Committe or Land Owner</div>
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="form-group input-group-lg col-md-6 mb-4">
-                          <label class="text-muted">Approval Name</label>
-                          <input type="text" name="approval_name" class="form-control approval_name" placeholder="Enter name" value="{{ $survey->approval_name }}">
-                          <small class="approval_name-error text-danger"></small>
-                        </div>
-                        <div class="form-group input-group-lg col-md-6 mb-4">
-                          <label class="text-muted">Approval Address</label>
-                          <input type="text" name="approval_address" class="form-control approval_address" placeholder="Enter address" value="{{ $survey->approval_address }}">
-                          <small class="approval_address-error text-danger"></small>
-                        </div>
-                        <div class="form-group input-group-lg col-12 mb-4">
-                          <label class="text-muted">Approval Comment(s)</label>
-                          <textarea class="form-control approval_comments" rows="3" name="approval_comments" placeholder="Enter comments">{{ $survey->approval_comments }}</textarea>
-                          <small class="approval_comments-error text-danger"></small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                   <div class="alert d-none survey-message mb-4 text-white"></div>
                   @if($completed)
                       @if($approved)
@@ -206,7 +198,7 @@
                       @endif
                   @else
                     <div class="card border-0 mb-4 shadow-sm">
-                      <div class="card-header border-bottom">Click the switch below only after you're sure that all information provided are acurate and that you agree to <a href="" class="text-primary">our terms and conditions</a>. Note that you cannot modify any parts of your application afterwards.</div>
+                      <div class="card-header border-bottom">Click the switch below only after you're sure that all information provided are acurate and that you agree to <a href="" class="text-primary">Our terms and conditions</a>. Note that you cannot modify any parts of your application afterwards.</div>
                       <div class="card-body">
                         <div class="form-check form-switch">
                           <input class="form-check-input" name="completed" type="checkbox" id="completed" value="1">
@@ -216,7 +208,7 @@
                       </div>
                     </div>
                     <button type="submit" class="btn btn-primary w-100 btn-lg survey-button mb-0">
-                        <img src="/images/spinner.svg" class="me-2 d-none survey-spinner mb-1">Save
+                        <img src="/images/spinner.svg" class="me-2 d-none survey-spinner mb-1">Next
                     </button>
                   @endif
                 </form>

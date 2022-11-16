@@ -18,9 +18,9 @@ class SurveyFactory extends Factory
     {
         return [
             'form_id' => Form::where(['code' => 'LES'])->pluck('id')->toArray()[0],
-            'purchaser_name' => $this->faker->name(),
-            'purchaser_address' => $this->faker->address(),
-            'purchaser_phone' => $this->faker->phoneNumber(),
+            'client_name' => $this->faker->name(),
+            'client_address' => $this->faker->address(),
+            'client_phone' => $this->faker->phoneNumber(),
 
             'seller_name' => $this->faker->name(),
             'seller_name' => $this->faker->address(),
@@ -28,10 +28,6 @@ class SurveyFactory extends Factory
 
             'layout_id' => rand(1, Layout::count()),
             'client_id' => rand(1, Client::count()),
-
-            'approval_comments' => $this->faker->text(),
-            'approval_name' => $this->faker->name(),
-            'approval_address' => $this->faker->address(),
             'status' => 'ongoing',
 
             'recorded_by' => rand(1, Staff::count()),

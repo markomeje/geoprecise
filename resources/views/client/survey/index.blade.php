@@ -7,9 +7,9 @@
         @include('client.includes.navbar')
       <!-- End Navbar -->
       <div class="container-fluid py-4">
-        <div class="alert alert-info border-0 mb-4 text-white d-flex align-items-center justify-content-between">
-          <span>{{ $surveys->total() }} Surveys and Lifting</span>
-          <a href="{{ route('client.survey.apply') }}" class="text-white">Apply Here</a>
+        <div class="alert alert-info border-0 mb-4 text-white d-flex align-items-center">
+          <span class="me-3">{{ $surveys->total() }} Surveys and Lifting</span>
+          <a href="{{ route('client.survey.apply') }}" class="text-white">Apply</a>
         </div>
         <div class="">
           <h5 class="mb-4"></h5>

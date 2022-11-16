@@ -1,10 +1,10 @@
 <div class="dashboard">
-  @include('admin.includes.header')
+  @include('client.includes.header')
       <div class="min-height-300 bg-primary position-absolute w-100"></div>
-      @include('admin.includes.aside')
+      @include('client.includes.aside')
       <main class="main-content position-relative border-radius-lg ">
       <!-- Navbar -->
-        @include('admin.includes.navbar')
+        @include('client.includes.navbar')
       <!-- End Navbar -->
       <div class="container-fluid py-4">
         <div class="alert alert-info border-0 text-white">{{ $psrs->total() }} Property Search Requests</div>
@@ -24,6 +24,6 @@
           @endif
         </div>
     </main>
-    @include('admin.includes.rightbar')
-  @include('admin.includes.footer')
+    @include('client.includes.rightbar')
+  @include('client.includes.footer')
 </div>

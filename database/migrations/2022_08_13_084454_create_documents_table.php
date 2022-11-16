@@ -27,6 +27,9 @@ return new class extends Migration
             $table->foreignId('staff_id')->nullable();
             $table->string('role')->nullable();
             $table->text('comment')->nullable();
+            
+            $table->boolean('deleted')->default(false);
+            $table->dateTime('deleted_at')->nullable();
             $table->timestamps();
         });
     }

@@ -34,6 +34,9 @@ return new class extends Migration
 
             $table->string('status')->nullable();
             $table->boolean('verified')->default(false);
+
+            $table->boolean('deleted')->default(false);
+            $table->dateTime('deleted_at')->nullable();
             $table->timestamps();
         });
     }

@@ -12,29 +12,54 @@
             <div class="alert alert-info border-0 text-white mb-4">Survey or Lifting Application</div>
             <form class="survey-form" method="post" action="javascript:;" data-action="{{ route('client.survey.add') }}">
               @csrf
-              <div class="card border-0 shadow-sm mb-4">
-                <div class="card-header border-bottom">Purchaser or Allottee Details</div>
+              <div class="card border mb-4">
+                <div class="card-header border-bottom">Select Survey Type</div>
                 <div class="card-body">
                   <div class="row">
-                    <div class="form-group col-md-6 input-group-lg">
-                      <label class="text-muted">Purchaser or Allottee Name</label>
-                      <input type="text" class="form-control purchaser_name" name="purchaser_name" placeholder="Enter purchaser or allottee name">
-                      <small class="purchaser_name-error text-danger"></small>
+                    <div class="form-group input-group-lg col-12">
+                      <label class="text-muted">Survey</label>
+                      <?php $surveys = \App\Models\Form::where(['category' => 'surveys'])->get(); ?>
+                      <select name="survey" class="form-control survey">
+                        <option value="">Select survey</option>
+                        @if(empty($surveys->count()))
+                          <option value="">Nill</option>
+                        @else
+                          @foreach($surveys as $form)
+                            <option value="{{ $form->id }}">
+                              {{ ucwords($form->name) }}
+                            </option>
+                          @endforeach
+                        @endif
+                      </select>
+                      <small class="survey-error text-danger"></small>
                     </div>
-                    <div class="form-group col-md-6 input-group-lg">
-                      <label class="text-muted">Purchaser or Allottee Phone Number</label>
-                      <input type="text" class="form-control purchaser_phone" name="purchaser_phone" placeholder="Enter purchaser or allottee number">
-                      <small class="purchaser_phone-error text-danger"></small>
-                    </div>
-                  </div>
-                  <div class="form-group input-group-lg">
-                    <label class="text-muted">Purchaser or Allottee Address</label>
-                    <input type="text" class="form-control purchaser_address" name="purchaser_address" placeholder="Enter purchaser or allottee address" />
-                    <small class="purchaser_address-error text-danger"></small>
                   </div>
                 </div>
               </div>
-              <div class="card border-0 shadow-sm mb-4">
+              <div class="card border mb-4">
+                <div class="card-header border-bottom">Client or Allottee Details</div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="form-group col-md-6 input-group-lg">
+                      <label class="text-muted">Client or Allottee Name</label>
+                      <input type="text" class="form-control client_name" name="client_name" placeholder="Enter Client or allottee name">
+                      <small class="client_name-error text-danger"></small>
+                      <small class="form-text text-muted">Client name should be written the way it should appear on survey plan</small>
+                    </div>
+                    <div class="form-group col-md-6 input-group-lg">
+                      <label class="text-muted">Client or Allottee Phone Number</label>
+                      <input type="text" class="form-control client_phone" name="client_phone" placeholder="Enter Client or allottee number">
+                      <small class="client_phone-error text-danger"></small>
+                    </div>
+                  </div>
+                  <div class="form-group input-group-lg">
+                    <label class="text-muted">Client or Allottee Address</label>
+                    <input type="text" class="form-control client_address" name="client_address" placeholder="Enter Client or allottee address" />
+                    <small class="client_address-error text-danger"></small>
+                  </div>
+                </div>
+              </div>
+              <div class="card border mb-4">
                 <div class="card-header border-bottom">Land Seller or Donor Details</div>
                 <div class="card-body">
                   <div class="row">
@@ -56,8 +81,8 @@
                   </div>
                 </div>
               </div>
-              <div class="card border-0 shadow-sm mb-4">
-                <div class="card-header border-bottom">Select Layout. You will add plots on this layout later.</div>{{-- Is it possible to survey multiple plots from multiple layouts? --}}
+              <div class="card border mb-4">
+                <div class="card-header border-bottom">Select Layout. You will add plots on this layout later.</div>
                 <div class="card-body">
                   <div class="row">
                     <div class="form-group input-group-lg col-12">
@@ -69,9 +94,11 @@
                           <option value="">Nill</option>
                         @else
                           @foreach($layouts as $layout)
-                            <option value="{{ $layout->id }}">
-                              {{ $layout->name }}
-                            </option>
+                            @if($layout->plots()->exists())
+                              <option value="{{ $layout->id }}">
+                                {{ $layout->name }}
+                              </option>
+                            @endif
                           @endforeach
                         @endif
                       </select>
@@ -80,31 +107,9 @@
                   </div>
                 </div>
               </div>
-              <div class="card border-0 shadow-sm mb-4">
-                <div class="card-header border-bottom">Approval by Community Lands Committe or Land Owner</div>
-                <div class="card-body">
-                  <div class="row">
-                    <div class="form-group col-md-6 mb-4">
-                      <label class="text-muted">Approval Name</label>
-                      <input type="text" name="approval_name" class="form-control approval_name" placeholder="Enter name">
-                      <small class="approval_name-error text-danger"></small>
-                    </div>
-                    <div class="form-group col-md-6 mb-4">
-                      <label class="text-muted">Approval Address</label>
-                      <input type="text" name="approval_address" class="form-control approval_address" placeholder="Enter address">
-                      <small class="approval_address-error text-danger"></small>
-                    </div>
-                    <div class="form-group col-12 mb-4">
-                      <label class="text-muted">Approval Comment(s)</label>
-                      <textarea class="form-control approval_comments" rows="3" name="approval_comments" placeholder="Enter comments"></textarea>
-                      <small class="approval_comments-error text-danger"></small>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div class="alert d-none survey-message mb-4 text-white"></div>
               <button type="submit" class="btn btn-primary btn-lg w-100 survey-button mb-0">
-                  <img src="/images/spinner.svg" class="me-2 d-none survey-spinner mb-1">Save
+                  <img src="/images/spinner.svg" class="me-2 d-none survey-spinner mb-1">Continue
               </button>
             </form>
           </div>

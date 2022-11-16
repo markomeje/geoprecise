@@ -21,19 +21,16 @@ class SurveyController extends Controller
     {
         $data = request()->all();
         $validator = Validator::make($data, [
-            'purchaser_name' => ['nullable', 'string', 'max:255'], 
-            'purchaser_address' => ['nullable', 'string', 'max:255'], 
-            'purchaser_phone' => ['nullable', 'string', 'max:17'],
+            'client_name' => ['required', 'string', 'max:255'], 
+            'client_address' => ['required', 'string', 'max:255'], 
+            'client_phone' => ['required', 'string', 'max:17'],
 
-            'seller_name' => ['nullable', 'string', 'max:255'], 
-            'seller_address' => ['nullable', 'string', 'max:255'], 
-            'seller_phone' => ['nullable', 'string', 'max:17'],
+            'seller_name' => ['required', 'string', 'max:255'], 
+            'seller_address' => ['required', 'string', 'max:255'], 
+            'seller_phone' => ['required', 'string', 'max:17'],
  
-            'layout' => ['required', 'integer'], 
-
-            'name' => ['nullable', 'string', 'max:255'], 
-            'comments' => ['nullable', 'string', 'max:500'], 
-            'address' => ['nullable', 'string', 'max:255'], 
+            'layout' => ['required', 'integer'],
+            'survey' => ['required', 'integer'],
         ]);
 
         if ($validator->fails()) {
@@ -43,21 +40,17 @@ class SurveyController extends Controller
             ]);
         }
 
-        try{
+        // try{
             $survey = Survey::create([
-                'purchaser_name' => $data['purchaser_name'] ?? null,
-                'purchaser_address' => $data['purchaser_address'] ?? null,
-                'purchaser_phone' => $data['purchaser_phone'] ?? null,
+                'client_name' => $data['client_name'] ?? null,
+                'client_address' => $data['client_address'] ?? null,
+                'client_phone' => $data['client_phone'] ?? null,
 
                 'seller_name' => $data['seller_name'] ?? null,
                 'seller_address' => $data['seller_address'] ?? null,
                 'seller_phone' => $data['seller_phone'] ?? null,
 
-                'form_id' => Form::where(['code' => 'LES'])->pluck('id')->toArray()[0],
-                'approval_name' => $data['approval_name'] ?? null,
-                'approval_comments' => $data['approval_comments'] ?? null,
-                'approval_address' => $data['approval_address'] ?? null,
-
+                'form_id' => $data['survey'],
                 'layout_id' => $data['layout'],
                 'completed' => false,
                 'client_id' => auth()->user()->client->id,
@@ -76,12 +69,12 @@ class SurveyController extends Controller
                 'info' => 'Operation successful.',
                 'redirect' => route('client.survey.edit', ['id' => $survey->id])
             ]);
-        }catch(Exception $exception) {
-            return response()->json([
-                'status' => 0,
-                'info' => 'Unknown error. Try again.'
-            ]);
-        } 
+        // }catch(Exception $exception) {
+        //     return response()->json([
+        //         'status' => 0,
+        //         'info' => 'Unknown error. Try again.'
+        //     ]);
+        // } 
     }
 
     public function edit($id = 0)
@@ -93,9 +86,9 @@ class SurveyController extends Controller
     {
         $data = request()->all();
         $validator = Validator::make($data, [
-            'purchaser_name' => ['required', 'string', 'max:255'], 
-            'purchaser_address' => ['required', 'string', 'max:255'], 
-            'purchaser_phone' => ['required', 'string', 'max:17'],
+            'client_name' => ['required', 'string', 'max:255'], 
+            'client_address' => ['required', 'string', 'max:255'], 
+            'client_phone' => ['required', 'string', 'max:17'],
 
             'seller_name' => ['required', 'string', 'max:255'], 
             'seller_address' => ['required', 'string', 'max:255'], 
@@ -155,9 +148,9 @@ class SurveyController extends Controller
             $survey->approval_comments = $data['approval_comments'] ?? null;
             $survey->approval_address = $data['approval_address'] ?? null;
 
-            $survey->purchaser_name = $data['purchaser_name'] ?? null;
-            $survey->purchaser_address = $data['purchaser_address'] ?? null;
-            $survey->purchaser_phone = $data['purchaser_phone'] ?? null;
+            $survey->client_name = $data['client_name'] ?? null;
+            $survey->client_address = $data['client_address'] ?? null;
+            $survey->client_phone = $data['client_phone'] ?? null;
 
             $survey->seller_phone = $data['seller_phone'] ?? null;
             $survey->seller_address = $data['seller_address'] ?? null;

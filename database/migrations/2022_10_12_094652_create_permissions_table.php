@@ -20,6 +20,9 @@ return new class extends Migration
             $table->foreignId('permitted_by')->nullable();
             $table->string('resource');
             $table->foreignId('staff_id');
+
+            $table->boolean('deleted')->default(false);
+            $table->dateTime('deleted_at')->nullable();
             $table->timestamps();
         });
     }

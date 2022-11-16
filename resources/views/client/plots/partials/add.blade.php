@@ -19,7 +19,7 @@
                   <option value="">No plots listed</option>
                 @else
                   @foreach($layout->plots as $plot)
-                    <option value="{{ $plot->number }}">
+                    <option value="{{ ucwords($plot->name).' ('.$plot->number.')' }}">
                       {{ ucwords($plot->name).' ('.$plot->number.')' }}
                     </option>
                   @endforeach

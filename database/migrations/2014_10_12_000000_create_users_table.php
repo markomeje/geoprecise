@@ -21,6 +21,8 @@ return new class extends Migration
             $table->string('role')->default('client');
             $table->integer('verified')->default(0);
             $table->string('password');
+            $table->boolean('deleted')->default(false);
+            $table->dateTime('deleted_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

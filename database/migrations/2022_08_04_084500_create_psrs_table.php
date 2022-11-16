@@ -36,6 +36,9 @@ return new class extends Migration
             $table->foreignId('recorded_by')->nullable();
             $table->text('comments')->nullable();
             $table->boolean('completed')->default(false);
+
+            $table->boolean('deleted')->default(false);
+            $table->dateTime('deleted_at')->nullable();
             $table->timestamps();
         });
     }

@@ -105,4 +105,10 @@ class PsrsController extends Controller
         return view('client.psrs.edit', ['title' => 'Edit Property Search Request', 'psr' => Psr::findOrFail($id)]);
     }
 
+    //
+    public function apply()
+    {
+        // return view('client.psrs.apply', ['title' => 'Apply for Property Search Request', 'psr' => Psr::findOrFail($id)]);
+    }
+
 }

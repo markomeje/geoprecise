@@ -25,6 +25,8 @@ return new class extends Migration
             $table->string('phone')->nullable();
             $table->foreignId('user_id');
             $table->string('status')->nullable();
+            $table->boolean('deleted')->default(false);
+            $table->dateTime('deleted_at')->nullable();
             $table->timestamps();
         });
     }

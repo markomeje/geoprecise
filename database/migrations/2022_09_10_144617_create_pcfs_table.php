@@ -31,6 +31,9 @@ return new class extends Migration
             $table->foreignId('client_id');
             $table->foreignId('survey_id')->nullable();
             $table->string('status')->nullable();
+
+            $table->boolean('deleted')->default(false);
+            $table->dateTime('deleted_at')->nullable();
             $table->timestamps();
         });
     }

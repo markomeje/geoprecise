@@ -29,6 +29,9 @@ return new class extends Migration
             $table->boolean('completed')->default(false);
             $table->text('comments')->nullable();
             $table->string('status')->default('incomplete');
+
+            $table->boolean('deleted')->default(false);
+            $table->dateTime('deleted_at')->nullable();
             $table->timestamps();
         });
     }

@@ -23,9 +23,7 @@
                   <div class="">
                     <div class="alert alert-info border-0 mb-4 d-flex justify-content-between">
                       <span class="text-white">Property Search Requests</span>
-                      <a href="javascript:;" class="text-white" data-bs-toggle="modal" data-bs-target="#add-psr">Apply</a>
                     </div>
-                    @include('admin.psrs.partials.add')
                     <?php $psrs = \App\Models\Psr::where(['client_id' => $client_id])->get(); ?>
                     @if(empty($psrs->count()))
                       <div class="alert alert-danger text-white border-0 mb-4">No Property Search Requests</div>
@@ -42,7 +40,6 @@
                   <div class="">
                       <div class="alert alert-info border-0 mb-4 d-flex justify-content-between">
                         <span class="text-white">Surveying and Lifting Applications</span>
-                        <a href="{{ route('admin.survey.apply', ['client_id' => $client_id]) }}" class="text-white">Apply</a>
                       </div>
                     <?php $surveys = \App\Models\Survey::latest()->where(['client_id' => $client_id])->get(); ?>
                     @if(empty($surveys->count()))
@@ -59,7 +56,9 @@
                   </div>
                 </div>
                 <div class="col-12 col-md-5 col-lg-4 col-xl-3">
-                  <div class="alert alert-info border-0 text-white mb-4">{{ ucwords($client->fullname) }} Payments</div>
+                  <div class="alert alert-info border-0 text-white mb-4">
+                    {{ ucwords($client->fullname) }} Payments
+                  </div>
                   <?php $payments = \App\Models\Payment::latest()->paid()->where(['client_id' => $client_id])->get(); ?>
                   @if(empty($payments->count()))
                     <div class="alert alert-danger border-0 text-white mb-4">No payments yet.</div>

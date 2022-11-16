@@ -21,6 +21,9 @@ return new class extends Migration
             $table->foreignId('layout_id');
             $table->text('description')->nullable();
             $table->string('category')->nullable();
+
+            $table->boolean('deleted')->default(false);
+            $table->dateTime('deleted_at')->nullable();
             $table->timestamps();
         });
     }

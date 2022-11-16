@@ -16,9 +16,9 @@ return new class extends Migration
         Schema::create('surveys', function (Blueprint $table) {
             $table->id();
             $table->foreignId('form_id')->nullable();
-            $table->string('purchaser_name')->nullable();
-            $table->string('purchaser_address')->nullable();
-            $table->string('purchaser_phone')->nullable();
+            $table->string('client_name')->nullable();
+            $table->string('client_address')->nullable();
+            $table->string('client_phone')->nullable();
 
             $table->string('seller_name')->nullable();
             $table->string('seller_address')->nullable();
@@ -44,6 +44,9 @@ return new class extends Migration
 
             $table->string('recorder_type')->default('staff');
             $table->foreignId('recorded_by')->nullable();
+            
+            $table->boolean('deleted')->default(false);
+            $table->dateTime('deleted_at')->nullable();
             $table->timestamps();
         });
     }
