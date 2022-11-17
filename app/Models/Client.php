@@ -35,12 +35,22 @@ class Client extends Model
     }
 
     /**
-     * A user may have many psrs
+     * A client may have many psrs
      *
      * @var array<string, string>
      */
     public function psrs()
     {
         return $this->hasMany(Psrs::class, 'client_id');
+    }
+
+    /**
+     * A client may have many surveys
+     *
+     * @var array<string, string>
+     */
+    public function surveys()
+    {
+        return $this->hasMany(Survey::class, 'client_id')->latest();
     }
 }

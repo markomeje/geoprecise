@@ -36,6 +36,7 @@ class Survey extends Model
         'completed',
         'status',
         'staff_id',
+        'agree'
     ];
 
     /**

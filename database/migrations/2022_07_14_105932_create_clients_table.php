@@ -19,12 +19,17 @@ return new class extends Migration
             $table->string('title')->nullable();
             $table->string('dob')->nullable();
             $table->string('occupation')->nullable();
+
             $table->string('city')->nullable();
             $table->string('address')->nullable();
             $table->string('state')->nullable();
+
             $table->string('phone')->nullable();
             $table->foreignId('user_id');
             $table->string('status')->nullable();
+
+            $table->boolean('agree')->default(false);
+            
             $table->boolean('deleted')->default(false);
             $table->dateTime('deleted_at')->nullable();
             $table->timestamps();

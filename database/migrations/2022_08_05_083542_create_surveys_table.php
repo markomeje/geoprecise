@@ -44,6 +44,8 @@ return new class extends Migration
 
             $table->string('recorder_type')->default('staff');
             $table->foreignId('recorded_by')->nullable();
+
+            $table->boolean('agree')->default(false);
             
             $table->boolean('deleted')->default(false);
             $table->dateTime('deleted_at')->nullable();

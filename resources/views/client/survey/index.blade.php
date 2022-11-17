@@ -7,15 +7,17 @@
         @include('client.includes.navbar')
       <!-- End Navbar -->
       <div class="container-fluid py-4">
-        <div class="alert alert-info border-0 mb-4 text-white d-flex align-items-center">
-          <span class="me-3">{{ $surveys->total() }} Surveys and Lifting</span>
-          <a href="{{ route('client.survey.apply') }}" class="text-white">Apply</a>
-        </div>
         <div class="">
-          <h5 class="mb-4"></h5>
-          @if(empty($surveys->count()))
-            <div class="alert alert-info">No surveys yet</div>
+          @if(empty($surveys))
+            <div class="alert alert-dark border-0 mb-4 text-white d-flex align-items-center">
+              <span class="me-3">No surveys yet</span>
+              <a href="{{ route('client.survey.apply') }}" class="text-white">Apply</a>
+            </div>
           @else
+            <div class="alert alert-dark border-0 mb-4 text-white d-flex align-items-center">
+              <span class="me-3">{{ $surveys->total() }} Surveys and Lifting</span>
+              <a href="{{ route('client.survey.apply') }}" class="text-white">Apply</a>
+            </div>
             <div class="row">
               @foreach($surveys as $survey)
                 <div class="col-xl-3 col-md-6 col-12 mb-4">

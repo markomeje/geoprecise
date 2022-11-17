@@ -40,7 +40,7 @@ class SurveyController extends Controller
             ]);
         }
 
-        // try{
+        try{
             $survey = Survey::create([
                 'client_name' => $data['client_name'] ?? null,
                 'client_address' => $data['client_address'] ?? null,
@@ -69,12 +69,12 @@ class SurveyController extends Controller
                 'info' => 'Operation successful.',
                 'redirect' => route('client.survey.edit', ['id' => $survey->id])
             ]);
-        // }catch(Exception $exception) {
-        //     return response()->json([
-        //         'status' => 0,
-        //         'info' => 'Unknown error. Try again.'
-        //     ]);
-        // } 
+        }catch(Exception $exception) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Unknown error. Try again.'
+            ]);
+        } 
     }
 
     public function edit($id = 0)
@@ -85,19 +85,19 @@ class SurveyController extends Controller
     public function save($id = 0)
     {
         $data = request()->all();
+        $summary = $data['summary'] ?? '';
+        $valid = $summary == 'yes' ? 'required' : 'nullable';
         $validator = Validator::make($data, [
-            'client_name' => ['required', 'string', 'max:255'], 
-            'client_address' => ['required', 'string', 'max:255'], 
-            'client_phone' => ['required', 'string', 'max:17'],
+            'client_name' => [$valid, 'string', 'max:255'], 
+            'client_address' => [$valid, 'string', 'max:255'], 
+            'client_phone' => [$valid, 'string', 'max:17'],
 
-            'seller_name' => ['required', 'string', 'max:255'], 
-            'seller_address' => ['required', 'string', 'max:255'], 
-            'seller_phone' => ['required', 'string', 'max:17'],
+            'seller_name' => [$valid, 'string', 'max:255'], 
+            'seller_address' => [$valid, 'string', 'max:255'], 
+            'seller_phone' => [$valid, 'string', 'max:17'],
 
-            'approval_name' => ['required', 'string', 'max:255'], 
-            'approval_comments' => ['required', 'string', 'max:500'], 
-            'approval_address' => ['required', 'string', 'max:255'], 
-        ]);
+            'agree' => ['required']
+        ], ['agree.required' => 'You have to agree to our terms and conditions.']);
 
         if ($validator->fails()) {
             return response()->json([
@@ -114,21 +114,29 @@ class SurveyController extends Controller
             ]);
         }
 
-        $completed = true === (boolean)($data['completed'] ?? 0);
-        if ($completed && empty($survey->plot_numbers)) {
+        $agree = true === (boolean)($data['agree'] ?? false);
+        if ($agree && empty($survey->plot_numbers)) {
             return response()->json([
                 'status' => 0,
                 'info' => 'Add plots first',
             ]);
         }
 
-        if ($completed && empty($survey->documents->count())) {
+        if (empty($survey->documents)) {
             return response()->json([
                 'status' => 0,
                 'info' => 'Incomplete survey. Upload survey documents.',
             ]);
         }
 
+        if ($agree && empty($survey->documents->count())) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Incomplete survey. Upload survey documents.',
+            ]);
+        }
+
+        $completed = true === (boolean)($data['completed'] ?? false);
         if ($completed && empty($survey->payment)) {
             return response()->json([
                 'status' => 0,
@@ -144,26 +152,27 @@ class SurveyController extends Controller
         }
 
         try{
-            $survey->approval_name = $data['approval_name'] ?? null;
-            $survey->approval_comments = $data['approval_comments'] ?? null;
-            $survey->approval_address = $data['approval_address'] ?? null;
+            if($summary == 'yes') {
+                $survey->client_name = $data['client_name'] ?? null;
+                $survey->client_address = $data['client_address'] ?? null;
+                $survey->client_phone = $data['client_phone'] ?? null;
 
-            $survey->client_name = $data['client_name'] ?? null;
-            $survey->client_address = $data['client_address'] ?? null;
-            $survey->client_phone = $data['client_phone'] ?? null;
+                $survey->seller_phone = $data['seller_phone'] ?? null;
+                $survey->seller_address = $data['seller_address'] ?? null;
+                $survey->seller_name = $data['seller_name'] ?? null;
+            }
+                
 
-            $survey->seller_phone = $data['seller_phone'] ?? null;
-            $survey->seller_address = $data['seller_address'] ?? null;
-            $survey->seller_name = $data['seller_name'] ?? null;
             $survey->status = $completed ? 'completed' : 'incomplete';
             $survey->completed = $completed;
+            $survey->agree = $agree;
             $survey->approved = false;
 
             if($survey->update()){
                 return response()->json([
                     'status' => 1,
                     'info' => 'Survey updated successfully.',
-                    'redirect' => ''
+                    'redirect' => route('client.survey.edit', ['id' => $survey->id, 'summary' => 'yes'])
                 ]);
             }
 

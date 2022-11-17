@@ -30,6 +30,8 @@ return new class extends Migration
             $table->text('comments')->nullable();
             $table->string('status')->default('incomplete');
 
+            $table->boolean('agree')->default(false);
+
             $table->boolean('deleted')->default(false);
             $table->dateTime('deleted_at')->nullable();
             $table->timestamps();
