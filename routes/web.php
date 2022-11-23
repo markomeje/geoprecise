@@ -141,7 +141,15 @@ Route::middleware(['web'])->domain(env('AUTH_URL'))->group(function() {
 
         Route::get('/signup', [\App\Http\Controllers\Auth\SignupController::class, 'index'])->name('signup.ui');
         Route::post('/signup', [\App\Http\Controllers\Auth\SignupController::class, 'signup'])->name('auth.signup');
+
         Route::post('/signup/verify', [\App\Http\Controllers\Auth\SignupController::class, 'verify'])->name('signup.verify');
+        Route::get('/signup/verify', [\App\Http\Controllers\Auth\SignupController::class, 'verify'])->name('signup.verify');
+        Route::post('/email/verification/resend', [\App\Http\Controllers\Auth\SignupController::class, 'resend'])->name('email.verification.resend');
+
+        Route::post('/signup/phone/verify', [\App\Http\Controllers\Auth\SignupController::class, 'verifyPhone'])->name('signup.phone.verify');
+        
+        Route::post('/email/verification/resend', [\App\Http\Controllers\Auth\SignupController::class, 'resend'])->name('email.verification.resend');
+        Route::post('/phone/verification/resend', [\App\Http\Controllers\Auth\SignupController::class, 'resendPhoneVerificationCode'])->name('phone.verification.resend');
 
         Route::post('/login', [\App\Http\Controllers\Auth\LoginController::class, 'login'])->name('auth.login');
         Route::post('/email/verify', [\App\Http\Controllers\Auth\SignupController::class, 'signup'])->name('email.verify');
@@ -285,7 +293,11 @@ Route::domain(env('CLIENT_URL'))->middleware(['auth', 'client'])->group(function
         Route::get('/apply', [\App\Http\Controllers\Client\SurveyController::class, 'apply'])->name('client.survey.apply');
         Route::post('/add', [\App\Http\Controllers\Client\SurveyController::class, 'add'])->name('client.survey.add');
         Route::get('/edit/{id}', [\App\Http\Controllers\Client\SurveyController::class, 'edit'])->name('client.survey.edit');
+
         Route::post('/save/{id}', [\App\Http\Controllers\Client\SurveyController::class, 'save'])->name('client.survey.save');
+
+        Route::post('/agree/{id}', [\App\Http\Controllers\Client\SurveyController::class, 'agree'])->name('client.survey.agree');
+        Route::get('/summary/{id}', [\App\Http\Controllers\Client\SurveyController::class, 'summary'])->name('client.survey.summary');
     });
 
     Route::prefix('sibs')->group(function () {

@@ -2,6 +2,21 @@
 
 	'use strict';
 
+    $('.resend-phone-otp-form').submit('click', function() {
+        event.preventDefault();
+        handleForm({form: $(this), button: 'resend-phone-otp-button', spinner: 'resend-phone-otp-spinner', message: 'resend-phone-otp-message'});
+    });
+
+    $('.verify-phone-form').submit('click', function() {
+        event.preventDefault();
+        handleForm({form: $(this), button: 'verify-phone-button', spinner: 'verify-phone-spinner', message: 'verify-phone-message'});
+    });
+
+    $('.resend-verification-form').submit('click', function() {
+        event.preventDefault();
+        handleForm({form: $(this), button: 'resend-verification-button', spinner: 'resend-verification-spinner', message: 'resend-verification-message'});
+    });
+
     $('.record-plan-form').submit(function(event){
         event.preventDefault();
         handleForm({form: $(this), button: 'record-plan-button', spinner: 'record-plan-spinner', message: 'record-plan-message'});

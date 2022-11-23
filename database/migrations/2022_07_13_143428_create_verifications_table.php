@@ -17,8 +17,6 @@ return new class extends Migration
             $table->id();
             $table->string('type');
             $table->boolean('verified')->default(false);
-            $table->string('model');
-            $table->foreignId('model_id');
             $table->string('token');
             $table->dateTime('expiry')->nullable();
             $table->foreignId('user_id');

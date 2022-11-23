@@ -20,8 +20,8 @@
                     @csrf
                     <div class="form-group">
                     	<label class="text-muted">Phone number</label>
-                      	<input type="email" class="form-control form-control-lg email" placeholder="Your phone number" aria-label="Phone" name="email">
-                        <small class="email-error text-danger"></small>
+                      	<input type="number" class="form-control form-control-lg phone" placeholder="Your phone number" aria-label="Phone" name="phone">
+                        <small class="phone-error text-danger"></small>
                     </div>
                     <div class="form-group">
                     	<label class="text-muted">Password</label>
@@ -39,11 +39,10 @@
                       </button>
                     </div>
                   </form>
-                </div>
-                <div class="card-footer pt-0">
                   <p class="mb-4 text-sm">
                     Don't have an account? <a href="{{ route('signup') }}" class="text-primary text-gradient font-weight-bold">Signup</a>
                   </p>
+                  <div class="border cursor-pointer border-primary p-4 text-primary rounded" data-bs-toggle="modal" data-bs-target="#resend-phone-otp">Resend phone verification code?</div>
                 </div>
               </div>
             </div>
@@ -54,6 +53,36 @@
                 <div class="text-white position-relative">Since 1973, Geoprecise Services Limited has been the premier Boundary Surveyor in South-East Nigeria. Therefore, we will deliver a fast turnaround, in comparison to our competitors, that will help you meet your critical project deadlines.</div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="resend-phone-otp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered" role="plot">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Resend Verification Code</h5>
+              <button type="button" class="btn-close text-danger" data-bs-dismiss="modal" aria-label="Close">
+                <i class="icofont-close"></i>
+              </button>
+            </div>
+            <form class="resend-phone-otp-form" action="javascript:;" method="post" data-action="{{ route('phone.verification.resend') }}">
+              @csrf
+              <div class="modal-body">
+                <div class="row">
+                  <div class="form-group col-12">
+                    <label class="text-muted">Phone</label>
+                    <input type="number" name="phone_number" class="form-control phone_number" placeholder="Enter your phone">
+                    <small class="phone_number-error text-danger"></small>
+                  </div>
+                </div>
+                <div class="alert d-none resend-phone-otp-message mb-2 text-white"></div>
+              </div>
+              <div class="px-3 border-top pt-4 pb-0">
+                <button type="submit" class="btn w-100 btn-primary resend-phone-otp-button">
+                  <img src="/images/spinner.svg" class="me-2 d-none resend-phone-otp-spinner mb-1">Resend
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

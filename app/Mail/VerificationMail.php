@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class ClientVerificationMail extends Mailable
+class VerificationMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -35,6 +35,6 @@ class ClientVerificationMail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.client.verify')->subject('Email Verification Link');
+        return $this->markdown('emails.verify')->subject('Email Verification Link');
     }
 }

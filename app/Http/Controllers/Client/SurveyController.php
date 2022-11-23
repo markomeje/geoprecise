@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Client;
 use App\Http\Controllers\Controller;
-use App\Models\{Survey, Form};
+use App\Models\{Survey, Form, Sib};
 use Validator;
 use Exception;
 
@@ -85,17 +85,102 @@ class SurveyController extends Controller
     public function save($id = 0)
     {
         $data = request()->all();
-        $summary = $data['summary'] ?? '';
-        $valid = $summary == 'yes' ? 'required' : 'nullable';
         $validator = Validator::make($data, [
-            'client_name' => [$valid, 'string', 'max:255'], 
-            'client_address' => [$valid, 'string', 'max:255'], 
-            'client_phone' => [$valid, 'string', 'max:17'],
+            'client_name' => ['required', 'string', 'max:255'], 
+            'client_address' => ['required', 'string', 'max:255'], 
+            'client_phone' => ['required', 'string', 'max:17'],
 
-            'seller_name' => [$valid, 'string', 'max:255'], 
-            'seller_address' => [$valid, 'string', 'max:255'], 
-            'seller_phone' => [$valid, 'string', 'max:17'],
+            'seller_name' => ['required', 'string', 'max:255'], 
+            'seller_address' => ['required', 'string', 'max:255'], 
+            'seller_phone' => ['required', 'string', 'max:17'],
+        ]);
 
+        if ($validator->fails()) {
+            return response()->json([
+                'status' => 0,
+                'error' => $validator->errors(),
+            ]);
+        }
+
+        $survey = Survey::find($id);
+        if (empty($survey)) {
+            response()->json([
+                'status' => 0,
+                'info' => 'Unknown error. Survey not found.'
+            ]);
+        }
+
+        $agree = true === (boolean)($data['agree'] ?? false);
+        if ($agree && empty($survey->plot_numbers)) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Add plots first',
+            ]);
+        }
+
+        if (empty($survey->documents)) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Incomplete survey. Upload survey documents.',
+            ]);
+        }
+
+        $completed = true === (boolean)($data['completed'] ?? false);
+        if ($completed && empty($survey->payment)) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Incomplete survey. No payment.',
+            ]);
+        }
+
+        if ($completed && $survey->payment->status !== 'paid') {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Incomplete application. Invalid payment',
+            ]);
+        }
+
+        try{
+            $survey->client_name = $data['client_name'] ?? null;
+            $survey->client_address = $data['client_address'] ?? null;
+            $survey->client_phone = $data['client_phone'] ?? null;
+
+            $survey->seller_phone = $data['seller_phone'] ?? null;
+            $survey->seller_address = $data['seller_address'] ?? null;
+            $survey->seller_name = $data['seller_name'] ?? null;
+                
+            $survey->status = $completed ? 'completed' : 'incomplete';
+            $survey->approved = false;
+
+            if($survey->update()){
+                return response()->json([
+                    'status' => 1,
+                    'info' => 'Survey updated successfully.',
+                    'redirect' => ''
+                ]);
+            }
+
+            return response()->json([
+                'status' => 0,
+                'info' => 'Update failed. Try again.'
+            ]);
+        }catch(Exception $exception) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Unknown error. Try again.'
+            ]);
+        }
+    }
+
+    public function apply()
+    {
+        return view('client.survey.apply', ['title' => 'Apply for Survey or Lifting']);
+    }
+
+    public function agree($id = 0)
+    {
+        $data = request()->all();
+        $validator = Validator::make($data, [
             'agree' => ['required']
         ], ['agree.required' => 'You have to agree to our terms and conditions.']);
 
@@ -136,49 +221,32 @@ class SurveyController extends Controller
             ]);
         }
 
-        $completed = true === (boolean)($data['completed'] ?? false);
-        if ($completed && empty($survey->payment)) {
-            return response()->json([
-                'status' => 0,
-                'info' => 'Incomplete survey. No payment.',
-            ]);
-        }
-
-        if ($completed && $survey->payment->status !== 'paid') {
-            return response()->json([
-                'status' => 0,
-                'info' => 'Incomplete application. Invalid payment',
-            ]);
-        }
-
         try{
-            if($summary == 'yes') {
-                $survey->client_name = $data['client_name'] ?? null;
-                $survey->client_address = $data['client_address'] ?? null;
-                $survey->client_phone = $data['client_phone'] ?? null;
-
-                $survey->seller_phone = $data['seller_phone'] ?? null;
-                $survey->seller_address = $data['seller_address'] ?? null;
-                $survey->seller_name = $data['seller_name'] ?? null;
-            }
-                
-
-            $survey->status = $completed ? 'completed' : 'incomplete';
-            $survey->completed = $completed;
+            $survey->status = 'incomplete';
+            $survey->completed = false;
             $survey->agree = $agree;
             $survey->approved = false;
 
             if($survey->update()){
+                if(empty($survey->sib)){ 
+                    Sib::create([
+                        'client_id' => auth()->user()->client->id,
+                        'survey_id' => $survey->id,
+                        'form_id' => Form::where(['code' => 'SIB'])->pluck('id')->toArray()[0],
+                        'recorder_type' => 'client'
+                    ]);
+                }
+
                 return response()->json([
                     'status' => 1,
                     'info' => 'Survey updated successfully.',
-                    'redirect' => route('client.survey.edit', ['id' => $survey->id, 'summary' => 'yes'])
+                    'redirect' => route('client.survey.summary', ['id' => $survey->id])
                 ]);
             }
 
             return response()->json([
                 'status' => 0,
-                'info' => 'Update failed. Try again.'
+                'info' => 'Operation failed. Try again.'
             ]);
         }catch(Exception $exception) {
             return response()->json([
@@ -186,12 +254,11 @@ class SurveyController extends Controller
                 'info' => 'Unknown error. Try again.'
             ]);
         }
-
     }
 
-    public function apply()
+    public function summary($id = 0)
     {
-        return view('client.survey.apply', ['title' => 'Apply for Survey or Lifting']);
+        return view('client.survey.summary', ['title' => 'Survey or Lifting Application Summary', 'survey' => Survey::find($id)]);
     }
 
 }

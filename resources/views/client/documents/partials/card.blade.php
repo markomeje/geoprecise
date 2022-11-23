@@ -8,13 +8,10 @@
         	<small class="text-white">
         		{{ $document->type }}
         	</small>
-        	<small class="text-white">
-        		<i class="icofont-eye"></i>
-        	</small>
 	      </div>
 	    </a>
 	    <div class="row">
-	    	@if(!$completed)
+	    	@if(empty($paid) || !$paid)
 		    	<div class="col-12">
 		    		<div class="cursor-pointer delete-document-{{ $document->id }}" data-url="{{ route('client.document.delete', ['id' => $document->id]) }}" data-message="Are you sure to delete this document?">
 			          <button class="text-white btn btn-danger w-100 delete-document-button-{{ $document->id }}">

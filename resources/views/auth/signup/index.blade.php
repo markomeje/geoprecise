@@ -7,8 +7,8 @@
     </div>
     <div class="container">
       <div class="row justify-content-center" style="margin-top: -24rem !important;">
-        <div class="col-xl-6 col-lg-7 col-md-9 mx-auto">
-          <div class="card py-3 z-index-0 mb-5">
+        <div class="col-xl-6 col-lg-7 col-md-9 mx-auto mt-5">
+          <div class="card py-3 z-index-0 my-5">
             <div class="card-header pt-4">
               <a href="{{ route('home') }}" class="mb-3 d-block" style="max-width: 240px;">
                   <img src="/images/logo.png" class="img-fluid w-100 object-fit">
@@ -16,22 +16,27 @@
             </div>
             <div class="card-body pt-0">
               @if(request()->get('success'))
-                <div class="alert alert-success mb-4 text-white">Your account has been created successfully.</div>
                 <div class="">
-                  <p class="m-0 mb-4">Please check your email. A verification link have been sent. Click on the link to verify your account.</p>
-                  <div class="row">
-                    <div class="col-12 col-md-6 mb-3">
-                      <a href="{{ route('login') }}" class="btn btn-lg btn-primary btn-lg w-100">Login Here</a>
-                    </div>
-                    <div class="col-12 col-md-6 mb-3">
-                      <a href="{{ route('login') }}" class="btn btn-lg btn-primary btn-lg w-100">Contact Us</a>
-                    </div>
+                  @if('true' == request()->get('success'))
+                    <div class="alert alert-success mb-4 text-white">Your account has been created successfully.</div>
+                    <p class="m-0 mb-4">A verification link have been sent to your email. Click on the link to verify your email.</p>
+                  @endif
+                  <p class="m-0 mb-4">A verification code have been sent to your phone number. Please enter the code below to verify your phone number.</p>
+                  <div class="p-4 border-radius-lg border mb-4">
+                    <form class="verify-phone-form" action="javascript:;" method="post" data-action="{{ route('signup.phone.verify') }}">
+                      @csrf
+                      <div class="form-group mb-4">
+                        <label class="text-muted">Phone Verification Code</label>
+                        <input type="number" class="form-control code" placeholder="Enter your code" aria-label="code" name="code">
+                        <small class="code-error text-danger"></small>
+                      </div>
+                      <div class="alert verify-phone-message d-none text-white mb-4"></div>
+                      <button type="submit" class="btn btn-lg btn-primary btn-lg w-100 mb-0 verify-phone-button">
+                        <img src="/images/spinner.svg" class="me-2 d-none verify-phone-spinner mb-1">Verify
+                      </button>
+                    </form>
                   </div>
-                  <div>
-                    <p>
-                      &copy; {{ date('Y') }} All rights reserved {{ config('app.name') }}.
-                    </p>
-                  </div>
+                  <p class="text-dark">&copy; {{ date('Y') }} All rights reserved {{ config('app.name') }}</p>
                 </div>
               @else
                 <div class="">
@@ -98,7 +103,7 @@
                     </div>
                     <div class="form-group col-sm-12 col-md-6 col-lg-6">
                       <label class="text-muted">Occupation</label>
-                      <input type="text" class="form-control occupation" placeholder="Enter your occupation" aria-label="Phone" name="occupation">
+                      <input type="text" class="form-control occupation" placeholder="Enter your occupation" aria-label="occupation" name="occupation">
                       <small class="occupation-error text-danger"></small>
                     </div>
                   </div>

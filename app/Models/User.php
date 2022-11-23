@@ -6,6 +6,11 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Str;
+use App\Mail\VerificationMail;
+use Carbon\Carbon;
+use Mail;
+use App\Sms;
 
 class User extends Authenticatable
 {
@@ -57,6 +62,50 @@ class User extends Authenticatable
     protected $casts = [];
 
     /**
+     */
+    public static function boot() 
+    {
+        parent::boot();
+        static::created(function($user) {
+            if(!empty($user->email)) {
+                $user_id = $user->id;
+                $token = Str::random(64);
+                Verification::create([
+                    'token' => $token,
+                    'type' => 'email',
+                    'expiry' => Carbon::now()->addMinutes(60),
+                    'user_id' => $user_id,
+                    'verified' => false
+                ]);
+
+                $email = $user->email;
+                $mail = new VerificationMail([
+                    'token' => $token, 
+                    'email' => $email, 
+                ]);
+
+                Mail::to($email)->send($mail);
+            }
+
+            $otp = random_int(100000, 999999);
+            Verification::create([
+                'token' => $otp,
+                'type' => 'phone',
+                'expiry' => Carbon::now()->addMinutes(60),
+                'user_id' => $user_id,
+                'verified' => false
+            ]);
+
+            Sms::otp([
+                'phone' => $user->phone,
+                'otp' => $otp,
+            ]);
+
+        });
+        
+    }
+
+    /**
      * A user may have one profile image
      *
      * @var array<string, string>
@@ -94,6 +143,16 @@ class User extends Authenticatable
     public function staff()
     {
         return $this->hasOne(Staff::class);
+    }
+
+    /**
+     * A user may have one may verifications
+     *
+     * @var array<string, string>
+     */
+    public function verifications()
+    {
+        return $this->hasMany(Verification::class);
     }
 
 }
