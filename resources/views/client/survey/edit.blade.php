@@ -22,7 +22,7 @@
                   <div class="card-header pb-0 border-bottom bg-transparent">
                     <div class="row">
                       <div class="col-12 mb-4">
-                        <div class="cursor-pointer w-100 text-center text-white d-block bg-primary border border-primary p-4" data-bs-toggle="modal" data-bs-target="#add-client-plot">Add Plot(s) in {{ ucwords($survey->layout->name) }}</div>
+                        <div class="cursor-pointer w-100 text-center text-white d-block bg-primary border border-primary p-4" data-bs-toggle="modal" data-bs-target="#add-client-plot">Add Plot(s) Numbers in {{ ucwords($survey->layout->name) }}</div>
                       </div>
                     </div>
                   </div>
