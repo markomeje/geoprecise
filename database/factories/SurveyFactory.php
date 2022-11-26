@@ -17,7 +17,7 @@ class SurveyFactory extends Factory
     public function definition()
     {
         return [
-            'form_id' => Form::where(['code' => 'LES'])->pluck('id')->toArray()[0],
+            'form_id' => $this->faker->randomElement(Form::where(['category' => 'surveys'])->pluck('id')->toArray()) ,
             'client_name' => $this->faker->name(),
             'client_address' => $this->faker->address(),
             'client_phone' => $this->faker->phoneNumber(),
@@ -29,10 +29,6 @@ class SurveyFactory extends Factory
             'layout_id' => rand(1, Layout::count()),
             'client_id' => rand(1, Client::count()),
             'status' => 'ongoing',
-
-            'recorded_by' => rand(1, Staff::count()),
-            'lifted_by' => rand(1, Staff::count()),
-            'approved_by' => rand(1, Staff::count()),
         ];
     }
 }

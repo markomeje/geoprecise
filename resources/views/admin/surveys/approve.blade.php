@@ -11,7 +11,7 @@
           <div class="alert alert-danger d-block mb-4 text-white border-0">Unkwon error. Application details not found.</div>
         @else
           <?php $client_id = $survey->client->id; $model_id = $survey->id; $model = 'survey'; $plot_numbers = $survey->plot_numbers; $client_name = $survey->client->fullname; $approved = (true === (boolean)$survey->approved); $payment = $survey->payment; $paid = empty($payment) ? false : ($payment->status === 'paid' ? true : false); ?>
-          <div class="p-4 bg-white border-radius-lg min-vh-100">
+          <div class="min-vh-100">
             <div class="row">
               <div class="col-12 col-lg-8 mb-4">
                 <div class="alert alert-dark mb-4 border-0 d-flex justify-content-between align-items-center">
@@ -20,16 +20,16 @@
                     {{ $approved ? 'Approved' : 'Unapproved' }}
                   </span>
                 </div>
-                <div class="card border mb-4">
-                  <div class="card-header border-bottom d-flex justify-content-between align-items-center">
-                    <div class="text-dark">
-                      {{ empty($plot_numbers) ? 0 : (str_contains($plot_numbers, '-') ? count(explode('-', $plot_numbers)) : 1) }} Plot Number(s) in {{ ucwords($survey->layout->name) }}
+                @if(empty($plot_numbers))
+                  <div class="alert alert-danger mb-4 border-0 text-white">No plot(s) added for this application.</div>
+                @else
+                  <div class="card border mb-4">
+                    <div class="card-header border-bottom d-flex justify-content-between align-items-center">
+                      <div class="text-dark">
+                        {{ empty($plot_numbers) ? 0 : (str_contains($plot_numbers, '-') ? count(explode('-', $plot_numbers)) : 1) }} Plot Number(s) in {{ ucwords($survey->layout->name) }}
+                      </div>
                     </div>
-                  </div>
-                  <div class="card-body pb-2">
-                    @if(empty($plot_numbers))
-                      <div class="alert alert-danger m-0 border-0 text-white">No plot(s) added for this application.</div>
-                    @else
+                    <div class="card-body pb-2">
                       <div class="row d-flex flex-wrap">
                         <?php $plot_numbers = str_contains($plot_numbers, '-') ? explode('-', $plot_numbers) : $plot_numbers; ?>
                         @if(is_array($plot_numbers))
@@ -48,9 +48,9 @@
                           </div>
                         @endif
                       </div>
-                    @endif
+                    </div>
                   </div>
-                </div>
+                @endif
                 @if(empty($payment))
                   <div class="alert alert-danger mb-4 text-white d-flex justify-content-between">No Payment made for this application.</div>
                 @else
@@ -143,13 +143,15 @@
                       </div>
                     </div>
                     <div class="alert d-none survey-message mb-4 text-white"></div>
-                    <a href="{{ route('admin.survey.pdf', ['id' => $model_id]) }}">Download as Pdf</a>
                     @if($approved)
                       <div class="alert alert-success text-white mb-4">Approved by {{ $survey->approver ? $survey->approver->staff->fullname : '' }} on {{ date("F j, Y, g:i a", strtotime($survey->approved_at)) }}</div>
                     @else
-                      <button type="submit" class="btn btn-primary btn-lg w-100 approve-survey-button mb-0" data-url={{ route('admin.survey.approve', ['id' => $model_id]) }}>
-                          <img src="/images/spinner.svg" class="me-2 d-none approve-survey-spinner mb-1">Approve Survey
-                      </button>
+                      @if($paid)
+                        <a href="{{ route('admin.survey.pdf', ['id' => $model_id]) }}" class="btn btn-dark btn-block btn-lg w-100">Generate Pdf</a>
+                        <button type="submit" class="btn btn-primary btn-lg w-100 approve-survey-button mb-0" data-url={{ route('admin.survey.approve', ['id' => $model_id]) }}>
+                            <img src="/images/spinner.svg" class="me-2 d-none approve-survey-spinner mb-1">Approve Survey
+                        </button>
+                      @endif
                     @endif
                   </div>
                 </div>

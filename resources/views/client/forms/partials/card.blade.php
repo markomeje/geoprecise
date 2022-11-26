@@ -8,6 +8,6 @@
         </small>
       </a>
     </div>
-    <a href="{{ route("client.$form->category", ['code' => strtolower($form->code)]) }}" class="px-5 text-white py-3 bg-primary rounded-pill">Continue</a>
+    <a href="{{ route("client.$form->category", ['code' => $form->code]) }}" class="px-5 text-white py-3 bg-primary rounded-pill">Continue</a>
   </div>
 </div>

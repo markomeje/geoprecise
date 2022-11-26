@@ -14,9 +14,10 @@
               <a href="{{ route('client.survey.apply') }}" class="text-white">Apply</a>
             </div>
           @else
+            <?php $code = request()->get('code'); ?>
             <div class="alert alert-dark border-0 mb-4 text-white d-flex align-items-center">
               <span class="me-3">{{ $surveys->total() }} Surveys and Lifting</span>
-              <a href="{{ route('client.survey.apply') }}" class="text-white">Apply</a>
+              <a href="{{ route('client.survey.apply', ['code' => $code]) }}" class="text-white">Apply</a>
             </div>
             <div class="row">
               @foreach($surveys as $survey)

@@ -17,10 +17,11 @@ class SurveyController extends Controller
     }
 
     //
-    public function add($client_id = 0)
+    public function add()
     {
         $data = request()->all();
         $validator = Validator::make($data, [
+            'survey' => ['required', 'integer'],
             'client_name' => ['required', 'string', 'max:255'], 
             'client_address' => ['required', 'string', 'max:255'], 
             'client_phone' => ['required', 'string', 'max:17'],
@@ -30,7 +31,6 @@ class SurveyController extends Controller
             'seller_phone' => ['required', 'string', 'max:17'],
  
             'layout' => ['required', 'integer'],
-            'survey' => ['required', 'integer'],
         ]);
 
         if ($validator->fails()) {
@@ -42,13 +42,13 @@ class SurveyController extends Controller
 
         try{
             $survey = Survey::create([
-                'client_name' => $data['client_name'] ?? null,
-                'client_address' => $data['client_address'] ?? null,
-                'client_phone' => $data['client_phone'] ?? null,
+                'client_name' => $data['client_name'],
+                'client_address' => $data['client_address'],
+                'client_phone' => $data['client_phone'],
 
-                'seller_name' => $data['seller_name'] ?? null,
-                'seller_address' => $data['seller_address'] ?? null,
-                'seller_phone' => $data['seller_phone'] ?? null,
+                'seller_name' => $data['seller_name'],
+                'seller_address' => $data['seller_address'],
+                'seller_phone' => $data['seller_phone'],
 
                 'form_id' => $data['survey'],
                 'layout_id' => $data['layout'],

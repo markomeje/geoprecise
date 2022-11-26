@@ -15,14 +15,18 @@ class SurveysController extends Controller
         return view('admin.surveys.index', ['title' => 'All Surveys', 'surveys' => Survey::latest()->paginate($limit)]);
     }
 
-    public function pdf($id) {
-        $survey = Survey::find($id);
-        if (empty($survey)) return [];
-
-        $pdf = Pdf::loadView('admin.surveys.pdf', ['survey' => $survey]);
-        $fileName = \Str::slug(ucwords($survey->client_name));
-        return $pdf->download('report.pdf');
+    public function pdf($id = 0) {
+        return view('admin.surveys.pdf', ['title' => 'All Surveys', 'survey' => Survey::find($id)]);
     }
+
+    // public function pdf($id) {
+    //     $survey = Survey::find($id);
+    //     if (empty($survey)) return [];
+
+    //     $pdf = Pdf::loadView('admin.surveys.pdf', ['survey' => $survey]);
+    //     $fileName = \Str::slug(ucwords($survey->client_name));
+    //     return $pdf->download('report.pdf');
+    // }
 
     //
     public function approve($id = 0)

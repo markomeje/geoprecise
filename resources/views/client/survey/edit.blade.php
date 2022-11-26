@@ -10,6 +10,7 @@
         @if(empty($survey) || empty($survey->client))
           <div class="alert alert-danger text-white mt-4 border-0">Surveying details not available</div>
         @else
+
           <?php $model_id = $survey->id; $model = 'survey'; $layout = $survey->layout; $plot_numbers = $survey->plot_numbers; $client_id = $survey->client_id ?? 0; $approved = (boolean)$survey->approved === true; $completed = true === (boolean)$survey->completed; $summary = request()->get('summary') ?? ''; $payment = $survey->payment; $paid = empty($payment) ? false : ($payment->status === 'paid' ? true : false); ?>
           <div class="row">
             <div class="col-12 col-lg-8 mb-4">

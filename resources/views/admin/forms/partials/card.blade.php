@@ -1,5 +1,5 @@
   <div class="card shadow-lg z-index-2 bg-transparent">
-<a href="{{ route("admin.$form->category") }}" class="d-flex align-items-center">
+<a href="{{ route("admin.$form->category", ['code' => $form->code]) }}" class="d-flex align-items-center">
     <div class="card-body d-flex justify-content-center flex-column border-radius-lg h-100" style="background-image: url('/images/dark.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 280px !important; object-fit: cover;">
       <div class="text-white mb-4 d-block">
         {{ ucwords($form->name) }}

@@ -16,26 +16,31 @@ class Survey extends Model
      */
     protected $fillable = [
         'form_id',
-        'purchaser_name',
-        'purchaser_address',
-        'purchaser_phone',
+        'client_name',
+        'client_address',
+        'client_phone',
 
         'seller_name',
         'seller_address',
         'seller_phone',
 
         'layout_id',
-        'document_presented',
         'plot_numbers',
 
         'approval_comments',
         'approval_name',
         'approval_address',
 
+        'approved',
+        'approved_at',
+        'approved_by',
+
+        'deleted',
+        'deleted_at',
+
         'client_id',
         'completed',
         'status',
-        'staff_id',
         'agree'
     ];
 

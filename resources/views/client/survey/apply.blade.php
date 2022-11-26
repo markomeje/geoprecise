@@ -17,15 +17,16 @@
                 <div class="card-body">
                   <div class="row">
                     <div class="form-group input-group-lg col-12">
-                      <label class="text-muted">Survey</label>
+                      <label class="text-dark">Survey Type</label>
                       <?php $surveys = \App\Models\Form::where(['category' => 'surveys'])->get(); ?>
                       <select name="survey" class="form-control survey">
                         <option value="">Select survey</option>
                         @if(empty($surveys->count()))
                           <option value="">Nill</option>
                         @else
+                          <?php $code = request()->get('code'); ?>
                           @foreach($surveys as $form)
-                            <option value="{{ $form->id }}">
+                            <option value="{{ $form->id }}" {{ $code == $form->code ? 'selected' : '' }}>
                               {{ ucwords($form->name) }}
                             </option>
                           @endforeach
