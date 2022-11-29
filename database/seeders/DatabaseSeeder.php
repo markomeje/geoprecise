@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
             PsrSeeder::class,
             PcfSeeder::class,
             SurveySeeder::class,
+            RoleSeeder::class,
         ]);
     }
 }

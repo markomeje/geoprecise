@@ -51,13 +51,13 @@
               <label class="text-muted">Role</label>
               <select class="form-control role" name="role">
                 <option value="">Select role</option>
-                <?php $roles = \App\Models\Staff::$roles; ?>
+                <?php $roles = \App\Models\Role::all(); ?>
                 @if(empty($roles))
                   <option value="">No roles listed</option>
                 @else
                   @foreach($roles as $role)
-                    <option value="{{ $role }}">
-                      {{ ucwords($role) }}
+                    <option value="{{ $role->id }}">
+                      {{ ucwords($role->name) }}
                     </option>
                   @endforeach
                 @endif

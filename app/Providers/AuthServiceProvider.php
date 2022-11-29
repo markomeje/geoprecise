@@ -26,7 +26,10 @@ class AuthServiceProvider extends ServiceProvider
         $this->registerPolicies();
         $permissions = function($user, $resource) {
             $permissions = [];
-            if (!$user->permissions()->exists() || !($user->permissions()->count() > 0)) return [];
+            if (!$user->permissions()->exists() || !($user->permissions()->count() > 0)) {
+                return [];
+            }
+
             foreach ($user->permissions as $access) {
                 $permissions[] = ($resource === $access->resource) ? $access->permission : [];
             }
@@ -34,7 +37,14 @@ class AuthServiceProvider extends ServiceProvider
             return $permissions;
         };
 
-        $allowed = ['superadmin'];
+        // if (request()->user()->cannot('create', ['units'])) {
+        //     return response()->json([
+        //         'status' => 0, 
+        //         'info' => 'Sorry. You cannot perform this operation.'
+        //     ]);
+        // }
+
+        $allowed = ['owner'];
         Gate::define('view', function(User $user, $resource) use($allowed, $permissions) {
             return in_array('view', $permissions($user, $resource)) || in_array($user->role, $allowed);
         });

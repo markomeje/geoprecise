@@ -14,11 +14,8 @@
           <div class="min-vh-100">
             <div class="row">
               <div class="col-12 col-lg-8 mb-4">
-                <div class="alert alert-dark mb-4 border-0 d-flex justify-content-between align-items-center">
-                  <span class="text-white">Survey or Lifting for {{ ucwords($client_name) }}</span>
-                  <span class="text-{{ $approved ? 'success' : 'danger' }}">
-                    {{ $approved ? 'Approved' : 'Unapproved' }}
-                  </span>
+                <div class="alert alert-dark mb-4 text-white border-0">
+                  <span class="text-white">{{ ucwords($client_name) }} {{ ucwords($survey->form->name) }}</span> - <span class="text-{{ $approved ? 'success' : 'danger' }}">{{ $approved ? 'Approved' : 'Unapproved' }}</span>
                 </div>
                 @if(empty($plot_numbers))
                   <div class="alert alert-danger mb-4 border-0 text-white">No plot(s) added for this application.</div>
@@ -70,7 +67,7 @@
                           <div class="alert alert-success w-100 m-0 text-white">Payment Approved By {{ $payment->approver ? $payment->approver->staff->fullname : '' }} on {{ date("F j, Y, g:i a", strtotime($payment->approved_at)) }}</div>
                         @else
                           <div class="approve-payment" data-url="{{ route('admin.payment.approve', ['model' => $model, 'model_id' => $model_id, 'client_id' => $client_id, 'reference' => $payment->reference]) }}">
-                            <a href="javascript:;" class="btn btn-primary approve-payment-button mb-0">
+                            <a href="javascript:;" class="btn btn-primary approve-payment-button btn-block mb-0 w-100">
                               <img src="/images/spinner.svg" class="me-2 d-none approve-payment-spinner mb-1">Approve payment
                             </a>
                           </div>
@@ -145,12 +142,14 @@
                     <div class="alert d-none survey-message mb-4 text-white"></div>
                     @if($approved)
                       <div class="alert alert-success text-white mb-4">Approved by {{ $survey->approver ? $survey->approver->staff->fullname : '' }} on {{ date("F j, Y, g:i a", strtotime($survey->approved_at)) }}</div>
+                      <a href="{{ route('admin.survey.pdf', ['id' => $model_id]) }}" class="btn btn-dark btn-block btn-lg w-100">Generate As Pdf</a>
                     @else
                       @if($paid)
-                        <a href="{{ route('admin.survey.pdf', ['id' => $model_id]) }}" class="btn btn-dark btn-block btn-lg w-100">Generate Pdf</a>
-                        <button type="submit" class="btn btn-primary btn-lg w-100 approve-survey-button mb-0" data-url={{ route('admin.survey.approve', ['id' => $model_id]) }}>
+                        <div class="approve-survey" data-url="{{ route('admin.survey.approve', ['id' => $model_id]) }}">
+                          <button class="btn btn-primary btn-lg w-100 approve-survey-button mb-0">
                             <img src="/images/spinner.svg" class="me-2 d-none approve-survey-spinner mb-1">Approve Survey
-                        </button>
+                          </button>
+                        </div>
                       @endif
                     @endif
                   </div>

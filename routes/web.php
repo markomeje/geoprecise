@@ -218,7 +218,8 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
         Route::get('/', [\App\Http\Controllers\Admin\SurveysController::class, 'index'])->name('admin.surveys');
         Route::get('/search', [\App\Http\Controllers\Admin\SurveysController::class, 'search'])->name('admin.surveys.search');
 
-        Route::get('/approve/{id}', [\App\Http\Controllers\Admin\SurveysController::class, 'approve'])->name('admin.survey.approve');
+        Route::get('/survey/{id}', [\App\Http\Controllers\Admin\SurveysController::class, 'survey'])->name('admin.survey');
+        Route::post('/approve/{id}', [\App\Http\Controllers\Admin\SurveysController::class, 'approve'])->name('admin.survey.approve');
 
         Route::get('/pdf/{id}', [\App\Http\Controllers\Admin\SurveysController::class, 'pdf'])->name('admin.survey.pdf');
     });
@@ -243,6 +244,11 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
         Route::get('/', [\App\Http\Controllers\Admin\PcfsController::class, 'index'])->name('admin.pcfs');
         Route::post('/record', [\App\Http\Controllers\Admin\PcfsController::class, 'record'])->name('admin.pcf.record');
         Route::post('/issue/{id}', [\App\Http\Controllers\Admin\PcfsController::class, 'issue'])->name('admin.pcf.issue');
+    });
+
+    Route::prefix('roles')->group(function () {
+        Route::get('/', [\App\Http\Controllers\Admin\RolesController::class, 'index'])->name('admin.roles');
+        Route::get('/role/{id}', [\App\Http\Controllers\Admin\RolesController::class, 'role'])->name('admin.role');
     });
 });
 

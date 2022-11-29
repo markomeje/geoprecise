@@ -11,18 +11,15 @@
     	<div class="w-100">
     		<div class="d-flex justify-content-between align-items-center mb-3 pb-3 border-dark border-bottom w-100">
 				<a href="{{ route('admin.staff.profile', ['id' => $staff->id]) }}" class="text-white">
-					{{ \Str::limit(ucwords($staff->fullname), 12) }}
+					{{ ucfirst($staff->title) }} {{ \Str::limit(ucwords($staff->fullname), 12) }}
 				</a>
 				<small class="text-{{ $staff->status === 'active' ? 'success' : 'danger' }}">
 					{{ ucwords($staff->status) }}
 				</small>
 			</div>
 			<div class="d-flex justify-content-between">
-				<div class="text-white">
-					{{ strtoupper($staff->code ?? 'Nill') }}
-				</div>
 	            <div class="text-white">
-	            	{{ \Str::limit(ucwords($staff->address), 12) }}
+	            	{{ \Str::limit(ucwords($staff->address), 16) }}
 	            </div>
 	        </div>
     	</div>

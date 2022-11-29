@@ -48,7 +48,7 @@ class LoginController extends Controller
         }
 
         foreach ($verifications as $verification) {
-            if ($verification->type === 'phone' && true !== (boolean)$verification->verified) {
+            if ($verification->type === 'phone' && true !== (boolean)$verification->verified && app()->environment('production')) {
                 return response()->json([
                     'status' => 0,
                     'info' => 'Please verify your phone number. A verification code was sent to your phone during signup.',

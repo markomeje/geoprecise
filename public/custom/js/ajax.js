@@ -2,6 +2,10 @@
 
 	'use strict';
 
+    $('.approve-survey').on('click', function() {
+        handleAjax({that: $(this), button: 'approve-survey-button', spinner: 'approve-survey-spinner'});
+    });
+
     $('.delete-layout').on('click', function() {
         handleAjax({that: $(this), button: 'delete-layout-button', spinner: 'delete-layout-spinner'});
     });

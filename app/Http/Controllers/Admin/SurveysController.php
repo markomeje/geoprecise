@@ -29,15 +29,58 @@ class SurveysController extends Controller
     // }
 
     //
-    public function approve($id = 0)
+    public function survey($id = 0)
     {
-        return view('admin.surveys.approve', ['title' => 'Approval Surveying Application', 'survey' => Survey::find($id)]);
+        return view('admin.surveys.survey', ['title' => 'Survey & Lifting Application', 'survey' => Survey::find($id)]);
     }
 
     public function search()
     {
         $query = request()->get('search');
-        $surveys = Survey::search(['client.fullname', 'seller_name', 'seller_address', 'client.phone', 'purchaser_name', 'purchaser_address', 'approval_name', 'approval_address'], $query)->paginate(24);
+        $surveys = Survey::search(['client.fullname', 'seller_name', 'seller_address', 'client.phone', 'client_name', 'client_address', 'approval_name', 'approval_address'], $query)->paginate(24);
         return view('admin.surveys.search')->with(['surveys' => $surveys]);
+    }
+
+    public function approve($id = 0)
+    {
+        $survey = Survey::find($id);
+        if (empty($survey)) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Invalid operation'
+            ]);
+        }
+
+        $payment = $survey->payment;
+        if (empty($payment)) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'No payment.'
+            ]);
+        }
+
+        if (true !== (boolean)$payment->approved) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Approve payment first.'
+            ]);
+        }
+
+        $survey->approved = true;
+        $survey->approved_at = Carbon::now();
+        $survey->approved_by = auth()->id();
+        $survey->completed = true;
+        if ($survey->update()) {
+            return response()->json([
+                'status' => 1,
+                'info' => 'Operation successfull',
+                'redirect' => ''
+            ]);
+        }
+
+        return response()->json([
+            'status' => 0,
+            'info' => 'Operation failed'
+        ]);
     }
 }
