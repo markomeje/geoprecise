@@ -46,4 +46,33 @@ class Staff extends Model
         'Mr',
         'Miss',
     ];
+
+    /**
+     * A staff may belong to a role
+     *
+     * @var array<string, string>
+     */
+    public function role()
+    {
+        return $this->belongsTo(Role::class);
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -18,9 +18,9 @@
 				</small>
 			</div>
 			<div class="d-flex justify-content-between">
-	            <div class="text-white">
-	            	{{ \Str::limit(ucwords($staff->address), 16) }}
-	            </div>
+	            <a href="{{ route('admin.staff.profile', ['id' => $staff->id]) }}" class="text-white">
+	            	{{ ucwords($staff->role ? $staff->role->name : 'Nill') }}
+	            </a>
 	        </div>
     	</div>
 	</div>

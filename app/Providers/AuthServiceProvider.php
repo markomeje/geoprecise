@@ -25,44 +25,52 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
         $permissions = function($user, $resource) {
-            $permissions = [];
-            if (!$user->permissions()->exists() || !($user->permissions()->count() > 0)) {
-                return [];
+            $staff = $user->staff;
+            if (empty($staff)) {
+                echo "1";
+                return [[], ''];
             }
 
-            foreach ($user->permissions as $access) {
-                $permissions[] = ($resource === $access->resource) ? $access->permission : [];
+            $role = $staff->role;
+            if (empty($role->permissions) || !$role->permissions()->exists()) {
+                echo "2";
+                return [[], ''];
             }
 
-            return $permissions;
+            $functions = [];
+            foreach ($role->permissions as $permission) {
+                if ($resource === strtolower($permission->resource)) {
+                    $functions[] = $permission->action;
+                }
+            }
+
+            return [$functions, strtolower($role->name)];
         };
-
-        // if (request()->user()->cannot('create', ['units'])) {
-        //     return response()->json([
-        //         'status' => 0, 
-        //         'info' => 'Sorry. You cannot perform this operation.'
-        //     ]);
-        // }
 
         $allowed = ['owner'];
         Gate::define('view', function(User $user, $resource) use($allowed, $permissions) {
-            return in_array('view', $permissions($user, $resource)) || in_array($user->role, $allowed);
+            [$functions, $role] = $permissions($user, $resource);
+            return in_array('view', $functions) || in_array($role, $allowed);
         });
 
         Gate::define('create', function(User $user, $resource) use($allowed, $permissions) {
-            return in_array('create', $permissions($user, $resource)) || in_array($user->role, $allowed);
+            [$functions, $role] = $permissions($user, $resource);
+            return in_array('create', $functions) || in_array($role, $allowed);
         });
 
         Gate::define('update', function(User $user, $resource) use($allowed, $permissions) {
-            return in_array('update', $permissions($user, $resource)) || in_array($user->role, $allowed);   
+            [$functions, $role] = $permissions($user, $resource);
+            return in_array('update', $functions) || in_array($role, $allowed);
         });
 
         Gate::define('delete', function(User $user, $resource) use($allowed, $permissions) {
-            return in_array('delete', $permissions($user, $resource)) || in_array($user->role, $allowed);   
+            [$functions, $role] = $permissions($user, $resource);
+            return in_array('delete', $functions) || in_array($role, $allowed);   
         });
 
         Gate::define('approve', function(User $user, $resource) use($allowed, $permissions) {
-            return in_array('approve', $permissions($user, $resource)) || in_array($user->role, $allowed);   
+            [$functions, $role] = $permissions($user, $resource);
+            return in_array('approve', $functions) || in_array($role, $allowed);   
         });
     }
 }

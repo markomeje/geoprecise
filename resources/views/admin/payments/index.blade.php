@@ -10,12 +10,15 @@
         <div class="bg-white rounded mb-4 px-4 pt-4">
           <form class="d-block w-100" method="get" action="{{ route('admin.payments.search') }}">
             <div class="row">
-              <div class="form-group input-group-lg col-12 col-md-10 mb-4">
+              <div class="form-group input-group-lg col-12 col-md-10 col-lg-9 mb-4">
                 <input type="text" name="query" class="form-control" placeholder="Search payments . . ." value="{{ request()->get('query') }}">
               </div>
-              <div class="col-12 col-md-2 mb-4">
+              <div class="col-12 col-md-2 col-lg-3 mb-4">
                 <button class="btn w-100 btn-lg btn-primary m-0">
-                  <i class="icofont-search"></i> Search
+                  <small>
+                    <i class="icofont-search"></i> 
+                  </small>
+                  <small>Search</small>
                 </button>
               </div>
             </div>

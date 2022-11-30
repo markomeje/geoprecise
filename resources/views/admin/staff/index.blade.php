@@ -8,8 +8,8 @@
       <!-- End Navbar -->
       <div class="container-fluid py-4">
           <div class="p-4 bg-white border-radius-lg">
-            <div class="alert alert-info border-0 mb-4 text-white d-flex justify-content-between align-items-center">
-              <span class="text-white">All Staff ({{ $staffs->total() }})</span>
+            <div class="alert alert-info border-0 mb-4 text-white d-flex align-items-center">
+              <span class="text-white me-2">All Staff ({{ $staffs->total() }})</span>
               <span class="text-white cursor-pointer" data-bs-toggle="modal" data-bs-target="#add-staff">Add Staff</span>
             </div>
             @include('admin.staff.partials.add')
@@ -18,7 +18,7 @@
             @else
               <div class="row">
                 @foreach($staffs as $staff)
-                  <div class="col-xl-3 col-md-4 col-12 mb-4">
+                  <div class="col-xl-4 col-md-4 col-lg-6 col-12 mb-4">
                     @include('admin.staff.partials.card')
                   </div>
                 @endforeach
