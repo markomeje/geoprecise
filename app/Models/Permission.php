@@ -53,11 +53,11 @@ class Permission extends Model
      * @var array
      */
     protected $fillable = [
-        'user_id', 
+        'role_id', 
         'resource', 
-        'description',
-        'permission',
-        'permitted_by'
+        'action',
+        'deleted',
+        'deleted_at'
     ];
 
     /**
@@ -70,5 +70,27 @@ class Permission extends Model
         'delete',
         'update',
         'create',
+        'approve'
     ];
+
+    /**
+     * A permission belongs role
+     *
+     * @var array<string, string>
+     */
+    public function role()
+    {
+        return $this->belongsTo(Role::class);
+    }
 }
+
+
+
+
+
+
+
+
+
+
+

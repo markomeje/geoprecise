@@ -13,7 +13,7 @@ class PermissionController extends Controller
     /**
      * Admin set for role
      */
-    public function set($role_id)
+    public function set($role_id = 0)
     {
         $permission = request()->post('permission');
         if (empty($permission) || !is_array($permission)) {
@@ -34,31 +34,42 @@ class PermissionController extends Controller
 
             $function = explode('|', $function);
             [$resource, $action] = $function;
-            $permissions['resource'][] = $resource;
-            $permissions['action'][] = $action;
-            // $permissions[] = $permissions;
+            $permissions[] = ['resource' => $resource, 'action' => $action, 'role_id' => $role_id];
         }
 
+        Permission::where([
+            'role_id' => $role_id
+        ])->delete();
         
-        dd($permissions);
-        // Permission::create([
-        //     'resource' => $data['resource'], 
-        //     'permission' => $data['permission'], 
-        //     'staff_id' => $data['staff_id'],
-        //     'description' => 'No description',
-        // ]);
-
-        // return response()->json([
-        //     'status' => 1, 
-        //     'info' => 'Operation successful.',
-        //     'redirect' => ''
-        // ]); 
-
-        // return response()->json([
-        //     'status' => 1, 
-        //     'info' => 'Operation successful.',
-        //     'redirect' => ''
-        // ]); 
+        if (!empty($permissions)) {
+            foreach ($permissions as $permission) {
+                Permission::create($permission);
+            }
+        }
+        
+        return response()->json([
+            'status' => 1, 
+            'info' => 'Operation successful.',
+            'redirect' => ''
+        ]); 
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

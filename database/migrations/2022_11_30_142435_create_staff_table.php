@@ -13,13 +13,17 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('permissions', function (Blueprint $table) {
+        Schema::create('staff', function (Blueprint $table) {
             $table->id();
-            $table->text('permission');
-            $table->text('description')->nullable();
-            $table->foreignId('permitted_by')->nullable();
-            $table->string('resource');
-            $table->foreignId('staff_id');
+            $table->string('fullname');
+            $table->foreignId('role_id');
+            $table->foreignId('user_id');
+            $table->string('code')->nullable();
+            $table->string('title')->nullable();
+            $table->string('address');
+            $table->foreignId('created_by')->nullable();
+            $table->string('status')->nullable();
+            $table->boolean('verified')->default(false);
 
             $table->boolean('deleted')->default(false);
             $table->dateTime('deleted_at')->nullable();
@@ -34,6 +38,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('permissions');
+        Schema::dropIfExists('staff');
     }
 };

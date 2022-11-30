@@ -11,7 +11,7 @@
           <div class="me-3 text-white">
             {{ $roles->count() }} Roles
           </div>
-          <a href="javascript:;" class="text-white">Add Role</a>
+          {{-- <a href="javascript:;" class="text-white">Add Role</a> --}}
         </div>
         <div class="">
           @if(empty($roles->count()))

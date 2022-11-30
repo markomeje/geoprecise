@@ -11,28 +11,28 @@
           <div class="alert alert-danger border-0 text-white">Unkown Error. Role Not Found.</div>
         @else
           <div class="row">
-            <div class="col-12 col-xl-7 mb-4">
+            <div class="col-12 col-xl-9 mb-4">
               <div class="">
                 <div class="alert alert-dark mb-4 border-0 text-white">
                   {{ ucwords($role->name) }} Role
                 </div>
                 <form action="javascript:;" class="permission-form" method="post" data-action={{ route('admin.permission.set', ['role_id' => $role->id]) }}>
-                  <?php $resources = \App\Models\Permission::$resources; ?>
+                  <?php $resources = \App\Models\Permission::$resources; $permissions = $role->permissions; ?>
                   @if(!empty($resources))
-                    @foreach($resources as $resource => $permission)
+                    @foreach($resources as $resource => $value)
                       <div class="mb-4 px-4 pt-4 pb-1 border bg-white">
                         <div class="bg-dark text-white p-4 mb-4">
-                          {{ $permission['description'] }}
+                          {{ $value['description'] }}
                         </div>
-                        <?php $actions = $permission['actions']; ?>
+                        <?php $actions = $value['actions']; ?>
                         @if(is_array($actions))
                           <div class="row">
-                            @foreach($actions as $key => $value)
-                              <?php $function = $resource.'|'.$key; ?>
+                            @foreach($actions as $action => $value)
+                              <?php $function = $resource.'|'.$action; $permission = \App\Models\Permission::where(['resource' => $resource, 'action' => $action, 'role_id' => $role->id])->first(); ?>
                               <div class="col-12 col-md-6 col-lg-4">
                                 <div class="p-4 border rounded bg-white text-dark mb-4">
                                   <div class="form-check form-switch">
-                                    <input class="form-check-input me-2" type="checkbox" id="{{ $function }}" name="permission[]" value="{{ $function }}">
+                                    <input class="form-check-input me-2" type="checkbox" id="{{ $function }}" name="permission[]" value="{{ $function }}" {{ empty($permission) ? '' : 'checked' }}>
                                     <label class="form-check-label" for="{{ $function }}">
                                       <small class="text-dark">
                                         {{ ucwords($value) }}

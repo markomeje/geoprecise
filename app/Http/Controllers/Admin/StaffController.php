@@ -26,7 +26,7 @@ class StaffController extends Controller
         $data = request()->all();
         $validator = Validator::make($data, [
             'fullname' => ['required', 'string'], 
-            'role' => ['required', 'string'],
+            'role' => ['required'],
             'email' => ['required', (new EmailRule), 'unique:users'],
             'phone' => ['required'],
         ]);
@@ -39,54 +39,36 @@ class StaffController extends Controller
         }
 
         try {
-            DB::beginTransaction();
-            $password = Str::random(9);
-            $email = $data['email'] ?? '';
-
             $user = User::create([
-                'email' => $email,
-                'password' => Hash::make($password),
+                'email' => $data['email'],
+                'password' => Hash::make(rand(1000, 999999)),
                 'role' => 'admin',
                 'phone' => $data['phone'],
                 'status' => 'inactive',
             ]);
 
-            $user_id = $user->id ?? 0;
+            if (empty($user)) {
+                return response()->json([
+                    'status' => 0,
+                    'info' => 'Unknown Error. Try again.'
+                ]);
+            }
+
+            $user_id = $user->id;
             $staff = Staff::create([
                 'fullname' => $data['fullname'],
                 'address' => $data['address'] ?? null,
                 'title' => $data['title'] ?? null,
                 'user_id' => $user_id,
-                'role' => $data['role'],
+                'role_id' => $data['role'],
             ]);
 
-            $token = Str::random(64);
-            $staff_id = $staff->id ?? 0;
-            Verification::create([
-                'token' => $token,
-                'type' => 'email',
-                'expiry' => Carbon::now()->addMinutes(60),
-                'user_id' => $user_id,
-                'verified' => false,
-                'model' => 'staff',
-                'model_id' => $staff_id,
-            ]);
-
-            $mail = new StaffVerificationMail([
-                'email' => $email, 
-                'password' => $password,
-                'token' => $token,
-            ]);
-            Mail::to($email)->send($mail);
-
-            DB::commit();
             return response()->json([
                 'status' => 1,
                 'info' => 'Operation successful. Please wait . . .',
-                'redirect' => route('admin.staff.profile', ['id' => $staff_id]),
+                'redirect' => route('admin.staff.profile', ['id' => $staff->id ?? 0]),
             ]);
         } catch (Exception $error) {
-            DB::rollback();
             return response()->json([
                 'status' => 0,
                 'info' => 'Unknown error. Try again.',

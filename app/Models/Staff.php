@@ -21,7 +21,7 @@ class Staff extends Model
         'title',
         'address',
         'created_by',
-        'role',
+        'role_id',
         'status',
     ];
 
