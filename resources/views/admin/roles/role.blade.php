@@ -28,11 +28,11 @@
                         @if(is_array($actions))
                           <div class="row">
                             @foreach($actions as $key => $value)
-                              <?php $function = $resource.'||'.$key; ?>
+                              <?php $function = $resource.'|'.$key; ?>
                               <div class="col-12 col-md-6 col-lg-4">
                                 <div class="p-4 border rounded bg-white text-dark mb-4">
                                   <div class="form-check form-switch">
-                                    <input class="form-check-input me-2" type="checkbox" id="{{ $function }}" name="permission" value="{{ $function }}">
+                                    <input class="form-check-input me-2" type="checkbox" id="{{ $function }}" name="permission[]" value="{{ $function }}">
                                     <label class="form-check-label" for="{{ $function }}">
                                       <small class="text-dark">
                                         {{ ucwords($value) }}
@@ -47,6 +47,7 @@
                       </div>
                     @endforeach
                   @endif
+                  <div class="alert d-none permission-message mb-4 text-white"></div>
                   <button type="submit" class="btn btn-lg w-100 btn-primary permission-button">
                     <img src="/images/spinner.svg" class="me-2 d-none permission-spinner mb-1">Save
                   </button>

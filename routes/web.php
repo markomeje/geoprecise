@@ -166,10 +166,10 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
     });
 
     Route::prefix('permissions')->group(function () {
-        Route::post('/assign', [\App\Http\Controllers\Api\PermissionsController::class, 'assign'])->name('admin.permission.assign');
-        Route::post('/remove/{id}', [\App\Http\Controllers\Api\PermissionsController::class, 'remove'])->name('admin.permission.remove');
+        Route::post('/assign', [\App\Http\Controllers\Admin\PermissionController::class, 'assign'])->name('admin.permission.assign');
+        Route::post('/remove/{id}', [\App\Http\Controllers\Admin\PermissionController::class, 'remove'])->name('admin.permission.remove');
 
-        Route::post('/set/{role_id}', [\App\Http\Controllers\Api\PermissionsController::class, 'set'])->name('admin.permission.set');
+        Route::post('/set/{role_id}', [\App\Http\Controllers\Admin\PermissionController::class, 'set'])->name('admin.permission.set');
     });
 
     Route::prefix('staff')->group(function () {

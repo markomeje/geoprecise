@@ -10,115 +10,55 @@ use Validator;
 
 class PermissionController extends Controller
 {
-
-    /**
-     * Admin assign permissions
-     */
-    public function assign()
-    {
-        $data = request()->only(['resource', 'permission', 'staff_id']);
-        $validator = Validator::make($data, [
-            'resource' => ['required'],
-            'staff_id' => ['required'],
-            'permission' => ['required'],
-        ]);
-
-        if ($validator->fails()) {
-            return response()->json([
-                'status' => 0, 
-                'info' => 'An error occured. Try again.'
-            ]);
-        }
-
-        $permission = Permission::where([
-            'resource' => $data['resource'], 
-            'permission' => $data['permission'], 
-            'staff_id' => $data['staff_id']
-        ])->first();
-
-        if (empty($permission)) {
-            Permission::create([
-                'resource' => $data['resource'], 
-                'permission' => $data['permission'], 
-                'staff_id' => $data['staff_id'],
-                'description' => 'No description',
-            ]);
-
-            return response()->json([
-                'status' => 1, 
-                'info' => 'Operation successful.',
-                'redirect' => ''
-            ]); 
-        }
-
-        $permission->staff_id = $data['staff_id'];
-        $permission->permission = $data['permission'];
-        $permission->resource = $data['resource'];
-        $permission->update();
-        return response()->json([
-            'status' => 1, 
-            'info' => 'Operation successful.',
-            'redirect' => ''
-        ]); 
-    }
-
-    /**
-     * Admin assign permissions
-     */
-    public function remove($id)
-    {
-        $permission = Permission::find($id);
-        $permission->delete();
-        return response()->json([
-            'status' => 1, 
-            'info' => 'Operation successful.',
-            'redirect' => ''
-        ]); 
-    }
-
     /**
      * Admin set for role
      */
     public function set($role_id)
     {
-        $data = request()->only(['permission']);
-        if (empty()) {
+        $permission = request()->post('permission');
+        if (empty($permission) || !is_array($permission)) {
             return response()->json([
                 'status' => 0, 
-                'info' => 'An error occured. Try again.'
+                'info' => 'No permissions set for this role.'
             ]);
         }
 
-        $permission = Permission::where([
-            'resource' => $data['resource'], 
-            'permission' => $data['permission'], 
-            'role_id' => $role_id
-        ])->first();
+        $permissions = [];
+        foreach ($permission as $function) {
+            if(!str_contains($function, '|')) {
+                return response()->json([
+                    'status' => 0, 
+                    'info' => 'Invalid Operation'
+                ]);
+            }
 
-        if (empty($permission)) {
-            Permission::create([
-                'resource' => $data['resource'], 
-                'permission' => $data['permission'], 
-                'staff_id' => $data['staff_id'],
-                'description' => 'No description',
-            ]);
-
-            return response()->json([
-                'status' => 1, 
-                'info' => 'Operation successful.',
-                'redirect' => ''
-            ]); 
+            $function = explode('|', $function);
+            [$resource, $action] = $function;
+            $permissions['resource'][] = $resource;
+            $permissions['action'][] = $action;
+            // $permissions[] = $permissions;
         }
 
-        $permission->staff_id = $data['staff_id'];
-        $permission->permission = $data['permission'];
-        $permission->resource = $data['resource'];
-        $permission->update();
-        return response()->json([
-            'status' => 1, 
-            'info' => 'Operation successful.',
-            'redirect' => ''
-        ]); 
+        
+        dd($permissions);
+        // Permission::create([
+        //     'resource' => $data['resource'], 
+        //     'permission' => $data['permission'], 
+        //     'staff_id' => $data['staff_id'],
+        //     'description' => 'No description',
+        // ]);
+
+        // return response()->json([
+        //     'status' => 1, 
+        //     'info' => 'Operation successful.',
+        //     'redirect' => ''
+        // ]); 
+
+        // return response()->json([
+        //     'status' => 1, 
+        //     'info' => 'Operation successful.',
+        //     'redirect' => ''
+        // ]); 
     }
 
 }
