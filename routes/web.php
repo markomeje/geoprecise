@@ -168,6 +168,8 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
     Route::prefix('permissions')->group(function () {
         Route::post('/assign', [\App\Http\Controllers\Api\PermissionsController::class, 'assign'])->name('admin.permission.assign');
         Route::post('/remove/{id}', [\App\Http\Controllers\Api\PermissionsController::class, 'remove'])->name('admin.permission.remove');
+
+        Route::post('/set/{role_id}', [\App\Http\Controllers\Api\PermissionsController::class, 'set'])->name('admin.permission.set');
     });
 
     Route::prefix('staff')->group(function () {
@@ -249,6 +251,8 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
     Route::prefix('roles')->group(function () {
         Route::get('/', [\App\Http\Controllers\Admin\RolesController::class, 'index'])->name('admin.roles');
         Route::get('/role/{id}', [\App\Http\Controllers\Admin\RolesController::class, 'role'])->name('admin.role');
+
+        Route::post('/permission/{id}', [\App\Http\Controllers\Api\PermissionsController::class, 'set'])->name('admin.role.permission.set');
     });
 });
 

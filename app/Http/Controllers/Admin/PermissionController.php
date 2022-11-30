@@ -76,4 +76,49 @@ class PermissionController extends Controller
         ]); 
     }
 
+    /**
+     * Admin set for role
+     */
+    public function set($role_id)
+    {
+        $data = request()->only(['permission']);
+        if (empty()) {
+            return response()->json([
+                'status' => 0, 
+                'info' => 'An error occured. Try again.'
+            ]);
+        }
+
+        $permission = Permission::where([
+            'resource' => $data['resource'], 
+            'permission' => $data['permission'], 
+            'role_id' => $role_id
+        ])->first();
+
+        if (empty($permission)) {
+            Permission::create([
+                'resource' => $data['resource'], 
+                'permission' => $data['permission'], 
+                'staff_id' => $data['staff_id'],
+                'description' => 'No description',
+            ]);
+
+            return response()->json([
+                'status' => 1, 
+                'info' => 'Operation successful.',
+                'redirect' => ''
+            ]); 
+        }
+
+        $permission->staff_id = $data['staff_id'];
+        $permission->permission = $data['permission'];
+        $permission->resource = $data['resource'];
+        $permission->update();
+        return response()->json([
+            'status' => 1, 
+            'info' => 'Operation successful.',
+            'redirect' => ''
+        ]); 
+    }
+
 }

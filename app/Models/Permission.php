@@ -21,7 +21,7 @@ class Permission extends Model
                 'delete' => 'Delete a survey or lifting record',
                 'approve' => 'Approve a survey or lifting record',
             ], 
-            'description' => 'All Survey and Lifting Application Records'
+            'description' => 'All Survey and Lifting Records'
         ],
         'clients' => [
             'actions' => [
@@ -33,15 +33,15 @@ class Permission extends Model
             'actions' => [
                 'view' => 'View all Property Search Requests', 
                 'delete' => 'Delete a Property Search Request Record.', 
-                'update' => 'Edit Property Search Request Application', 
-                'approve' => 'Approve Property Search Request Application.',
+                'update' => 'Edit Property Search Request', 
+                'approve' => 'Approve Property Search Request.',
             ], 
             'description' => 'All Property Search Requests'
         ],
         'payments' => [
             'actions' => [
                 'view' => 'View all Payment Records',
-                'approve' => 'Approve Payments.',
+                'approve' => 'Approve Client Payments.',
             ], 
             'description' => 'All Payment Records',
         ],

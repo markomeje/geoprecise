@@ -2,6 +2,11 @@
 
 	'use strict';
 
+    $('.permission-form').submit('click', function() {
+        event.preventDefault();
+        handleForm({form: $(this), button: 'permission-button', spinner: 'permission-spinner', message: 'permission-message'});
+    });
+
     $('.resend-phone-otp-form').submit('click', function() {
         event.preventDefault();
         handleForm({form: $(this), button: 'resend-phone-otp-button', spinner: 'resend-phone-otp-spinner', message: 'resend-phone-otp-message'});
