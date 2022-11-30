@@ -1,7 +1,7 @@
 <?php
 
 namespace Database\Factories;
-use App\Models\{User, Staff};
+use App\Models\{User, Role};
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -23,7 +23,7 @@ class StaffFactory extends Factory
             'address' => $this->faker->address(),
             'code' => strtoupper($this->faker->text($maxNbChars = 6)),
             'status' => $this->faker->randomElement(['inactive']),
-            'role' => $this->faker->randomElement(Staff::$roles),
+            'role_id' => $this->faker->randomElement(Role::all()->pluck('id')->toArray()),
             'verified' => false,
         ];
     }

@@ -84,7 +84,10 @@ class User extends Authenticatable
                     'email' => $email, 
                 ]);
 
-                Mail::to($email)->send($mail);
+                if (app()->environment('production')) {
+                    Mail::to($email)->send($mail);
+                }
+                
             }
 
             $otp = random_int(100000, 999999);
@@ -96,10 +99,12 @@ class User extends Authenticatable
                 'verified' => false
             ]);
 
-            Sms::otp([
-                'phone' => $user->phone,
-                'otp' => $otp,
-            ]);
+            if (app()->environment('production')) {
+                Sms::otp([
+                    'phone' => $user->phone,
+                    'otp' => $otp,
+                ]);
+            }
 
         });
         

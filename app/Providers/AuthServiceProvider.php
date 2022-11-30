@@ -60,5 +60,9 @@ class AuthServiceProvider extends ServiceProvider
         Gate::define('delete', function(User $user, $resource) use($allowed, $permissions) {
             return in_array('delete', $permissions($user, $resource)) || in_array($user->role, $allowed);   
         });
+
+        Gate::define('approve', function(User $user, $resource) use($allowed, $permissions) {
+            return in_array('approve', $permissions($user, $resource)) || in_array($user->role, $allowed);   
+        });
     }
 }
