@@ -348,7 +348,7 @@ Our Team				</h1>
 </div>
 </div>		</div>
 </a>
-<a href="{{route('hilary')}}">	
+{{-- <a href="{{route('hilary')}}">	
 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 <div class="kyber-teammember-slide">
 <div class="kyber-teammember-wrapper">				
@@ -391,7 +391,7 @@ Our Team				</h1>
 <h5 class="kyber-teammember-designation">Legal</h5>
 </div>
 </div>
-</div>		 </a>
+</div>		 </a> --}}
 </div>		</div>
 </div>
 </div>
