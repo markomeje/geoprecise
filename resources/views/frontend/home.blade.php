@@ -1036,7 +1036,7 @@ Services You Need			</h3>
 					</div>
 				</div>
 			</div>
-			<div class="mb-4 kyber-teammember-slide">
+			{{-- <div class="mb-4 kyber-teammember-slide">
 				<div class="kyber-teammember-wrapper" style="height:460px;">				
 					<div class="kyber-teammember-thumbnail-wrapper">
 						<div class="kyber-teammember-image-container">
@@ -1078,7 +1078,7 @@ Services You Need			</h3>
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> --}}
 		</div>		</div>
 	</div></div></div></div>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1588430894864 vc_custom_1588430894866 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="wpb_column vc_column_container vc_col-sm-12 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper">
