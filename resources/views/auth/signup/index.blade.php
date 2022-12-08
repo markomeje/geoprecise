@@ -83,6 +83,18 @@
                   </div>
                   <div class="row">
                     <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                      <label class="text-muted">Occupation</label>
+                      <input type="text" class="form-control occupation" placeholder="Enter your occupation" aria-label="occupation" name="occupation">
+                      <small class="occupation-error text-danger"></small>
+                    </div>
+                    <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                      <label class="text-muted">Address</label>
+                      <input type="text" class="form-control address" placeholder="Enter your address" aria-label="address" name="address">
+                      <small class="address-error text-danger"></small>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="form-group col-sm-12 col-md-6 col-lg-6">
                       <label class="text-muted">Password</label>
                       <input type="password" class="form-control password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" aria-label="Password" name="password">
                       <small class="password-error text-danger"></small>
@@ -93,28 +105,6 @@
                       <small class="retype-error text-danger"></small>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <label class="text-muted">Date of birth</label>
-                        <input class="form-control dob" type="date" name="dob">
-                        <small class="dob-error text-danger"></small>
-                      </div>
-                    </div>
-                    <div class="form-group col-sm-12 col-md-6 col-lg-6">
-                      <label class="text-muted">Occupation</label>
-                      <input type="text" class="form-control occupation" placeholder="Enter your occupation" aria-label="occupation" name="occupation">
-                      <small class="occupation-error text-danger"></small>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12">
-                      <div class="form-group">
-                        <label class="text-muted">Address</label>
-                        <textarea class="form-control address" name="address" rows="3" placeholder="Your address"></textarea>
-                        <small class="address-error text-danger"></small>
-                      </div>
-                    </div>
                   <div>
                     <div class="form-check form-switch text-start">
                       <input class="form-check-input agree" checked type="checkbox" id="agree-terms" name="agree">
@@ -125,11 +115,11 @@
                     <small class="agree-error text-danger"></small>
                   </div>
                   <div class="alert d-none signup-message mb-0 mt-3 text-white"></div>
-                    <div class="text-center">
-                      <button type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">
-                        <img src="/images/spinner.svg" class="me-2 d-none signup-spinner mb-1">Signup
-                      </button>
-                    </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-lg btn-primary btn-lg w-100 mt-4 mb-0">
+                      <img src="/images/spinner.svg" class="me-2 d-none signup-spinner mb-1">Signup
+                    </button>
+                  </div>
                   <p class="text-sm mt-3 mb-0">Already have an account? <a href="{{ route('login') }}" class="text-dark font-weight-bolder">Login</a></p>
                 </form>
               @endif

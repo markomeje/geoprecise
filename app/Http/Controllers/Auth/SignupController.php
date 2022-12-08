@@ -25,9 +25,6 @@ class SignupController extends Controller
     public function signup()
     {
         $data = request()->all();
-        User::where(['phone' => $data['phone'] ?? null])->delete();
-        User::where(['email' => $data['email'] ?? null])->delete();
-
         $validator = Validator::make($data, [
             'fullname' => ['required', 'string'], 
             'email' => ['required', (new EmailRule), 'unique:users'], 
@@ -35,7 +32,6 @@ class SignupController extends Controller
             'password' => ['required', 'string'],
             'retype' => ['required', 'same:password'],
             'agree' => ['required', 'string'],
-            'dob' => ['required', 'string'],
             'occupation' => ['required', 'string'],
             'city' => ['nullable', 'string'],
             'state' => ['nullable', 'string'],
