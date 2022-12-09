@@ -10,6 +10,12 @@ Approvals for payment and plan collection notification must be sent.
 Lifting and survey must be done before site inspection.
 Must have bought a plot before coming for lifting.
 You can't blacklist any plot - Plots can be resold
+
+Reestablishment of beacon. 10,000 
+Site inspection can happen separately per plot.
+Update site inspection - 
+Admin can assign inspection to a surveyor form admin.
+
 |--------------------------------------------------------------------------
 | Check If The Application Is Under Maintenance
 |--------------------------------------------------------------------------

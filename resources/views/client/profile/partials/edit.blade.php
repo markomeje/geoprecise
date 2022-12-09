@@ -24,15 +24,8 @@
       </div>
       <div class="col-md-6">
         <div class="form-group">
-          <label class="text-muted">Date of birth</label>
-          <input class="form-control dob" type="date" name="dob" value="{{ $client->dob }}">
-          <small class="dob-error text-danger"></small>
-        </div>
-      </div>
-      <div class="col-md-12">
-        <div class="form-group">
           <label class="text-muted">Address</label>
-          <textarea class="form-control address" name="address" rows="4" placeholder="Your address">{{ $client->address }}</textarea>
+          <input class="form-control address" type="date" name="address" value="{{ $client->address }}">
           <small class="address-error text-danger"></small>
         </div>
       </div>
