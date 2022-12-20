@@ -57,7 +57,7 @@
                 </div>
               </div>
               <?php $documents = $survey->documents; ?>
-              <div class="px-4 pt-4 pb-1 bg-white shadow-sm border-radius-lg border  mb-4">
+              <div class="mb-4">
                 @if(empty($documents->count()))
                   <div class="alert alert-danger text-white mb-4">No documents uploaded yet.</div>
                 @else
@@ -66,7 +66,7 @@
                   </div>
                   <div class="row">
                     @foreach($documents as $document)
-                      <div class="col-12 col-md-4 mb-4">
+                      <div class="col-12 col-md-6 mb-4">
                         @include('client.documents.partials.card')
                       </div>
                     @endforeach
@@ -148,17 +148,23 @@
                 </form>
               </div>
               @if(!empty($plot_numbers))
-                <?php $sib = $survey->sib; $total_plots = is_array($plot_numbers) ? count($plot_numbers) : 1; $sib_amount = $sib->form->amount; $total_amount = ($total_plots * (int)$amount) + $sib_amount; ?>
+                <?php $sib = $survey->sib; $total_plots = is_array($plot_numbers) ? count($plot_numbers) : 1; $sib_amount = $sib->form->amount; $total_amount = ($total_plots * (int)$amount) + ($total_plots *  $sib_amount); ?>
                 @if(empty($payment))
                   <div class="card border  shadow-sm mb-4">
                     <div class="card-header border-bottom ">
-                      <div class="alert alert-dark m-0">
-                          <span class="text-white">One Plot NGN{{ number_format($amount) }} x {{ $total_plots }}Plot(s) = NGN{{ number_format($total_plots * $amount) }}. Site Inspection Booking: NGN{{ number_format($sib_amount) }} Total: NGN{{ number_format($total_amount) }}</span>
+                      <div class="alert alert-dark mb-4">
+                          <span class="text-white">Survey or Lifting: One Plot NGN{{ number_format($amount) }} x {{ $total_plots }}Plot(s) = NGN{{ number_format($total_plots * $amount) }}</span>
+                      </div>
+                      <div class="alert alert-dark mb-4">
+                          <span class="text-white">Site Inspection Booking: NGN{{ number_format($sib_amount) }} x {{ $total_plots }}Plot(s) = NGN{{ number_format($total_plots * $sib_amount) }}</span>
+                      </div>
+                      <div class="alert alert-primary text-white" role="alert">
+                        Site Inspection & Survey Total: NGN{{ number_format($total_amount) }}
                       </div>
                     </div>
                     <div class="card-body">
-                      <div class="alert alert-info text-white mb-4">Submission of Fraudulent documents are at Owners risk. No Refund of Money after Payment</div>
-                      <a href="javascript:;" class="m-0 btn btn-lg btn-primary text-white make-payment" data-message="Are you sure to make payment now?" data-url="{{ route('client.payment.process', ['type' => 'paystack', 'model_id' => $survey->id, 'model' => $model, 'amount' => $total_amount]) }}">
+                      <div class="alert alert-info text-white mb-4">I hereby affirm that my submissions and uploaded documents are genuine. I agree to forfiet the money i'm paying now if the document i have submitted are found to be forged or fraudulent.</div>
+                      <a href="javascript:;" class="m-0 btn btn-lg btn-primary text-white make-payment w-100" data-message="Are you sure to make payment now?" data-url="{{ route('client.payment.process', ['type' => 'paystack', 'model_id' => $survey->id, 'model' => $model, 'amount' => $total_amount]) }}">
                         <img src="/images/spinner.svg" class="me-2 d-none make-payment-spinner mb-1">Pay NGN{{ number_format($total_amount) }}</a>
                     </div>
                   </div>

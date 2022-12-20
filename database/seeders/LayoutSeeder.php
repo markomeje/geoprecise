@@ -16,7 +16,7 @@ class LayoutSeeder extends Seeder
         $layouts = [
             'Choice city Layout' => [
                 ['category' => 'Residential Plots', 'max' => 1877, 'min' => 1, 'prefix' => ''],
-                ['category' => 'Commercial or residential Plots', 'max' => 55, 'prefix' => 'C|R'],
+                ['category' => 'Commercial or residential Plots', 'max' => 55, 'prefix' => 'C/R'],
                 ['category' => 'Commercial Plots', 'max' => 6, 'min' => 1, 'prefix' => 'C'],
                 ['category' => 'Public Plots', 'max' => 14, 'min' => 1, 'prefix' => 'P'],
                 ['category' => 'Open Space', 'max' => 4, 'min' => 1, 'prefix' => 'OS'],
@@ -25,7 +25,7 @@ class LayoutSeeder extends Seeder
             'Peace Layout' => [
                 'address' => 'Ako Nike/Abgogazi Nike, Enugu East L.G.A Enugu State.',
                 ['category' => 'Residential Plots', 'max' => 401, 'min' => 1, 'prefix' => ''],
-                ['category' => 'Commercial or Residential Plots', 'max' => 11, 'min' => 1, 'prefix' => 'C|R'],
+                ['category' => 'Commercial or Residential Plots', 'max' => 11, 'min' => 1, 'prefix' => 'C/R'],
                 ['category' => 'Open Space', 'max' => 4, 'min' => 1, 'prefix' => 'OS'],
                 ['category' => 'Commercial Plots', 'max' => 2, 'min' => 1, 'prefix' => 'C'],
                 ['category' => 'Public Plots', 'max' => 14, 'min' => 1, 'prefix' => 'UT'],
@@ -156,11 +156,11 @@ class LayoutSeeder extends Seeder
                     $max = $value['max'] ?? 0;
                     $min = $value['min'] ?? 0;
                     $max = $min == $max ? 1 : $max;
+                    $prefix = !empty($value['prefix']) ? $value['prefix'] : '';
+                    $category = $value['category'] ?? '';
                     if (!empty($max) && !empty($min)) {
                         for ($i = $min; $i <= $max; $i++) {
-                            $prefix = $value['prefix'] ?? '';
-                            $number = !empty($prefix) && strpos($prefix, '|') !== false ? $prefix.$i : $i;
-                            $category = $value['category'] ?? '';
+                            $number = empty($prefix) ? $i : (str_contains($prefix, '/') ? $prefix .''.$i : $prefix.'/'.$i);
                             Plot::create([
                                 'number' => $number,
                                 'name' => $category,

@@ -13,7 +13,8 @@ class PaymentController extends Controller
     //
     public function index()
     {
-        return view('client.payments.index', ['title' => 'All Payments', 'payments' => Payment::paid()->latest('id')->where(['client_id' => auth()->user()->client->id])->get()]);
+        $user = auth()->user();
+        return view('client.payments.index', ['title' => 'All Payments', 'payments' => Payment::paid()->latest('id')->where(['client_id' => $user->client ? $user->client->id : null])->get()]);
     }
 
     //

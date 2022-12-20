@@ -8,7 +8,7 @@
       <!-- End Navbar -->
       <div class="container-fluid py-4">
         <div class="row">
-          <div class="col-12 col-lg-8 col-xl-7">
+          <div class="col-12 col-lg-8 col-xl-8">
             <div class="alert alert-info border-0 text-white mb-4">Survey or Lifting Application</div>
             <form class="survey-form" method="post" action="javascript:;" data-action="{{ route('client.survey.add') }}">
               @csrf
@@ -114,7 +114,7 @@
               </button>
             </form>
           </div>
-          <div class="col-12 col-lg-4 col-xl-5"></div>
+          <div class="col-12 col-lg-4 col-xl-4"></div>
         </div>
     </main>
     @include('client.includes.rightbar')

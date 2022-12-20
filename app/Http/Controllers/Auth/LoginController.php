@@ -68,7 +68,7 @@ class LoginController extends Controller
         return response()->json([
             'status' => 0,
             'info' => 'Invalid login details'
-        ], 500);
+        ]);
     }
 
     public function logout()

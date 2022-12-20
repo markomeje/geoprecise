@@ -10,11 +10,8 @@
 		</div>
 		<div class="d-flex align-items-center justify-content-between">
 			<div class="text-white">
-				{{ empty($plot->layout) ? '' :  \Str::limit(ucwords($plot->layout->name), 12) }}
+				{{ empty($plot->layout) ? '' :  \Str::limit(ucwords($plot->layout->name), 18) }}
 			</div>
-			<div class="text-white">
-				{{ ucwords($plot->category) }}
-			</div> 
 		</div>	
 	</div>
 	<div class="card-footer d-flex align-items-center justify-content-between">

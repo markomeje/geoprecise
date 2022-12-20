@@ -13,14 +13,14 @@
           <div class="row">
             <div class="form-group col-12">
               <label class="text-muted">{{ $layout ? ucfirst($layout->name) : 'Nill' }} Plots</label>
-              <select class="form-control plot_number" name="plot_number">
+              <select class="form-control plot_number filter-select" name="plot_number">
                 <option value="">Select plot number</option>
                 @if(empty($layout->plots->count()))
                   <option value="">No plots listed</option>
                 @else
                   @foreach($layout->plots as $plot)
-                    <option value="{{ ucwords($plot->name).' ('.$plot->number.')' }}">
-                      {{ ucwords($plot->name).' ('.$plot->number.')' }}
+                    <option value="{{ $plot->number }}">
+                      {{ $plot->number }}
                     </option>
                   @endforeach
                 @endif

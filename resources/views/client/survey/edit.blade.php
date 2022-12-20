@@ -31,7 +31,7 @@
                 @include('client.plots.partials.add')
                 <div class="card-body pb-2">
                   @if(empty($survey->plot_numbers))
-                    <div class="alert alert-danger m-0 border-0 text-white">No plot(s) added for this application.</div>
+                    <div class="alert alert-danger mb-4 border-0 text-white">No plot(s) added for this application.</div>
                   @else
                     <div class="row d-flex flex-wrap">
                       <?php $plot_numbers = str_contains($survey->plot_numbers, '-') ? explode('-', $survey->plot_numbers) : $survey->plot_numbers; ?>
@@ -92,7 +92,7 @@
                   </div>
                 </div>
               @endif
-              <div class="px-4 pt-4 pb-1 bg-white shadow-sm border-radius-lg border  mb-4">
+              <div class="mb-4">
                 @if(empty($documents->count()))
                   <div class="alert alert-danger text-white mb-4">No documents uploaded yet.</div>
                 @else
@@ -101,7 +101,7 @@
                   </div>
                   <div class="row">
                     @foreach($documents as $document)
-                      <div class="col-12 col-md-4 mb-4">
+                      <div class="col-12 col-md-6 mb-4">
                         @include('client.documents.partials.card')
                       </div>
                     @endforeach

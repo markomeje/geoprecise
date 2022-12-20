@@ -2,6 +2,11 @@
 
 	'use strict';
 
+    $('.apply-sib-form').submit('click', function() {
+        event.preventDefault();
+        handleForm({form: $(this), button: 'apply-sib-button', spinner: 'apply-sib-spinner', message: 'apply-sib-message'});
+    });
+
     $('.permission-form').submit('click', function() {
         event.preventDefault();
         handleForm({form: $(this), button: 'permission-button', spinner: 'permission-spinner', message: 'permission-message'});

@@ -16,6 +16,8 @@
   <script src="{{ config('app.url') }}/custom/js/ajax.js"></script>
   <script src="{{ config('app.url') }}/custom/js/forms.js"></script>
 
+   <script src="{{ config('app.url') }}/custom/js/dselect.js"></script>
+
   {{-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> --}}
   <script>
     $.ajaxSetup({
@@ -52,6 +54,11 @@
           });
         @endforeach
       @endif
+
+    var filterSelect = document.querySelector('.filter-select');
+    dselect(filterSelect, {
+            search: true
+    });
 
     });
 
