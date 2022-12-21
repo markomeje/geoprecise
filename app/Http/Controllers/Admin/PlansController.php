@@ -2,15 +2,15 @@
 
 namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
-use App\Models\Plot;
+use App\Models\Plan;
 use Validator;
 
-class PlotsController extends Controller
+class PlansController extends Controller
 {
     //
     public function index()
     {
-        return view('admin.plots.index', ['title' => 'All Plots', 'plots' => Plot::latest()->paginate(20)]);
+        return view('admin.plans.index', ['title' => 'All Plans', 'plans' => Plan::latest()->paginate(20)]);
     }
 
     //
@@ -18,11 +18,10 @@ class PlotsController extends Controller
     {
         $data = request()->all();
         $validator = Validator::make($data, [
-            'name' => ['required', 'string'], 
-            'description' => ['nullable', 'string'],
-            'category' => ['required', 'string'],
+            'client_name' => ['required', 'string'], 
+            'plan_number' => ['required', 'string'],
+            'address' => ['nullable', 'string'],
             'layout' => ['required', 'string'],
-            'number' => ['required', 'string'],
         ]);
 
         if ($validator->fails()) {
@@ -32,23 +31,23 @@ class PlotsController extends Controller
             ]);
         }
 
-        $client = auth()->user()->client;
-        if (empty($client)) {
+        $plan_number = $data['plan_number'];
+        if(Plan::where(['plan_number' => $plan_number])->exists()) {
             return response()->json([
                 'status' => 0,
-                'info' => 'An error occured. Try again later.',
+                'info' => 'Plan number already exists'
             ]);
         }
 
-        $plot = Plot::create([
-            'name' => $data['name'],
-            'description' => $data['description'] ?? null,
-            'category' => $data['category'],
+        $plan = Plan::create([
+            'client_name' => $data['client_name'],
+            'plan_number' => $plan_number,
             'layout_id' => $data['layout'],
-            'number' => $data['number'],
+            'address' => $data['address'],
+            'plot_numbers' => '',
         ]);
 
-        if (empty($plot)) {
+        if (empty($plan)) {
             return response()->json([
                 'status' => 0,
                 'info' => 'Unknown error. Try again later',
@@ -57,7 +56,7 @@ class PlotsController extends Controller
 
         return response()->json([
             'status' => 1,
-            'info' => 'Plot added. Please wait . . .',
+            'info' => 'Plan added',
             'redirect' => '',
         ]);
     }

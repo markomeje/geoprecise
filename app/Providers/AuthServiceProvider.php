@@ -27,13 +27,11 @@ class AuthServiceProvider extends ServiceProvider
         $permissions = function($user, $resource) {
             $staff = $user->staff;
             if (empty($staff)) {
-                echo "1";
                 return [[], ''];
             }
 
             $role = $staff->role;
             if (empty($role->permissions) || !$role->permissions()->exists()) {
-                echo "2";
                 return [[], ''];
             }
 
@@ -47,7 +45,7 @@ class AuthServiceProvider extends ServiceProvider
             return [$functions, strtolower($role->name)];
         };
 
-        $allowed = ['owner'];
+        $allowed = ['owner', 'superadmin'];
         Gate::define('view', function(User $user, $resource) use($allowed, $permissions) {
             [$functions, $role] = $permissions($user, $resource);
             return in_array('view', $functions) || in_array($role, $allowed);

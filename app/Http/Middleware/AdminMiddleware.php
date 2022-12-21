@@ -19,7 +19,7 @@ class AdminMiddleware
             return $next($request);
         }
 
-        if (auth()->check() === true) {
+        if (auth()->check()) {
             auth()->logout();
             $request->session()->flush();
             $request->session()->invalidate();

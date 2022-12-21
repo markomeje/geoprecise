@@ -12,7 +12,7 @@
         @else
           <?php $model_id = $survey->id; $model = 'survey'; $layout = $survey->layout; $plot_numbers = $survey->plot_numbers; $client_id = $survey->client_id ?? 0; $approved = (boolean)$survey->approved === true; $completed = true === (boolean)$survey->completed; $summary = request()->get('summary') ?? ''; $payment = $survey->payment; $paid = empty($payment) ? false : ($payment->status === 'paid' ? true : false); ?>
           <div class="row">
-            <div class="col-12 col-lg-8 mb-4">
+            <div class="col-12 col-lg-8">
               <div class="alert alert-dark mb-4 text-white border-0 d-flex justify-content-between align-items-center">
                 <span>Survey or Lifting Application</span>
                 <span class="text-{{ $approved ? 'success' : 'danger' }}">{{ $approved ? 'Approved' : 'Unapproved' }}</span>
@@ -92,7 +92,7 @@
                   </div>
                 </div>
               @endif
-              <div class="mb-4">
+              <div class="">
                 @if(empty($documents->count()))
                   <div class="alert alert-danger text-white mb-4">No documents uploaded yet.</div>
                 @else
@@ -113,9 +113,9 @@
                   <div class="alert d-none survey-message mb-4 text-white"></div>
                   @if($paid)
                       @if($approved)
-                        <div class="alert alert-success text-white my-4">Approved on {{ date("F j, Y, g:i a", strtotime($survey->approved_at)) }}</div>
+                        <div class="alert alert-success text-white mb-4">Approved on {{ date("F j, Y, g:i a", strtotime($survey->approved_at)) }}</div>
                       @else
-                        <div class="alert alert-success text-white my-4">Awaiting Approval of Survey Application.</div>
+                        <div class="alert alert-success text-white mb-4">Awaiting Approval of Survey Application.</div>
                       @endif
                   @else
                     <div class="card border-0 mb-4 shadow-sm">
@@ -137,7 +137,7 @@
               </div>
             </div>
             <div class="col-12 col-lg-4 mb-4">
-                <?php $surveys = \App\Models\Survey::latest('created_at')->where(['client_id' => $client_id])->get(); ?>
+                <?php $surveys = \App\Models\Survey::latest('created_at')->where(['client_id' => $client_id])->where('id', '!=', $model_id)->get(); ?>
                 @if(empty($surveys->count()))
                   <div class="alert alert-info mb-4 border-0 text-white">Other applications appears here</div>
                 @else

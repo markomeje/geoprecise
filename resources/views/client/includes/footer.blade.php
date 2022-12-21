@@ -56,9 +56,12 @@
       @endif
 
     var filterSelect = document.querySelector('.filter-select');
-    dselect(filterSelect, {
+    if(filterSelect) {
+        dselect(filterSelect, {
             search: true
-    });
+        });
+    }
+    
 
     });
 

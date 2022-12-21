@@ -35,7 +35,7 @@
             <div class="alert alert-danger border-0 text-white">You have no payments yet</div>
           @else
             @foreach($payments as $payment)
-              <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <div class="col-12 col-md-6 col-lg-4 mb-4">
                 @include('client.payments.partials.card')
               </div>
             @endforeach

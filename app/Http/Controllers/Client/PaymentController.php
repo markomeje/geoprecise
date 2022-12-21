@@ -18,32 +18,40 @@ class PaymentController extends Controller
     }
 
     //
-    public function pay()
+    public function process()
     {
-        $data = request()->all(['type', 'model_id', 'model', 'amount']);
-        $type = $data['type'] ?? '';
-        $amount = empty($data['amount']) ? 0 : (int)$data['amount'];
+        $data = request()->all();
+        $validator = Validator::make($data, [
+            'amount' => ['required'],
+            'agree' => ['required'],
+        ], ['agree.required' => 'You must agree to our terms and consitions.']);
 
-        $model_id = $data['model_id'] ?? '';
-        $model = $data['model'] ?? '';
-        if(empty($model) || empty($model_id) || empty($amount)) {
+        if ($validator->fails()) {
             return response()->json([
                 'status' => 0,
-                'info' => 'Invalid operation.'
+                'error' => $validator->errors(),
+            ]);
+        }
+
+        if (empty($data['model_id']) || empty($data['model'])) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Unknown error. Try again.'
             ]);
         }
 
         try{
+            $amount = $data['amount'] ?: 0;
             $reference = Str::uuid();
             $payment = Payment::create([
                 'amount' => $amount,
                 'client_id' => auth()->user()->client->id,
-                'type' => $type,
+                'type' => 'paystack',
                 'status' => 'initialized',
-                'model_id' => $model_id,
+                'model_id' => $data['model_id'],
                 'verified' => false,
                 'reference' => $reference,
-                'model' => $model,
+                'model' => $data['model'],
                 'recorder_type' => '',
             ]);
 

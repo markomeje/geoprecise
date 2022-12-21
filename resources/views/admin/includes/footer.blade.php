@@ -11,6 +11,8 @@
   <script src="{{ config('app.url') }}/custom/js/index.js"></script>
   <script src="{{ config('app.url') }}/custom/js/ajax.js"></script>
   <script src="{{ config('app.url') }}/custom/js/forms.js"></script>
+
+  <script src="{{ config('app.url') }}/custom/js/dselect.js"></script>
   
   <script>
     $.ajaxSetup({
@@ -90,6 +92,13 @@
       Scrollbar.init(document.querySelector('#sidenav-scrollbar'), {
         damping: '0.5'
       });
+    }
+
+    var filterSelect = document.querySelector('.filter-select');
+    if(filterSelect) {
+        dselect(filterSelect, {
+            search: true
+        });
     }
   </script>
   <!-- Github buttons -->

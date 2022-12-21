@@ -134,9 +134,9 @@
                         <div class="alert d-none survey-message mb-4 text-white"></div>
                         @if($paid)
                             @if($approved)
-                              <div class="alert alert-success text-white my-4">Application Approved on {{ date("F j, Y, g:i a", strtotime($survey->approved_at)) }}</div>
+                              <div class="alert alert-success text-white mb-4">Application Approved on {{ date("F j, Y, g:i a", strtotime($survey->approved_at)) }}</div>
                             @else
-                              <div class="alert alert-success text-white my-4">Awaiting Approval of Survey Application.</div>
+                              <div class="alert alert-success text-white mb-4">Awaiting Approval of Survey Application.</div>
                             @endif
                         @else
                           <button type="submit" class="btn btn-primary w-100 btn-lg survey-button mb-0">
@@ -163,13 +163,36 @@
                       </div>
                     </div>
                     <div class="card-body">
-                      <div class="alert alert-info text-white mb-4">I hereby affirm that my submissions and uploaded documents are genuine. I agree to forfiet the money i'm paying now if the document i have submitted are found to be forged or fraudulent.</div>
-                      <a href="javascript:;" class="m-0 btn btn-lg btn-primary text-white make-payment w-100" data-message="Are you sure to make payment now?" data-url="{{ route('client.payment.process', ['type' => 'paystack', 'model_id' => $survey->id, 'model' => $model, 'amount' => $total_amount]) }}">
-                        <img src="/images/spinner.svg" class="me-2 d-none make-payment-spinner mb-1">Pay NGN{{ number_format($total_amount) }}</a>
+                        <form class="make-payment-form" action="javascript:;" method="post" data-action="{{ route('client.payment.process') }}">
+                            @csrf
+                            <input class="form-control" type="hidden" name="model" value="{{ $model }}">
+                            <input class="form-control" type="hidden" name="model_id" value="{{ $model_id }}">
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <label for="">Total Amount (NGN)</label>
+                                    <select id="" class="form-control amount" name="amount">
+                                        <option value="{{ $total_amount }}">
+                                            NGN{{ number_format($total_amount ) }}
+                                        </option>
+                                    </select>
+                                    <small class="amount-error text-danger"></small>
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <div class="form-check">
+                                    <input class="form-check-input agree" type="checkbox" value="1" id="CheckPayment" name="agree">
+                                    <label class="form-check-label" for="CheckPayment">I hereby affirm that my submissions and uploaded documents are genuine. I agree to forfiet the money i'm paying now if the document i have submitted are found to be forged or fraudulent.</label>
+                                </div>
+                                <small class="agree-error text-danger"></small>
+                            </div>
+                            <div class="alert d-none make-payment-message mb-4 text-white"></div>
+                            <button type="submit" class="btn btn-primary w-100 make-payment-button">
+                                <img src="/images/spinner.svg" class="me-2 d-none make-payment-spinner mb-1">Pay NGN{{ number_format($total_amount) }}
+                            </button>
+                        </form>
                     </div>
                   </div>
-                @endif
-                @if(!empty($payment))
+                @else
                   <div class="">
                     @if($payment_approved)
                       <div class="alert alert-success w-100 m-0 text-white mb-4">Payment of <span class="font-weight-bolder">NGN{{ number_format($payment->amount) }}</span> Approved on {{ date("F j, Y, g:i a", strtotime($payment->approved_at)) }}</div>

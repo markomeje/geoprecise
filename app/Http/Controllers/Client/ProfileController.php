@@ -19,7 +19,7 @@ class ProfileController extends Controller
         $data = request()->all();
         $validator = Validator::make($data, [
             'fullname' => ['required', 'string'], 
-            'dob' => ['required', 'string'], 
+            'dob' => ['nullable', 'string'], 
             'occupation' => ['required', 'string'], 
             'address' => ['required', 'string'], 
             'city' => ['nullable', 'string'],
@@ -43,11 +43,11 @@ class ProfileController extends Controller
         }
 
         $client->fullname = $data['fullname'];
-        $client->dob = $data['dob'];
-        $client->occupation = $data['occupation'];
+        $client->dob = $data['dob'] ?? null;
+        $client->occupation = $data['occupation'] ?? null;
         $client->city = $data['city'] ?? null;
         $client->state = $data['state'] ?? null;
-        $client->phone = $data['phone'];
+        $client->phone = $data['phone'] ?? null;
         $client->status = 'completed';
 
         if ($client->update()) {

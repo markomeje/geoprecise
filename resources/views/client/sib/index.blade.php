@@ -18,9 +18,11 @@
           @else
             <div class="row">
               @foreach($sibs as $sib)
-                <div class="col-xl-3 col-md-6 col-12 mb-4">
-                  @include('client.sib.partials.card')
-                </div>
+                @if(!empty($sib->survey))
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    @include('client.sib.partials.card')
+                    </div>
+                @endif
               @endforeach
             </div>
             {{ $sibs->links('vendor.pagination.default') }}

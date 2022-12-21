@@ -31,23 +31,22 @@
                   <div class="text-dark">Approved on {{ date("F j, Y, g:i a", strtotime($survey->approved_at)) }}</div>
                 </div>
                 <div class="card-body">
-                  <div class="row d-flex flex-wrap g-0">
+                  <div class="row">
                       @if(is_array($plot_numbers))
-                        <?php $count = 1; ?>
                         @foreach($plot_numbers as $number)
                           @if(!empty($number))
-                            <div class="col-6 col-md-4 col-lg-3">
+                            <div class="col-12 col-md-6 mb-4">
                               <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
-                                <small class="tiny-font">
-                                  ({{ $count++ }}) {{ $number }}
-                                </small>
+                                  {{ $number }}
                               </div>
                             </div>
                           @endif
                         @endforeach
                       @else
                         <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
-                          <small class="">{{ $plot_numbers }}</small>
+                          <small class="">
+                            {{ $plot_numbers }}
+                        </small>
                         </div>
                       @endif
                   </div>

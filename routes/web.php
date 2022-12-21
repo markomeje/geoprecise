@@ -216,6 +216,12 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
         Route::post('/edit/{id}', [\App\Http\Controllers\Admin\PlotsController::class, 'edit'])->name('admin.plot.edit');
     });
 
+    Route::prefix('plans')->group(function () {
+        Route::get('/', [\App\Http\Controllers\Admin\PlansController::class, 'index'])->name('admin.plans');
+        Route::post('/add', [\App\Http\Controllers\Admin\PlansController::class, 'add'])->name('admin.plan.add');
+        Route::post('/edit/{id}', [\App\Http\Controllers\Admin\PlansController::class, 'edit'])->name('admin.plan.edit');
+    });
+
     Route::prefix('surveys')->group(function () {
         Route::get('/', [\App\Http\Controllers\Admin\SurveysController::class, 'index'])->name('admin.surveys');
         Route::get('/search', [\App\Http\Controllers\Admin\SurveysController::class, 'search'])->name('admin.surveys.search');
@@ -275,7 +281,7 @@ Route::domain(env('CLIENT_URL'))->middleware(['auth', 'client'])->group(function
     });
 
     Route::get('/payments', [\App\Http\Controllers\Client\PaymentController::class, 'index'])->name('client.payments');
-    Route::post('/payment/process', [\App\Http\Controllers\Client\PaymentController::class, 'pay'])->name('client.payment.process');
+    Route::post('/payment/process', [\App\Http\Controllers\Client\PaymentController::class, 'process'])->name('client.payment.process');
 
     Route::post('/profile/edit/{id}', [\App\Http\Controllers\Client\ProfileController::class, 'edit'])->name('client.profile.edit');
 

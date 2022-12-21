@@ -58,21 +58,25 @@
                         Total Amount: NGN{{ number_format($payment->amount) }}
                       </div>
                       <div class="text-dark">
-                        <span class="text-success">{{ $paid ? 'Paid' : 'Unpaid' }}</span> ({{ $payment_approved ? 'Approved' : 'Unapproved' }})
+                        <span class="text-{{ $payment_approved ? 'success' : 'danger' }}">{{ $payment_approved ? 'Approved' : 'Unapproved' }}</span>
                       </div>
                     </div>
                     <div class="card-body">
                       <div class="d-flex align-items-center">
                         @if($payment_approved)
-                          <div class="alert alert-success w-100 m-0 text-white">Payment Approved By {{ $payment->approver ? $payment->approver->staff->fullname : '' }} on {{ date("F j, Y, g:i a", strtotime($payment->approved_at)) }}</div>
+                          <div class="alert alert-success w-100 m-0 text-white">Payment Approved on {{ date("F j, Y, g:i a", strtotime($payment->approved_at)) }}</div>
                         @else
-                          @can('approve', ['payments'])
-                            <div class="approve-payment" data-url="{{ route('admin.payment.approve', ['model' => $model, 'model_id' => $model_id, 'client_id' => $client_id, 'reference' => $payment->reference]) }}">
-                              <a href="javascript:;" class="btn btn-primary approve-payment-button btn-block mb-0 w-100">
-                                <img src="/images/spinner.svg" class="me-2 d-none approve-payment-spinner mb-1">Approve payment
-                              </a>
-                            </div>
-                          @endcan
+                            @can('approve', ['payments'])
+                                <div class="approve-payment w-100" data-url="{{ route('admin.payment.approve', ['model' => $model, 'model_id' => $model_id, 'client_id' => $client_id, 'reference' => $payment->reference]) }}">
+                                    <a href="javascript:;" class="btn btn-primary approve-payment-button btn-block mb-0 w-100">
+                                        <img src="/images/spinner.svg" class="me-2 d-none approve-payment-spinner mb-1">Approve payment
+                                    </a>
+                                </div>
+                            @else
+                                <div class="alert alert-danger text-white mb-0 w-100" role="alert">
+                                    You do not have the permission to approve payments
+                                </div>
+                            @endcan
                         @endif
                       </div>
                     </div>
@@ -88,7 +92,7 @@
                     </div>
                     <div class="row">
                       @foreach($documents as $document)
-                        <div class="col-12 col-md-4 mb-4">
+                        <div class="col-12 col-md-6 mb-4">
                           @include('admin.documents.partials.card')
                         </div>
                       @endforeach
@@ -153,7 +157,11 @@
                               <img src="/images/spinner.svg" class="me-2 d-none approve-survey-spinner mb-1">Approve Survey
                             </button>
                           </div>
-                        @endcan
+                        @else
+                                <div class="alert alert-danger text-white" role="alert">
+                                    You do not have the permission to approve surveys
+                                </div>
+                            @endcan
                       @endif
                     @endif
                   </div>

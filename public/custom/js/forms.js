@@ -2,6 +2,16 @@
 
 	'use strict';
 
+    $('.add-plan-form').submit('click', function() {
+        event.preventDefault();
+        handleForm({form: $(this), button: 'add-plan-button', spinner: 'add-plan-spinner', message: 'add-plan-message'});
+    });
+
+    $('.make-payment-form').submit('click', function() {
+        event.preventDefault();
+        handleForm({form: $(this), button: 'make-payment-button', spinner: 'make-payment-spinner', message: 'make-payment-message'});
+    });
+
     $('.apply-sib-form').submit('click', function() {
         event.preventDefault();
         handleForm({form: $(this), button: 'apply-sib-button', spinner: 'apply-sib-spinner', message: 'apply-sib-message'});
