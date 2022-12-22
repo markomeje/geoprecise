@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Client;
 use App\Http\Controllers\Controller;
-use App\Models\{Survey, Sib, Psr};
+use App\Models\{Survey, Sib, Psr, Plan};
 use Validator;
 use Exception;
 
@@ -33,6 +33,9 @@ class PlotController extends Controller
                 break;
             case 'psr':
                 $model = Psr::find($id);
+                break;
+            case 'plan':
+                $model = Plan::find($id);
                 break;
             default:
                 $model = null;
@@ -71,7 +74,10 @@ class PlotController extends Controller
         }
 
         $model->plot_numbers = empty($model->plot_numbers) ? $plot_number : $model->plot_numbers.'-'.$plot_number;
-        $model->status = 'active';
+        if(!empty($model->status)) {
+            $model->status = 'active';
+        }
+        
         if($model->update()) {
             return response()->json([
                 'status' => 1,

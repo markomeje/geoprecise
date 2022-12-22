@@ -11,7 +11,7 @@
         <div class="">
           <h5 class="mb-4"></h5>
           @if(empty($psrs->count()))
-            <div class="alert alert-info">No psrs yet</div>
+            <div class="alert alert-danger border-0">No psrs yet</div>
           @else
             <div class="row">
               @foreach($psrs as $psr)

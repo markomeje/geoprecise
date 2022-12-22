@@ -219,7 +219,12 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
     Route::prefix('plans')->group(function () {
         Route::get('/', [\App\Http\Controllers\Admin\PlansController::class, 'index'])->name('admin.plans');
         Route::post('/add', [\App\Http\Controllers\Admin\PlansController::class, 'add'])->name('admin.plan.add');
-        Route::post('/edit/{id}', [\App\Http\Controllers\Admin\PlansController::class, 'edit'])->name('admin.plan.edit');
+        Route::post('/save/{id}', [\App\Http\Controllers\Admin\PlansController::class, 'save'])->name('admin.plan.save');
+
+        Route::get('/edit/{id}', [\App\Http\Controllers\Admin\PlansController::class, 'edit'])->name('admin.plan.edit');
+
+        Route::post('/plot/add', [\App\Http\Controllers\Client\PlotController::class, 'add'])->name('admin.plan.plot.add');
+        Route::post('/delete', [\App\Http\Controllers\Client\PlotController::class, 'delete'])->name('admin.plan.plot.delete');
     });
 
     Route::prefix('surveys')->group(function () {

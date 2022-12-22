@@ -10,7 +10,7 @@ class PlansController extends Controller
     //
     public function index()
     {
-        return view('admin.plans.index', ['title' => 'All Plans', 'plans' => Plan::latest()->paginate(20)]);
+        return view('admin.plans.index', ['title' => 'All Plans', 'plans' => Plan::latest()->paginate(21)]);
     }
 
     //
@@ -43,8 +43,8 @@ class PlansController extends Controller
             'client_name' => $data['client_name'],
             'plan_number' => $plan_number,
             'layout_id' => $data['layout'],
-            'address' => $data['address'],
-            'plot_numbers' => '',
+            'address' => $data['address'] ?? null,
+            'plan_numbers' => '',
         ]);
 
         if (empty($plan)) {
@@ -64,13 +64,18 @@ class PlansController extends Controller
     //
     public function edit($id = 0)
     {
+        return view('admin.plans.edit', ['title' => 'Edit Plan', 'plan' => Plan::find($id)]);
+    }
+
+    //
+    public function save($id = 0)
+    {
         $data = request()->all();
         $validator = Validator::make($data, [
-            'name' => ['required', 'string'], 
-            'description' => ['nullable', 'string'],
-            'category' => ['required', 'string'],
+            'client_name' => ['required', 'string'], 
+            'plan_number' => ['required', 'string'],
+            'address' => ['nullable', 'string'],
             'layout' => ['required', 'string'],
-            'number' => ['required', 'string'],
         ]);
 
         if ($validator->fails()) {
@@ -80,24 +85,22 @@ class PlansController extends Controller
             ]);
         }
 
-        $plot = Plot::find($id);
-        if (empty($plot)) {
+        $plan = Plan::find($id);
+        if (empty($plan)) {
             return response()->json([
                 'status' => 0,
                 'info' => 'An error occured. Try again later.',
             ]);
         }
 
-        $plot->name = $data['name'];
-        $plot->description = $data['description'] ?? null;
-        $plot->number = $data['number'];
-        $plot->category = $data['category'];
-        $plot->layout_id = $data['layout'];
+        $plan->client_name = $data['client_name'];
+        $plan->plan_number = $data['plan_number'];
+        $plan->layout_id = $data['layout'];
 
-        if ($plot->update()) {
+        if ($plan->update()) {
             return response()->json([
                 'status' => 1,
-                'info' => 'Plot updated. Please wait . . .',
+                'info' => 'Plan updated. Please wait . . .',
                 'redirect' => '',
             ]);
         }

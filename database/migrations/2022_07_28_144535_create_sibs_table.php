@@ -16,15 +16,15 @@ return new class extends Migration
         Schema::create('sibs', function (Blueprint $table) {
             $table->id();
             $table->foreignId('form_id');
-            $table->foreignId('survey_id');
+            $table->foreignId('survey_id')->nullable();
             $table->foreignId('client_id');
-            
+
+            $table->text('address')->nullable();
+            $table->string('phone')->nullable();
+            $table->foreignId('plan_id');
             $table->boolean('approved')->default(false);
             $table->foreignId('approved_by')->nullable();
             $table->timestamp('approved_at')->nullable();
-            
-            $table->string('recorder_type')->default('staff');
-            $table->foreignId('recorded_by')->nullable();
 
             $table->boolean('completed')->default(false);
             $table->text('comments')->nullable();

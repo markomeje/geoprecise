@@ -15,70 +15,6 @@ class SibsController extends Controller
     }
 
     //
-    public function apply()
-    {
-        $data = request()->all();
-        if (empty($data['survey_id']) || empty($data['client_id'])) {
-            return response()->json([
-                'status' => 0,
-                'info' => 'Invalid operation.',
-            ]);
-        }
-
-        $client = Client::where(['id' => $data['client_id']])->first();
-        if (empty($client)) {
-            return response()->json([
-                'status' => 0,
-                'info' => 'Unknown error. Client not found.',
-            ]);
-        }
-
-        $survey = Survey::where(['id' => $data['survey_id']])->first();
-        if (empty($survey)) {
-            return response()->json([
-                'status' => 0,
-                'info' => 'Unknown error. Survey not found.',
-            ]);
-        }
-
-        if ((boolean)$survey->approved !== true) {
-            return response()->json([
-                'status' => 0,
-                'info' => 'Survey must be approved first.',
-            ]);
-        }
-
-        try {
-            $sib = Sib::create([
-                'client_id' => $data['client_id'],
-                'recorded_by' => auth()->id(),
-                'survey_id' => $data['survey_id'],
-                'recorder_type' => 'staff',
-                'form_id' => Form::where(['code' => 'SIB'])->pluck('id')->toArray()[0],
-            ]);
-
-            if (empty($sib->id)) {
-                return response()->json([
-                    'status' => 0,
-                    'info' => 'Operation failed. Try again.',
-                ]);
-            }
-
-            return response()->json([
-                'status' => 1,
-                'info' => 'Operation successful. Click ok . . .',
-                'redirect' => route('admin.sib.edit', ['id' => $sib->id]),
-            ]);
-        } catch (Exception $error) {
-            return response()->json([
-                'status' => 0,
-                'info' => 'Operation failed. Try again'
-            ]);
-        }
-            
-    }
-
-    //
     public function edit($id = 0)
     {
         return view('admin.sibs.edit', ['title' => 'Edit Site Inspection Booking', 'sib' => Sib::find($id)]);
@@ -87,7 +23,7 @@ class SibsController extends Controller
     //
     public function save($id = 0)
     {
-        $data = request()->all(['approved', 'comments']);
+        $data = request()->all(['approved']);
         $sib = Sib::find($id);
         if (empty($sib)) {
             return response()->json([
@@ -119,10 +55,8 @@ class SibsController extends Controller
         }
 
         try{
-            $sib->comments = $data['comments'] ?? '';
             $sib->approved = $approved;
             if ($approved) {
-                $sib->completed = true;
                 $sib->status = 'completed';
                 $sib->approved_by = auth()->id();
                 $sib->approved_at = Carbon::now();

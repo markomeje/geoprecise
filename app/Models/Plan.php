@@ -17,7 +17,6 @@ class Plan extends Model
     protected $fillable = [
         'client_name',
         'plot_numbers',
-        'phone',
         'layout_id',
         'plan_number',
         'address'

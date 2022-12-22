@@ -19,12 +19,12 @@ class Sib extends Model
         'client_id',
         'completed',
         'survey_id',
+        'plan_id',
         'approved',
         'approved_by',
         'approved_at',
-        'recorder_type',
+
         'status',
-        'recorded_by',
         'comments',
     ];
 
@@ -48,8 +48,17 @@ class Sib extends Model
     {
         return $this->hasOne(Payment::class, 'model_id')->where(['model' => 'sib', 'status' => 'paid']);
     }
-    
 
+    /**
+     * Site inspection must belong to a plan
+     *
+     * @var array<string, string>
+     */
+    public function plan()
+    {
+        return $this->belongsTo(Plan::class);
+    }
+    
     /**
      * A sib belongs to a layout
      *

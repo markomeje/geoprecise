@@ -1,14 +1,14 @@
 <div class="modal fade" id="edit-plan-{{ $plan->id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered" role="plan">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Add Plan Info</h5>
-        <button type="button" class="btn-close text-danger" data-bs-dismiss="modal" aria-label="Close">
-          <i class="icofont-close"></i>
-        </button>
-      </div>
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add Plan Info</h5>
+            <button type="button" class="btn-close text-danger" data-bs-dismiss="modal" aria-label="Close">
+                <i class="icofont-close"></i>
+            </button>
+        </div>
       <form class="edit-plan-form" action="javascript:;" method="post" data-action="{{ route('admin.plan.add') }}">
-          @csrf
+        @csrf
         <div class="modal-body">
           <div class="row">
             <div class="form-group col-md-6">

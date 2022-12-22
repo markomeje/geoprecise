@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Client;
 use App\Http\Controllers\Controller;
-use App\Models\{Sib, Form, Survey};
+use App\Models\{Sib, Form, Survey, Plan};
 use Validator;
 use Exception;
 
@@ -19,32 +19,29 @@ class SibController extends Controller
     public function apply()
     {
         $data = request()->all();
-        if (empty($data['survey_id'])) {
+        $validator = Validator::make($data, [
+            'plan_number' => ['required']
+        ]);
+
+        if ($validator->fails()) {
             return response()->json([
                 'status' => 0,
-                'info' => 'Invalid operation.',
+                'error' => $validator->errors()
             ]);
         }
 
-        $survey = Survey::where(['id' => $data['survey_id']])->first();
-        if (empty($survey)) {
+        $plan = Plan::where(['plan_number' => $data['plan_number']])->first();
+        if (empty($plan)) {
             return response()->json([
                 'status' => 0,
-                'info' => 'Unknown error. Survey not found.',
-            ]);
-        }
-
-        if (true !== (boolean)$survey->approved) {
-            return response()->json([
-                'status' => 0,
-                'info' => 'Survey must be approved first.',
+                'info' => 'Invalid plan number',
             ]);
         }
 
         try {
             $sib = Sib::create([
                 'client_id' => auth()->user()->client->id,
-                'survey_id' => $data['survey_id'],
+                'plan_id' => $plan->id,
                 'form_id' => Form::where(['code' => 'SIB'])->pluck('id')->toArray()[0],
             ]);
 
@@ -78,7 +75,20 @@ class SibController extends Controller
     //
     public function save($id = 0)
     {
-        $data = request()->all(['completed', 'comments']);
+        $data = request()->all();
+        $validator = Validator::make($data, [
+            'phone' => ['required'],
+            'address' => ['required', 'string'],
+            'comments' => ['nullable', 'string'],
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'status' => 0,
+                'error' => $validator->errors()
+            ]);
+        }
+
         $sib = Sib::find($id);
         if (empty($sib)) {
             return response()->json([
@@ -87,7 +97,7 @@ class SibController extends Controller
             ]);
         }
 
-        $completed = (boolean)($data['completed'] ?? 0) === true;
+        $completed = true === (boolean)($data['completed'] ?? false);
         if ($completed && empty($sib->payment)) {
             return response()->json([
                 'status' => 0,
@@ -104,7 +114,10 @@ class SibController extends Controller
 
         try{
             $sib->comments = $data['comments'] ?? '';
+            $sib->phone = $data['phone'];
+            $sib->address = $data['address'];
             $sib->completed = $completed;
+
             if (empty($sib->update())) {
                 return response()->json([
                     'status' => 0,

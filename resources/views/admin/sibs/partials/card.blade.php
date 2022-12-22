@@ -2,10 +2,10 @@
   <?php $approved = (boolean)($sib->approved ?? false) === true; ?>
   <div class="card-body">
     <div class="d-flex align-items-center mb-3 pb-3 border-bottom justify-content-between">
-      <a href="{{ route('admin.sib.edit', ['id' => $sib->id]) }}" class="text-dark">
-        {{ true === (boolean)$sib->completed ? 'Completed' : 'Incomplete' }}
-      </a>
-      <a href="{{ route('admin.sib.edit', ['id' => $sib->id]) }}" class="text-{{ $approved ? 'success' : 'danger' }}">
+        <a href="{{ route('admin.sib.edit', ['id' => $sib->id]) }}" class="text-dark">
+            Plan Number ({{ $sib->plan ? $sib->plan->plan_number : 'Nill' }})
+        </a>
+        <a href="{{ route('admin.sib.edit', ['id' => $sib->id]) }}" class="text-{{ $approved ? 'success' : 'danger' }}">
           {{ $approved ? 'Approved' : 'Unapproved' }}
       </a>
     </div>
@@ -24,8 +24,9 @@
           </span>
         </div>
       @endif
-      <a href="{{ route('admin.clients.profile', ['id' => $sib->client_id]) }}" class="text-dark">
-        <em class="me-2">By</em>{{ \Str::limit(ucwords($sib->client->fullname), 12) }}
+      <?php $completed = true === (boolean)$sib->completed; ?>
+      <a href="{{ route('admin.sib.edit', ['id' => $sib->id]) }}" class="text-{{ $completed ? 'success' : 'danger' }}">
+        {{ $completed ? 'Completed' : 'Incomplete' }}
       </a>
     </div>
   </div>
