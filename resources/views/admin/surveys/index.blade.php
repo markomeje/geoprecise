@@ -28,7 +28,7 @@
             <div class="alert alert-info border-0 mb-4 text-white">{{ $surveys->total() }} Surveys and Lifting</div>
             <div class="row">
               @foreach($surveys as $survey)
-                <div class="col-xl-3 col-md-4 col-12 mb-4">
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
                   @include('admin.surveys.partials.card')
                 </div>
               @endforeach

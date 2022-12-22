@@ -12,12 +12,10 @@
         @else
           <?php $user_id = $client->user_id; $client_id = $client->id ?>
           <div class="">
-            <div class="mb-4 p-4 bg-white border-radius-lg">
-              <div class="text-dark">
+            <div class="alert alert-dark mb-4 border-0 text-white">
                 {{ ucwords($client->fullname) }} Profile
-              </div>
             </div>
-            <div class="p-4 bg-white border-radius-lg min-vh-100">
+            <div class="">
               <div class="row">
                 <div class="col-12 col-md-7 col-lg-8 col-xl-9">
                   <div class="">
@@ -30,7 +28,7 @@
                     @else
                       <div class="row">
                           @foreach($psrs as $psr)
-                            <div class="col-12 col-lg-6 col-xl-4 mb-4">
+                            <div class="col-12 col-lg-6 mb-4">
                                 @include('admin.psrs.partials.card')
                             </div>
                           @endforeach
@@ -47,7 +45,7 @@
                     @else
                       <div class="row">
                           @foreach($surveys as $survey)
-                            <div class="col-12 col-lg-6 col-xl-4 mb-4">
+                            <div class="col-12 col-lg-6 mb-4">
                                 @include('admin.surveys.partials.card')
                             </div>
                           @endforeach
@@ -65,7 +63,7 @@
                   @else
                     <div class="row">
                       @foreach($payments as $payment)
-                        <div class="col-12 col-lg-12 mb-4">
+                        <div class="col-12 mb-4">
                           @include('admin.payments.partials.card')
                         </div>
                       @endforeach

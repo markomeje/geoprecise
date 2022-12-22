@@ -48,27 +48,27 @@ class AuthServiceProvider extends ServiceProvider
         $allowed = ['owner', 'superadmin'];
         Gate::define('view', function(User $user, $resource) use($allowed, $permissions) {
             [$functions, $role] = $permissions($user, $resource);
-            return in_array('view', $functions) || in_array($role, $allowed);
+            return in_array('view', $functions) || in_array($role, $allowed) || in_array(auth()->user()->role, $allowed);
         });
 
         Gate::define('create', function(User $user, $resource) use($allowed, $permissions) {
             [$functions, $role] = $permissions($user, $resource);
-            return in_array('create', $functions) || in_array($role, $allowed);
+            return in_array('create', $functions) || in_array($role, $allowed) || in_array(auth()->user()->role, $allowed);
         });
 
         Gate::define('update', function(User $user, $resource) use($allowed, $permissions) {
             [$functions, $role] = $permissions($user, $resource);
-            return in_array('update', $functions) || in_array($role, $allowed);
+            return in_array('update', $functions) || in_array($role, $allowed) || in_array(auth()->user()->role, $allowed);
         });
 
         Gate::define('delete', function(User $user, $resource) use($allowed, $permissions) {
             [$functions, $role] = $permissions($user, $resource);
-            return in_array('delete', $functions) || in_array($role, $allowed);   
+            return in_array('delete', $functions) || in_array($role, $allowed) || in_array(auth()->user()->role, $allowed);   
         });
 
         Gate::define('approve', function(User $user, $resource) use($allowed, $permissions) {
             [$functions, $role] = $permissions($user, $resource);
-            return in_array('approve', $functions) || in_array($role, $allowed);   
+            return in_array('approve', $functions) || in_array($role, $allowed) || in_array(auth()->user()->role, $allowed);   
         });
     }
 }
