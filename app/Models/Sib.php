@@ -20,6 +20,12 @@ class Sib extends Model
         'completed',
         'survey_id',
         'plan_id',
+
+        'layout_id',
+        'plot_numbers',
+        'location',
+        'phone',
+        
         'approved',
         'approved_by',
         'approved_at',

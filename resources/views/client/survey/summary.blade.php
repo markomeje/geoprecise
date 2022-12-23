@@ -10,7 +10,19 @@
         @if(empty($survey) || empty($survey->client))
           <div class="alert alert-danger text-white mt-4 border-0">Surveying details not available</div>
         @else
-          <?php $model_id = $survey->id; $model = 'survey'; $layout = $survey->layout; $plot_numbers = $survey->plot_numbers; $client_id = $survey->client_id ?? 0; $approved = (boolean)$survey->approved === true; $completed = true === (boolean)$survey->completed; $payment = $survey->payment; $amount = $survey->form ? ($survey->form->amount ?? 0) : 0; $payment_approved = empty($payment) ? false : (true === (boolean)($payment->approved) ? true : false); $paid = empty($payment) ? false : ($payment->status === 'paid' ? true : false); ?>
+          <?php $model_id = $survey->id; $model = 'survey'; $layout = $survey->layout; $plot_numbers = $survey->plot_numbers; $client_id = $survey->client_id ?? 0; $approved = (boolean)$survey->approved === true; $completed = true === (boolean)$survey->completed; $payment = $survey->payment; $amount = $survey->form ? ($survey->form->amount ?? 0) : 0; $payment_approved = empty($payment) ? false : (true === (boolean)($payment->approved) ? true : false); $paid = empty($payment) ? false : ($payment->status === 'paid' ? true : false); $reference = request()->get('reference'); ?>
+            @if(!empty($reference))
+                <?php $payment_verification = \App\Payment::verify($reference); ?>
+                @if($payment_verification['status'] === 1)
+                    <div class="alert alert-success border-0 text-white mb-4">
+                    {{ $payment_verification['info'] }}
+                    </div>
+                @else
+                    <div class="alert alert-danger border-0 text-white mb-4">
+                    {{ $payment_verification['info'] }}
+                    </div>
+                @endif
+            @endif
           <div class="row">
             <div class="col-12 col-xl-8 mb-4">
               <div class="alert alert-dark mb-4 text-white border-0 d-flex justify-content-between align-items-center">
@@ -167,6 +179,7 @@
                             @csrf
                             <input class="form-control" type="hidden" name="model" value="{{ $model }}">
                             <input class="form-control" type="hidden" name="model_id" value="{{ $model_id }}">
+                            <input class="form-control" type="hidden" name="callback_url" value="{{ route('client.sib.edit', ['id' => $model_id])}}">
                             <div class="form-group">
                                 <div class="form-group">
                                     <label for="">Total Amount (NGN)</label>

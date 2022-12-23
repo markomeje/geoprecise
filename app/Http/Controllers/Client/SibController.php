@@ -20,7 +20,9 @@ class SibController extends Controller
     {
         $data = request()->all();
         $validator = Validator::make($data, [
-            'plan_number' => ['required']
+            'plan_number' => ['required'],
+            'year' => ['required'],
+            'layout' => ['nullable', 'integer'],
         ]);
 
         if ($validator->fails()) {
@@ -30,11 +32,15 @@ class SibController extends Controller
             ]);
         }
 
-        $plan = Plan::where(['plan_number' => $data['plan_number']])->first();
+        $plan = Plan::where([
+            'plan_number' => $data['plan_number'], 
+            'year' => $data['year']
+        ])->first();
+
         if (empty($plan)) {
             return response()->json([
                 'status' => 0,
-                'info' => 'Invalid plan number',
+                'info' => 'Invalid plan',
             ]);
         }
 
@@ -43,6 +49,7 @@ class SibController extends Controller
                 'client_id' => auth()->user()->client->id,
                 'plan_id' => $plan->id,
                 'form_id' => Form::where(['code' => 'SIB'])->pluck('id')->toArray()[0],
+                'layout_id' => $data['layout'] ?: null
             ]);
 
             if (empty($sib->id)) {
@@ -78,7 +85,7 @@ class SibController extends Controller
         $data = request()->all();
         $validator = Validator::make($data, [
             'phone' => ['required'],
-            'address' => ['required', 'string'],
+            'location' => ['nullable', 'string'],
             'comments' => ['nullable', 'string'],
         ]);
 
@@ -115,7 +122,7 @@ class SibController extends Controller
         try{
             $sib->comments = $data['comments'] ?? '';
             $sib->phone = $data['phone'];
-            $sib->address = $data['address'];
+            $sib->location = $data['location'];
             $sib->completed = $completed;
 
             if (empty($sib->update())) {

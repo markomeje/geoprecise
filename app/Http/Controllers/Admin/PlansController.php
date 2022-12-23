@@ -10,7 +10,7 @@ class PlansController extends Controller
     //
     public function index()
     {
-        return view('admin.plans.index', ['title' => 'All Plans', 'plans' => Plan::latest()->paginate(21)]);
+        return view('admin.plans.index', ['title' => 'All Plans', 'plans' => Plan::latest('id')->paginate(28)]);
     }
 
     //
@@ -18,10 +18,8 @@ class PlansController extends Controller
     {
         $data = request()->all();
         $validator = Validator::make($data, [
-            'client_name' => ['required', 'string'], 
             'plan_number' => ['required', 'string'],
-            'address' => ['nullable', 'string'],
-            'layout' => ['required', 'string'],
+            'year' => ['required', 'string'],
         ]);
 
         if ($validator->fails()) {
@@ -31,8 +29,9 @@ class PlansController extends Controller
             ]);
         }
 
+        $year = $data['year'];
         $plan_number = $data['plan_number'];
-        if(Plan::where(['plan_number' => $plan_number])->exists()) {
+        if(Plan::where(['plan_number' => $plan_number, 'year' => $year])->exists()) {
             return response()->json([
                 'status' => 0,
                 'info' => 'Plan number already exists'
@@ -40,11 +39,9 @@ class PlansController extends Controller
         }
 
         $plan = Plan::create([
-            'client_name' => $data['client_name'],
             'plan_number' => $plan_number,
-            'layout_id' => $data['layout'],
-            'address' => $data['address'] ?? null,
-            'plan_numbers' => '',
+            'layout_id' => $data['layout'] ?? null,
+            'year' => $year
         ]);
 
         if (empty($plan)) {
@@ -72,10 +69,8 @@ class PlansController extends Controller
     {
         $data = request()->all();
         $validator = Validator::make($data, [
-            'client_name' => ['required', 'string'], 
             'plan_number' => ['required', 'string'],
-            'address' => ['nullable', 'string'],
-            'layout' => ['required', 'string'],
+            'year' => ['required', 'string'],
         ]);
 
         if ($validator->fails()) {
@@ -93,9 +88,9 @@ class PlansController extends Controller
             ]);
         }
 
-        $plan->client_name = $data['client_name'];
+        $plan->year = $data['year'];
         $plan->plan_number = $data['plan_number'];
-        $plan->layout_id = $data['layout'];
+        $plan->layout_id = $data['layout'] ?? null;
 
         if ($plan->update()) {
             return response()->json([

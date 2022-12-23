@@ -15,11 +15,10 @@ class Plan extends Model
      * @var array<int, string>
      */
     protected $fillable = [
-        'client_name',
+        'year',
         'plot_numbers',
         'layout_id',
         'plan_number',
-        'address'
     ];
 
      /**

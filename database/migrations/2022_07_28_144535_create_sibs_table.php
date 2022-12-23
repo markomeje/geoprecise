@@ -19,9 +19,13 @@ return new class extends Migration
             $table->foreignId('survey_id')->nullable();
             $table->foreignId('client_id');
 
-            $table->text('address')->nullable();
+            $table->text('location')->nullable();
             $table->string('phone')->nullable();
             $table->foreignId('plan_id');
+
+            $table->string('plot_numbers')->nullable();
+            $table->foreignId('layout_id')->nullable();
+
             $table->boolean('approved')->default(false);
             $table->foreignId('approved_by')->nullable();
             $table->timestamp('approved_at')->nullable();

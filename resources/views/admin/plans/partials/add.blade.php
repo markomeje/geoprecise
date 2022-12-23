@@ -11,20 +11,20 @@
           @csrf
         <div class="modal-body">
           <div class="row">
-            <div class="form-group col-12">
-              <label class="text-muted">Client Name</label>
-              <input type="text" name="client_name" class="form-control client_name" placeholder="Enter client name">
-              <small class="client_name-error text-danger"></small>
+            <div class="form-group col-md-6">
+                <label class="text-muted">Plan Number</label>
+                <input type="text" name="plan_number" class="form-control plan_number" placeholder="Enter plan number">
+                <small class="plan_number-error text-danger"></small>
+            </div>
+            <div class="form-group col-md-6">
+              <label class="text-muted">Year</label>
+              <input type="text" name="year" class="form-control year" placeholder="Enter year">
+              <small class="year-error text-danger"></small>
             </div>
           </div>
           <div class="row">
-            <div class="form-group col-md-6">
-              <label class="text-muted">Plan Number</label>
-              <input type="text" name="plan_number" class="form-control plan_number" placeholder="Enter plan numbers">
-              <small class="plan_number-error text-danger"></small>
-            </div>
-            <div class="form-group col-md-6">
-              <label class="text-muted">Layout Name</label>
+            <div class="form-group col-12">
+              <label class="text-muted">Layout Name (Optional)</label>
               <select class="form-control layout" name="layout">
                 <option value="">Select layout</option>
                 <?php $layouts = \App\Models\Layout::all(); ?>

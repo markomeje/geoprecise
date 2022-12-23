@@ -17,11 +17,13 @@
             <div class="alert alert-danger border-0 text-white">No Site Inspection Bookings yet</div>
           @else
             <div class="row">
-              @foreach($sibs as $sib)
-                <div class="col-lg-4 col-md-6 col-12 mb-4">
-                  @include('admin.sibs.partials.card')
-                </div>
-              @endforeach
+                @foreach($sibs as $sib)
+                    @if(!empty($sib->plan))
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            @include('admin.sibs.partials.card')
+                        </div>
+                    @endif
+                @endforeach
             </div>
             {{ $sibs->links('vendor.pagination.default') }}
           @endif

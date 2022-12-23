@@ -3,11 +3,11 @@
   <div class="card-body">
     <div class="d-flex align-items-center mb-3 pb-3 border-bottom justify-content-between">
         <a href="{{ route('admin.sib.edit', ['id' => $sib->id]) }}" class="text-dark">
-            Plan Number ({{ $sib->plan ? $sib->plan->plan_number : 'Nill' }})
+            P{{ $sib->plan->plan_number}}/{{ $sib->plan->year}}
         </a>
         <a href="{{ route('admin.sib.edit', ['id' => $sib->id]) }}" class="text-{{ $approved ? 'success' : 'danger' }}">
-          {{ $approved ? 'Approved' : 'Unapproved' }}
-      </a>
+            {{ $approved ? 'Approved' : 'Unapproved' }}
+        </a>
     </div>
     <div class="d-flex align-items-center justify-content-between">
       @if(empty($sib->payment))

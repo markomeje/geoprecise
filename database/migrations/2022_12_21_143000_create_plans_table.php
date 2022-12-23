@@ -16,10 +16,9 @@ return new class extends Migration
         Schema::create('plans', function (Blueprint $table) {
             $table->id();
             $table->string('plan_number');
-            $table->string('address')->nullable();
-            $table->string('client_name');
-            $table->foreignId('layout_id');
-            $table->string('plot_numbers')->nullable();
+            $table->string('year');
+
+            $table->foreignId('layout_id')->nullable();
             $table->timestamps();
         });
     }

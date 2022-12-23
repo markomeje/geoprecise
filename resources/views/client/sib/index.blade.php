@@ -9,8 +9,8 @@
       @include('client.sib.partials.apply')
       <div class="container-fluid py-4">
         <div class="alert alert-info border-0 mb-4 text-white d-flex align-items-center">
-            <div class="text-white me-2">{{ $sibs->total() }} Site Inspection Bookings</div>
-            <div class="text-white cursor-pointer" data-bs-toggle="modal" data-bs-target="#apply-sib">Apply for Site Inspection</div>
+            <div class="text-white me-2">({{ $sibs->total() }}) Inspection(s)</div>
+            <div class="text-white cursor-pointer" data-bs-toggle="modal" data-bs-target="#apply-sib">Apply for Inspection</div>
         </div>
         <div class="">
           @if(empty($sibs->count()))
@@ -18,8 +18,11 @@
           @else
             <div class="row">
               @foreach($sibs as $sib)
-                <div class="col-lg-4 col-md-6 col-12 mb-4">
-                @include('client.sib.partials.card')
+                @if(!empty($sib->plan))
+                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                        @include('client.sib.partials.card')
+                    </div>
+                @endif
               @endforeach
             </div>
             {{ $sibs->links('vendor.pagination.default') }}

@@ -2,6 +2,11 @@
 
 	'use strict';
 
+    $('.edit-plan-form').submit('click', function() {
+        event.preventDefault();
+        handleForm({form: $(this), button: 'edit-plan-button', spinner: 'edit-plan-spinner', message: 'edit-plan-message'});
+    });
+
     $('.save-plan-form').submit('click', function() {
         event.preventDefault();
         handleForm({form: $(this), button: 'save-plan-button', spinner: 'save-plan-spinner', message: 'save-plan-message'});

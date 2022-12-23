@@ -40,9 +40,7 @@
                           @if(!empty($number))
                             <div class="col-12 col-md-6 col-xl-4 mb-4">
                               <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
-                                <small class="">
                                   {{ $number }}
-                                </small>
                                 @if(!$paid)
                                   <small class="text-danger tiny-font cursor-pointer client-delete-plot" data-url="{{ route('client.plot.delete', ['plot_number' => $number, 'model_id' => $model_id, 'model' => $model]) }}" data-message="Are you sure to delete?">
                                     <i class="icofont-trash"></i>

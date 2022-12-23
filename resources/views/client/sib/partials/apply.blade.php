@@ -11,10 +11,39 @@
                 @csrf
                 <div class="modal-body">
                 <div class="row">
-                    <div class="form-group col-12">
+                    <div class="form-group col-md-6">
                         <label class="text-muted">Plan Number</label>
                         <input class="form-control plan_number" type="text" name="plan_number" placeholder="Enter plan number">
                         <small class="plan_number-error text-danger"></small>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label class="text-muted">Year</label>
+                        <input class="form-control year" type="number" name="year" placeholder="Enter year">
+                        <small class="year-error text-danger"></small>
+                    </div>
+                </div>
+                <div class="bg-light px-3 pt-4 pb-3 border mb-4">
+                    <div class="alert alert-warning text-white">Please if plot in a Layout, select below else ignore.</div>
+                    <div class="row">
+                        <div class="form-group col-12">
+                            <label class="text-muted">Layout Name (Optional)</label>
+                            <select class="form-control layout" name="layout">
+                                <option value="">Select layout</option>
+                                <?php $layouts = \App\Models\Layout::all(); ?>
+                                @if(empty($layouts->count()))
+                                <option value="">No layouts listed</option>
+                                @else
+                                @foreach($layouts as $area)
+                                    @if($area->plots->count() > 0)
+                                        <option value="{{ $area->id }}">
+                                            {{ ucwords($area->name) }}
+                                        </option>
+                                    @endif
+                                @endforeach
+                                @endif
+                            </select>
+                            <small class="layout-error text-danger"></small>
+                        </div>
                     </div>
                 </div>
                 <div class="alert d-none apply-sib-message mb-2 text-white"></div>

@@ -17,14 +17,14 @@
                 @if(empty($plans->count()))
                 <div class="alert alert-info mt-4 border-0 text-white">No plans available</div>
                 @else
-                    <div class="p-4 bg-dark">
-                        <form method="get" action="" class="m-0">
-                            <input class="form-control form-control-lg m-0" type="search" name="query" placeholder="Search plans" value="{{ request()->get('query') }}">
-                        </form>
-                    </div>
+                {{-- <div class="p-4 bg-dark">
+                    <form method="get" action="" class="m-0">
+                        <input class="form-control form-control-lg m-0" type="search" name="query" placeholder="Search plans" value="{{ request()->get('query') }}">
+                    </form>
+                </div> --}}
                 <div class="row mt-4">
                     @foreach($plans as $plan)
-                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="col-12 col-md-4 col-lg-3 mb-4">
                         @include('admin.plans.partials.card')
                     </div>
                     @include('admin.plans.partials.edit')

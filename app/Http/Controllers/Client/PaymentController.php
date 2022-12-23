@@ -61,9 +61,11 @@ class PaymentController extends Controller
                     'info' => 'Payment record failed. Try again.'
                 ]);
             }else {
-                $data = ['amount' => $amount, 'email' => auth()->user()->email, 'reference' => $reference];
+                $callback_url = empty($data['callback_url']) ? route('client.payments') : $data['callback_url'];
+                $data = ['amount' => $amount, 'email' => auth()->user()->email, 'reference' => $reference, 'callback_url' => $callback_url];
                 $paysack = (new Paystack())->initialize($data);
-                $response = (false !== $paysack && isset($paysack->data)) ? ['status' => 1, 'info' => 'Redirecting, Click Ok', 'redirect' => $paysack->data->authorization_url] : ['status' => 0, 'info' => 'Payment initialization failed. Try again later.'];
+                $response = (false !== $paysack && isset($paysack->data)) ? [
+                    'status' => 1, 'info' => 'Redirecting, Click Ok', 'redirect' => $paysack->data->authorization_url] : ['status' => 0, 'info' => 'Payment initialization failed. Try again later.'];
                 return response()->json($response);
             }
         }catch(Exception $exception) {

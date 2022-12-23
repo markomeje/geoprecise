@@ -118,13 +118,13 @@
       });
     }
 
-      @if(!empty($reference))
-        @if(!empty($payment_verification))
-            @if(1 === $payment_verification['status'] ?? '')
-                window.location.replace('{{ route('client.payments') }}')
-            @endif
-        @endif
-      @endif
+      //@if(!empty($reference))
+        //@if(!empty($payment_verification))
+            //@if(1 === $payment_verification['status'] ?? '')
+                //window.location.replace()
+            //@endif
+        //@endif
+      //@endif
 
   </script>
 </body>

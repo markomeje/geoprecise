@@ -11,7 +11,7 @@ class SibsController extends Controller
     //
     public function index($limit = 20)
     {
-        return view('admin.sibs.index', ['title' => 'Site Inspection Bookings', 'sibs' => Sib::latest()->paginate($limit)]);
+        return view('admin.sibs.index', ['title' => 'Site Inspection Bookings', 'sibs' => Sib::latest('id')->paginate($limit)]);
     }
 
     //
