@@ -10,81 +10,70 @@
         @if(empty($sib) || empty($sib->client) || empty($sib->plan))
           <div class="alert alert-danger text-white mt-4 border-0">Unkown error. Details may have been deleted.</div>
         @else
-          <?php $plan = $sib->plan; $client_name = $sib->client->fullname; $model_id = $sib->id; $model = 'sib'; $layout = $plan->layout; $plot_numbers = $plan->plot_numbers; $client_id = $sib->client_id ?? 0; $approved = (boolean)$sib->approved === true; ?>
+          <?php $layout = $sib->layout; $plan = $sib->plan; $client_name = $sib->client->fullname; $model_id = $sib->id; $model = 'sib'; $plot_numbers = $sib->plot_numbers; $client_id = $sib->client_id ?? 0; $approved = (boolean)$sib->approved === true; $payment = $sib->payment; ?>
           <div class="row">
             <div class="col-12 col-lg-7">
                 <div class="alert alert-dark mb-4 text-white border-0 d-flex justify-content-between align-items-center">
-                <span>Site Inspection for {{ ucwords($client_name) }}</span>
-                @if($approved)
-                    <div class="text-success">Approved</div>
-                @else
-                  <span class="text-danger">Unapproved</span>
-                @endif
-              </div>
-              <?php $plot_numbers = str_contains($plot_numbers, '-') ? explode('-', $plot_numbers) : $plot_numbers; ?>
-              <div class="card mb-4">
-                <div class="card-header border-bottom d-flex justify-content-between align-items-center">
-                  <div class="text-dark">Plots Lifted</div>
-                </div>
-                <div class="card-body">
-                  
-                    @if(is_array($plot_numbers))
-                        <div class="row">
-                            @foreach($plot_numbers as $number)
-                                @if(!empty($number))
-                                <div class="col-12 col-md-6 mb-4">
-                                    <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
-                                        {{ $number }}
-                                    </div>
-                                </div>
-                                @endif
-                            @endforeach
-                        </div>
+                    <span>Site Inspection for {{ ucwords($client_name) }}</span>
+                    @if($approved)
+                        <div class="text-success">Approved</div>
                     @else
-                        <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
-                            {{ $plot_numbers }}
-                        </div>
+                        <span class="text-danger">Unapproved</span>
                     @endif
                 </div>
-              </div>
-              @if(!empty($plot_numbers))
-                <?php $payment = $sib->payment; $amount = $sib->form ? ($sib->form->amount ?? 0) : 0; $plots = is_array($plot_numbers) ? count($plot_numbers) : 1; $total_amount = $plots * (int)$amount; ?>
-                @include('admin.payments.partials.record')
-                @if(empty($payment))
-                    <a href="javascript:;" class="alert alert-danger">No Payment Yet</a>
+                @if(empty($layout) || empty($layout->plots))
+                    <?php $total_plots = 1; ?>
                 @else
-                  <?php $paid = 'paid' === strtolower($payment->status ?? ''); $payment_approved = true === (boolean)$payment->approved ?>
-                  <div class="card mb-4">
-                    <div class="card-header border-bottom d-flex justify-content-between align-items-center">
-                      <div class="text-dark">
-                        <span class="text-{{ $paid ? 'success' : 'danger' }}">{{ $paid ? 'Paid' : 'Unpaid' }}</span> NGN{{ number_format($total_amount) }}
-                      </div>
-                      <div class="text-{{ $payment_approved ? 'success' : 'danger' }}">
-                        ({{ $payment_approved ? 'Approved' : 'Unapproved' }})
-                      </div>
+                    <div class="card mb-4">
+                        <div class="card-header border-bottom bg-transparent">
+                        <div class="card-body">
+                            @if(empty($plot_numbers))
+                                <?php $total_plots = 0; ?>
+                                <div class="alert alert-danger border-0 text-white mb-0" role="alert">
+                                    No Plot Numbers Selected
+                                </div>
+                            @else
+                                <?php $plot_numbers = str_contains($plot_numbers, '-') ? explode('-', $plot_numbers) : $plot_numbers; $total_plots = is_array($plot_numbers) ? count($plot_numbers) : 1; ?>
+                                @if(is_array($plot_numbers))
+                                    <div class="row">
+                                        @foreach($plot_numbers as $number)
+                                            @if(!empty($number))
+                                                <div class="col-12 col-md-6 mb-4">
+                                                    <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
+                                                        <div class="">{{ $number }}</div>
+                                                    </div>
+                                                </div>
+                                            @endif
+                                        @endforeach
+                                    </div>
+                                @else
+                                    <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
+                                        <div class="">{{ $plot_numbers }}</div>
+                                    </div>
+                                @endif
+                            @endif
+                        </div>
                     </div>
-                    <div class="card-body">
-                      <div class="d-flex align-items-center">
-                        @if($paid)
-                          @if($payment_approved)
-                            <div class="alert alert-success w-100 m-0 text-white">Payment Approved on {{ date("F j, Y, g:i a", strtotime($payment->approved_at)) }}</div>
-                          @else
-                            <div class="approve-payment w-100" data-url="{{ route('admin.payment.approve', ['model' => $model, 'model_id' => $model_id, 'client_id' => $client_id, 'reference' => $payment->reference]) }}">
-                              <a href="javascript:;" class="btn btn-primary approve-payment-button mb-0 w-100">
-                                <img src="/images/spinner.svg" class="me-2 d-none approve-payment-spinner mb-1">Approve payment
-                              </a>
-                            </div>
-                          @endif
-                        @else
-                          <a href="javascript:;" class="alert alert-danger">No Payment Yet</a>
-                        @endif
-                      </div>
-                    </div>
-                  </div>
-                @endif
                 @endif
                 <div class="card mb-4">
-                    <div class="card-header border-bottom">Edit Site Inspection Booking Details</div>
+                    <div class="card-header border-bottom d-flex justify-content-between align-items-center">
+                        <div class="text-dark">Payment Details</div>
+                        <div class="text-success">
+                            {{ ucfirst($payment->status) }}
+                        </div>
+                    </div>
+                    <div class="card-body">
+                            @if(empty($payment))
+                                <div class="alert alert-danger text-white mb-0">No Payment yet.</div>
+                            @else
+                                <div class="alert alert-info  text-white mb-0">
+                                    NGN{{ number_format($payment->amount) }} {{ ucfirst($payment->status) }}
+                                </div>
+                            @endif
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-header border-bottom">Site Inspection Booking Details</div>
                     <div class="card-body">
                     <form class="save-sib-form" action="javascript:;" method="post" data-action="{{ route('admin.sib.save', ['id' => $sib->id]) }}">
                         @csrf
@@ -96,7 +85,7 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="">Address</label>
-                                <input id="" class="form-control address" type="text" name="address" placeholder="Enter address" value="{{ $sib->address }}" readonly>
+                                <input id="" class="form-control address" type="text" name="address" placeholder="Enter address" value="{{ $sib->address ?? 'Nill' }}" readonly>
                                 <small class="address-error text-danger"></small>
                             </div>
                         </div>
