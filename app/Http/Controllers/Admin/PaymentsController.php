@@ -207,5 +207,4 @@ class PaymentsController extends Controller
         $payments = Payment::search(['amount', 'type', 'client.fullname', 'created_at', 'status', 'verified'], $query)->paginate(24);
         return view('admin.payments.search')->with(['payments' => $payments]);
     }
-
 }

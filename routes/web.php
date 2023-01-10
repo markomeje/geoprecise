@@ -271,6 +271,8 @@ Route::domain(env('CLIENT_URL'))->middleware(['auth', 'client'])->group(function
     Route::get('/', [\App\Http\Controllers\Client\DashboardController::class, 'index'])->name('client');
     Route::get('/profile', [\App\Http\Controllers\Client\ProfileController::class, 'index'])->name('client.profile');
 
+    Route::get('pdf', [\App\Http\Controllers\Client\PdfController::class, 'template'])->name('pdf.template');
+
     Route::prefix('documents')->group(function () {
         Route::get('/', [\App\Http\Controllers\DocumentsController::class, 'index'])->name('client.documents');
         Route::post('/upload', [\App\Http\Controllers\DocumentsController::class, 'upload'])->name('client.document.upload');
