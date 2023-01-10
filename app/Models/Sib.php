@@ -25,6 +25,7 @@ class Sib extends Model
         'plot_numbers',
         'location',
         'phone',
+        'layout_id',
         
         'approved',
         'approved_by',

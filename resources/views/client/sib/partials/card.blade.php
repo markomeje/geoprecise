@@ -3,7 +3,7 @@
     url('/argon/images/3.jpg'); object-fit: cover;">
         <?php $plan = $sib->plan; ?>
 		<div class="d-flex justify-content-between align-items-center mb-3 pb-3 border-bottom">
-			<a href="{{ route('client.sib.edit', ['id' => $sib->id]) }}" class="text-white">P{{ $plan->plan_number }}/{{ $plan->year }}</a>
+			<a href="{{ route('client.sib.edit', ['id' => $sib->id]) }}" class="text-white">P{{ $plan->plan_number ?? 'Nill' }}/{{ $plan->year ?? 'Nill' }}</a>
 			<?php $paid = empty($sib->payment) ? false  : ('paid' === strtolower($sib->payment->status)); ?>
 			<a href="{{ route('client.sib.edit', ['id' => $sib->id]) }}" class="text-{{ $paid ? 'success' : 'danger' }}">
 				{{ $paid ? 'Paid' : 'Not paid' }}

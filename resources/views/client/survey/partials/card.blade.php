@@ -7,7 +7,7 @@
 			@if(empty($plot_numbers))
 				<a href="{{ route('client.survey.edit', ['id' => $survey->id]) }}" class="text-white">No Plot(s)</a>
 			@else
-				<a href="javascript:;" class="text-white">
+				<a href="{{ route('client.survey.edit', ['id' => $survey->id]) }}" class="text-white">
 					{{ is_array($plot_numbers) ? count($plot_numbers).' Plots' : 'One Plot' }}
 				</a>
 			@endif

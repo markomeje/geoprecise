@@ -21,7 +21,7 @@
             </div>
             <div class="row">
               @foreach($surveys as $survey)
-                <div class="col-xl-3 col-md-6 col-12 mb-4">
+                <div class="col-md-6 col-12 col-lg-4 mb-4">
                   @include('client.survey.partials.card')
                 </div>
               @endforeach

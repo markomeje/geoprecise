@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Client;
 use App\Http\Controllers\Controller;
-use App\Models\{Survey, Form, Sib};
+use App\Models\{Survey, Form, Sib, Plan};
 use Validator;
 use Exception;
 
@@ -21,7 +21,7 @@ class SurveyController extends Controller
     {
         $data = request()->all();
         $validator = Validator::make($data, [
-            'survey' => ['required', 'integer'],
+            'survey_type' => ['required', 'integer'],
             'client_name' => ['required', 'string', 'max:255'], 
             'client_address' => ['required', 'string', 'max:255'], 
             'client_phone' => ['required', 'string', 'max:17'],
@@ -41,6 +41,7 @@ class SurveyController extends Controller
         }
 
         try{
+            $form_id = $data['survey_type'];
             $survey = Survey::create([
                 'client_name' => $data['client_name'],
                 'client_address' => $data['client_address'],
@@ -50,7 +51,7 @@ class SurveyController extends Controller
                 'seller_address' => $data['seller_address'],
                 'seller_phone' => $data['seller_phone'],
 
-                'form_id' => $data['survey'],
+                'form_id' => $form_id,
                 'layout_id' => $data['layout'],
                 'completed' => false,
                 'client_id' => auth()->user()->client->id,
@@ -228,12 +229,20 @@ class SurveyController extends Controller
             $survey->approved = false;
 
             if($survey->update()){
-                if(empty($survey->sib)){ 
+                if(empty($survey->sib)){
+                    $last = Plan::latest()->first();
+                    $plan = Plan::create([
+                        'plan_number' => empty($last->plan_number) ? 1 :  $last->plan_number + 1,
+                        'year' => now()->year
+                    ]);
+
                     Sib::create([
                         'client_id' => auth()->user()->client->id,
                         'survey_id' => $survey->id,
                         'form_id' => Form::where(['code' => 'SIB'])->pluck('id')->toArray()[0],
-                        'recorder_type' => 'client'
+                        'plot_numbers' => $survey->plot_numbers,
+                        'layout_id' => $survey->layout_id,
+                        'plan_id' => $plan->id,
                     ]);
                 }
 

@@ -107,7 +107,7 @@
                 @endif
               </div>
               <div class="">
-                <form class="survey-form" method="post" action="javascript:;" data-action="{{ route('client.survey.agree', ['id' => $survey->id]) }}">
+                <form class="survey-form" method="post" action="javascript:;" data-action="{{ route('client.survey.agree', ['id' => $survey->id, 'code' => $survey->code]) }}">
                   <div class="alert d-none survey-message mb-4 text-white"></div>
                   @if($paid)
                       @if($approved)

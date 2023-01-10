@@ -19,7 +19,7 @@
                     <div class="form-group input-group-lg col-12">
                       <label class="text-dark">Survey Type</label>
                       <?php $surveys = \App\Models\Form::where(['category' => 'surveys'])->get(); ?>
-                      <select name="survey" class="form-control survey">
+                      <select name="survey_type" class="form-control survey_type">
                         <option value="">Select survey</option>
                         @if(empty($surveys->count()))
                           <option value="">Nill</option>
@@ -32,7 +32,7 @@
                           @endforeach
                         @endif
                       </select>
-                      <small class="survey-error text-danger"></small>
+                      <small class="survey_type-error text-danger"></small>
                     </div>
                   </div>
                 </div>
