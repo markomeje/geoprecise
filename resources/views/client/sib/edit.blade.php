@@ -26,12 +26,14 @@
           <div class="row">
             <div class="col-12 col-lg-7 col-xl-6">
                 <div class="alert alert-dark mb-4 text-white border-0 d-flex justify-content-between align-items-center">
-                    <span class="">Inspection (P{{ $plan->plan_number  }}/{{ $plan->year }})</span>
-                    @if($approved)
-                        <div class="text-success">Approved</div>
-                    @else
-                        <span class="text-danger">Unapproved</span>
-                    @endif
+                    <div>
+                        <span class="">Site Inspection with Plot Number P{{ $plan->plan_number  }}/{{ $plan->year }}</span>
+                        @if($approved)
+                            (<div class="text-success">Approved</div>)
+                        @else
+                            (<span class="text-danger">Unapproved</span>)
+                        @endif
+                    </div>
                 </div>
                 @if(empty($layout) || empty($layout->plots))
                     <?php $total_plots = 1; ?>
