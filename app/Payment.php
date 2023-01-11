@@ -2,7 +2,9 @@
 
 namespace App;
 use App\Paystack;
+use App\Mail\RecieptMail;
 use Exception;
+use Mail;
 
 
 class Payment 
@@ -44,6 +46,17 @@ class Payment
         	if('success' === strtolower($status)) {
         		$payment->status = 'paid';
         		$payment->update();
+
+                if (!empty(auth()->user()->email)) {
+                    $email = 'markomejeonline@gmail.com';
+                    $mail = new RecieptMail([
+                        'amount' => $payment->amount, 
+                        'email' => $email, 
+                    ]);
+
+                    Mail::to($email)->send($mail);
+                }
+                
         		return [
         			'status' => 1, 
         			'info' => 'Payment verified successfully.'

@@ -9,7 +9,7 @@ use Mail;
 class PdfController extends Controller
 {
     //
-    public function template($email = null, $content = [])
+    public function template($email = null)
     {
         $email = 'markomejeonline@gmail.com';
         $mail = new RecieptMail([
@@ -20,7 +20,6 @@ class PdfController extends Controller
         Mail::to($email)->send($mail);
   
         // $pdf = Pdf::loadView('emails.reciept', $data);
-
         // return $pdf->stream('reciept.pdf');
         // Mail::send('emails.reciept', $data, function($message) use($data, $email) {
         //     $message->to($email, $email)->subject('Geoprecise Payment Reciept');

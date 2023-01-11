@@ -36,6 +36,6 @@ class RecieptMail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.reciept')->subject('Geoprecise Payment Reciept');
+        return $this->markdown('emails.reciept')->subject('Geoprecise Payment Receipt');
     }
 }

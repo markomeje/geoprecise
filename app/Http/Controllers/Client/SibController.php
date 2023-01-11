@@ -40,7 +40,7 @@ class SibController extends Controller
         if (empty($plan)) {
             return response()->json([
                 'status' => 0,
-                'info' => 'Invalid plan',
+                'info' => 'Invalid plan number',
             ]);
         }
 

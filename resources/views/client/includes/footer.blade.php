@@ -118,13 +118,13 @@
       });
     }
 
-      //@if(!empty($reference))
-        //@if(!empty($payment_verification))
-            //@if(1 === $payment_verification['status'] ?? '')
-                //window.location.replace()
-            //@endif
-        //@endif
-      //@endif
+    @if(request()->get('reference') && request()->get('trxref'))
+        @if(!empty($payment_verification))
+            @if(1 === $payment_verification['status'] ?? '')
+                window.location.replace("{{ explode('?', url()->full())[0] }}");
+            @endif
+        @endif
+    @endif
 
   </script>
 </body>
