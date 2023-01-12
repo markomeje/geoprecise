@@ -38,11 +38,19 @@ class UserSeeder extends Seeder
         }
 
         if (app()->environment(['production'])) {
+            // User::create([
+            //     'phone' => '08063388846', 
+            //     'email' => 'nnam.ug@gmail.com', 
+            //     'role' => 'admin', 
+            //     'password' => Hash::make('!ow-pre@360'), 
+            //     'status' => 'active'
+            // ]);
+
             User::create([
-                'phone' => '08063388846', 
-                'email' => 'nnam.ug@gmail.com', 
+                'phone' => '08158212666', 
+                'email' => 'markomejeonline@gmail.com', 
                 'role' => 'admin', 
-                'password' => Hash::make('!ow-pre@360'), 
+                'password' => Hash::make('!tochukwu360@!.'), 
                 'status' => 'active'
             ]);
         }
