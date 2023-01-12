@@ -15,7 +15,9 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        if (app()->environment(['production'])) {}
+        if (app()->environment(['local'])) {
+            User::truncate();
+        }
     }
 }
 
