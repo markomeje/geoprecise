@@ -15,9 +15,26 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        if (app()->environment(['local'])) {}
 
-        if (app()->environment(['production'])) {}
+        if (app()->environment(['production'])) {
+            User::create([
+                'phone' => '08063388846', 
+                'email' => 'hello@geoprecisegroup.com', 
+                'role' => 'admin', 
+                'password' => Hash::make('!ow-pre@360'), 
+                'status' => 'active',
+                'verified' => true
+            ]);
+
+            User::create([
+                'phone' => '08158212666', 
+                'email' => 'markomejeonline@gmail.com', 
+                'role' => 'admin', 
+                'password' => Hash::make('!tochukwu360@!.'), 
+                'status' => 'active',
+                'verified' => true
+            ]);
+        }
     }
 }
 
