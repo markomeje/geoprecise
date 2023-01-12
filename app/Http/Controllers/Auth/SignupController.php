@@ -45,7 +45,7 @@ class SignupController extends Controller
             ]);
         }
 
-        // try {
+        try {
             $user = User::create([
                 'email' => $data['email'],
                 'phone' => $data['phone'],
@@ -68,7 +68,6 @@ class SignupController extends Controller
                 'status' => 'complete',
                 'occupation' => $data['occupation'],
                 'state' => $data['state'] ?? null,
-                'dob' => $data['dob'],
                 'city' => $data['city'] ?? null,
                 'address' => $data['address'],
             ]);
@@ -79,12 +78,12 @@ class SignupController extends Controller
                 'redirect' => route('signup.ui', ['success' => 'true']),
             ]);
 
-        // } catch (Exception $error) {
-        //     return response()->json([
-        //         'status' => 0,
-        //         'info' => 'Unknown error. Try again later',
-        //     ]);
-        // }
+        } catch (Exception $error) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Unknown error. Try again later',
+            ]);
+        }
     }
 
     public static function sendVerificationEmail($user_id = 0, $email = '', $token = '')
