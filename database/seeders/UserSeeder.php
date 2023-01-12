@@ -18,7 +18,7 @@ class UserSeeder extends Seeder
 
         if (app()->environment(['production'])) {
             User::create([
-                'phone' => '08063388846', 
+                'phone' => '08060545860', 
                 'email' => 'hello@geoprecisegroup.com', 
                 'role' => 'admin', 
                 'password' => Hash::make('!ow-pre@360'), 
