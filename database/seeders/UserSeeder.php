@@ -15,7 +15,7 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-
+        User::truncate();
         if (app()->environment(['production'])) {
             User::create([
                 'phone' => '08060545860', 
