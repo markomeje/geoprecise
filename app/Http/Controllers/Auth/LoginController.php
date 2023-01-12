@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
-use App\Models\User;
+use App\Models\{User, Verification};
 use Validator;
 
 class LoginController extends Controller
@@ -39,21 +39,19 @@ class LoginController extends Controller
             ];
         }
 
-        $verifications = $user->verifications;
-        if (empty($verifications)) {
+        $verification = Verification::where(['type' => 'phone', 'user_id' => $user->id])->latest()->get()->first();
+        if (empty($verification)) {
             return response()->json([
                 'status' => 0,
-                'info' => 'No verification yet. Please verify your phone number or email. A verification code and link was sent to your phone and email respectively during signup.',
+                'info' => 'Please verify your phone number. A verification code was sent to your phone during signup.',
             ]);
         }
 
-        foreach ($verifications as $verification) {
-            if ($verification->type === 'phone' && true !== (boolean)$verification->verified && app()->environment('production')) {
-                return response()->json([
-                    'status' => 0,
-                    'info' => 'Please verify your phone number. A verification code was sent to your phone during signup.',
-                ]);
-            }
+        if (true !== (boolean)$verification->verified && app()->environment('production')) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Please verify your phone number. A verification code was sent to your phone during signup.',
+            ]);
         }
 
         if (auth()->attempt(['password' => $data['password'], 'phone' => $phone], true)) {
