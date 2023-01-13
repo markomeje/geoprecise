@@ -29,10 +29,12 @@
                 <div class="text-white">Survey or Lifting Application (<span class="text-{{ $approved ? 'success' : 'danger' }}">{{ $approved ? 'Approved' : 'Unapproved' }}</span>)</div>
               </div>
                 <div class="">
-                    @if($payment_approved)
-                        <div class="alert alert-success border-0 w-100 m-0 text-white mb-4">Payment of <span class="font-weight-bolder">NGN{{ number_format($payment->amount) }}</span> Approved on {{ date("F j, Y, g:i a", strtotime($payment->approved_at)) }}</div>
-                    @else
-                        <div class="alert alert-success border-0 mb-4 text-white">Payment of <span class="font-weight-bolder">NGN{{ number_format($payment->amount) }} </span> Recieved. Awaiting Approval</div>
+                    @if(!empty($payment))
+                        @if($payment_approved)
+                            <div class="alert alert-success border-0 w-100 m-0 text-white mb-4">Payment of <span class="font-weight-bolder">NGN{{ number_format($payment->amount) }}</span> Approved on {{ date("F j, Y, g:i a", strtotime($payment->approved_at)) }}</div>
+                        @else
+                            <div class="alert alert-success border-0 mb-4 text-white">Payment of <span class="font-weight-bolder">NGN{{ number_format($payment->amount) }} </span> Recieved. Awaiting Approval</div>
+                        @endif
                     @endif
                 </div>
               <div class="card mb-4">
