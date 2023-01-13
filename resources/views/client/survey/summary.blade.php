@@ -28,6 +28,13 @@
               <div class="alert alert-dark mb-4 text-white border-0 d-flex justify-content-between align-items-center">
                 <div class="text-white">Survey or Lifting Application (<span class="text-{{ $approved ? 'success' : 'danger' }}">{{ $approved ? 'Approved' : 'Unapproved' }}</span>)</div>
               </div>
+                <div class="">
+                    @if($payment_approved)
+                        <div class="alert alert-success border-0 w-100 m-0 text-white mb-4">Payment of <span class="font-weight-bolder">NGN{{ number_format($payment->amount) }}</span> Approved on {{ date("F j, Y, g:i a", strtotime($payment->approved_at)) }}</div>
+                    @else
+                        <div class="alert alert-success border-0 mb-4 text-white">Payment of <span class="font-weight-bolder">NGN{{ number_format($payment->amount) }} </span> Recieved. Awaiting Approval</div>
+                    @endif
+                </div>
               <div class="card mb-4">
                 <div class="card-body pb-2">
                   @if(empty($survey->plot_numbers))
@@ -179,7 +186,7 @@
                             @csrf
                             <input class="form-control" type="hidden" name="model" value="{{ $model }}">
                             <input class="form-control" type="hidden" name="model_id" value="{{ $model_id }}">
-                            <input class="form-control" type="hidden" name="callback_url" value="{{ route('client.sib.edit', ['id' => $model_id])}}">
+                            <input class="form-control" type="hidden" name="callback_url" value="{{ route('client.survey.summary', ['id' => $model_id])}}">
                             <div class="form-group">
                                 <div class="form-group">
                                     <label for="">Total Amount (NGN)</label>
@@ -204,14 +211,6 @@
                             </button>
                         </form>
                     </div>
-                  </div>
-                @else
-                  <div class="">
-                    @if($payment_approved)
-                      <div class="alert alert-success w-100 m-0 text-white mb-4">Payment of <span class="font-weight-bolder">NGN{{ number_format($payment->amount) }}</span> Approved on {{ date("F j, Y, g:i a", strtotime($payment->approved_at)) }}</div>
-                    @else
-                      <div class="alert alert-dark mb-4 text-white">Payment of <span class="font-weight-bolder">NGN{{ number_format($payment->amount) }}</span> Awaiting Approval</div>
-                    @endif
                   </div>
                 @endif
               @endif
