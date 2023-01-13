@@ -29,11 +29,13 @@
             <div class="alert alert-danger border-0 text-white">No payments yet</div>
           @else
             <div class="row">
-              @foreach($payments as $payment)
-                <div class="col-lg-4 col-md-6 col-12 mb-4">
-                  @include('admin.payments.partials.card')
-                </div>
-              @endforeach
+                @foreach($payments as $payment)
+                    @if(!empty($payment->client))
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            @include('admin.payments.partials.card')
+                        </div>
+                    @endif
+                @endforeach
             </div>
             {{ $payments->links('vendor.pagination.default') }}
           @endif

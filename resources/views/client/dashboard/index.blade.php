@@ -1,5 +1,5 @@
+@include('client.includes.header')
 <div class="dashboard">
-  @include('client.includes.header')
       <div class="min-height-300 bg-primary position-absolute w-100"></div>
       @include('client.includes.aside')
       <main class="main-content position-relative border-radius-lg ">
