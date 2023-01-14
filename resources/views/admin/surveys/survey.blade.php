@@ -27,24 +27,24 @@
                       </div>
                     </div>
                     <div class="card-body pb-2">
-                      <div class="row d-flex flex-wrap">
                         <?php $plot_numbers = str_contains($plot_numbers, '-') ? explode('-', $plot_numbers) : $plot_numbers; ?>
                         @if(is_array($plot_numbers))
-                          @foreach($plot_numbers as $number)
-                            @if(!empty($number))
-                              <div class="col-12 col-md-6 col-lg-4 mb-4">
-                                <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
-                                  {{ $number }}
-                                </div>
-                              </div>
-                            @endif
-                          @endforeach
+                            <div class="row d-flex flex-wrap">
+                                @foreach($plot_numbers as $number)
+                                    @if(!empty($number))
+                                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                                        <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
+                                        {{ $number }}
+                                        </div>
+                                    </div>
+                                    @endif
+                                @endforeach
+                            </div>
                         @else
-                          <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
-                            {{ $plot_numbers }}
-                          </div>
+                            <div class="bg-dark rounded-0 p-3 text-white mb-3">
+                                {{ $plot_numbers }}
+                            </div>
                         @endif
-                      </div>
                     </div>
                   </div>
                 @endif

@@ -37,7 +37,7 @@ class SurveysController extends Controller
     public function search()
     {
         $query = request()->get('search');
-        $surveys = Survey::search(['client.fullname', 'seller_name', 'seller_address', 'client.phone', 'client_name', 'client_address', 'approval_name', 'approval_address'], $query)->paginate(24);
+        $surveys = Survey::search(['client.fullname', 'seller_name', 'seller_address', 'client.phone', 'client_name', 'client_address', 'approved_by'], $query)->paginate(24);
         return view('admin.surveys.search')->with(['surveys' => $surveys]);
     }
 
