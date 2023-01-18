@@ -15,8 +15,7 @@ class AdminMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-        $role = auth()->user()->role;
-        if ('admin' === $role || 'superadmin' === $role) {
+        if (in_array(auth()->user()->role, ['admin', 'developer', 'superadmin'])) {
             return $next($request);
         }
 

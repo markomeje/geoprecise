@@ -18,9 +18,11 @@
             @else
               <div class="row">
                 @foreach($staffs as $staff)
-                  <div class="col-xl-4 col-md-4 col-lg-6 col-12 mb-4">
-                    @include('admin.staff.partials.card')
-                  </div>
+                    @if($staff->role !== 'superadmin' || $staff->role !== 'developer')
+                        <div class="col-xl-4 col-md-4 col-lg-6 col-12 mb-4">
+                            @include('admin.staff.partials.card')
+                        </div>
+                  @endif
                 @endforeach
               </div>
               {{ $staffs->links('vendor.pagination.default') }}

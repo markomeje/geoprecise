@@ -19,9 +19,11 @@
           @else
             <div class="row">
               @foreach($roles as $role)
-                <div class="col-xl-3 col-md-4 col-12 mb-4">
-                  @include('admin.roles.partials.card')
-                </div>
+                @if($role->name !== 'developer' || $role->name !== 'superadmin')
+                    <div class="col-xl-3 col-md-4 col-12 mb-4">
+                    @include('admin.roles.partials.card')
+                    </div>
+                @endif
               @endforeach
             </div>
           @endif
