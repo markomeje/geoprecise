@@ -2,9 +2,13 @@
   <?php $approved = (boolean)($sib->approved ?? false) === true; ?>
   <div class="card-body">
     <div class="d-flex align-items-center mb-3 pb-3 border-bottom justify-content-between">
-        <a href="{{ route('admin.sib.edit', ['id' => $sib->id]) }}" class="text-dark">
-            P{{ $sib->plan->plan_number}}/{{ $sib->plan->year}}
-        </a>
+        @if(empty($sib->plan))
+            <a href="{{ route('admin.sib.edit', ['id' => $sib->id]) }}" class="text-dark">Nill</a>
+        @else
+            <a href="{{ route('admin.sib.edit', ['id' => $sib->id]) }}" class="text-dark">
+                P{{ $sib->plan->plan_number}}/{{ $sib->plan->year}}
+            </a>
+        @endif
         <a href="{{ route('admin.sib.edit', ['id' => $sib->id]) }}" class="text-{{ $approved ? 'success' : 'danger' }}">
             {{ $approved ? 'Approved' : 'Unapproved' }}
         </a>

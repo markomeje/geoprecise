@@ -26,32 +26,33 @@
                 @else
                     <div class="card mb-4">
                         <div class="card-header border-bottom bg-transparent">
-                        <div class="card-body">
-                            @if(empty($plot_numbers))
-                                <?php $total_plots = 0; ?>
-                                <div class="alert alert-danger border-0 text-white mb-0" role="alert">
-                                    No Plot Numbers Selected
-                                </div>
-                            @else
-                                <?php $plot_numbers = str_contains($plot_numbers, '-') ? explode('-', $plot_numbers) : $plot_numbers; $total_plots = is_array($plot_numbers) ? count($plot_numbers) : 1; ?>
-                                @if(is_array($plot_numbers))
-                                    <div class="row">
-                                        @foreach($plot_numbers as $number)
-                                            @if(!empty($number))
-                                                <div class="col-12 col-md-6 mb-4">
-                                                    <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
-                                                        <div class="">{{ $number }}</div>
-                                                    </div>
-                                                </div>
-                                            @endif
-                                        @endforeach
+                            <div class="card-body">
+                                @if(empty($plot_numbers))
+                                    <?php $total_plots = 0; ?>
+                                    <div class="alert alert-danger border-0 text-white mb-0" role="alert">
+                                        No Plot Numbers Selected
                                     </div>
                                 @else
-                                    <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
-                                        <div class="">{{ $plot_numbers }}</div>
-                                    </div>
+                                    <?php $plot_numbers = str_contains($plot_numbers, '-') ? explode('-', $plot_numbers) : $plot_numbers; $total_plots = is_array($plot_numbers) ? count($plot_numbers) : 1; ?>
+                                    @if(is_array($plot_numbers))
+                                        <div class="row">
+                                            @foreach($plot_numbers as $number)
+                                                @if(!empty($number))
+                                                    <div class="col-12 col-md-6 mb-4">
+                                                        <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
+                                                            <div class="">{{ $number }}</div>
+                                                        </div>
+                                                    </div>
+                                                @endif
+                                            @endforeach
+                                        </div>
+                                    @else
+                                        <div class="bg-dark rounded-0 p-3 text-white">
+                                            {{ $plot_numbers }}
+                                        </div>
+                                    @endif
                                 @endif
-                            @endif
+                            </div>
                         </div>
                     </div>
                 @endif
@@ -59,17 +60,17 @@
                     <div class="card-header border-bottom d-flex justify-content-between align-items-center">
                         <div class="text-dark">Payment Details</div>
                         <div class="text-success">
-                            {{ ucfirst($payment->status) }}
+                            {{ ucfirst($payment->status ?? null) }}
                         </div>
                     </div>
                     <div class="card-body">
-                            @if(empty($payment))
-                                <div class="alert alert-danger text-white mb-0">No Payment yet.</div>
-                            @else
-                                <div class="alert alert-info  text-white mb-0">
-                                    NGN{{ number_format($payment->amount) }} {{ ucfirst($payment->status) }}
-                                </div>
-                            @endif
+                        @if(empty($payment))
+                            <div class="alert alert-danger text-white mb-0">No Payment yet.</div>
+                        @else
+                            <div class="alert alert-info  text-white mb-0">
+                                NGN{{ number_format($payment->amount) }} {{ ucfirst($payment->status) }}
+                            </div>
+                        @endif
                     </div>
                 </div>
                 <div class="card mb-4">
@@ -96,19 +97,23 @@
                         </div>
                         <div class="alert d-none save-sib-message text-white"></div>
                         @if($approved)
-                        <div class="alert alert-success text-white my-4">Approved on {{ date("F j, Y, g:i a", strtotime($sib->approved_at)) }}</div>
+                            <div class="alert alert-success text-white my-4">Approved on {{ date("F j, Y, g:i a", strtotime($sib->approved_at)) }}</div>
                         @else
-                        <label class="text-muted">Approve?</label>
-                        <div class="form-group p-3 border mb-4 rounded">
-                            <div class="form-check form-switch m-0">
-                            <input class="form-check-input" name="approved" type="checkbox" id="approved" value="1" {{ $approved ? 'checked' : '' }}>
-                            <label class="form-check-label" for="approved">{{ $approved ? 'Approved' : 'Approve Site Inspection' }}</label>
-                            </div>
-                            <small class="approved-error text-danger"></small>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-lg w-100 save-sib-button mb-0">
-                            <img src="/images/spinner.svg" class="me-2 d-none save-sib-spinner mb-1">Save
-                        </button>
+                            @cannot('approve', ['sibs'])
+                                <label class="text-muted">Approve?</label>
+                                <div class="form-group p-3 border mb-4 rounded">
+                                    <div class="form-check form-switch m-0">
+                                    <input class="form-check-input" name="approved" type="checkbox" id="approved" value="1" {{ $approved ? 'checked' : '' }}>
+                                    <label class="form-check-label" for="approved">{{ $approved ? 'Approved' : 'Approve Site Inspection' }}</label>
+                                    </div>
+                                    <small class="approved-error text-danger"></small>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-lg w-100 save-sib-button mb-0">
+                                    <img src="/images/spinner.svg" class="me-2 d-none save-sib-spinner mb-1">Approve
+                                </button>
+                            @else
+                                <div class="alert alert-danger text-white mb-4">You do not have permission to approve Site Inspection.</div>
+                            @endcan
                         @endif
                     </form>
                     </div>

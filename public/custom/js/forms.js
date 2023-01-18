@@ -2,6 +2,16 @@
 
 	'use strict';
 
+    $('.password-reset-form').submit('click', function() {
+        event.preventDefault();
+        handleForm({form: $(this), button: 'password-reset-button', spinner: 'password-reset-spinner', message: 'password-reset-message'});
+    });
+
+    $('.process-reset-form').submit('click', function() {
+        event.preventDefault();
+        handleForm({form: $(this), button: 'process-reset-button', spinner: 'process-reset-spinner', message: 'process-reset-message'});
+    });
+
     $('.edit-plan-form').submit('click', function() {
         event.preventDefault();
         handleForm({form: $(this), button: 'edit-plan-button', spinner: 'edit-plan-spinner', message: 'edit-plan-message'});

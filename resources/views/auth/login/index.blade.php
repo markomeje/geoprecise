@@ -1,5 +1,6 @@
 <div class="">
 	@include('auth.includes.header')
+    @include('auth.password.partials.process')
 	<!-- End Navbar -->
   <main class="main-content  mt-0">
     <section>
@@ -24,7 +25,10 @@
                         <small class="phone-error text-danger"></small>
                     </div>
                     <div class="form-group">
-                    	<label class="text-muted">Password</label>
+                    	<label class="text-muted d-flex justify-content-between">
+                            <span>Password</span>
+                            <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#process-reset">Forgot Password?</a>
+                        </label>
                       <input type="password" class="form-control form-control-lg password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" aria-label="Password" name="password">
                       <small class="password-error text-danger"></small>
                     </div>

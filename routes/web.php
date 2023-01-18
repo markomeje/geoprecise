@@ -139,6 +139,12 @@ Route::middleware(['web'])->domain(env('AUTH_URL'))->group(function() {
     Route::middleware(['guest'])->group(function() {
         Route::get('/login', [\App\Http\Controllers\Auth\LoginController::class, 'index'])->name('login.ui');
 
+        Route::get('/password', [\App\Http\Controllers\Auth\PasswordController::class, 'index'])->name('password');
+        Route::get('/password/reset', [\App\Http\Controllers\Auth\PasswordController::class, 'reset'])->name('password.reset');
+        Route::post('/password/process', [\App\Http\Controllers\Auth\PasswordController::class, 'process'])->name('reset.process');
+
+        Route::post('/password/reset/update', [\App\Http\Controllers\Auth\PasswordController::class, 'update'])->name('password.reset.update');
+
         Route::get('/signup', [\App\Http\Controllers\Auth\SignupController::class, 'index'])->name('signup.ui');
         Route::post('/signup', [\App\Http\Controllers\Auth\SignupController::class, 'signup'])->name('auth.signup');
 

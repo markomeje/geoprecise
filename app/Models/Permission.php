@@ -45,6 +45,28 @@ class Permission extends Model
             ], 
             'description' => 'All Payment Records',
         ],
+        'roles' => [
+            'actions' => [
+                'view' => 'View Roles',
+                'add' => 'Add a role',
+            ], 
+            'description' => 'All Roles',
+        ],
+        'staff' => [
+            'actions' => [
+                'view' => 'View staff',
+                'create' => 'Add staff',
+                'update' => 'Update staff record',
+            ], 
+            'description' => 'All staff',
+        ],
+        'sibs' => [
+            'actions' => [
+                'view' => 'View Site Inspection',
+                'approve' => 'Approve Site Inspection',
+            ], 
+            'description' => 'Site Inspections',
+        ],
     ];
 
     /**
