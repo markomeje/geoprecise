@@ -15,7 +15,7 @@ jobs:
       run: composer install --prefer-dist --no-interaction
     
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
         server: ${{ secrets.GEOPRECISE_FTP_HOST }}
         username: ${{ secrets.GEOPRECISE_FTP_USERNAME }}
