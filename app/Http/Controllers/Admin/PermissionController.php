@@ -50,7 +50,7 @@ class PermissionController extends Controller
         return response()->json([
             'status' => 1, 
             'info' => 'Operation successful.',
-            'redirect' => ''
+            'redirect' => route('admin.roles')
         ]); 
     }
 

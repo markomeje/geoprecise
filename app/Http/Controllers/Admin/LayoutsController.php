@@ -10,7 +10,7 @@ class LayoutsController extends Controller
     //
     public function index()
     {
-        return view('admin.layouts.index', ['title' => 'All Layouts', 'layouts' => Layout::paginate(20)]);
+        return view('admin.layouts.index', ['title' => 'All Layouts', 'layouts' => Layout::latest()->paginate(20)]);
     }
 
     //
@@ -26,14 +26,6 @@ class LayoutsController extends Controller
             return response()->json([
                 'status' => 0,
                 'error' => $validator->errors()
-            ]);
-        }
-
-        $client = auth()->user()->client;
-        if (empty($client)) {
-            return response()->json([
-                'status' => 0,
-                'info' => 'An error occured. Try again later.',
             ]);
         }
 
