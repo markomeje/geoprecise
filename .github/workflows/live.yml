@@ -15,10 +15,11 @@ jobs:
       run: composer install --prefer-dist --no-interaction
     
     - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
-        server: geoprecisegroup.com
+        server: ${{ secrets.GEOPRECISE_FTP_HOST }}
         username: ${{ secrets.GEOPRECISE_FTP_USERNAME }}
         password: ${{ secrets.GEOPRECISE_FTP_PASSWORD }}
         server-dir: public_html/
-        protocol: ftps
+        protocol: ftps-legacy
+        security: strict
