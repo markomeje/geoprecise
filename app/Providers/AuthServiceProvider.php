@@ -41,11 +41,11 @@ class AuthServiceProvider extends ServiceProvider
             return [$functions, strtolower($role->name)];
         };
 
-        $allowed = Role::$withFullAccess;
-        collect(['view', 'create', 'approve', 'update'])->map(function ($action) use ($allowed, $getPermissions) {
-            Gate::define($action, function(User $user, $resource) use ($allowed, $getPermissions) {
+        $rolesWithFullAccess = Role::$withFullAccess;
+        collect(['view', 'create', 'approve', 'update'])->map(function ($action) use ($rolesWithFullAccess, $getPermissions) {
+            Gate::define($action, function(User $user, $resource) use ($rolesWithFullAccess, $getPermissions) {
                 [$functions, $role] = $getPermissions($user, $resource);
-                return in_array('view', $functions) || in_array($role, $allowed);
+                return in_array('view', $functions) || in_array($role, $rolesWithFullAccess);
             });
         });
     }
