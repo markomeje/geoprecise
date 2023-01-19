@@ -20,6 +20,11 @@ class Role extends Model
     ];
 
     /**
+     * Roles with full access role
+     */
+    public static $withFullAccess = ['superadmin', 'developer'];
+
+    /**
      * A role may have many permissions
      *
      * @var array<string, string>
