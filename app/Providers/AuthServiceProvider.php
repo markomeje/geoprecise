@@ -22,11 +22,9 @@ class AuthServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerPolicies();
-        $permissions = function($user, $resource) {
+        $getPermissions = function($user, $resource) {
             $staff = $user->staff;
-            if (empty($staff)) {
-                return [[], ''];
-            }
+            if (empty($staff)) return [[], ''];
 
             $role = $staff->role;
             if (empty($role->permissions) || !$role->permissions()->exists()) {
@@ -44,29 +42,11 @@ class AuthServiceProvider extends ServiceProvider
         };
 
         $allowed = Role::$withFullAccess;
-        Gate::define('view', function(User $user, $resource) use($allowed, $permissions) {
-            [$functions, $role] = $permissions($user, $resource);
-            return in_array('view', $functions) || in_array($role, $allowed);
-        });
-
-        Gate::define('create', function(User $user, $resource) use($allowed, $permissions) {
-            [$functions, $role] = $permissions($user, $resource);
-            return in_array('create', $functions) || in_array($role, $allowed);
-        });
-
-        Gate::define('update', function(User $user, $resource) use($allowed, $permissions) {
-            [$functions, $role] = $permissions($user, $resource);
-            return in_array('update', $functions) || in_array($role, $allowed);
-        });
-
-        Gate::define('delete', function(User $user, $resource) use($allowed, $permissions) {
-            [$functions, $role] = $permissions($user, $resource);
-            return in_array('delete', $functions) || in_array($role, $allowed);   
-        });
-
-        Gate::define('approve', function(User $user, $resource) use($allowed, $permissions) {
-            [$functions, $role] = $permissions($user, $resource);
-            return in_array('approve', $functions) || in_array($role, $allowed);   
+        collect(['view', 'create', 'approve', 'update'])->map(function ($action) use ($allowed, $getPermissions) {
+            Gate::define($action, function(User $user, $resource) use ($allowed, $getPermissions) {
+                [$functions, $role] = $getPermissions($user, $resource);
+                return in_array('view', $functions) || in_array($role, $allowed);
+            });
         });
     }
 }
