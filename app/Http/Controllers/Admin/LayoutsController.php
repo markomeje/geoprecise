@@ -29,6 +29,13 @@ class LayoutsController extends Controller
             ]);
         }
 
+        if(!empty(Layout::where(['name' => $data['name']])->first())) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Layout already exists',
+            ]);
+        }
+
         $Layout = Layout::create([
             'name' => $data['name'],
             'description' => $data['description'] ?? null,
