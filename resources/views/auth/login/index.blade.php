@@ -25,13 +25,20 @@
                         <small class="phone-error text-danger"></small>
                     </div>
                     <div class="form-group">
-                    	<label class="text-muted d-flex justify-content-between">
+                        <label class="text-muted d-flex justify-content-between">
                             <span>Password</span>
                             <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#process-reset">Forgot Password?</a>
                         </label>
-                      <input type="password" class="form-control form-control-lg password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" aria-label="Password" name="password">
-                      <small class="password-error text-danger"></small>
+                        <div class="input-group mb-3">
+                            <input type="password" class="form-control form-control-lg password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" aria-label="Password" name="password" id="password">
+                            <small class="password-error text-danger"></small>
+                            <span class="input-group-text" onclick="password_show_hide();">
+                            <i class="fas fa-eye" id="show_eye"></i>
+                            <i class="fas fa-eye-slash d-none" id="hide_eye"></i>
+                            </span>
+                        </div>
                     </div>
+                    
                     <div class="form-check form-switch mb-3">
                       <input class="form-check-input" type="checkbox" id="rememberme">
                       <label class="form-check-label" for="rememberme">Remember me</label>
