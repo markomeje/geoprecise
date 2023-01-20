@@ -62,11 +62,11 @@
                     <div class="alert alert-danger border-0 text-white mb-4">No payments yet.</div>
                   @else
                     <div class="row">
-                      @foreach($payments as $payment)
-                        <div class="col-12 mb-4">
-                          @include('admin.payments.partials.card')
-                        </div>
-                      @endforeach
+                        @foreach($payments as $payment)
+                            <div class="col-12 mb-4">
+                                @include('admin.payments.partials.card')
+                            </div>
+                        @endforeach
                     </div>
                   @endif
                 </div>

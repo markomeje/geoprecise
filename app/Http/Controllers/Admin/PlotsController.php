@@ -32,14 +32,6 @@ class PlotsController extends Controller
             ]);
         }
 
-        $client = auth()->user()->client;
-        if (empty($client)) {
-            return response()->json([
-                'status' => 0,
-                'info' => 'An error occured. Try again later.',
-            ]);
-        }
-
         $plot = Plot::create([
             'name' => $data['name'],
             'description' => $data['description'] ?? null,

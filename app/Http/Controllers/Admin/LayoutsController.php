@@ -94,7 +94,7 @@ class LayoutsController extends Controller
     public function layout($id)
     {
         $layout = Layout::find($id);
-        if (empty($layout) || empty($layout->plots->count())) {
+        if (empty($layout)) {
             return view('admin.layouts.layout', ['title' => 'Invalid Layout', 'plots' => '', 'layout' => '']);
         }
 

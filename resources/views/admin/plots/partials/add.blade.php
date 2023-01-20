@@ -32,7 +32,7 @@
                   <option value="">No layouts listed</option>
                 @else
                   @foreach($layouts as $area)
-                    <option value="{{ $area->id }}" {{ isset($layout) && $layout->id == $area->id ? 'selected' : '' }}>
+                    <option value="{{ $area->id }}" {{ !empty($layout->id)  && $layout->id == $area->id ? 'selected' : '' }}>
                       {{ ucwords($area->name) }}
                     </option>
                   @endforeach

@@ -10,12 +10,12 @@
       </div>
     </div>
     <div class="d-flex align-items-center justify-content-between">
-      <div class="text-{{ $approved ? 'success' : 'danger'}}">
-        {{ $approved ? 'Approved' : 'Unapproved' }}
-      </div>
-      <div class="text-dark">
-        {{ ucwords(empty($payment->type) ? 'Card' : $payment->type) }}
-      </div>
+        <div class="text-{{ $approved ? 'success' : 'danger'}}">
+            ({{ $approved ? 'Approved' : 'Unapproved' }})
+        </div>
+        <div class="text-dark">
+            {{ ucwords(empty($payment->type) ? 'Card' : $payment->type) }}
+        </div>
     </div>
   </div>
   <div class="card-footer bg-primary">
@@ -25,9 +25,9 @@
       </small>
       @if($approved)
         <div class="bg-success text-center small-circle rounded-circle text-white" style="">
-          <div class="small-circle-icon">
-            <i class="icofont-tick-mark"></i>
-          </div>
+            <div class="small-circle-icon">
+                <i class="icofont-tick-mark"></i>
+            </div>
         </div>
       @else
         <div class="bg-danger text-center small-circle rounded-circle text-white" style="">
