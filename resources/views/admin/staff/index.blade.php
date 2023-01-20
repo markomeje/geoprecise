@@ -18,11 +18,11 @@
             @else
               <div class="row">
                 @foreach($staffs as $staff)
-                    @if($staff->role !== 'superadmin' || $staff->role !== 'developer')
+                    @if(!empty($staff->role) && auth()->id() !== $staff->user_id)
                         <div class="col-xl-4 col-md-4 col-lg-6 col-12 mb-4">
                             @include('admin.staff.partials.card')
                         </div>
-                  @endif
+                    @endif
                 @endforeach
               </div>
               {{ $staffs->links('vendor.pagination.default') }}
