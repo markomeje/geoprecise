@@ -158,10 +158,10 @@
                             </button>
                           </div>
                         @else
-                                <div class="alert alert-danger text-white" role="alert">
-                                    You do not have the permission to approve surveys
-                                </div>
-                            @endcan
+                            <div class="alert alert-danger text-white" role="alert">
+                                You do not have the permission to approve surveys
+                            </div>
+                        @endcan
                       @endif
                     @endif
                   </div>

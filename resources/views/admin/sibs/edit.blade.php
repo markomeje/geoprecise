@@ -99,7 +99,7 @@
                         @if($approved)
                             <div class="alert alert-success text-white my-4">Approved on {{ date("F j, Y, g:i a", strtotime($sib->approved_at)) }}</div>
                         @else
-                            @cannot('approve', ['sibs'])
+                            @can('approve', ['sibs'])
                                 <label class="text-muted">Approve?</label>
                                 <div class="form-group p-3 border mb-4 rounded">
                                     <div class="form-check form-switch m-0">
@@ -129,7 +129,7 @@
                         @foreach($sibs as $sib)
                             @if($sib->id !== $model_id)
                                 <div class="col-lg-12 col-md-4 col-12 mb-4">
-                                @include('admin.sibs.partials.card')
+                                    @include('admin.sibs.partials.card')
                                 </div>
                             @endif
                         @endforeach
