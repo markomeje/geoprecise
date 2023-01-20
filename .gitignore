@@ -14,3 +14,4 @@ yarn-error.log
 auth.txt
 /.idea
 /.vscode
+.DS_Store
