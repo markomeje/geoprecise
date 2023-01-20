@@ -61,6 +61,7 @@ class StaffController extends Controller
                 'title' => $data['title'] ?? null,
                 'user_id' => $user_id,
                 'role_id' => $data['role'],
+                'created_by' => auth()->id(),
             ]);
 
             return response()->json([
