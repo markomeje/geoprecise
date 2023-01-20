@@ -45,7 +45,7 @@ class AuthServiceProvider extends ServiceProvider
         collect(['view', 'create', 'approve', 'update'])->map(function ($action) use ($rolesWithFullAccess, $getPermissions) {
             Gate::define($action, function(User $user, $resource) use ($rolesWithFullAccess, $getPermissions) {
                 [$functions, $role] = $getPermissions($user, $resource);
-                return in_array('view', $functions) || in_array($role, $rolesWithFullAccess);
+                return in_array($action, $functions) || in_array($role, $rolesWithFullAccess);
             });
         });
     }

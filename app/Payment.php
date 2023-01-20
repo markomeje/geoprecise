@@ -48,7 +48,7 @@ class Payment
         		$payment->update();
 
                 if (!empty(auth()->user()->email)) {
-                    $email = 'markomejeonline@gmail.com';
+                    $email = auth()->user()->email;
                     $mail = new RecieptMail([
                         'amount' => $payment->amount, 
                         'email' => $email, 
