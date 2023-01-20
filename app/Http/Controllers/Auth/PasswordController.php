@@ -40,7 +40,6 @@ class PasswordController extends Controller
         try{
             $code = rand(123456, 456789);
             $user = User::where(['phone' => $data['phone_number']])->first();
-
             $reset = Password::create([
                 'user_id' => $user->id ?? null,
                 'code' => $code,
@@ -113,7 +112,7 @@ class PasswordController extends Controller
             if (empty($user)) {
                 return response()->json([
                     'status' => 0,
-                    'info' => 'Invalid operation.'
+                    'info' => 'Invalid user account. Try again later.'
                 ]);
             }
 

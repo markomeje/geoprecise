@@ -46,9 +46,17 @@ class SignupController extends Controller
         }
 
         try {
+            $phone = str_replace(' ', '', $data['phone']);
+            if (User::where(['phone' => $phone])->exists()) {
+                return response()->json([
+                    'status' => 0,
+                    'info' => 'Phone number already exists',
+                ]);
+            }
+
             $user = User::create([
                 'email' => $data['email'],
-                'phone' => $data['phone'],
+                'phone' => $phone,
                 'password' => Hash::make($data['password']),
                 'role' => 'client',
                 'status' => 'inactive',
