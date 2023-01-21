@@ -24,6 +24,17 @@ class SibsController extends Controller
     public function save($id = 0)
     {
         $data = request()->all(['approved']);
+        $validator = Validator::make($data, [
+            'approved' => ['required', 'boolean'], 
+        ], ['approved.required' => 'Please click this switch first to continue.']);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'status' => 0,
+                'error' => $validator->errors()
+            ]);
+        }
+
         $sib = Sib::find($id);
         if (empty($sib)) {
             return response()->json([
@@ -50,7 +61,7 @@ class SibsController extends Controller
         if ($approved && (boolean)$sib->payment->approved !== true) {
             return response()->json([
                 'status' => 0,
-                'info' => 'Please approved payment first.',
+                'info' => 'Please approve payment first.',
             ]);
         }
 

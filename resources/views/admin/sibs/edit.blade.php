@@ -56,22 +56,41 @@
                         </div>
                     </div>
                 @endif
-                <div class="card mb-4">
-                    <div class="card-header border-bottom d-flex justify-content-between align-items-center">
-                        <div class="text-dark">Payment Details</div>
-                        <div class="text-success">
-                            {{ ucfirst($payment->status ?? null) }}
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        @if(empty($payment))
-                            <div class="alert alert-danger text-white mb-0">No Payment yet.</div>
-                        @else
-                            <div class="alert alert-info  text-white mb-0">
-                                NGN{{ number_format($payment->amount) }} {{ ucfirst($payment->status) }}
+                <div class="">
+                    @if(empty($payment))
+                        <div class="alert alert-danger text-white mb-0">No Payment yet.</div>
+                    @else
+                        <?php $payment_approved = true === (boolean)$payment->approved; ?>
+                        <div class="card mb-4">
+                            <div class="card-header border-bottom d-flex justify-content-between align-items-center">
+                            <div class="text-dark">
+                                NGN{{ number_format($payment->amount) }} <span class="text-success">{{ ucfirst($payment->status) }}</span>
                             </div>
-                        @endif
-                    </div>
+                            <div class="text-dark">
+                                <span class="text-{{ $payment_approved ? 'success' : 'danger' }}">{{ $payment_approved ? 'Approved' : 'Unapproved' }}</span>
+                            </div>
+                            </div>
+                            <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                @if($payment_approved)
+                                    <div class="alert alert-success w-100 m-0 text-white">Payment Approved on {{ date("F j, Y, g:i a", strtotime($payment->approved_at)) }}</div>
+                                @else
+                                    @can('approve', ['payments'])
+                                        <div class="approve-payment w-100" data-url="{{ route('admin.payment.approve', ['model' => $model, 'model_id' => $model_id, 'client_id' => $client_id, 'reference' => $payment->reference]) }}">
+                                            <a href="javascript:;" class="btn btn-primary approve-payment-button btn-block mb-0 w-100">
+                                                <img src="/images/spinner.svg" class="me-2 d-none approve-payment-spinner mb-1">Approve payment
+                                            </a>
+                                        </div>
+                                    @else
+                                        <div class="alert alert-danger text-white mb-0 w-100" role="alert">
+                                            You do not have the permission to approve payments
+                                        </div>
+                                    @endcan
+                                @endif
+                            </div>
+                            </div>
+                        </div>
+                    @endif
                 </div>
                 <div class="card mb-4">
                     <div class="card-header border-bottom">Site Inspection Booking Details</div>
@@ -86,7 +105,7 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="">Address</label>
-                                <input id="" class="form-control address" type="text" name="address" placeholder="Enter address" value="{{ $sib->address ?? 'Nill' }}" readonly>
+                                <input id="" class="form-control address" type="text" name="address" placeholder="Enter address" value="{{ $sib->address ?? '' }}" readonly>
                                 <small class="address-error text-danger"></small>
                             </div>
                         </div>
@@ -97,7 +116,7 @@
                         </div>
                         <div class="alert d-none save-sib-message text-white"></div>
                         @if($approved)
-                            <div class="alert alert-success text-white my-4">Approved on {{ date("F j, Y, g:i a", strtotime($sib->approved_at)) }}</div>
+                            <div class="alert alert-success text-white my-4">Inspection Approved on {{ date("F j, Y, g:i a", strtotime($sib->approved_at)) }}</div>
                         @else
                             @can('approve', ['sibs'])
                                 <label class="text-muted">Approve?</label>
@@ -109,10 +128,10 @@
                                     <small class="approved-error text-danger"></small>
                                 </div>
                                 <button type="submit" class="btn btn-primary btn-lg w-100 save-sib-button mb-0">
-                                    <img src="/images/spinner.svg" class="me-2 d-none save-sib-spinner mb-1">Approve
+                                    <img src="/images/spinner.svg" class="me-2 d-none save-sib-spinner mb-1">Approve Inspection
                                 </button>
                             @else
-                                <div class="alert alert-danger text-white mb-4">You do not have permission to approve Site Inspection.</div>
+                                <div class="alert alert-danger text-white mb-0 mt-4">You do not have permission to approve Site Inspection.</div>
                             @endcan
                         @endif
                     </form>

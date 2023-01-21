@@ -85,9 +85,10 @@ class SibController extends Controller
         $data = request()->all();
         $validator = Validator::make($data, [
             'phone' => ['required'],
-            'location' => ['nullable', 'string'],
+            'location' => ['required', 'string'],
             'comments' => ['nullable', 'string'],
-        ]);
+            'agree' => ['required'],
+        ], ['agree.required' => 'You have to agree to our terms and conditions']);
 
         if ($validator->fails()) {
             return response()->json([
@@ -104,20 +105,7 @@ class SibController extends Controller
             ]);
         }
 
-        $completed = true === (boolean)($data['completed'] ?? false);
-        if ($completed && empty($sib->payment)) {
-            return response()->json([
-                'status' => 0,
-                'info' => 'Incomplete application. No payment.',
-            ]);
-        }
-
-        if ($completed && $sib->payment->status !== 'paid') {
-            return response()->json([
-                'status' => 0,
-                'info' => 'Incomplete application. Invalid payment',
-            ]);
-        }
+        $completed = true === (boolean)($data['agree'] ?? false);
 
         try{
             $sib->comments = $data['comments'] ?? '';

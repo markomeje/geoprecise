@@ -91,7 +91,7 @@
                         </div>
                     </div>
                 @endif
-                @if(!empty($total_plots))
+                @if(!empty($total_plots) && $completed)
                     <?php $amount = $sib->form ? ($sib->form->amount ?? 0) : 0; $total_amount = $total_plots * (int)$amount; ?>
                     @if(empty($payment))
                         <div class="card border-0 mb-4">
@@ -139,50 +139,53 @@
                             @endif
                         </div>
                     @endif
+                @else
+                    <div class="alert alert-info mb-4 text-white">After adding plot numbers and inspection details below, you can make payment.</div>
                 @endif
                 <div class="card mb-4">
                     <div class="card-header border-bottom">Site Inspection Booking Details</div>
                     <div class="card-body">
-                    <form class="save-sib-form" action="javascript:;" method="post" data-action="{{ route('client.sib.save', ['id' => $sib->id]) }}">
-                        @csrf
-                        <div class="row">
-                            <div class="form-group col-md-6">
-                                <label for="">Phone</label>
-                                <input id="" class="form-control phone" type="text" name="phone" placeholder="Enter phone" value="{{ $sib->phone }}" {{ $completed ? 'readonly' : '' }}>
-                                <small class="phone-error text-danger"></small>
-                            </div>
-                            <div class="form-group col-md-6">
-                                <label for="">Location</label>
-                                <input id="" class="form-control location" type="text" name="location" placeholder="Enter location" value="{{ $sib->location }}" {{ $completed ? 'readonly' : '' }}>
-                                <small class="location-error text-danger"></small>
-                            </div>
-                        </div>
-                        <div class="'form-group mb-3">
-                            <label class="text-muted">Comments</label>
-                            <textarea class="form-control comments" rows="4" name="comments" placeholder="Enter any comments" {{ $completed ? 'readonly' : '' }}>{{ $sib->comments }}</textarea>
-                            <small class="comments-error text-danger"></small>
-                        </div>
-                        <div class="alert d-none save-sib-message text-white"></div>
-                        @if($completed)
-                            @if($approved)
-                                <div class="alert alert-success text-white my-4">Approved on {{ date("F j, Y, g:i a", strtotime($sib->approved_at)) }}</div>
-                            @else
-                                <div class="alert alert-success text-white my-4">Awaiting Inspection Approval</div>
-                            @endif
-                        @else
-                            <label class="text-muted">Completed?</label>
-                            <div class="form-group bg-warning p-3 border mb-4 rounded">
-                                <div class="form-check form-switch m-0">
-                                    <input class="form-check-input" name="completed" type="checkbox" id="completed" value="1" {{ $approved ? 'checked' : '' }}>
-                                    <label class="form-check-label text-white" for="completed">Final Submission?</label>
+                        <div class="alert alert-info text-white">Please fill in or cross check the details below and click save inorder to make payment.</div>
+                        <form class="save-sib-form" action="javascript:;" method="post" data-action="{{ route('client.sib.save', ['id' => $sib->id]) }}">
+                            @csrf
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label for="">Phone</label>
+                                    <input id="" class="form-control phone" type="text" name="phone" placeholder="Enter phone" value="{{ empty($sib->phone) ? auth()->user()->phone : $sib->phone }}" {{ $completed || $paid ? 'readonly' : '' }}>
+                                    <small class="phone-error text-danger"></small>
                                 </div>
-                                <small class="completed-error text-danger"></small>
+                                <div class="form-group col-md-6">
+                                    <label for="">Location</label>
+                                    <input id="" class="form-control location" type="text" name="location" placeholder="Enter location" value="{{ empty($sib->location) ? auth()->user()->client->address : $sib->location }}" {{ $completed || $paid ? 'readonly' : '' }}>
+                                    <small class="location-error text-danger"></small>
+                                </div>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-lg w-100 save-sib-button mb-0">
-                                <img src="/images/spinner.svg" class="me-2 d-none save-sib-spinner mb-1">Save
-                            </button>
-                        @endif
-                    </form>
+                            <div class="'form-group mb-3">
+                                <label class="text-muted">Comments (optional)</label>
+                                <textarea class="form-control comments" rows="4" name="comments" placeholder="Enter any comments" {{ $completed || $paid ? 'readonly' : '' }}>{{ $sib->comments }}</textarea>
+                                <small class="comments-error text-danger"></small>
+                            </div>
+                            <div class="alert d-none save-sib-message text-white"></div>
+                            <label class="text-muted">Terms and Conditions</label>
+                            <div class="form-group bg-transparent p-3 border mb-4 rounded">
+                                <div class="form-check form-switch m-0">
+                                    <input class="form-check-input" name="agree" type="checkbox" id="agree" value="1" {{ $completed ? 'checked' : '' }}>
+                                    <label class="form-check-label text-dark" for="agree">I hereby accept the <a href="javascript:;" class="text-bolder" target="_blank">Terms and Conditions</a></label>
+                                </div>
+                                <small class="agree-error text-danger"></small>
+                            </div>
+                            @if($completed)
+                                @if($approved)
+                                    <div class="alert alert-success text-white my-4">Approved on {{ date("F j, Y, g:i a", strtotime($sib->approved_at)) }}</div>
+                                @else
+                                    <div class="alert alert-success text-white mt-4 mb-0">Inspection details saved. {{ !$paid ? 'Please make payment above.' : '' }}</div>
+                                @endif
+                            @else
+                                <button type="submit" class="btn btn-primary btn-lg w-100 save-sib-button mb-0">
+                                    <img src="/images/spinner.svg" class="me-2 d-none save-sib-spinner mb-1">Save
+                                </button>
+                            @endif
+                        </form>
                     </div>
                 </div>
             </div>

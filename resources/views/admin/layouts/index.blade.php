@@ -8,10 +8,10 @@
       <!-- End Navbar -->
       <div class="container-fluid py-4">
         <div class="bg-white p-4 rounded">
-            <div class="alert alert-dark border-0 d-flex align-items-center">
-            <a class="text-white me-2" href="javascript:;">
-                {{ \App\Models\Layout::count() }} Layouts</a>
-            <a class="text-white" href="javascript:;" data-bs-toggle="modal" data-bs-target="#add-layout">Add Layout</a>
+            <div class="alert alert-dark border-0 d-flex align-items-center mb-4">
+                <a class="text-white me-2" href="javascript:;">
+                    {{ \App\Models\Layout::count() }} Layouts</a>
+                <a class="text-white" href="javascript:;" data-bs-toggle="modal" data-bs-target="#add-layout">Add Layout</a>
             </div>
             @include('admin.layouts.partials.add')
             <div class="bg-white border rounded mb-4 px-4 pt-4">
