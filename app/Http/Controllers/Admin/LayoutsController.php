@@ -12,7 +12,6 @@ class LayoutsController extends Controller
     {
         $query = request()->get('search');
         $layouts = empty($query) ? Layout::latest()->paginate(20) : Layout::search(['name', 'address'], $query)->paginate(24);
-        //dd($layouts);
         return view('admin.layouts.index', ['title' => 'All Layouts', 'layouts' => $layouts]);
     }
 
@@ -23,6 +22,7 @@ class LayoutsController extends Controller
         $validator = Validator::make($data, [
             'name' => ['required', 'string'], 
             'description' => ['nullable', 'string'],
+            'address' => ['nullable', 'string'],
         ]);
 
         if ($validator->fails()) {
@@ -39,12 +39,13 @@ class LayoutsController extends Controller
             ]);
         }
 
-        $Layout = Layout::create([
+        $layout = Layout::create([
             'name' => $data['name'],
             'description' => $data['description'] ?? null,
+            'address' => $data['address'] ?? null,
         ]);
 
-        if (empty($Layout)) {
+        if (empty($layout)) {
             return response()->json([
                 'status' => 0,
                 'info' => 'Unknown error. Try again later',

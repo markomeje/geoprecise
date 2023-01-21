@@ -35,7 +35,7 @@
           <div class="row">
             <div class="form-group">
               <label class="text-muted">Address</label>
-              <textarea class="form-control address" name="address" rows="4" placeholder="Layout address">{{ $layout->address }}</textarea>
+              <textarea class="form-control address" name="address" rows="3" placeholder="Layout address">{{ $layout->address }}</textarea>
               <small class="address-error text-danger"></small>
             </div>
           </div>
