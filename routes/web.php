@@ -204,6 +204,8 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
         Route::post('/toggle/status/{id}', [\App\Http\Controllers\Admin\LayoutsController::class, 'status'])->name('admin.layout.toggle.status');
         Route::get('/{id}/{name}', [\App\Http\Controllers\Admin\LayoutsController::class, 'layout'])->name('admin.layout');
 
+        Route::get('/search', [\App\Http\Controllers\Admin\LayoutsController::class, 'search'])->name('admin.layouts.search');
+
         Route::post('/delete/{id}', [\App\Http\Controllers\Admin\LayoutsController::class, 'delete'])->name('admin.layout.delete');
     });
 

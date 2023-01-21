@@ -10,7 +10,10 @@ class LayoutsController extends Controller
     //
     public function index()
     {
-        return view('admin.layouts.index', ['title' => 'All Layouts', 'layouts' => Layout::latest()->paginate(20)]);
+        $query = request()->get('search');
+        $layouts = empty($query) ? Layout::latest()->paginate(20) : Layout::search(['name', 'address'], $query)->paginate(24);
+        //dd($layouts);
+        return view('admin.layouts.index', ['title' => 'All Layouts', 'layouts' => $layouts]);
     }
 
     //
@@ -105,7 +108,7 @@ class LayoutsController extends Controller
             return view('admin.layouts.layout', ['title' => 'Invalid Layout', 'plots' => '', 'layout' => '']);
         }
 
-        return view('admin.layouts.layout', ['title' => ucwords($layout->name), 'plots' => $layout->plots->paginate(32), 'layout' => $layout]);
+        return view('admin.layouts.layout', ['title' => ucwords($layout->name), 'plots' => $layout->plots()->latest()->paginate(32), 'layout' => $layout]);
     }
 
     public function status($id = 0)
@@ -163,5 +166,13 @@ class LayoutsController extends Controller
             'status' => 0,
             'info' => 'Unknown error. Try again.',
         ]);
+    }
+
+    //
+    public function search()
+    {
+        $query = request()->get('search');
+        $layouts = Layout::search(['name', 'address'], $query)->paginate(24);
+        return view('admin.layouts.search', ['title' => 'Search Layouts', 'layouts' => $layouts]);
     }
 }
