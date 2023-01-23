@@ -18,8 +18,6 @@ class PlotsController extends Controller
     {
         $data = request()->all();
         $validator = Validator::make($data, [
-            'name' => ['required', 'string'], 
-            'description' => ['nullable', 'string'],
             'category' => ['required', 'string'],
             'layout' => ['required', 'string'],
             'number' => ['required', 'string'],
@@ -33,8 +31,8 @@ class PlotsController extends Controller
         }
 
         $plot = Plot::create([
-            'name' => $data['name'],
-            'description' => $data['description'] ?? null,
+            'name' => '-',
+            'description' => null,
             'category' => $data['category'],
             'layout_id' => $data['layout'],
             'number' => $data['number'],
@@ -59,8 +57,6 @@ class PlotsController extends Controller
     {
         $data = request()->all();
         $validator = Validator::make($data, [
-            'name' => ['required', 'string'], 
-            'description' => ['nullable', 'string'],
             'category' => ['required', 'string'],
             'layout' => ['required', 'string'],
             'number' => ['required', 'string'],
@@ -81,8 +77,8 @@ class PlotsController extends Controller
             ]);
         }
 
-        $plot->name = $data['name'];
-        $plot->description = $data['description'] ?? null;
+        $plot->name = '-';
+        $plot->description = null;
         $plot->number = $data['number'];
         $plot->category = $data['category'];
         $plot->layout_id = $data['layout'];

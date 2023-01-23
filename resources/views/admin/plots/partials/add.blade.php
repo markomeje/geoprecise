@@ -12,33 +12,9 @@
         <div class="modal-body">
           <div class="row">
             <div class="form-group col-md-6">
-              <label class="text-muted">Name</label>
-              <input type="text" name="name" class="form-control name" placeholder="Enter plot name">
-              <small class="name-error text-danger"></small>
-            </div>
-            <div class="form-group col-md-6">
               <label class="text-muted">Plot number</label>
               <input type="text" name="number" class="form-control number" placeholder="Enter plot number">
               <small class="number-error text-danger"></small>
-            </div>
-          </div>
-          <div class="row">
-            <div class="form-group col-md-6">
-              <label class="text-muted">Layout Name</label>
-              <select class="form-control layout" name="layout">
-                <option value="">Select layout</option>
-                <?php $layouts = \App\Models\Layout::all(); ?>
-                @if(empty($layouts))
-                  <option value="">No layouts listed</option>
-                @else
-                  @foreach($layouts as $area)
-                    <option value="{{ $area->id }}" {{ !empty($layout->id)  && $layout->id == $area->id ? 'selected' : '' }}>
-                      {{ ucwords($area->name) }}
-                    </option>
-                  @endforeach
-                @endif
-              </select>
-              <small class="layout-error text-danger"></small>
             </div>
             <div class="form-group col-md-6">
               <label class="text-muted">Category</label>
@@ -58,10 +34,24 @@
               <small class="category-error text-danger"></small>
             </div>
           </div>
-          <div class="form-group mb-3">
-            <label class="text-muted">Description (optional)</label>
-            <textarea class="form-control description" name="description" rows="4" placeholder="Layout description"></textarea>
-            <small class="description-error text-danger"></small>
+          <div class="row">
+            <div class="form-group col-12">
+              <label class="text-muted">Layout Name</label>
+              <select class="form-control layout" name="layout">
+                <option value="">Select layout</option>
+                <?php $layouts = \App\Models\Layout::all(); ?>
+                @if(empty($layouts))
+                  <option value="">No layouts listed</option>
+                @else
+                  @foreach($layouts as $area)
+                    <option value="{{ $area->id }}" {{ !empty($layout->id)  && $layout->id == $area->id ? 'selected' : '' }}>
+                      {{ ucwords($area->name) }}
+                    </option>
+                  @endforeach
+                @endif
+              </select>
+              <small class="layout-error text-danger"></small>
+            </div>
           </div>
           <div class="alert d-none add-plot-message mb-2 text-white"></div>
         </div>

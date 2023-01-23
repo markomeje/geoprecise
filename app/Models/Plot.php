@@ -28,17 +28,18 @@ class Plot extends Model
      * @var array<int, string>
      */
     public const CATEGORIES = [
-        'residential',
+        'residential Plots',
         'open space',
-        'commercial',
-        'public',
+        'commercial Plots',
+        'Public Plots',
         'full commercial',
-        'utility',
+        'Utility Plots',
         'health',
         'Commercial/Residential',
         'refuse',
         'security',
         'primary',
+        'Corner Shop'
     ];
 
     /**
