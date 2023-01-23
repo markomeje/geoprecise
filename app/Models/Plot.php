@@ -35,6 +35,7 @@ class Plot extends Model
         'full commercial',
         'utility',
         'health',
+        'Commercial/Residential',
         'refuse',
         'security',
         'primary',
