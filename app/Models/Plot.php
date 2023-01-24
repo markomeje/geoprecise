@@ -28,18 +28,23 @@ class Plot extends Model
      * @var array<int, string>
      */
     public const CATEGORIES = [
-        'residential Plots',
-        'open space',
-        'commercial Plots',
-        'Public Plots',
-        'full commercial',
-        'Utility Plots',
-        'health',
-        'Commercial/Residential',
-        'refuse',
-        'security',
-        'primary',
-        'Corner Shop'
+        'Residential Plots' => '',
+        'Open space' => 'OS',
+        'Commercial Plots' => 'C',
+        'Public Use Plots' => 'P',
+        'full commercial' => 'P',
+        'Police Post' => 'PP',
+        'Utility Plots' => 'UT',
+        'Health' => '',
+        'Commercial Residential Plots' => 'CR',
+        'Refuse Collection Point' => 'RCP',
+        'Security Post' => 'P',
+        'Primary School' => 'P',
+        'Corner Shop' => 'CS',
+        'Refuse Dump Disposal' => 'RDD',
+        'Industrial Plots' => 'IN',
+        'Petrol Filling Station' => 'PFS',
+        'Service Shops' => 'SS'
     ];
 
     /**

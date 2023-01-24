@@ -35,7 +35,6 @@
             </div>
           </div>
           <div class="row">
-            
             <div class="form-group col-12">
               <label class="text-muted">Category</label>
               <select class="form-control category" name="category">
@@ -44,10 +43,10 @@
                 @if(empty($categories))
                   <option value="">No category listed</option>
                 @else
-                  @foreach($categories as $category)
+                  @foreach($categories as $category => $prefix)
                     <?php $slug = \Str::slug(strtolower($category)); ?>
-                    <option value="{{ $slug }}" {{ $slug == $plot->category ? 'selected' : '' }}>
-                      {{ ucwords($category) }}
+                    <option value="{{ $category }}" {{ $slug == $plot->category || $category == $plot->category ? 'selected' : '' }}>
+                      {{ ucwords($category) }} {{ empty($prefix) ? '' : '('.$prefix.')' }}
                     </option>
                   @endforeach
                 @endif

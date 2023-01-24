@@ -10,13 +10,21 @@
       <form class="add-plot-form" action="javascript:;" method="post" data-action="{{ route('admin.plot.add') }}">
           @csrf
         <div class="modal-body">
+            <div class="alert alert-info mb-4 text-white">Enter minimum and maximum number of plot to generate</div>
           <div class="row">
             <div class="form-group col-md-6">
-              <label class="text-muted">Plot number</label>
-              <input type="text" name="number" class="form-control number" placeholder="Enter plot number">
-              <small class="number-error text-danger"></small>
+              <label class="text-muted">Minimum Plot number</label>
+              <input type="number" name="minimum_plot_number" class="form-control minimum_plot_number" placeholder="Enter min plot number">
+              <small class="minimum_plot_number-error text-danger"></small>
             </div>
             <div class="form-group col-md-6">
+              <label class="text-muted">Maximum Plot number</label>
+              <input type="number" name="maximum_plot_number" class="form-control maximum_plot_number" placeholder="Enter max plot number">
+              <small class="maximum_plot_number-error text-danger"></small>
+            </div>
+          </div>
+          <div class="row">
+          <div class="form-group col-md-6">
               <label class="text-muted">Category</label>
               <select class="form-control category" name="category">
                 <option value="">Select category</option>
@@ -24,18 +32,16 @@
                 @if(empty($categories))
                   <option value="">No category listed</option>
                 @else
-                  @foreach($categories as $category)
-                    <option value="{{ \Str::slug(strtolower($category)) }}">
-                      {{ ucwords($category) }}
+                  @foreach($categories as $category => $prefix)
+                    <option value="{{ $category }}">
+                      {{ ucwords($category) }} {{ empty($prefix) ? '' : '('.$prefix.')' }}
                     </option>
                   @endforeach
                 @endif
               </select>
               <small class="category-error text-danger"></small>
             </div>
-          </div>
-          <div class="row">
-            <div class="form-group col-12">
+            <div class="form-group col-md-6">
               <label class="text-muted">Layout Name</label>
               <select class="form-control layout" name="layout">
                 <option value="">Select layout</option>

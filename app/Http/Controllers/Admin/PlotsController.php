@@ -20,7 +20,8 @@ class PlotsController extends Controller
         $validator = Validator::make($data, [
             'category' => ['required', 'string'],
             'layout' => ['required', 'string'],
-            'number' => ['required', 'string'],
+            'minimum_plot_number' => ['required', 'string'],
+            'maximum_plot_number' => ['required', 'string'],
         ]);
 
         if ($validator->fails()) {
@@ -30,18 +31,15 @@ class PlotsController extends Controller
             ]);
         }
 
-        $plot = Plot::create([
-            'name' => '-',
-            'description' => null,
-            'category' => $data['category'],
-            'layout_id' => $data['layout'],
-            'number' => $data['number'],
-        ]);
-
-        if (empty($plot)) {
-            return response()->json([
-                'status' => 0,
-                'info' => 'Unknown error. Try again later',
+        $categories = Plot::CATEGORIES;
+        $category = $data['category'] ?? '';
+        for ($i = $data['minimum_plot_number']; $i  <= $data['maximum_plot_number']; $i ++) { 
+            Plot::create([
+                'name' => '-',
+                'description' => null,
+                'category' => $category,
+                'layout_id' => $data['layout'],
+                'number' => $categories[$category].'/'.$i,
             ]);
         }
 
