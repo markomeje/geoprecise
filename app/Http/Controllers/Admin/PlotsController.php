@@ -16,6 +16,23 @@ class PlotsController extends Controller
     //
     public function add()
     {
+        $plots = Plot::where(['category' => 'Residential Plots', 'layout_id' => 14])->get();
+        if(!empty($plots->count())) {
+            $count = 0;
+            foreach ($plots as $plot) {
+                $plot_number = (string)$plot->number;
+                if(strpos($plot_number, '/') === 0) {
+                    substr_replace($plot_number, ' ', 0);
+                    $plot->number = str_replace(' ', '', $plot_number);
+                    $plot->update();
+                    $count++;
+                }
+            }
+
+            dd($count);
+        }
+        
+
         $data = request()->all();
         $validator = Validator::make($data, [
             'category' => ['required', 'string'],
@@ -31,6 +48,13 @@ class PlotsController extends Controller
             ]);
         }
 
+        if ($data['minimum_plot_number'] > $data['maximum_plot_number']) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Minimum plot number must be less than maximum plot number',
+            ]);
+        }
+
         $categories = Plot::CATEGORIES;
         $category = $data['category'] ?? '';
         for ($i = $data['minimum_plot_number']; $i  <= $data['maximum_plot_number']; $i ++) { 
@@ -39,7 +63,7 @@ class PlotsController extends Controller
                 'description' => null,
                 'category' => $category,
                 'layout_id' => $data['layout'],
-                'number' => $categories[$category].'/'.$i,
+                'number' => empty($categories[$category]) ? $i : $categories[$category].'/'.$i,
             ]);
         }
 
