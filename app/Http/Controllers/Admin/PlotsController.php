@@ -22,8 +22,7 @@ class PlotsController extends Controller
             foreach ($plots as $plot) {
                 $plot_number = (string)$plot->number;
                 if(strpos($plot_number, '/') === 0) {
-                    substr_replace($plot_number, ' ', 0);
-                    $plot->number = str_replace(' ', '', $plot_number);
+                    $plot->number = str_replace('/', '', $plot_number);
                     $plot->update();
                     $count++;
                 }
