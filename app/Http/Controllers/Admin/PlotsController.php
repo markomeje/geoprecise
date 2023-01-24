@@ -16,22 +16,6 @@ class PlotsController extends Controller
     //
     public function add()
     {
-        $plots = Plot::where(['category' => 'Residential Plots', 'layout_id' => 14])->get();
-        if(!empty($plots->count())) {
-            $count = 0;
-            foreach ($plots as $plot) {
-                $plot_number = (string)$plot->number;
-                if(strpos($plot_number, '/') === 0) {
-                    $plot->number = str_replace('/', '', $plot_number);
-                    $plot->update();
-                    $count++;
-                }
-            }
-
-            dd($count);
-        }
-        
-
         $data = request()->all();
         $validator = Validator::make($data, [
             'category' => ['required', 'string'],
