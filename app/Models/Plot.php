@@ -44,7 +44,8 @@ class Plot extends Model
         'Refuse Dump Disposal' => 'RDD',
         'Industrial Plots' => 'IN',
         'Petrol Filling Station' => 'PFS',
-        'Service Shops' => 'SS'
+        'Service Shops' => 'SS',
+        'Special Plots' => 'S'
     ];
 
     /**
