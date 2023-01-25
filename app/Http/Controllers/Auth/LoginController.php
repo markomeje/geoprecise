@@ -17,9 +17,9 @@ class LoginController extends Controller
     //
     public function login()
     {
-        $data = request()->only(['phone', 'password']);
+        $data = request()->only(['login', 'password']);
         $validator = Validator::make($data, [
-            'phone' => ['required'], 
+            'login' => ['required'], 
             'password' => ['required']
         ]);
 
@@ -31,7 +31,8 @@ class LoginController extends Controller
         }
 
         $phone = $data['phone'] ?? '';
-        $user = User::where(['phone' => $phone])->first();
+
+        $user = User::where(['email' => $data['login']])->orWhere(['phone' => $data['login']])->first();
         if (empty($user)) {
             return [
                 'status' => 0,
@@ -39,27 +40,28 @@ class LoginController extends Controller
             ];
         }
 
-        $verification = Verification::where(['type' => 'phone', 'user_id' => $user->id])->latest()->get()->first();
-        if (empty($verification)) {
+        if (empty(Verification::where(['type' => 'phone', 'user_id' => $user->id, 'verified' => true])->latest()->get()->first()) && app()->environment(['production'])) {
             return response()->json([
                 'status' => 0,
                 'info' => 'Please verify your phone number. A verification code was sent to your phone during signup.',
             ]);
         }
 
-        if (true !== (boolean)$verification->verified && app()->environment('production')) {
+        if (empty(Verification::where(['type' => 'email', 'user_id' => $user->id, 'verified' => true])->latest()->get()->first())  && app()->environment(['production'])) {
             return response()->json([
                 'status' => 0,
-                'info' => 'Please verify your phone number. A verification code was sent to your phone during signup.',
+                'info' => 'Please verify your email. A verification link was sent to your email address during signup.',
             ]);
         }
 
-        if (auth()->attempt(['password' => $data['password'], 'phone' => $phone], true)) {
+        $auth = auth()->attempt(['email' => $data['login'], 'password' => $data['password']]) || auth()->attempt(['phone' => $data['login'], 'password' => $data['password']]);
+
+        if ($auth) {
             request()->session()->regenerate();
             return response()->json([
                 'status' => 1,
                 'info' => 'Login successful. Please wait . . .', 
-                'redirect' => auth()->user()->role === 'client' ? route('client') : route('admin'),
+                'redirect' => strtolower(auth()->user()->role) === 'client' ? route('client') : route('admin'),
             ], 200);
         }
 

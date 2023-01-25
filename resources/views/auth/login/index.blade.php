@@ -20,9 +20,9 @@
                   <form class="login-form" action="javascript:;" method="post" data-action="{{ route('auth.login') }}">
                     @csrf
                     <div class="form-group">
-                    	<label class="text-muted">Phone number</label>
-                      	<input type="number" class="form-control form-control-lg phone" placeholder="Your phone number" aria-label="Phone" name="phone">
-                        <small class="phone-error text-danger"></small>
+                    	<label class="text-muted">Phone number or Email</label>
+                      	<input type="text" class="form-control form-control-lg login" placeholder="Your phone number or email" aria-label="login" name="login">
+                        <small class="login-error text-danger"></small>
                     </div>
                     <div class="form-group">
                         <label class="text-muted d-flex justify-content-between">
