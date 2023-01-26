@@ -7,10 +7,10 @@
         @include('client.includes.navbar')
       <!-- End Navbar -->
       <div class="container-fluid py-4">
-        @if(empty($survey) || empty($survey->client))
+        @if(empty($survey) || empty($survey->client) || empty($survey->form))
           <div class="alert alert-danger text-white mt-4 border-0">Surveying details not available</div>
         @else
-          <?php $model_id = $survey->id; $model = 'survey'; $layout = $survey->layout; $plot_numbers = $survey->plot_numbers; $client_id = $survey->client_id ?? 0; $approved = (boolean)$survey->approved === true; $completed = true === (boolean)$survey->completed; $payment = $survey->payment; $amount = $survey->form ? ($survey->form->amount ?? 0) : 0; $payment_approved = empty($payment) ? false : (true === (boolean)($payment->approved) ? true : false); $paid = empty($payment) ? false : ($payment->status === 'paid' ? true : false); $reference = request()->get('reference'); ?>
+          <?php $form = $survey->form; $model_id = $survey->id; $model = 'survey'; $layout = $survey->layout; $plot_numbers = $survey->plot_numbers; $client_id = $survey->client_id ?? 0; $approved = (boolean)$survey->approved === true; $completed = true === (boolean)$survey->completed; $payment = $survey->payment; $amount = $form->amount; $payment_approved = empty($payment) ? false : (true === (boolean)($payment->approved) ? true : false); $paid = empty($payment) ? false : ($payment->status === 'paid' ? true : false); $reference = request()->get('reference'); ?>
             @if(!empty($reference))
                 <?php $payment_verification = \App\Payment::verify($reference); ?>
                 @if($payment_verification['status'] === 1)
@@ -26,7 +26,7 @@
           <div class="row">
             <div class="col-12 col-xl-8 mb-4">
               <div class="alert alert-dark mb-4 text-white border-0 d-flex justify-content-between align-items-center">
-                <div class="text-white">Survey or Lifting Application (<span class="text-{{ $approved ? 'success' : 'danger' }}">{{ $approved ? 'Approved' : 'Unapproved' }}</span>)</div>
+                <div class="text-white">{{ ucwords($form->name) }} (<span class="text-{{ $approved ? 'success' : 'danger' }}">{{ $approved ? 'Approved' : 'Unapproved' }}</span>)</div>
               </div>
                 <div class="">
                     @if(!empty($payment))
@@ -78,7 +78,7 @@
                 </div>
               </div>
               <?php $documents = $survey->documents; ?>
-              <div class="mb-4">
+              <div class="">
                 @if(empty($documents->count()))
                   <div class="alert alert-danger text-white mb-4">No documents uploaded yet.</div>
                 @else
@@ -104,7 +104,7 @@
                           <i class="icofont-caret-down"></i>
                         </span>
                       </div>
-                      <div id="collapse-one" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div id="collapse-one" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                         <div class="accordion-body p-0 m-0">
                           <div class="card border  shadow-sm mb-4">
                               <div class="card-header border-bottom  text-dark">Client or Allottee Details</div>
@@ -169,19 +169,21 @@
                 </form>
               </div>
               @if(!empty($plot_numbers))
-                <?php $sib = $survey->sib; $total_plots = is_array($plot_numbers) ? count($plot_numbers) : 1; $sib_amount = $sib->form->amount; $total_amount = ($total_plots * (int)$amount) + ($total_plots *  $sib_amount); ?>
+                <?php $code = strtoupper((string)$form->code); $noInspection = ($code === 'CNS'); $sib = $survey->sib; $total_plots = is_array($plot_numbers) ? count($plot_numbers) : 1; $sib_amount = $sib->form->amount; $total_amount = ($total_plots * (int)$amount) + ($noInspection ? 0 : ($total_plots *  $sib_amount)); ?>
                 @if(empty($payment))
                   <div class="card border  shadow-sm mb-4">
                     <div class="card-header border-bottom ">
-                      <div class="alert alert-dark mb-4">
-                          <span class="text-white">Survey or Lifting: One Plot NGN{{ number_format($amount) }} x {{ $total_plots }}Plot(s) = NGN{{ number_format($total_plots * $amount) }}</span>
+                      <div class="alert alert-dark mb-{{ $noInspection ? '0' : '4' }}">
+                          <span class="text-white">{{ ucwords($form->name) }}: One Plot NGN{{ number_format($amount) }} x {{ $total_plots }}Plot(s) = NGN{{ number_format($total_plots * $amount) }}</span>
                       </div>
-                      <div class="alert alert-dark mb-4">
-                          <span class="text-white">Site Inspection Booking: NGN{{ number_format($sib_amount) }} x {{ $total_plots }}Plot(s) = NGN{{ number_format($total_plots * $sib_amount) }}</span>
-                      </div>
-                      <div class="alert alert-primary text-white" role="alert">
-                        Site Inspection & Survey Total: NGN{{ number_format($total_amount) }}
-                      </div>
+                      @if(!$noInspection)
+                        <div class="alert alert-dark mb-4">
+                            <span class="text-white">Site Inspection Booking: NGN{{ number_format($sib_amount) }} x {{ $total_plots }}Plot(s) = NGN{{ number_format($total_plots * $sib_amount) }}</span>
+                        </div>
+                        <div class="alert alert-primary text-white" role="alert">
+                          Site Inspection & Survey Total: NGN{{ number_format($total_amount) }}
+                        </div>
+                      @endif
                     </div>
                     <div class="card-body">
                         <form class="make-payment-form" action="javascript:;" method="post" data-action="{{ route('client.payment.process') }}">

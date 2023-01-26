@@ -7,15 +7,15 @@
         @include('client.includes.navbar')
       <!-- End Navbar -->
       <div class="container-fluid py-4">
-        @if(empty($survey) || empty($survey->client))
+        @if(empty($survey) || empty($survey->client) || empty($survey->form))
           <div class="alert alert-danger text-white mt-4 border-0">Surveying details not available</div>
         @else
-          <?php $model_id = $survey->id; $model = 'survey'; $layout = $survey->layout; $plot_numbers = $survey->plot_numbers; $client_id = $survey->client_id ?? 0; $approved = (boolean)$survey->approved === true; $completed = true === (boolean)$survey->completed; $summary = request()->get('summary') ?? ''; $payment = $survey->payment; $paid = empty($payment) ? false : ($payment->status === 'paid' ? true : false); ?>
+          <?php $form = $survey->form; $model_id = $survey->id; $model = 'survey'; $layout = $survey->layout; $plot_numbers = $survey->plot_numbers; $client_id = $survey->client_id ?? 0; $approved = (boolean)$survey->approved === true; $completed = true === (boolean)$survey->completed; $summary = request()->get('summary') ?? ''; $payment = $survey->payment; $paid = empty($payment) ? false : ($payment->status === 'paid' ? true : false); ?>
           <div class="row">
             <div class="col-12 col-lg-8">
-              <div class="alert alert-dark mb-4 text-white border-0 d-flex justify-content-between align-items-center">
-                <span>Survey or Lifting Application</span>
-                <span class="text-{{ $approved ? 'success' : 'danger' }}">{{ $approved ? 'Approved' : 'Unapproved' }}</span>
+              <div class="alert alert-dark mb-4 text-white border-0">
+                <span class="text-white">{{ ucwords($form->name) }}</span>
+                <span class="text-{{ $approved ? 'success' : 'danger' }}">({{ $approved ? 'Approved' : 'Unapproved' }})</span>
               </div>
               <div class="card mb-4">
                 @if(!$paid)
