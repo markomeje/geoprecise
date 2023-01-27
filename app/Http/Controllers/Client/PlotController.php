@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Client;
 use App\Http\Controllers\Controller;
-use App\Models\{Survey, Sib, Psr, Plan};
+use App\Models\{Survey, Sib, Psr, Plan, Reprinting};
 use Validator;
 use Exception;
 
@@ -36,6 +36,9 @@ class PlotController extends Controller
                 break;
             case 'plan':
                 $model = Plan::find($id);
+                break;
+            case 'reprinting':
+                $model = Reprinting::find($id);
                 break;
             default:
                 $model = null;

@@ -33,10 +33,12 @@ class Document extends Model
         'Certificate of Plot Allocation',
         'Land Sales Receipt or Agreement',
         'Deed of Lease',
+        'Letter to The Principal Consultant',
         'Deed of Assignment',
         'Irrevocable Power of Attorney',
         'Authority to Lift',
         'Certificate of Occupancy',
+        'Affidavit of Loss'
     ];
 
     /**

@@ -169,7 +169,7 @@
                 </form>
               </div>
               @if(!empty($plot_numbers))
-                <?php $code = strtoupper((string)$form->code); $noInspection = ($code === 'CNS'); $sib = $survey->sib; $total_plots = is_array($plot_numbers) ? count($plot_numbers) : 1; $sib_amount = $sib->form->amount; $total_amount = ($total_plots * (int)$amount) + ($noInspection ? 0 : ($total_plots *  $sib_amount)); ?>
+                <?php $code = strtoupper((string)$form->code); $noInspection = ($code === 'CNS' || $code === 'APP'); $sib = $survey->sib; $total_plots = is_array($plot_numbers) ? count($plot_numbers) : 1; $sib_amount = $sib->form->amount; $total_amount = ($total_plots * (int)$amount) + ($noInspection ? 0 : ($total_plots *  $sib_amount)); ?>
                 @if(empty($payment))
                   <div class="card border  shadow-sm mb-4">
                     <div class="card-header border-bottom ">

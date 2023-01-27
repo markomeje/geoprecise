@@ -312,6 +312,17 @@ Route::domain(env('CLIENT_URL'))->middleware(['auth', 'client'])->group(function
         Route::get('/edit/{id}', [\App\Http\Controllers\Client\PsrsController::class, 'edit'])->name('client.psr.edit');
     });
 
+    Route::prefix('reprinting')->group(function () {
+        Route::get('/', [\App\Http\Controllers\Client\ReprintingController::class, 'index'])->name('client.reprinting');
+        Route::post('/save/{id}', [\App\Http\Controllers\Client\ReprintingController::class, 'save'])->name('client.reprinting.save');
+
+        Route::post('/apply', [\App\Http\Controllers\Client\ReprintingController::class, 'apply'])->name('client.reprinting.apply');
+
+        Route::post('/start', [\App\Http\Controllers\Client\ReprintingController::class, 'start'])->name('client.reprinting.start');
+
+        Route::get('/edit/{id}', [\App\Http\Controllers\Client\ReprintingController::class, 'edit'])->name('client.reprinting.edit');
+    });
+
     Route::prefix('surveys')->group(function () {
         Route::get('/', [\App\Http\Controllers\Client\SurveyController::class, 'index'])->name('client.surveys');
         Route::get('/apply', [\App\Http\Controllers\Client\SurveyController::class, 'apply'])->name('client.survey.apply');

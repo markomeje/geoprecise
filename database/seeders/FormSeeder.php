@@ -14,8 +14,8 @@ class FormSeeder extends Seeder
     public function run()
     {
         $forms = [
-            ['name' => 'New Survey', 'code' => 'NSV', 'per' => 'Per Plot', 'amount' => 160000, 'status' => 'active', 'category' => 'surveys', 'payable' => true],
-            // ['name' => 'Additional Survey Print Plan - Reprinting', 'code' => 'APP', 'per' => 'Per Copy', 'amount' => 10000, 'status' => 'active', 'category' => 'surveys', 'payable' => true],
+            // ['name' => 'New Survey', 'code' => 'NSV', 'per' => 'Per Plot', 'amount' => 160000, 'status' => 'active', 'category' => 'surveys', 'payable' => true],
+            ['name' => 'Additional Survey Print Plan - Reprinting', 'code' => 'APP', 'per' => 'Per Copy', 'amount' => 10000, 'status' => 'active', 'category' => 'reprinting', 'payable' => true],
         ];
 
         foreach ($forms as $form) {
