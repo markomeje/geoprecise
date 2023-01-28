@@ -318,9 +318,8 @@ Route::domain(env('CLIENT_URL'))->middleware(['auth', 'client'])->group(function
 
         Route::post('/apply', [\App\Http\Controllers\Client\ReprintingController::class, 'apply'])->name('client.reprinting.apply');
 
-        Route::post('/start', [\App\Http\Controllers\Client\ReprintingController::class, 'start'])->name('client.reprinting.start');
-
         Route::get('/edit/{id}', [\App\Http\Controllers\Client\ReprintingController::class, 'edit'])->name('client.reprinting.edit');
+        Route::get('/checkout/{id}', [\App\Http\Controllers\Client\ReprintingController::class, 'checkout'])->name('client.reprinting.checkout');
     });
 
     Route::prefix('surveys')->group(function () {

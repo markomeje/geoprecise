@@ -23,6 +23,7 @@ return new class extends Migration
 
             $table->string('status')->nullable();
             $table->foreignId('client_id');
+            $table->boolean('agree')->default(false);
 
             $table->boolean('approved')->default(false);
             $table->timestamp('approved_at')->nullable();

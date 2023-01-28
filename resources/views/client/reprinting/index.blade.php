@@ -8,10 +8,10 @@
       <!-- End Navbar -->
       <div class="container-fluid py-4">
         <div class="">
-          <h4 class="mb-3 text-white">All Additional Survey Plan Reprinting {{ $reprinting; }}</h4>
+          <h4 class="mb-3 text-white">All Additional Survey Plan Reprinting</h4>
           <div class="alert alert-info border-0 mb-4 d-flex align-items-center">
             <div class="text-white me-2">
-              {{ $reprinting ?? 0 }} Reprintings
+              ({{ $reprinting->count() ?? 0 }}) Reprintings
             </div>
             <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#reprinting-apply" class="text-white">Apply</a>
           </div>
@@ -22,9 +22,9 @@
             <div class="alert alert-danger border-0 mb-0 text-white">You have no reprinting records yet</div>
           @else
             <div class="row">
-              @foreach($payments as $payment)
+              @foreach($reprinting as $reprint)
                 <div class="col-12 col-md-6 col-lg-4 mb-4">
-                  @include('client.payments.partials.card')
+                  @include('client.reprinting.partials.card')
                 </div>
               @endforeach
             </div>

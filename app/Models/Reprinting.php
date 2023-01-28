@@ -24,7 +24,8 @@ class Reprinting extends Model
         'plot_number',
         'approved',
         'form_id',
-        'approved_by'
+        'approved_by',
+        'agree'
     ];
 
      /**
