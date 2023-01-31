@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::middleware(['web'])->domain(env('WWW_URL'))->group(function() {
+    Route::get('/', function () {
+        return redirect()->route('home');
+    });
+});
+
 Route::middleware(['web'])->domain(env('APP_URL'))->group(function() {
     Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/aboutus', [\App\Http\Controllers\AboutController::class, 'index'])->name('aboutus');
