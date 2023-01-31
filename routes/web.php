@@ -224,6 +224,10 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
         Route::post('/edit/{id}', [\App\Http\Controllers\Admin\PlotsController::class, 'edit'])->name('admin.plot.edit');
     });
 
+    Route::prefix('reprinting')->group(function () {
+        Route::get('/', [\App\Http\Controllers\Admin\ReprintingController::class, 'index'])->name('admin.reprinting');
+    });
+
     Route::prefix('plans')->group(function () {
         Route::get('/', [\App\Http\Controllers\Admin\PlansController::class, 'index'])->name('admin.plans');
         Route::post('/add', [\App\Http\Controllers\Admin\PlansController::class, 'add'])->name('admin.plan.add');
