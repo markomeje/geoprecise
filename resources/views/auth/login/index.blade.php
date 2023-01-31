@@ -29,14 +29,14 @@
                             <span>Password</span>
                             <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#process-reset">Forgot Password?</a>
                         </label>
-                        <div class="input-group mb-3">
+                        <div class="input-group">
                             <input type="password" class="form-control form-control-lg password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" aria-label="Password" name="password" id="password">
-                            <small class="password-error text-danger"></small>
                             <span class="input-group-text" onclick="password_show_hide();">
                             <i class="fas fa-eye" id="show_eye"></i>
                             <i class="fas fa-eye-slash d-none" id="hide_eye"></i>
                             </span>
                         </div>
+                        <small class="password-error d-block text-danger"></small>
                     </div>
                     
                     <div class="form-check form-switch mb-3">

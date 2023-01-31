@@ -151,166 +151,169 @@ Our Team				</h1>
 <div class="vc_row wpb_row vc_row-fluid vc_custom_1588486761964 vc_custom_1588486761967 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="wpb_column vc_column_container vc_col-sm-12 kyber-bg-color-transparent kyber-background-position-left-top kyber-title-color-default"><div class="vc_column-inner"><div class="wpb_wrapper">		<div class="kyber_team_wrapper kyber-team-586878948 kyber-shortcode-wrapper team-style-1 team-layout-grid">
 <div class="row">
 <a href="{{route('kerry')}}">	
-<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-<div class="kyber-teammember-slide">
-<div class="kyber-teammember-wrapper">			
-<div class="kyber-teammember-thumbnail-wrapper">
-<div class="kyber-teammember-image-container" style="height:350px;">
-<img class="teammember-image" src="./../content/uploads/2020/04/IMG-6397-1-min-600x645.jpg" alt="Hon. John Okwor Nnam">
-</div>					
-</div>
-<div class="kyber-teammember-content-cover" style="height:125px !important;">
-<div class="kyber-teammember-title">
-<h3 class="teammember-title">
-<a href="{{route('kerry')}}" class="teammember-title-link">Hon. John Okwor Nnam</a>
-</h3>
-</div>
-<div class="kyber-teammember-social-profiles-container">
-<ul class="kyber-teammember-social-profiles">
-<li class="kyber-teammember-social-profile">
-<a href="#" target="_blank">
-<i class="fab fa-facebook-f"></i>
-</a>
-</li>
-<li class="kyber-teammember-social-profile">
-<a href="#" target="_blank">
-<i class="fab fa-tumblr"></i>
-</a>
-</li>
-<li class="kyber-teammember-social-profile">
-<a href="#" target="_blank">
-<i class="fab fa-twitter"></i>
-</a>
-</li>
-</ul>
-</div>
-<div class="kyber-teammember-designation-container">
-<h5 class="kyber-teammember-designation">Chairman</h5>
-</div>
-</div>
-</div>
-</div>		</div>
+	<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+	<div class="kyber-teammember-slide">
+	<div class="kyber-teammember-wrapper">			
+	<div class="kyber-teammember-thumbnail-wrapper">
+	<div class="kyber-teammember-image-container" style="height:350px;">
+	<img class="teammember-image" src="./../content/uploads/2020/04/IMG-6397-1-min-600x645.jpg" alt="Hon. John Okwor Nnam">
+	</div>					
+	</div>
+	<div class="kyber-teammember-content-cover" style="height:125px !important;">
+	<div class="kyber-teammember-title">
+	<h3 class="teammember-title">
+	<a href="{{route('kerry')}}" class="teammember-title-link">Hon. John Okwor Nnam</a>
+	</h3>
+	</div>
+	<div class="kyber-teammember-social-profiles-container">
+	<ul class="kyber-teammember-social-profiles">
+	<li class="kyber-teammember-social-profile">
+	<a href="#" target="_blank">
+	<i class="fab fa-facebook-f"></i>
+	</a>
+	</li>
+	<li class="kyber-teammember-social-profile">
+	<a href="#" target="_blank">
+	<i class="fab fa-tumblr"></i>
+	</a>
+	</li>
+	<li class="kyber-teammember-social-profile">
+	<a href="#" target="_blank">
+	<i class="fab fa-twitter"></i>
+	</a>
+	</li>
+	</ul>
+	</div>
+	<div class="kyber-teammember-designation-container">
+	<h5 class="kyber-teammember-designation">Chairman</h5>
+	</div>
+	</div>
+	</div>
+	</div>		
+	</div>
 </a>
 <a href="{{route('godwin')}}">	
 
-<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-<div class="kyber-teammember-slide">
-<div class="kyber-teammember-wrapper">				
-<div class="kyber-teammember-thumbnail-wrapper">
-<div class="kyber-teammember-image-container" style="height:350px;">
-<img class="teammember-image" src="./../content/uploads/2020/04/IMG-4019-1a-min-600x645.jpg" alt="Surv. Nnam Uchechukwu Godwin (MNIS, MSSSI)">
-</div>					
-</div>
-<div class="kyber-teammember-content-cover">
-<div class="kyber-teammember-title">
-<h3 class="teammember-title">
-<a href="{{route('godwin')}}" class="teammember-title-link">Surv. Nnam Uchechukwu Godwin (MNIS, MSSSI)</a>
-</h3>
-</div>
-<div class="kyber-teammember-social-profiles-container">
-<ul class="kyber-teammember-social-profiles">
-<li class="kyber-teammember-social-profile">
-<a href="https://facebook.com/nnamug" target="_blank">
-<i class="fab fa-facebook-f"></i>
-</a>
-</li>
-<li class="kyber-teammember-social-profile">
-<a href="https://www.instagram.com/nnamug" target="_blank">
-<i class="fab fa-instagram"></i>
-</a>
-</li>
-</ul>
-</div>
-<div class="kyber-teammember-designation-container">
-<h5 class="kyber-teammember-designation">Principal Consultant</h5>
-</div>
-</div>
-</div>
-</div>		</div>
+	<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+	<div class="kyber-teammember-slide">
+	<div class="kyber-teammember-wrapper">				
+	<div class="kyber-teammember-thumbnail-wrapper">
+	<div class="kyber-teammember-image-container" style="height:350px;">
+	<img class="teammember-image" src="./../content/uploads/2020/04/IMG-4019-1a-min-600x645.jpg" alt="Surv. Nnam Uchechukwu Godwin (MNIS, MSSSI)">
+	</div>					
+	</div>
+	<div class="kyber-teammember-content-cover">
+	<div class="kyber-teammember-title">
+	<h3 class="teammember-title">
+	<a href="{{route('godwin')}}" class="teammember-title-link">Surv. Nnam Uchechukwu Godwin (MNIS, MSSSI)</a>
+	</h3>
+	</div>
+	<div class="kyber-teammember-social-profiles-container">
+	<ul class="kyber-teammember-social-profiles">
+	<li class="kyber-teammember-social-profile">
+	<a href="https://facebook.com/nnamug" target="_blank">
+	<i class="fab fa-facebook-f"></i>
+	</a>
+	</li>
+	<li class="kyber-teammember-social-profile">
+	<a href="https://www.instagram.com/nnamug" target="_blank">
+	<i class="fab fa-instagram"></i>
+	</a>
+	</li>
+	</ul>
+	</div>
+	<div class="kyber-teammember-designation-container">
+	<h5 class="kyber-teammember-designation">Principal Consultant</h5>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
 </a>
 <a href="{{route('john')}}">	
 
-<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-<div class="kyber-teammember-slide">
-<div class="kyber-teammember-wrapper">				
-<div class="kyber-teammember-thumbnail-wrapper">
-<div class="kyber-teammember-image-container" style="height:350px;">
-<img class="teammember-image" src="../images/john.JPG" alt="Engr. Nnam John Precious" style="height:445px; width:100%; object-fit:contain; background-color:black;">
-</div>					
-</div>
-<div class="kyber-teammember-content-cover" style="height:125px !important;">
-<div class="kyber-teammember-title">
-<h3 class="teammember-title">
-<a href="{{route('john')}}" class="teammember-title-link">Engr. Nnam John Precious</a>
-</h3>
-</div>
-<div class="kyber-teammember-social-profiles-container">
-<ul class="kyber-teammember-social-profiles">
-<li class="kyber-teammember-social-profile">
-<a href="#" target="_blank">
-<i class="fab fa-facebook-f"></i>
-</a>
-</li>
-<li class="kyber-teammember-social-profile">
-<a href="#" target="_blank">
-<i class="fab fa-tumblr"></i>
-</a>
-</li>
-<li class="kyber-teammember-social-profile">
-<a href="#" target="_blank">
-<i class="fab fa-twitter"></i>
-</a>
-</li>
-</ul>
-</div>
-<div class="kyber-teammember-designation-container">
-<h5 class="kyber-teammember-designation">Consultant Engineer</h5>
-</div>
-</div>
-</div>
-</div>	
-</div>
+	<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+	<div class="kyber-teammember-slide">
+	<div class="kyber-teammember-wrapper">				
+	<div class="kyber-teammember-thumbnail-wrapper">
+	<div class="kyber-teammember-image-container" style="height:350px;">
+	<img class="teammember-image" src="../images/john.JPG" alt="Engr. Nnam John Precious" style="height:445px; width:100%; object-fit:contain; background-color:black;">
+	</div>					
+	</div>
+	<div class="kyber-teammember-content-cover" style="height:125px !important;">
+	<div class="kyber-teammember-title">
+	<h3 class="teammember-title">
+	<a href="{{route('john')}}" class="teammember-title-link">Engr. Nnam John Precious</a>
+	</h3>
+	</div>
+	<div class="kyber-teammember-social-profiles-container">
+	<ul class="kyber-teammember-social-profiles">
+	<li class="kyber-teammember-social-profile">
+	<a href="#" target="_blank">
+	<i class="fab fa-facebook-f"></i>
+	</a>
+	</li>
+	<li class="kyber-teammember-social-profile">
+	<a href="#" target="_blank">
+	<i class="fab fa-tumblr"></i>
+	</a>
+	</li>
+	<li class="kyber-teammember-social-profile">
+	<a href="#" target="_blank">
+	<i class="fab fa-twitter"></i>
+	</a>
+	</li>
+	</ul>
+	</div>
+	<div class="kyber-teammember-designation-container">
+	<h5 class="kyber-teammember-designation">Consultant Engineer</h5>
+	</div>
+	</div>
+	</div>
+	</div>	
+	</div>
 </a>
 <a href="{{route('benjamin')}}">	
-<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-<div class="kyber-teammember-slide">
-<div class="kyber-teammember-wrapper">				
-<div class="kyber-teammember-thumbnail-wrapper">
-<div class="kyber-teammember-image-container" style="height:350px;">
-<img class="teammember-image" src="./../content/uploads/2020/04/IMG-4017-1a-min-600x645.jpg" alt="Nnam Benjamin Onyedikachi">
-</div>					
-</div>
-<div class="kyber-teammember-content-cover" style="height:125px !important;">
-<div class="kyber-teammember-title">
-<h3 class="teammember-title">
-<a href="{{route('benjamin')}}" class="teammember-title-link">Nnam Benjamin Onyedikachi</a>
-</h3>
-</div>
-<div class="kyber-teammember-social-profiles-container">
-<ul class="kyber-teammember-social-profiles">
-<li class="kyber-teammember-social-profile">
-<a href="#" target="_blank">
-<i class="fab fa-facebook-f"></i>
-</a>
-</li>
-<li class="kyber-teammember-social-profile">
-<a href="#" target="_blank">
-<i class="fab fa-tumblr"></i>
-</a>
-</li>
-<li class="kyber-teammember-social-profile">
-<a href="#" target="_blank">
-<i class="fab fa-twitter"></i>
-</a>
-</li>
-</ul>
-</div>
-<div class="kyber-teammember-designation-container">
-<h5 class="kyber-teammember-designation">Project Manager</h5>
-</div>
-</div>
-</div>
-</div>		</div>
+	<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+	<div class="kyber-teammember-slide">
+	<div class="kyber-teammember-wrapper">				
+	<div class="kyber-teammember-thumbnail-wrapper">
+	<div class="kyber-teammember-image-container" style="height:350px;">
+	<img class="teammember-image" src="./../content/uploads/2020/04/IMG-4017-1a-min-600x645.jpg" alt="Nnam Benjamin Onyedikachi">
+	</div>					
+	</div>
+	<div class="kyber-teammember-content-cover" style="height:125px !important;">
+	<div class="kyber-teammember-title">
+	<h3 class="teammember-title">
+	<a href="{{route('benjamin')}}" class="teammember-title-link">Nnam Benjamin Onyedikachi</a>
+	</h3>
+	</div>
+	<div class="kyber-teammember-social-profiles-container">
+	<ul class="kyber-teammember-social-profiles">
+	<li class="kyber-teammember-social-profile">
+	<a href="#" target="_blank">
+	<i class="fab fa-facebook-f"></i>
+	</a>
+	</li>
+	<li class="kyber-teammember-social-profile">
+	<a href="#" target="_blank">
+	<i class="fab fa-tumblr"></i>
+	</a>
+	</li>
+	<li class="kyber-teammember-social-profile">
+	<a href="#" target="_blank">
+	<i class="fab fa-twitter"></i>
+	</a>
+	</li>
+	</ul>
+	</div>
+	<div class="kyber-teammember-designation-container">
+	<h5 class="kyber-teammember-designation">Project Manager</h5>
+	</div>
+	</div>
+	</div>
+	</div>		
+	</div>
 </a>
 {{-- <a href="{{route('hilary')}}">	
 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
