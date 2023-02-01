@@ -131,12 +131,12 @@ class PlotController extends Controller
             ]);
         }
 
-        if ((boolean)($model->approved ?? 0) == true || (empty($model->payment) ? '' : $model->payment->status) == 'paid') {
-            return response()->json([
-                'status' => 0,
-                'info' => 'Not allowed after payment or approval'
-            ]);
-        }
+        // if ((boolean)($model->approved ?? 0) == true || (empty($model->payment) ? '' : $model->payment->status) == 'paid') {
+        //     return response()->json([
+        //         'status' => 0,
+        //         'info' => 'Not allowed after payment or approval'
+        //     ]);
+        // }
 
         $plot_numbers = str_contains($model->plot_numbers, '-') ? explode('-', $model->plot_numbers) : $model->plot_numbers;
         if (is_array($plot_numbers)) {
