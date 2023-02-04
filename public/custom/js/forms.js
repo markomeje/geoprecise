@@ -2,6 +2,11 @@
 
 	'use strict';
 
+    $('.edit-survey-form').submit('click', function() {
+        event.preventDefault();
+        handleForm({form: $(this), button: 'edit-survey-button', spinner: 'edit-survey-spinner', message: 'edit-survey-message'});
+    });
+
     $('.edit-reprinting-form').submit('click', function() {
         event.preventDefault();
         handleForm({form: $(this), button: 'edit-reprinting-button', spinner: 'edit-reprinting-spinner', message: 'edit-reprinting-message'});

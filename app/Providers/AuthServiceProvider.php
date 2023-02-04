@@ -24,17 +24,16 @@ class AuthServiceProvider extends ServiceProvider
         $this->registerPolicies();
         $getPermissions = function($user, $resource) {
             $staff = $user->staff;
+
+            $functions = [];
             if (empty($staff)) return [[], ''];
 
             $role = $staff->role;
-            if (empty($role->permissions) || !$role->permissions()->exists()) {
-                return [[], ''];
-            }
-
-            $functions = [];
-            foreach ($role->permissions as $permission) {
-                if ($resource === strtolower($permission->resource)) {
-                    $functions[] = $permission->action;
+            if ($role->permissions()->exists()) {
+                foreach ($role->permissions as $permission) {
+                    if ($resource === strtolower($permission->resource)) {
+                        $functions[] = $permission->action;
+                    }
                 }
             }
 
@@ -42,31 +41,34 @@ class AuthServiceProvider extends ServiceProvider
         };
 
         $rolesWithFullAccess = Role::$withFullAccess;
-        // collect(['view', 'create', 'approve', 'update'])->map(function ($action) use ($rolesWithFullAccess, $getPermissions) {
-        //     Gate::define($action, function(User $user, $resource) use ($rolesWithFullAccess, $getPermissions, $action) {
-        //         [$functions, $role] = $getPermissions($user, $resource);
-        //         return in_array($action, $functions) || in_array($role, $rolesWithFullAccess);
-        //     });
-        // });
-
         Gate::define('view', function(User $user, $resource) use ($rolesWithFullAccess, $getPermissions) {
+
             [$functions, $role] = $getPermissions($user, $resource);
-            return in_array('view', $functions) || in_array($role, $rolesWithFullAccess);
+            return in_array($role, $rolesWithFullAccess) || in_array('view', $functions);
         });
 
         Gate::define('create', function(User $user, $resource) use ($rolesWithFullAccess, $getPermissions) {
+
             [$functions, $role] = $getPermissions($user, $resource);
             return in_array('create', $functions) || in_array($role, $rolesWithFullAccess);
         });
 
         Gate::define('approve', function(User $user, $resource) use ($rolesWithFullAccess, $getPermissions) {
+
             [$functions, $role] = $getPermissions($user, $resource);
             return in_array('approve', $functions) || in_array($role, $rolesWithFullAccess);
         });
 
         Gate::define('update', function(User $user, $resource) use ($rolesWithFullAccess, $getPermissions) {
+            
             [$functions, $role] = $getPermissions($user, $resource);
             return in_array('update', $functions) || in_array($role, $rolesWithFullAccess);
+        });
+
+        Gate::define('delete', function(User $user, $resource) use ($rolesWithFullAccess, $getPermissions) {
+            
+            [$functions, $role] = $getPermissions($user, $resource);
+            return in_array('delete', $functions) || in_array($role, $rolesWithFullAccess);
         });
     }
 }

@@ -18,7 +18,7 @@
                 <span class="text-{{ $approved ? 'success' : 'danger' }}">({{ $approved ? 'Approved' : 'Unapproved' }})</span>
               </div>
               <div class="card mb-4">
-                {{-- @if(!$paid) --}}
+                @if(!$paid)
                   <div class="card-header pb-0 border-bottom bg-transparent">
                     <div class="row">
                       <div class="col-12 mb-4">
@@ -26,7 +26,7 @@
                       </div>
                     </div>
                   </div>
-                {{-- @endif --}}
+                @endif
                 <?php $route = route('client.plot.add', ['model_id' => $model_id, 'model' => $model]); ?>
                 @include('client.plots.partials.add')
                 <div class="card-body pb-2">
@@ -41,11 +41,11 @@
                             <div class="col-12 col-md-6 col-xl-4 mb-4">
                               <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
                                   {{ $number }}
-                                {{-- @if(!$paid) --}}
+                                @if(!$paid)
                                   <small class="text-danger tiny-font cursor-pointer client-delete-plot" data-url="{{ route('client.plot.delete', ['plot_number' => $number, 'model_id' => $model_id, 'model' => $model]) }}" data-message="Are you sure to delete?">
                                     <i class="icofont-trash"></i>
                                   </small>
-                                {{-- @endif --}}
+                                @endif
                               </div>
                             </div>
                           @endif
@@ -54,11 +54,11 @@
                         <div class="col-12 col-md-6 col-xl-4 mb-4">
                           <div class="bg-dark rounded-0 border d-flex align-items-center justify-content-between p-3 text-white">
                             <small class="">{{ $plot_numbers }}</small>
-                            {{-- @if(!$paid) --}}
+                            @if(!$paid)
                               <small class="text-danger tiny-font cursor-pointer client-delete-plot" data-url="{{ route('client.plot.delete', ['plot_number' => $plot_numbers, 'model_id' => $model_id, 'model' => $model]) }}" data-message="Are you sure to delete?">
                                 <i class="icofont-trash"></i>
                               </small>
-                            {{-- @endif --}}
+                            @endif
                           </div>
                         </div>
                       @endif

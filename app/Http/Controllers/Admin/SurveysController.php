@@ -19,15 +19,6 @@ class SurveysController extends Controller
         return view('admin.surveys.pdf', ['title' => 'All Surveys', 'survey' => Survey::find($id)]);
     }
 
-    // public function pdf($id) {
-    //     $survey = Survey::find($id);
-    //     if (empty($survey)) return [];
-
-    //     $pdf = Pdf::loadView('admin.surveys.pdf', ['survey' => $survey]);
-    //     $fileName = \Str::slug(ucwords($survey->client_name));
-    //     return $pdf->download('report.pdf');
-    // }
-
     //
     public function survey($id = 0)
     {
@@ -83,4 +74,73 @@ class SurveysController extends Controller
             'info' => 'Operation failed'
         ]);
     }
+
+    public function edit($id = 0)
+    {
+        $data = request()->all();
+        $validator = Validator::make($data, [
+            'client_name' => ['required', 'string', 'max:255'], 
+            'client_address' => ['required', 'string', 'max:255'], 
+            'client_phone' => ['required', 'string', 'max:17'],
+
+            'seller_name' => ['required', 'string', 'max:255'], 
+            'seller_address' => ['required', 'string', 'max:255'], 
+            'seller_phone' => ['required', 'string', 'max:17'],
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json([
+                'status' => 0,
+                'error' => $validator->errors(),
+            ]);
+        }
+
+        $survey = Survey::find($id);
+        if (empty($survey)) {
+            response()->json([
+                'status' => 0,
+                'info' => 'Unknown error. Survey not found.'
+            ]);
+        }
+
+        try{
+            $survey->client_name = $data['client_name'] ?? $survey->client_name;
+            $survey->client_address = $data['client_address'] ?? $survey->client_address;
+            $survey->client_phone = $data['client_phone'] ?? $survey->client_phone;
+
+            $survey->seller_phone = $data['seller_phone'] ?? $survey->seller_phone;
+            $survey->seller_address = $data['seller_address'] ?? $survey->seller_address;
+            $survey->seller_name = $data['seller_name'] ?? $survey->seller_name;
+
+            if($survey->update()){
+                return response()->json([
+                    'status' => 1,
+                    'info' => 'Survey updated successfully.',
+                    'redirect' => ''
+                ]);
+            }
+
+            return response()->json([
+                'status' => 0,
+                'info' => 'Update failed. Try again.'
+            ]);
+        }catch(Exception $exception) {
+            return response()->json([
+                'status' => 0,
+                'info' => 'Unknown error. Try again.'
+            ]);
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+

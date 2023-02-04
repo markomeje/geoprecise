@@ -231,6 +231,9 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
         Route::post('/edit/{id}', [\App\Http\Controllers\Admin\PlotsController::class, 'edit'])->name('admin.plot.edit');
     });
 
+    Route::post('/plot/number/delete', [\App\Http\Controllers\Client\PlotController::class, 'delete'])->name('admin.plot.number.delete');
+    Route::post('/plot/number/add', [\App\Http\Controllers\Client\PlotController::class, 'add'])->name('admin.plot.number.add');
+
     Route::prefix('reprinting')->group(function () {
         Route::get('/', [\App\Http\Controllers\Admin\ReprintingController::class, 'index'])->name('admin.reprinting');
     });
@@ -253,6 +256,7 @@ Route::domain(env('ADMIN_URL'))->middleware(['auth', 'admin'])->group(function()
         Route::get('/survey/{id}', [\App\Http\Controllers\Admin\SurveysController::class, 'survey'])->name('admin.survey');
         Route::post('/approve/{id}', [\App\Http\Controllers\Admin\SurveysController::class, 'approve'])->name('admin.survey.approve');
 
+        Route::post('/edit/{id}', [\App\Http\Controllers\Admin\SurveysController::class, 'edit'])->name('admin.survey.edit');
         Route::get('/pdf/{id}', [\App\Http\Controllers\Admin\SurveysController::class, 'pdf'])->name('admin.survey.pdf');
     });
 

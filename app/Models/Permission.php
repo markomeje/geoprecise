@@ -20,6 +20,7 @@ class Permission extends Model
                 'view' => 'View all Survey and Lifting Records', 
                 'delete' => 'Delete a survey or lifting record',
                 'approve' => 'Approve a survey or lifting record',
+                'update' => 'Edit a survey or lifting record',
             ], 
             'description' => 'All Survey and Lifting Records'
         ],
@@ -66,6 +67,14 @@ class Permission extends Model
                 'approve' => 'Approve Site Inspection',
             ], 
             'description' => 'Site Inspections',
+        ],
+
+        'plot-numbers' => [
+            'actions' => [
+                'delete' => 'Delete a plot number from survey application',
+                'create' => 'Add a plot number in a survey application',
+            ], 
+            'description' => 'Plot Numbers',
         ],
     ];
 
