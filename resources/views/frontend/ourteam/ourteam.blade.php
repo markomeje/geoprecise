@@ -315,50 +315,50 @@ Our Team				</h1>
 	</div>		
 	</div>
 </a>
-{{-- <a href="{{route('hilary')}}">	
+<a href="javascript:;">	
 <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
 <div class="kyber-teammember-slide">
 <div class="kyber-teammember-wrapper">				
 <div class="kyber-teammember-thumbnail-wrapper">
 <div class="kyber-teammember-image-container" style="height:350px;">
-<img class="teammember-image" src="./../content/uploads/2020/02/WhatsApp-Image-2022-02-23-at-12.14.12-PM-600x645.jpeg" alt="Hilary .U. Azuh, Esq.">
+<img class="teammember-image" src="/images/surv-emeka.jpg" alt="Mr Onah Kingsley Emeka">
 </div>					
 </div>
 <div class="kyber-teammember-content-cover" style="height:125px !important;">
 <div class="kyber-teammember-title">
 <h3 class="teammember-title">
-<a href="{{route('hilary')}}" class="teammember-title-link">Hilary .U. Azuh, Esq.</a>
+<a href="javascript:;" class="teammember-title-link">Mr Onah Kingsley Emeka</a>
 </h3>
 </div>
 <div class="kyber-teammember-social-profiles-container">
-<ul class="kyber-teammember-social-profiles">
+{{-- <ul class="kyber-teammember-social-profiles">
 <li class="kyber-teammember-social-profile">
-<a href="https://facebook.com/azuh.hilary/" target="_blank">
+<a href="javascript:;" target="_blank">
 <i class="fab fa-facebook-f"></i>
 </a>
 </li>
 <li class="kyber-teammember-social-profile">
-<a href="https://www.linkedin.com/in/hilary-azuh-15b988177/" target="_blank">
+<a href="javascript:;" target="_blank">
 <i class="fab fa-linkedin-in"></i>
 </a>
 </li>
 <li class="kyber-teammember-social-profile">
-<a href="https://twitter.com/HilaryAzuh" target="_blank">
+<a href="javascript:;" target="_blank">
 <i class="fab fa-twitter"></i>
 </a>
 </li>
 <li class="kyber-teammember-social-profile">
-<a href="https://www.instagram.com/hilaryazuh/" target="_blank">
+<a href="javascript:;" target="_blank">
 <i class="fab fa-instagram"></i>
 </a>
 </li>
-</ul>
+</ul> --}}
 </div>
 <div class="kyber-teammember-designation-container">
-<h5 class="kyber-teammember-designation">Legal</h5>
+<h5 class="kyber-teammember-designation">Surveyor</h5>
 </div>
 </div>
-</div>		 </a> --}}
+</div>		 </a>
 </div>		</div>
 </div>
 </div>
