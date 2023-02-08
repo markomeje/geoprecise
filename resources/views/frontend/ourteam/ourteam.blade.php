@@ -331,28 +331,28 @@ Our Team				</h1>
 </h3>
 </div>
 <div class="kyber-teammember-social-profiles-container">
-{{-- <ul class="kyber-teammember-social-profiles">
+<ul class="kyber-teammember-social-profiles">
 <li class="kyber-teammember-social-profile">
-<a href="javascript:;" target="_blank">
+<a href="javascript:;">
 <i class="fab fa-facebook-f"></i>
 </a>
 </li>
 <li class="kyber-teammember-social-profile">
-<a href="javascript:;" target="_blank">
+<a href="javascript:;">
 <i class="fab fa-linkedin-in"></i>
 </a>
 </li>
 <li class="kyber-teammember-social-profile">
-<a href="javascript:;" target="_blank">
+<a href="javascript:;">
 <i class="fab fa-twitter"></i>
 </a>
 </li>
 <li class="kyber-teammember-social-profile">
-<a href="javascript:;" target="_blank">
+<a href="javascript:;">
 <i class="fab fa-instagram"></i>
 </a>
 </li>
-</ul> --}}
+</ul>
 </div>
 <div class="kyber-teammember-designation-container">
 <h5 class="kyber-teammember-designation">Surveyor</h5>

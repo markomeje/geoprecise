@@ -968,24 +968,24 @@ Services You Need			</h3>
 				<div class="kyber-teammember-wrapper" style="height:460px;">				
 					<div class="kyber-teammember-thumbnail-wrapper">
 						<div class="kyber-teammember-image-container">
-							<img class="teammember-image" src="../frontend/images/uploads/2020/04/DSC_8657-p-3-600x645.jpg" alt="Surv. Okwesili Adaeze Merit">
+							<img class="teammember-image" src="/images/surv-emeka.jpg" alt="Mr Onah Kingsley Emeka" style="height: 380px; object-fit: cover">
 						</div>					
 					</div>
 					<div class="kyber-teammember-content-cover" style="height:125px !important;">
 						<div class="kyber-teammember-title">
 							<h3 class="teammember-title">
-								<a href="{{route('merit')}}" class="teammember-title-link">Surv. Okwesili Adaeze Merit</a>
+								<a href="javascript:;" class="teammember-title-link">Mr Onah Kingsley Emeka</a>
 							</h3>
 						</div>
 						<div class="kyber-teammember-social-profiles-container">
 							<ul class="kyber-teammember-social-profiles">
 								<li class="kyber-teammember-social-profile">
-									<a href="https://facebook.com/merit.christabel" target="_blank">
+									<a href="javascript:;">
 										<i class="fab fa-facebook-f"></i>
 									</a>
 								</li>
 								<li class="kyber-teammember-social-profile">
-									<a href="https://twitter.com/ChristabelMerit" target="_blank">
+									<a href="javascript:;">
 										<i class="fab fa-twitter"></i>
 									</a>
 								</li>
