@@ -40,19 +40,19 @@ class LoginController extends Controller
             ];
         }
 
-        if (empty(Verification::where(['type' => 'phone', 'user_id' => $user->id, 'verified' => true])->latest()->get()->first()) && app()->environment(['production'])) {
-            return response()->json([
-                'status' => 0,
-                'info' => 'Please verify your phone number. A verification code was sent to your phone during signup.',
-            ]);
-        }
+        // if (empty(Verification::where(['type' => 'phone', 'user_id' => $user->id, 'verified' => true])->latest()->get()->first()) && app()->environment(['production'])) {
+        //     return response()->json([
+        //         'status' => 0,
+        //         'info' => 'Please verify your phone number. A verification code was sent to your phone during signup.',
+        //     ]);
+        // }
 
-        if (empty(Verification::where(['type' => 'email', 'user_id' => $user->id, 'verified' => true])->latest()->get()->first())  && app()->environment(['production'])) {
-            return response()->json([
-                'status' => 0,
-                'info' => 'Please verify your email. A verification link was sent to your email address during signup.',
-            ]);
-        }
+        // if (empty(Verification::where(['type' => 'email', 'user_id' => $user->id, 'verified' => true])->latest()->get()->first())  && app()->environment(['production'])) {
+        //     return response()->json([
+        //         'status' => 0,
+        //         'info' => 'Please verify your email. A verification link was sent to your email address during signup.',
+        //     ]);
+        // }
 
         $auth = auth()->attempt(['email' => $data['login'], 'password' => $data['password']]) || auth()->attempt(['phone' => $data['login'], 'password' => $data['password']]);
 
